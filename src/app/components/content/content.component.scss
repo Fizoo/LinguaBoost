@@ -1,0 +1,40 @@
+@use './../../../scss/mixins' as m;
+
+:host{
+  display: flex;
+ // align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+
+  //flex-grow:2 ;
+  //width: 100%;
+  margin-left: 260px;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  width: 75%;
+  height: 100%;
+  background: white;
+  //padding: 1rem;
+  @include m.tablet{
+    margin-left: 10rem;
+    //max-width: 75%;
+  }
+  @include m.mobile{
+    margin-left: 0;
+  }
+
+  .filter{
+
+  }
+  .name{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

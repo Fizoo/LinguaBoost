@@ -1,0 +1,25 @@
+@use './../../../scss/mixins' as m;
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+ width: 18rem;
+  padding: 1rem;
+  z-index: 99;
+  background: white;
+  border-radius: 1rem;
+  overflow-y: auto;
+  @include m.tablet{
+    width: 10rem;
+  }
+  @include m.mobile{
+    display: none;
+  }
+
+  ul{
+    li{
+
+      padding: 1rem;
+    }
+  }
+}
