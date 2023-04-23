@@ -1,0 +1,77 @@
+@use '../../../scss/variables' as v;
+:host{
+
+ // border-bottom: 1px solid #c7c5c5;
+
+}
+.main {
+  padding:  0 2rem;
+  font-size: 1.2rem;
+
+  //border-top: 1px solid #e3dede;
+
+  .word {
+    display: grid;
+    grid-template-columns: 100px repeat(2, 1fr) 100px 100px;
+
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    border-top: 1px solid #e3dede;
+
+    &.active{
+      background: v.$bg-main;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background: v.$bg-main;
+      cursor: pointer;
+    }
+    .expand{
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+    .translation{
+      color: v.$color-second;
+    }
+  }
+
+    //border-bottom: 1px solid #c7c5c5;
+
+    .sentence {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      background: v.$bg-main;
+
+      padding: 1rem 5rem;
+
+
+      .example {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .text {
+
+        .englishSentence {
+          // font-weight: 700;
+          font-size: 1.5rem;
+        }
+        .translateSentence{
+          font-size: 1rem;
+         color: v.$color-second;
+        }
+      }
+
+    }
+
+
+}
+
+

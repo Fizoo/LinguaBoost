@@ -1,0 +1,57 @@
+ <div class="main">
+    <div class="myForm">
+      <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+        <h3>Log In</h3>
+        <div class="inputBox"  >
+          <span>Username</span>
+          <div class="box">
+            <div class="icon">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <input [ngClass]="{invalid:email.touched && email.invalid}" type="text" formControlName="email">
+          </div>
+          <div
+            *ngIf="email.touched && email.invalid"
+            class="validations">
+            <small *ngIf="email?.errors?.['required']">enter your email address </small>
+            <small *ngIf="email?.errors?.['email']">Please enter a valid email address</small>
+          </div>
+        </div>
+
+        <div class="inputBox"  >
+          <span>Password</span>
+          <div class="box">
+            <div class="icon">
+              <i class="bi bi-lock-fill"></i>
+            </div>
+            <input [ngClass]="{invalid:form.get('password')?.touched && form.get('password')?.invalid}" type="password" formControlName="password">
+
+          </div>
+          <div
+            *ngIf="password.touched && password.invalid"
+            class="validations">
+            <small *ngIf="password.errors?.['required']">
+              Password required
+            </small>
+            <small *ngIf="password.errors?.['minlength']">
+              Min length password is {{password.errors?.['minlength']['requiredLength']}}symbols.
+              Now {{password.errors?.['minlength']['actualLength']}}
+            </small>
+          </div>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"  formControlName="checkbox">
+          <label class="form-check-label" for="flexCheckChecked">
+            Remember me
+          </label>
+        </div>
+
+        <div class="inputBox">
+          <div class="box">
+            <input type="submit" value="Log in"  [disabled]="form.invalid">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

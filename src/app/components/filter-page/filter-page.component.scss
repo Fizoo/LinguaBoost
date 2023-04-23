@@ -1,0 +1,15 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin: 2rem;
+
+  .search{
+    display: flex;
+  }
+  .tests{
+    display: flex;
+    gap: 2rem ;
+  }
+}
