@@ -36,7 +36,7 @@
     border-radius: 0 25px 25px 0;
   }
 
-  &:hover:not( &--active) {
+  &:hover:not( &.active) {
     color: white;
 
     &::after {
@@ -45,7 +45,7 @@
     }
   }
 
-  &--active {
+  &.active {
     color: white;
     padding-left: 1.5rem;
 

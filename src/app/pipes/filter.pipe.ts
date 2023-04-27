@@ -1,12 +1,12 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import {Data} from "../models/data";
+import {Data, Words} from "../models/data";
 
 @Pipe({
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(value: Data[]|null, search=''): Data[] {
+  transform(value: Words[]|null, search=''): Words[] {
 
     return value?value.filter(el=>el.englishWord.includes(search)):[]
   }

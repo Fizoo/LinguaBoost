@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Theme, Words} from "../../../models/data";
 
 @Component({
   selector: 'app-list-themes',
@@ -6,7 +7,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./list-themes.component.scss']
 })
 export class ListThemesComponent {
-  @Input() item:any
+  @Input() item:Theme
   isActive=false
 
 }

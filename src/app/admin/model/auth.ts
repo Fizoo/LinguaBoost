@@ -7,6 +7,7 @@ export interface SignUpCredentials {
 export interface User {
   uid: string;
   email: string;
-  displayName?: string;
+  name:string
+  password:string
   photoURL?: string;
 }

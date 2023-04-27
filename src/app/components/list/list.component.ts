@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import { SpeakerService } from 'src/app/services/speaker.service';
-import {Data} from "../../models/data";
+import {Data, Words} from "../../models/data";
 
 
 @Component({
@@ -9,7 +9,7 @@ import {Data} from "../../models/data";
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-  @Input() item:Data
+  @Input() item:Words
 
   isExample=false
 

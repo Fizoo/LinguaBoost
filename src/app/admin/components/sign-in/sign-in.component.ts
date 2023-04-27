@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
+import { AuthService } from '../../../services/auth.service';
+
+import {FirestoreService} from "../../../services/firestore.service";
+
+
 
 
 
@@ -15,7 +20,9 @@ export class SignInComponent implements OnInit{
   form:FormGroup
 
   constructor(private fb:FormBuilder,
-              private authService:AuthService
+              private authService:AuthService,
+              private router:Router,
+              private firestore:FirestoreService
   ) {
   }
 
@@ -29,8 +36,15 @@ export class SignInComponent implements OnInit{
 
   onSubmit($event: any) {
     let {email,password}=this.form.value
-    this.authService.login(email,password).subscribe(()=>console.log('true'))
-      //this.authService.signUp(email,password).subscribe()
+
+       this.authService.login(email,password).subscribe(()=> {
+         this.router.navigate(['/'])
+         console.log('true')})
+    //this.firestore.addProgress(x).pipe(tap(el=>console.log(el))).subscribe()
+//this.firestore.addProgress(x)
+    //this.firestore.deleteProgressItem(x.id).subscribe()
+
+      //this.authService.signUp(email,password,'Oleg').subscribe()
     //this.authService.logout().subscribe(el=>console.log('logout'))
   }
 

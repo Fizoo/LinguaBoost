@@ -6,6 +6,8 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
+import {canActivate} from "@angular/fire/auth-guard";
+import {AuthGuard} from "./auth.guard";
 
 
 const routes:Routes = [
