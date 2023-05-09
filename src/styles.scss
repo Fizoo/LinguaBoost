@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use './scss/variables' as v;
+@use './scss/mixins' as m;
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
 
@@ -19,7 +20,15 @@ body,html {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background: v.$bg-main;
 
+  @include m.tablet{
+    font-size: 14px;
+  }
+  @include m.mobile{
+    font-size: 12px;
+  }
+
 }
+
 
 
 

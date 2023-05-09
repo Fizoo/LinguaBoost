@@ -1,9 +1,13 @@
 @use './../../../scss/mixins' as m;
 .sidebar {
+  display: flex;
+  flex-direction: column;
+ // align-items: center;
+  gap: 2px;
   position: fixed;
   left: 0;
   height: 100%;
- width: 18rem;
+  max-width: 18rem;
   padding: 1rem;
   z-index: 99;
   background: white;
@@ -11,13 +15,20 @@
   overflow-y: auto;
   @include m.tablet{
     width: 10rem;
+    //margin-left: 1rem;
   }
   @include m.mobile{
     display: none;
   }
+  h3{
+    margin: 0 auto;
+  }
 
  .search{
    width: 100%;
-   background:  white;
  }
+}
+//bg input
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: white;
 }

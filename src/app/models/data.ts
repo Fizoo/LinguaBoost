@@ -28,7 +28,7 @@ export interface Words{
   englishSentence: string;
   ukrainianTranslationOfSentence: string;
   synonyms: string[];
-  level?:number
+  level:number
   idTheme:number
 }
 
@@ -38,6 +38,7 @@ export interface Progress {
   timeOfDay:TimeDay[]
   countDays:number
   tasksCompleted:number
+  score:number
 }
 
 export interface TimeDay{

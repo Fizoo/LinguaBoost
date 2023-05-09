@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {BehaviorSubject} from "rxjs";
-import { mainData } from 'src/assets/data/generalData';
-import {data} from "../../assets/data/data";
-import {Data, Main} from "../models/data";
+import {mainData} from 'src/assets/data/generalData';
+
+import {Main} from "../models/data";
 
 
 @Injectable({

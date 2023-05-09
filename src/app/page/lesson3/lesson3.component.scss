@@ -1,0 +1,106 @@
+@use '../../../scss/mixins' as m;
+
+.lesson3{
+  position: relative;
+  .page{
+    padding: 5rem 1rem;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .content{
+      max-width: 60rem;
+      width: 100%;
+      padding-top: 0.5rem;
+      padding-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      min-height: 390px;
+      gap: 1rem;
+      .text{
+        margin-bottom:1rem;
+
+        h1{
+          font-size: 2em;
+          line-height: 40px;
+          font-weight: 700;
+        }
+
+      }
+      .goals{
+        display: flex;
+        max-width: 500px;
+        width: 100%;
+        min-height: 100px;
+        padding: 1.2rem;
+        margin-bottom: 1.3rem;
+        border-radius: 12px;
+        flex-direction: row;
+        border: 2px solid rgb(218, 225, 234);
+
+        &__logo{
+          margin-right: 16px;
+          position: relative;
+          height: 64px;
+          img{
+            width: 56px;
+            height: 64px;
+          }
+        }
+        &__progress{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding-top: 0.8rem;
+          &__text{
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            line-height: 24px;
+            text-align: start;
+          }
+          &__values{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+            //margin-top: 8px;
+            .bar{
+              width: 100%;
+              padding-right: 1rem;
+
+            }
+
+          }
+        }
+      }
+
+    }
+
+    .footer{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      //max-height: 5rem;
+      // background: green;
+      box-shadow: 0 0 1rem -0.1rem #d6dee6;
+      .box{
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 2rem;
+        @include m.mobile{
+          justify-content:center;
+        }
+      }
+    }
+
+  }
+}

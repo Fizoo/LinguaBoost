@@ -58,7 +58,8 @@ export class AuthService {
             counter: 0
           }],
           countDays: 0,
-          tasksCompleted: 0
+          tasksCompleted: 0,
+          score:0
         }
         let newUser: User = {
           uid: id,

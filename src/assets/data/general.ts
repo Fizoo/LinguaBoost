@@ -1,6 +1,7 @@
 import {Words} from "../../app/models/data";
 
-export const wordGeneral:Words[] = [{
+export const wordGeneral:Words[] = [
+  {
   id: 2,
   englishTranscription: "ˌæksəˈdɛntəli",
   englishWord: "accidentally",
@@ -11,7 +12,7 @@ export const wordGeneral:Words[] = [{
   ukrainianTranslation: "випадково",
   level: 1
 }, {
-  level: 1,
+  level: 2,
   ukrainianTranslation: "через",
   synonyms: ["over", "through"],
   idTheme: 1,
@@ -46,7 +47,7 @@ export const wordGeneral:Words[] = [{
   synonyms: ["evidently", "obviously"],
   id: 6,
   ukrainianTranslation: "очевидно",
-  level: 1,
+  level: 3,
   englishTranscription: "əˈpærəntli",
   englishWord: "apparently",
   idTheme: 1
@@ -89,7 +90,7 @@ export const wordGeneral:Words[] = [{
   ukrainianTranslation: "в основному",
   englishSentence: "Basically, I just want to sleep.",
   englishTranscription: "ˈbeɪsɪkli",
-  level: 1
+  level: 2
 }, {
   synonyms: ["trust", "have faith in"],
   englishWord: "believe",
@@ -124,7 +125,7 @@ export const wordGeneral:Words[] = [{
   idTheme: 1,
   synonyms: ["occupied", "engaged", "active"],
   ukrainianTranslationOfSentence: "Я занадто зайнятий, щоб піти на вечірку сьогодні ввечері.",
-  level: 1,
+  level: 3,
   ukrainianTranslation: "зайнятий",
   englishTranscription: "ˈbɪzi",
   englishSentence: "I'm too busy to go to the party tonight.",

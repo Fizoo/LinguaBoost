@@ -9,8 +9,11 @@ import {first, from, map, Observable} from "rxjs";
 import {Progress, Theme, TimeDay, Words} from "../models/data";
 import {User} from "../admin/model/auth";
 import {UserUidService} from "./user-uid.service";
-import * as firebase from 'firebase/compat';
+//import * as firebase from 'firebase/compat';
 //import firebase from "firebase/compat";
+import firebase from 'firebase/compat/app';
+
+
 
 
 
@@ -34,6 +37,7 @@ export class FirestoreService {
     this.progressCollection = this.firestore.collection<Progress>('progress');
     this.userCollection = this.firestore.collection<User>('users');
     this.dataCollection = this.firestore.collection<Theme[]>('data');
+    this.themeCollection = this.firestore.collection<Theme>('theme');
 
     this.progress = this.progressCollection.snapshotChanges().pipe(
       map(actions => actions.map((a: DocumentChangeAction<Progress>) => {
@@ -68,7 +72,7 @@ export class FirestoreService {
     )
   }
 
-  getProgressByIdAsync():Observable<Progress | undefined> {
+  getProgressByIdAsync(): Observable<Progress | undefined> {
     return this.progressCollection.doc(this.userUid).valueChanges()
   }
 
@@ -85,9 +89,10 @@ export class FirestoreService {
 
 
   setProgress(data: Partial<Progress>): Observable<void> {
-    const progress: Progress = { ...data } as Progress;
-    return from(this.progressCollection.doc(this.userUid).set(progress,{merge:true}))
+    const progress: Progress = {...data} as Progress;
+    return from(this.progressCollection.doc(this.userUid).set(progress, {merge: true}))
   }
+
   // Видалення документу з колекції "progress"
   deleteProgressItem(): Observable<void> {
     return from(this.progressCollection.doc(this.userUid).delete())
@@ -145,7 +150,8 @@ export class FirestoreService {
   updateDataItem(itemId: string, item: any): Observable<void> {
     return from(this.dataCollection.doc(itemId).update(item))
   }
-  updateDataInArray(itemId: string,  item:Theme[]): Observable<void> {
+
+  updateDataInArray(itemId: string, item: Theme[]): Observable<void> {
 
     return from(this.dataCollection.doc(itemId).update(item))
   }
@@ -177,6 +183,29 @@ export class FirestoreService {
   // отримати конкретні дані з Firestore який автоматично оновлюється при зміні даних в документі.
   public getDataById(): Observable<any> {
     return this.progressCollection.doc<Progress>(this.userUid).valueChanges();
+  }
+
+  ////--------------theme-------------
+  public addTheme(theme: Theme): Observable<void> {
+    const idName = `${theme.name}:${theme.id}`;
+    return from(this.themeCollection.doc(idName).set(theme))
+  }
+  public addThemeAddCol(theme: Theme): Observable<void> {
+    const idName = `${theme.name}:${theme.id}`;
+    return from(this.themeCollection.doc('General:1').collection('user1').doc('user1Id') .set(theme))
+  }
+
+  public updateTheme(theme: Partial<Theme>): Observable<void> {
+    const docRef: DocumentReference = this.firestore.firestore.collection('theme').doc('General:1');
+    return from(docRef.update({
+      data: firebase.firestore.FieldValue.arrayUnion(theme)
+    }));
+  }
+
+  public updateWord1( wordId: number, updatedWord: Partial<Words>): Observable<void> {
+    return from(this.themeCollection.doc('General:1').update({
+      [`data.${wordId}.level`]: updatedWord
+    }));
   }
 
 }

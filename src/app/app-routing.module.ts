@@ -4,6 +4,10 @@ import {MainComponent} from './components/main/main.component';
 import {HomePageComponent} from "./components/home-page/home-page.component";
 import {ContentComponent} from "./components/content/content.component";
 import {AuthGuard} from "./admin/auth.guard";
+import {LessonComponent} from "./page/lesson/lesson.component";
+import {Lesson2Component} from "./page/lesson2/lesson2.component";
+import {Lesson3Component} from "./page/lesson3/lesson3.component";
+import {LessonWriteByEngComponent} from "./page/lesson-write-by-eng/lesson-write-by-eng.component";
 
 const routes: Routes = [
   {path: '',component:MainComponent,canActivate:[AuthGuard],
@@ -13,6 +17,9 @@ const routes: Routes = [
       {path: 'theme/:id', component: ContentComponent},
      /* { path: '**', redirectTo: 'home' }*/
     ]},
+  {path:'theme/:id/lesson/:id',component:LessonWriteByEngComponent},
+  {path:'theme/:id/lesson/:id/result',component:Lesson2Component },
+  {path:'theme/:id/lesson/:id/result/goal',component:Lesson3Component },
   {path:'admin',
   loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)
   }

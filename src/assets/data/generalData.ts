@@ -1,6 +1,7 @@
 import {Main, Theme} from "../../app/models/data";
 import {wordGeneral} from "./general";
 import {wordJobs} from "./job";
+import { verbs } from "./verbs";
 
 
 
@@ -15,6 +16,11 @@ export const mainData:Main={
       id:'2',
       name:'Jobs',
       data:wordJobs
+    },
+    {
+      id:'3',
+      name:'Verbs',
+      data:verbs
     }
   ]
 }

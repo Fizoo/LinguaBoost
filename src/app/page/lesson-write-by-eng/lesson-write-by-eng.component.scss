@@ -1,0 +1,286 @@
+@use '../../../scss/variables' as v;
+@use '../../../scss/mixins' as m;
+
+.mainEng {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  // height: 100vh;
+  position: relative;
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0.5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+    .progress-bar {
+      width: clamp(350px, 100%, 500px);
+      padding: 0.5rem;
+    }
+  }
+
+  .contentMain {
+    padding: 5rem 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .contentPage {
+      position: relative;
+      width: 100%;
+      padding: 0.5rem 2.5rem 5rem 2.5rem;
+
+      .contentLayout {
+        max-width: 80rem;
+        margin: 0 auto;
+
+        .content {
+          margin: 0 auto;
+          max-width: 43.75rem;
+          //min-width: 31.25rem;
+          // width: 40vw;
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+
+          .instructionMain {
+            .instruction {
+              margin-bottom: 3rem;
+
+              .text {
+                margin-top: 0;
+                padding-top: 0;
+                margin-bottom: 0;
+                font-weight: 700;
+                text-transform: none;
+                font-size: 1.125rem;
+                line-height: 1.5em;
+                color: rgb(30, 45, 64);
+                text-align: center;
+              }
+            }
+          }
+
+          .view {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-grow: 1;
+            .wrapper {
+              border-end-end-radius: 1rem;
+              border-end-start-radius: 1rem;
+              margin-bottom: 2.5rem;
+              background-color: transparent;
+              .wrapper1 {
+                position: relative;
+                overflow: hidden;
+                border-radius: 0.5rem;
+                min-height: 3.125rem;
+                .wrapper2 {
+                  position: relative;
+                  padding-bottom: 45%;
+                  .img {
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    height: 100%;
+                  }
+                  .asset-audio {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+
+                    .player {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      padding: 1rem;
+
+                      .audio {
+                        margin: 0.625rem 3.75rem;
+                        color: rgb(255, 255, 255);
+                        border-radius: 1.5rem;
+                        padding: 0 0.75rem;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+                        background-color: rgb(17, 110, 238) !important;
+                        display: flex;
+                        align-items: center;
+                        line-height: 1.7;
+                        max-width: 100%;
+                        min-width: 200px;
+                        position: relative;
+                        transition: box-shadow .3s ease;
+                        z-index: 0;
+                        .mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+                          background-color: rgba(239, 230, 239, 0.5);
+                        }
+                        .mat-mdc-progress-bar {
+                          --mdc-linear-progress-active-indicator-color: white;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .inputBox {
+              width: 100%;
+              margin-bottom: 2.5rem;
+
+              mat-form-field {
+                width: 100%;
+              }
+            }
+            .skipBtn1 {
+              margin-bottom: 2.5rem;
+              width: 100%;
+              button{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 1rem -0.1rem #d6dee6;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    @include m.mobile{
+      padding-top: 1rem;
+    }
+    .drawer{
+      width: 100%;
+      // transform: translateZ(0);
+      opacity: 1;
+
+      .drawer-context{
+
+        transition: all .25s ease-in-out;
+        padding: 1rem 0;
+
+        z-index: 5;
+        border-radius: 0;
+        .page-wrap{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+          margin: 0 auto;
+          max-width: 80rem;
+          padding-left: 2.5rem;
+          padding-right: 2.5rem;
+          @include m.mobile{
+            flex-direction: column;
+            gap: 1rem;
+
+            .feedback{
+              max-height: 75px;
+            }
+            .answer-lesson{
+              gap: 0;
+              .answer{
+                padding: 0;
+                gap: 0 !important;
+              }
+            }
+          }
+
+          .feedback{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            &.hiden{
+              opacity: 0;
+            }
+
+            .score{
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              //flex-shrink: 0;
+              width: 100%;
+
+              svg{
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                margin: 0 auto;
+                outline: none;
+              }
+              h2{
+                width: 100%;
+                margin-top: 0;
+                padding-top: 0;
+                margin-bottom: 0;
+                font-size: 1.5rem;
+                font-weight: 800;
+                line-height: 1.3em;
+                text-align: left;
+              }
+            }
+          }
+
+          .answer-lesson{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &.hiden{
+              opacity: 0;
+            }
+
+            .answer{
+              background-color: #e8edf3;
+              border-radius: 1rem;
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              .answer-text{
+                display: flex;
+                align-items: center;
+                padding: 0.5rem;
+                min-width: 200px;
+                .span-text{
+                  display: flex;
+                  flex-direction: column;
+                  padding-right:  2rem;
+                  cursor: pointer;
+                  //font-style: italic;
+                  span:first-child {
+                    font-weight: 700 ;
+                    font-size: 1.2rem;
+                    //font-style: italic;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

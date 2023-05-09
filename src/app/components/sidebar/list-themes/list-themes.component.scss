@@ -1,3 +1,7 @@
+:host{
+  //margin:0 auto;
+}
+
 .list {
   display: flex;
   align-items: center;
@@ -7,22 +11,31 @@
   padding-left:2rem;
   padding-bottom:  .5rem;
   padding-top:  .5rem;
-  width: 17.25rem;
+ // max-width: 17.25rem;
+  width: 100%;
   min-height: 2.8rem;
   height: fit-content;
   word-break: break-word;
   margin-bottom: .2rem;
   position: relative;
-  background: transparent;
+  //background: white;
   transition: color .2s ease;
   color: inherit;
   z-index: 0;
+  //margin: .2rem auto;
+  //border: 1px solid #eae9e9;
+  border-radius: 2px;
+  background: #f6f6f6;
 
+  &:hover{
+    background: #d3f3f0;
+    cursor: pointer;
+  }
   & > svg {
     margin-right: 1rem;
     min-width: 1rem;
   }
-
+/*
   &::after {
     transition: background-color .1s ease;
     content: '';
@@ -43,7 +56,8 @@
       content: '';
       background-color: #A8A4FF;
     }
-  }
+  }*/
+
 
   &.active {
     color: white;

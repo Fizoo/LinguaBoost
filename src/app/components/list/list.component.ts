@@ -12,12 +12,15 @@ export class ListComponent {
   @Input() item:Words
 
   isExample=false
+  isTranslateWord=true
+  isUkrainianTranslationOfSentence=false
 
   constructor(private speakerService:SpeakerService){
 
   }
 
   //dataList:Data=[]
+
 
 
   setExample() {
