@@ -16,6 +16,13 @@ export namespace DataSelectors {
     }
   )
 
+  export const getAllThemes=createSelector(
+    getAllState,
+    state=>{
+      return state
+    }
+  )
+
   export const getRandomListWith20ById = (id: string) => createSelector(
     getThemeById(id),
     (state: Theme) => {
@@ -30,11 +37,11 @@ export namespace DataSelectors {
         let obj: Words | undefined
         let random = Math.random()
 
-        if (highRankList.length > 0 && random < 0.15) {
+        if (highRankList.length > 0 && random < 0.10) {
           obj = highRankList.splice(Math.floor(Math.random() * highRankList.length), 1)[0]
-        } else if (midRankList.length > 0 && random < 0.40) {
+        } else if (midRankList.length > 0 && random < 0.30) {
           obj = midRankList.splice(Math.floor(Math.random() * midRankList.length), 1)[0]
-        } else if (lowRankList.length > 0 && random >= 0.4) {
+        } else if (lowRankList.length > 0 && random >= 0.3) {
           obj = lowRankList.splice(Math.floor(Math.random() * lowRankList.length), 1)[0]
         }
 
@@ -45,6 +52,17 @@ export namespace DataSelectors {
       return selectedList
     }
   )
+
+   export const getProgressTheme=(id:string)=>createSelector(
+     getThemeById(id),
+     (state)=>{
+       const arrLength=state.data.length
+       const maxScore=arrLength*3
+       const curProgress=state.data.reduce((count,item)=>count+item.level,0)-arrLength+1
+
+       return (curProgress / maxScore) * 100
+     }
+   )
 
 
 

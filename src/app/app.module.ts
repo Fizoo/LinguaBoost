@@ -14,14 +14,14 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {StatistComponent} from './components/statist/statist.component';
-import {ListComponent} from './components/list/list.component';
+import {ListComponent} from './components/content/list/list.component';
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatListModule} from "@angular/material/list";
 import {MatMenuModule} from "@angular/material/menu";
 import {ListThemesComponent} from './components/sidebar/list-themes/list-themes.component';
 import {TestComponent} from './components/test/test.component';
-import {FilterPageComponent} from './components/filter-page/filter-page.component';
+import {FilterPageComponent} from './components/content/filter-page/filter-page.component';
 import {FilterPipe} from './pipes/filter.pipe';
 import {initializeApp, provideFirebaseApp} from '@angular/fire/app';
 import {environment} from '../environments/environment';
@@ -44,6 +44,8 @@ import { LessonCollectComponent } from './page/lesson-collect/lesson-collect.com
 import { LessonTranslateToUaComponent } from './page/lesson-translate-to-ua/lesson-translate-to-ua.component';
 import { LessonWriteByEngComponent } from './page/lesson-write-by-eng/lesson-write-by-eng.component';
 import { LessonTranslateToEngComponent } from './page/lesson-translate-to-eng/lesson-translate-to-eng.component';
+import { LessonWriteSentenceComponent } from './page/lesson-write-sentence/lesson-write-sentence.component';
+import { ProgressDirective } from './directives/progress.directive';
 
 
 
@@ -69,7 +71,9 @@ import { LessonTranslateToEngComponent } from './page/lesson-translate-to-eng/le
     LessonCollectComponent,
     LessonTranslateToUaComponent,
     LessonWriteByEngComponent,
-    LessonTranslateToEngComponent
+    LessonTranslateToEngComponent,
+    LessonWriteSentenceComponent,
+    ProgressDirective
   ],
   imports: [
     BrowserModule,

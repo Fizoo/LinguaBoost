@@ -3,13 +3,16 @@
   <h3>ALL THEMES IS {{themes.length}}</h3>
     <mat-form-field class="search">
       <mat-label>Choose theme...</mat-label>
-      <input matInput type="text" [(ngModel)]="value">
-      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+      <input matInput type="text" [(ngModel)]="inputValue">
+      <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="inputValue=''">
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
 
-  <app-list-themes *ngFor="let item of themes | filterTheme : value" [item]="item"></app-list-themes>
+  <app-list-themes
+    *ngFor="let item of themes | filterTheme : inputValue ; trackBy: trackByFn "
+    [item]="item"
+    (navigate)="navigate($event)"
+  ></app-list-themes>
 
-  <button (click)="sign()" mat-raised-button>update</button>
 </div>

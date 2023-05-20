@@ -8,6 +8,9 @@ import {LessonComponent} from "./page/lesson/lesson.component";
 import {Lesson2Component} from "./page/lesson2/lesson2.component";
 import {Lesson3Component} from "./page/lesson3/lesson3.component";
 import {LessonWriteByEngComponent} from "./page/lesson-write-by-eng/lesson-write-by-eng.component";
+import {LessonTranslateToEngComponent} from "./page/lesson-translate-to-eng/lesson-translate-to-eng.component";
+import {LessonTranslateToUaComponent} from "./page/lesson-translate-to-ua/lesson-translate-to-ua.component";
+import {LessonCollectComponent} from "./page/lesson-collect/lesson-collect.component";
 
 const routes: Routes = [
   {path: '',component:MainComponent,canActivate:[AuthGuard],
@@ -18,8 +21,11 @@ const routes: Routes = [
      /* { path: '**', redirectTo: 'home' }*/
     ]},
   {path:'theme/:id/lesson/:id',component:LessonWriteByEngComponent},
-  {path:'theme/:id/lesson/:id/result',component:Lesson2Component },
-  {path:'theme/:id/lesson/:id/result/goal',component:Lesson3Component },
+  {path:'theme/:id/translateEng/:id',component:LessonTranslateToEngComponent},
+  {path:'theme/:id/translateUa/:id',component:LessonTranslateToUaComponent},
+  {path:'theme/:id/collect/:id',component:LessonCollectComponent},
+  {path:'theme/:id/lessons/result',component:Lesson2Component },
+  {path:'theme/:id/:lessons/result/goal',component:Lesson3Component },
   {path:'admin',
   loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)
   }

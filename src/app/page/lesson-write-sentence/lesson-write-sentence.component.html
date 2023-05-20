@@ -16,23 +16,47 @@
         <div class="content">
           <div class="instructionMain">
             <div class="instruction" >
-              <p  class="text">Combine sentence with words</p>
+              <p  class="text">Write the sentence you hear</p>
             </div>
           </div>
-          <div  class="builder">
-            <div class="builder-window">
-              <div *ngFor="let val of newList" class="word">
-                <span class="word-box">{{val}}</span>
-
+          <div  class="view">
+            <div class="wrapper">
+              <div class="wrapper1">
+                <div  class="wrapper2">
+                  <img src="./assets/img/bgImg.jpg" class="img" alt="">
+                  <div  class="asset-audio">
+                    <div class="player">
+                      <div class="audio">
+                        <button mat-icon-button (click)="speak(tempList[0].englishSentence)">
+                          <mat-icon>play_circle</mat-icon>
+                        </button>
+                        <mat-progress-bar value="0"
+                                          [mode]="isProgressBar?'indeterminate':'determinate'"></mat-progress-bar>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <span *ngFor="let word of getTempSentence(tempList[0].englishSentence)" class="options">
-               <span (click)="collect(word)" class="op">
-                 <span>{{word}}</span>
-               </span>
-             </span>
-
-
+            <div class="inputBox">
+              <mat-form-field class="example-form-field" appearance="outline">
+                <mat-label>Write ...</mat-label>
+                <input matInput [formControl]="formControlText" required>
+                <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="deleteValue()">
+                  <mat-icon>close</mat-icon>
+                </button>
+                <mat-error *ngIf="formControlText.errors?.['required']">Text is required</mat-error>
+                <mat-error *ngIf=" formControlText?.errors?.['matchSentence']">The entered value does not match the
+                  sentence
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="skipBtn1">
+              <button extended mat-fab color="warn" (click)="lossChallenge()">
+                I don't know
+                <mat-icon>mood_bad</mat-icon>
+              </button>
+            </div>
           </div>
 
         </div>
@@ -221,16 +245,7 @@
             </div>
             <div [class.hiden]="isFooterHide " class="answer-lesson">
               <div class="answer">
-                <div class="answer-text">
-                  <button  (click)="speak(this.tempList[0].englishWord)" mat-icon-button>
-                    <mat-icon color="primary">play_circle</mat-icon>
-                  </button>
-                  <div class="span-text">
-                    <span>{{this.tempList[0].englishWord}}</span>
-                    <span>{{this.tempList[0].ukrainianTranslation}}</span>
-                  </div>
 
-                </div>
                 <div class="answer-text">
                   <button (click)="speak(this.tempList[0].englishSentence)" mat-icon-button>
                     <mat-icon color="primary">play_circle</mat-icon>
@@ -240,7 +255,6 @@
                     <span (click)="isHideSpanInAnswer=!isHideSpanInAnswer">
                      <span *ngIf="isHideSpanInAnswer; else ans ">*********************</span>
                      <ng-template #ans>
-
                        {{this.tempList[0].ukrainianTranslationOfSentence}}</ng-template>
                     </span>
                   </div>

@@ -98,38 +98,49 @@
                     width: 100%;
                     height: 100%;
                   }
+                  .asset-audio {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
 
-                }
+                    .player {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      padding: 1rem;
 
-                .wrapper-text{
-                  padding: 1rem;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: stretch;
-                  gap: 0.5rem;
-                  background-color: #e8edf3;
-
-                  p{
-                    margin-top: 0;
-                    padding-top: 0;
-                    margin-bottom: 0;
-                    font-weight: 400;
-                    text-transform: none;
-                    font-size: 1.125rem;
-                    line-height: 1.5em;
-                    color: rgb(30, 45, 64);
-                    text-align: center;
-                  }
-                  &.hide {
-                    display: none;
+                      .audio {
+                        margin: 0.625rem 3.75rem;
+                        color: rgb(255, 255, 255);
+                        border-radius: 1.5rem;
+                        padding: 0 0.75rem;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+                        background-color: rgb(17, 110, 238) !important;
+                        display: flex;
+                        align-items: center;
+                        line-height: 1.7;
+                        max-width: 100%;
+                        min-width: 200px;
+                        position: relative;
+                        transition: box-shadow .3s ease;
+                        z-index: 0;
+                        .mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+                          background-color: rgba(239, 230, 239, 0.5);
+                        }
+                        .mat-mdc-progress-bar {
+                          --mdc-linear-progress-active-indicator-color: white;
+                        }
+                      }
+                    }
                   }
                 }
               }
             }
             .inputBox {
               width: 100%;
-              margin-bottom: 1.5rem;
+              margin-bottom: 2.5rem;
 
               mat-form-field {
                 width: 100%;

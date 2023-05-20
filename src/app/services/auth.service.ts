@@ -14,6 +14,7 @@ import {UserUidService} from "./user-uid.service";
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
   private token$: ReplaySubject<string> = new ReplaySubject<string>(1);
   private isAuth$: ReplaySubject<boolean> = new ReplaySubject<boolean>(1);

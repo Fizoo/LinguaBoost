@@ -1,9 +1,9 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import {AuthService} from 'src/app/services/auth.service';
-import {FirestoreService} from "../../services/firestore.service";
 import {Theme, TimeDay, Words} from "../../models/data";
-
-import {mainData} from "../../../assets/data/generalData";
+import {Router} from "@angular/router";
+import {Store} from "@ngrx/store";
+import {DataSelectors} from "../../store/data/selectors";
+import {take} from "rxjs";
 
 @Component({
   selector: 'app-sidebar',
@@ -12,39 +12,26 @@ import {mainData} from "../../../assets/data/generalData";
   encapsulation: ViewEncapsulation.None
 })
 export class SidebarComponent {
-  value: string = ''
-  themes: Theme[]
+  inputValue: string = ''
+  themes: Theme[]=[]
 
-  constructor(private authService: AuthService,
-              private firestore: FirestoreService) {
-    this.themes = mainData.data
+  constructor(private router: Router,
+              private store:Store) {
+    this.store.select(DataSelectors.getAllState) .pipe(take(1)).subscribe((data)=>{
+      this.themes=data
+    })
+  }
+
+  navigate(id: string) {
+    this.router.navigate(['/theme', id])
+  }
+
+  trackByFn(index: number, item: Theme) {
+    return item.id
   }
 
   sign() {
 
-  /*  let progress: Progress = {
-      id: 'id',
-      name: "OOO",
-      timeOfDay: [{
-        date: Date.now().toString(),
-        counter: 1
-      }],
-      countDays: 1,
-      tasksCompleted: 3
-    }*/
-
-
-   /* const updatedProgressMain = {
-      ...progress,
-      countDays: progress.countDays + 1,
-      timeOfDay: [
-        ...progress.timeOfDay,
-        {
-          date: new Date().toISOString(),
-          counter: progress.countDays + 1
-        }
-      ]
-    };*/
     let x: TimeDay = {
       date: new Date().toISOString(),
       counter: 1111
@@ -55,7 +42,7 @@ export class SidebarComponent {
     }
 
     let theme1: Words[] = [{
-      id:2,
+      id: 2,
       englishTranscription: "ˌæksəˈdɛntəli",
       englishWord: "1111111111111accidentally",
       englishSentence: "I accidentally spilled my coffee on my shirt.",
@@ -71,13 +58,13 @@ export class SidebarComponent {
         englishWord: "hello"
       }
     ).subscribe()*/
-   /* this.firestore.addThemeAddCol({
-      data:theme1,
-      name: "Oleg",
-      id:'1'
-    }).subscribe()*/
-   /* this.firestore.addTheme(mainData.data[0]
-    ).subscribe()*/
+    /* this.firestore.addThemeAddCol({
+       data:theme1,
+       name: "Oleg",
+       id:'1'
+     }).subscribe()*/
+    /* this.firestore.addTheme(mainData.data[0]
+     ).subscribe()*/
 
     /* this.firestore.updateProgressItem(updatedProgressMain).pipe(
          switchMap(()=> this.firestore.getProgressByIdAsync())
@@ -94,4 +81,6 @@ export class SidebarComponent {
         )
         .subscribe((el)=>console.log('update success',el))*/
   }
+
+
 }

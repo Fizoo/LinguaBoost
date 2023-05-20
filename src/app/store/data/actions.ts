@@ -9,7 +9,8 @@ export enum DataNames{
   AddNewTheme='[Data] addNewTheme',
   DeleteDataByTheme='[Data] deleteDataByTheme',
   UpdateDataByTheme='[Data] updateDataByTheme',
-  AddNewDataTheme='[Data] addNewDataTheme'
+  AddNewDataTheme='[Data] addNewDataTheme',
+  UpdateWord='[Data] updateWord'
 }
 
 export namespace DataActions{
@@ -22,5 +23,7 @@ export namespace DataActions{
   export const deleteDataByTheme=createAction(DataNames.DeleteDataByTheme,props<{id:string}>())
 
   export const updateDataByTheme=createAction(DataNames.UpdateDataByTheme,props<{word:Words}>())
+
+  export const updateWord=createAction(DataNames.UpdateWord,props<{wordArr:Words[]}>())
 
 }

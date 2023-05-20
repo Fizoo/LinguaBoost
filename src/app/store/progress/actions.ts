@@ -8,7 +8,7 @@ export enum ProgressNames{
   UpdateProgress='[Progress] UpdateProgress',
   AddCountDays='[Progress] AddCountDays',
   UpdateTaskCompleted='[Progress] UpdateTaskCompleted',
-  AddNewDay='[Progress] AddNewDay',
+  AddOrUpdateProgress='[Progress] AddOrUpdateProgress',
   UpdateScore='[Progress] UpdateScore'
 }
 
@@ -25,7 +25,7 @@ export namespace ProgressAction{
 
   export const UpdateTaskCompleted=createAction(ProgressNames.UpdateTaskCompleted,props<{ count:number }>())
 
-  export const addNewDay=createAction(ProgressNames.AddNewDay,props<{newDay:TimeDay}>())
+  export const addOrUpdateProgress=createAction(ProgressNames.AddOrUpdateProgress,props<{newDay:TimeDay}>())
 
   export const updateScore=createAction(ProgressNames.UpdateScore,props<{count:number}>())
 }

@@ -1,13 +1,16 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {DataService} from 'src/app/services/data.service';
-import {Data, Words} from "../../models/data";
-import {filter, map, Observable, switchMap, tap} from "rxjs";
-import {ActivatedRoute, Params} from '@angular/router';
+import {Words} from "../../models/data";
+import {map, switchMap, tap} from "rxjs";
+import {ActivatedRoute} from '@angular/router';
+import {Store} from "@ngrx/store";
+import {DataSelectors} from "../../store/data/selectors";
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.scss']
+  styleUrls: ['./content.component.scss'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 
 })
 export class ContentComponent implements OnInit {
@@ -15,21 +18,27 @@ export class ContentComponent implements OnInit {
   searchText: string = ''
 
   constructor(private dataService: DataService,
-              private route: ActivatedRoute
+              private route: ActivatedRoute,
+              private store:Store
   ) {}
 
   ngOnInit(): void {
     this.route.params.pipe(
-      tap(el => console.log('id=', el['id'])),
-      switchMap((params) => {
+     /* tap(el => console.log('id=', el['id'])),*/
+      /*switchMap((params) => {
         const id = params['id']
         return this.dataService.data$.pipe(
           map((themes) => {
             const theme = themes.data.find(t => t.id === id)
             return theme ? theme.data : []
           }))
-      })
-    ).subscribe((list) => this.list = list)
+      })*/
+      map(el=>el['id']),
+      tap(el => console.log(el)),
+      switchMap(id=>this.store.select(DataSelectors.getThemeById('1')).pipe(
+        tap(el=>console.log(el))
+      ))
+    ).subscribe((list) => this.list = list.data)
 
   }
 
@@ -40,6 +49,5 @@ export class ContentComponent implements OnInit {
 
   onSearch(searchText: string) {
     this.searchText = searchText
-
   }
 }

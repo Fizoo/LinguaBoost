@@ -181,4 +181,8 @@ export class LessonComponent implements OnInit {
     }
   }
 
+  private setValidators():void{
+    this.formControlValue.setValidators(myValidator(this.tempList[0].ukrainianTranslation))
+  }
+
 }

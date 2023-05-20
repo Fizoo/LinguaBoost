@@ -32,8 +32,36 @@ export const dataReducer = createReducer(
         ...state,
         data: state.data.map(theme => +theme.id === word.idTheme ? {
           ...theme,
-          data:[...theme.data,word]
+          data: [...theme.data, word]
         } : theme)
       })
-    })
+    }),
+
+  on(DataActions.updateWord,
+    (state, {wordArr}) => {
+
+      let findWords = state.data.find(({id}) => id === wordArr[0].idTheme.toString())?.data || []
+
+      const newData = findWords.map(obj1 => {
+        const obj2 = wordArr.find(({id}) => id === obj1.id)
+        if (obj2) {
+          return {
+            ...obj1,
+            level: obj2.level
+          }
+        }
+        return obj1
+      })
+
+      return {
+        ...state,
+        data: state.data.map(el => el.id === wordArr[0].idTheme.toString() ? {
+            ...el,
+            data: newData
+          }
+          : el)
+      }
+
+    }
+  )
 )

@@ -1,8 +1,8 @@
 <button
-        class="list "
-        [class.active]="isActive"
-        (click)="isActive=!isActive"
-        [routerLink]="['/theme',item.id]"
+        class="list"
+        (click)="change(item.id)"
+        [appProgress]="item.id"
+
 >
   <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
     <path

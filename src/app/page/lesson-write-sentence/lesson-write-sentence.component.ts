@@ -1,27 +1,22 @@
-import {ChangeDetectionStrategy, Component, HostListener, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {Words} from "../../models/data";
 import {FormControl} from "@angular/forms";
 import {myValidator} from "../../helper/my.validators";
-import {SpeakerService} from "../../services/speaker.service";
-import {ActivatedRoute, Router} from '@angular/router';
 import {map, Subject, switchMap, take, takeUntil, tap} from "rxjs";
+import {SpeakerService} from "../../services/speaker.service";
 import {Store} from "@ngrx/store";
+import {ActivatedRoute, Router} from "@angular/router";
 import {DataSelectors} from "../../store/data/selectors";
-import {DataActions} from "../../store/data/actions";
 import {ProgressAction} from "../../store/progress/actions";
 
 @Component({
-  selector: 'app-lesson-write-by-eng',
-  templateUrl: './lesson-write-by-eng.component.html',
-  styleUrls: ['./lesson-write-by-eng.component.scss'],
-  encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-lesson-write-sentence',
+  templateUrl: './lesson-write-sentence.component.html',
+  styleUrls: ['./lesson-write-sentence.component.scss']
 })
-export class LessonWriteByEngComponent implements OnInit, OnDestroy {
+export class LessonWriteSentenceComponent implements OnInit, OnDestroy{
 
   tempList: Words[] = []
-  updateList: Words[] = []
-
   score = 0
   isProgressBar = false
   isFooterHide = true
@@ -54,7 +49,8 @@ export class LessonWriteByEngComponent implements OnInit, OnDestroy {
       switchMap(id => this.store.select(DataSelectors.getRandomListWith20ById(id)).pipe(
         tap(data => {
           this.tempList = data
-          this.setValidators()
+          //console.log(this.countWordsByLevel(data))
+          this.formControlText.setValidators(myValidator(data[0].englishSentence))
         })
       )),
       take(1)
@@ -74,7 +70,7 @@ export class LessonWriteByEngComponent implements OnInit, OnDestroy {
     this.isFooterHide = false
     this.isWinChallenge = true
 
-    const word = this.tempList[0].englishWord
+    const word = this.tempList[0].englishSentence
     if (word === this.inputValue.trim()) {
       this.resultSwitch = 3
     } else {
@@ -112,28 +108,16 @@ export class LessonWriteByEngComponent implements OnInit, OnDestroy {
       switch (value) {
         case 1:
         case 2:
-          word = {
-            ...word,
-            level: word.level > 1 ? word.level - 1 : 1
-          }
-            this.score -= 1;
-
-
+          this.score -= 1;
           this.tempList.splice(randomInd, 0, word)
-          this.setValidators()
+          this.formControlText.setValidators(myValidator(this.tempList[0].englishSentence))
           break
 
         case 3:
-          word = {
-            ...word,
-            level: word.level < 3 ? word.level + 1 : 3}
-
-          this.updateList.push(word)
-          this.score+=2
+          this.score+=5
           this.isWin()
-
           if (this.tempList.length > 0) {
-            this.setValidators()
+            this.formControlText.setValidators(myValidator(this.tempList[0].englishSentence))
           }
           break
       }
@@ -167,21 +151,14 @@ export class LessonWriteByEngComponent implements OnInit, OnDestroy {
         date:new Date().toLocaleDateString(),
         counter:this.score
       }
-
-      this.store.dispatch(DataActions.updateWord({wordArr: this.updateList}))
+     // this.store.dispatch(DataActions.updateWord({wordArr: this.updateList}))
       this.store.dispatch(ProgressAction.addOrUpdateProgress({newDay}))
-
-      this.router.navigate(['theme/1/lessons/result'])
+      this.router.navigate(['theme/1/lesson/1/result/goal'])
     }
-  }
-
-  private setValidators():void{
-    this.formControlText.setValidators(myValidator(this.tempList[0].englishWord))
   }
 
   ngOnDestroy(): void {
     this.ngUnsubscribe$.next()
     this.ngUnsubscribe$.complete()
   }
-
 }

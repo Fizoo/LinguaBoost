@@ -1,0 +1,28 @@
+<div class="main">
+  <div class="search">
+    <input type="text" placeholder="Search..." [(ngModel)]="search" (keyup)="onSearch()">
+
+  </div>
+  <div class="tests">
+    <button (click)="writeEng('lesson')"
+            mat-raised-button
+            matTooltip="Audio and write English"
+            matTooltipPosition="above">Write
+    </button>
+    <button (click)="writeEng('translateEng')"
+            matTooltip="Translate word into Ukrainian"
+            matTooltipPosition="above"
+            mat-raised-button>TranslateToEng
+    </button>
+    <button (click)="writeEng('translateUa')"
+            matTooltip="Translate word into Ukrainian"
+            matTooltipPosition="above"
+            mat-raised-button >TranslateToUa
+    </button>
+    <button (click)="writeEng('collect')"
+            matTooltip="Collect sentence with your words"
+            matTooltipPosition="above"
+            mat-raised-button>Collect
+    </button>
+  </div>
+</div>
