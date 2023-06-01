@@ -1,0 +1,47 @@
+<div class="verbs-list">
+  <div class="contents">
+    <div class="content">
+
+      <button mat-icon-button (click)="speak(list.phrase)">
+        <mat-icon color="primary">play_circle</mat-icon>
+      </button>
+
+      <div class="box-text">
+        <div >
+          <span class="text">{{list.phrase}}</span>
+        </div>
+        <div >
+          <span class="text">{{list.translateToUA}}</span>
+        </div>
+      </div>
+      <!--<button  mat-icon-button color="warn">
+        <mat-icon>favorite</mat-icon>
+      </button>-->
+
+
+
+      <ng-container *ngIf="list.sentenceWithPhrase">
+        <button mat-icon-button (click)="speak(list.sentenceWithPhrase)">
+          <mat-icon color="primary">play_circle</mat-icon>
+        </button>
+        <div class="box-text">
+          <div>
+            <span class="text">{{list.sentenceWithPhrase}}</span>
+          </div>
+          <div>
+            <span class="text">{{list.translateSentenceToUA}}</span>
+          </div>
+        </div>
+        <button mat-icon-button color="warn">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </ng-container>
+
+
+    </div>
+  </div>
+</div>
+
+<ng-template></ng-template>
+<ng-container></ng-container>
+<ng-content></ng-content>

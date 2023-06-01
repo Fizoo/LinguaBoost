@@ -1,6 +1,6 @@
 import {createReducer, on} from "@ngrx/store";
-import {Progress} from "src/app/models/data";
 import {ProgressAction} from "./actions";
+import {Progress} from "../../models/progress";
 
 
 const initialState: Progress = {

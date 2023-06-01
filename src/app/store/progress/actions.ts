@@ -1,5 +1,5 @@
 import {createAction, props} from "@ngrx/store";
-import {Progress, TimeDay} from "../../models/data";
+import {Progress, TimeDay} from "../../models/progress";
 
 export enum ProgressNames{
   Initial='[Progress] Initial',

@@ -1,0 +1,18 @@
+.side-box{
+  background: white;
+  border-radius: 1rem;
+  overflow-y: auto;
+  margin-top: 1rem;
+  min-height: 90vh;
+
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch ;
+    width: 100%;
+    padding: 1rem;
+    gap: 2px;
+    height: 100%;
+  }
+}

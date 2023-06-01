@@ -1,4 +1,4 @@
-import {NgModule, Provider, isDevMode} from '@angular/core';
+import {isDevMode, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -29,25 +29,34 @@ import {getAuth, provideAuth} from '@angular/fire/auth';
 import {getDatabase, provideDatabase} from '@angular/fire/database';
 import {AngularFireModule} from "@angular/fire/compat";
 
-import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
-import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './store';
-import { EffectsModule } from '@ngrx/effects';
-import { AppEffects } from './app.effects';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { FilterThemePipe } from './pipes/filter-theme.pipe';
-import { LessonComponent } from './page/lesson/lesson.component';
+import {HttpClientModule} from "@angular/common/http";
+import {StoreModule} from '@ngrx/store';
+import {metaReducers, reducers} from './store';
+import {EffectsModule} from '@ngrx/effects';
+import {AppEffects} from './app.effects';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+import {FilterThemePipe} from './pipes/filter-theme.pipe';
+import {LessonComponent} from './page/lesson/lesson.component';
 import {MatProgressBarModule} from "@angular/material/progress-bar";
-import { Lesson2Component } from './page/lesson2/lesson2.component';
-import { Lesson3Component } from './page/lesson3/lesson3.component';
-import { LessonCollectComponent } from './page/lesson-collect/lesson-collect.component';
-import { LessonTranslateToUaComponent } from './page/lesson-translate-to-ua/lesson-translate-to-ua.component';
-import { LessonWriteByEngComponent } from './page/lesson-write-by-eng/lesson-write-by-eng.component';
-import { LessonTranslateToEngComponent } from './page/lesson-translate-to-eng/lesson-translate-to-eng.component';
-import { LessonWriteSentenceComponent } from './page/lesson-write-sentence/lesson-write-sentence.component';
-import { ProgressDirective } from './directives/progress.directive';
-
-
+import {Lesson2Component} from './page/lesson2/lesson2.component';
+import {Lesson3Component} from './page/lesson3/lesson3.component';
+import {LessonCollectComponent} from './page/lesson-collect/lesson-collect.component';
+import {LessonTranslateToUaComponent} from './page/lesson-translate-to-ua/lesson-translate-to-ua.component';
+import {LessonWriteByEngComponent} from './page/lesson-write-by-eng/lesson-write-by-eng.component';
+import {LessonTranslateToEngComponent} from './page/lesson-translate-to-eng/lesson-translate-to-eng.component';
+import {LessonWriteSentenceComponent} from './page/lesson-write-sentence/lesson-write-sentence.component';
+import {ProgressDirective} from './directives/progress.directive';
+import {MenuComponent} from './components/header/menu/menu.component';
+import {VerbsComponent} from './components/phrases/verbs/verbs.component';
+import {VerbListComponent} from './components/phrases/verbs/verb-list/verb-list.component';
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {TrainerComponent} from './page/trainer/trainer.component';
+import {PhrasesComponent} from './components/phrases/phrases.component';
+import {SidebarPhraseComponent} from './components/phrases/sidebar-phrase/sidebar-phrase.component';
+import {
+  PhraseListSidebarComponent
+} from './components/phrases/sidebar-phrase/phrase-list-sidebar/phrase-list-sidebar.component';
+import {FilterPhrasesPipe} from './pipes/filter-phrases.pipe';
 
 
 @NgModule({
@@ -73,34 +82,43 @@ import { ProgressDirective } from './directives/progress.directive';
     LessonWriteByEngComponent,
     LessonTranslateToEngComponent,
     LessonWriteSentenceComponent,
-    ProgressDirective
+    ProgressDirective,
+    MenuComponent,
+    VerbsComponent,
+    VerbListComponent,
+    TrainerComponent,
+    PhrasesComponent,
+    SidebarPhraseComponent,
+    PhraseListSidebarComponent,
+    FilterPhrasesPipe
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTooltipModule,
-    MatToolbarModule,
-    MatInputModule,
-    FormsModule,
-    MatListModule,
-    MatMenuModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase()),
-    AngularFireModule.initializeApp(environment.firebase),
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatButtonModule,
+        MatTooltipModule,
+        MatToolbarModule,
+        MatInputModule,
+        FormsModule,
+        MatListModule,
+        MatMenuModule,
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideAuth(() => getAuth()),
+        provideDatabase(() => getDatabase()),
+        AngularFireModule.initializeApp(environment.firebase),
 
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
-    EffectsModule.forRoot([AppEffects]),
-    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
-    MatProgressBarModule,
-    ReactiveFormsModule,
-  ],
+        StoreModule.forRoot(reducers, {
+            metaReducers
+        }),
+        EffectsModule.forRoot([AppEffects]),
+        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
+        MatProgressBarModule,
+        ReactiveFormsModule,
+        MatButtonToggleModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

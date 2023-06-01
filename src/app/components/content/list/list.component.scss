@@ -9,10 +9,9 @@
     padding: 0 0.5rem;
   }
 
-
   .word {
     display: grid;
-    grid-template-columns: minmax(60px, 100px)  repeat(3, 1fr) 100px 50px;
+    grid-template-columns: minmax(60px, 100px)  repeat(2, 1fr) 30px 30px;
     align-items: center;
     justify-content: flex-start;
     padding: 0.5rem;
@@ -73,7 +72,8 @@
     background: v.$bg-main;
     padding: 0 5rem 0.5rem 5rem;
     @include m.mobile {
-      padding: 0 0.3rem 0.2rem 0.3rem;
+      //padding: 0 0.3rem 0.3rem 0.3rem;
+      padding-left: 1rem;
     }
 
     .example {
@@ -113,14 +113,28 @@
       h3 {
         margin: 0;
       }
+      .btn{
+        display: flex;
+        gap: 1rem;
+        button{
+          max-width: 100%;
+        }
+      }
+
 
       @include m.mobile {
         border-top: 1px solid #dedada;
+        flex-wrap: wrap;
         flex-direction: column;
         gap: 3px;
         align-items: flex-start;
         h3 {
           margin: 0;
+        }
+        .btn{
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 100%;
         }
       }
 

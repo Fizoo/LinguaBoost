@@ -1,4 +1,6 @@
-.main{
+@use '../../../../scss/mixins' as m;
+
+.filter-box{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,9 +11,41 @@
     display: flex;
     border-bottom: 1px solid #d9ebf1;
     padding: 5px;
+    max-width: 100%;
   }
   .tests{
     display: flex;
-    gap: 2rem ;
+    gap: .5rem ;
+    max-width: 100%;
+    button{
+      max-width: 100%;
+    }
+  }
+  @include m.tablet{
+    .tests{
+      gap: 1rem;
+    }
+
+  }
+
+  @include m.mobile{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem;
+
+    .search{
+
+    }
+
+    .tests{
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      //flex-direction: column;
+      max-width: 100%;
+      gap: .5rem;
+    }
   }
 }

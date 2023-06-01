@@ -1,14 +1,14 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject, catchError, from, map, Observable, ReplaySubject, switchMap, tap} from "rxjs";
+import {BehaviorSubject, from, map, Observable, ReplaySubject, switchMap, tap} from "rxjs";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
 import firebase from "firebase/compat";
 import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 import {FirestoreService} from "./firestore.service";
 import {User} from "../admin/model/auth";
-import {Progress} from "../models/data";
 import {DatePipe} from "@angular/common";
 import {UserUidService} from "./user-uid.service";
+import {Progress} from "../models/progress";
 
 
 @Injectable({

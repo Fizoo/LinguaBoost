@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection, DocumentReference} from "@angular/fire/compat/firestore";
-import {Progress} from "../models/data";
 import {from, map, Observable, switchMap} from "rxjs";
+import {Progress} from "../models/progress";
 
 interface Data {
   name:string

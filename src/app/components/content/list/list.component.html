@@ -18,10 +18,10 @@
       <ng-template #trans>{{item.ukrainianTranslation}}</ng-template>
     </div>
 
-    <div class="translation" (click)="isTranscript=!isTranscript">
+  <!--  <div class="translation" (click)="isTranscript=!isTranscript">
       <span *ngIf="isTranscript ;else transcript">***</span>
       <ng-template #transcript>{{item.englishTranscription}}</ng-template>
-    </div>
+    </div>-->
 
     <div [ngSwitch]="item.level">
       <ng-template ngSwitchCase="1">
@@ -49,14 +49,12 @@
 
 
 
-
-
     </div>
 
     <div class="action">
       <div>
         <button mat-icon-button color="warn" >
-          <mat-icon>delete</mat-icon>
+          <mat-icon>favorite</mat-icon>
         </button>
       </div>
     </div>
@@ -85,10 +83,12 @@
     </div>
     <div class="synonyms">
       <h3> Synonyms:</h3>
+        <div class="btn">
+          <button mat-raised-button *ngFor="let syn of item.synonyms; index as i ">
+            <span (click)="speak(item.synonyms[i])">{{syn }}</span>
+          </button>
+        </div>
 
-      <button mat-raised-button *ngFor="let syn of item.synonyms; index as i ">
-        <span (click)="speak(item.synonyms[i])">{{syn }}</span>
-      </button>
       <!-- <span class="synonyms__item" *ngFor="let syn of item.synonyms ">{{syn }}</span>-->
     </div>
 

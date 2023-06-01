@@ -1,0 +1,45 @@
+@use '../../../../../scss/mixins' as m;
+@use '../../../../../scss/variables' as v;
+
+.verbs-list{
+
+  border-bottom: 1px solid #dedbdb;
+  padding: .5rem;
+  &:hover{
+    background: v.$bg-main;
+  }
+
+  .contents{
+    margin: 0 auto;
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+
+
+    .content{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      align-items: center;
+      gap: 1rem;
+      padding: 5px;
+
+
+      .box-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        @include m.mobile{
+          flex-direction: column;
+        }
+          .text{
+            font-size: 1rem;
+
+            //font-weight: 700;
+          }
+
+
+      }
+    }
+
+  }
+}

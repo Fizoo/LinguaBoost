@@ -1,32 +1,44 @@
 @use './../../../scss/mixins' as m;
+@use './../../../scss/variables' as v;
 .sidebar {
-  display: flex;
-  flex-direction: column;
+
  // align-items: center;
-  gap: 2px;
+
   position: fixed;
   left: 0;
   height: 100%;
   max-width: 18rem;
-  padding: 1rem;
+
   z-index: 99;
   background: white;
   border-radius: 1rem;
   overflow-y: auto;
   @include m.tablet{
-    width: 10rem;
+    width: 12rem;
     //margin-left: 1rem;
   }
   @include m.mobile{
     display: none;
   }
-  h3{
-    margin: 0 auto;
-  }
 
- .search{
-   width: 100%;
- }
+
+
+  .cont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 2px;
+
+
+    h3{
+      margin: 0 auto;
+    }
+
+    .search{
+      width: 100%;
+    }
+  }
 }
 //bg input
 .mdc-text-field--filled:not(.mdc-text-field--disabled) {

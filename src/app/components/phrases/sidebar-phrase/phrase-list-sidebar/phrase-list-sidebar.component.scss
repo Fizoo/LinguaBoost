@@ -1,0 +1,45 @@
+
+.list {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left:2rem;
+  padding-bottom:  .5rem;
+  padding-top:  .5rem;
+  // max-width: 17.25rem;
+  width: 100%;
+  min-height: 2.8rem;
+  height: fit-content;
+  word-break: break-word;
+  margin-bottom: .2rem;
+  position: relative;
+  //background: white;
+  transition: all .3s ease;
+  color: inherit;
+  z-index: 0;
+  //margin: .2rem auto;
+  //border: 1px solid #eae9e9;
+  border-radius: 2px;
+  background: #f6f6f6;
+  opacity: 0.8;
+
+
+  &:hover{
+    margin-left: 5%;
+    opacity: 1;
+    cursor: pointer;
+  }
+  & > svg {
+    margin-right: 1rem;
+    min-width: 1rem;
+  }
+
+  &.active-link{
+    background: #e8fdff;
+    margin-left: 5%;
+    opacity: 1;
+  }
+
+}

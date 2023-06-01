@@ -64,6 +64,16 @@ export namespace DataSelectors {
      }
    )
 
-
+  ////phrases
+  export const getAllDataOfPhrases=createSelector(
+    getDataState,
+    state=>state.phrases
+  )
+  export const getPhrasesById=(id:number)=>createSelector(
+    getAllDataOfPhrases,
+    state=> {
+    return   state.filter(el => el.id === id)[0]
+    }
+  )
 
 }

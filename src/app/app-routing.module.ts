@@ -1,16 +1,17 @@
 import {NgModule} from '@angular/core';
-import {PreloadAllModules, Router, RouterModule, Routes} from '@angular/router';
+import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './components/main/main.component';
 import {HomePageComponent} from "./components/home-page/home-page.component";
 import {ContentComponent} from "./components/content/content.component";
 import {AuthGuard} from "./admin/auth.guard";
-import {LessonComponent} from "./page/lesson/lesson.component";
 import {Lesson2Component} from "./page/lesson2/lesson2.component";
 import {Lesson3Component} from "./page/lesson3/lesson3.component";
 import {LessonWriteByEngComponent} from "./page/lesson-write-by-eng/lesson-write-by-eng.component";
 import {LessonTranslateToEngComponent} from "./page/lesson-translate-to-eng/lesson-translate-to-eng.component";
 import {LessonTranslateToUaComponent} from "./page/lesson-translate-to-ua/lesson-translate-to-ua.component";
 import {LessonCollectComponent} from "./page/lesson-collect/lesson-collect.component";
+import {TrainerComponent} from "./page/trainer/trainer.component";
+import {PhrasesComponent} from "./components/phrases/phrases.component";
 
 const routes: Routes = [
   {path: '',component:MainComponent,canActivate:[AuthGuard],
@@ -18,8 +19,10 @@ const routes: Routes = [
       {path: '', pathMatch: 'full', redirectTo: 'home'},
       {path: 'home', component: HomePageComponent},
       {path: 'theme/:id', component: ContentComponent},
+      {path:'phrases/:id',component:PhrasesComponent},
      /* { path: '**', redirectTo: 'home' }*/
     ]},
+  {path:'theme/:id/trainer/:id',component:TrainerComponent},
   {path:'theme/:id/lesson/:id',component:LessonWriteByEngComponent},
   {path:'theme/:id/translateEng/:id',component:LessonTranslateToEngComponent},
   {path:'theme/:id/translateUa/:id',component:LessonTranslateToUaComponent},

@@ -1,10 +1,11 @@
-import {Main, Theme} from "../../app/models/data";
+import {Main, TopicPhrases} from "../../app/models/data";
 import {wordGeneral} from "./general";
 import {wordJobs} from "./job";
-import { verbs } from "./verbs";
+import {verbs} from "./verbs";
 import {office} from "./office";
 import {feelings} from "./feelings";
-
+import {popularPhrases} from "./phrases/phrases";
+import {top_Upper_Intermediate_Phrases} from "./phrases/topUpperIntermediatePhrases";
 
 
 export const mainData:Main={
@@ -35,4 +36,19 @@ export const mainData:Main={
       data:feelings
     }
   ]
+
 }
+
+export const objPhrases:TopicPhrases[]=[
+    {
+      id:1,
+      topic:'Popular',
+      data:popularPhrases
+    } ,
+  {
+      id:10,
+    topic:'Top Upper-Intermediate',
+      data:top_Upper_Intermediate_Phrases
+    }
+
+]

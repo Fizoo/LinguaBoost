@@ -1,0 +1,35 @@
+<main class="verbs">
+  <div class="main">
+    <div class="box">
+      <div class="filter">
+
+        <div class="search">
+          <input type="text" placeholder="Search..." [(ngModel)]="search" >
+        </div>
+
+        <div class="btn">
+          <mat-button-toggle-group [formControl]="formSort" >
+            <mat-button-toggle value="up">
+              <mat-icon>arrow_upward</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="down">
+              <mat-icon>arrow_downward</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="random">
+              <mat-icon>shuffle</mat-icon>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+
+      </div>
+      <div class="content">
+        <app-verb-list
+          *ngFor="let item of phraseObj.data | filterPhrases :search ; trackBy: trackByFn "
+          [list]="item"
+          (speakFn)="speak($event)"
+        ></app-verb-list>
+      </div>
+
+    </div>
+  </div>
+</main>

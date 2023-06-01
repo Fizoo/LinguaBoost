@@ -1,0 +1,77 @@
+<div class="trainer">
+  <div class="container">
+    <div class="content">
+
+      <button mat-icon-button (click)="speak(item.englishWord)">
+        <mat-icon color="primary">play_circle</mat-icon>
+      </button>
+
+      <div class="box">
+        <span class="text">{{item.englishWord }}</span>
+      </div>
+
+      <div class="box box-curs" (click)="isTranslateWord=!isTranslateWord">
+        <span *ngIf="isTranslateWord ; else noWord"  class="text" >{{item.ukrainianTranslation}}</span>
+        <ng-template  #noWord>
+          <span class="text">*******</span>
+        </ng-template>
+
+      </div>
+
+
+      <button mat-icon-button (click)="speak(item.englishSentence)">
+        <mat-icon color="primary">play_circle</mat-icon>
+      </button>
+
+      <div class="box">
+          <span class="text">
+               {{item.englishSentence}}
+          </span>
+
+
+      </div>
+
+      <div class="box box-curs" (click)="isSentence=!isSentence">
+          <span *ngIf="isSentence; else noSentence"   class="text">
+             {{item.ukrainianTranslationOfSentence}}
+          </span>
+        <ng-template  #noSentence>
+          <span  class="text">*******</span>
+        </ng-template>
+
+      </div>
+      <button mat-icon-button color="accent">
+        <mat-icon>groups</mat-icon>
+      </button>
+
+      <div class="box-syn">
+        <span  *ngFor="let el of item.synonyms"
+          (click)="speak(el)"
+          class="syn">
+         {{el}}
+        </span>
+
+
+      </div>
+
+      <div  class="box">
+        <span class="trans">
+        {{item.englishTranscription}}
+        </span>
+      </div>
+
+
+    </div>
+
+      <div class="next">
+        <button class="next" mat-raised-button color="primary" (click)="nextTo()">Next</button>
+      </div>
+
+  </div>
+
+  <div class="close">
+    <button mat-icon-button routerLink="/">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</div>

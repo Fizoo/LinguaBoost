@@ -30,23 +30,24 @@ export interface Words{
   synonyms: string[];
   level:number
   idTheme:number
+  isFavorite?:boolean
 }
 
-export interface Progress {
-  id:string
-  name:string
-  timeOfDay:TimeDay[]
-  countDays:number
-  tasksCompleted:number
-  score:number
+export interface TopicPhrases{
+  id:number
+  topic:string
+  data:Phrase[]
+
 }
 
-export interface TimeDay{
-  date:string
-  counter:number
-}
-export interface AllTime{
-  firstDay:number
-  lastDay:number
+export interface Phrase {
+  id:number
+  phrase:string
+  translateToUA:string
+  isFavorite?:boolean
+  sentenceWithPhrase?:string
+  translateSentenceToUA?:string
+  idPhrase: number,
+
 }
 

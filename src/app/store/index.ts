@@ -1,8 +1,8 @@
 import {isDevMode} from '@angular/core';
 import {ActionReducerMap, MetaReducer} from '@ngrx/store';
-import {Progress} from "../models/data";
 import {progressReducer} from "./progress/progress-reducer";
 import {dataReducer, IData} from "./data/data-reducer";
+import {Progress} from "../models/progress";
 
 export interface State {
   progress:Progress

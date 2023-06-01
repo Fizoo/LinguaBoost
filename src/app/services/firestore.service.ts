@@ -6,16 +6,13 @@ import {
   DocumentReference
 } from "@angular/fire/compat/firestore";
 import {first, from, map, Observable} from "rxjs";
-import {Progress, Theme, TimeDay, Words} from "../models/data";
+import {Theme, Words} from "../models/data";
 import {User} from "../admin/model/auth";
 import {UserUidService} from "./user-uid.service";
 //import * as firebase from 'firebase/compat';
 //import firebase from "firebase/compat";
 import firebase from 'firebase/compat/app';
-
-
-
-
+import {Progress} from "../models/progress";
 
 
 @Injectable({

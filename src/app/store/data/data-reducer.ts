@@ -1,14 +1,16 @@
 import {createReducer, on} from "@ngrx/store";
-import {Theme} from "../../models/data";
+import {Theme, TopicPhrases} from "../../models/data";
 import {DataActions} from "./actions";
-import {mainData} from "../../../assets/data/generalData";
+import {mainData, objPhrases} from "../../../assets/data/generalData";
 
 export interface IData {
   data: Theme[]
+  phrases:TopicPhrases[]
 }
 
 const initialState: IData = {
-  data: mainData.data
+  data: mainData.data,
+  phrases:objPhrases
 }
 
 export const dataReducer = createReducer(

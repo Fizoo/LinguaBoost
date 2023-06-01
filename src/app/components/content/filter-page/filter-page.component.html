@@ -1,9 +1,47 @@
-<div class="main">
+<div class="filter-box">
   <div class="search">
     <input type="text" placeholder="Search..." [(ngModel)]="search" (keyup)="onSearch()">
+  </div>
+
+  <div class="sort">
+    <mat-button-toggle-group (change)="onSort($event.value)" name="btn">
+      <mat-button-toggle
+        value="1"
+        matTooltip="A-Z">
+        <mat-icon>arrow_upward</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle
+        value="2"
+        matTooltip="Z-A">
+        <mat-icon>arrow_downward</mat-icon>
+      </mat-button-toggle>
+
+      <mat-button-toggle
+        value="3"
+        matTooltip="Progress up">
+        <mat-icon>trending_up</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle
+        value="4"
+        matTooltip="Progress down">
+        <mat-icon>trending_down</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle
+        value="5"
+        matTooltip="Random">
+        <mat-icon>shuffle</mat-icon>
+      </mat-button-toggle>
+
+    </mat-button-toggle-group>
 
   </div>
+
   <div class="tests">
+    <button (click)="writeEng('trainer')"
+            mat-raised-button
+            matTooltip="Training"
+            matTooltipPosition="above">Training
+    </button>
     <button (click)="writeEng('lesson')"
             mat-raised-button
             matTooltip="Audio and write English"
@@ -12,12 +50,12 @@
     <button (click)="writeEng('translateEng')"
             matTooltip="Translate word into Ukrainian"
             matTooltipPosition="above"
-            mat-raised-button>TranslateToEng
+            mat-raised-button>ToEng
     </button>
     <button (click)="writeEng('translateUa')"
             matTooltip="Translate word into Ukrainian"
             matTooltipPosition="above"
-            mat-raised-button >TranslateToUa
+            mat-raised-button>ToUa
     </button>
     <button (click)="writeEng('collect')"
             matTooltip="Collect sentence with your words"
