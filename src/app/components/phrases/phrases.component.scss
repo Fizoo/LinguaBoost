@@ -2,12 +2,10 @@
 
 .phrase-container{
 
-
   .box{
     display: grid;
     grid-template-columns: minmax(5rem,18rem) 1fr;
     grid-template-rows: 1fr;
-
     margin: 1rem;
   }
 }

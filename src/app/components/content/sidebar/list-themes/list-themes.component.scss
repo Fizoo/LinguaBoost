@@ -16,23 +16,17 @@
   word-break: break-word;
   margin-bottom: .2rem;
   position: relative;
-  //background: white;
+
   transition: all .3s ease;
   color: inherit;
   z-index: 0;
-  //margin: .2rem auto;
-  //border: 1px solid #eae9e9;
   border-radius: 2px;
   background: #f6f6f6;
   opacity: 0.8;
-  //transition: all 1s ease;
 
   &:hover{
     margin-left: 5%;
-    //transform: scale(1.05);
-
     opacity: 1;
-   // background: #d3f3f0 !important;
     cursor: pointer;
   }
   & > svg {

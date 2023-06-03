@@ -10,9 +10,6 @@ export class SidebarPhraseComponent {
   @Input() listPhrase: TopicPhrases[]|null
   inputValue=''
 
-  // TODO: create pipe dor search
-
-
   trackByFn(index: number, item: TopicPhrases) {
       return item.id
     }

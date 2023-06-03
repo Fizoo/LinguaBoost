@@ -1,6 +1,6 @@
 <div class="side-box">
   <div class="content">
-    <h3>ALL Phrases is 5</h3>
+    <h3>All Phrases is {{listPhrase?.length}}</h3>
     <mat-form-field class="search">
       <mat-label>Choose theme...</mat-label>
       <input matInput type="text" [(ngModel)]="inputValue">
@@ -9,12 +9,10 @@
       </button>
     </mat-form-field>
 
-
       <app-phrase-list-sidebar
-        *ngFor="let item of listPhrase ;  trackBy: trackByFn "
+        *ngFor="let item of listPhrase | filterAll:inputValue:'phrases';  trackBy: trackByFn "
         [list]="item"
       ></app-phrase-list-sidebar>
-
 
   </div>
 </div>

@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
-import {Theme} from "../../../models/data";
+import {Theme} from "../../../../models/data";
 
 @Component({
   selector: 'app-list-themes',

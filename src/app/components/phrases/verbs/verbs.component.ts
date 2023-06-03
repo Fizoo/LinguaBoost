@@ -55,7 +55,8 @@ export class VerbsComponent implements OnInit,OnDestroy{
 
   sortFn(value:string):Phrase[]{
     let tempList=[...this.phraseObj.data]
-    console.log(value)
+    let filteredData = tempList.filter((el) => el.isFavorite);
+
     switch (value){
       case 'up':
         tempList.sort((a,b)=>a.phrase.localeCompare(b.phrase))
@@ -67,7 +68,10 @@ export class VerbsComponent implements OnInit,OnDestroy{
         tempList.sort(()=>Math.random()-0.5)
         break
       case 'favorite':
-        tempList.filter((el)=>el.isFavorite)
+        return filteredData;
+        console.log('temp',tempList)
+        console.log('origin',tempList)
+        console.log('phrase',this.phraseObj.data)
         break
       default : break
     }

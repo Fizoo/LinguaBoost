@@ -4,7 +4,8 @@ export const popularPhrases:Phrase[] = [{idPhrase: 1, phrase: "Bless you", id: 0
   id: 1,
   phrase: "Can I have a glass of water?",
   translateToUA: "Можна мені склянку води?",
-  idPhrase: 1
+  idPhrase: 1,
+
 }, {
   id: 2,
   phrase: "Can you explain that to me?",

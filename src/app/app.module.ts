@@ -7,7 +7,7 @@ import {HeaderComponent} from './components/header/header.component';
 import {ContentComponent} from './components/content/content.component';
 import {MainComponent} from './components/main/main.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
-import {SidebarComponent} from './components/sidebar/sidebar.component';
+import {SidebarComponent} from './components/content/sidebar/sidebar.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
@@ -19,8 +19,7 @@ import {MatInputModule} from "@angular/material/input";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatListModule} from "@angular/material/list";
 import {MatMenuModule} from "@angular/material/menu";
-import {ListThemesComponent} from './components/sidebar/list-themes/list-themes.component';
-import {TestComponent} from './components/test/test.component';
+import {ListThemesComponent} from './components/content/sidebar/list-themes/list-themes.component';
 import {FilterPageComponent} from './components/content/filter-page/filter-page.component';
 import {FilterPipe} from './pipes/filter.pipe';
 import {initializeApp, provideFirebaseApp} from '@angular/fire/app';
@@ -57,6 +56,7 @@ import {
   PhraseListSidebarComponent
 } from './components/phrases/sidebar-phrase/phrase-list-sidebar/phrase-list-sidebar.component';
 import {FilterPhrasesPipe} from './pipes/filter-phrases.pipe';
+import { FilterAllPipe } from './pipes/filter-all.pipe';
 
 
 @NgModule({
@@ -70,7 +70,6 @@ import {FilterPhrasesPipe} from './pipes/filter-phrases.pipe';
     StatistComponent,
     ListComponent,
     ListThemesComponent,
-    TestComponent,
     FilterPageComponent,
     FilterPipe,
     FilterThemePipe,
@@ -90,7 +89,8 @@ import {FilterPhrasesPipe} from './pipes/filter-phrases.pipe';
     PhrasesComponent,
     SidebarPhraseComponent,
     PhraseListSidebarComponent,
-    FilterPhrasesPipe
+    FilterPhrasesPipe,
+    FilterAllPipe
   ],
     imports: [
         BrowserModule,

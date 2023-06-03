@@ -1,12 +1,13 @@
 @use './../../../scss/mixins' as m;
 
 .content{
-  margin: 0 auto;
-  max-width: 1000px;
-
+  display: grid;
+  grid-template-columns: minmax(5rem,18rem) 1fr;
+  grid-template-rows: 1fr;
+  margin: 1rem;
 
   .box{
-    max-width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin:  1rem;

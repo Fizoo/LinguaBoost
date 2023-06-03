@@ -1,27 +1,11 @@
-@use './../../../scss/mixins' as m;
-@use './../../../scss/variables' as v;
+@use '../../../../scss/mixins' as m;
+@use '../../../../scss/variables' as v;
 .sidebar {
-
- // align-items: center;
-
-  position: fixed;
-  left: 0;
-  height: 100%;
-  max-width: 18rem;
-
-  z-index: 99;
+  min-height: 100vh;
+  margin-top: 1rem;
   background: white;
   border-radius: 1rem;
   overflow-y: auto;
-  @include m.tablet{
-    width: 12rem;
-    //margin-left: 1rem;
-  }
-  @include m.mobile{
-    display: none;
-  }
-
-
 
   .cont{
     display: flex;
@@ -29,7 +13,6 @@
     width: 100%;
     padding: 1rem;
     gap: 2px;
-
 
     h3{
       margin: 0 auto;

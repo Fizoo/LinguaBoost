@@ -1,10 +1,10 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import {Theme, Words} from "../../models/data";
+import {Theme, Words} from "../../../models/data";
 import {Router} from "@angular/router";
 import {Store} from "@ngrx/store";
-import {DataSelectors} from "../../store/data/selectors";
+import {DataSelectors} from "../../../store/data/selectors";
 import {take} from "rxjs";
-import {TimeDay} from "../../models/progress";
+import {TimeDay} from "../../../models/progress";
 
 @Component({
   selector: 'app-sidebar',
