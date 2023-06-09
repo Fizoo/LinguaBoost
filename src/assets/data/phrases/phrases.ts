@@ -1,6 +1,7 @@
 import { Phrase } from "src/app/models/data";
 
-export const popularPhrases:Phrase[] = [{idPhrase: 1, phrase: "Bless you", id: 0, translateToUA: "Будьте благословені"}, {
+export const popularPhrases:Phrase[] = [
+  {idPhrase: 1, phrase: "Bless you", id: 0, translateToUA: "Будьте благословені"}, {
   id: 1,
   phrase: "Can I have a glass of water?",
   translateToUA: "Можна мені склянку води?",

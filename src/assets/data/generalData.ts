@@ -6,6 +6,8 @@ import {office} from "./office";
 import {feelings} from "./feelings";
 import {popularPhrases} from "./phrases/phrases";
 import {top_Upper_Intermediate_Phrases} from "./phrases/topUpperIntermediatePhrases";
+import {shortGlobalPhrases} from "./phrases/shortGlobalPhrases";
+import {getPhrases} from "./phrases/get";
 
 
 export const mainData:Main={
@@ -46,9 +48,20 @@ export const objPhrases:TopicPhrases[]=[
       data:popularPhrases
     } ,
   {
+    id:8,
+    topic:'Get',
+    data:getPhrases
+  },
+  {
+    id:9,
+    topic:'Short global',
+    data:shortGlobalPhrases
+  },
+  {
       id:10,
     topic:'Top Upper-Intermediate',
       data:top_Upper_Intermediate_Phrases
-    }
+    },
+
 
 ]
