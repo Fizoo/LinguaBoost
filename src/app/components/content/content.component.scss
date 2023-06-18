@@ -2,7 +2,7 @@
 
 .content{
   display: grid;
-  grid-template-columns: minmax(5rem,18rem) 1fr;
+  grid-template-columns: minmax(12rem,18rem) 5fr;
   grid-template-rows: 1fr;
   margin: 1rem;
 
@@ -13,5 +13,10 @@
     margin:  1rem;
     background: white;
     border-radius: 1rem;
+
+
+  }
+  @include m.mobile{
+    grid-template-columns: 1fr;
   }
 }

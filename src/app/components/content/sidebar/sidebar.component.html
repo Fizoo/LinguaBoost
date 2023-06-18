@@ -12,7 +12,6 @@
     <app-list-themes
       *ngFor="let item of themes | filterTheme : inputValue ; trackBy: trackByFn "
       [item]="item"
-      (navigate)="navigate($event)"
     ></app-list-themes>
   </div>
 

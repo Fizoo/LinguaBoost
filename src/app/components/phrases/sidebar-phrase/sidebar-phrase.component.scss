@@ -1,3 +1,5 @@
+@use '../../../../scss/mixins' as m;
+
 .side-box{
   background: white;
   border-radius: 1rem;
@@ -17,5 +19,12 @@
     h3{
       text-align: center;
     }
+  }
+
+  //Responsibility
+
+
+  @include m.mobile{
+    display: none;
   }
 }

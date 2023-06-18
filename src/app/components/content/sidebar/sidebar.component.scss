@@ -22,6 +22,10 @@
       width: 100%;
     }
   }
+
+  @include m.mobile{
+    display: none;
+  }
 }
 //bg input
 .mdc-text-field--filled:not(.mdc-text-field--disabled) {

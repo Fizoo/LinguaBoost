@@ -1,9 +1,25 @@
 <div class="filter-box">
+
   <div class="search">
+    <button class="menu" mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu  #menu="matMenu">
+      <button
+        *ngFor="let el of list$ | async as list "
+        [routerLink]="['/theme',el.id]"
+        mat-menu-item>
+        {{el.name}}
+      </button>
+    </mat-menu>
+
     <input type="text" placeholder="Search..." [(ngModel)]="search" (keyup)="onSearch()">
   </div>
 
   <div class="sort">
+
+
     <mat-button-toggle-group (change)="onSort($event.value)" name="btn">
       <mat-button-toggle
         value="1"

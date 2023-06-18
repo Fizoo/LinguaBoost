@@ -10,8 +10,11 @@
         <div >
           <span class="text">{{list.phrase}}</span>
         </div>
-        <div >
-          <span class="text">{{list.translateToUA}}</span>
+        <div (click)="isVisible1=!isVisible1">
+          <span *ngIf="isVisible1; else visible1" class="text">{{list.translateToUA}}</span>
+          <ng-template #visible1>
+            <span class="text">******</span>
+          </ng-template>
         </div>
       </div>
       <!--<button  mat-icon-button color="warn">
@@ -28,8 +31,11 @@
           <div>
             <span class="text">{{list.sentenceWithPhrase}}</span>
           </div>
-          <div>
-            <span class="text">{{list.translateSentenceToUA}}</span>
+          <div (click)="isVisible2=!isVisible2">
+            <span *ngIf="isVisible2; else visible2" class="text">{{list.translateSentenceToUA}}</span>
+            <ng-template #visible2>
+              <span class="text">******</span>
+            </ng-template>
           </div>
         </div>
 

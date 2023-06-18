@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Theme} from "../../../../models/data";
 
 @Component({
@@ -9,9 +9,5 @@ import {Theme} from "../../../../models/data";
 })
 export class ListThemesComponent {
   @Input() item:Theme
-  @Output() navigate = new EventEmitter<string>()
 
-  change(id:string) {
-    this.navigate.emit(id)
-  }
 }

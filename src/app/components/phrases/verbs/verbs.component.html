@@ -7,8 +7,25 @@
           <input type="text" placeholder="Search..." [(ngModel)]="search" >
         </div>
 
+        <button class="menu" mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+
+          <mat-menu  #menu="matMenu">
+            <button
+              *ngFor="let el of listPhrase "
+              [routerLink]="['/phrases',el.id]"
+              mat-menu-item>
+              {{el.topic}}
+            </button>
+          </mat-menu>
+
+
         <div class="btn">
           <mat-button-toggle-group [formControl]="formSort" >
+            <mat-button-toggle (click)="leanFn()">
+              <mat-icon>local_library</mat-icon>
+            </mat-button-toggle>
             <mat-button-toggle value="up">
               <mat-icon>arrow_upward</mat-icon>
             </mat-button-toggle>
@@ -21,6 +38,7 @@
 
           </mat-button-toggle-group>
         </div>
+
 
       </div>
       <div class="content">

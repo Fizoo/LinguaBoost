@@ -1,11 +1,18 @@
-
+@use '../../../scss/mixins' as m;
 
 .phrase-container{
 
   .box{
     display: grid;
-    grid-template-columns: minmax(5rem,18rem) 1fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr;
     margin: 1rem;
+    @include m.tablet{
+      grid-template-columns: 1fr 10fr;
+    }
+
+    @include m.mobile{
+      grid-template-columns: 1fr;
+    }
   }
 }

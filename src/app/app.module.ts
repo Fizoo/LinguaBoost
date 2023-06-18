@@ -57,6 +57,7 @@ import {
 } from './components/phrases/sidebar-phrase/phrase-list-sidebar/phrase-list-sidebar.component';
 import {FilterPhrasesPipe} from './pipes/filter-phrases.pipe';
 import { FilterAllPipe } from './pipes/filter-all.pipe';
+import { PhrasesTrainerComponent } from './components/phrases/phrases-trainer/phrases-trainer.component';
 
 
 @NgModule({
@@ -90,7 +91,8 @@ import { FilterAllPipe } from './pipes/filter-all.pipe';
     SidebarPhraseComponent,
     PhraseListSidebarComponent,
     FilterPhrasesPipe,
-    FilterAllPipe
+    FilterAllPipe,
+    PhrasesTrainerComponent
   ],
     imports: [
         BrowserModule,

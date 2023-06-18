@@ -1,7 +1,11 @@
 <div class="content">
   <app-sidebar></app-sidebar>
   <div class="box">
-    <app-filter-page (valueChanged)="onSorting($event)" (searchChange)="onSearch($event)"></app-filter-page>
+    <app-filter-page
+      (valueChanged)="onSorting($event)"
+      (searchChange)="onSearch($event)">
+    </app-filter-page>
+
     <app-list *ngFor="let item of list  | filter : searchText trackBy: trackByFn " [item]="item"  ></app-list>
   </div>
 

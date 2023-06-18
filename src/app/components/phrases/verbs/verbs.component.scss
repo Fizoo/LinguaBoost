@@ -30,6 +30,12 @@
             padding: 5px;
             max-width: 100%;
           }
+        .menu{
+          display: none;
+          @include m.mobile{
+            display: block;
+          }
+        }
 
 
       }

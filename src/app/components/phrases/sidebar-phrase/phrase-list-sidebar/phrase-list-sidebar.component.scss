@@ -5,7 +5,7 @@
   text-align: left;
   font-size: 1rem;
   font-weight: bold;
-  padding-left:2rem;
+  padding-left:1rem;
   padding-bottom:  .5rem;
   padding-top:  .5rem;
   // max-width: 17.25rem;
@@ -15,16 +15,12 @@
   word-break: break-word;
   margin-bottom: .2rem;
   position: relative;
-  //background: white;
   transition: all .3s ease;
   color: inherit;
   z-index: 0;
-  //margin: .2rem auto;
-  //border: 1px solid #eae9e9;
   border-radius: 2px;
   background: #f6f6f6;
   opacity: 0.8;
-
 
   &:hover{
     margin-left: 5%;

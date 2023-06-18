@@ -1,6 +1,9 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Output} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {map, take, tap} from "rxjs";
+import {map, Observable, take, tap} from "rxjs";
+import {Store} from "@ngrx/store";
+import {DataSelectors} from "../../../store/data/selectors";
+import {Theme} from "../../../models/data";
 
 @Component({
   selector: 'app-filter-page',
@@ -12,16 +15,21 @@ import {map, take, tap} from "rxjs";
 export class FilterPageComponent {
   @Output() searchChange = new EventEmitter<string>();
   @Output() valueChanged = new EventEmitter<string>()
+  list$:Observable<Theme[]>
   id: number
   search: string = '';
   sortValue: string = '1'
 
   constructor(private router: Router,
-              route: ActivatedRoute) {
+            private  route: ActivatedRoute,
+              private store:Store
+              ) {
 
     route.params.pipe(take(1),
       map(el => el['id']),
       tap(id => this.id = id)).subscribe()
+
+   this.list$= this.store.select(DataSelectors.getAllThemes)
   }
 
   onSearch() {
@@ -33,7 +41,7 @@ export class FilterPageComponent {
   }
 
   writeEng(value: string) {
-    this.router.navigate(['theme', this.id, value, this.id])
+    this.router.navigate(['/theme', this.id, value, this.id])
     //routerLink="/theme/1/lesson/1"
   }
 
