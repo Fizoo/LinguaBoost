@@ -33,8 +33,14 @@
       max-width: 100%;
     }
   }
+
+  //responsibility
+
   @include m.tablet{
+    flex-direction: column;
+    gap: .5rem;
     .tests{
+     // flex-direction: column;
       gap: 1rem;
     }
   }

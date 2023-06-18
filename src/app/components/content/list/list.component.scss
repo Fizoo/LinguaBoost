@@ -5,61 +5,46 @@
 .mainList {
   padding: 0 2rem;
   font-size: 1.2rem;
-  @include m.mobile {
-    padding: 0 0.5rem;
-  }
 
   .word {
     display: grid;
-    grid-template-columns: minmax(60px, 100px)  repeat(2, 1fr) 30px 30px;
+    grid-template-columns: minmax(60px, 100px)  repeat(2, 1fr) 30px ;
     align-items: center;
     justify-content: flex-start;
     padding: 0.5rem;
     border-top: 1px solid #e3dede;
-    @include m.mobile {
-      gap: 5px;
-    }
 
-    &.active {
-      background: v.$bg-main;
-      cursor: pointer;
-    }
-
-    &:hover {
-      background: v.$bg-main;
-      cursor: pointer;
-      .action{
-        opacity: 0.7;
-      }
-    }
 
     .expand {
       display: flex;
       align-items: center;
       font-size: 1rem;
       justify-content: flex-start;
+      width: 100%;
       @include m.mobile {
         .mat-mdc-icon-button.mat-mdc-button-base {
           width: 30px;
           padding: 0;
         }
       }
-
     }
-
     .englishWord {
       width: 100%;
     }
-
     .translation {
       color: v.$color-second;
     }
 
-    .action{
-      opacity: 0;
-
-
-
+    &.active {
+      background: v.$bg-main;
+      cursor: pointer;
+    }
+    &:hover {
+      background: v.$bg-main;
+      cursor: pointer;
+      .action{
+        opacity: 0.7;
+      }
     }
   }
 
@@ -72,7 +57,6 @@
     background: v.$bg-main;
     padding: 0 5rem 0.5rem 5rem;
     @include m.mobile {
-      //padding: 0 0.3rem 0.3rem 0.3rem;
       padding-left: 1rem;
     }
 
@@ -80,7 +64,6 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      //margin-bottom: 1rem;
       .mat-body-2 {
         color: v.$color-second;
       }
@@ -89,10 +72,9 @@
     .text {
 
       .englishSentence {
-        // font-weight: 700;
         font-size: 1.5rem;
         @include m.mobile {
-          font-size: 1rem;
+        //  font-size: 1rem;
         }
       }
 
@@ -145,6 +127,15 @@
 
   }
 
+
+  @include m.mobile {
+
+    padding: 0 0.5rem;
+    .word{
+      grid-template-columns: 60px  repeat(2, 1fr) 30px ;
+        gap: 5px;
+    }
+  }
 
 }
 
