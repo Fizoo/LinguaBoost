@@ -92,7 +92,7 @@ import { PhrasesTrainerComponent } from './components/phrases/phrases-trainer/ph
     PhraseListSidebarComponent,
     FilterPhrasesPipe,
     FilterAllPipe,
-    PhrasesTrainerComponent
+    PhrasesTrainerComponent,
   ],
     imports: [
         BrowserModule,

@@ -1,6 +1,6 @@
-import {Directive, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges} from '@angular/core';
+import {Directive, ElementRef, Input, OnInit, Renderer2} from '@angular/core';
 import {Store} from "@ngrx/store";
-import {DataSelectors} from "../store/data/selectors";
+import {DataSelectorsWords} from "../store/data/selectors";
 
 @Directive({
   selector: '[appProgress]'
@@ -14,7 +14,7 @@ export class ProgressDirective implements OnInit{
   }
 
   ngOnInit() {
-    this.store.select(DataSelectors.getProgressTheme(this.id)).subscribe(data=>{
+    this.store.select(DataSelectorsWords.getProgressTheme(this.id)).subscribe(data=>{
       if (data){
         this.setButtonColor(Math.ceil( data));
       }

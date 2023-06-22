@@ -4,7 +4,7 @@ import {Words} from "../../models/data";
 import {map, switchMap} from "rxjs";
 import {ActivatedRoute} from '@angular/router';
 import {Store} from "@ngrx/store";
-import {DataSelectors} from "../../store/data/selectors";
+import {DataSelectorsWords} from "../../store/data/selectors";
 
 @Component({
   selector: 'app-content',
@@ -26,7 +26,7 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.pipe(
       map(el => el['id']),
-      switchMap(id => this.store.select(DataSelectors.getThemeById(id)).pipe(
+      switchMap(id => this.store.select(DataSelectorsWords.getThemeById(id)).pipe(
       ))
     ).subscribe((list) => this.list = list.data)
 

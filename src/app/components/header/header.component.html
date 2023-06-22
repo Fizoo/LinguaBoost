@@ -18,9 +18,9 @@
 
   <div class="pages">
     <div class="page">
-      <div routerLink="theme/1" class="page1">Words</div>
-      <div class="page1">Sentences</div>
-      <div routerLink="phrases/1" class="page1">Phrases</div>
+      <div routerLink="theme/0" class="page1">Words</div>
+      <div routerLink="phrases/1" [queryParams]="{query:'sentence'}" class="page1">Sentences</div>
+      <div routerLink="phrases/1" [queryParams]="{query:'phrase'}"  class="page1">Phrases</div>
     </div>
     <div class="pageMenu">
       <button mat-icon-button [matMenuTriggerFor]="menu2">

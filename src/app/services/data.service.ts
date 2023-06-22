@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject} from "rxjs";
-import {mainData} from 'src/assets/data/generalData';
+import {mainData} from 'src/assets/data/generalDataWords';
 
 import {Main} from "../models/data";
 

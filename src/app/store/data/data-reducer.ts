@@ -1,7 +1,8 @@
 import {createReducer, on} from "@ngrx/store";
 import {Theme, TopicPhrases} from "../../models/data";
 import {DataActions} from "./actions";
-import {mainData, objPhrases} from "../../../assets/data/generalData";
+import {mainData} from "../../../assets/data/generalDataWords";
+import {objPhrases} from "../../../assets/data/generalDataPhrases";
 
 export interface IData {
   data: Theme[]

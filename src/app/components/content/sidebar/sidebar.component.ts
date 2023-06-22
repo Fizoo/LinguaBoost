@@ -2,7 +2,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 import {Theme, Words} from "../../../models/data";
 import {Router} from "@angular/router";
 import {Store} from "@ngrx/store";
-import {DataSelectors} from "../../../store/data/selectors";
+import {DataSelectorsWords} from "../../../store/data/selectors";
 import {take} from "rxjs";
 import {TimeDay} from "../../../models/progress";
 
@@ -18,7 +18,7 @@ export class SidebarComponent {
 
   constructor(private router: Router,
               private store:Store) {
-    this.store.select(DataSelectors.getAllState) .pipe(take(1)).subscribe((data)=>{
+    this.store.select(DataSelectorsWords.getWordsData) .pipe(take(1)).subscribe((data)=>{
       this.themes=data
     })
   }

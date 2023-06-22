@@ -7,8 +7,11 @@
       </button>
 
       <div class="box-text">
-        <div class="t-box" >
-          <span class="text">{{item.phrase}}</span>
+        <div class="t-box" (click)="isVisible=!isVisible">
+          <span  *ngIf="isVisible; else visible" class="text">{{item.phrase}}</span>
+          <ng-template #visible>
+            <span class="text">******</span>
+          </ng-template>
         </div>
         <div class="t-box t-box2" (click)="isVisible1=!isVisible1">
           <span *ngIf="isVisible1; else visible1" class="text2">{{item.translateToUA}}</span>
@@ -18,13 +21,21 @@
         </div>
       </div>
     </div>
+
     <div class="next">
-      <button class="next" mat-raised-button color="primary" (click)="nextTo()">Next</button>
+      <mat-form-field class="mat-input">
+        <!--<mat-label>Phrase</mat-label>-->
+        <input matInput placeholder="Write text...">
+      </mat-form-field>
+    </div>
+
+    <div class="next">
+      <button class="btn-next" mat-raised-button color="primary" (click)="nextTo()">Next</button>
     </div>
   </div>
 
   <div class="close">
-    <button mat-icon-button routerLink="/phrases/1">
+    <button mat-icon-button routerLink="/">
       <mat-icon>close</mat-icon>
     </button>
   </div>

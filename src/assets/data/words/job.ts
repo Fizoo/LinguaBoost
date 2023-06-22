@@ -1,4 +1,4 @@
-import {Words} from "../../app/models/data";
+import {Words} from "../../../app/models/data";
 
 export const wordJobs :Words[]= [{
   englishWord: "accept",

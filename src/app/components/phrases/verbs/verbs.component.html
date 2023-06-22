@@ -4,36 +4,38 @@
       <div class="filter">
 
         <div class="search">
-          <input type="text" placeholder="Search..." [(ngModel)]="search" >
+          <input type="text" placeholder="Search..." [(ngModel)]="search">
         </div>
 
         <button class="menu" mat-button [matMenuTriggerFor]="menu">
           <mat-icon>menu</mat-icon>
         </button>
 
-          <mat-menu  #menu="matMenu">
-            <button
-              *ngFor="let el of listPhrase "
-              [routerLink]="['/phrases',el.id]"
-              mat-menu-item>
-              {{el.topic}}
-            </button>
-          </mat-menu>
-
+        <mat-menu #menu="matMenu">
+          <button
+            *ngFor="let el of listPhrase "
+            [routerLink]="['/phrases',el.id]"
+            mat-menu-item>
+            {{el.topic}}
+          </button>
+        </mat-menu>
 
         <div class="btn">
-          <mat-button-toggle-group [formControl]="formSort" >
-            <mat-button-toggle (click)="leanFn()">
-              <mat-icon>local_library</mat-icon>
+          <mat-button-toggle-group [formControl]="formSort">
+            <mat-button-toggle (click)="leanFn('true')" matTooltip="Trainer with visible">
+              <mat-icon color="primary">local_library</mat-icon>
             </mat-button-toggle>
-            <mat-button-toggle value="up">
-              <mat-icon>arrow_upward</mat-icon>
+            <mat-button-toggle (click)="leanFn('false')" matTooltip="Trainer with unVisible">
+              <mat-icon color="warn">local_library</mat-icon>
             </mat-button-toggle>
-            <mat-button-toggle value="down">
-              <mat-icon>arrow_downward</mat-icon>
+            <mat-button-toggle value="up" matTooltip="Sort Up">
+              <mat-icon color="primary">arrow_upward</mat-icon>
             </mat-button-toggle>
-            <mat-button-toggle value="random">
-              <mat-icon>shuffle</mat-icon>
+            <mat-button-toggle value="down" matTooltip="Sort down">
+              <mat-icon color="warn">arrow_downward</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="random" matTooltip="Sort Random">
+              <mat-icon color="accent">shuffle</mat-icon>
             </mat-button-toggle>
 
           </mat-button-toggle-group>

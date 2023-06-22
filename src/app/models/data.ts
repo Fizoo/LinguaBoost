@@ -18,6 +18,7 @@ export interface Theme {
   id:string
   name:string
   data:Words[]
+  type?:string
 }
 
 export interface Words{
@@ -37,6 +38,7 @@ export interface TopicPhrases{
   id:number
   topic:string
   data:Phrase[]
+  type?:string
 
 }
 
@@ -48,6 +50,5 @@ export interface Phrase {
   sentenceWithPhrase?:string
   translateSentenceToUA?:string
   idPhrase: number,
-
 }
 

@@ -4,7 +4,6 @@
   width: 100%;
   position: relative;
 
-  //background: white;
   .main{
     display: flex;
     flex-direction: column;
@@ -13,12 +12,10 @@
     min-height: 100vh;
     margin: 0 1rem;
 
-
-
     .box{
       display: flex;
       align-items: center;
-      min-width: 500px;
+      min-width: 600px;
       gap: 1rem;
       background: white;
       padding: 1rem;
@@ -26,9 +23,9 @@
       margin-top: -10%;
       border-radius: 1rem;
       @include m.mobile{
-        max-width: 350px;
+        min-width: 340px;
+        gap: .5rem;
       }
-
       .box-text{
         width: 100%;
         display: grid;
@@ -50,14 +47,28 @@
         }
       }
     }
+
     .next {
-      width: 100%;
+
       display: flex;
+      width: 100%;
       justify-content: center;
       margin: 0 auto;
 
-      button {
-        max-width: 150px;
+      .mat-input{
+        min-width: 600px;
+
+        .mdc-text-field--filled {
+          background-color: white ;
+        }
+
+        @include m.mobile{
+          min-width: 330px;
+        }
+      }
+
+      .btn-next {
+        min-width: 150px;
       }
     }
 

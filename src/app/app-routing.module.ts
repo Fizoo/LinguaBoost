@@ -24,6 +24,7 @@ const routes: Routes = [
      /* { path: '**', redirectTo: 'home' }*/
     ]},
   {path:'phrases/:id/trainer/:id',component:PhrasesTrainerComponent},
+
   {path:'theme/:id/trainer/:id',component:TrainerComponent},
   {path:'theme/:id/lesson/:id',component:LessonWriteByEngComponent},
   {path:'theme/:id/translateEng/:id',component:LessonTranslateToEngComponent},

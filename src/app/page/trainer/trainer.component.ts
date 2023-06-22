@@ -4,7 +4,7 @@ import {Words} from "../../models/data";
 import {ActivatedRoute} from "@angular/router";
 import {map, switchMap, take} from "rxjs";
 import {Store} from "@ngrx/store";
-import {DataSelectors} from "../../store/data/selectors";
+import {DataSelectorsWords} from "../../store/data/selectors";
 
 @Component({
   selector: 'app-trainer',
@@ -16,6 +16,7 @@ export class TrainerComponent {
   item: Words
   isTranslateWord = false
   isSentence = false
+  indexArr:Array<number> =[]
 
   @HostListener('document:keydown.enter')
   onEnter() {
@@ -29,7 +30,7 @@ export class TrainerComponent {
     this.route.params.pipe(
       take(1),
       map(params => params['id']),
-      switchMap(id => store.select(DataSelectors.getThemeById(id)).pipe(
+      switchMap(id => store.select(DataSelectorsWords.getThemeById(id)).pipe(
         map(data => data.data)
       ))
     ).subscribe(data => {
@@ -51,7 +52,17 @@ export class TrainerComponent {
   }
 
   private getRandomIndex(): number {
-    return Math.floor(Math.random() * this.list.length);
+    if (this.indexArr.length === 0) {
+      this.indexArr = Array.from(Array(this.list.length).keys());
+    }
+
+    const randomIndex = Math.floor(Math.random() * this.indexArr.length);
+    const index = this.indexArr[randomIndex];
+
+    // Видалення випадкового індексу з масиву
+   this.indexArr.splice(randomIndex, 1);
+
+    return index;
   }
 
 }

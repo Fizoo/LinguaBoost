@@ -6,7 +6,7 @@ import {map, Subject, switchMap, take, takeUntil, tap} from "rxjs";
 import {SpeakerService} from "../../services/speaker.service";
 import {Store} from "@ngrx/store";
 import {ActivatedRoute, Router} from "@angular/router";
-import {DataSelectors} from "../../store/data/selectors";
+import {DataSelectorsWords} from "../../store/data/selectors";
 import {DataActions} from "../../store/data/actions";
 import {ProgressAction} from "../../store/progress/actions";
 
@@ -53,7 +53,7 @@ export class LessonCollectComponent implements OnInit,OnDestroy{
     this.route.params.pipe(
       map(data => data['id']),
       tap(id => this.id = id),
-      switchMap(id => this.store.select(DataSelectors.getRandomListWith20ById(id)).pipe(
+      switchMap(id => this.store.select(DataSelectorsWords.getRandomListWith20ById(id)).pipe(
         tap(data => {
           this.tempList = data
           //console.log(this.countWordsByLevel(data))

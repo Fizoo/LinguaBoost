@@ -1,23 +1,28 @@
-import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostListener, OnDestroy, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {map, Subject, switchMap, takeUntil, tap} from "rxjs";
+import {map, Subject, switchMap, takeUntil} from "rxjs";
 import {Phrase} from "../../../models/data";
 import {Store} from "@ngrx/store";
-import {DataSelectors} from "../../../store/data/selectors";
 import {SpeakerService} from "../../../services/speaker.service";
+import {DataSelectorsPhrases} from "../../../store/data/selectors-phrases";
 
 @Component({
   selector: 'app-phrases-trainer',
   templateUrl: './phrases-trainer.component.html',
-  styleUrls: ['./phrases-trainer.component.scss']
+  styleUrls: ['./phrases-trainer.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class PhrasesTrainerComponent implements OnInit, OnDestroy {
+export class PhrasesTrainerComponent implements OnDestroy {
   id: number
+  isVisible:boolean
   isVisible1 = false
+  mainVisible :boolean
   list: Phrase[] = []
   item: Phrase
+  randomArr:Array<number> =[]
 
   private unsubscribe$ = new Subject<void>();
+
 
   @HostListener('document:keydown.enter')
   onEnter() {
@@ -30,15 +35,29 @@ export class PhrasesTrainerComponent implements OnInit, OnDestroy {
     this.route.params
       .pipe(
         map(params => params['id']),
-        tap(el=>console.log(el)),
-        switchMap(id => this.store.select(DataSelectors.getPhrasesById(+id)).pipe(
+        switchMap((id) => this.route.queryParams.pipe(
+          map(queryParams => ({
+            id: id,
+            query: queryParams['query']
+          }))
+        )),
+        switchMap(({id,query}) => this.store.select(DataSelectorsPhrases.getPhrasesById(+id,query)).pipe(
         map(data => data.data)
         )),
         takeUntil(this.unsubscribe$)
       ).subscribe(data => {
-      console.log(data)
       this.list = data
       this.item = data[this.getRandomIndex()]
+    })
+
+    this.route.queryParams.pipe(
+      map(queryParams =>queryParams['visible']),
+      map(el=>el==='true'),
+      takeUntil(this.unsubscribe$)
+    ).subscribe(response=> {
+      this.isVisible = response
+      this.mainVisible=response
+
     })
 
   }
@@ -48,6 +67,7 @@ export class PhrasesTrainerComponent implements OnInit, OnDestroy {
     this.item = this.list[this.getRandomIndex()]
     this.speaker.speak(this.item.phrase)
     this.isVisible1 = false
+    this.isVisible=this.mainVisible
   }
 
   speak(value:string):void{
@@ -55,7 +75,18 @@ export class PhrasesTrainerComponent implements OnInit, OnDestroy {
   }
 
   private getRandomIndex(): number {
-    return Math.floor(Math.random() * this.list.length);
+    if (this.randomArr.length === 0) {
+      this.randomArr = Array.from(Array(this.list.length).keys());
+    }
+
+    const randomIndex = Math.floor(Math.random() * this.randomArr.length);
+    const index = this.randomArr[randomIndex];
+
+    // Видалення випадкового індексу з масиву
+    this.randomArr.splice(randomIndex, 1);
+
+    return index;
+
   }
 
   ngOnDestroy(): void {
@@ -63,6 +94,4 @@ export class PhrasesTrainerComponent implements OnInit, OnDestroy {
     this.unsubscribe$.complete()
   }
 
-  ngOnInit(): void {
-  }
 }

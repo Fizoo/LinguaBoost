@@ -33,6 +33,10 @@
     }
     .translation {
       color: v.$color-second;
+      display: flex;
+      align-items: center;
+      height: 100%;
+
     }
 
     &.active {

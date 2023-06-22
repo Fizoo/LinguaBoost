@@ -2,22 +2,22 @@ import {createFeatureSelector, createSelector} from "@ngrx/store";
 import {IData} from "./data-reducer";
 import {Theme, Words} from "../../models/data";
 
-export namespace DataSelectors {
+export namespace DataSelectorsWords {
   export const getDataState = createFeatureSelector<IData>('data');
 
-  export const getAllState = createSelector(
+  export const getWordsData = createSelector(
     getDataState,
     (state) => state.data)
 
   export const getThemeById = (id: string) => createSelector(
-    getAllState,
+    getWordsData,
     (state) => {
       return state.filter(el => el.id === id)[0]
     }
   )
 
   export const getAllThemes=createSelector(
-    getAllState,
+    getWordsData,
     state=>{
       return state
     }
@@ -64,16 +64,5 @@ export namespace DataSelectors {
      }
    )
 
-  ////phrases
-  export const getAllDataOfPhrases=createSelector(
-    getDataState,
-    state=>state.phrases
-  )
-  export const getPhrasesById=(id:number)=>createSelector(
-    getAllDataOfPhrases,
-    state=> {
-    return   state.filter(el => el.id === id)[0]
-    }
-  )
-
 }
+
