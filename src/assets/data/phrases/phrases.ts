@@ -17,7 +17,7 @@ export const popularPhrases:Phrase[] = [
   id: 4,
   translateToUA: "Можете допомогти мені знайти дорогу?",
   phrase: "Can you help me find my way?"
-}, {id: 5, phrase: "Can you help me find...?", idPhrase: 1, translateToUA: "Можете допомогти мені знайти...?"}, {
+}, {id: 5, phrase: "Can you help me find?", idPhrase: 1, translateToUA: "Можете допомогти мені знайти?"}, {
   id: 6,
   translateToUA: "Можете, будь ласка, допомогти мені?",
   idPhrase: 1,
@@ -58,8 +58,8 @@ export const popularPhrases:Phrase[] = [
   phrase: "Can you recommend a good restaurant?",
   translateToUA: "Можете порекомендувати хороший ресторан?"
 }, {
-  phrase: "Can you show me how to...?",
-  translateToUA: "Можете показати мені, як...?",
+  phrase: "Can you show me how to?",
+  translateToUA: "Можете показати мені, як?",
   id: 14,
   idPhrase: 1
 }, {
@@ -79,9 +79,9 @@ export const popularPhrases:Phrase[] = [
   translateToUA: "Можете розповісти про себе?"
 }, {
   idPhrase: 1,
-  translateToUA: "Можете сказати мені дорогу до...?",
+  translateToUA: "Можете сказати мені дорогу до?",
   id: 20,
-  phrase: "Can you tell me the way to...?"
+  phrase: "Can you tell me the way to?"
 }, {
   id: 21,
   phrase: "Could you please help me with this?",
@@ -109,24 +109,24 @@ export const popularPhrases:Phrase[] = [
   phrase: "Could you please write that down for me?"
 }, {phrase: "Could you repeat that?", id: 26, idPhrase: 1, translateToUA: "Могли б ви повторити це?"}, {
   id: 27,
-  phrase: "Could you show me...?",
+  phrase: "Could you show me?",
   idPhrase: 1,
-  translateToUA: "Могли б ви показати мені...?"
+  translateToUA: "Могли б ви показати мені?"
 }, {idPhrase: 1, id: 28, phrase: "Do you have any questions?", translateToUA: "У вас є які-небудь питання?"}, {
   id: 29,
   phrase: "Excuse me",
   idPhrase: 1,
   translateToUA: "Вибачте"
 }, {
-  phrase: "Excuse me, where is the nearest...?",
+  phrase: "Excuse me, where is the nearest?",
   id: 30,
   idPhrase: 1,
-  translateToUA: "Вибачте, де найближчий...?"
+  translateToUA: "Вибачте, де найближчий?"
 }, {translateToUA: "Гарного дня", phrase: "Have a good day", id: 31, idPhrase: 1}, {
-  phrase: "How do I get to the...?",
+  phrase: "How do I get to the?",
   idPhrase: 1,
   id: 32,
-  translateToUA: "Як мені дістатися до...?"
+  translateToUA: "Як мені дістатися до?"
 }, {
   id: 33,
   translateToUA: "Як ви себе почуваєте?",
@@ -152,7 +152,7 @@ export const popularPhrases:Phrase[] = [
   translateToUA: "Як це кажеться англійською?",
   idPhrase: 1,
   phrase: "How do you say this in English?"
-}, {idPhrase: 1, phrase: "How do you say...in English?", translateToUA: "Як кажеться...англійською?", id: 38}, {
+}, {idPhrase: 1, phrase: "How do you sayin English?", translateToUA: "Як кажетьсяанглійською?", id: 38}, {
   id: 39,
   idPhrase: 1,
   translateToUA: "Як це правильно пишеться?",
@@ -204,9 +204,9 @@ export const popularPhrases:Phrase[] = [
   phrase: "I don't know"
 }, {id: 53, translateToUA: "Мені не подобається ця їжа", phrase: "I don't like this food", idPhrase: 1}, {
   id: 54,
-  translateToUA: "Мені не подобається...",
+  translateToUA: "Мені не подобається",
   idPhrase: 1,
-  phrase: "I don't like..."
+  phrase: "I don't like"
 }, {phrase: "I don't understand", id: 55, translateToUA: "Я не розумію", idPhrase: 1}, {
   phrase: "I have a question",
   id: 56,
@@ -224,8 +224,8 @@ export const popularPhrases:Phrase[] = [
   translateToUA: "Мені потрібно практикувати англійську"
 }, {id: 60, translateToUA: "Мені нудно", idPhrase: 1, phrase: "I'm bored"}, {
   id: 61,
-  translateToUA: "Я з...",
-  phrase: "I'm from...",
+  translateToUA: "Я з",
+  phrase: "I'm from",
   idPhrase: 1
 }, {
   idPhrase: 1,
@@ -233,9 +233,9 @@ export const popularPhrases:Phrase[] = [
   translateToUA: "Радий(а) чути це",
   id: 62
 }, {translateToUA: "Я голодний", idPhrase: 1, id: 63, phrase: "I'm hungry"}, {
-  phrase: "I'm looking for...",
+  phrase: "I'm looking for",
   idPhrase: 1,
-  translateToUA: "Я шукаю...",
+  translateToUA: "Я шукаю",
   id: 64
 }, {translateToUA: "Я з нетерпінням цього чекаю", idPhrase: 1, id: 65, phrase: "I'm looking forward to it"}, {
   id: 66,
@@ -408,12 +408,12 @@ export const popularPhrases:Phrase[] = [
     translateToUA: "Де ванна кімната?",
     idPhrase: 1,
     phrase: "Where is the bathroom?"
-  }, {phrase: "Where is the closest...?", translateToUA: "Де найближчий...?", idPhrase: 1, id: 115}, {
+  }, {phrase: "Where is the closest?", translateToUA: "Де найближчий?", idPhrase: 1, id: 115}, {
     idPhrase: 1,
-    phrase: "Where is the nearest...?",
+    phrase: "Where is the nearest?",
     id: 116,
-    translateToUA: "Де найближчий...?"
-  }, {id: 117, phrase: "Where is...?", translateToUA: "Де знаходиться...?", idPhrase: 1}, {
+    translateToUA: "Де найближчий?"
+  }, {id: 117, phrase: "Where is?", translateToUA: "Де знаходиться?", idPhrase: 1}, {
     idPhrase: 1,
     id: 118,
     phrase: "Where's the airport?",
@@ -426,8 +426,8 @@ export const popularPhrases:Phrase[] = [
   }, {
     idPhrase: 1,
     id: 120,
-    translateToUA: "Де знаходиться найближчий...?",
-    phrase: "Where's the nearest...?"
+    translateToUA: "Де знаходиться найближчий?",
+    phrase: "Where's the nearest?"
   }, {
     phrase: "Where's the train station?",
     idPhrase: 1,
@@ -550,9 +550,9 @@ export const popularPhrases:Phrase[] = [
     translateToUA: "Коли ваш день народження?",
     phrase: "When is your birthday?"
   }, {
-    translateToUA: "Коли ви востаннє...?",
+    translateToUA: "Коли ви востаннє?",
     idPhrase: 1,
-    phrase: "When was the last time you...?",
+    phrase: "When was the last time you?",
     id: 154
   }, {
     phrase: "When will it be ready?",
@@ -718,47 +718,47 @@ export const popularPhrases:Phrase[] = [
     phrase: "That's nice",
     id: 207,
     idPhrase: 1,
-    translateToUA: "Це чудово."
-  }, {phrase: "That's not bad", idPhrase: 1, translateToUA: "Це приємно.", id: 208},
-  {id: 209, translateToUA: "Це непогано.", phrase: "That's okay", idPhrase: 1}, {
-    translateToUA: "Це нормально.",
+    translateToUA: "Це чудово"
+  }, {phrase: "That's not bad", idPhrase: 1, translateToUA: "Це приємно", id: 208},
+  {id: 209, translateToUA: "Це непогано", phrase: "That's okay", idPhrase: 1}, {
+    translateToUA: "Це нормально",
     phrase: "That's pretty good",
     id: 210,
     idPhrase: 1
   }, {
     id: 211,
-    translateToUA: "Це досить гарно.",
+    translateToUA: "Це досить гарно",
     idPhrase: 1,
     phrase: "That's really good"
-  }, {phrase: "That's ridiculous", translateToUA: "Це дійсно добре.", idPhrase: 1, id: 212}, {
+  }, {phrase: "That's ridiculous", translateToUA: "Це дійсно добре", idPhrase: 1, id: 212}, {
     idPhrase: 1,
     id: 213,
     phrase: "That's terrible",
-    translateToUA: "Це смішно."
-  }, {phrase: "That's unbelievable", translateToUA: "Це жахливо.", idPhrase: 1, id: 214}, {
+    translateToUA: "Це смішно"
+  }, {phrase: "That's unbelievable", translateToUA: "Це жахливо", idPhrase: 1, id: 214}, {
     idPhrase: 1,
     id: 215,
-    translateToUA: "Це неймовірно.",
+    translateToUA: "Це неймовірно",
     phrase: "That's unfortunate"
-  }, {idPhrase: 1, translateToUA: "Це нещасливо.", id: 216, phrase: "That's wonderful"}, {
+  }, {idPhrase: 1, translateToUA: "Це нещасливо", id: 216, phrase: "That's wonderful"}, {
     idPhrase: 1,
     id: 217,
     phrase: "What a beautiful day",
-    translateToUA: "Це чудово."
-  }, {id: 218, phrase: "What a coincidence", idPhrase: 1, translateToUA: "Яка гарна погода."}, {
+    translateToUA: "Це чудово"
+  }, {id: 218, phrase: "What a coincidence", idPhrase: 1, translateToUA: "Яка гарна погода"}, {
     idPhrase: 1,
     id: 219,
-    translateToUA: "Яке зібрання випадковостей.",
+    translateToUA: "Яке зібрання випадковостей",
     phrase: "What a lovely place"
-  }, {translateToUA: "Яке чудове місце.", id: 220, idPhrase: 1, phrase: "What a pity"}, {
+  }, {translateToUA: "Яке чудове місце", id: 220, idPhrase: 1, phrase: "What a pity"}, {
     idPhrase: 1,
-    translateToUA: "Шкода.",
+    translateToUA: "Шкода",
     phrase: "What a surprise",
     id: 221
-  }, {id: 222, translateToUA: "Яке здивування.", phrase: "What a wonderful surprise", idPhrase: 1}, {
+  }, {id: 222, translateToUA: "Яке здивування", phrase: "What a wonderful surprise", idPhrase: 1}, {
     id: 223,
     phrase: "What can I do for you?",
-    translateToUA: "Яке чудове здивування.",
+    translateToUA: "Яке чудове здивування",
     idPhrase: 1
   }, {translateToUA: "Що я можу для вас зробити?", phrase: "What did you say?", id: 224, idPhrase: 1}, {
     id: 225,

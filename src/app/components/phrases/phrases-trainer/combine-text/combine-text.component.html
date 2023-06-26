@@ -1,0 +1,7 @@
+<div class="boxes" (click)="actions(text)">
+
+    <span *ngIf="isVisible; else unVisible" class="text">{{text}}</span>
+  <ng-template #unVisible>
+    <span class="text"></span>
+  </ng-template>
+</div>

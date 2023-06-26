@@ -3,6 +3,7 @@
 .mainBox{
   width: 100%;
   position: relative;
+  overflow: hidden;
 
   .main{
     display: flex;
@@ -10,7 +11,12 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin: 0 1rem;
+    //margin: 0 1rem;
+    margin: 0 ;
+
+
+    width: 100%;
+
 
     .box{
       display: flex;
@@ -22,6 +28,7 @@
       margin-bottom: 2rem;
       margin-top: -10%;
       border-radius: 1rem;
+      box-shadow: 5px 5px 15px 5px #dbe6e8;
       @include m.mobile{
         min-width: 340px;
         gap: .5rem;
@@ -48,9 +55,23 @@
       }
     }
 
+    .combine{
+      display: flex;
+      gap: .5rem;
+      //width: 100%;
+      //background: white;
+      padding: 1rem;
+      margin: 1rem auto;
+      border-radius: 1rem ;
+      flex-wrap: wrap;
+
+
+    }
+
     .next {
 
       display: flex;
+      gap: 3rem;
       width: 100%;
       justify-content: center;
       margin: 0 auto;
@@ -71,6 +92,24 @@
         min-width: 150px;
       }
     }
+  }
+
+  .footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    min-height:75px;
+    span{
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 1rem;
+    }
+
 
   }
 

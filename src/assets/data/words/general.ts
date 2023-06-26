@@ -5,8 +5,8 @@ export const wordGeneral: Words[] = [
     id: 2,
     englishTranscription: "ˌæksəˈdɛntəli",
     englishWord: "accidentally",
-    englishSentence: "I accidentally spilled my coffee on my shirt.",
-    ukrainianTranslationOfSentence: "Я випадково пролив свою каву на свою сорочку.",
+    englishSentence: "I accidentally spilled my coffee on my shirt",
+    ukrainianTranslationOfSentence: "Я випадково пролив свою каву на свою сорочку",
     synonyms: ["unintentionally", "by chance"],
     idTheme: 1,
     ukrainianTranslation: "випадково",
@@ -16,34 +16,34 @@ export const wordGeneral: Words[] = [
     ukrainianTranslation: "через",
     synonyms: ["over", "through"],
     idTheme: 1,
-    englishSentence: "I walked across the street to get to the store.",
+    englishSentence: "I walked across the street to get to the store",
     englishWord: "across",
     englishTranscription: "əˈkrɒs",
-    ukrainianTranslationOfSentence: "Я перейшов вулицю, щоб потрапити до магазину.",
+    ukrainianTranslationOfSentence: "Я перейшов вулицю, щоб потрапити до магазину",
     id: 3
   }, {
     idTheme: 1,
     englishTranscription: "əˈhɛd",
     level: 1,
-    englishSentence: "I need to plan ahead for my trip.",
+    englishSentence: "I need to plan ahead for my trip",
     id: 4,
     ukrainianTranslation: "вперед",
     synonyms: ["in advance", "before"],
     englishWord: "ahead",
-    ukrainianTranslationOfSentence: "Мені потрібно заздалегідь спланувати свою подорож."
+    ukrainianTranslationOfSentence: "Мені потрібно заздалегідь спланувати свою подорож"
   }, {
     englishTranscription: "əˈlɒŋ",
-    ukrainianTranslationOfSentence: "Ми прогулювалися вздовж річки, щоб насолодитися видом.",
+    ukrainianTranslationOfSentence: "Ми прогулювалися вздовж річки, щоб насолодитися видом",
     id: 5,
     level: 1,
-    englishSentence: "We walked along the river to enjoy the view.",
+    englishSentence: "We walked along the river to enjoy the view",
     synonyms: ["beside", "by"],
     idTheme: 1,
     ukrainianTranslation: "вздовж",
     englishWord: "along"
   }, {
-    englishSentence: "Apparently, he didn't like the movie.",
-    ukrainianTranslationOfSentence: "Очевидно, йому не сподобалася ця кінострічка.",
+    englishSentence: "Apparently, he didn't like the movie",
+    ukrainianTranslationOfSentence: "Очевидно, йому не сподобалася ця кінострічка",
     synonyms: ["evidently", "obviously"],
     id: 6,
     ukrainianTranslation: "очевидно",
@@ -52,9 +52,9 @@ export const wordGeneral: Words[] = [
     englishWord: "apparently",
     idTheme: 1
   }, {
-    englishSentence: "Let's take a walk around the park.",
+    englishSentence: "Let's take a walk around the park",
     synonyms: ["about", "surrounding"],
-    ukrainianTranslationOfSentence: "Давайте прогуляємось навколо парку.",
+    ukrainianTranslationOfSentence: "Давайте прогуляємось навколо парку",
     ukrainianTranslation: "навколо",
     idTheme: 1,
     englishWord: "around",
@@ -66,13 +66,13 @@ export const wordGeneral: Words[] = [
     level: 1,
     synonyms: ["the same number as", "equal to"],
     idTheme: 1,
-    ukrainianTranslationOfSentence: "В кімнаті було стільки, скільки десять осіб.",
-    englishSentence: "There were as many as ten people in the room.",
+    ukrainianTranslationOfSentence: "В кімнаті було стільки, скільки десять осіб",
+    englishSentence: "There were as many as ten people in the room",
     englishWord: "as many as",
     ukrainianTranslation: "стільки, скільки",
     id: 8
   }, {
-    englishSentence: "As soon as the sun sets, it will get dark outside.",
+    englishSentence: "As soon as the sun sets, it will get dark outside",
     idTheme: 1,
     synonyms: ["immediately after", "right after"],
     ukrainianTranslation: "як тільки",
@@ -80,15 +80,15 @@ export const wordGeneral: Words[] = [
     englishTranscription: "æz ˈsuːn æz",
     englishWord: "As soon as",
     level: 1,
-    ukrainianTranslationOfSentence: "Як тільки сонце сяде, на вулиці стемніє."
+    ukrainianTranslationOfSentence: "Як тільки сонце сяде, на вулиці стемніє"
   }, {
     synonyms: ["primarily", "fundamentally", "essentially"],
     idTheme: 1,
     englishWord: "basically",
-    ukrainianTranslationOfSentence: "В основному, я просто хочу спати.",
+    ukrainianTranslationOfSentence: "В основному, я просто хочу спати",
     id: 10,
     ukrainianTranslation: "в основному",
-    englishSentence: "Basically, I just want to sleep.",
+    englishSentence: "Basically, I just want to sleep",
     englishTranscription: "ˈbeɪsɪkli",
     level: 2
   }, {
@@ -98,8 +98,8 @@ export const wordGeneral: Words[] = [
     englishTranscription: "bɪˈliːv",
     id: 11,
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Я вірю у себе та свої можливості.",
-    englishSentence: "I believe in myself and my abilities.",
+    ukrainianTranslationOfSentence: "Я вірю у себе та свої можливості",
+    englishSentence: "I believe in myself and my abilities",
     ukrainianTranslation: "вірити"
   }, {
     synonyms: ["next to", "alongside"],
@@ -107,9 +107,9 @@ export const wordGeneral: Words[] = [
     englishTranscription: "bɪˈsaɪd",
     ukrainianTranslation: "поруч",
     id: 12,
-    englishSentence: "The cat is sleeping beside the dog.",
+    englishSentence: "The cat is sleeping beside the dog",
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Кіт спить поруч з собакою.",
+    ukrainianTranslationOfSentence: "Кіт спить поруч з собакою",
     level: 1
   }, {
     id: 13,
@@ -119,22 +119,22 @@ export const wordGeneral: Words[] = [
     idTheme: 1,
     level: 1,
     synonyms: ["together", "as well"],
-    ukrainianTranslationOfSentence: "Обидва моїх батьки - лікарі.",
-    englishSentence: "Both of my parents are doctors."
+    ukrainianTranslationOfSentence: "Обидва моїх батьки - лікарі",
+    englishSentence: "Both of my parents are doctors"
   }, {
     idTheme: 1,
     synonyms: ["occupied", "engaged", "active"],
-    ukrainianTranslationOfSentence: "Я занадто зайнятий, щоб піти на вечірку сьогодні ввечері.",
+    ukrainianTranslationOfSentence: "Я занадто зайнятий, щоб піти на вечірку сьогодні ввечері",
     level: 3,
     ukrainianTranslation: "зайнятий",
     englishTranscription: "ˈbɪzi",
-    englishSentence: "I'm too busy to go to the party tonight.",
+    englishSentence: "I'm too busy to go to the party tonight",
     englishWord: "busy",
     id: 14
   }, {
-    ukrainianTranslationOfSentence: "Сьогодні погода крута.",
+    ukrainianTranslationOfSentence: "Сьогодні погода крута",
     englishTranscription: "kuːl",
-    englishSentence: "The weather is cool today.",
+    englishSentence: "The weather is cool today",
     englishWord: "cool",
     synonyms: ["awesome", "great"],
     level: 1,
@@ -143,8 +143,8 @@ export const wordGeneral: Words[] = [
     ukrainianTranslation: "крутий, класний"
   }, {
     level: 1,
-    englishSentence: "I will definitely attend the meeting.",
-    ukrainianTranslationOfSentence: "Я безумовно з'явлюсь на зустрічі.",
+    englishSentence: "I will definitely attend the meeting",
+    ukrainianTranslationOfSentence: "Я безумовно з'явлюсь на зустрічі",
     ukrainianTranslation: "безумовно",
     idTheme: 1,
     id: 16,
@@ -155,41 +155,41 @@ export const wordGeneral: Words[] = [
     level: 1,
     ukrainianTranslation: "під час",
     englishTranscription: "ˈdjʊərɪŋ",
-    englishSentence: "I like to read during my lunch break.",
+    englishSentence: "I like to read during my lunch break",
     synonyms: ["throughout", "while"],
     idTheme: 1,
     englishWord: "during",
     id: 17,
-    ukrainianTranslationOfSentence: "Мені подобається читати під час перерви на обід."
+    ukrainianTranslationOfSentence: "Мені подобається читати під час перерви на обід"
   }, {
     synonyms: ["appreciate", "like"],
     level: 1,
-    ukrainianTranslationOfSentence: "Я завжди насолоджуюсь проведенням часу з друзями.",
+    ukrainianTranslationOfSentence: "Я завжди насолоджуюсь проведенням часу з друзями",
     englishTranscription: "ɪnˈdʒɔɪ",
     idTheme: 1,
     id: 18,
     englishWord: "enjoy",
     ukrainianTranslation: "насолоджуватися",
-    englishSentence: "I always enjoy spending time with my friends."
+    englishSentence: "I always enjoy spending time with my friends"
   }, {
     idTheme: 1,
     level: 1,
-    ukrainianTranslationOfSentence: "У мене достатньо грошей, щоб заплатити за квитки.",
+    ukrainianTranslationOfSentence: "У мене достатньо грошей, щоб заплатити за квитки",
     id: 19,
     englishTranscription: "ɪˈnʌf",
-    englishSentence: "I have enough money to pay for the tickets.",
+    englishSentence: "I have enough money to pay for the tickets",
     englishWord: "enough",
     ukrainianTranslation: "достатньо",
     synonyms: ["sufficient", "adequate"]
   }, {
-    englishSentence: "She likes to eat vegetables even though she's not a vegetarian.",
+    englishSentence: "She likes to eat vegetables even though she's not a vegetarian",
     id: 20,
     synonyms: ["including", "also"],
     englishTranscription: "ˈiːvən",
     ukrainianTranslation: "навіть",
     level: 1,
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Вона любить їсти овочі, навіть якщо не є вегетаріанкою.",
+    ukrainianTranslationOfSentence: "Вона любить їсти овочі, навіть якщо не є вегетаріанкою",
     englishWord: "even"
   },
   {
@@ -198,9 +198,9 @@ export const wordGeneral: Words[] = [
     idTheme: 1,
     synonyms: ["all", "every person"],
     englishTranscription: "ˈevrɪwʌn",
-    ukrainianTranslationOfSentence: "Кожен повинен бути поважним та доброзичливим.",
+    ukrainianTranslationOfSentence: "Кожен повинен бути поважним та доброзичливим",
     level: 1,
-    englishSentence: "Everyone should be treated with kindness and respect.",
+    englishSentence: "Everyone should be treated with kindness and respect",
     id: 21
   }, {
     englishWord: "exactly",
@@ -208,19 +208,19 @@ export const wordGeneral: Words[] = [
     level: 1,
     englishTranscription: "ɪɡˈzæktli",
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Відповідь, яку ти дав, точно те, що я шукав.",
+    ukrainianTranslationOfSentence: "Відповідь, яку ти дав, точно те, що я шукав",
     ukrainianTranslation: "точно, в точності",
     synonyms: ["precisely", "accurately"],
-    englishSentence: "The answer you gave is exactly what I was looking for."
+    englishSentence: "The answer you gave is exactly what I was looking for"
   }, {
     level: 1,
-    englishSentence: "I'm so excited to go on vacation next month.",
+    englishSentence: "I'm so excited to go on vacation next month",
     id: 23,
     idTheme: 1,
     ukrainianTranslation: "збуджений",
     synonyms: ["enthusiastic", "thrilled"],
     englishTranscription: "ɪkˈsaɪtɪd",
-    ukrainianTranslationOfSentence: "Я так збуджений, що поїду у відпустку наступного місяця.",
+    ukrainianTranslationOfSentence: "Я так збуджений, що поїду у відпустку наступного місяця",
     englishWord: "excited"
   }, {
     synonyms: ["help", "kindness"],
@@ -237,9 +237,9 @@ export const wordGeneral: Words[] = [
     synonyms: ["less", "reduced", "diminished"],
     englishTranscription: "ˈfjuər",
     idTheme: 1,
-    ukrainianTranslationOfSentence: "У нас менше працівників цього року, ніж минулого.",
+    ukrainianTranslationOfSentence: "У нас менше працівників цього року, ніж минулого",
     level: 1,
-    englishSentence: "We have fewer employees this year than last year.",
+    englishSentence: "We have fewer employees this year than last year",
     id: 25,
     ukrainianTranslation: "менше"
   }, {
@@ -248,8 +248,8 @@ export const wordGeneral: Words[] = [
     id: 26,
     ukrainianTranslation: "заповнити",
     synonyms: ["complete", "fill in"],
-    ukrainianTranslationOfSentence: "Будь ласка, заповніть цю форму та поверніть її до нас.",
-    englishSentence: "Please fill out this form and return it to us.",
+    ukrainianTranslationOfSentence: "Будь ласка, заповніть цю форму та поверніть її до нас",
+    englishSentence: "Please fill out this form and return it to us",
     englishWord: "fill out",
     englishTranscription: "fɪl aʊt"
   }, {
@@ -265,19 +265,19 @@ export const wordGeneral: Words[] = [
   }, {
     ukrainianTranslation: "корисний, допоміжний",
     id: 28,
-    ukrainianTranslationOfSentence: "Інформація, яку ви надали, була дуже корисною.",
+    ukrainianTranslationOfSentence: "Інформація, яку ви надали, була дуже корисною",
     englishWord: "helpful",
     level: 1,
     idTheme: 1,
     englishTranscription: "ˈhɛlpfʊl",
-    englishSentence: "The information you provided was very helpful.",
+    englishSentence: "The information you provided was very helpful",
     synonyms: ["useful", "supportive"]
   }, {
     id: 29,
     englishTranscription: "həʊp",
     ukrainianTranslation: "сподівання",
-    ukrainianTranslationOfSentence: "Я сподіваюся, що якось відвідаю Париж.",
-    englishSentence: "I hope to visit Paris someday.",
+    ukrainianTranslationOfSentence: "Я сподіваюся, що якось відвідаю Париж",
+    englishSentence: "I hope to visit Paris someday",
     level: 1,
     englishWord: "hope",
     idTheme: 1,
@@ -285,21 +285,21 @@ export const wordGeneral: Words[] = [
   }, {
     englishTranscription: "ˈɪnsaɪd",
     englishWord: "inside",
-    ukrainianTranslationOfSentence: "Всередині будинку було красиво прикрашено.",
+    ukrainianTranslationOfSentence: "Всередині будинку було красиво прикрашено",
     idTheme: 1,
     synonyms: ["interior", "indoors"],
     ukrainianTranslation: "всередині",
-    englishSentence: "The inside of the house was beautifully decorated.",
+    englishSentence: "The inside of the house was beautifully decorated",
     level: 1,
     id: 30
   }, {
     synonyms: ["to", "towards"],
     englishWord: "into",
     englishTranscription: "ˈɪntuː",
-    ukrainianTranslationOfSentence: "Кіт стрибнув у коробку.",
+    ukrainianTranslationOfSentence: "Кіт стрибнув у коробку",
     ukrainianTranslation: "в, до",
     level: 1,
-    englishSentence: "The cat jumped into the box.",
+    englishSentence: "The cat jumped into the box",
     idTheme: 1,
     id: 31
   }, {
@@ -310,34 +310,34 @@ export const wordGeneral: Words[] = [
     level: 1,
     ukrainianTranslation: "привабливий",
     englishTranscription: "ɪnˈvaɪtɪŋ",
-    ukrainianTranslationOfSentence: "У ресторані була приваблива атмосфера.",
-    englishSentence: "The restaurant had an inviting atmosphere."
+    ukrainianTranslationOfSentence: "У ресторані була приваблива атмосфера",
+    englishSentence: "The restaurant had an inviting atmosphere"
   }, {
     englishWord: "just",
     level: 1,
     englishTranscription: "dʒʌst",
-    ukrainianTranslationOfSentence: "Я тільки що закінчив своє домашнє завдання.",
+    ukrainianTranslationOfSentence: "Я тільки що закінчив своє домашнє завдання",
     idTheme: 1,
     synonyms: ["only", "recently"],
     ukrainianTranslation: "просто, тільки",
     id: 33,
-    englishSentence: "I just finished my homework."
+    englishSentence: "I just finished my homework"
   }, {
     id: 34,
     idTheme: 1,
     synonyms: ["minimal", "smallest"],
     ukrainianTranslation: "найменший, хоча б",
-    ukrainianTranslationOfSentence: "Найменше, що я можу зробити, це допомогти вам з вашим проектом.",
+    ukrainianTranslationOfSentence: "Найменше, що я можу зробити, це допомогти вам з вашим проектом",
     englishWord: "least",
     englishTranscription: "liːst",
     level: 1,
-    englishSentence: "The least I can do is help you with your project."
+    englishSentence: "The least I can do is help you with your project"
   }, {
     englishWord: "less",
     id: 35,
     ukrainianTranslation: "менш",
-    ukrainianTranslationOfSentence: "Сьогодні я менш втомлений, ніж вчора.",
-    englishSentence: "I'm less tired today than I was yesterday.",
+    ukrainianTranslationOfSentence: "Сьогодні я менш втомлений, ніж вчора",
+    englishSentence: "I'm less tired today than I was yesterday",
     idTheme: 1,
     level: 1,
     englishTranscription: "lɛs",
@@ -348,15 +348,15 @@ export const wordGeneral: Words[] = [
     synonyms: ["may", "could"],
     englishTranscription: "maɪt",
     level: 1,
-    englishSentence: "I might go to the party tonight if I finish my work in time.",
+    englishSentence: "I might go to the party tonight if I finish my work in time",
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Можливо, я сьогодні піду на вечірку, якщо закінчу роботу вчасно.",
+    ukrainianTranslationOfSentence: "Можливо, я сьогодні піду на вечірку, якщо закінчу роботу вчасно",
     englishWord: "might"
   }, {
     id: 37,
-    ukrainianTranslationOfSentence: "Ви повинні носити шолом, коли їдете на велосипеді.",
+    ukrainianTranslationOfSentence: "Ви повинні носити шолом, коли їдете на велосипеді",
     englishTranscription: "mʌst",
-    englishSentence: "You must wear a helmet when you ride a bike.",
+    englishSentence: "You must wear a helmet when you ride a bike",
     englishWord: "must",
     synonyms: ["have to", "should"],
     ukrainianTranslation: "повинен",
@@ -375,28 +375,28 @@ export const wordGeneral: Words[] = [
   }, {
     englishWord: "next to",
     idTheme: 1,
-    englishSentence: "The library is next to the park.",
-    ukrainianTranslationOfSentence: "Бібліотека знаходиться поруч з парком.",
+    englishSentence: "The library is next to the park",
+    ukrainianTranslationOfSentence: "Бібліотека знаходиться поруч з парком",
     id: 39,
     level: 1,
     englishTranscription: "nɛkst tuː",
     ukrainianTranslation: "поруч з",
     synonyms: ["beside", "adjacent to"]
   }, {
-    englishSentence: "The bank is opposite the post office.",
+    englishSentence: "The bank is opposite the post office",
     englishWord: "opposite",
     ukrainianTranslation: "навпроти",
     englishTranscription: "ˈɒpəzɪt",
     id: 40,
-    ukrainianTranslationOfSentence: "Банк знаходиться навпроти пошти.",
+    ukrainianTranslationOfSentence: "Банк знаходиться навпроти пошти",
     synonyms: ["facing", "across from"],
     idTheme: 1,
     level: 1
   },
   {
     ukrainianTranslation: "загальний",
-    ukrainianTranslationOfSentence: "Загальна якість продукту була відмінною.",
-    englishSentence: "The overall quality of the product was excellent.",
+    ukrainianTranslationOfSentence: "Загальна якість продукту була відмінною",
+    englishSentence: "The overall quality of the product was excellent",
     synonyms: ["general", "total"],
     englishWord: "overall",
     id: 41,
@@ -409,19 +409,19 @@ export const wordGeneral: Words[] = [
     id: 42,
     ukrainianTranslation: "минулий, попередній",
     englishWord: "past",
-    englishSentence: "I enjoyed my past job, but I'm excited about my new one.",
-    ukrainianTranslationOfSentence: "Мені сподобалася моя попередня робота, але я з нетерпінням чекаю на нову.",
+    englishSentence: "I enjoyed my past job, but I'm excited about my new one",
+    ukrainianTranslationOfSentence: "Мені сподобалася моя попередня робота, але я з нетерпінням чекаю на нову",
     englishTranscription: "pɑːst",
     level: 1
   }, {
     ukrainianTranslation: "багато, досить",
-    englishSentence: "There is plenty of food for everyone.",
+    englishSentence: "There is plenty of food for everyone",
     englishTranscription: "ˈplɛnti ɒv",
     synonyms: ["a lot of", "enough"],
     id: 43,
     level: 1,
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Їжі досить для всіх.",
+    ukrainianTranslationOfSentence: "Їжі досить для всіх",
     englishWord: "plenty of"
   }, {
     id: 44,
@@ -438,13 +438,13 @@ export const wordGeneral: Words[] = [
     idTheme: 1,
     id: 45,
     ukrainianTranslation: "віддавати перевагу",
-    englishSentence: "I prefer tea to coffee.",
+    englishSentence: "I prefer tea to coffee",
     englishWord: "prefer",
     synonyms: ["like better", "choose"],
     englishTranscription: "prɪˈfɜː",
-    ukrainianTranslationOfSentence: "Я віддаю перевагу чаю над кавою."
+    ukrainianTranslationOfSentence: "Я віддаю перевагу чаю над кавою"
   }, {
-    englishSentence: "He will probably arrive in an hour.",
+    englishSentence: "He will probably arrive in an hour",
     id: 46,
     englishWord: "probably",
     englishTranscription: "ˈprɒbəbli",
@@ -452,65 +452,65 @@ export const wordGeneral: Words[] = [
     level: 1,
     synonyms: ["likely", "possibly", "perhaps"],
     ukrainianTranslation: "можливо",
-    ukrainianTranslationOfSentence: "Він, можливо, прибуде через годину."
+    ukrainianTranslationOfSentence: "Він, можливо, прибуде через годину"
   }, {
     level: 1,
     synonyms: ["silent", "peaceful"],
     ukrainianTranslation: "тихий",
-    ukrainianTranslationOfSentence: "Будь ласка, будьте тихі в бібліотеці.",
+    ukrainianTranslationOfSentence: "Будь ласка, будьте тихі в бібліотеці",
     idTheme: 1,
     id: 47,
     englishTranscription: "ˈkwaɪət",
     englishWord: "quiet",
-    englishSentence: "Please be quiet in the library."
+    englishSentence: "Please be quiet in the library"
   }, {
     id: 48,
     level: 1,
     englishWord: "quite",
     ukrainianTranslation: "досить",
-    englishSentence: "I'm quite happy with my new car.",
+    englishSentence: "I'm quite happy with my new car",
     englishTranscription: "kwaɪt",
     synonyms: ["very", "fairly"],
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Я дуже задоволений своєю новою машиною."
+    ukrainianTranslationOfSentence: "Я дуже задоволений своєю новою машиною"
   }, {
     level: 1,
     englishTranscription: "ˈriːsəntli",
-    englishSentence: "I recently moved to a new city.",
+    englishSentence: "I recently moved to a new city",
     id: 49,
     idTheme: 1,
     englishWord: "recently",
-    ukrainianTranslationOfSentence: "Я нещодавно переїхав у нове місто.",
+    ukrainianTranslationOfSentence: "Я нещодавно переїхав у нове місто",
     ukrainianTranslation: "нещодавно",
     synonyms: ["lately", "newly"]
   }, {
-    englishSentence: "You should eat a balanced diet.",
+    englishSentence: "You should eat a balanced diet",
     level: 1,
     ukrainianTranslation: "повинен",
     synonyms: ["ought to", "must"],
     idTheme: 1,
     englishWord: "should",
-    ukrainianTranslationOfSentence: "Ви повинні харчуватися збалансовано.",
+    ukrainianTranslationOfSentence: "Ви повинні харчуватися збалансовано",
     englishTranscription: "ʃʊd",
     id: 50
   }, {
-    englishSentence: "The dog is sleeping on the side of the road.",
+    englishSentence: "The dog is sleeping on the side of the road",
     idTheme: 1,
     synonyms: ["edge", "flank"],
-    ukrainianTranslationOfSentence: "Собака спить на боці дороги.",
+    ukrainianTranslationOfSentence: "Собака спить на боці дороги",
     level: 1,
     id: 51,
     englishTranscription: "saɪd",
     englishWord: "side",
     ukrainianTranslation: "бік, сторона"
   }, {
-    englishSentence: "I haven't seen her since last year.",
+    englishSentence: "I haven't seen her since last year",
     id: 52,
     englishWord: "since",
     idTheme: 1,
     ukrainianTranslation: "з тих пір, як",
     synonyms: ["because", "as"],
-    ukrainianTranslationOfSentence: "Я не бачив її з тих пір, як вона пішла минулого року.",
+    ukrainianTranslationOfSentence: "Я не бачив її з тих пір, як вона пішла минулого року",
     englishTranscription: "sɪns",
     level: 1
   }, {
@@ -525,14 +525,14 @@ export const wordGeneral: Words[] = [
     idTheme: 1
   }, {
     ukrainianTranslation: "скоро",
-    englishSentence: "I'll be home soon.",
+    englishSentence: "I'll be home soon",
     englishTranscription: "suːn",
     level: 1,
     idTheme: 1,
     englishWord: "soon",
     id: 54,
     synonyms: ["shortly", "quickly"],
-    ukrainianTranslationOfSentence: "Я скоро буду вдома."
+    ukrainianTranslationOfSentence: "Я скоро буду вдома"
   }, {
     id: 55,
     synonyms: ["precisely", "particularly"],
@@ -541,13 +541,13 @@ export const wordGeneral: Words[] = [
     level: 1,
     englishWord: "specifically",
     englishTranscription: "spəˈsɪfɪkli",
-    ukrainianTranslationOfSentence: "Мені потрібно, щоб ви були більш конкретні щодо своїх планів.",
-    englishSentence: "I need you to be more specifically about your plans."
+    ukrainianTranslationOfSentence: "Мені потрібно, щоб ви були більш конкретні щодо своїх планів",
+    englishSentence: "I need you to be more specifically about your plans"
   }, {
     synonyms: ["yet", "even now"],
-    ukrainianTranslationOfSentence: "Я все ще чекаю на свою посилку.",
+    ukrainianTranslationOfSentence: "Я все ще чекаю на свою посилку",
     idTheme: 1,
-    englishSentence: "I'm still waiting for my package to arrive.",
+    englishSentence: "I'm still waiting for my package to arrive",
     englishTranscription: "stɪl",
     englishWord: "still",
     level: 1,
@@ -567,50 +567,50 @@ export const wordGeneral: Words[] = [
     ukrainianTranslation: "підходити, відповідати",
     englishWord: "suit",
     idTheme: 1,
-    englishSentence: "This dress doesn't suit me.",
+    englishSentence: "This dress doesn't suit me",
     level: 1,
     synonyms: ["fit", "match"],
     englishTranscription: "suːt",
     id: 58,
-    ukrainianTranslationOfSentence: "Ця сукня мені не підходить."
+    ukrainianTranslationOfSentence: "Ця сукня мені не підходить"
   }, {
-    ukrainianTranslationOfSentence: "Я впевнений, що замкнув двері.",
+    ukrainianTranslationOfSentence: "Я впевнений, що замкнув двері",
     ukrainianTranslation: "впевнений",
     englishWord: "sure",
     englishTranscription: "ʃʊr",
     idTheme: 1,
     level: 1,
-    englishSentence: "I am sure that I locked the door.",
+    englishSentence: "I am sure that I locked the door",
     synonyms: ["certain", "confident", "convinced"],
     id: 59
   }, {
     englishWord: "though",
-    englishSentence: "Though he is young, he is very talented.",
+    englishSentence: "Though he is young, he is very talented",
     id: 60,
     ukrainianTranslation: "хоча",
     synonyms: ["although", "even though", "despite"],
     englishTranscription: "ðoʊ",
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Хоча він молодий, він дуже талановитий.",
+    ukrainianTranslationOfSentence: "Хоча він молодий, він дуже талановитий",
     level: 1
   },
   {
     englishTranscription: "θruː",
     idTheme: 1,
     englishWord: "through",
-    ukrainianTranslationOfSentence: "Я пройшов через парк.",
-    englishSentence: "I walked through the park.",
+    ukrainianTranslationOfSentence: "Я пройшов через парк",
+    englishSentence: "I walked through the park",
     level: 1,
     synonyms: ["across", "by means of", "via"],
     ukrainianTranslation: "через",
     id: 61
   }, {
     idTheme: 1,
-    englishSentence: "The puppy was so tiny it could fit in my hand.",
+    englishSentence: "The puppy was so tiny it could fit in my hand",
     synonyms: ["small", "little", "mini"],
     id: 62,
     englishTranscription: "taɪni",
-    ukrainianTranslationOfSentence: "Цуценя було настільки крихітним, що воно помістилось у моїй руці.",
+    ukrainianTranslationOfSentence: "Цуценя було настільки крихітним, що воно помістилось у моїй руці",
     englishWord: "tiny",
     ukrainianTranslation: "крихітний",
     level: 1
@@ -619,17 +619,17 @@ export const wordGeneral: Words[] = [
     synonyms: ["memorable", "lasting", "remarkable"],
     idTheme: 1,
     englishTranscription: "ˌʌnfərˈɡɛtəbl",
-    englishSentence: "Our trip to Paris was unforgettable.",
+    englishSentence: "Our trip to Paris was unforgettable",
     ukrainianTranslation: "незабутній",
     englishWord: "unforgettable",
     level: 1,
-    ukrainianTranslationOfSentence: "Наша поїздка до Парижу була незабутньою."
+    ukrainianTranslationOfSentence: "Наша поїздка до Парижу була незабутньою"
   }, {
     synonyms: ["up to", "till", "before"],
     id: 64,
-    englishSentence: "We worked until midnight.",
+    englishSentence: "We worked until midnight",
     englishWord: "until",
-    ukrainianTranslationOfSentence: "Ми працювали до півночі.",
+    ukrainianTranslationOfSentence: "Ми працювали до півночі",
     ukrainianTranslation: "до",
     englishTranscription: "ənˈtɪl",
     level: 1,
@@ -647,18 +647,18 @@ export const wordGeneral: Words[] = [
   }, {
     ukrainianTranslation: "слабкий",
     level: 1,
-    ukrainianTranslationOfSentence: "Він був занадто слабким, щоб нести коробку.",
+    ukrainianTranslationOfSentence: "Він був занадто слабким, щоб нести коробку",
     idTheme: 1,
     synonyms: ["feeble", "fragile", "delicate"],
     id: 66,
     englishWord: "weak",
-    englishSentence: "He was too weak to carry the box.",
+    englishSentence: "He was too weak to carry the box",
     englishTranscription: "wik"
   }, {
     ukrainianTranslation: "добре",
-    ukrainianTranslationOfSentence: "Вона дуже добре говорить англійською.",
+    ukrainianTranslationOfSentence: "Вона дуже добре говорить англійською",
     englishWord: "well",
-    englishSentence: "She speaks English very well.",
+    englishSentence: "She speaks English very well",
     idTheme: 1,
     level: 1,
     synonyms: ["fine", "okay", "healthy"],
@@ -667,38 +667,38 @@ export const wordGeneral: Words[] = [
   }, {
     idTheme: 1,
     synonyms: ["as", "during", "whilst"],
-    englishSentence: "While I was studying, my sister was watching TV.",
+    englishSentence: "While I was studying, my sister was watching TV",
     id: 68,
     englishTranscription: "waɪl",
     ukrainianTranslation: "поки",
     level: 1,
     englishWord: "while",
-    ukrainianTranslationOfSentence: "Поки я вчився, моя сестра дивилась телевізору."
+    ukrainianTranslationOfSentence: "Поки я вчився, моя сестра дивилась телевізору"
   }, {
     ukrainianTranslation: "порада",
     level: 1,
     synonyms: ["guidance", "recommendation", "suggestion"],
     idTheme: 1,
-    ukrainianTranslationOfSentence: "Мені потрібна допомога з порадою, як виправити мою машину.",
+    ukrainianTranslationOfSentence: "Мені потрібна допомога з порадою, як виправити мою машину",
     englishTranscription: "ədˈvaɪs",
     englishWord: "advice",
-    englishSentence: "I need some advice on how to fix my car.",
+    englishSentence: "I need some advice on how to fix my car",
     id: 69
   }, {
     idTheme: 1,
     id: 70,
-    englishSentence: "I am grateful for your help.",
+    englishSentence: "I am grateful for your help",
     synonyms: ["appreciative", "thankful", "obliged"],
     level: 1,
     englishTranscription: "ˈɡreɪtfəl",
     ukrainianTranslation: "вдячний",
     englishWord: "grateful",
-    ukrainianTranslationOfSentence: "Я вдячний за вашу допомогу."
+    ukrainianTranslationOfSentence: "Я вдячний за вашу допомогу"
   }, {
-    ukrainianTranslationOfSentence: "Я нещодавно подивився чудовий фільм.",
+    ukrainianTranslationOfSentence: "Я нещодавно подивився чудовий фільм",
     ukrainianTranslation: "нещодавно",
     synonyms: ["lately", "newly", "freshly"],
-    englishSentence: "I recently saw a great movie.",
+    englishSentence: "I recently saw a great movie",
     englishWord: "recently",
     level: 1,
     id: 71,
@@ -706,10 +706,10 @@ export const wordGeneral: Words[] = [
     englishTranscription: "ˈriːsntli"
   }, {
     englishWord: "therefore",
-    ukrainianTranslationOfSentence: "Вона любить танцювати, тому вона бере уроки балету.",
+    ukrainianTranslationOfSentence: "Вона любить танцювати, тому вона бере уроки балету",
     ukrainianTranslation: "отже",
     idTheme: 1,
-    englishSentence: "She loves to dance, therefore she takes ballet lessons.",
+    englishSentence: "She loves to dance, therefore she takes ballet lessons",
     id: 72,
     synonyms: ["thus", "consequently", "accordingly"],
     englishTranscription: "ˈðerfɔːr",
@@ -717,52 +717,52 @@ export const wordGeneral: Words[] = [
   }, {
     ukrainianTranslation: "тому",
     englishWord: "so",
-    englishSentence: "I forgot my keys, so I couldn't open the door.",
+    englishSentence: "I forgot my keys, so I couldn't open the door",
     englishTranscription: "səʊ",
     level: 1,
     id: 73,
     idTheme: 1,
     synonyms: ["therefore", "consequently", "accordingly"],
-    ukrainianTranslationOfSentence: "Я забув свої ключі, тому не міг відкрити двері."
+    ukrainianTranslationOfSentence: "Я забув свої ключі, тому не міг відкрити двері"
   }, {
     id: 74,
     level: 1,
-    englishSentence: "I haven't seen him since last week.",
+    englishSentence: "I haven't seen him since last week",
     englishTranscription: "sɪns",
     idTheme: 1,
     englishWord: "since",
-    ukrainianTranslationOfSentence: "Я не бачив його з того часу, як минулого тижня.",
+    ukrainianTranslationOfSentence: "Я не бачив його з того часу, як минулого тижня",
     ukrainianTranslation: "з того часу як",
     synonyms: ["because", "as", "for the reason that"]
   },
   {
     id : 75,
     ukrainianTranslation : "абсолютно",
-    englishSentence : "I absolutely love playing video games; they are my favorite hobby.",
+    englishSentence : "I absolutely love playing video games; they are my favorite hobby",
     englishTranscription : "ˈæbsəˌlutli",
     synonyms : ["definitely", "certainly", "surely"],
     englishWord : "absolutely",
     idTheme : 3,
     level : 1,
-    ukrainianTranslationOfSentence : "Я абсолютно люблю грати відеоігри; вони - моє улюблене хобі."
+    ukrainianTranslationOfSentence : "Я абсолютно люблю грати відеоігри; вони - моє улюблене хобі"
   }, {
     id : 76,
     idTheme : 3,
-    ukrainianTranslationOfSentence : "Сюжет гри повністю зачарував мене від початку до кінця.",
+    ukrainianTranslationOfSentence : "Сюжет гри повністю зачарував мене від початку до кінця",
     englishWord : "completely",
     ukrainianTranslation : "повністю",
-    englishSentence : "The game's storyline completely captivated me from start to finish.",
+    englishSentence : "The game's storyline completely captivated me from start to finish",
     englishTranscription : "kəmˈpliːtli",
     level : 1,
     synonyms : ["entirely", "totally", "wholly"]
   }, {
     englishWord : "extremely",
-    englishSentence : "The boss battle in this game is extremely challenging; it requires precision and skill.",
+    englishSentence : "The boss battle in this game is extremely challenging; it requires precision and skill",
     ukrainianTranslation : "надзвичайно",
     idTheme : 3,
     synonyms : ["exceedingly", "highly", "remarkably"],
     id : 77,
-    ukrainianTranslationOfSentence : "Бос-битва в цій грі надзвичайно складна; вона вимагає точності та навичок.",
+    ukrainianTranslationOfSentence : "Бос-битва в цій грі надзвичайно складна; вона вимагає точності та навичок",
     level : 1,
     englishTranscription : "ɪkˈstriːmli"
   }, {
@@ -770,17 +770,17 @@ export const wordGeneral: Words[] = [
     id : 78,
     ukrainianTranslation : "високо",
     englishTranscription : "ˈhaɪli",
-    ukrainianTranslationOfSentence : "Цю гру високо рекомендують професійні геймери та критики.",
+    ukrainianTranslationOfSentence : "Цю гру високо рекомендують професійні геймери та критики",
     level : 1,
     synonyms : ["greatly", "strongly", "intensely"],
     englishWord : "highly",
-    englishSentence : "This game is highly recommended by professional gamers and critics."
+    englishSentence : "This game is highly recommended by professional gamers and critics"
   }, {
     englishTranscription : "ɪnˈkrɛdəbli",
     synonyms : ["unbelievably", "astonishingly", "remarkably"],
     id : 79,
-    ukrainianTranslationOfSentence : "Графіка в цій грі неймовірно реалістична; відчуваєш себе в середині віртуального світу.",
-    englishSentence : "The graphics in this game are incredibly realistic; it feels like you're inside the virtual world.",
+    ukrainianTranslationOfSentence : "Графіка в цій грі неймовірно реалістична; відчуваєш себе в середині віртуального світу",
+    englishSentence : "The graphics in this game are incredibly realistic; it feels like you're inside the virtual world",
     englishWord : "incredibly",
     ukrainianTranslation : "неймовірно",
     idTheme : 3,
@@ -792,13 +792,13 @@ export const wordGeneral: Words[] = [
     idTheme : 3,
     level : 1,
     englishTranscription : "ˈtoʊtəli",
-    englishSentence : "I'm totally immersed in this game; it's hard to put it down.",
-    ukrainianTranslationOfSentence : "Я повністю занурений в цю гру; важко відірватися.",
+    englishSentence : "I'm totally immersed in this game; it's hard to put it down",
+    ukrainianTranslationOfSentence : "Я повністю занурений в цю гру; важко відірватися",
     englishWord : "totally"
   }, {
     synonyms : ["lacking", "devoid of", "not having"],
-    ukrainianTranslationOfSentence : "Він пішов до магазину без гаманця.",
-    englishSentence : "He went to the store without his wallet.",
+    ukrainianTranslationOfSentence : "Він пішов до магазину без гаманця",
+    englishSentence : "He went to the store without his wallet",
     ukrainianTranslation : "без",
     englishWord : "without",
     id : 81,
@@ -807,9 +807,9 @@ export const wordGeneral: Words[] = [
     englishTranscription : "wɪˈðaʊt"
   }, {
     englishWord : "unpredictable",
-    englishSentence : "The weather is unpredictable today.",
+    englishSentence : "The weather is unpredictable today",
     idTheme : 3,
-    ukrainianTranslationOfSentence : "Погода сьогодні непередбачувана.",
+    ukrainianTranslationOfSentence : "Погода сьогодні непередбачувана",
     ukrainianTranslation : "непередбачуваний",
     id : 82,
     synonyms : ["uncertain", "erratic", "volatile"],
@@ -821,8 +821,8 @@ export const wordGeneral: Words[] = [
     id : 83,
     synonyms : ["mainly", "chiefly", "predominantly"],
     level : 1,
-    ukrainianTranslationOfSentence : "Компанія головним чином зосереджується на задоволенні клієнтів.",
-    englishSentence : "The company primarily focuses on customer satisfaction.",
+    ukrainianTranslationOfSentence : "Компанія головним чином зосереджується на задоволенні клієнтів",
+    englishSentence : "The company primarily focuses on customer satisfaction",
     englishWord : "primarily",
     englishTranscription : "praɪˈmɛrɪli"
   }

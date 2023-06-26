@@ -81,7 +81,7 @@ export class VerbsComponent implements OnInit, OnDestroy {
 
       case 'favorite':
         return filteredData;
-        
+
       default :
         break
     }

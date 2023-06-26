@@ -1,10 +1,11 @@
-import {Component, HostListener, OnDestroy, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {map, Subject, switchMap, takeUntil} from "rxjs";
+import {debounceTime, map, Subject, switchMap, takeUntil, tap} from "rxjs";
 import {Phrase} from "../../../models/data";
 import {Store} from "@ngrx/store";
 import {SpeakerService} from "../../../services/speaker.service";
 import {DataSelectorsPhrases} from "../../../store/data/selectors-phrases";
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'app-phrases-trainer',
@@ -12,7 +13,7 @@ import {DataSelectorsPhrases} from "../../../store/data/selectors-phrases";
   styleUrls: ['./phrases-trainer.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class PhrasesTrainerComponent implements OnDestroy {
+export class PhrasesTrainerComponent implements OnDestroy,OnInit {
   id: number
   isVisible:boolean
   isVisible1 = false
@@ -20,9 +21,12 @@ export class PhrasesTrainerComponent implements OnDestroy {
   list: Phrase[] = []
   item: Phrase
   randomArr:Array<number> =[]
+  phrase:string=''
 
   private unsubscribe$ = new Subject<void>();
-
+  inputValue=new FormControl
+  isCheck=false
+  isResultEqual:boolean
 
   @HostListener('document:keydown.enter')
   onEnter() {
@@ -42,7 +46,7 @@ export class PhrasesTrainerComponent implements OnDestroy {
           }))
         )),
         switchMap(({id,query}) => this.store.select(DataSelectorsPhrases.getPhrasesById(+id,query)).pipe(
-        map(data => data.data)
+        map(data => data.data),
         )),
         takeUntil(this.unsubscribe$)
       ).subscribe(data => {
@@ -57,9 +61,16 @@ export class PhrasesTrainerComponent implements OnDestroy {
     ).subscribe(response=> {
       this.isVisible = response
       this.mainVisible=response
-
     })
 
+  }
+
+  ngOnInit() {
+    this.inputValue.valueChanges.pipe(
+      debounceTime(300),
+      tap(el=>this.phrase=el),
+      takeUntil(this.unsubscribe$)
+    ).subscribe()
   }
 
 
@@ -70,6 +81,11 @@ export class PhrasesTrainerComponent implements OnDestroy {
     this.isVisible=this.mainVisible
   }
 
+  check() {
+    this.isCheck=true
+    this.isResultEqual=this.phrase.toLowerCase()===this.item.phrase.toLowerCase()
+  }
+
   speak(value:string):void{
     this.speaker.speak(value)
   }
@@ -78,13 +94,11 @@ export class PhrasesTrainerComponent implements OnDestroy {
     if (this.randomArr.length === 0) {
       this.randomArr = Array.from(Array(this.list.length).keys());
     }
-
     const randomIndex = Math.floor(Math.random() * this.randomArr.length);
     const index = this.randomArr[randomIndex];
 
     // Видалення випадкового індексу з масиву
     this.randomArr.splice(randomIndex, 1);
-
     return index;
 
   }
@@ -93,5 +107,4 @@ export class PhrasesTrainerComponent implements OnDestroy {
     this.unsubscribe$.next()
     this.unsubscribe$.complete()
   }
-
 }

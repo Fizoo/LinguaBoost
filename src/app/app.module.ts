@@ -58,6 +58,7 @@ import {
 import {FilterPhrasesPipe} from './pipes/filter-phrases.pipe';
 import { FilterAllPipe } from './pipes/filter-all.pipe';
 import { PhrasesTrainerComponent } from './components/phrases/phrases-trainer/phrases-trainer.component';
+import { CombineTextComponent } from './components/phrases/phrases-trainer/combine-text/combine-text.component';
 
 
 @NgModule({
@@ -93,6 +94,7 @@ import { PhrasesTrainerComponent } from './components/phrases/phrases-trainer/ph
     FilterPhrasesPipe,
     FilterAllPipe,
     PhrasesTrainerComponent,
+    CombineTextComponent,
   ],
     imports: [
         BrowserModule,

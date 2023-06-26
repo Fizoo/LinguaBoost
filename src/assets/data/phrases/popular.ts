@@ -22,10 +22,10 @@ export const popular:Phrase[] = [
     phrase: "Can you help me find my way?",
     translateToUA: "Можете допомогти мені знайти дорогу?"
   }, {
-    translateToUA: "Можете допомогти мені знайти...?",
+    translateToUA: "Можете допомогти мені знайти?",
     idPhrase: 1,
     id: 5,
-    phrase: "Can you help me find...?"
+    phrase: "Can you help me find?"
   }, {
     id: 6,
     phrase: "Can you help me, please?",
@@ -72,10 +72,10 @@ export const popular:Phrase[] = [
     id: 15,
     idPhrase: 1
   }, {
-    translateToUA: "Можете показати мені, як...?",
+    translateToUA: "Можете показати мені, як?",
     id: 16,
     idPhrase: 1,
-    phrase: "Can you show me how to...?"
+    phrase: "Can you show me how to?"
   }, {translateToUA: "Можете показати мені?", idPhrase: 1, id: 17, phrase: "Can you show me?"}, {
     id: 18,
     idPhrase: 1,
@@ -102,9 +102,9 @@ export const popular:Phrase[] = [
     translateToUA: "Можете розповісти про себе?",
     id: 23
   }, {
-    translateToUA: "Можете сказати мені дорогу до...?",
+    translateToUA: "Можете сказати мені дорогу до?",
     idPhrase: 1,
-    phrase: "Can you tell me the way to...?",
+    phrase: "Can you tell me the way to?",
     id: 24
   }, {
     id: 25,
@@ -142,10 +142,10 @@ export const popular:Phrase[] = [
     phrase: "Could you repeat that?",
     translateToUA: "Могли б ви повторити це?"
   }, {
-    translateToUA: "Могли б ви показати мені...?",
+    translateToUA: "Могли б ви показати мені?",
     id: 32,
     idPhrase: 1,
-    phrase: "Could you show me...?"
+    phrase: "Could you show me?"
   }, {
     translateToUA: "У вас є які-небудь питання?",
     idPhrase: 1,
@@ -154,13 +154,13 @@ export const popular:Phrase[] = [
   }, {phrase: "Excuse me", translateToUA: "Вибачте", idPhrase: 1, id: 34}, {
     idPhrase: 1,
     id: 35,
-    phrase: "Excuse me, where is the nearest...?",
-    translateToUA: "Вибачте, де найближчий...?"
+    phrase: "Excuse me, where is the nearest?",
+    translateToUA: "Вибачте, де найближчий?"
   }, {phrase: "Have a good day", id: 36, translateToUA: "Гарного дня", idPhrase: 1}, {
     id: 37,
-    phrase: "How do I get to the...?",
+    phrase: "How do I get to the?",
     idPhrase: 1,
-    translateToUA: "Як мені дістатися до...?"
+    translateToUA: "Як мені дістатися до?"
   }, {translateToUA: "Як ви себе почуваєте?", idPhrase: 1, id: 38, phrase: "How do you feel?"}, {
     idPhrase: 1,
     phrase: "How do you like your coffee?",
@@ -182,8 +182,8 @@ export const popular:Phrase[] = [
     phrase: "How do you say this in English?",
     translateToUA: "Як це кажеться англійською?"
   }, {
-    phrase: "How do you say...in English?",
-    translateToUA: "Як кажеться...англійською?",
+    phrase: "How do you sayin English?",
+    translateToUA: "Як кажетьсяанглійською?",
     idPhrase: 1,
     id: 43
   }, {idPhrase: 1, phrase: "How do you spell that?", translateToUA: "Як це правильно пишеться?", id: 44}, {
@@ -232,7 +232,7 @@ export const popular:Phrase[] = [
     id: 57,
     phrase: "I don't know"
   }, {phrase: "I don't like this food", idPhrase: 1, translateToUA: "Мені не подобається ця їжа", id: 58},
-  {idPhrase: 1, id: 59, phrase: "I don't like...", translateToUA: "Мені не подобається..."}, {
+  {idPhrase: 1, id: 59, phrase: "I don't like", translateToUA: "Мені не подобається"}, {
     id: 60,
     idPhrase: 1,
     translateToUA: "Я не розумію",
@@ -250,14 +250,14 @@ export const popular:Phrase[] = [
   }, {id: 65, phrase: "I'm bored", translateToUA: "Мені нудно", idPhrase: 1}, {
     id: 66,
     idPhrase: 1,
-    phrase: "I'm from...",
-    translateToUA: "Я з..."
+    phrase: "I'm from",
+    translateToUA: "Я з"
   }, {phrase: "I'm glad to hear that", idPhrase: 1, id: 67, translateToUA: "Радий(а) чути це"}, {
     phrase: "I'm hungry",
     idPhrase: 1,
     id: 68,
     translateToUA: "Я голодний"
-  }, {idPhrase: 1, id: 69, translateToUA: "Я шукаю...", phrase: "I'm looking for..."}, {
+  }, {idPhrase: 1, id: 69, translateToUA: "Я шукаю", phrase: "I'm looking for"}, {
     idPhrase: 1,
     id: 70,
     translateToUA: "Я з нетерпінням цього чекаю",
@@ -706,8 +706,8 @@ export const popular:Phrase[] = [
     translateToUA: "О котрій годині воно закінчується?"
   }, {
     id: 203,
-    translateToUA: "Коли ви востаннє...?",
-    phrase: "When was the last time you...?",
+    translateToUA: "Коли ви востаннє?",
+    phrase: "When was the last time you?",
     idPhrase: 1
   }, {translateToUA: "Коли це буде готово?", phrase: "When will it be ready?", id: 204, idPhrase: 1}, {
     idPhrase: 1,
@@ -770,16 +770,16 @@ export const popular:Phrase[] = [
     id: 222,
     idPhrase: 1
   }, {
-    phrase: "Where is the closest...?",
+    phrase: "Where is the closest?",
     idPhrase: 1,
-    translateToUA: "Де найближчий...?",
+    translateToUA: "Де найближчий?",
     id: 223
   }, {
-    phrase: "Where is the nearest...?",
+    phrase: "Where is the nearest?",
     idPhrase: 1,
-    translateToUA: "Де найближчий...?",
+    translateToUA: "Де найближчий?",
     id: 224
-  }, {translateToUA: "Де знаходиться...?", phrase: "Where is...?", idPhrase: 1, id: 225}, {
+  }, {translateToUA: "Де знаходиться?", phrase: "Where is?", idPhrase: 1, id: 225}, {
     idPhrase: 1,
     translateToUA: "Де знаходиться аеропорт?",
     phrase: "Where's the airport?",
@@ -790,10 +790,10 @@ export const popular:Phrase[] = [
     id: 227,
     translateToUA: "Де знаходиться автовокзал?"
   }, {
-    phrase: "Where's the nearest...?",
+    phrase: "Where's the nearest?",
     id: 228,
     idPhrase: 1,
-    translateToUA: "Де знаходиться найближчий...?"
+    translateToUA: "Де знаходиться найближчий?"
   }, {
     id: 229,
     phrase: "Where's the train station?",

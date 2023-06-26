@@ -22,17 +22,40 @@
       </div>
     </div>
 
-    <div class="next">
+
+    <div *ngIf="!isVisible" class="combine">
+      <app-combine-text  *ngFor="let a of item.phrase.split(' ')" [text]="a"></app-combine-text>
+    </div>
+
+    <div *ngIf="!isVisible" class="next">
       <mat-form-field class="mat-input">
         <!--<mat-label>Phrase</mat-label>-->
-        <input matInput placeholder="Write text...">
+        <input matInput placeholder="Write text..." [formControl]="inputValue">
       </mat-form-field>
     </div>
 
+
+
+
     <div class="next">
+      <button  *ngIf="!isVisible"  class="btn-next" mat-raised-button color="accent" [disabled]="!phrase" (click)="check()">Check</button>
       <button class="btn-next" mat-raised-button color="primary" (click)="nextTo()">Next</button>
     </div>
   </div>
+
+  <footer *ngIf="isCheck" class="footer">
+    <div class="result">
+      <span *ngIf="isResultEqual;else result">
+        Great Work!!!
+      </span>
+      <ng-template #result>
+        <span >Sorry</span>
+      </ng-template>
+
+    </div>
+  </footer>
+
+
 
   <div class="close">
     <button mat-icon-button routerLink="/">

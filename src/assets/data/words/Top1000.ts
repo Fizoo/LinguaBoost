@@ -1,17 +1,17 @@
 export const top1000 = [
   {
-    englishSentence: "She is able to swim.",
+    englishSentence: "She is able to swim",
     ukrainianTranslation: "можливий",
     englishWord: "able",
-    ukrainianTranslationOfSentence: "Вона може плавати.",
+    ukrainianTranslationOfSentence: "Вона може плавати",
     synonyms: ["capable", "competent", "skilled"],
     idTheme: 0,
     englishTranscription: "ˈeɪbəl",
     level: 1,
     id: 0
   }, {
-    ukrainianTranslationOfSentence: "Поговоримо про це.",
-    englishSentence: "Let's talk about it.",
+    ukrainianTranslationOfSentence: "Поговоримо про це",
+    englishSentence: "Let's talk about it",
     englishTranscription: "əˈbaʊt",
     englishWord: "about",
     ukrainianTranslation: "про",
@@ -21,9 +21,9 @@ export const top1000 = [
     synonyms: ["regarding", "concerning", "around"]
   }, {
     level: 1,
-    englishSentence: "The moon is above the clouds.",
+    englishSentence: "The moon is above the clouds",
     synonyms: ["over", "on top of", "higher than"],
-    ukrainianTranslationOfSentence: "Місяць знаходиться над хмарами.",
+    ukrainianTranslationOfSentence: "Місяць знаходиться над хмарами",
     id: 2,
     idTheme: 0,
     englishTranscription: "əˈbʌv",
@@ -32,17 +32,17 @@ export const top1000 = [
   }, {
     id: 3,
     level: 1,
-    ukrainianTranslationOfSentence: "Він прийняв запрошення.",
+    ukrainianTranslationOfSentence: "Він прийняв запрошення",
     englishTranscription: "əkˈsɛpt",
     idTheme: 0,
     synonyms: ["receive", "take", "agree to"],
-    englishSentence: "He accepted the invitation.",
+    englishSentence: "He accepted the invitation",
     ukrainianTranslation: "приймати",
     englishWord: "accept"
   }, {
-    englishSentence: "We walked across the bridge.",
+    englishSentence: "We walked across the bridge",
     englishTranscription: "əˈkrɔs",
-    ukrainianTranslationOfSentence: "Ми пройшли через міст.",
+    ukrainianTranslationOfSentence: "Ми пройшли через міст",
     englishWord: "across",
     synonyms: ["through", "over", "beyond"],
     ukrainianTranslation: "через",
@@ -53,12 +53,12 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "ækt",
     synonyms: ["perform", "behave", "do"],
-    ukrainianTranslationOfSentence: "Вона може добре грати.",
+    ukrainianTranslationOfSentence: "Вона може добре грати",
     id: 5,
     englishWord: "act",
     ukrainianTranslation: "діяти",
     level: 1,
-    englishSentence: "She can act very well."
+    englishSentence: "She can act very well"
   }, {
     idTheme: 0,
     englishTranscription: "ˈæktʃuəli",
@@ -66,11 +66,11 @@ export const top1000 = [
     synonyms: ["really", "truly", "in fact"],
     id: 6,
     englishWord: "actually",
-    englishSentence: "He didn't actually mean it.",
+    englishSentence: "He didn't actually mean it",
     ukrainianTranslation: "насправді",
-    ukrainianTranslationOfSentence: "Насправді він не мав на увазі це."
+    ukrainianTranslationOfSentence: "Насправді він не мав на увазі це"
   }, {
-    ukrainianTranslationOfSentence: "Будь ласка, додайте цукор до кави.",
+    ukrainianTranslationOfSentence: "Будь ласка, додайте цукор до кави",
     englishWord: "add",
     idTheme: 0,
     englishTranscription: "æd",
@@ -78,11 +78,11 @@ export const top1000 = [
     level: 1,
     synonyms: ["include", "append", "join"],
     ukrainianTranslation: "додавати",
-    englishSentence: "Please add sugar to the coffee."
+    englishSentence: "Please add sugar to the coffee"
   }, {
-    ukrainianTranslationOfSentence: "Він визнав свою помилку.",
+    ukrainianTranslationOfSentence: "Він визнав свою помилку",
     id: 8,
-    englishSentence: "He admitted his mistake.",
+    englishSentence: "He admitted his mistake",
     synonyms: ["acknowledge", "confess", "allow"],
     englishWord: "admit",
     ukrainianTranslation: "признавати",
@@ -96,25 +96,25 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["scared", "fearful", "terrified"],
     level: 1,
-    ukrainianTranslationOfSentence: "Я боюся павуків.",
+    ukrainianTranslationOfSentence: "Я боюся павуків",
     englishTranscription: "əˈfreɪd",
-    englishSentence: "I'm afraid of spiders."
+    englishSentence: "I'm afraid of spiders"
   }, {
     englishTranscription: "ˈæftər",
-    ukrainianTranslationOfSentence: "Ми пішли в парк після обіду.",
+    ukrainianTranslationOfSentence: "Ми пішли в парк після обіду",
     englishWord: "after",
     ukrainianTranslation: "після",
     synonyms: ["following", "subsequent to", "later than"],
     level: 1,
-    englishSentence: "We went to the park after lunch.",
+    englishSentence: "We went to the park after lunch",
     idTheme: 0,
     id: 10
   }, {
-    englishSentence: "I'll see you in the afternoon.",
+    englishSentence: "I'll see you in the afternoon",
     ukrainianTranslation: "пополудні",
     synonyms: ["midday", "day", "sun"],
     id: 11,
-    ukrainianTranslationOfSentence: "Я побачуся з вами в пополудні.",
+    ukrainianTranslationOfSentence: "Я побачуся з вами в пополудні",
     englishTranscription: "ˌæftərˈnun",
     englishWord: "afternoon",
     idTheme: 0,
@@ -126,14 +126,14 @@ export const top1000 = [
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "знову",
-    ukrainianTranslationOfSentence: "Давайте зробимо це знову.",
-    englishSentence: "Let's do it again.",
+    ukrainianTranslationOfSentence: "Давайте зробимо це знову",
+    englishSentence: "Let's do it again",
     synonyms: ["once more", "one more time", "anew"]
   }, {
-    englishSentence: "She voted against the proposal.",
+    englishSentence: "She voted against the proposal",
     level: 1,
     englishTranscription: "əˈɡɛnst",
-    ukrainianTranslationOfSentence: "Вона проголосувала проти пропозиції.",
+    ukrainianTranslationOfSentence: "Вона проголосувала проти пропозиції",
     id: 13,
     ukrainianTranslation: "проти",
     englishWord: "against",
@@ -152,50 +152,50 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "тому",
     level: 1,
-    englishSentence: "I saw her a week ago.",
+    englishSentence: "I saw her a week ago",
     synonyms: ["previously", "before", "earlier"],
     englishTranscription: "əˈɡoʊ",
-    ukrainianTranslationOfSentence: "Я бачив її тиждень тому.",
+    ukrainianTranslationOfSentence: "Я бачив її тиждень тому",
     idTheme: 0,
     id: 15,
     englishWord: "ago"
   }, {
     ukrainianTranslation: "погоджуватися",
-    englishSentence: "They all agreed with the decision.",
+    englishSentence: "They all agreed with the decision",
     level: 1,
     id: 16,
     idTheme: 0,
     englishTranscription: "əˈɡri",
     synonyms: ["consent", "concur", "accept"],
-    ukrainianTranslationOfSentence: "Вони всі погодилися з рішенням.",
+    ukrainianTranslationOfSentence: "Вони всі погодилися з рішенням",
     englishWord: "agree"
   }, {
     synonyms: ["oh", "alas", "ha"],
     id: 17,
     level: 1,
     englishTranscription: "ɑː",
-    englishSentence: "Ah, that feels good.",
+    englishSentence: "Ah, that feels good",
     ukrainianTranslation: "ах",
-    ukrainianTranslationOfSentence: "Ах, це добре відчувається.",
+    ukrainianTranslationOfSentence: "Ах, це добре відчувається",
     idTheme: 0,
     englishWord: "ah"
   }, {
-    englishSentence: "Go ahead and start.",
+    englishSentence: "Go ahead and start",
     englishWord: "ahead",
     ukrainianTranslation: "вперед",
     synonyms: ["forward", "onward", "in front of"],
     id: 18,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Іди вперед і починай.",
+    ukrainianTranslationOfSentence: "Іди вперед і починай",
     englishTranscription: "əˈhɛd",
     level: 1
   }, {
     level: 1,
     englishWord: "air",
     englishTranscription: "ɛr",
-    ukrainianTranslationOfSentence: "Сьогодні повітря свіже.",
+    ukrainianTranslationOfSentence: "Сьогодні повітря свіже",
     ukrainianTranslation: "повітря",
-    englishSentence: "The air is fresh today.",
+    englishSentence: "The air is fresh today",
     synonyms: ["atmosphere", "oxygen", "wind"],
     idTheme: 0,
     id: 19
@@ -206,13 +206,13 @@ export const top1000 = [
     synonyms: ["every", "each", "whole"],
     ukrainianTranslation: "усі",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Усі вони тут.",
-    englishSentence: "All of them are here.",
+    ukrainianTranslationOfSentence: "Усі вони тут",
+    englishSentence: "All of them are here",
     id: 20
   }, {
     ukrainianTranslation: "дозволяти",
-    ukrainianTranslationOfSentence: "Правила не дозволяють домашніх тварин.",
-    englishSentence: "The rules don't allow pets.",
+    ukrainianTranslationOfSentence: "Правила не дозволяють домашніх тварин",
+    englishSentence: "The rules don't allow pets",
     englishWord: "allow",
     synonyms: ["permit", "let", "enable"],
     idTheme: 0,
@@ -223,21 +223,21 @@ export const top1000 = [
     id: 22,
     ukrainianTranslation: "майже",
     englishWord: "almost",
-    englishSentence: "We're almost there.",
+    englishSentence: "We're almost there",
     idTheme: 0,
     synonyms: ["nearly", "practically", "close to"],
     level: 1,
-    ukrainianTranslationOfSentence: "Ми майже там.",
+    ukrainianTranslationOfSentence: "Ми майже там",
     englishTranscription: "ɔːlˈmoʊst"
   }, {
     idTheme: 0,
     englishWord: "alone",
     id: 23,
     level: 1,
-    englishSentence: "I prefer to be alone.",
+    englishSentence: "I prefer to be alone",
     synonyms: ["solitary", "by oneself", "independent"],
     englishTranscription: "əˈloʊn",
-    ukrainianTranslationOfSentence: "Я віддаю перевагу бути самотнім.",
+    ukrainianTranslationOfSentence: "Я віддаю перевагу бути самотнім",
     ukrainianTranslation: "сам"
   }, {
     synonyms: ["beside", "next to", "alongside"],
@@ -245,20 +245,20 @@ export const top1000 = [
     englishWord: "along",
     level: 1,
     englishTranscription: "əˈlɔŋ",
-    englishSentence: "Walk along the street.",
-    ukrainianTranslationOfSentence: "Пройдіть вздовж вулиці.",
+    englishSentence: "Walk along the street",
+    ukrainianTranslationOfSentence: "Пройдіть вздовж вулиці",
     ukrainianTranslation: "вздовж",
     idTheme: 0
   }, {
     level: 1,
     ukrainianTranslation: "вже",
-    englishSentence: "He has already left.",
+    englishSentence: "He has already left",
     englishTranscription: "ɔːlˈrɛdi",
     idTheme: 0,
     id: 25,
     englishWord: "already",
     synonyms: ["by now", "previously", "yet"],
-    ukrainianTranslationOfSentence: "Він вже пішов."
+    ukrainianTranslationOfSentence: "Він вже пішов"
   }, {
     ukrainianTranslation: "добре",
     synonyms: ["okay", "fine", "good"],
@@ -274,16 +274,16 @@ export const top1000 = [
     synonyms: ["in addition", "as well", "too"],
     id: 27,
     englishTranscription: "ˈɔːlsoʊ",
-    englishSentence: "She's smart and also funny.",
+    englishSentence: "She's smart and also funny",
     idTheme: 0,
     englishWord: "also",
     level: 1,
-    ukrainianTranslationOfSentence: "Вона розумна і також кумедна."
+    ukrainianTranslationOfSentence: "Вона розумна і також кумедна"
   }, {
     ukrainianTranslation: "хоча",
     idTheme: 0,
-    englishSentence: "Although it rained, we had fun.",
-    ukrainianTranslationOfSentence: "Хоча йшов дощ, ми добре провели час.",
+    englishSentence: "Although it rained, we had fun",
+    ukrainianTranslationOfSentence: "Хоча йшов дощ, ми добре провели час",
     level: 1,
     englishWord: "although",
     id: 28,
@@ -297,34 +297,34 @@ export const top1000 = [
     level: 1,
     id: 29,
     ukrainianTranslation: "завжди",
-    englishSentence: "She's always on time.",
+    englishSentence: "She's always on time",
     synonyms: ["forever", "continuously", "perpetually"],
-    ukrainianTranslationOfSentence: "Вона завжди приходить вчасно."
+    ukrainianTranslationOfSentence: "Вона завжди приходить вчасно"
   }, {
     englishWord: "am",
     level: 1,
     synonyms: ["exist", "be", "live"],
     id: 30,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я голодний.",
-    englishSentence: "I am hungry.",
+    ukrainianTranslationOfSentence: "Я голодний",
+    englishSentence: "I am hungry",
     englishTranscription: "æm",
     ukrainianTranslation: "єм"
   }, {
     englishWord: "amaze",
-    englishSentence: "Her talent amazes me.",
+    englishSentence: "Her talent amazes me",
     id: 31,
     englishTranscription: "əˈmeɪz",
     level: 1,
     ukrainianTranslation: "дивувати",
     synonyms: ["astonish", "impress", "surprise"],
-    ukrainianTranslationOfSentence: "Її талант дивує мене.",
+    ukrainianTranslationOfSentence: "Її талант дивує мене",
     idTheme: 0
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "У мене є одне яблуко.",
+    ukrainianTranslationOfSentence: "У мене є одне яблуко",
     englishTranscription: "æn",
-    englishSentence: "I have an apple.",
+    englishSentence: "I have an apple",
     ukrainianTranslation: "один",
     synonyms: ["one", "single", "a"],
     level: 1,
@@ -332,58 +332,58 @@ export const top1000 = [
     id: 32
   }, {
     id: 33,
-    englishSentence: "John and Mary went to the store.",
+    englishSentence: "John and Mary went to the store",
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "і",
     englishWord: "and",
     englishTranscription: "ænd",
     synonyms: ["plus", "as well as", "together with"],
-    ukrainianTranslationOfSentence: "Джон і Мері пішли до магазину."
+    ukrainianTranslationOfSentence: "Джон і Мері пішли до магазину"
   }, {
     id: 34,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Його слова наповнили її гнівом.",
+    ukrainianTranslationOfSentence: "Його слова наповнили її гнівом",
     englishWord: "anger",
     synonyms: ["rage", "fury", "resentment"],
     ukrainianTranslation: "гнів",
     level: 1,
-    englishSentence: "His words filled her with anger.",
+    englishSentence: "His words filled her with anger",
     englishTranscription: "ˈæŋɡər"
   }, {
     synonyms: ["mad", "furious", "irate"],
-    englishSentence: "She was angry at him.",
+    englishSentence: "She was angry at him",
     level: 1,
     idTheme: 0,
     englishTranscription: "ˈæŋɡri",
     englishWord: "angry",
     ukrainianTranslation: "сердитий",
-    ukrainianTranslationOfSentence: "Вона була сердита на нього.",
+    ukrainianTranslationOfSentence: "Вона була сердита на нього",
     id: 35
   }, {
     englishTranscription: "ˈænɪməl",
     ukrainianTranslation: "тварина",
-    ukrainianTranslationOfSentence: "В зоопарку є багато екзотичних тварин.",
+    ukrainianTranslationOfSentence: "В зоопарку є багато екзотичних тварин",
     level: 1,
     id: 36,
     synonyms: ["creature", "beast", "living being"],
-    englishSentence: "The zoo has many exotic animals.",
+    englishSentence: "The zoo has many exotic animals",
     idTheme: 0,
     englishWord: "animal"
   }, {
     ukrainianTranslation: "дратувати",
     level: 1,
     englishWord: "annoy",
-    englishSentence: "Please stop annoying me.",
+    englishSentence: "Please stop annoying me",
     englishTranscription: "əˈnɔɪ",
     synonyms: ["irritate", "bother", "provoke"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Будь ласка, перестань мене дратувати.",
+    ukrainianTranslationOfSentence: "Будь ласка, перестань мене дратувати",
     id: 37
   }, {
-    ukrainianTranslationOfSentence: "Мені потрібна інша ручка.",
+    ukrainianTranslationOfSentence: "Мені потрібна інша ручка",
     id: 38,
-    englishSentence: "I need another pen.",
+    englishSentence: "I need another pen",
     ukrainianTranslation: "інший",
     idTheme: 0,
     level: 1,
@@ -412,13 +412,13 @@ export const top1000 = [
     synonyms: ["whichever", "whatever", "some"]
   }, {
     id: 41,
-    englishSentence: "I can't do it anymore.",
+    englishSentence: "I can't do it anymore",
     englishWord: "anymore",
     level: 1,
     synonyms: ["no longer", "not anymore", "not"],
     englishTranscription: "ˌɛniˈmɔːr",
     ukrainianTranslation: "більше не",
-    ukrainianTranslationOfSentence: "Я не можу цього більше робити.",
+    ukrainianTranslationOfSentence: "Я не можу цього більше робити",
     idTheme: 0
   }, {
     englishWord: "anyone",
@@ -444,11 +444,11 @@ export const top1000 = [
     id: 44,
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Це все одно не має значення.",
+    ukrainianTranslationOfSentence: "Це все одно не має значення",
     englishTranscription: "ˈɛniˌweɪ",
     englishWord: "anyway",
     ukrainianTranslation: "в будь-якому випадку",
-    englishSentence: "It doesn't matter anyway.",
+    englishSentence: "It doesn't matter anyway",
     synonyms: ["nevertheless", "regardless", "anyhow"]
   }, {
     level: 1,
@@ -456,12 +456,12 @@ export const top1000 = [
     englishTranscription: "əˈpɑːrtmənt",
     ukrainianTranslation: "квартира",
     id: 45,
-    ukrainianTranslationOfSentence: "Він живе в невеликій квартирі.",
+    ukrainianTranslationOfSentence: "Він живе в невеликій квартирі",
     englishWord: "apartment",
     idTheme: 0,
-    englishSentence: "He lives in a small apartment."
+    englishSentence: "He lives in a small apartment"
   }, {
-    ukrainianTranslationOfSentence: "Очевидно, він забув про зустріч.",
+    ukrainianTranslationOfSentence: "Очевидно, він забув про зустріч",
     ukrainianTranslation: "очевидно",
     level: 1,
     englishTranscription: "əˈpærəntli",
@@ -469,80 +469,80 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["evidently", "seemingly", "obviously"],
     englishWord: "apparently",
-    englishSentence: "Apparently, he forgot about the meeting."
+    englishSentence: "Apparently, he forgot about the meeting"
   }, {
     synonyms: ["emerge", "show up", "become visible"],
     ukrainianTranslation: "з'являтися",
     englishWord: "appear",
     id: 47,
     level: 1,
-    ukrainianTranslationOfSentence: "У саду з'явився кролик.",
+    ukrainianTranslationOfSentence: "У саду з'явився кролик",
     englishTranscription: "əˈpɪr",
     idTheme: 0,
-    englishSentence: "A rabbit appeared in the garden."
+    englishSentence: "A rabbit appeared in the garden"
   }, {
     level: 1,
-    englishSentence: "We need a different approach.",
+    englishSentence: "We need a different approach",
     englishTranscription: "əˈproʊtʃ",
     ukrainianTranslation: "підхід",
     englishWord: "approach",
-    ukrainianTranslationOfSentence: "Нам потрібний інший підхід.",
+    ukrainianTranslationOfSentence: "Нам потрібний інший підхід",
     idTheme: 0,
     id: 48,
     synonyms: ["method", "strategy", "way"]
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Вони є моїми друзями.",
+    ukrainianTranslationOfSentence: "Вони є моїми друзями",
     englishTranscription: "ɑːr",
     id: 49,
     englishWord: "are",
     synonyms: ["exist", "be", "live"],
     idTheme: 0,
     ukrainianTranslation: "є",
-    englishSentence: "They are my friends."
+    englishSentence: "They are my friends"
   }, {
     id: 50,
-    ukrainianTranslationOfSentence: "Я живу в сільській місцевості.",
+    ukrainianTranslationOfSentence: "Я живу в сільській місцевості",
     englishTranscription: "ˈɛriə",
     ukrainianTranslation: "область",
     englishWord: "area",
-    englishSentence: "I live in a rural area.",
+    englishSentence: "I live in a rural area",
     synonyms: ["region", "district", "zone"],
     level: 1,
     idTheme: 0
   }, {
     level: 1,
     synonyms: ["are not", "are not going to", "are not attending"],
-    ukrainianTranslationOfSentence: "Вони не йдуть на вечірку.",
+    ukrainianTranslationOfSentence: "Вони не йдуть на вечірку",
     englishWord: "aren't",
     ukrainianTranslation: "не є",
-    englishSentence: "They aren't coming to the party.",
+    englishSentence: "They aren't coming to the party",
     englishTranscription: "ɑːrnt",
     idTheme: 0,
     id: 51
   }, {
     level: 1,
     ukrainianTranslation: "рука",
-    ukrainianTranslationOfSentence: "Він зламав руку.",
+    ukrainianTranslationOfSentence: "Він зламав руку",
     idTheme: 0,
     englishTranscription: "ɑːrm",
     id: 52,
     synonyms: ["limb", "appendage", "upper limb"],
-    englishSentence: "He broke his arm.",
+    englishSentence: "He broke his arm",
     englishWord: "arm"
   }, {
     englishTranscription: "əˈraʊnd",
     englishWord: "around",
-    ukrainianTranslationOfSentence: "Давайте сядемо навколо вогнища.",
+    ukrainianTranslationOfSentence: "Давайте сядемо навколо вогнища",
     idTheme: 0,
-    englishSentence: "Let's sit around the fire.",
+    englishSentence: "Let's sit around the fire",
     id: 53,
     level: 1,
     ukrainianTranslation: "навколо",
     synonyms: ["about", "surrounding", "nearby"]
   }, {
-    ukrainianTranslationOfSentence: "Потяг прибуде через п'ять хвилин.",
-    englishSentence: "The train will arrive in five minutes.",
+    ukrainianTranslationOfSentence: "Потяг прибуде через п'ять хвилин",
+    englishSentence: "The train will arrive in five minutes",
     id: 54,
     ukrainianTranslation: "прибути",
     idTheme: 0,
@@ -554,11 +554,11 @@ export const top1000 = [
     ukrainianTranslation: "як",
     id: 55,
     synonyms: ["like", "in the role of", "in the capacity of"],
-    englishSentence: "She works as a teacher.",
+    englishSentence: "She works as a teacher",
     englishWord: "as",
     englishTranscription: "æz",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона працює як вчителька.",
+    ukrainianTranslationOfSentence: "Вона працює як вчителька",
     level: 1
   }, {
     synonyms: ["inquire", "request", "query"],
@@ -571,9 +571,9 @@ export const top1000 = [
     idTheme: 0,
     ukrainianTranslationOfSentence: "Чи можу я задати вам питання?"
   }, {
-    ukrainianTranslationOfSentence: "Він заснув під час фільму.",
+    ukrainianTranslationOfSentence: "Він заснув під час фільму",
     idTheme: 0,
-    englishSentence: "He fell asleep during the movie.",
+    englishSentence: "He fell asleep during the movie",
     synonyms: ["sleeping", "dormant", "snoozing"],
     ukrainianTranslation: "сплячий",
     level: 1,
@@ -584,29 +584,29 @@ export const top1000 = [
     id: 58,
     synonyms: ["buttocks", "behind", "posterior"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він впав на свій зад.",
+    ukrainianTranslationOfSentence: "Він впав на свій зад",
     ukrainianTranslation: "зад",
     englishWord: "ass",
     level: 1,
-    englishSentence: "He fell on his ass.",
+    englishSentence: "He fell on his ass",
     englishTranscription: "æs"
   },
   {
     level: 1,
     englishTranscription: "æt",
     englishWord: "at",
-    ukrainianTranslationOfSentence: "Зустріну тебе в парку.",
+    ukrainianTranslationOfSentence: "Зустріну тебе в парку",
     ukrainianTranslation: "в",
     id: 59,
-    englishSentence: "I'll meet you at the park.",
+    englishSentence: "I'll meet you at the park",
     synonyms: ["in", "inside", "within"],
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Собака намагалася атакувати мене.",
+    ukrainianTranslationOfSentence: "Собака намагалася атакувати мене",
     id: 60,
     synonyms: ["assault", "strike", "assault"],
     ukrainianTranslation: "атакувати",
-    englishSentence: "The dog tried to attack me.",
+    englishSentence: "The dog tried to attack me",
     idTheme: 0,
     englishTranscription: "əˈtæk",
     level: 1,
@@ -614,18 +614,18 @@ export const top1000 = [
   }, {
     synonyms: ["try", "effort", "endeavor"],
     englishTranscription: "əˈtɛmpt",
-    englishSentence: "She made an attempt to climb the mountain.",
+    englishSentence: "She made an attempt to climb the mountain",
     idTheme: 0,
     id: 61,
     level: 1,
-    ukrainianTranslationOfSentence: "Вона зробила спробу піднятися на гору.",
+    ukrainianTranslationOfSentence: "Вона зробила спробу піднятися на гору",
     englishWord: "attempt",
     ukrainianTranslation: "спроба"
   }, {
     ukrainianTranslation: "увага",
-    englishSentence: "Pay attention to the details.",
+    englishSentence: "Pay attention to the details",
     englishWord: "attention",
-    ukrainianTranslationOfSentence: "Зверніть увагу на деталі.",
+    ukrainianTranslationOfSentence: "Зверніть увагу на деталі",
     level: 1,
     idTheme: 0,
     synonyms: ["focus", "concentration", "awareness"],
@@ -635,27 +635,27 @@ export const top1000 = [
     englishWord: "aunt",
     level: 1,
     englishTranscription: "ænt",
-    englishSentence: "My aunt is coming to visit.",
+    englishSentence: "My aunt is coming to visit",
     ukrainianTranslation: "тітка",
     synonyms: ["auntie", "relative", "auntie"],
     id: 63,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Моя тітка приходить у гості."
+    ukrainianTranslationOfSentence: "Моя тітка приходить у гості"
   }, {
     ukrainianTranslation: "уникати",
-    ukrainianTranslationOfSentence: "Намагайтеся уникати переповнених місць.",
+    ukrainianTranslationOfSentence: "Намагайтеся уникати переповнених місць",
     englishTranscription: "əˈvɔɪd",
     idTheme: 0,
     id: 64,
     level: 1,
     synonyms: ["evade", "escape", "steer clear of"],
     englishWord: "avoid",
-    englishSentence: "Try to avoid crowded places."
+    englishSentence: "Try to avoid crowded places"
   }, {
     idTheme: 0,
-    englishSentence: "He moved away to another city.",
+    englishSentence: "He moved away to another city",
     synonyms: ["far", "distant", "off"],
-    ukrainianTranslationOfSentence: "Він переїхав у інше місто.",
+    ukrainianTranslationOfSentence: "Він переїхав у інше місто",
     englishWord: "away",
     ukrainianTranslation: "далеко",
     id: 65,
@@ -665,18 +665,18 @@ export const top1000 = [
     englishWord: "baby",
     id: 66,
     synonyms: ["infant", "child", "little one"],
-    ukrainianTranslationOfSentence: "У неї є гарна дитина-дівчинка.",
+    ukrainianTranslationOfSentence: "У неї є гарна дитина-дівчинка",
     englishTranscription: "ˈbeɪbi",
-    englishSentence: "She has a beautiful baby girl.",
+    englishSentence: "She has a beautiful baby girl",
     idTheme: 0,
     ukrainianTranslation: "дитина",
     level: 1
   }, {
     synonyms: ["rear", "behind", "posterior"],
     level: 1,
-    ukrainianTranslationOfSentence: "Поверніться назад і йдіть іншим шляхом.",
+    ukrainianTranslationOfSentence: "Поверніться назад і йдіть іншим шляхом",
     idTheme: 0,
-    englishSentence: "Turn back and go the other way.",
+    englishSentence: "Turn back and go the other way",
     englishTranscription: "bæk",
     id: 67,
     englishWord: "back",
@@ -685,18 +685,18 @@ export const top1000 = [
     idTheme: 0,
     id: 68,
     englishWord: "bad",
-    ukrainianTranslationOfSentence: "Це погана ідея.",
+    ukrainianTranslationOfSentence: "Це погана ідея",
     ukrainianTranslation: "поганий",
     level: 1,
     synonyms: ["poor", "negative", "terrible"],
     englishTranscription: "bæd",
-    englishSentence: "It's a bad idea."
+    englishSentence: "It's a bad idea"
   }, {
     id: 69,
     synonyms: ["purse", "handbag", "tote"],
     englishWord: "bag",
-    englishSentence: "She bought a new handbag.",
-    ukrainianTranslationOfSentence: "Вона купила нову жіночу сумку.",
+    englishSentence: "She bought a new handbag",
+    ukrainianTranslationOfSentence: "Вона купила нову жіночу сумку",
     level: 1,
     englishTranscription: "bæɡ",
     ukrainianTranslation: "сумка",
@@ -706,9 +706,9 @@ export const top1000 = [
     level: 1,
     synonyms: ["sphere", "globe", "sphere"],
     id: 70,
-    ukrainianTranslationOfSentence: "Давайте пограємо в м'яч у парку.",
+    ukrainianTranslationOfSentence: "Давайте пограємо в м'яч у парку",
     englishTranscription: "bɔːl",
-    englishSentence: "Let's play ball in the park.",
+    englishSentence: "Let's play ball in the park",
     ukrainianTranslation: "м'яч",
     idTheme: 0
   }, {
@@ -716,8 +716,8 @@ export const top1000 = [
     id: 71,
     synonyms: ["group", "ensemble", "orchestra"],
     level: 1,
-    englishSentence: "He plays guitar in a rock band.",
-    ukrainianTranslationOfSentence: "Він грає на гітарі у рок-групі.",
+    englishSentence: "He plays guitar in a rock band",
+    ukrainianTranslationOfSentence: "Він грає на гітарі у рок-групі",
     ukrainianTranslation: "група",
     idTheme: 0,
     englishTranscription: "bænd"
@@ -727,39 +727,39 @@ export const top1000 = [
     englishTranscription: "bɑːr",
     idTheme: 0,
     level: 1,
-    englishSentence: "Let's meet at the bar tonight.",
+    englishSentence: "Let's meet at the bar tonight",
     synonyms: ["pub", "tavern", "saloon"],
-    ukrainianTranslationOfSentence: "Давайте зустрінемося сьогодні вечором у барі.",
+    ukrainianTranslationOfSentence: "Давайте зустрінемося сьогодні вечором у барі",
     ukrainianTranslation: "бар"
   }, {
     englishWord: "barely",
     ukrainianTranslation: "ледве",
     englishTranscription: "ˈbɛrli",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він ледве склав іспит.",
+    ukrainianTranslationOfSentence: "Він ледве склав іспит",
     id: 73,
     level: 1,
     synonyms: ["hardly", "scarcely", "just"],
-    englishSentence: "He barely passed the exam."
+    englishSentence: "He barely passed the exam"
   }, {
     ukrainianTranslation: "ванна кімната",
-    englishSentence: "The bathroom is down the hall.",
+    englishSentence: "The bathroom is down the hall",
     id: 74,
     englishTranscription: "ˈbæθrum",
     englishWord: "bathroom",
     level: 1,
     synonyms: ["toilet", "washroom", "restroom"],
-    ukrainianTranslationOfSentence: "Ванна кімната знаходиться по коридору.",
+    ukrainianTranslationOfSentence: "Ванна кімната знаходиться по коридору",
     idTheme: 0
   }, {
     englishTranscription: "biː",
     synonyms: ["exist", "live", "happen"],
     englishWord: "be",
-    ukrainianTranslationOfSentence: "Я хочу бути лікарем.",
+    ukrainianTranslationOfSentence: "Я хочу бути лікарем",
     id: 75,
     ukrainianTranslation: "бути",
     idTheme: 0,
-    englishSentence: "I want to be a doctor.",
+    englishSentence: "I want to be a doctor",
     level: 1
   }, {
     id: 76,
@@ -767,16 +767,16 @@ export const top1000 = [
     synonyms: ["strike", "hit", "pound"],
     level: 1,
     englishTranscription: "bit",
-    englishSentence: "His heart beat faster.",
-    ukrainianTranslationOfSentence: "Його серце билося швидше.",
+    englishSentence: "His heart beat faster",
+    ukrainianTranslationOfSentence: "Його серце билося швидше",
     idTheme: 0,
     englishWord: "beat"
   }, {
     synonyms: ["gorgeous", "lovely", "stunning"],
-    englishSentence: "She looked beautiful in her dress.",
+    englishSentence: "She looked beautiful in her dress",
     ukrainianTranslation: "красивий",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона виглядала чудово у своєму платті.",
+    ukrainianTranslationOfSentence: "Вона виглядала чудово у своєму платті",
     id: 77,
     englishTranscription: "ˈbjuːtɪfəl",
     englishWord: "beautiful",
@@ -785,12 +785,12 @@ export const top1000 = [
     level: 1,
     synonyms: ["turned", "transformed", "evolved"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він став успішним бізнесменом.",
+    ukrainianTranslationOfSentence: "Він став успішним бізнесменом",
     id: 78,
     englishWord: "became",
     englishTranscription: "bɪˈkeɪm",
     ukrainianTranslation: "став",
-    englishSentence: "He became a successful businessman."
+    englishSentence: "He became a successful businessman"
   }, {
     idTheme: 0,
     englishTranscription: "bɪˈkɔːz",
@@ -799,15 +799,15 @@ export const top1000 = [
     level: 1,
     englishWord: "because",
     synonyms: ["since", "as", "due to"],
-    ukrainianTranslationOfSentence: "Я не міг піти, тому що був хворий.",
-    englishSentence: "I couldn't go because I was sick."
+    ukrainianTranslationOfSentence: "Я не міг піти, тому що був хворий",
+    englishSentence: "I couldn't go because I was sick"
   }, {
     englishTranscription: "bɪˈkʌm",
     synonyms: ["turn into", "transform into", "grow into"],
     id: 80,
     ukrainianTranslation: "стати",
-    englishSentence: "She wants to become a teacher.",
-    ukrainianTranslationOfSentence: "Вона хоче стати вчителькою.",
+    englishSentence: "She wants to become a teacher",
+    ukrainianTranslationOfSentence: "Вона хоче стати вчителькою",
     englishWord: "become",
     level: 1,
     idTheme: 0
@@ -816,59 +816,59 @@ export const top1000 = [
     id: 81,
     ukrainianTranslation: "ліжко",
     englishTranscription: "bɛd",
-    englishSentence: "I'm tired and want to go to bed.",
+    englishSentence: "I'm tired and want to go to bed",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я втомлений і хочу піти спати.",
+    ukrainianTranslationOfSentence: "Я втомлений і хочу піти спати",
     englishWord: "bed"
   }, {
-    ukrainianTranslationOfSentence: "Спальня знаходиться на другому поверсі.",
+    ukrainianTranslationOfSentence: "Спальня знаходиться на другому поверсі",
     ukrainianTranslation: "спальня",
     synonyms: ["sleeping quarters", "chamber", "sleeping room"],
     idTheme: 0,
     id: 82,
     level: 1,
     englishTranscription: "ˈbɛdruːm",
-    englishSentence: "The bedroom is upstairs.",
+    englishSentence: "The bedroom is upstairs",
     englishWord: "bedroom"
   }, {
     id: 83,
     idTheme: 0,
     englishTranscription: "bɪn",
     ukrainianTranslation: "був",
-    englishSentence: "I've been to Paris.",
+    englishSentence: "I've been to Paris",
     englishWord: "been",
     synonyms: ["existed", "occurred", "happened"],
     level: 1,
-    ukrainianTranslationOfSentence: "Я був у Парижі."
+    ukrainianTranslationOfSentence: "Я був у Парижі"
   }, {
     synonyms: ["prior to", "earlier than", "in advance of"],
-    ukrainianTranslationOfSentence: "Будь ласка, закінчи своє домашнє завдання перед вечерею.",
+    ukrainianTranslationOfSentence: "Будь ласка, закінчи своє домашнє завдання перед вечерею",
     ukrainianTranslation: "перед",
     idTheme: 0,
     level: 1,
     englishTranscription: "bɪˈfɔːr",
     id: 84,
     englishWord: "before",
-    englishSentence: "Please finish your homework before dinner."
+    englishSentence: "Please finish your homework before dinner"
   }, {
     id: 85,
     ukrainianTranslation: "почав",
     englishTranscription: "bɪˈɡæn",
-    englishSentence: "The concert began at 8 PM.",
+    englishSentence: "The concert began at 8 PM",
     synonyms: ["started", "commenced", "initiated"],
     englishWord: "began",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Концерт почався о 8 годині вечора."
+    ukrainianTranslationOfSentence: "Концерт почався о 8 годині вечора"
   }, {
     englishTranscription: "bɪˈɡɪn",
     synonyms: ["start", "commence", "initiate"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Давайте почнемо зустріч.",
+    ukrainianTranslationOfSentence: "Давайте почнемо зустріч",
     id: 86,
     englishWord: "begin",
-    englishSentence: "Let's begin the meeting.",
+    englishSentence: "Let's begin the meeting",
     ukrainianTranslation: "почати",
     level: 1
   }, {
@@ -876,9 +876,9 @@ export const top1000 = [
     englishTranscription: "bɪˈhaɪnd",
     synonyms: ["at the back of", "in the rear of", "following"],
     id: 87,
-    englishSentence: "The car stopped behind the bus.",
+    englishSentence: "The car stopped behind the bus",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Машина зупинилася позаду автобуса.",
+    ukrainianTranslationOfSentence: "Машина зупинилася позаду автобуса",
     level: 1,
     englishWord: "behind"
   }, {
@@ -888,16 +888,16 @@ export const top1000 = [
     englishTranscription: "bɪˈliːv",
     ukrainianTranslation: "вірити",
     englishWord: "believe",
-    englishSentence: "I believe in you.",
+    englishSentence: "I believe in you",
     level: 1,
-    ukrainianTranslationOfSentence: "Я вірю в тебе."
+    ukrainianTranslationOfSentence: "Я вірю в тебе"
   },
   {
-    ukrainianTranslationOfSentence: "Дзвінок прозвучав, сигналізуючи про кінець уроку.",
+    ukrainianTranslationOfSentence: "Дзвінок прозвучав, сигналізуючи про кінець уроку",
     id: 89,
     englishWord: "bell",
     idTheme: 0,
-    englishSentence: "The bell rang to signal the end of class.",
+    englishSentence: "The bell rang to signal the end of class",
     level: 1,
     synonyms: ["chime", "buzzer", "ring"],
     englishTranscription: "bɛl",
@@ -906,17 +906,17 @@ export const top1000 = [
     englishTranscription: "bɪˈsaɪd",
     englishWord: "beside",
     id: 90,
-    englishSentence: "Sit beside me.",
+    englishSentence: "Sit beside me",
     ukrainianTranslation: "поруч",
     idTheme: 0,
     synonyms: ["next to", "alongside", "adjacent to"],
     level: 1,
-    ukrainianTranslationOfSentence: "Сідай поруч зі мною."
+    ukrainianTranslationOfSentence: "Сідай поруч зі мною"
   }, {
     synonyms: ["in addition to", "apart from", "aside from"],
-    englishSentence: "Besides English, she speaks French.",
+    englishSentence: "Besides English, she speaks French",
     level: 1,
-    ukrainianTranslationOfSentence: "Крім англійської, вона розмовляє французькою.",
+    ukrainianTranslationOfSentence: "Крім англійської, вона розмовляє французькою",
     englishTranscription: "bɪˈsaɪdz",
     idTheme: 0,
     ukrainianTranslation: "крім",
@@ -926,8 +926,8 @@ export const top1000 = [
     synonyms: ["finest", "top", "greatest"],
     englishWord: "best",
     englishTranscription: "bɛst",
-    ukrainianTranslationOfSentence: "Вона моя найкраща подруга.",
-    englishSentence: "She's my best friend.",
+    ukrainianTranslationOfSentence: "Вона моя найкраща подруга",
+    englishSentence: "She's my best friend",
     ukrainianTranslation: "найкращий",
     id: 92,
     level: 1,
@@ -936,27 +936,27 @@ export const top1000 = [
     idTheme: 0,
     ukrainianTranslation: "краще",
     id: 93,
-    ukrainianTranslationOfSentence: "Сьогодні мені краще.",
-    englishSentence: "I'm feeling better today.",
+    ukrainianTranslationOfSentence: "Сьогодні мені краще",
+    englishSentence: "I'm feeling better today",
     englishWord: "better",
     englishTranscription: "ˈbɛtər",
     synonyms: ["improved", "superior", "enhanced"],
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Кіт сидить між двома стільцями.",
+    ukrainianTranslationOfSentence: "Кіт сидить між двома стільцями",
     englishWord: "between",
     level: 1,
     id: 94,
-    englishSentence: "The cat is sitting between the two chairs.",
+    englishSentence: "The cat is sitting between the two chairs",
     synonyms: ["among", "amidst", "in the middle of"],
     idTheme: 0,
     ukrainianTranslation: "між",
     englishTranscription: "bɪˈtwiːn"
   }, {
-    ukrainianTranslationOfSentence: "Це великий будинок.",
+    ukrainianTranslationOfSentence: "Це великий будинок",
     englishWord: "big",
     level: 1,
-    englishSentence: "That's a big house.",
+    englishSentence: "That's a big house",
     synonyms: ["large", "huge", "massive"],
     ukrainianTranslation: "великий",
     id: 95,
@@ -974,11 +974,11 @@ export const top1000 = [
     ukrainianTranslationOfSentence: "Можна мені трохи торту, будь ласка?"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Комар куснув мене.",
+    ukrainianTranslationOfSentence: "Комар куснув мене",
     englishTranscription: "baɪt",
     ukrainianTranslation: "кусати",
     synonyms: ["chew", "nibble", "clamp"],
-    englishSentence: "The mosquito bit me.",
+    englishSentence: "The mosquito bit me",
     id: 97,
     englishWord: "bite",
     idTheme: 0
@@ -986,19 +986,19 @@ export const top1000 = [
     ukrainianTranslation: "чорний",
     id: 98,
     synonyms: ["dark", "ebony", "sable"],
-    englishSentence: "He was wearing a black suit.",
+    englishSentence: "He was wearing a black suit",
     englishTranscription: "blæk",
-    ukrainianTranslationOfSentence: "Він мав на собі чорний костюм.",
+    ukrainianTranslationOfSentence: "Він мав на собі чорний костюм",
     englishWord: "black",
     level: 1,
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Вона поморгала очима.",
+    ukrainianTranslationOfSentence: "Вона поморгала очима",
     idTheme: 0,
     englishTranscription: "blɪŋk",
     id: 99,
     synonyms: ["flicker", "twinkle", "flutter"],
-    englishSentence: "She blinked her eyes.",
+    englishSentence: "She blinked her eyes",
     englishWord: "blink",
     ukrainianTranslation: "моргати",
     level: 1
@@ -1006,27 +1006,27 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["building", "brick", "unit"],
     ukrainianTranslation: "блок",
-    englishSentence: "There is a tall building block on the corner.",
+    englishSentence: "There is a tall building block on the corner",
     id: 100,
-    ukrainianTranslationOfSentence: "На куті стоїть високий житловий будинок.",
+    ukrainianTranslationOfSentence: "На куті стоїть високий житловий будинок",
     englishWord: "block",
     level: 1,
     englishTranscription: "blɑːk"
   }, {
     englishTranscription: "blɑːnd",
     ukrainianTranslation: "блондинка",
-    ukrainianTranslationOfSentence: "У неї довге блондинисте волосся.",
+    ukrainianTranslationOfSentence: "У неї довге блондинисте волосся",
     idTheme: 0,
-    englishSentence: "She has long blonde hair.",
+    englishSentence: "She has long blonde hair",
     synonyms: ["fair-haired", "light-haired", "golden"],
     level: 1,
     englishWord: "blonde",
     id: 101
   }, {
     id: 102,
-    englishSentence: "He donated blood at the hospital.",
+    englishSentence: "He donated blood at the hospital",
     englishWord: "blood",
-    ukrainianTranslationOfSentence: "Він здавав кров у лікарні.",
+    ukrainianTranslationOfSentence: "Він здавав кров у лікарні",
     synonyms: ["gore", "lifeblood", "vital fluid"],
     ukrainianTranslation: "кров",
     level: 1,
@@ -1036,9 +1036,9 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "bluː",
     level: 1,
-    englishSentence: "The sky is blue.",
+    englishSentence: "The sky is blue",
     synonyms: ["azure", "cobalt", "navy"],
-    ukrainianTranslationOfSentence: "Небо синє.",
+    ukrainianTranslationOfSentence: "Небо синє",
     id: 103,
     englishWord: "blue",
     ukrainianTranslation: "синій"
@@ -1047,18 +1047,18 @@ export const top1000 = [
     englishTranscription: "blʌʃ",
     id: 104,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона покрівилася, коли він похвалив її.",
-    englishSentence: "She blushed when he complimented her.",
+    ukrainianTranslationOfSentence: "Вона покрівилася, коли він похвалив її",
+    englishSentence: "She blushed when he complimented her",
     level: 1,
     ukrainianTranslation: "червоніти",
     synonyms: ["redden", "flush", "glow"]
   }, {
-    ukrainianTranslationOfSentence: "Фізичні вправи корисні для тіла.",
+    ukrainianTranslationOfSentence: "Фізичні вправи корисні для тіла",
     ukrainianTranslation: "тіло",
     idTheme: 0,
     englishTranscription: "ˈbɑːdi",
     synonyms: ["physique", "form", "figure"],
-    englishSentence: "Exercise is good for the body.",
+    englishSentence: "Exercise is good for the body",
     id: 105,
     level: 1,
     englishWord: "body"
@@ -1070,14 +1070,14 @@ export const top1000 = [
     englishTranscription: "bʊk",
     idTheme: 0,
     id: 106,
-    ukrainianTranslationOfSentence: "Я читаю книгу.",
-    englishSentence: "I'm reading a book."
+    ukrainianTranslationOfSentence: "Я читаю книгу",
+    englishSentence: "I'm reading a book"
   }, {
     id: 107,
     idTheme: 0,
     englishTranscription: "bɔːr",
-    englishSentence: "The lecture was so boring.",
-    ukrainianTranslationOfSentence: "Лекція була такою нудною.",
+    englishSentence: "The lecture was so boring",
+    ukrainianTranslationOfSentence: "Лекція була такою нудною",
     ukrainianTranslation: "нудити",
     synonyms: ["weary", "tire", "exhaust"],
     level: 1,
@@ -1085,28 +1085,28 @@ export const top1000 = [
   }, {
     englishWord: "both",
     ukrainianTranslation: "обидва",
-    englishSentence: "They both went to the party.",
+    englishSentence: "They both went to the party",
     level: 1,
     id: 108,
     idTheme: 0,
     synonyms: ["the two", "the pair", "both of them"],
     englishTranscription: "bəʊθ",
-    ukrainianTranslationOfSentence: "Вони обидва пішли на вечірку."
+    ukrainianTranslationOfSentence: "Вони обидва пішли на вечірку"
   }, {
     id: 109,
     englishWord: "bother",
-    ukrainianTranslationOfSentence: "Не турбуй його, коли він працює.",
+    ukrainianTranslationOfSentence: "Не турбуй його, коли він працює",
     ukrainianTranslation: "турбувати",
     level: 1,
     synonyms: ["annoy", "trouble", "inconvenience"],
     englishTranscription: "ˈbɒðər",
     idTheme: 0,
-    englishSentence: "Don't bother him while he's working."
+    englishSentence: "Don't bother him while he's working"
   }, {
     level: 1,
     synonyms: ["flask", "container", "vessel"],
-    englishSentence: "She poured water from the bottle.",
-    ukrainianTranslationOfSentence: "Вона налила воду з пляшки.",
+    englishSentence: "She poured water from the bottle",
+    ukrainianTranslationOfSentence: "Вона налила воду з пляшки",
     englishWord: "bottle",
     idTheme: 0,
     ukrainianTranslation: "пляшка",
@@ -1114,18 +1114,18 @@ export const top1000 = [
     id: 110
   }, {
     ukrainianTranslation: "дно",
-    ukrainianTranslationOfSentence: "Ключі знаходяться на дні шухляди.",
+    ukrainianTranslationOfSentence: "Ключі знаходяться на дні шухляди",
     idTheme: 0,
     englishWord: "bottom",
-    englishSentence: "The keys are at the bottom of the drawer.",
+    englishSentence: "The keys are at the bottom of the drawer",
     level: 1,
     synonyms: ["base", "foundation", "underside"],
     id: 111,
     englishTranscription: "ˈbɒtəm"
   }, {
     synonyms: ["crate", "container", "carton"],
-    ukrainianTranslationOfSentence: "Він запакував свої речі у коробку.",
-    englishSentence: "He packed his things in a box.",
+    ukrainianTranslationOfSentence: "Він запакував свої речі у коробку",
+    englishSentence: "He packed his things in a box",
     englishTranscription: "bɒks",
     level: 1,
     ukrainianTranslation: "коробка",
@@ -1134,29 +1134,29 @@ export const top1000 = [
     idTheme: 0
   }, {
     synonyms: ["lad", "youngster", "child"],
-    englishSentence: "The boy is playing in the park.",
+    englishSentence: "The boy is playing in the park",
     englishWord: "boy",
     englishTranscription: "bɔɪ",
     level: 1,
-    ukrainianTranslationOfSentence: "Хлопчик грає у парку.",
+    ukrainianTranslationOfSentence: "Хлопчик грає у парку",
     idTheme: 0,
     id: 113,
     ukrainianTranslation: "хлопчик"
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона представила свого хлопця батькам.",
+    ukrainianTranslationOfSentence: "Вона представила свого хлопця батькам",
     level: 1,
     englishWord: "boyfriend",
     synonyms: ["partner", "lover", "beau"],
     ukrainianTranslation: "хлопець",
     englishTranscription: "ˈbɔɪfrɛnd",
-    englishSentence: "She introduced her boyfriend to her parents.",
+    englishSentence: "She introduced her boyfriend to her parents",
     id: 114
   }, {
     englishTranscription: "breɪn",
     level: 1,
-    ukrainianTranslationOfSentence: "Мозок є складним органом.",
-    englishSentence: "The brain is a complex organ.",
+    ukrainianTranslationOfSentence: "Мозок є складним органом",
+    englishSentence: "The brain is a complex organ",
     ukrainianTranslation: "мозок",
     idTheme: 0,
     englishWord: "brain",
@@ -1165,30 +1165,30 @@ export const top1000 = [
   }, {
     idTheme: 0,
     level: 1,
-    englishSentence: "Don't break the glass.",
+    englishSentence: "Don't break the glass",
     englishTranscription: "breɪk",
-    ukrainianTranslationOfSentence: "Не ламай скло.",
+    ukrainianTranslationOfSentence: "Не ламай скло",
     synonyms: ["shatter", "smash", "fracture"],
     englishWord: "break",
     ukrainianTranslation: "зламати",
     id: 116
   }, {
-    englishSentence: "I had cereal for breakfast.",
+    englishSentence: "I had cereal for breakfast",
     englishWord: "breakfast",
     englishTranscription: "ˈbrɛkfəst",
-    ukrainianTranslationOfSentence: "Я снідав кашу.",
+    ukrainianTranslationOfSentence: "Я снідав кашу",
     idTheme: 0,
     synonyms: ["morning meal", "first meal of the day", "brekkie"],
     ukrainianTranslation: "сніданок",
     level: 1,
     id: 117
   }, {
-    ukrainianTranslationOfSentence: "Зроби глибокий вдих і розслабся.",
+    ukrainianTranslationOfSentence: "Зроби глибокий вдих і розслабся",
     englishWord: "breath",
     idTheme: 0,
     ukrainianTranslation: "подих",
     englishTranscription: "brɛθ",
-    englishSentence: "Take a deep breath and relax.",
+    englishSentence: "Take a deep breath and relax",
     level: 1,
     id: 118,
     synonyms: ["respiration", "inhalation", "exhale"]
@@ -1196,23 +1196,23 @@ export const top1000 = [
   {
     synonyms: ["inhale", "exhale", "respire"],
     level: 1,
-    englishSentence: "Breathe in through your nose and out through your mouth.",
+    englishSentence: "Breathe in through your nose and out through your mouth",
     englishWord: "breathe",
     englishTranscription: "briːð",
     id: 119,
-    ukrainianTranslationOfSentence: "Дихайте через ніс і видихайте через рот.",
+    ukrainianTranslationOfSentence: "Дихайте через ніс і видихайте через рот",
     ukrainianTranslation: "дихати",
     idTheme: 0
   }, {
     ukrainianTranslation: "яскравий",
     synonyms: ["radiant", "luminous", "dazzling"],
     idTheme: 0,
-    englishSentence: "The sun is shining bright.",
+    englishSentence: "The sun is shining bright",
     englishTranscription: "braɪt",
     level: 1,
     id: 120,
     englishWord: "bright",
-    ukrainianTranslationOfSentence: "Сонце світить яскраво."
+    ukrainianTranslationOfSentence: "Сонце світить яскраво"
   }, {
     synonyms: ["fetch", "carry", "deliver"],
     ukrainianTranslationOfSentence: "Можете принести мені склянку води?",
@@ -1224,20 +1224,20 @@ export const top1000 = [
     englishWord: "bring",
     englishSentence: "Can you bring me a glass of water?"
   }, {
-    ukrainianTranslationOfSentence: "Вибачте, але ваза поламалась.",
+    ukrainianTranslationOfSentence: "Вибачте, але ваза поламалась",
     synonyms: ["shattered", "cracked", "damaged"],
     idTheme: 0,
     level: 1,
     englishTranscription: "brəʊk",
-    englishSentence: "I'm sorry, but the vase broke.",
+    englishSentence: "I'm sorry, but the vase broke",
     ukrainianTranslation: "поламався",
     id: 122,
     englishWord: "broke"
   }, {
     englishWord: "broken",
     idTheme: 0,
-    englishSentence: "Be careful with the broken glass.",
-    ukrainianTranslationOfSentence: "Будьте обережні з поламаним склом.",
+    englishSentence: "Be careful with the broken glass",
+    ukrainianTranslationOfSentence: "Будьте обережні з поламаним склом",
     synonyms: ["shattered", "damaged", "in pieces"],
     id: 123,
     englishTranscription: "ˈbrəʊkən",
@@ -1249,97 +1249,97 @@ export const top1000 = [
     englishWord: "brother",
     synonyms: ["sibling", "male sibling", "kin"],
     ukrainianTranslation: "брат",
-    englishSentence: "My brother is older than me.",
+    englishSentence: "My brother is older than me",
     level: 1,
-    ukrainianTranslationOfSentence: "Мій брат старший за мене.",
+    ukrainianTranslationOfSentence: "Мій брат старший за мене",
     englishTranscription: "ˈbrʌðər"
   }, {
-    ukrainianTranslationOfSentence: "Вона принесла подарунок на вечірку.",
+    ukrainianTranslationOfSentence: "Вона принесла подарунок на вечірку",
     idTheme: 0,
     ukrainianTranslation: "приніс",
     synonyms: ["carried", "delivered", "fetched"],
     englishWord: "brought",
     englishTranscription: "brɔːt",
     id: 125,
-    englishSentence: "She brought a gift for the party.",
+    englishSentence: "She brought a gift for the party",
     level: 1
   }, {
     englishTranscription: "braʊn",
     ukrainianTranslation: "коричневий",
-    ukrainianTranslationOfSentence: "У неї коричневе волосся.",
+    ukrainianTranslationOfSentence: "У неї коричневе волосся",
     englishWord: "brown",
     id: 126,
     level: 1,
     idTheme: 0,
-    englishSentence: "She has brown hair.",
+    englishSentence: "She has brown hair",
     synonyms: ["chestnut", "brunette", "hazel"]
   }, {
     level: 1,
     idTheme: 0,
     englishTranscription: "brʌʃ",
-    englishSentence: "Use a brush to comb your hair.",
+    englishSentence: "Use a brush to comb your hair",
     englishWord: "brush",
     id: 127,
-    ukrainianTranslationOfSentence: "Використовуй щітку, щоб розчесати волосся.",
+    ukrainianTranslationOfSentence: "Використовуй щітку, щоб розчесати волосся",
     ukrainianTranslation: "щітка",
     synonyms: ["broom", "sweep", "scrub"]
   }, {
     englishTranscription: "bɪld",
     synonyms: ["construct", "erect", "assemble"],
-    ukrainianTranslationOfSentence: "Вони збираються побудувати новий будинок.",
+    ukrainianTranslationOfSentence: "Вони збираються побудувати новий будинок",
     id: 128,
     level: 1,
     englishWord: "build",
     idTheme: 0,
-    englishSentence: "They're going to build a new house.",
+    englishSentence: "They're going to build a new house",
     ukrainianTranslation: "будувати"
   }, {
     ukrainianTranslation: "горіти",
     englishTranscription: "bɜːrn",
     synonyms: ["blaze", "flame", "scorch"],
     level: 1,
-    ukrainianTranslationOfSentence: "Вогонь горить.",
+    ukrainianTranslationOfSentence: "Вогонь горить",
     englishWord: "burn",
     idTheme: 0,
-    englishSentence: "The fire is burning.",
+    englishSentence: "The fire is burning",
     id: 129
   }, {
     id: 130,
     ukrainianTranslation: "розірватися",
-    ukrainianTranslationOfSentence: "Кулька розірвалася.",
+    ukrainianTranslationOfSentence: "Кулька розірвалася",
     idTheme: 0,
     synonyms: ["explode", "pop", "rupture"],
     level: 1,
     englishTranscription: "bɜːrst",
     englishWord: "burst",
-    englishSentence: "The balloon burst."
+    englishSentence: "The balloon burst"
   }, {
     idTheme: 0,
     englishWord: "bus",
-    ukrainianTranslationOfSentence: "Я їду на роботу автобусом.",
+    ukrainianTranslationOfSentence: "Я їду на роботу автобусом",
     id: 131,
     level: 1,
     synonyms: ["coach", "transit", "omnibus"],
-    englishSentence: "I take the bus to work.",
+    englishSentence: "I take the bus to work",
     englishTranscription: "bʌs",
     ukrainianTranslation: "автобус"
   }, {
     ukrainianTranslation: "бізнес",
     level: 1,
-    ukrainianTranslationOfSentence: "Він володіє своїм бізнесом.",
+    ukrainianTranslationOfSentence: "Він володіє своїм бізнесом",
     idTheme: 0,
     id: 132,
     synonyms: ["commerce", "trade", "industry"],
     englishTranscription: "ˈbɪznəs",
-    englishSentence: "He owns his own business.",
+    englishSentence: "He owns his own business",
     englishWord: "business"
   }, {
     englishWord: "busy",
     englishTranscription: "ˈbɪzi",
-    ukrainianTranslationOfSentence: "Сьогодні я занадто зайнятий, щоб вийти.",
+    ukrainianTranslationOfSentence: "Сьогодні я занадто зайнятий, щоб вийти",
     level: 1,
     synonyms: ["occupied", "engaged", "bustling"],
-    englishSentence: "I'm too busy to go out tonight.",
+    englishSentence: "I'm too busy to go out tonight",
     id: 133,
     idTheme: 0,
     ukrainianTranslation: "зайнятий"
@@ -1350,8 +1350,8 @@ export const top1000 = [
     ukrainianTranslation: "але",
     level: 1,
     englishTranscription: "bʌt",
-    ukrainianTranslationOfSentence: "Я хотів піти, але не зміг.",
-    englishSentence: "I wanted to go, but I couldn't.",
+    ukrainianTranslationOfSentence: "Я хотів піти, але не зміг",
+    englishSentence: "I wanted to go, but I couldn't",
     idTheme: 0
   }, {
     ukrainianTranslation: "купити",
@@ -1359,17 +1359,17 @@ export const top1000 = [
     level: 1,
     englishTranscription: "baɪ",
     id: 135,
-    ukrainianTranslationOfSentence: "Мені потрібно купити продукти.",
-    englishSentence: "I need to buy some groceries.",
+    ukrainianTranslationOfSentence: "Мені потрібно купити продукти",
+    englishSentence: "I need to buy some groceries",
     idTheme: 0,
     englishWord: "buy"
   }, {
     idTheme: 0,
     level: 1,
-    englishSentence: "I sent the letter by mail.",
+    englishSentence: "I sent the letter by mail",
     englishTranscription: "baɪ",
     synonyms: ["through", "via", "using"],
-    ukrainianTranslationOfSentence: "Я відправив лист поштою.",
+    ukrainianTranslationOfSentence: "Я відправив лист поштою",
     englishWord: "by",
     id: 136,
     ukrainianTranslation: "за допомогою"
@@ -1389,17 +1389,17 @@ export const top1000 = [
     id: 138,
     englishWord: "calm",
     ukrainianTranslation: "спокій",
-    englishSentence: "Take a deep breath and stay calm.",
+    englishSentence: "Take a deep breath and stay calm",
     synonyms: ["tranquil", "serene", "peaceful"],
-    ukrainianTranslationOfSentence: "Зроби глибокий вдих і залишся спокійним.",
+    ukrainianTranslationOfSentence: "Зроби глибокий вдих і залишся спокійним",
     idTheme: 0
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона прийшла мене відвідати вчора.",
+    ukrainianTranslationOfSentence: "Вона прийшла мене відвідати вчора",
     englishWord: "came",
     synonyms: ["arrived", "appeared", "showed up"],
     level: 1,
-    englishSentence: "She came to visit me yesterday.",
+    englishSentence: "She came to visit me yesterday",
     id: 139,
     ukrainianTranslation: "прийшов",
     englishTranscription: "keɪm"
@@ -1414,7 +1414,7 @@ export const top1000 = [
     ukrainianTranslation: "можу",
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Сьогодні вечірку я не можу.",
+    ukrainianTranslationOfSentence: "Сьогодні вечірку я не можу",
     id: 141,
     ukrainianTranslation: "не можу",
     englishTranscription: "kɑːnt",
@@ -1422,32 +1422,32 @@ export const top1000 = [
     level: 1,
     synonyms: ["cannot", "unable to", "not able to"],
     englishWord: "can't",
-    englishSentence: "I can't go to the party tonight."
+    englishSentence: "I can't go to the party tonight"
   }, {
     level: 1,
     id: 142,
     englishWord: "car",
-    englishSentence: "He bought a new car.",
+    englishSentence: "He bought a new car",
     ukrainianTranslation: "автомобіль",
     englishTranscription: "kɑːr",
-    ukrainianTranslationOfSentence: "Він купив нову машину.",
+    ukrainianTranslationOfSentence: "Він купив нову машину",
     synonyms: ["automobile", "vehicle", "car"],
     idTheme: 0
   }, {
     englishWord: "card",
     id: 143,
     synonyms: ["postcard", "greeting card", "note"],
-    ukrainianTranslationOfSentence: "Вона написала вітальну картку з нагоди дня народження.",
+    ukrainianTranslationOfSentence: "Вона написала вітальну картку з нагоди дня народження",
     ukrainianTranslation: "картка",
-    englishSentence: "She wrote a birthday card.",
+    englishSentence: "She wrote a birthday card",
     englishTranscription: "kɑːrd",
     idTheme: 0,
     level: 1
   }, {
     ukrainianTranslation: "дбати",
-    englishSentence: "I care about your happiness.",
+    englishSentence: "I care about your happiness",
     englishWord: "care",
-    ukrainianTranslationOfSentence: "Мені подобається, коли ти щаслива.",
+    ukrainianTranslationOfSentence: "Мені подобається, коли ти щаслива",
     englishTranscription: "kɛər",
     idTheme: 0,
     id: 144,
@@ -1455,10 +1455,10 @@ export const top1000 = [
     synonyms: ["concern", "attention", "regard"]
   }, {
     englishWord: "carefully",
-    ukrainianTranslationOfSentence: "Будь ласка, ретельно обходься з крихкими речами.",
+    ukrainianTranslationOfSentence: "Будь ласка, ретельно обходься з крихкими речами",
     synonyms: ["cautiously", "prudently", "attentively"],
     ukrainianTranslation: "обережно",
-    englishSentence: "Please handle the fragile items carefully.",
+    englishSentence: "Please handle the fragile items carefully",
     idTheme: 0,
     englishTranscription: "ˈkɛərfl̩i",
     level: 1,
@@ -1474,9 +1474,9 @@ export const top1000 = [
     englishSentence: "Can you help me carry these bags?",
     ukrainianTranslation: "нести"
   }, {
-    ukrainianTranslationOfSentence: "Це складна справа.",
+    ukrainianTranslationOfSentence: "Це складна справа",
     idTheme: 0,
-    englishSentence: "It's a complicated case.",
+    englishSentence: "It's a complicated case",
     id: 147,
     level: 1,
     englishTranscription: "keɪs",
@@ -1485,13 +1485,13 @@ export const top1000 = [
     englishWord: "case"
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "У мене є домашній кіт.",
+    ukrainianTranslationOfSentence: "У мене є домашній кіт",
     englishTranscription: "kæt",
     level: 1,
     ukrainianTranslation: "кіт",
     synonyms: ["feline", "kitty", "pussycat"],
     englishWord: "cat",
-    englishSentence: "I have a pet cat.",
+    englishSentence: "I have a pet cat",
     id: 148
   },
   {
@@ -1507,8 +1507,8 @@ export const top1000 = [
   }, {
     level: 1,
     ukrainianTranslation: "схопив",
-    englishSentence: "He caught the thief.",
-    ukrainianTranslationOfSentence: "Він схопив злодія.",
+    englishSentence: "He caught the thief",
+    ukrainianTranslationOfSentence: "Він схопив злодія",
     englishTranscription: "kɔːt",
     idTheme: 0,
     englishWord: "caught",
@@ -1517,31 +1517,31 @@ export const top1000 = [
   }, {
     synonyms: ["bring about", "lead to", "result in"],
     englishTranscription: "kɔːz",
-    ukrainianTranslationOfSentence: "Його безвідповідальна їзда спричинила аварію.",
+    ukrainianTranslationOfSentence: "Його безвідповідальна їзда спричинила аварію",
     level: 1,
     ukrainianTranslation: "спричинити",
     id: 151,
     englishWord: "cause",
     idTheme: 0,
-    englishSentence: "His careless driving caused the accident."
+    englishSentence: "His careless driving caused the accident"
   }, {
     idTheme: 0,
     ukrainianTranslation: "клітина",
-    ukrainianTranslationOfSentence: "У людському організмі багато клітин.",
+    ukrainianTranslationOfSentence: "У людському організмі багато клітин",
     synonyms: ["compartment", "unit", "small room"],
     englishTranscription: "sɛl",
     englishWord: "cell",
-    englishSentence: "The human body has many cells.",
+    englishSentence: "The human body has many cells",
     level: 1,
     id: 152
   }, {
     level: 1,
     englishTranscription: "tʃɛər",
-    englishSentence: "Please have a seat in the chair.",
+    englishSentence: "Please have a seat in the chair",
     idTheme: 0,
     englishWord: "chair",
     synonyms: ["seat", "stool", "bench"],
-    ukrainianTranslationOfSentence: "Будь ласка, сідайте на стілець.",
+    ukrainianTranslationOfSentence: "Будь ласка, сідайте на стілець",
     id: 153,
     ukrainianTranslation: "стілець"
   }, {
@@ -1549,10 +1549,10 @@ export const top1000 = [
     level: 1,
     englishTranscription: "tʃɑːns",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я вирішив ризикнути і подати заявку на роботу.",
+    ukrainianTranslationOfSentence: "Я вирішив ризикнути і подати заявку на роботу",
     id: 154,
     ukrainianTranslation: "шанс",
-    englishSentence: "I took a chance and applied for the job.",
+    englishSentence: "I took a chance and applied for the job",
     synonyms: ["opportunity", "possibility", "prospect"]
   }, {
     englishTranscription: "tʃeɪnd",
@@ -1566,11 +1566,11 @@ export const top1000 = [
     level: 1
   }, {
     ukrainianTranslation: "переслідувати",
-    ukrainianTranslationOfSentence: "Поліція переслідувала підозрюваного.",
+    ukrainianTranslationOfSentence: "Поліція переслідувала підозрюваного",
     synonyms: ["pursue", "follow", "hunt"],
     englishTranscription: "tʃeɪs",
     level: 1,
-    englishSentence: "The police chased the suspect.",
+    englishSentence: "The police chased the suspect",
     englishWord: "chase",
     idTheme: 0,
     id: 156
@@ -1588,47 +1588,47 @@ export const top1000 = [
     englishWord: "cheek",
     idTheme: 0,
     ukrainianTranslation: "щока",
-    ukrainianTranslationOfSentence: "Вона поцілувала його у щоку.",
+    ukrainianTranslationOfSentence: "Вона поцілувала його у щоку",
     englishTranscription: "tʃiːk",
     id: 158,
-    englishSentence: "She kissed him on the cheek.",
+    englishSentence: "She kissed him on the cheek",
     level: 1,
     synonyms: ["face", "side of the face", "buccal"]
   }, {
     englishTranscription: "tʃɛst",
     level: 1,
     id: 159,
-    englishSentence: "He placed his hand on his chest.",
+    englishSentence: "He placed his hand on his chest",
     idTheme: 0,
     englishWord: "chest",
     synonyms: ["breast", "thorax", "trunk"],
     ukrainianTranslation: "груди",
-    ukrainianTranslationOfSentence: "Він поклав руку на свою груди."
+    ukrainianTranslationOfSentence: "Він поклав руку на свою груди"
   }, {
     ukrainianTranslation: "дитина",
     id: 160,
-    englishSentence: "The child is playing in the park.",
+    englishSentence: "The child is playing in the park",
     englishTranscription: "tʃaɪld",
     level: 1,
     englishWord: "child",
     idTheme: 0,
     synonyms: ["kid", "youngster", "little one"],
-    ukrainianTranslationOfSentence: "Дитина грає у парку."
+    ukrainianTranslationOfSentence: "Дитина грає у парку"
   }, {
     idTheme: 0,
-    englishSentence: "The children are playing in the backyard.",
+    englishSentence: "The children are playing in the backyard",
     englishWord: "children",
     ukrainianTranslation: "діти",
     englishTranscription: "ˈtʃɪldrən",
     synonyms: ["kids", "youngsters", "little ones"],
     level: 1,
-    ukrainianTranslationOfSentence: "Діти грають у задньому дворі.",
+    ukrainianTranslationOfSentence: "Діти грають у задньому дворі",
     id: 161
   }, {
     englishWord: "chuckle",
     level: 1,
-    englishSentence: "His joke made everyone chuckle.",
-    ukrainianTranslationOfSentence: "Його жарт змусив всіх хихотіти.",
+    englishSentence: "His joke made everyone chuckle",
+    ukrainianTranslationOfSentence: "Його жарт змусив всіх хихотіти",
     idTheme: 0,
     ukrainianTranslation: "хихотіти",
     id: 162,
@@ -1638,9 +1638,9 @@ export const top1000 = [
     synonyms: ["town", "metropolis", "urban area"],
     englishTranscription: "ˈsɪti",
     ukrainianTranslation: "місто",
-    ukrainianTranslationOfSentence: "Я живу у великому місті.",
+    ukrainianTranslationOfSentence: "Я живу у великому місті",
     englishWord: "city",
-    englishSentence: "I live in a big city.",
+    englishSentence: "I live in a big city",
     level: 1,
     idTheme: 0,
     id: 163
@@ -1649,89 +1649,89 @@ export const top1000 = [
     level: 1,
     englishTranscription: "klɑːs",
     synonyms: ["lesson", "course", "session"],
-    englishSentence: "I have a math class this afternoon.",
+    englishSentence: "I have a math class this afternoon",
     idTheme: 0,
     id: 164,
     ukrainianTranslation: "клас",
-    ukrainianTranslationOfSentence: "У мене сьогодні після обіду урок математики."
+    ukrainianTranslationOfSentence: "У мене сьогодні після обіду урок математики"
   }, {
     ukrainianTranslation: "чистий",
     level: 1,
     synonyms: ["tidy", "spotless", "neat"],
-    englishSentence: "Please clean your room.",
+    englishSentence: "Please clean your room",
     englishWord: "clean",
     id: 165,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Будь ласка, прибери свою кімнату.",
+    ukrainianTranslationOfSentence: "Будь ласка, прибери свою кімнату",
     englishTranscription: "kliːn"
   }, {
     synonyms: ["transparent", "evident", "unclouded"],
     level: 1,
-    ukrainianTranslationOfSentence: "Сьогодні небо ясне.",
+    ukrainianTranslationOfSentence: "Сьогодні небо ясне",
     ukrainianTranslation: "ясний",
     idTheme: 0,
     englishWord: "clear",
-    englishSentence: "The sky is clear today.",
+    englishSentence: "The sky is clear today",
     englishTranscription: "klɪr",
     id: 166
   }, {
     synonyms: ["ascend", "scale", "mount"],
     englishTranscription: "klaɪm",
     id: 167,
-    ukrainianTranslationOfSentence: "Ми піднялися на вершину гори.",
+    ukrainianTranslationOfSentence: "Ми піднялися на вершину гори",
     englishWord: "climb",
     ukrainianTranslation: "підніматися",
-    englishSentence: "We climbed to the top of the mountain.",
+    englishSentence: "We climbed to the top of the mountain",
     level: 1,
     idTheme: 0
   }, {
     synonyms: ["shut", "sealed", "blocked"],
     level: 1,
-    englishSentence: "The store is already closed.",
+    englishSentence: "The store is already closed",
     ukrainianTranslation: "закритий",
     englishTranscription: "kləʊz",
     id: 168,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Магазин вже закритий.",
+    ukrainianTranslationOfSentence: "Магазин вже закритий",
     englishWord: "close"
   }, {
-    ukrainianTranslationOfSentence: "Мені потрібно купити новий одяг.",
+    ukrainianTranslationOfSentence: "Мені потрібно купити новий одяг",
     id: 169,
     idTheme: 0,
     englishTranscription: "kləʊðz",
     englishWord: "clothes",
-    englishSentence: "I need to buy new clothes.",
+    englishSentence: "I need to buy new clothes",
     ukrainianTranslation: "одяг",
     level: 1,
     synonyms: ["garments", "attire", "apparel"]
   }, {
     englishWord: "coffee",
-    ukrainianTranslationOfSentence: "Я п'ю каву кожного ранку.",
+    ukrainianTranslationOfSentence: "Я п'ю каву кожного ранку",
     englishTranscription: "ˈkɒfi",
     id: 170,
     idTheme: 0,
     ukrainianTranslation: "кава",
     level: 1,
-    englishSentence: "I drink coffee every morning.",
+    englishSentence: "I drink coffee every morning",
     synonyms: ["java", "joe", "beverage"]
   }, {
     level: 1,
     ukrainianTranslation: "холодно",
     idTheme: 0,
     englishWord: "cold",
-    ukrainianTranslationOfSentence: "На вулиці холодно.",
+    ukrainianTranslationOfSentence: "На вулиці холодно",
     englishTranscription: "kəʊld",
     id: 171,
     synonyms: ["chilly", "freezing", "icy"],
-    englishSentence: "It's cold outside."
+    englishSentence: "It's cold outside"
   }, {
     id: 172,
     synonyms: ["university", "institution", "school"],
-    englishSentence: "She's studying at the local college.",
+    englishSentence: "She's studying at the local college",
     idTheme: 0,
     ukrainianTranslation: "коледж",
     level: 1,
-    ukrainianTranslationOfSentence: "Вона навчається в місцевому коледжі.",
+    ukrainianTranslationOfSentence: "Вона навчається в місцевому коледжі",
     englishTranscription: "ˈkɒlɪdʒ",
     englishWord: "college"
   }, {
@@ -1750,15 +1750,15 @@ export const top1000 = [
     englishTranscription: "kʌm",
     level: 1,
     englishWord: "come",
-    englishSentence: "He will come to the party tonight.",
+    englishSentence: "He will come to the party tonight",
     idTheme: 0,
     synonyms: ["arrive", "appear", "show up"],
-    ukrainianTranslationOfSentence: "Він прийде на вечірку сьогодні ввечері."
+    ukrainianTranslationOfSentence: "Він прийде на вечірку сьогодні ввечері"
   }, {
-    englishSentence: "Please leave a comment on the blog.",
+    englishSentence: "Please leave a comment on the blog",
     level: 1,
     englishTranscription: "ˈkɒmɛnt",
-    ukrainianTranslationOfSentence: "Будь ласка, залиште коментар на блозі.",
+    ukrainianTranslationOfSentence: "Будь ласка, залиште коментар на блозі",
     synonyms: ["remark", "observation", "note"],
     id: 175,
     englishWord: "comment",
@@ -1770,8 +1770,8 @@ export const top1000 = [
     englishTranscription: "kəmˈpliːt",
     synonyms: ["finish", "accomplish", "conclude"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Мені потрібно завершити це завдання до завтра.",
-    englishSentence: "I need to complete this task by tomorrow.",
+    ukrainianTranslationOfSentence: "Мені потрібно завершити це завдання до завтра",
+    englishSentence: "I need to complete this task by tomorrow",
     englishWord: "complete",
     id: 176
   }, {
@@ -1780,9 +1780,9 @@ export const top1000 = [
     idTheme: 0,
     level: 1,
     synonyms: ["entirely", "totally", "fully"],
-    englishSentence: "I completely forgot about the meeting.",
+    englishSentence: "I completely forgot about the meeting",
     id: 177,
-    ukrainianTranslationOfSentence: "Я зовсім забув про зустріч.",
+    ukrainianTranslationOfSentence: "Я зовсім забув про зустріч",
     englishTranscription: "kəmˈpliːtli"
   }, {
     idTheme: 0,
@@ -1792,8 +1792,8 @@ export const top1000 = [
     level: 1,
     synonyms: ["PC", "laptop", "desktop"],
     ukrainianTranslation: "комп'ютер",
-    ukrainianTranslationOfSentence: "Я використовую комп'ютер для роботи.",
-    englishSentence: "I use a computer for work."
+    ukrainianTranslationOfSentence: "Я використовую комп'ютер для роботи",
+    englishSentence: "I use a computer for work"
   },
   {
     idTheme: 0,
@@ -1801,8 +1801,8 @@ export const top1000 = [
     synonyms: ["worry", "care", "anxiety"],
     level: 1,
     id: 179,
-    ukrainianTranslationOfSentence: "Твоє здоров'я - моя головна турбота.",
-    englishSentence: "Your health is my main concern.",
+    ukrainianTranslationOfSentence: "Твоє здоров'я - моя головна турбота",
+    englishSentence: "Your health is my main concern",
     englishWord: "concern",
     ukrainianTranslation: "турбота"
   }, {
@@ -1810,10 +1810,10 @@ export const top1000 = [
     level: 1,
     synonyms: ["perplex", "bewilder", "puzzle"],
     englishWord: "confuse",
-    englishSentence: "His explanation only confused me more.",
+    englishSentence: "His explanation only confused me more",
     ukrainianTranslation: "заплутати",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Його пояснення тільки ще більше заплутало мене.",
+    ukrainianTranslationOfSentence: "Його пояснення тільки ще більше заплутало мене",
     id: 180
   }, {
     englishWord: "consider",
@@ -1822,13 +1822,13 @@ export const top1000 = [
     id: 181,
     idTheme: 0,
     englishTranscription: "kənˈsɪdər",
-    englishSentence: "We should consider all options before making a decision.",
+    englishSentence: "We should consider all options before making a decision",
     ukrainianTranslation: "розглядати",
-    ukrainianTranslationOfSentence: "Ми повинні розглянути всі варіанти перед тим, як прийняти рішення."
+    ukrainianTranslationOfSentence: "Ми повинні розглянути всі варіанти перед тим, як прийняти рішення"
   }, {
-    englishSentence: "Please continue with your presentation.",
+    englishSentence: "Please continue with your presentation",
     level: 1,
-    ukrainianTranslationOfSentence: "Будь ласка, продовжуйте з вашою презентацією.",
+    ukrainianTranslationOfSentence: "Будь ласка, продовжуйте з вашою презентацією",
     idTheme: 0,
     englishWord: "continue",
     englishTranscription: "kənˈtɪnjuː",
@@ -1836,7 +1836,7 @@ export const top1000 = [
     ukrainianTranslation: "продовжувати",
     synonyms: ["proceed", "carry on", "persist"]
   }, {
-    englishSentence: "You need to have control over your emotions.",
+    englishSentence: "You need to have control over your emotions",
     idTheme: 0,
     englishTranscription: "kənˈtrəʊl",
     englishWord: "control",
@@ -1844,17 +1844,17 @@ export const top1000 = [
     synonyms: ["manage", "regulate", "govern"],
     id: 183,
     ukrainianTranslation: "контроль",
-    ukrainianTranslationOfSentence: "Тобі потрібно мати контроль над своїми емоціями."
+    ukrainianTranslationOfSentence: "Тобі потрібно мати контроль над своїми емоціями"
   }, {
     englishTranscription: "ˌkɒnvəˈseɪʃən",
     level: 1,
     id: 184,
     ukrainianTranslation: "розмова",
-    ukrainianTranslationOfSentence: "Ми провели довгу розмову про політику.",
+    ukrainianTranslationOfSentence: "Ми провели довгу розмову про політику",
     englishWord: "conversation",
     synonyms: ["discussion", "talk", "dialogue"],
     idTheme: 0,
-    englishSentence: "We had a long conversation about politics."
+    englishSentence: "We had a long conversation about politics"
   }, {
     idTheme: 0,
     ukrainianTranslation: "прохолодний",
@@ -1862,31 +1862,31 @@ export const top1000 = [
     englishWord: "cool",
     synonyms: ["chilly", "cold", "refreshing"],
     level: 1,
-    ukrainianTranslationOfSentence: "Сьогодні погода прохолодна.",
-    englishSentence: "The weather is cool today.",
+    ukrainianTranslationOfSentence: "Сьогодні погода прохолодна",
+    englishSentence: "The weather is cool today",
     englishTranscription: "kuːl"
   }, {
     id: 186,
     englishWord: "corner",
     ukrainianTranslation: "кут",
     level: 1,
-    englishSentence: "The cat is hiding in the corner.",
+    englishSentence: "The cat is hiding in the corner",
     idTheme: 0,
     synonyms: ["angle", "nook", "edge"],
     englishTranscription: "ˈkɔːrnər",
-    ukrainianTranslationOfSentence: "Кіт ховається в куті."
+    ukrainianTranslationOfSentence: "Кіт ховається в куті"
   }, {
-    englishSentence: "Let's sit on the couch and watch a movie.",
+    englishSentence: "Let's sit on the couch and watch a movie",
     id: 187,
     englishTranscription: "kaʊtʃ",
     englishWord: "couch",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Сідаймо на диван і подивимось фільм.",
+    ukrainianTranslationOfSentence: "Сідаймо на диван і подивимось фільм",
     ukrainianTranslation: "диван",
     level: 1,
     synonyms: ["sofa", "settee", "lounge"]
   }, {
-    ukrainianTranslationOfSentence: "Я міг плавати, коли був молодшим.",
+    ukrainianTranslationOfSentence: "Я міг плавати, коли був молодшим",
     synonyms: ["was able to", "had the ability to", "managed to"],
     englishWord: "could",
     englishTranscription: "kʊd",
@@ -1894,29 +1894,29 @@ export const top1000 = [
     level: 1,
     id: 188,
     ukrainianTranslation: "міг",
-    englishSentence: "I could swim when I was younger."
+    englishSentence: "I could swim when I was younger"
   }, {
     idTheme: 0,
     id: 189,
     level: 1,
-    ukrainianTranslationOfSentence: "Сьогодні вранці я не зміг знайти свої ключі.",
+    ukrainianTranslationOfSentence: "Сьогодні вранці я не зміг знайти свої ключі",
     englishTranscription: "ˈkʊdnt",
     synonyms: ["was not able to", "couldn't manage to", "failed to"],
-    englishSentence: "I couldn't find my keys this morning.",
+    englishSentence: "I couldn't find my keys this morning",
     ukrainianTranslation: "не міг",
     englishWord: "couldn't"
   }, {
     ukrainianTranslation: "лічильник",
-    englishSentence: "The counter showed the total number of visitors.",
+    englishSentence: "The counter showed the total number of visitors",
     level: 1,
-    ukrainianTranslationOfSentence: "Лічильник показував загальну кількість відвідувачів.",
+    ukrainianTranslationOfSentence: "Лічильник показував загальну кількість відвідувачів",
     englishWord: "counter",
     id: 190,
     englishTranscription: "ˈkaʊntər",
     synonyms: ["register", "tally", "scoreboard"],
     idTheme: 0
   }, {
-    englishSentence: "They make a lovely couple.",
+    englishSentence: "They make a lovely couple",
     synonyms: ["pair", "duo", "twosome"],
     englishWord: "couple",
     ukrainianTranslation: "пара",
@@ -1924,21 +1924,21 @@ export const top1000 = [
     id: 191,
     englishTranscription: "ˈkʌpl",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вони чудова пара."
+    ukrainianTranslationOfSentence: "Вони чудова пара"
   }, {
     ukrainianTranslation: "курс",
     synonyms: ["class", "program", "module"],
-    ukrainianTranslationOfSentence: "Я проходжу курс фотографії.",
+    ukrainianTranslationOfSentence: "Я проходжу курс фотографії",
     englishTranscription: "kɔːrs",
     id: 192,
     level: 1,
     englishWord: "course",
     idTheme: 0,
-    englishSentence: "I'm taking a photography course."
+    englishSentence: "I'm taking a photography course"
   }, {
-    englishSentence: "Please put a cover over the food to keep it warm.",
+    englishSentence: "Please put a cover over the food to keep it warm",
     ukrainianTranslation: "покриття",
-    ukrainianTranslationOfSentence: "Будь ласка, покрийте їжу, щоб зберегти тепло.",
+    ukrainianTranslationOfSentence: "Будь ласка, покрийте їжу, щоб зберегти тепло",
     synonyms: ["lid", "cap", "blanket"],
     englishWord: "cover",
     englishTranscription: "ˈkʌvər",
@@ -1946,8 +1946,8 @@ export const top1000 = [
     level: 1,
     id: 193
   }, {
-    ukrainianTranslationOfSentence: "У вікні є тріщина.",
-    englishSentence: "There's a crack in the window.",
+    ukrainianTranslationOfSentence: "У вікні є тріщина",
+    englishSentence: "There's a crack in the window",
     synonyms: ["fissure", "split", "fracture"],
     ukrainianTranslation: "тріщина",
     idTheme: 0,
@@ -1960,15 +1960,15 @@ export const top1000 = [
     englishTranscription: "ˈkreɪzi",
     id: 195,
     ukrainianTranslation: "божевільний",
-    ukrainianTranslationOfSentence: "Він сьогодні поводиться як божевільний.",
+    ukrainianTranslationOfSentence: "Він сьогодні поводиться як божевільний",
     idTheme: 0,
     synonyms: ["insane", "mad", "lunatic"],
-    englishSentence: "He's acting crazy today.",
+    englishSentence: "He's acting crazy today",
     englishWord: "crazy"
   }, {
-    englishSentence: "We need to cross the street to get to the other side.",
+    englishSentence: "We need to cross the street to get to the other side",
     englishWord: "cross",
-    ukrainianTranslationOfSentence: "Нам потрібно перетнути вулицю, щоб потрапити на інший бік.",
+    ukrainianTranslationOfSentence: "Нам потрібно перетнути вулицю, щоб потрапити на інший бік",
     id: 196,
     ukrainianTranslation: "перетнути",
     synonyms: ["traverse", "go across", "navigate"],
@@ -1976,14 +1976,14 @@ export const top1000 = [
     englishTranscription: "krɒs",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Концерт зібрав велику толпу.",
+    ukrainianTranslationOfSentence: "Концерт зібрав велику толпу",
     id: 197,
     idTheme: 0,
     ukrainianTranslation: "толпа",
     synonyms: ["audience", "throng", "mob"],
     englishWord: "crowd",
     level: 1,
-    englishSentence: "The concert attracted a large crowd.",
+    englishSentence: "The concert attracted a large crowd",
     englishTranscription: "kraʊd"
   }, {
     ukrainianTranslationOfSentence: "",
@@ -2009,12 +2009,12 @@ export const top1000 = [
     englishWord: "cry",
     level: 1,
     synonyms: ["weep", "sob", "wail"],
-    ukrainianTranslationOfSentence: "Дитина почала плакати.",
+    ukrainianTranslationOfSentence: "Дитина почала плакати",
     ukrainianTranslation: "плакати",
     id: 200,
     englishTranscription: "kraɪ",
     idTheme: 0,
-    englishSentence: "The baby started to cry."
+    englishSentence: "The baby started to cry"
   }, {
     englishTranscription: "kʌp",
     synonyms: ["mug", "goblet", "beaker"],
@@ -2029,10 +2029,10 @@ export const top1000 = [
     idTheme: 0,
     id: 202,
     level: 1,
-    ukrainianTranslationOfSentence: "Будь обережним, щоб не порізати себе цим ножем.",
+    ukrainianTranslationOfSentence: "Будь обережним, щоб не порізати себе цим ножем",
     synonyms: ["slice", "chop", "carve"],
     ukrainianTranslation: "різати",
-    englishSentence: "Be careful not to cut yourself with that knife.",
+    englishSentence: "Be careful not to cut yourself with that knife",
     englishWord: "cut",
     englishTranscription: "kʌt"
   }, {
@@ -2047,8 +2047,8 @@ export const top1000 = [
     id: 203
   }, {
     ukrainianTranslation: "тато",
-    englishSentence: "My dad is the best.",
-    ukrainianTranslationOfSentence: "Мій тато - найкращий.",
+    englishSentence: "My dad is the best",
+    ukrainianTranslationOfSentence: "Мій тато - найкращий",
     level: 1,
     englishTranscription: "dæd",
     idTheme: 0,
@@ -2057,10 +2057,10 @@ export const top1000 = [
     englishWord: "dad"
   }, {
     ukrainianTranslation: "прокляти",
-    englishSentence: "I can't find my keys. Damn it!",
+    englishSentence: "I can't find my keys Damn it!",
     id: 205,
     englishWord: "damn",
-    ukrainianTranslationOfSentence: "Я не можу знайти свої ключі. Проклятье!",
+    ukrainianTranslationOfSentence: "Я не можу знайти свої ключі Проклятье!",
     level: 1,
     englishTranscription: "dæm",
     idTheme: 0,
@@ -2070,19 +2070,19 @@ export const top1000 = [
     ukrainianTranslation: "танцювати",
     idTheme: 0,
     englishWord: "dance",
-    englishSentence: "Let's dance together.",
+    englishSentence: "Let's dance together",
     englishTranscription: "dæns",
     level: 1,
     synonyms: ["groove", "sway", "jig"],
-    ukrainianTranslationOfSentence: "Давайте разом танцювати."
+    ukrainianTranslationOfSentence: "Давайте разом танцювати"
   }, {
     englishTranscription: "dɑːrk",
-    englishSentence: "It's too dark in here.",
+    englishSentence: "It's too dark in here",
     idTheme: 0,
     englishWord: "dark",
     id: 207,
     level: 1,
-    ukrainianTranslationOfSentence: "Тут занадто темно.",
+    ukrainianTranslationOfSentence: "Тут занадто темно",
     synonyms: ["dim", "shadowy", "black"],
     ukrainianTranslation: "темний"
   }, {
@@ -2097,11 +2097,11 @@ export const top1000 = [
     id: 208
   },
   {
-    ukrainianTranslationOfSentence: "Моя дочка наступного тижня виповнює 10 років.",
+    ukrainianTranslationOfSentence: "Моя дочка наступного тижня виповнює 10 років",
     ukrainianTranslation: "дочка",
     idTheme: 0,
     englishWord: "daughter",
-    englishSentence: "My daughter is turning 10 next week.",
+    englishSentence: "My daughter is turning 10 next week",
     synonyms: ["girl", "child", "offspring"],
     englishTranscription: "ˈdɔːtər",
     id: 209,
@@ -2113,28 +2113,28 @@ export const top1000 = [
     englishWord: "day",
     englishTranscription: "deɪ",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Сьогодні гарний день.",
-    englishSentence: "Today is a beautiful day.",
+    ukrainianTranslationOfSentence: "Сьогодні гарний день",
+    englishSentence: "Today is a beautiful day",
     level: 1
   }, {
     ukrainianTranslation: "мертвий",
     idTheme: 0,
-    englishSentence: "The plant is dead.",
+    englishSentence: "The plant is dead",
     englishWord: "dead",
     level: 1,
-    ukrainianTranslationOfSentence: "Рослина мертва.",
+    ukrainianTranslationOfSentence: "Рослина мертва",
     englishTranscription: "ded",
     id: 211,
     synonyms: ["lifeless", "deceased", "expired"]
   }, {
-    ukrainianTranslationOfSentence: "Давайте зробимо угоду.",
+    ukrainianTranslationOfSentence: "Давайте зробимо угоду",
     englishWord: "deal",
     idTheme: 0,
     synonyms: ["agreement", "bargain", "transaction"],
     ukrainianTranslation: "угода",
     id: 212,
     englishTranscription: "diːl",
-    englishSentence: "Let's make a deal.",
+    englishSentence: "Let's make a deal",
     level: 1
   }, {
     englishTranscription: "dɪər",
@@ -2142,8 +2142,8 @@ export const top1000 = [
     id: 213,
     synonyms: ["beloved", "darling", "precious"],
     level: 1,
-    englishSentence: "Dear John, I miss you.",
-    ukrainianTranslationOfSentence: "Дорогий Джон, я скучаю за тобою.",
+    englishSentence: "Dear John, I miss you",
+    ukrainianTranslationOfSentence: "Дорогий Джон, я скучаю за тобою",
     idTheme: 0,
     englishWord: "dear"
   }, {
@@ -2151,67 +2151,67 @@ export const top1000 = [
     englishWord: "death",
     id: 214,
     level: 1,
-    ukrainianTranslationOfSentence: "Новина про її смерть була приголомшливою.",
+    ukrainianTranslationOfSentence: "Новина про її смерть була приголомшливою",
     synonyms: ["demise", "passing", "expiration"],
     ukrainianTranslation: "смерть",
     idTheme: 0,
-    englishSentence: "The news of her death was devastating."
+    englishSentence: "The news of her death was devastating"
   }, {
     englishTranscription: "dɪˈsaɪd",
     englishWord: "decide",
     id: 215,
     synonyms: ["determine", "choose", "resolve"],
-    ukrainianTranslationOfSentence: "Пора вирішити, що робити далі.",
+    ukrainianTranslationOfSentence: "Пора вирішити, що робити далі",
     ukrainianTranslation: "вирішити",
     level: 1,
     idTheme: 0,
-    englishSentence: "It's time to decide what to do next."
+    englishSentence: "It's time to decide what to do next"
   }, {
     englishTranscription: "diːp",
     synonyms: ["profound", "bottomless", "extensive"],
     level: 1,
-    englishSentence: "The ocean is very deep.",
+    englishSentence: "The ocean is very deep",
     idTheme: 0,
     ukrainianTranslation: "глибокий",
     id: 216,
     englishWord: "deep",
-    ukrainianTranslationOfSentence: "Океан дуже глибокий."
+    ukrainianTranslationOfSentence: "Океан дуже глибокий"
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я обов'язково буду там.",
+    ukrainianTranslationOfSentence: "Я обов'язково буду там",
     id: 217,
     englishWord: "definitely",
     synonyms: ["certainly", "surely", "absolutely"],
     englishTranscription: "ˈdɛfɪnɪtli",
     ukrainianTranslation: "безумовно",
-    englishSentence: "I will definitely be there.",
+    englishSentence: "I will definitely be there",
     level: 1
   }, {
     id: 218,
-    englishSentence: "Please place the documents on my desk.",
+    englishSentence: "Please place the documents on my desk",
     level: 1,
     englishTranscription: "dɛsk",
     ukrainianTranslation: "стіл",
     synonyms: ["table", "workstation", "bureau"],
     englishWord: "desk",
-    ukrainianTranslationOfSentence: "Будь ласка, покладіть документи на мій стіл.",
+    ukrainianTranslationOfSentence: "Будь ласка, покладіть документи на мій стіл",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Я зробив все можливе, щоб допомогти.",
+    ukrainianTranslationOfSentence: "Я зробив все можливе, щоб допомогти",
     ukrainianTranslation: "робив",
     synonyms: ["performed", "executed", "accomplished"],
     idTheme: 0,
     id: 219,
     level: 1,
-    englishSentence: "I did my best to help.",
+    englishSentence: "I did my best to help",
     englishWord: "did",
     englishTranscription: "dɪd"
   }, {
-    ukrainianTranslationOfSentence: "У мене не було часу закінчити проект.",
+    ukrainianTranslationOfSentence: "У мене не було часу закінчити проект",
     synonyms: ["did not", "was not able to", "failed to"],
     englishTranscription: "ˈdɪdnt",
     englishWord: "didn't",
-    englishSentence: "I didn't have time to finish the project.",
+    englishSentence: "I didn't have time to finish the project",
     idTheme: 0,
     level: 1,
     id: 220,
@@ -2220,11 +2220,11 @@ export const top1000 = [
     level: 1,
     englishTranscription: "daɪ",
     synonyms: ["perish", "expire", "pass away"],
-    englishSentence: "The flowers will die without water.",
+    englishSentence: "The flowers will die without water",
     id: 221,
     englishWord: "die",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Квіти загинуть без води.",
+    ukrainianTranslationOfSentence: "Квіти загинуть без води",
     ukrainianTranslation: "помирати"
   }, {
     englishTranscription: "ˈdɪfərənt",
@@ -2234,16 +2234,16 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["diverse", "distinct", "varied"],
     level: 1,
-    ukrainianTranslationOfSentence: "У нас різні думки щодо цього питання.",
-    englishSentence: "We have different opinions on the matter."
+    ukrainianTranslationOfSentence: "У нас різні думки щодо цього питання",
+    englishSentence: "We have different opinions on the matter"
   }, {
     ukrainianTranslation: "вечеря",
-    ukrainianTranslationOfSentence: "Давайте повечеряємо разом сьогодні ввечері.",
+    ukrainianTranslationOfSentence: "Давайте повечеряємо разом сьогодні ввечері",
     englishTranscription: "ˈdɪnər",
     id: 223,
     synonyms: ["supper", "meal", "feast"],
     idTheme: 0,
-    englishSentence: "Let's have dinner together tonight.",
+    englishSentence: "Let's have dinner together tonight",
     englishWord: "dinner",
     level: 1
   }, {
@@ -2258,11 +2258,11 @@ export const top1000 = [
     ukrainianTranslation: "напрямок"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Магік зробив, щоб кролик зник.",
+    ukrainianTranslationOfSentence: "Магік зробив, щоб кролик зник",
     englishTranscription: "ˌdɪsəˈpɪər",
     synonyms: ["vanish", "fade away", "evaporate"],
     englishWord: "disappear",
-    englishSentence: "The magician made the rabbit disappear.",
+    englishSentence: "The magician made the rabbit disappear",
     idTheme: 0,
     ukrainianTranslation: "зникати",
     id: 225
@@ -2283,34 +2283,34 @@ export const top1000 = [
     englishWord: "doctor",
     id: 227,
     ukrainianTranslation: "лікар",
-    ukrainianTranslationOfSentence: "Мені потрібно побачитися з лікарем.",
-    englishSentence: "I need to see a doctor.",
+    ukrainianTranslationOfSentence: "Мені потрібно побачитися з лікарем",
+    englishSentence: "I need to see a doctor",
     synonyms: ["physician", "medic", "practitioner"]
   }, {
-    englishSentence: "She does her best in everything she does.",
+    englishSentence: "She does her best in everything she does",
     englishTranscription: "dʌz",
     id: 228,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона робить все можливе в усьому, що робить.",
+    ukrainianTranslationOfSentence: "Вона робить все можливе в усьому, що робить",
     synonyms: ["performs", "executes", "accomplishes"],
     englishWord: "does",
     ukrainianTranslation: "робить",
     level: 1
   }, {
-    englishSentence: "He doesn't like to eat vegetables.",
+    englishSentence: "He doesn't like to eat vegetables",
     id: 229,
     englishWord: "doesn't",
     level: 1,
     ukrainianTranslation: "не робить",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Йому не подобається їсти овочі.",
+    ukrainianTranslationOfSentence: "Йому не подобається їсти овочі",
     englishTranscription: "ˈdʌznt",
     synonyms: ["does not", "is not able to", "fails to"]
   }, {
-    englishSentence: "I have a pet dog named Max.",
+    englishSentence: "I have a pet dog named Max",
     synonyms: ["canine", "hound", "mutt"],
     ukrainianTranslation: "собака",
-    ukrainianTranslationOfSentence: "У мене є домашня собака на ім'я Макс.",
+    ukrainianTranslationOfSentence: "У мене є домашня собака на ім'я Макс",
     englishWord: "dog",
     id: 230,
     englishTranscription: "dɒɡ",
@@ -2327,11 +2327,11 @@ export const top1000 = [
     ukrainianTranslation: "не робіть",
     englishSentence: "Don't touch that, it's hot!"
   }, {
-    ukrainianTranslationOfSentence: "Я радий, що робота зроблена.",
+    ukrainianTranslationOfSentence: "Я радий, що робота зроблена",
     level: 1,
     ukrainianTranslation: "зроблений",
     synonyms: ["finished", "completed", "accomplished"],
-    englishSentence: "I'm glad the job is done.",
+    englishSentence: "I'm glad the job is done",
     idTheme: 0,
     id: 232,
     englishWord: "done",
@@ -2339,29 +2339,29 @@ export const top1000 = [
   }, {
     synonyms: ["gateway", "entrance", "portal"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Будь ласка, за собою закрийте двері.",
+    ukrainianTranslationOfSentence: "Будь ласка, за собою закрийте двері",
     id: 233,
     level: 1,
-    englishSentence: "Please close the door behind you.",
+    englishSentence: "Please close the door behind you",
     englishTranscription: "dɔːr",
     englishWord: "door",
     ukrainianTranslation: "двері"
   }, {
     englishTranscription: "daʊt",
-    ukrainianTranslationOfSentence: "У мене є сумніви щодо його історії.",
+    ukrainianTranslationOfSentence: "У мене є сумніви щодо його історії",
     id: 234,
     idTheme: 0,
     level: 1,
     synonyms: ["uncertainty", "skepticism", "hesitation"],
     ukrainianTranslation: "сумнів",
     englishWord: "doubt",
-    englishSentence: "I have my doubts about his story."
+    englishSentence: "I have my doubts about his story"
   }, {
     englishTranscription: "daʊn",
     englishWord: "down",
-    englishSentence: "The ball rolled down the hill.",
+    englishSentence: "The ball rolled down the hill",
     synonyms: ["lower", "beneath", "under"],
-    ukrainianTranslationOfSentence: "М'яч скотився вниз по горі.",
+    ukrainianTranslationOfSentence: "М'яч скотився вниз по горі",
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "вниз",
@@ -2383,22 +2383,22 @@ export const top1000 = [
     ukrainianTranslation: "малювати",
     englishWord: "draw",
     id: 237,
-    englishSentence: "She loves to draw pictures.",
+    englishSentence: "She loves to draw pictures",
     englishTranscription: "drɔː",
-    ukrainianTranslationOfSentence: "Вона любить малювати малюнки."
+    ukrainianTranslationOfSentence: "Вона любить малювати малюнки"
   },
   {
-    englishSentence: "Last night, I had a strange dream.",
+    englishSentence: "Last night, I had a strange dream",
     englishTranscription: "driːm",
     synonyms: ["vision", "fantasy", "reverie"],
-    ukrainianTranslationOfSentence: "Минулої ночі у мене був дивний сон.",
+    ukrainianTranslationOfSentence: "Минулої ночі у мене був дивний сон",
     englishWord: "dream",
     level: 1,
     id: 238,
     idTheme: 0,
     ukrainianTranslation: "сон"
   }, {
-    englishSentence: "She wore a beautiful dress to the party.",
+    englishSentence: "She wore a beautiful dress to the party",
     idTheme: 0,
     synonyms: ["gown", "attire", "garment"],
     level: 1,
@@ -2406,7 +2406,7 @@ export const top1000 = [
     englishTranscription: "drɛs",
     id: 239,
     ukrainianTranslation: "сукня",
-    ukrainianTranslationOfSentence: "Вона одягла гарну сукню на вечірку."
+    ukrainianTranslationOfSentence: "Вона одягла гарну сукню на вечірку"
   }, {
     englishWord: "drink",
     ukrainianTranslationOfSentence: "Чи бажаєте щось випити?",
@@ -2419,31 +2419,31 @@ export const top1000 = [
     idTheme: 0
   }, {
     englishTranscription: "draɪv",
-    englishSentence: "He learned how to drive a car last year.",
+    englishSentence: "He learned how to drive a car last year",
     idTheme: 0,
     id: 241,
     ukrainianTranslation: "водити",
     englishWord: "drive",
     synonyms: ["operate", "steer", "navigate"],
-    ukrainianTranslationOfSentence: "Він навчився водити автомобіль минулого року.",
+    ukrainianTranslationOfSentence: "Він навчився водити автомобіль минулого року",
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Будь обережним, щоб не випустити крихку вазу.",
+    ukrainianTranslationOfSentence: "Будь обережним, щоб не випустити крихку вазу",
     idTheme: 0,
     id: 242,
     englishWord: "drop",
     englishTranscription: "drɒp",
     ukrainianTranslation: "випускати",
-    englishSentence: "Be careful not to drop the fragile vase.",
+    englishSentence: "Be careful not to drop the fragile vase",
     synonyms: ["release", "let go of", "let fall"],
     level: 1
   }, {
     englishTranscription: "droʊv",
-    ukrainianTranslationOfSentence: "Вона водила своїх друзів до аеропорту.",
+    ukrainianTranslationOfSentence: "Вона водила своїх друзів до аеропорту",
     synonyms: ["operated", "steered", "navigated"],
     englishWord: "drove",
     ukrainianTranslation: "водив",
-    englishSentence: "She drove her friends to the airport.",
+    englishSentence: "She drove her friends to the airport",
     id: 243,
     level: 1,
     idTheme: 0
@@ -2454,9 +2454,9 @@ export const top1000 = [
     synonyms: ["arid", "dehydrated", "parched"],
     englishWord: "dry",
     ukrainianTranslation: "сухий",
-    englishSentence: "Hang your wet clothes to dry.",
+    englishSentence: "Hang your wet clothes to dry",
     level: 1,
-    ukrainianTranslationOfSentence: "Повісьте вашу мокру одежу, щоб вона висохла."
+    ukrainianTranslationOfSentence: "Повісьте вашу мокру одежу, щоб вона висохла"
   }, {
     englishWord: "during",
     englishSentence: "What did you do during your vacation?",
@@ -2471,8 +2471,8 @@ export const top1000 = [
     englishWord: "each",
     synonyms: ["every", "every single", "each one"],
     level: 1,
-    englishSentence: "Each student received a certificate.",
-    ukrainianTranslationOfSentence: "Кожен студент отримав сертифікат.",
+    englishSentence: "Each student received a certificate",
+    ukrainianTranslationOfSentence: "Кожен студент отримав сертифікат",
     englishTranscription: "iːtʃ",
     ukrainianTranslation: "кожен",
     idTheme: 0,
@@ -2483,16 +2483,16 @@ export const top1000 = [
     idTheme: 0,
     level: 1,
     synonyms: ["auditory organ", "hearing organ", "auditory appendage"],
-    ukrainianTranslationOfSentence: "Моє ліве вухо дзвенить.",
+    ukrainianTranslationOfSentence: "Моє ліве вухо дзвенить",
     englishWord: "ear",
-    englishSentence: "My left ear is ringing.",
+    englishSentence: "My left ear is ringing",
     id: 247
   }, {
     synonyms: ["in the morning", "at the crack of dawn", "at sunrise"],
     englishWord: "early",
     idTheme: 0,
-    englishSentence: "I like to wake up early in the morning.",
-    ukrainianTranslationOfSentence: "Мені подобається рано прокидатися вранці.",
+    englishSentence: "I like to wake up early in the morning",
+    ukrainianTranslationOfSentence: "Мені подобається рано прокидатися вранці",
     englishTranscription: "ˈɜːrli",
     id: 248,
     ukrainianTranslation: "рано",
@@ -2500,11 +2500,11 @@ export const top1000 = [
   }, {
     englishWord: "easily",
     synonyms: ["effortlessly", "without difficulty", "smoothly"],
-    ukrainianTranslationOfSentence: "Він легко вирішив головоломку.",
+    ukrainianTranslationOfSentence: "Він легко вирішив головоломку",
     idTheme: 0,
     ukrainianTranslation: "легко",
     id: 249,
-    englishSentence: "He solved the puzzle easily.",
+    englishSentence: "He solved the puzzle easily",
     englishTranscription: "ˈiːzɪli",
     level: 1
   }, {
@@ -2529,8 +2529,8 @@ export const top1000 = [
     idTheme: 0
   }, {
     id: 252,
-    ukrainianTranslationOfSentence: "Цей рецепт дуже легко виконати.",
-    englishSentence: "This recipe is very easy to follow.",
+    ukrainianTranslationOfSentence: "Цей рецепт дуже легко виконати",
+    englishSentence: "This recipe is very easy to follow",
     idTheme: 0,
     ukrainianTranslation: "легкий",
     englishTranscription: "ˈiːzi",
@@ -2541,19 +2541,19 @@ export const top1000 = [
     idTheme: 0,
     level: 1,
     ukrainianTranslation: "їсти",
-    englishSentence: "I love to eat pizza.",
+    englishSentence: "I love to eat pizza",
     englishTranscription: "iːt",
     id: 253,
     englishWord: "eat",
     synonyms: ["consume", "devour", "ingest"],
-    ukrainianTranslationOfSentence: "Я люблю їсти піцу."
+    ukrainianTranslationOfSentence: "Я люблю їсти піцу"
   }, {
     synonyms: ["border", "boundary", "rim"],
     level: 1,
-    ukrainianTranslationOfSentence: "Будьте обережні, щоб не впасти з краю скелі.",
+    ukrainianTranslationOfSentence: "Будьте обережні, щоб не впасти з краю скелі",
     englishWord: "edge",
     englishTranscription: "ɛdʒ",
-    englishSentence: "Be careful not to fall off the edge of the cliff.",
+    englishSentence: "Be careful not to fall off the edge of the cliff",
     idTheme: 0,
     id: 254,
     ukrainianTranslation: "край"
@@ -2563,39 +2563,39 @@ export const top1000 = [
     level: 1,
     id: 255,
     idTheme: 0,
-    englishSentence: "You can choose either option.",
-    ukrainianTranslationOfSentence: "Ви можете обрати будь-яку опцію.",
+    englishSentence: "You can choose either option",
+    ukrainianTranslationOfSentence: "Ви можете обрати будь-яку опцію",
     synonyms: ["any", "whichever", "one or the other"],
     englishWord: "either"
   }, {
-    englishSentence: "I don't want anything else.",
+    englishSentence: "I don't want anything else",
     id: 256,
     idTheme: 0,
     synonyms: ["additional", "other", "different"],
-    ukrainianTranslationOfSentence: "Я не хочу нічого ще.",
+    ukrainianTranslationOfSentence: "Я не хочу нічого ще",
     level: 1,
     ukrainianTranslation: "ще",
     englishTranscription: "ɛls",
     englishWord: "else"
   }, {
-    englishSentence: "The room was completely empty.",
+    englishSentence: "The room was completely empty",
     synonyms: ["vacant", "void", "devoid"],
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "порожній",
     englishTranscription: "ˈɛmpti",
     id: 257,
-    ukrainianTranslationOfSentence: "Кімната була абсолютно порожньою.",
+    ukrainianTranslationOfSentence: "Кімната була абсолютно порожньою",
     englishWord: "empty"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Це кінець книги.",
+    ukrainianTranslationOfSentence: "Це кінець книги",
     idTheme: 0,
     ukrainianTranslation: "кінець",
     id: 258,
     englishTranscription: "ɛnd",
     synonyms: ["conclusion", "termination", "finale"],
-    englishSentence: "This is the end of the book.",
+    englishSentence: "This is the end of the book",
     englishWord: "end"
   },
   {
@@ -2603,18 +2603,18 @@ export const top1000 = [
     idTheme: 0,
     englishWord: "enjoy",
     id: 259,
-    englishSentence: "I enjoy spending time with my friends.",
+    englishSentence: "I enjoy spending time with my friends",
     ukrainianTranslation: "насолоджуватися",
     level: 1,
     englishTranscription: "ɪnˈdʒɔɪ",
-    ukrainianTranslationOfSentence: "Мені подобається проводити час з друзями."
+    ukrainianTranslationOfSentence: "Мені подобається проводити час з друзями"
   }, {
     synonyms: ["sufficient", "adequate", "plenty"],
-    ukrainianTranslationOfSentence: "Мені вистачило їжі.",
+    ukrainianTranslationOfSentence: "Мені вистачило їжі",
     ukrainianTranslation: "достатньо",
     id: 260,
     englishTranscription: "ɪˈnʌf",
-    englishSentence: "I've had enough to eat.",
+    englishSentence: "I've had enough to eat",
     englishWord: "enough",
     idTheme: 0,
     level: 1
@@ -2622,17 +2622,17 @@ export const top1000 = [
     level: 1,
     id: 261,
     ukrainianTranslation: "входити",
-    ukrainianTranslationOfSentence: "Будь ласка, введіть свій пароль для входу.",
+    ukrainianTranslationOfSentence: "Будь ласка, введіть свій пароль для входу",
     englishTranscription: "ˈɛntər",
-    englishSentence: "Please enter your password to log in.",
+    englishSentence: "Please enter your password to log in",
     englishWord: "enter",
     idTheme: 0,
     synonyms: ["come in", "access", "step into"]
   }, {
-    ukrainianTranslationOfSentence: "Весь міст був вкритий снігом.",
+    ukrainianTranslationOfSentence: "Весь міст був вкритий снігом",
     id: 262,
     englishWord: "entire",
-    englishSentence: "The entire city was covered in snow.",
+    englishSentence: "The entire city was covered in snow",
     synonyms: ["whole", "complete", "total"],
     level: 1,
     englishTranscription: "ɪnˈtaɪər",
@@ -2646,48 +2646,48 @@ export const top1000 = [
     id: 263,
     englishTranscription: "ɪˈskeɪp",
     synonyms: ["flee", "run away", "break free"],
-    englishSentence: "They managed to escape from the prison.",
-    ukrainianTranslationOfSentence: "Вони змогли втекти з в'язниці."
+    englishSentence: "They managed to escape from the prison",
+    ukrainianTranslationOfSentence: "Вони змогли втекти з в'язниці"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Я люблю шоколад, особливо темний шоколад.",
+    ukrainianTranslationOfSentence: "Я люблю шоколад, особливо темний шоколад",
     synonyms: ["particularly", "notably", "specifically"],
     id: 264,
     ukrainianTranslation: "особливо",
-    englishSentence: "I love chocolate, especially dark chocolate.",
+    englishSentence: "I love chocolate, especially dark chocolate",
     englishWord: "especially",
     englishTranscription: "ɪsˈpɛʃəli",
     idTheme: 0
   }, {
     id: 265,
     level: 1,
-    ukrainianTranslationOfSentence: "Він навіть не попрощався.",
+    ukrainianTranslationOfSentence: "Він навіть не попрощався",
     ukrainianTranslation: "навіть",
     synonyms: ["including", "including that", "to say nothing of"],
     englishWord: "even",
-    englishSentence: "He didn't even say goodbye.",
+    englishSentence: "He didn't even say goodbye",
     idTheme: 0,
     englishTranscription: "ˈiːvən"
   }, {
     level: 1,
     synonyms: ["nighttime", "dusk", "twilight"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Підемо на прогулянку ввечері.",
+    ukrainianTranslationOfSentence: "Підемо на прогулянку ввечері",
     englishWord: "evening",
-    englishSentence: "Let's go for a walk in the evening.",
+    englishSentence: "Let's go for a walk in the evening",
     id: 266,
     ukrainianTranslation: "вечір",
     englishTranscription: "ˈivnɪŋ"
   }, {
     idTheme: 0,
     ukrainianTranslation: "врешті-решт",
-    ukrainianTranslationOfSentence: "Врешті-решт вона знайшла свої загублені ключі.",
+    ukrainianTranslationOfSentence: "Врешті-решт вона знайшла свої загублені ключі",
     level: 1,
     synonyms: ["finally", "ultimately", "in the end"],
     id: 267,
     englishTranscription: "ɪˈvɛnʧuəli",
     englishWord: "eventually",
-    englishSentence: "She eventually found her lost keys."
+    englishSentence: "She eventually found her lost keys"
   }, {
     englishWord: "ever",
     level: 1,
@@ -2702,25 +2702,25 @@ export const top1000 = [
     ukrainianTranslation: "кожен",
     level: 1,
     idTheme: 0,
-    englishSentence: "Every student must complete the assignment.",
+    englishSentence: "Every student must complete the assignment",
     synonyms: ["each", "all", "every single"],
     englishTranscription: "ˈɛvri",
     englishWord: "every",
     id: 269,
-    ukrainianTranslationOfSentence: "Кожен студент повинен виконати завдання."
+    ukrainianTranslationOfSentence: "Кожен студент повинен виконати завдання"
   }, {
     level: 1,
     ukrainianTranslation: "кожен",
     id: 270,
     englishWord: "everyone",
     synonyms: ["everybody", "all", "each and every"],
-    ukrainianTranslationOfSentence: "Кожен насолоджувався вечіркою.",
+    ukrainianTranslationOfSentence: "Кожен насолоджувався вечіркою",
     idTheme: 0,
     englishTranscription: "ˈɛvriwʌn",
-    englishSentence: "Everyone enjoyed the party."
+    englishSentence: "Everyone enjoyed the party"
   }, {
-    englishSentence: "I forgot everything he told me.",
-    ukrainianTranslationOfSentence: "Я забув все, що він мені сказав.",
+    englishSentence: "I forgot everything he told me",
+    ukrainianTranslationOfSentence: "Я забув все, що він мені сказав",
     idTheme: 0,
     englishWord: "everything",
     level: 1,
@@ -2734,16 +2734,16 @@ export const top1000 = [
     synonyms: ["precisely", "accurately", "correctly"],
     ukrainianTranslation: "точно",
     englishWord: "exactly",
-    englishSentence: "That's exactly what I was thinking.",
-    ukrainianTranslationOfSentence: "Саме це я і думав.",
+    englishSentence: "That's exactly what I was thinking",
+    ukrainianTranslationOfSentence: "Саме це я і думав",
     englishTranscription: "ɪgˈzæktli",
     level: 1
   }, {
     id: 273,
     idTheme: 0,
-    englishSentence: "Everyone came to the party except for Tom.",
+    englishSentence: "Everyone came to the party except for Tom",
     synonyms: ["apart from", "excluding", "other than"],
-    ukrainianTranslationOfSentence: "Усі прийшли на вечірку, крім Тома.",
+    ukrainianTranslationOfSentence: "Усі прийшли на вечірку, крім Тома",
     englishTranscription: "ɪkˈsɛpt",
     level: 1,
     ukrainianTranslation: "крім",
@@ -2751,20 +2751,20 @@ export const top1000 = [
   }, {
     id: 274,
     synonyms: ["thrill", "stimulate", "arouse"],
-    englishSentence: "The news of her promotion excited her.",
+    englishSentence: "The news of her promotion excited her",
     englishTranscription: "ɪkˈsaɪt",
     idTheme: 0,
     englishWord: "excite",
     ukrainianTranslation: "збуджувати",
-    ukrainianTranslationOfSentence: "Новина про її підвищення збудила її.",
+    ukrainianTranslationOfSentence: "Новина про її підвищення збудила її",
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Як гарний захід сонця! - вигукнула вона.",
+    ukrainianTranslationOfSentence: "Як гарний захід сонця! - вигукнула вона",
     level: 1,
     id: 275,
     idTheme: 0,
     synonyms: ["cry out", "shout", "declare"],
-    englishSentence: "What a beautiful sunset! she exclaimed.",
+    englishSentence: "What a beautiful sunset! she exclaimed",
     englishWord: "exclaim",
     englishTranscription: "ɪkˈskleɪm",
     ukrainianTranslation: "вигукнути"
@@ -2772,20 +2772,20 @@ export const top1000 = [
     ukrainianTranslation: "виправдання",
     synonyms: ["justification", "reason", "apology"],
     idTheme: 0,
-    englishSentence: "I need to find an excuse for being late.",
+    englishSentence: "I need to find an excuse for being late",
     id: 276,
     englishWord: "excuse",
     englishTranscription: "ɪkˈskjuz",
     level: 1,
-    ukrainianTranslationOfSentence: "Мені потрібно знайти виправдання за запізнення."
+    ukrainianTranslationOfSentence: "Мені потрібно знайти виправдання за запізнення"
   }, {
-    ukrainianTranslationOfSentence: "Я очікую, що він прибуде незабаром.",
+    ukrainianTranslationOfSentence: "Я очікую, що він прибуде незабаром",
     id: 277,
     ukrainianTranslation: "очікувати",
     synonyms: ["anticipate", "await", "await with pleasure"],
     level: 1,
     englishTranscription: "ɪkˈspɛkt",
-    englishSentence: "I expect him to arrive soon.",
+    englishSentence: "I expect him to arrive soon",
     idTheme: 0,
     englishWord: "expect"
   }, {
@@ -2803,17 +2803,17 @@ export const top1000 = [
     level: 1,
     synonyms: ["look", "countenance", "appearance"],
     englishTranscription: "ɪkˈsprɛʃən",
-    englishSentence: "She had a sad expression on her face.",
+    englishSentence: "She had a sad expression on her face",
     idTheme: 0,
     id: 279,
     englishWord: "expression",
-    ukrainianTranslationOfSentence: "На її обличчі був сумний вираз."
+    ukrainianTranslationOfSentence: "На її обличчі був сумний вираз"
   }, {
-    ukrainianTranslationOfSentence: "В неї гарні блакитні очі.",
+    ukrainianTranslationOfSentence: "В неї гарні блакитні очі",
     englishTranscription: "aɪ",
     level: 1,
     id: 280,
-    englishSentence: "She has beautiful blue eyes.",
+    englishSentence: "She has beautiful blue eyes",
     idTheme: 0,
     englishWord: "eye",
     ukrainianTranslation: "око",
@@ -2824,14 +2824,14 @@ export const top1000 = [
     englishWord: "eyebrow",
     englishTranscription: "ˈaɪbraʊ",
     ukrainianTranslation: "брова",
-    englishSentence: "She raised her eyebrow in surprise.",
-    ukrainianTranslationOfSentence: "Вона підняла брову в захопленні.",
+    englishSentence: "She raised her eyebrow in surprise",
+    ukrainianTranslationOfSentence: "Вона підняла брову в захопленні",
     idTheme: 0,
     level: 1
   }, {
-    englishSentence: "She has a smile on her face.",
+    englishSentence: "She has a smile on her face",
     englishWord: "face",
-    ukrainianTranslationOfSentence: "У неї на обличчі посмішка.",
+    ukrainianTranslationOfSentence: "У неї на обличчі посмішка",
     idTheme: 0,
     ukrainianTranslation: "обличчя",
     synonyms: ["countenance", "visage", "features"],
@@ -2842,31 +2842,31 @@ export const top1000 = [
     idTheme: 0,
     ukrainianTranslation: "факт",
     id: 283,
-    englishSentence: "The fact is, I can't attend the meeting tomorrow.",
+    englishSentence: "The fact is, I can't attend the meeting tomorrow",
     englishWord: "fact",
     level: 1,
     synonyms: ["reality", "truth", "actuality"],
-    ukrainianTranslationOfSentence: "Справа в тому, що я не можу прийти на зустріч завтра.",
+    ukrainianTranslationOfSentence: "Справа в тому, що я не можу прийти на зустріч завтра",
     englishTranscription: "fækt"
   },
   {
     englishTranscription: "fɔːl",
     synonyms: ["drop", "descend", "topple"],
-    ukrainianTranslationOfSentence: "Листя падає з дерев восени.",
+    ukrainianTranslationOfSentence: "Листя падає з дерев восени",
     level: 1,
     id: 284,
     englishWord: "fall",
-    englishSentence: "The leaves fall from the trees in autumn.",
+    englishSentence: "The leaves fall from the trees in autumn",
     ukrainianTranslation: "падати",
     idTheme: 0
   }, {
     level: 1,
     synonyms: ["relatives", "kin", "household"],
-    ukrainianTranslationOfSentence: "Мені подобається проводити час зі своєю сім'єю.",
+    ukrainianTranslationOfSentence: "Мені подобається проводити час зі своєю сім'єю",
     ukrainianTranslation: "сім'я",
     englishWord: "family",
     id: 285,
-    englishSentence: "I love spending time with my family.",
+    englishSentence: "I love spending time with my family",
     englishTranscription: "ˈfæməli",
     idTheme: 0
   }, {
@@ -2884,17 +2884,17 @@ export const top1000 = [
     idTheme: 0,
     englishWord: "fast",
     id: 287,
-    englishSentence: "He drives a fast car.",
+    englishSentence: "He drives a fast car",
     englishTranscription: "fæst",
     level: 1,
-    ukrainianTranslationOfSentence: "Він їздить на швидкісному автомобілі.",
+    ukrainianTranslationOfSentence: "Він їздить на швидкісному автомобілі",
     synonyms: ["quick", "rapid", "speedy"]
   }, {
-    englishSentence: "My father is a doctor.",
+    englishSentence: "My father is a doctor",
     id: 288,
     level: 1,
     synonyms: ["dad", "papa", "sire"],
-    ukrainianTranslationOfSentence: "Мій батько - лікар.",
+    ukrainianTranslationOfSentence: "Мій батько - лікар",
     englishWord: "father",
     ukrainianTranslation: "батько",
     idTheme: 0,
@@ -2902,38 +2902,38 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "вина",
     englishWord: "fault",
-    englishSentence: "It's not your fault.",
+    englishSentence: "It's not your fault",
     id: 289,
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Це не твоя вина.",
+    ukrainianTranslationOfSentence: "Це не твоя вина",
     synonyms: ["mistake", "error", "flaw"],
     englishTranscription: "fɔːlt"
   }, {
-    ukrainianTranslationOfSentence: "Піца - моя улюблена їжа.",
+    ukrainianTranslationOfSentence: "Піца - моя улюблена їжа",
     level: 1,
     synonyms: ["preferred", "beloved", "cherished"],
     id: 290,
     englishWord: "favorite",
     englishTranscription: "ˈfeɪvərɪt",
     ukrainianTranslation: "улюблений",
-    englishSentence: "Pizza is my favorite food.",
+    englishSentence: "Pizza is my favorite food",
     idTheme: 0
   }, {
     synonyms: ["phobia", "dread", "apprehension"],
     id: 291,
     level: 1,
-    englishSentence: "He has a fear of spiders.",
-    ukrainianTranslationOfSentence: "У нього є страх павуків.",
+    englishSentence: "He has a fear of spiders",
+    ukrainianTranslationOfSentence: "У нього є страх павуків",
     englishWord: "fear",
     idTheme: 0,
     englishTranscription: "fɪr",
     ukrainianTranslation: "страх"
   }, {
-    ukrainianTranslationOfSentence: "Я відчуваю втому після довгого дня на роботі.",
+    ukrainianTranslationOfSentence: "Я відчуваю втому після довгого дня на роботі",
     englishTranscription: "fiːl",
     idTheme: 0,
-    englishSentence: "I feel tired after a long day at work.",
+    englishSentence: "I feel tired after a long day at work",
     synonyms: ["perceive", "sense", "experience"],
     id: 292,
     ukrainianTranslation: "відчувати",
@@ -2944,18 +2944,18 @@ export const top1000 = [
     englishWord: "feet",
     synonyms: ["lower limbs", "extremities", "trotters"],
     ukrainianTranslation: "ноги",
-    ukrainianTranslationOfSentence: "Вона пошкодила ноги під час походу.",
+    ukrainianTranslationOfSentence: "Вона пошкодила ноги під час походу",
     level: 1,
     id: 293,
     englishTranscription: "fiːt",
-    englishSentence: "She hurt her feet while hiking."
+    englishSentence: "She hurt her feet while hiking"
   }, {
-    englishSentence: "The tree fell during the storm.",
+    englishSentence: "The tree fell during the storm",
     englishTranscription: "fɛl",
     englishWord: "fell",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Дерево впало під час бурі.",
+    ukrainianTranslationOfSentence: "Дерево впало під час бурі",
     id: 294,
     synonyms: ["collapse", "tumble", "drop"],
     ukrainianTranslation: "впасти"
@@ -2966,24 +2966,24 @@ export const top1000 = [
     englishTranscription: "fɛlt",
     synonyms: ["sensed", "experienced", "perceived"],
     englishWord: "felt",
-    englishSentence: "I felt happy when I heard the good news.",
+    englishSentence: "I felt happy when I heard the good news",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я почувався щасливим, коли почув хорошу новину."
+    ukrainianTranslationOfSentence: "Я почувався щасливим, коли почув хорошу новину"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "У мене є кілька питань до вас.",
+    ukrainianTranslationOfSentence: "У мене є кілька питань до вас",
     id: 296,
     englishTranscription: "fjuː",
     idTheme: 0,
-    englishSentence: "I have a few questions for you.",
+    englishSentence: "I have a few questions for you",
     synonyms: ["some", "several", "a handful"],
     englishWord: "few",
     ukrainianTranslation: "кілька"
   }, {
-    ukrainianTranslationOfSentence: "Діти грали на полі.",
+    ukrainianTranslationOfSentence: "Діти грали на полі",
     id: 297,
     englishTranscription: "fiːld",
-    englishSentence: "The children played in the field.",
+    englishSentence: "The children played in the field",
     synonyms: ["meadow", "pasture", "grassland"],
     englishWord: "field",
     ukrainianTranslation: "поле",
@@ -2993,8 +2993,8 @@ export const top1000 = [
     synonyms: ["struggle", "conflict", "combat"],
     englishTranscription: "faɪt",
     englishWord: "fight",
-    ukrainianTranslationOfSentence: "Вони позмагалися через останню шматок торта.",
-    englishSentence: "They got into a fight over the last piece of cake.",
+    ukrainianTranslationOfSentence: "Вони позмагалися через останню шматок торта",
+    englishSentence: "They got into a fight over the last piece of cake",
     level: 1,
     idTheme: 0,
     id: 298,
@@ -3002,11 +3002,11 @@ export const top1000 = [
   },
   {
     id: 299,
-    englishSentence: "She has an hourglass figure.",
+    englishSentence: "She has an hourglass figure",
     synonyms: ["shape", "form", "physique"],
     englishTranscription: "ˈfɪɡər",
     ukrainianTranslation: "фігура",
-    ukrainianTranslationOfSentence: "У неї фігура пісочного годинника.",
+    ukrainianTranslationOfSentence: "У неї фігура пісочного годинника",
     idTheme: 0,
     englishWord: "figure",
     level: 1
@@ -3015,10 +3015,10 @@ export const top1000 = [
     ukrainianTranslation: "заповнити",
     id: 300,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Будь ласка, заповніть цю форму.",
+    ukrainianTranslationOfSentence: "Будь ласка, заповніть цю форму",
     englishWord: "fill",
     level: 1,
-    englishSentence: "Please fill out this form.",
+    englishSentence: "Please fill out this form",
     englishTranscription: "fɪl"
   }, {
     englishWord: "finally",
@@ -3027,8 +3027,8 @@ export const top1000 = [
     synonyms: ["at last", "ultimately", "in the end"],
     englishTranscription: "ˈfaɪnəli",
     ukrainianTranslation: "нарешті",
-    englishSentence: "I finally finished reading that book.",
-    ukrainianTranslationOfSentence: "Нарешті я закінчив читати ту книгу.",
+    englishSentence: "I finally finished reading that book",
+    ukrainianTranslationOfSentence: "Нарешті я закінчив читати ту книгу",
     level: 1
   }, {
     englishTranscription: "faɪnd",
@@ -3044,28 +3044,28 @@ export const top1000 = [
     englishTranscription: "faɪn",
     ukrainianTranslation: "гарний",
     level: 1,
-    englishSentence: "The weather is fine today.",
+    englishSentence: "The weather is fine today",
     id: 303,
     idTheme: 0,
     synonyms: ["good", "excellent", "beautiful"],
-    ukrainianTranslationOfSentence: "Сьогодні погода гарна.",
+    ukrainianTranslationOfSentence: "Сьогодні погода гарна",
     englishWord: "fine"
   }, {
     idTheme: 0,
-    englishSentence: "She pricked her finger with a needle.",
+    englishSentence: "She pricked her finger with a needle",
     level: 1,
     ukrainianTranslation: "палець",
     id: 304,
-    ukrainianTranslationOfSentence: "Вона укололася пальцем голкою.",
+    ukrainianTranslationOfSentence: "Вона укололася пальцем голкою",
     englishTranscription: "ˈfɪŋɡər",
     englishWord: "finger",
     synonyms: ["digit", "thumb", "phalanx"]
   }, {
     synonyms: ["complete", "conclude", "end"],
     englishTranscription: "ˈfɪnɪʃ",
-    englishSentence: "I need to finish this report before the deadline.",
+    englishSentence: "I need to finish this report before the deadline",
     englishWord: "finish",
-    ukrainianTranslationOfSentence: "Мені потрібно закінчити цей звіт до кінцевого терміну.",
+    ukrainianTranslationOfSentence: "Мені потрібно закінчити цей звіт до кінцевого терміну",
     level: 1,
     id: 305,
     ukrainianTranslation: "завершити",
@@ -3073,30 +3073,30 @@ export const top1000 = [
   }, {
     englishWord: "fire",
     level: 1,
-    ukrainianTranslationOfSentence: "Не грайся з вогнем.",
+    ukrainianTranslationOfSentence: "Не грайся з вогнем",
     englishTranscription: "faɪər",
     ukrainianTranslation: "вогонь",
     idTheme: 0,
     synonyms: ["flames", "blaze", "inferno"],
-    englishSentence: "Don't play with fire.",
+    englishSentence: "Don't play with fire",
     id: 306
   }, {
     idTheme: 0,
     synonyms: ["initial", "earliest", "primary"],
-    englishSentence: "This is the first time I've been to this restaurant.",
+    englishSentence: "This is the first time I've been to this restaurant",
     level: 1,
     englishTranscription: "fɜːrst",
     englishWord: "first",
     ukrainianTranslation: "перший",
     id: 307,
-    ukrainianTranslationOfSentence: "Це перший раз, коли я був в цьому ресторані."
+    ukrainianTranslationOfSentence: "Це перший раз, коли я був в цьому ресторані"
   }, {
     englishWord: "fit",
     idTheme: 0,
     id: 308,
     ukrainianTranslation: "підходити",
-    ukrainianTranslationOfSentence: "Ця сукня мені вже не підходить.",
-    englishSentence: "This dress doesn't fit me anymore.",
+    ukrainianTranslationOfSentence: "Ця сукня мені вже не підходить",
+    englishSentence: "This dress doesn't fit me anymore",
     synonyms: ["suit", "match", "be the right size"],
     level: 1,
     englishTranscription: "fɪt"
@@ -3104,56 +3104,56 @@ export const top1000 = [
     synonyms: ["5", "V", "quintet"],
     englishTranscription: "faɪv",
     englishWord: "five",
-    ukrainianTranslationOfSentence: "У неї п'ятеро братів і сестер.",
+    ukrainianTranslationOfSentence: "У неї п'ятеро братів і сестер",
     idTheme: 0,
-    englishSentence: "She has five siblings.",
+    englishSentence: "She has five siblings",
     ukrainianTranslation: "п'ять",
     id: 309,
     level: 1
   }, {
     englishWord: "fix",
-    ukrainianTranslationOfSentence: "Я виправлю сломаний стілець.",
+    ukrainianTranslationOfSentence: "Я виправлю сломаний стілець",
     id: 310,
     ukrainianTranslation: "виправити",
     idTheme: 0,
-    englishSentence: "I'll fix the broken chair.",
+    englishSentence: "I'll fix the broken chair",
     level: 1,
     englishTranscription: "fɪks",
     synonyms: ["repair", "mend", "resolve"]
   }, {
     synonyms: ["burst", "glare", "flicker"],
-    ukrainianTranslationOfSentence: "Я побачив спалах блискавки удалечині.",
+    ukrainianTranslationOfSentence: "Я побачив спалах блискавки удалечині",
     englishWord: "flash",
     ukrainianTranslation: "спалах",
     level: 1,
-    englishSentence: "I saw a flash of lightning in the distance.",
+    englishSentence: "I saw a flash of lightning in the distance",
     idTheme: 0,
     englishTranscription: "flæʃ",
     id: 311
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона перекинула пляцок у повітрі.",
+    ukrainianTranslationOfSentence: "Вона перекинула пляцок у повітрі",
     id: 312,
-    englishSentence: "She flipped the pancake in the air.",
+    englishSentence: "She flipped the pancake in the air",
     level: 1,
     englishTranscription: "flɪp",
     ukrainianTranslation: "перевернути",
     synonyms: ["toss", "turn over", "invert"],
     englishWord: "flip"
   }, {
-    ukrainianTranslationOfSentence: "Кіт лежить на підлозі.",
+    ukrainianTranslationOfSentence: "Кіт лежить на підлозі",
     level: 1,
     idTheme: 0,
     synonyms: ["ground", "level", "surface"],
-    englishSentence: "The cat is lying on the floor.",
+    englishSentence: "The cat is lying on the floor",
     ukrainianTranslation: "підлога",
     englishWord: "floor",
     id: 313,
     englishTranscription: "flɔːr"
   }, {
     synonyms: ["soar", "glide", "wing"],
-    englishSentence: "Birds can fly in the sky.",
-    ukrainianTranslationOfSentence: "Птахи можуть літати у небі.",
+    englishSentence: "Birds can fly in the sky",
+    ukrainianTranslationOfSentence: "Птахи можуть літати у небі",
     englishTranscription: "flaɪ",
     level: 1,
     englishWord: "fly",
@@ -3165,10 +3165,10 @@ export const top1000 = [
     synonyms: ["concentrate", "center", "direct"],
     englishTranscription: "ˈfoʊkəs",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Давайте сконцентруємося на завданні перед нами.",
+    ukrainianTranslationOfSentence: "Давайте сконцентруємося на завданні перед нами",
     id: 315,
     level: 1,
-    englishSentence: "Let's focus on the task at hand.",
+    englishSentence: "Let's focus on the task at hand",
     englishWord: "focus"
   }, {
     level: 1,
@@ -3176,13 +3176,13 @@ export const top1000 = [
     ukrainianTranslation: "слідувати",
     synonyms: ["pursue", "go after", "trail"],
     idTheme: 0,
-    englishSentence: "Please follow me to the conference room.",
-    ukrainianTranslationOfSentence: "Будь ласка, слідуйте за мною до конференц-залу.",
+    englishSentence: "Please follow me to the conference room",
+    ukrainianTranslationOfSentence: "Будь ласка, слідуйте за мною до конференц-залу",
     englishWord: "follow",
     id: 316
   }, {
-    englishSentence: "I'm hungry. Let's get some food.",
-    ukrainianTranslationOfSentence: "Я голодний. Давайте щось з'їмо.",
+    englishSentence: "I'm hungry Let's get some food",
+    ukrainianTranslationOfSentence: "Я голодний Давайте щось з'їмо",
     id: 317,
     englishWord: "food",
     englishTranscription: "fuːd",
@@ -3193,8 +3193,8 @@ export const top1000 = [
   }, {
     synonyms: ["lower extremity", "tootsie", "paw"],
     id: 318,
-    ukrainianTranslationOfSentence: "Він травмував стопу, граючи в футбол.",
-    englishSentence: "He hurt his foot while playing soccer.",
+    ukrainianTranslationOfSentence: "Він травмував стопу, граючи в футбол",
+    englishSentence: "He hurt his foot while playing soccer",
     level: 1,
     ukrainianTranslation: "ступня",
     idTheme: 0,
@@ -3204,85 +3204,85 @@ export const top1000 = [
     englishWord: "for",
     ukrainianTranslation: "для",
     id: 319,
-    ukrainianTranslationOfSentence: "Цей подарунок для тебе.",
+    ukrainianTranslationOfSentence: "Цей подарунок для тебе",
     level: 1,
     synonyms: ["intended", "destined", "targeted"],
     idTheme: 0,
-    englishSentence: "This gift is for you.",
+    englishSentence: "This gift is for you",
     englishTranscription: "fɔːr"
   }, {
     englishWord: "force",
     synonyms: ["strength", "power", "coercion"],
-    ukrainianTranslationOfSentence: "Вони використали силу, щоб відчинити двері.",
+    ukrainianTranslationOfSentence: "Вони використали силу, щоб відчинити двері",
     id: 320,
     level: 1,
     ukrainianTranslation: "сила",
-    englishSentence: "They used force to open the door.",
+    englishSentence: "They used force to open the door",
     englishTranscription: "fɔːrs",
     idTheme: 0
   }, {
-    englishSentence: "I always forget where I put my keys.",
+    englishSentence: "I always forget where I put my keys",
     id: 321,
     englishTranscription: "fərˈɡɛt",
     ukrainianTranslation: "забути",
     level: 1,
-    ukrainianTranslationOfSentence: "Я завжди забуваю, де поклав ключі.",
+    ukrainianTranslationOfSentence: "Я завжди забуваю, де поклав ключі",
     idTheme: 0,
     synonyms: ["neglect", "overlook", "leave behind"],
     englishWord: "forget"
   }, {
     idTheme: 0,
     level: 1,
-    englishSentence: "Please fill out this form.",
+    englishSentence: "Please fill out this form",
     englishTranscription: "fɔːrm",
     id: 322,
-    ukrainianTranslationOfSentence: "Будь ласка, заповніть цю форму.",
+    ukrainianTranslationOfSentence: "Будь ласка, заповніть цю форму",
     synonyms: ["shape", "structure", "format"],
     englishWord: "form",
     ukrainianTranslation: "форма"
   }, {
     idTheme: 0,
     englishWord: "forward",
-    ukrainianTranslationOfSentence: "Рухаймося вперед і знаходьмо рішення.",
+    ukrainianTranslationOfSentence: "Рухаймося вперед і знаходьмо рішення",
     synonyms: ["ahead", "onward", "progressive"],
     englishTranscription: "ˈfɔːrwərd",
     ukrainianTranslation: "вперед",
     id: 323,
-    englishSentence: "Let's move forward and find a solution.",
+    englishSentence: "Let's move forward and find a solution",
     level: 1
   },
   {
     idTheme: 0,
     englishWord: "found",
     englishTranscription: "faʊnd",
-    englishSentence: "They found a lost dog in the park.",
-    ukrainianTranslationOfSentence: "Вони знайшли загубленого собаку в парку.",
+    englishSentence: "They found a lost dog in the park",
+    ukrainianTranslationOfSentence: "Вони знайшли загубленого собаку в парку",
     level: 1,
     ukrainianTranslation: "знайти",
     synonyms: ["discover", "locate", "come across"],
     id: 324
   }, {
     englishWord: "four",
-    englishSentence: "There are four seasons in a year.",
+    englishSentence: "There are four seasons in a year",
     englishTranscription: "fɔːr",
     id: 325,
     ukrainianTranslation: "чотири",
     synonyms: ["4", "IV", "quartet"],
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "У році чотири сезони."
+    ukrainianTranslationOfSentence: "У році чотири сезони"
   }, {
     englishWord: "free",
     synonyms: ["liberated", "unrestricted", "at liberty"],
     ukrainianTranslation: "вільний",
     id: 326,
     englishTranscription: "friː",
-    englishSentence: "I have a free afternoon.",
-    ukrainianTranslationOfSentence: "У мене вільний вечір.",
+    englishSentence: "I have a free afternoon",
+    ukrainianTranslationOfSentence: "У мене вільний вечір",
     level: 1,
     idTheme: 0
   }, {
-    englishSentence: "She's my best friend.",
+    englishSentence: "She's my best friend",
     id: 327,
     synonyms: ["companion", "pal", "buddy"],
     idTheme: 0,
@@ -3290,23 +3290,23 @@ export const top1000 = [
     level: 1,
     englishWord: "friend",
     ukrainianTranslation: "друг",
-    ukrainianTranslationOfSentence: "Вона моя найкраща подруга."
+    ukrainianTranslationOfSentence: "Вона моя найкраща подруга"
   }, {
     ukrainianTranslation: "з",
     englishTranscription: "frʌm",
-    englishSentence: "I'm from Canada.",
+    englishSentence: "I'm from Canada",
     level: 1,
     englishWord: "from",
     id: 328,
     synonyms: ["originating", "hailing from", "coming from"],
-    ukrainianTranslationOfSentence: "Я з Канади.",
+    ukrainianTranslationOfSentence: "Я з Канади",
     idTheme: 0
   }, {
     synonyms: ["ahead", "in the presence of", "facing"],
     englishTranscription: "frʌnt",
-    englishSentence: "The car is parked in front of the building.",
+    englishSentence: "The car is parked in front of the building",
     ukrainianTranslation: "перед",
-    ukrainianTranslationOfSentence: "Автомобіль припарковано перед будівлею.",
+    ukrainianTranslationOfSentence: "Автомобіль припарковано перед будівлею",
     englishWord: "front",
     level: 1,
     idTheme: 0,
@@ -3314,8 +3314,8 @@ export const top1000 = [
   }, {
     level: 1,
     ukrainianTranslation: "нахмуритися",
-    englishSentence: "He frowned when he heard the news.",
-    ukrainianTranslationOfSentence: "Він нахмурився, коли почув новину.",
+    englishSentence: "He frowned when he heard the news",
+    ukrainianTranslationOfSentence: "Він нахмурився, коли почув новину",
     idTheme: 0,
     id: 330,
     synonyms: ["scowl", "grimace", "glare"],
@@ -3324,8 +3324,8 @@ export const top1000 = [
   }, {
     id: 331,
     englishWord: "fuck",
-    englishSentence: "I'm sorry, but I can't assist with that request.",
-    ukrainianTranslationOfSentence: "Вибачте, але я не можу допомогти з цим запитом.",
+    englishSentence: "I'm sorry, but I can't assist with that request",
+    ukrainianTranslationOfSentence: "Вибачте, але я не можу допомогти з цим запитом",
     idTheme: 0,
     level: 1,
     ukrainianTranslation: "матюкатися",
@@ -3334,10 +3334,10 @@ export const top1000 = [
   }, {
     idTheme: 0,
     level: 1,
-    englishSentence: "The glass is full of water.",
+    englishSentence: "The glass is full of water",
     englishWord: "full",
     synonyms: ["complete", "filled", "brimming"],
-    ukrainianTranslationOfSentence: "Склянка повна води.",
+    ukrainianTranslationOfSentence: "Склянка повна води",
     englishTranscription: "fʊl",
     ukrainianTranslation: "повний",
     id: 332
@@ -3349,26 +3349,26 @@ export const top1000 = [
     englishWord: "fun",
     englishTranscription: "fʌn",
     ukrainianTranslation: "веселощі",
-    englishSentence: "We had a lot of fun at the party.",
-    ukrainianTranslationOfSentence: "Ми добре погуляли на вечірці."
+    englishSentence: "We had a lot of fun at the party",
+    ukrainianTranslationOfSentence: "Ми добре погуляли на вечірці"
   }, {
     ukrainianTranslation: "смішний",
     synonyms: ["humorous", "comical", "amusing"],
     englishWord: "funny",
-    englishSentence: "That joke was really funny.",
+    englishSentence: "That joke was really funny",
     level: 1,
     id: 334,
     idTheme: 0,
     englishTranscription: "ˈfʌni",
-    ukrainianTranslationOfSentence: "Той жарт був дуже смішним."
+    ukrainianTranslationOfSentence: "Той жарт був дуже смішним"
   }, {
     idTheme: 0,
     ukrainianTranslation: "далі",
-    englishSentence: "We need to investigate further to find the answer.",
+    englishSentence: "We need to investigate further to find the answer",
     englishTranscription: "ˈfɜːrðər",
     synonyms: ["additional", "more distant", "extended"],
     englishWord: "further",
-    ukrainianTranslationOfSentence: "Нам потрібно досліджувати далі, щоб знайти відповідь.",
+    ukrainianTranslationOfSentence: "Нам потрібно досліджувати далі, щоб знайти відповідь",
     level: 1,
     id: 335
   }, {
@@ -3385,20 +3385,20 @@ export const top1000 = [
     id: 337,
     englishWord: "gasp",
     level: 1,
-    englishSentence: "She gasped in surprise when she saw the gift.",
+    englishSentence: "She gasped in surprise when she saw the gift",
     synonyms: ["pant", "breathe sharply", "inhale sharply"],
     idTheme: 0,
     englishTranscription: "ɡæsp",
-    ukrainianTranslationOfSentence: "Вона задихнулася від здивування, коли побачила подарунок.",
+    ukrainianTranslationOfSentence: "Вона задихнулася від здивування, коли побачила подарунок",
     ukrainianTranslation: "задихатися"
   }, {
     id: 338,
-    ukrainianTranslationOfSentence: "Вона дала мені книгу на мій день народження.",
+    ukrainianTranslationOfSentence: "Вона дала мені книгу на мій день народження",
     ukrainianTranslation: "давати",
     englishTranscription: "ɡeɪv",
     level: 1,
     englishWord: "gave",
-    englishSentence: "She gave me a book for my birthday.",
+    englishSentence: "She gave me a book for my birthday",
     synonyms: ["presented", "bestowed", "handed over"],
     idTheme: 0
   }, {
@@ -3408,16 +3408,16 @@ export const top1000 = [
     englishTranscription: "ɡeɪz",
     ukrainianTranslation: "дивитися",
     id: 339,
-    ukrainianTranslationOfSentence: "Він дивився у вікно, заглиблений у думки.",
-    englishSentence: "He gazed out the window, lost in thought.",
+    ukrainianTranslationOfSentence: "Він дивився у вікно, заглиблений у думки",
+    englishSentence: "He gazed out the window, lost in thought",
     level: 1
   }, {
     englishTranscription: "ˈdʒɛntli",
-    ukrainianTranslationOfSentence: "Вона ніжно доторкнулася його руки.",
+    ukrainianTranslationOfSentence: "Вона ніжно доторкнулася його руки",
     englishWord: "gently",
     synonyms: ["softly", "delicately", "tenderly"],
     level: 1,
-    englishSentence: "She touched his hand gently.",
+    englishSentence: "She touched his hand gently",
     ukrainianTranslation: "ніжно",
     idTheme: 0,
     id: 340
@@ -3434,15 +3434,15 @@ export const top1000 = [
   }, {
     level: 1,
     id: 342,
-    ukrainianTranslationOfSentence: "Діти хихотіли над смішним клоуном.",
-    englishSentence: "The children giggled at the funny clown.",
+    ukrainianTranslationOfSentence: "Діти хихотіли над смішним клоуном",
+    englishSentence: "The children giggled at the funny clown",
     englishWord: "giggle",
     idTheme: 0,
     englishTranscription: "ˈɡɪɡəl",
     ukrainianTranslation: "хихотіти",
     synonyms: ["chuckle", "laugh", "titter"]
   }, {
-    ukrainianTranslationOfSentence: "Вона талановита дівчина з яскравим майбутнім.",
+    ukrainianTranslationOfSentence: "Вона талановита дівчина з яскравим майбутнім",
     idTheme: 0,
     level: 1,
     synonyms: ["young woman", "female", "maiden"],
@@ -3450,12 +3450,12 @@ export const top1000 = [
     id: 343,
     englishTranscription: "ɡɜrl",
     englishWord: "girl",
-    englishSentence: "She's a talented girl with a bright future."
+    englishSentence: "She's a talented girl with a bright future"
   }, {
     englishWord: "girlfriend",
-    ukrainianTranslationOfSentence: "Він представив мене своїй дівчині.",
+    ukrainianTranslationOfSentence: "Він представив мене своїй дівчині",
     id: 344,
-    englishSentence: "He introduced me to his girlfriend.",
+    englishSentence: "He introduced me to his girlfriend",
     englishTranscription: "ˈɡɜrlfrɛnd",
     level: 1,
     synonyms: ["partner", "significant other", "romantic partner"],
@@ -3477,58 +3477,58 @@ export const top1000 = [
     ukrainianTranslation: "даний",
     idTheme: 0,
     level: 1,
-    englishSentence: "Given the circumstances, I think we should postpone.",
+    englishSentence: "Given the circumstances, I think we should postpone",
     id: 346,
     englishTranscription: "ˈɡɪvən",
-    ukrainianTranslationOfSentence: "З урахуванням обставин, я думаю, що ми повинні відкласти."
+    ukrainianTranslationOfSentence: "З урахуванням обставин, я думаю, що ми повинні відкласти"
   }, {
     ukrainianTranslation: "радий",
     englishWord: "glad",
     englishTranscription: "ɡlæd",
     id: 347,
     synonyms: ["happy", "pleased", "delighted"],
-    englishSentence: "I'm glad to see you.",
+    englishSentence: "I'm glad to see you",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я радий тебе бачити.",
+    ukrainianTranslationOfSentence: "Я радий тебе бачити",
     level: 1
   }, {
     englishWord: "glance",
     idTheme: 0,
     id: 348,
-    englishSentence: "He stole a quick glance at her from across the room.",
+    englishSentence: "He stole a quick glance at her from across the room",
     synonyms: ["look", "peek", "glimpse"],
     englishTranscription: "ɡlæns",
-    ukrainianTranslationOfSentence: "Він швидко поглянув на неї з-за кімнати.",
+    ukrainianTranslationOfSentence: "Він швидко поглянув на неї з-за кімнати",
     level: 1,
     ukrainianTranslation: "погляд"
   },
   {
     synonyms: ["shine", "beam", "dazzle"],
     ukrainianTranslation: "світити",
-    ukrainianTranslationOfSentence: "Сонце світило крізь вікно.",
+    ukrainianTranslationOfSentence: "Сонце світило крізь вікно",
     id: 349,
-    englishSentence: "The sun was glaring through the window.",
+    englishSentence: "The sun was glaring through the window",
     englishTranscription: "ɡlɛr",
     level: 1,
     idTheme: 0,
     englishWord: "glare"
   }, {
-    englishSentence: "She poured water into the glass.",
+    englishSentence: "She poured water into the glass",
     englishTranscription: "ɡlæs",
     level: 1,
     id: 350,
     synonyms: ["tumbler", "cup", "goblet"],
     englishWord: "glass",
-    ukrainianTranslationOfSentence: "Вона налила воду у склянку.",
+    ukrainianTranslationOfSentence: "Вона налила воду у склянку",
     ukrainianTranslation: "скло",
     idTheme: 0
   }, {
     englishTranscription: "ɡoʊ",
-    englishSentence: "I need to go to the store.",
+    englishSentence: "I need to go to the store",
     englishWord: "go",
     id: 351,
     synonyms: ["walk", "travel", "move"],
-    ukrainianTranslationOfSentence: "Мені потрібно піти в магазин.",
+    ukrainianTranslationOfSentence: "Мені потрібно піти в магазин",
     idTheme: 0,
     level: 1,
     ukrainianTranslation: "йти"
@@ -3537,23 +3537,23 @@ export const top1000 = [
     ukrainianTranslation: "Бог",
     id: 352,
     englishTranscription: "ɡɑːd",
-    ukrainianTranslationOfSentence: "Слава Богу, все виявилося добре.",
+    ukrainianTranslationOfSentence: "Слава Богу, все виявилося добре",
     englishWord: "god",
     synonyms: ["deity", "divine being", "higher power"],
     level: 1,
-    englishSentence: "Thank God everything turned out okay."
+    englishSentence: "Thank God everything turned out okay"
   }, {
     englishWord: "gone",
-    ukrainianTranslationOfSentence: "Він пішов до магазину.",
+    ukrainianTranslationOfSentence: "Він пішов до магазину",
     idTheme: 0,
     ukrainianTranslation: "пішов",
     level: 1,
     englishTranscription: "ɡɔn",
     synonyms: ["left", "departed", "absent"],
     id: 353,
-    englishSentence: "He's gone to the store."
+    englishSentence: "He's gone to the store"
   }, {
-    ukrainianTranslationOfSentence: "Я збираюся піти на пробіжку пізніше.",
+    ukrainianTranslationOfSentence: "Я збираюся піти на пробіжку пізніше",
     synonyms: ["going to", "intending to", "planning to"],
     idTheme: 0,
     ukrainianTranslation: "збираюсь",
@@ -3561,33 +3561,33 @@ export const top1000 = [
     id: 354,
     englishWord: "gonna",
     level: 1,
-    englishSentence: "I'm gonna go for a run later."
+    englishSentence: "I'm gonna go for a run later"
   }, {
     synonyms: ["excellent", "tasty", "fine"],
     level: 1,
     englishWord: "good",
-    englishSentence: "The food at this restaurant is really good.",
-    ukrainianTranslationOfSentence: "Їжа в цьому ресторані дуже смачна.",
+    englishSentence: "The food at this restaurant is really good",
+    ukrainianTranslationOfSentence: "Їжа в цьому ресторані дуже смачна",
     ukrainianTranslation: "добре",
     englishTranscription: "ɡʊd",
     idTheme: 0,
     id: 355
   }, {
     id: 356,
-    englishSentence: "I got a new job.",
+    englishSentence: "I got a new job",
     ukrainianTranslation: "отримав",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я отримав нову роботу.",
+    ukrainianTranslationOfSentence: "Я отримав нову роботу",
     englishTranscription: "ɡɑːt",
     englishWord: "got",
     level: 1,
     synonyms: ["obtained", "received", "acquired"]
   }, {
     englishTranscription: "ˈɡɑːtn",
-    ukrainianTranslationOfSentence: "Вона отримала багато визнання за свою роботу.",
+    ukrainianTranslationOfSentence: "Вона отримала багато визнання за свою роботу",
     englishWord: "gotten",
     idTheme: 0,
-    englishSentence: "She has gotten a lot of recognition for her work.",
+    englishSentence: "She has gotten a lot of recognition for her work",
     ukrainianTranslation: "отриманий",
     synonyms: ["received", "acquired", "obtained"],
     id: 357,
@@ -3598,16 +3598,16 @@ export const top1000 = [
     id: 358,
     idTheme: 0,
     englishTranscription: "ɡræb",
-    ukrainianTranslationOfSentence: "Він швидко схопив своє пальто і вибіг за двері.",
+    ukrainianTranslationOfSentence: "Він швидко схопив своє пальто і вибіг за двері",
     englishWord: "grab",
-    englishSentence: "He quickly grabbed his coat and ran out the door.",
+    englishSentence: "He quickly grabbed his coat and ran out the door",
     synonyms: ["seize", "snatch", "take hold of"]
   }, {
-    ukrainianTranslationOfSentence: "Ми чудово провели час під час нашої відпустки.",
+    ukrainianTranslationOfSentence: "Ми чудово провели час під час нашої відпустки",
     level: 1,
     ukrainianTranslation: "великий",
     idTheme: 0,
-    englishSentence: "We had a great time on our vacation.",
+    englishSentence: "We had a great time on our vacation",
     englishWord: "great",
     synonyms: ["excellent", "fantastic", "wonderful"],
     id: 359,
@@ -3617,37 +3617,37 @@ export const top1000 = [
     englishTranscription: "ɡriːn",
     level: 1,
     synonyms: ["emerald", "verdant", "leafy"],
-    englishSentence: "The leaves on the trees turn green in the spring.",
-    ukrainianTranslationOfSentence: "Листя на деревах стає зеленим весною.",
+    englishSentence: "The leaves on the trees turn green in the spring",
+    ukrainianTranslationOfSentence: "Листя на деревах стає зеленим весною",
     ukrainianTranslation: "зелений",
     englishWord: "green",
     id: 360
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він зустрів мене з теплим посмішкою.",
+    ukrainianTranslationOfSentence: "Він зустрів мене з теплим посмішкою",
     id: 361,
     synonyms: ["welcome", "salute", "hail"],
     englishTranscription: "ɡriːt",
     level: 1,
     ukrainianTranslation: "вітати",
-    englishSentence: "He greeted me with a warm smile.",
+    englishSentence: "He greeted me with a warm smile",
     englishWord: "greet"
   }, {
     ukrainianTranslation: "сірий",
     id: 362,
     idTheme: 0,
     synonyms: ["gray", "silver", "ash"],
-    englishSentence: "Her hair is starting to turn grey.",
+    englishSentence: "Her hair is starting to turn grey",
     englishWord: "grey",
-    ukrainianTranslationOfSentence: "Її волосся починає сивіти.",
+    ukrainianTranslationOfSentence: "Її волосся починає сивіти",
     englishTranscription: "ɡreɪ",
     level: 1
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він не міг не посміхатися з її жарту.",
+    ukrainianTranslationOfSentence: "Він не міг не посміхатися з її жарту",
     synonyms: ["smile", "smirk", "beam"],
     ukrainianTranslation: "посмішка",
-    englishSentence: "He couldn't help but grin at her joke.",
+    englishSentence: "He couldn't help but grin at her joke",
     level: 1,
     id: 363,
     englishWord: "grin",
@@ -3657,14 +3657,14 @@ export const top1000 = [
     idTheme: 0,
     ukrainianTranslation: "хапати",
     level: 1,
-    ukrainianTranslationOfSentence: "Він стиснув кермо у своїх руках.",
+    ukrainianTranslationOfSentence: "Він стиснув кермо у своїх руках",
     englishTranscription: "ɡrɪp",
-    englishSentence: "He tightened his grip on the steering wheel.",
+    englishSentence: "He tightened his grip on the steering wheel",
     synonyms: ["grasp", "clutch", "hold"],
     englishWord: "grip"
   }, {
-    englishSentence: "She groaned in pain as she stood up.",
-    ukrainianTranslationOfSentence: "Вона стогнала від болю, коли підвелася.",
+    englishSentence: "She groaned in pain as she stood up",
+    ukrainianTranslationOfSentence: "Вона стогнала від болю, коли підвелася",
     englishWord: "groan",
     level: 1,
     id: 365,
@@ -3676,16 +3676,16 @@ export const top1000 = [
     ukrainianTranslation: "земля",
     englishTranscription: "ɡraʊnd",
     englishWord: "ground",
-    englishSentence: "The kids played on the ground in the park.",
+    englishSentence: "The kids played on the ground in the park",
     level: 1,
-    ukrainianTranslationOfSentence: "Діти гралися на землі в парку.",
+    ukrainianTranslationOfSentence: "Діти гралися на землі в парку",
     idTheme: 0,
     synonyms: ["earth", "soil", "terrain"],
     id: 366
   }, {
-    englishSentence: "They formed a study group to prepare for the exam.",
+    englishSentence: "They formed a study group to prepare for the exam",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вони створили групу для підготовки до іспиту.",
+    ukrainianTranslationOfSentence: "Вони створили групу для підготовки до іспиту",
     englishTranscription: "ɡruːp",
     id: 367,
     englishWord: "group",
@@ -3696,22 +3696,22 @@ export const top1000 = [
     synonyms: ["develop", "flourish", "thrive"],
     idTheme: 0,
     ukrainianTranslation: "рости",
-    englishSentence: "Plants need sunlight and water to grow.",
+    englishSentence: "Plants need sunlight and water to grow",
     englishTranscription: "ɡroʊ",
     level: 1,
     englishWord: "grow",
     id: 368,
-    ukrainianTranslationOfSentence: "Рослини потребують сонячного світла й води, щоб рости."
+    ukrainianTranslationOfSentence: "Рослини потребують сонячного світла й води, щоб рости"
   }, {
     englishWord: "guard",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Охоронець перевірив наші документи.",
+    ukrainianTranslationOfSentence: "Охоронець перевірив наші документи",
     synonyms: ["protector", "sentinel", "defender"],
     englishTranscription: "ɡɑːrd",
     level: 1,
     ukrainianTranslation: "охорона",
     id: 369,
-    englishSentence: "The security guard checked our identification."
+    englishSentence: "The security guard checked our identification"
   }, {
     idTheme: 0,
     englishWord: "guess",
@@ -3726,26 +3726,26 @@ export const top1000 = [
     englishTranscription: "ɡʌn",
     ukrainianTranslation: "пістолет",
     idTheme: 0,
-    englishSentence: "He aimed the gun at the target and fired.",
+    englishSentence: "He aimed the gun at the target and fired",
     synonyms: ["firearm", "weapon", "pistol"],
     id: 371,
     englishWord: "gun",
-    ukrainianTranslationOfSentence: "Він навів пістолет на мішень і вистрілив.",
+    ukrainianTranslationOfSentence: "Він навів пістолет на мішень і вистрілив",
     level: 1
   }, {
-    englishSentence: "That guy over there is my brother.",
+    englishSentence: "That guy over there is my brother",
     ukrainianTranslation: "хлопець",
     idTheme: 0,
     synonyms: ["man", "fellow", "dude"],
     level: 1,
-    ukrainianTranslationOfSentence: "Той хлопець там - мій брат.",
+    ukrainianTranslationOfSentence: "Той хлопець там - мій брат",
     englishWord: "guy",
     id: 372,
     englishTranscription: "ɡaɪ"
   }, {
     level: 1,
-    englishSentence: "She had a pet dog when she was younger.",
-    ukrainianTranslationOfSentence: "У неї був домашній пес, коли вона була молодшою.",
+    englishSentence: "She had a pet dog when she was younger",
+    ukrainianTranslationOfSentence: "У неї був домашній пес, коли вона була молодшою",
     englishWord: "had",
     synonyms: ["possessed", "owned", "experienced"],
     idTheme: 0,
@@ -3757,21 +3757,21 @@ export const top1000 = [
     level: 1,
     englishWord: "hadn't",
     englishTranscription: "ˈhædnt",
-    englishSentence: "I hadn't seen her in years.",
+    englishSentence: "I hadn't seen her in years",
     ukrainianTranslation: "не мав",
     synonyms: ["did not possess", "did not have", "was not familiar with"],
     idTheme: 0,
     id: 374,
-    ukrainianTranslationOfSentence: "Я не бачив її упродовж років."
+    ukrainianTranslationOfSentence: "Я не бачив її упродовж років"
   }, {
     englishWord: "hair",
     synonyms: ["tresses", "mane", "locks"],
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "волосся",
-    englishSentence: "She has long, curly hair.",
+    englishSentence: "She has long, curly hair",
     englishTranscription: "hɛr",
-    ukrainianTranslationOfSentence: "У неї довге кучеряве волосся.",
+    ukrainianTranslationOfSentence: "У неї довге кучеряве волосся",
     id: 375
   }, {
     englishWord: "half",
@@ -3779,38 +3779,38 @@ export const top1000 = [
     id: 376,
     level: 1,
     englishTranscription: "hæf",
-    ukrainianTranslationOfSentence: "Я з'їв пів піци.",
+    ukrainianTranslationOfSentence: "Я з'їв пів піци",
     synonyms: ["part", "portion", "fragment"],
-    englishSentence: "I ate half of the pizza.",
+    englishSentence: "I ate half of the pizza",
     idTheme: 0
   }, {
     level: 1,
     idTheme: 0,
     synonyms: ["corridor", "passage", "gallery"],
-    englishSentence: "The students gathered in the school hall.",
+    englishSentence: "The students gathered in the school hall",
     ukrainianTranslation: "коридор",
     englishWord: "hall",
     englishTranscription: "hɔːl",
-    ukrainianTranslationOfSentence: "Учні зібралися у коридорі школи.",
+    ukrainianTranslationOfSentence: "Учні зібралися у коридорі школи",
     id: 377
   }, {
     level: 1,
     ukrainianTranslation: "коридор",
     synonyms: ["passage", "corridor", "entrance"],
-    ukrainianTranslationOfSentence: "Вона пройшла по коридору до своєї спальні.",
+    ukrainianTranslationOfSentence: "Вона пройшла по коридору до своєї спальні",
     idTheme: 0,
     englishWord: "hallway",
     id: 378,
-    englishSentence: "She walked down the hallway to her bedroom.",
+    englishSentence: "She walked down the hallway to her bedroom",
     englishTranscription: "ˈhɔːlweɪ"
   }, {
     ukrainianTranslation: "рука",
     level: 1,
     englishWord: "hand",
-    ukrainianTranslationOfSentence: "Він тримав її за руку, коли вони йшли по пляжу.",
+    ukrainianTranslationOfSentence: "Він тримав її за руку, коли вони йшли по пляжу",
     synonyms: ["palm", "grasp", "fist"],
     id: 379,
-    englishSentence: "He held her hand as they walked along the beach.",
+    englishSentence: "He held her hand as they walked along the beach",
     idTheme: 0,
     englishTranscription: "hænd"
   }, {
@@ -3826,12 +3826,12 @@ export const top1000 = [
   }, {
     level: 1,
     id: 381,
-    englishSentence: "She hung the picture on the wall.",
+    englishSentence: "She hung the picture on the wall",
     ukrainianTranslation: "висіти",
     idTheme: 0,
     englishTranscription: "hæŋ",
     englishWord: "hang",
-    ukrainianTranslationOfSentence: "Вона підвісила картину на стіну.",
+    ukrainianTranslationOfSentence: "Вона підвісила картину на стіну",
     synonyms: ["suspend", "dangle", "attach"]
   }, {
     synonyms: ["occur", "take place", "transpire"],
@@ -3854,24 +3854,24 @@ export const top1000 = [
     ukrainianTranslationOfSentence: "Я дуже щасливий за тебе!",
     englishSentence: "I'm so happy for you!"
   }, {
-    ukrainianTranslationOfSentence: "Вона працювала наполегливо, щоб досягти своїх цілей.",
+    ukrainianTranslationOfSentence: "Вона працювала наполегливо, щоб досягти своїх цілей",
     synonyms: ["difficult", "challenging", "tough"],
     idTheme: 0,
     englishTranscription: "hɑːrd",
-    englishSentence: "She worked hard to achieve her goals.",
+    englishSentence: "She worked hard to achieve her goals",
     englishWord: "hard",
     ukrainianTranslation: "важкий",
     id: 384,
     level: 1
   }, {
     synonyms: ["possesses", "owns", "holds"],
-    englishSentence: "He has a beautiful voice.",
+    englishSentence: "He has a beautiful voice",
     idTheme: 0,
     ukrainianTranslation: "має",
     englishWord: "has",
     englishTranscription: "hæz",
     id: 385,
-    ukrainianTranslationOfSentence: "У нього чудовий голос.",
+    ukrainianTranslationOfSentence: "У нього чудовий голос",
     level: 1
   }, {
     englishWord: "hate",
@@ -3879,15 +3879,15 @@ export const top1000 = [
     synonyms: ["detest", "loathe", "despise"],
     id: 386,
     ukrainianTranslation: "ненавидіти",
-    ukrainianTranslationOfSentence: "Я ненавиджу, коли дощить у мій вихідний.",
+    ukrainianTranslationOfSentence: "Я ненавиджу, коли дощить у мій вихідний",
     englishTranscription: "heɪt",
-    englishSentence: "I hate it when it rains on my day off.",
+    englishSentence: "I hate it when it rains on my day off",
     idTheme: 0
   }, {
     level: 1,
-    englishSentence: "I have three siblings.",
+    englishSentence: "I have three siblings",
     id: 387,
-    ukrainianTranslationOfSentence: "У мене є троє братів і сестер.",
+    ukrainianTranslationOfSentence: "У мене є троє братів і сестер",
     englishTranscription: "hæv",
     idTheme: 0,
     synonyms: ["possess", "own", "hold"],
@@ -3898,47 +3898,47 @@ export const top1000 = [
     ukrainianTranslation: "не мати",
     englishWord: "haven't",
     level: 1,
-    englishSentence: "I haven't finished my homework yet.",
+    englishSentence: "I haven't finished my homework yet",
     id: 388,
     englishTranscription: "ˈhævnt",
     synonyms: ["do not possess", "do not have", "have not done"],
-    ukrainianTranslationOfSentence: "Я ще не закінчив своє домашнє завдання."
+    ukrainianTranslationOfSentence: "Я ще не закінчив своє домашнє завдання"
   }, {
     synonyms: ["male person", "man", "guy"],
-    ukrainianTranslationOfSentence: "Він - мій найкращий друг.",
+    ukrainianTranslationOfSentence: "Він - мій найкращий друг",
     level: 1,
     englishWord: "he",
     ukrainianTranslation: "він",
     idTheme: 0,
     id: 389,
-    englishSentence: "He is my best friend.",
+    englishSentence: "He is my best friend",
     englishTranscription: "hiː"
   }, {
     id: 390,
     level: 1,
     synonyms: ["he would", "he had", "he should"],
     englishWord: "he'd",
-    ukrainianTranslationOfSentence: "Він би хотів прийти на вечірку.",
+    ukrainianTranslationOfSentence: "Він би хотів прийти на вечірку",
     englishTranscription: "hiːd",
     ukrainianTranslation: "він би",
-    englishSentence: "He'd love to come to the party.",
+    englishSentence: "He'd love to come to the party",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Він є лікарем.",
+    ukrainianTranslationOfSentence: "Він є лікарем",
     ukrainianTranslation: "він є",
     synonyms: ["he is", "he has", "he does"],
     idTheme: 0,
     id: 391,
-    englishSentence: "He's a doctor.",
+    englishSentence: "He's a doctor",
     level: 1,
     englishTranscription: "hiːz",
     englishWord: "he's"
   }, {
     ukrainianTranslation: "голова",
-    englishSentence: "She has a headache.",
+    englishSentence: "She has a headache",
     level: 1,
     englishWord: "head",
-    ukrainianTranslationOfSentence: "У неї болить голова.",
+    ukrainianTranslationOfSentence: "У неї болить голова",
     englishTranscription: "hɛd",
     idTheme: 0,
     id: 392,
@@ -3946,18 +3946,18 @@ export const top1000 = [
   }, {
     englishTranscription: "hɪr",
     id: 393,
-    ukrainianTranslationOfSentence: "Я не чую, що ти говориш.",
+    ukrainianTranslationOfSentence: "Я не чую, що ти говориш",
     englishWord: "hear",
     idTheme: 0,
     ukrainianTranslation: "чути",
-    englishSentence: "I can't hear what you're saying.",
+    englishSentence: "I can't hear what you're saying",
     synonyms: ["listen to", "perceive", "catch"],
     level: 1
   }, {
-    englishSentence: "I heard a strange noise coming from the basement.",
+    englishSentence: "I heard a strange noise coming from the basement",
     englishTranscription: "hɜːrd",
     englishWord: "heard",
-    ukrainianTranslationOfSentence: "Я чув дивний шум, що йшов з підвалу.",
+    ukrainianTranslationOfSentence: "Я чув дивний шум, що йшов з підвалу",
     id: 394,
     synonyms: ["listened to", "perceived", "caught"],
     ukrainianTranslation: "чув",
@@ -3969,26 +3969,26 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "hɑːrt",
     level: 1,
-    englishSentence: "Her heart was pounding with excitement.",
+    englishSentence: "Her heart was pounding with excitement",
     id: 395,
     synonyms: ["organ", "ticker", "pump"],
-    ukrainianTranslationOfSentence: "Її серце билося від захвату."
+    ukrainianTranslationOfSentence: "Її серце билося від захвату"
   }, {
     idTheme: 0,
     id: 396,
     englishWord: "heavy",
-    englishSentence: "Be careful lifting that box—it's heavy.",
+    englishSentence: "Be careful lifting that box—it's heavy",
     ukrainianTranslation: "важкий",
     englishTranscription: "ˈhɛvi",
     synonyms: ["weighty", "burdensome", "substantial"],
     level: 1,
-    ukrainianTranslationOfSentence: "Будь обережним, піднімаючи цю коробку - вона важка."
+    ukrainianTranslationOfSentence: "Будь обережним, піднімаючи цю коробку - вона важка"
   }, {
     ukrainianTranslation: "тримав",
     englishTranscription: "hɛld",
-    ukrainianTranslationOfSentence: "Вона тримала дитину на руках.",
+    ukrainianTranslationOfSentence: "Вона тримала дитину на руках",
     englishWord: "held",
-    englishSentence: "She held the baby in her arms.",
+    englishSentence: "She held the baby in her arms",
     id: 397,
     idTheme: 0,
     level: 1,
@@ -4005,13 +4005,13 @@ export const top1000 = [
     englishTranscription: "hɛl"
   },
   {
-    ukrainianTranslationOfSentence: "Вона привітала його радісним привіт.",
+    ukrainianTranslationOfSentence: "Вона привітала його радісним привіт",
     id: 399,
     idTheme: 0,
     englishWord: "hello",
     level: 1,
     ukrainianTranslation: "привіт",
-    englishSentence: "She greeted him with a cheerful hello.",
+    englishSentence: "She greeted him with a cheerful hello",
     englishTranscription: "həˈloʊ",
     synonyms: ["hi", "greetings", "salutations"]
   }, {
@@ -4025,18 +4025,18 @@ export const top1000 = [
     id: 400,
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Її улюблений колір - синій.",
+    ukrainianTranslationOfSentence: "Її улюблений колір - синій",
     level: 1,
     id: 401,
-    englishSentence: "Her favorite color is blue.",
+    englishSentence: "Her favorite color is blue",
     ukrainianTranslation: "її",
     englishWord: "her",
     idTheme: 0,
     synonyms: ["belonging to a female", "possessed by a female", "associated with her"],
     englishTranscription: "hɜːr"
   }, {
-    englishSentence: "Come over here and sit with us.",
-    ukrainianTranslationOfSentence: "Підійди сюди й сядь з нами.",
+    englishSentence: "Come over here and sit with us",
+    ukrainianTranslationOfSentence: "Підійди сюди й сядь з нами",
     idTheme: 0,
     englishTranscription: "hɪr",
     id: 402,
@@ -4047,12 +4047,12 @@ export const top1000 = [
   }, {
     englishWord: "herself",
     ukrainianTranslation: "сама себе",
-    ukrainianTranslationOfSentence: "Вона прийняла рішення сама.",
+    ukrainianTranslationOfSentence: "Вона прийняла рішення сама",
     idTheme: 0,
     id: 403,
     englishTranscription: "hɜrˈsɛlf",
     synonyms: ["on her own", "by her own efforts", "independently"],
-    englishSentence: "She made the decision herself.",
+    englishSentence: "She made the decision herself",
     level: 1
   }, {
     id: 404,
@@ -4077,11 +4077,11 @@ export const top1000 = [
   }, {
     synonyms: ["conceal", "disguise", "secrete"],
     id: 406,
-    ukrainianTranslationOfSentence: "Вона любить приховувати подарунки і дивувати людей.",
+    ukrainianTranslationOfSentence: "Вона любить приховувати подарунки і дивувати людей",
     englishWord: "hide",
     englishTranscription: "haɪd",
     level: 1,
-    englishSentence: "She likes to hide presents and surprise people.",
+    englishSentence: "She likes to hide presents and surprise people",
     ukrainianTranslation: "приховувати",
     idTheme: 0
   }, {
@@ -4090,16 +4090,16 @@ export const top1000 = [
     synonyms: ["tall", "lofty", "elevated"],
     level: 1,
     id: 407,
-    englishSentence: "The mountain peak is very high.",
+    englishSentence: "The mountain peak is very high",
     englishTranscription: "haɪ",
-    ukrainianTranslationOfSentence: "Вершина гори дуже висока.",
+    ukrainianTranslationOfSentence: "Вершина гори дуже висока",
     ukrainianTranslation: "високий"
   }, {
     englishTranscription: "hɪm",
-    ukrainianTranslationOfSentence: "Я дала йому книгу почитати.",
+    ukrainianTranslationOfSentence: "Я дала йому книгу почитати",
     englishWord: "him",
     ukrainianTranslation: "його",
-    englishSentence: "I gave him the book to read.",
+    englishSentence: "I gave him the book to read",
     idTheme: 0,
     synonyms: ["to that male person", "for him", "with him"],
     id: 408,
@@ -4108,8 +4108,8 @@ export const top1000 = [
     synonyms: ["on his own", "by his own efforts", "independently"],
     ukrainianTranslation: "сам себе",
     englishWord: "himself",
-    ukrainianTranslationOfSentence: "Він самостійно виправив машину.",
-    englishSentence: "He fixed the car himself.",
+    ukrainianTranslationOfSentence: "Він самостійно виправив машину",
+    englishSentence: "He fixed the car himself",
     id: 409,
     idTheme: 0,
     level: 1,
@@ -4119,27 +4119,27 @@ export const top1000 = [
     level: 1,
     englishWord: "his",
     englishTranscription: "hɪz",
-    ukrainianTranslationOfSentence: "Його улюблений колір - зелений.",
+    ukrainianTranslationOfSentence: "Його улюблений колір - зелений",
     synonyms: ["belonging to him", "possessed by him", "associated with him"],
-    englishSentence: "His favorite color is green.",
+    englishSentence: "His favorite color is green",
     ukrainianTranslation: "його",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Він ударив м'яч киянкою.",
+    ukrainianTranslationOfSentence: "Він ударив м'яч киянкою",
     synonyms: ["strike", "smack", "collide"],
     englishWord: "hit",
     englishTranscription: "hɪt",
     ukrainianTranslation: "ударити",
     id: 411,
     idTheme: 0,
-    englishSentence: "He hit the ball with a bat.",
+    englishSentence: "He hit the ball with a bat",
     level: 1
   }, {
     level: 1,
     idTheme: 0,
-    englishSentence: "Please hold my hand while we cross the street.",
+    englishSentence: "Please hold my hand while we cross the street",
     id: 412,
-    ukrainianTranslationOfSentence: "Будь ласка, тримай мою руку, поки ми переходимо вулицю.",
+    ukrainianTranslationOfSentence: "Будь ласка, тримай мою руку, поки ми переходимо вулицю",
     synonyms: ["grasp", "grip", "clasp"],
     englishTranscription: "hoʊld",
     englishWord: "hold",
@@ -4148,18 +4148,18 @@ export const top1000 = [
     englishTranscription: "hoʊm",
     englishWord: "home",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Підемо додому й відпочинемо.",
+    ukrainianTranslationOfSentence: "Підемо додому й відпочинемо",
     ukrainianTranslation: "дім",
     synonyms: ["house", "residence", "dwelling"],
     id: 413,
     level: 1,
-    englishSentence: "Let's go home and relax."
+    englishSentence: "Let's go home and relax"
   }, {
-    ukrainianTranslationOfSentence: "Сподіваюся, все пройде добре.",
+    ukrainianTranslationOfSentence: "Сподіваюся, все пройде добре",
     level: 1,
     synonyms: ["expectation", "optimism", "aspiration"],
     idTheme: 0,
-    englishSentence: "I hope everything goes well.",
+    englishSentence: "I hope everything goes well",
     ukrainianTranslation: "сподівання",
     id: 414,
     englishTranscription: "hoʊp",
@@ -4167,21 +4167,21 @@ export const top1000 = [
   }, {
     englishWord: "horse",
     ukrainianTranslation: "кінь",
-    ukrainianTranslationOfSentence: "Вона любить верхову їзду.",
+    ukrainianTranslationOfSentence: "Вона любить верхову їзду",
     id: 415,
     englishTranscription: "hɔːrs",
     level: 1,
     idTheme: 0,
     synonyms: ["equine", "steed", "mare"],
-    englishSentence: "She loves riding horses."
+    englishSentence: "She loves riding horses"
   }, {
     idTheme: 0,
     level: 1,
     englishTranscription: "ˈhɑːspɪtl",
     englishWord: "hospital",
-    englishSentence: "He was taken to the hospital after the accident.",
+    englishSentence: "He was taken to the hospital after the accident",
     id: 416,
-    ukrainianTranslationOfSentence: "Його доставили до лікарні після нещасного випадку.",
+    ukrainianTranslationOfSentence: "Його доставили до лікарні після нещасного випадку",
     synonyms: ["medical center", "infirmary", "clinic"],
     ukrainianTranslation: "лікарня"
   }, {
@@ -4191,15 +4191,15 @@ export const top1000 = [
     englishTranscription: "hɑːt",
     englishWord: "hot",
     id: 417,
-    englishSentence: "Be careful, the soup is hot.",
+    englishSentence: "Be careful, the soup is hot",
     synonyms: ["warm", "heated", "spicy"],
-    ukrainianTranslationOfSentence: "Будь обережним, суп гарячий."
+    ukrainianTranslationOfSentence: "Будь обережним, суп гарячий"
   }, {
-    englishSentence: "The meeting will last for an hour.",
+    englishSentence: "The meeting will last for an hour",
     idTheme: 0,
     id: 418,
     ukrainianTranslation: "година",
-    ukrainianTranslationOfSentence: "Засідання триватиме годину.",
+    ukrainianTranslationOfSentence: "Засідання триватиме годину",
     englishWord: "hour",
     englishTranscription: "aʊər",
     synonyms: ["60 minutes", "sixty minutes", "time unit"],
@@ -4210,9 +4210,9 @@ export const top1000 = [
     synonyms: ["home", "dwelling", "residence"],
     ukrainianTranslation: "будинок",
     englishWord: "house",
-    englishSentence: "They bought a new house in the suburbs.",
+    englishSentence: "They bought a new house in the suburbs",
     level: 1,
-    ukrainianTranslationOfSentence: "Вони купили новий будинок у передмісті.",
+    ukrainianTranslationOfSentence: "Вони купили новий будинок у передмісті",
     englishTranscription: "haʊs"
   }, {
     synonyms: ["in what way", "to what extent", "by what means"],
@@ -4226,58 +4226,58 @@ export const top1000 = [
     level: 1
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона старанно вчилася; однак не здав екзамен.",
+    ukrainianTranslationOfSentence: "Вона старанно вчилася; однак не здав екзамен",
     synonyms: ["nevertheless", "nonetheless", "still"],
     id: 421,
     englishTranscription: "haʊˈɛvər",
     englishWord: "however",
-    englishSentence: "She studied hard; however, she didn't pass the exam.",
+    englishSentence: "She studied hard; however, she didn't pass the exam",
     level: 1,
     ukrainianTranslation: "однак"
   }, {
     ukrainianTranslation: "обіймати",
     synonyms: ["embrace", "cuddle", "squeeze"],
-    englishSentence: "I gave her a hug to comfort her.",
+    englishSentence: "I gave her a hug to comfort her",
     id: 422,
-    ukrainianTranslationOfSentence: "Я обійняв її, щоб заспокоїти.",
+    ukrainianTranslationOfSentence: "Я обійняв її, щоб заспокоїти",
     englishWord: "hug",
     level: 1,
     idTheme: 0,
     englishTranscription: "hʌɡ"
   }, {
     englishWord: "huge",
-    ukrainianTranslationOfSentence: "Слон величезний.",
+    ukrainianTranslationOfSentence: "Слон величезний",
     ukrainianTranslation: "великий",
     id: 423,
     synonyms: ["enormous", "gigantic", "massive"],
     englishTranscription: "hjuːdʒ",
     idTheme: 0,
-    englishSentence: "The elephant is huge.",
+    englishSentence: "The elephant is huge",
     level: 1
   },
   {
     id: 424,
-    ukrainianTranslationOfSentence: "Га, я цього не знала.",
+    ukrainianTranslationOfSentence: "Га, я цього не знала",
     idTheme: 0,
     englishTranscription: "hʌ",
     englishWord: "huh",
     level: 1,
-    englishSentence: "Huh, I didn't know that.",
+    englishSentence: "Huh, I didn't know that",
     synonyms: ["what?", "eh?", "pardon?"],
     ukrainianTranslation: "га?"
   }, {
     synonyms: ["person", "individual", "homo sapiens"],
     englishWord: "human",
     englishTranscription: "ˈhjumən",
-    ukrainianTranslationOfSentence: "Ми всі люди.",
+    ukrainianTranslationOfSentence: "Ми всі люди",
     id: 425,
     level: 1,
     ukrainianTranslation: "людина",
-    englishSentence: "We are all human beings.",
+    englishSentence: "We are all human beings",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Вона перерахувала до ста.",
-    englishSentence: "She counted to one hundred.",
+    ukrainianTranslationOfSentence: "Вона перерахувала до ста",
+    englishSentence: "She counted to one hundred",
     id: 426,
     level: 1,
     ukrainianTranslation: "сто",
@@ -4287,20 +4287,20 @@ export const top1000 = [
     synonyms: ["100", "centenary", "century"]
   }, {
     synonyms: ["suspended", "dangled", "attached"],
-    ukrainianTranslationOfSentence: "Він повісив картину на стіну.",
+    ukrainianTranslationOfSentence: "Він повісив картину на стіну",
     ukrainianTranslation: "повісив",
     englishTranscription: "hʌŋ",
     id: 427,
     englishWord: "hung",
-    englishSentence: "He hung the painting on the wall.",
+    englishSentence: "He hung the painting on the wall",
     idTheme: 0,
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Нам потрібно поспішати, або ми запізнимося.",
+    ukrainianTranslationOfSentence: "Нам потрібно поспішати, або ми запізнимося",
     level: 1,
     englishTranscription: "ˈhɜːri",
     idTheme: 0,
-    englishSentence: "We need to hurry or we'll be late.",
+    englishSentence: "We need to hurry or we'll be late",
     englishWord: "hurry",
     synonyms: ["rush", "hasten", "race"],
     id: 428,
@@ -4310,46 +4310,46 @@ export const top1000 = [
     synonyms: ["injure", "harm", "damage"],
     id: 429,
     idTheme: 0,
-    englishSentence: "Be careful not to hurt yourself.",
+    englishSentence: "Be careful not to hurt yourself",
     ukrainianTranslation: "шкодити",
-    ukrainianTranslationOfSentence: "Будь обережним, не шкодь собі.",
+    ukrainianTranslationOfSentence: "Будь обережним, не шкодь собі",
     englishWord: "hurt",
     englishTranscription: "hɜrt"
   }, {
     ukrainianTranslation: "я",
     synonyms: ["self", "me", "ego"],
-    englishSentence: "I love ice cream.",
+    englishSentence: "I love ice cream",
     idTheme: 0,
     level: 1,
     englishTranscription: "aɪ",
-    ukrainianTranslationOfSentence: "Я люблю морозиво.",
+    ukrainianTranslationOfSentence: "Я люблю морозиво",
     englishWord: "i",
     id: 430
   }, {
-    englishSentence: "I'd like a cup of tea, please.",
+    englishSentence: "I'd like a cup of tea, please",
     id: 431,
     idTheme: 0,
     ukrainianTranslation: "я би",
     synonyms: ["I would", "I had", "I should"],
-    ukrainianTranslationOfSentence: "Я би хотів чашку чаю, будь ласка.",
+    ukrainianTranslationOfSentence: "Я би хотів чашку чаю, будь ласка",
     englishTranscription: "aɪd",
     englishWord: "i'd",
     level: 1
   }, {
     level: 1,
-    englishSentence: "I'll be there at 8 o'clock.",
+    englishSentence: "I'll be there at 8 o'clock",
     id: 432,
     synonyms: ["I will", "I shall", "I am going to"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я буду там о восьмій годині.",
+    ukrainianTranslationOfSentence: "Я буду там о восьмій годині",
     englishTranscription: "aɪl",
     ukrainianTranslation: "я буду",
     englishWord: "i'll"
   }, {
     synonyms: ["I am"],
-    englishSentence: "I'm tired after a long day.",
+    englishSentence: "I'm tired after a long day",
     level: 1,
-    ukrainianTranslationOfSentence: "Я втомився після довгого дня.",
+    ukrainianTranslationOfSentence: "Я втомився після довгого дня",
     ukrainianTranslation: "я є",
     id: 433,
     englishTranscription: "aɪm",
@@ -4357,8 +4357,8 @@ export const top1000 = [
     englishWord: "i'm"
   }, {
     englishWord: "i've",
-    ukrainianTranslationOfSentence: "Я вже був у Парижі.",
-    englishSentence: "I've been to Paris before.",
+    ukrainianTranslationOfSentence: "Я вже був у Парижі",
+    englishSentence: "I've been to Paris before",
     englishTranscription: "aɪv",
     ukrainianTranslation: "я маю",
     id: 434,
@@ -4377,39 +4377,39 @@ export const top1000 = [
     englishTranscription: "aɪs"
   }, {
     ukrainianTranslation: "ідея",
-    englishSentence: "She came up with a brilliant idea.",
+    englishSentence: "She came up with a brilliant idea",
     level: 1,
     englishWord: "idea",
     englishTranscription: "aɪˈdiə",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона винайшла чудову ідею.",
+    ukrainianTranslationOfSentence: "Вона винайшла чудову ідею",
     synonyms: ["concept", "notion", "thought"],
     id: 436
   }, {
     id: 437,
     synonyms: ["in the event that", "on the condition that", "assuming"],
     englishTranscription: "ɪf",
-    ukrainianTranslationOfSentence: "Якщо піде дощ, ми залишимось всередині.",
+    ukrainianTranslationOfSentence: "Якщо піде дощ, ми залишимось всередині",
     idTheme: 0,
     level: 1,
     englishWord: "if",
-    englishSentence: "If it rains, we'll stay indoors.",
+    englishSentence: "If it rains, we'll stay indoors",
     ukrainianTranslation: "якщо"
   }, {
     idTheme: 0,
     id: 438,
     englishTranscription: "ɪɡˈnɔr",
-    englishSentence: "Don't ignore your problems; face them.",
-    ukrainianTranslationOfSentence: "Не ігноруй свої проблеми; впорайся з ними.",
+    englishSentence: "Don't ignore your problems; face them",
+    ukrainianTranslationOfSentence: "Не ігноруй свої проблеми; впорайся з ними",
     ukrainianTranslation: "ігнорувати",
     level: 1,
     synonyms: ["disregard", "overlook", "neglect"],
     englishWord: "ignore"
   }, {
-    englishSentence: "Imagine a world without borders.",
+    englishSentence: "Imagine a world without borders",
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Уяви світ без кордонів.",
+    ukrainianTranslationOfSentence: "Уяви світ без кордонів",
     ukrainianTranslation: "уявляти",
     englishTranscription: "ɪˈmædʒɪn",
     englishWord: "imagine",
@@ -4417,9 +4417,9 @@ export const top1000 = [
     id: 439
   }, {
     ukrainianTranslation: "негайно",
-    englishSentence: "Please call me back immediately.",
+    englishSentence: "Please call me back immediately",
     level: 1,
-    ukrainianTranslationOfSentence: "Будь ласка, передзвоніть мені негайно.",
+    ukrainianTranslationOfSentence: "Будь ласка, передзвоніть мені негайно",
     id: 440,
     idTheme: 0,
     synonyms: ["right away", "promptly", "instantly"],
@@ -4431,19 +4431,19 @@ export const top1000 = [
     ukrainianTranslation: "важливий",
     idTheme: 0,
     englishWord: "important",
-    ukrainianTranslationOfSentence: "Важливо отримувати достатньо сну.",
+    ukrainianTranslationOfSentence: "Важливо отримувати достатньо сну",
     synonyms: ["significant", "crucial", "essential"],
     id: 441,
-    englishSentence: "It's important to get enough sleep."
+    englishSentence: "It's important to get enough sleep"
   }, {
     level: 1,
     idTheme: 0,
     synonyms: ["inside", "within", "into"],
     englishTranscription: "ɪn",
     ukrainianTranslation: "в",
-    ukrainianTranslationOfSentence: "Вона живе в Лондоні.",
+    ukrainianTranslationOfSentence: "Вона живе в Лондоні",
     englishWord: "in",
-    englishSentence: "She lives in London.",
+    englishSentence: "She lives in London",
     id: 442
   }, {
     idTheme: 0,
@@ -4452,45 +4452,45 @@ export const top1000 = [
     synonyms: ["indoors", "within", "internally"],
     id: 443,
     level: 1,
-    englishSentence: "The cat is hiding inside the box.",
+    englishSentence: "The cat is hiding inside the box",
     ukrainianTranslation: "всередині",
-    ukrainianTranslationOfSentence: "Кіт ховається всередині коробки."
+    ukrainianTranslationOfSentence: "Кіт ховається всередині коробки"
   }, {
     level: 1,
-    englishSentence: "Let's go to the park instead of the mall.",
+    englishSentence: "Let's go to the park instead of the mall",
     englishWord: "instead",
     synonyms: ["as an alternative", "in place of", "rather than"],
     id: 444,
     englishTranscription: "ɪnˈstɛd",
     idTheme: 0,
     ukrainianTranslation: "замість",
-    ukrainianTranslationOfSentence: "Підемо в парк замість в торговий центр."
+    ukrainianTranslationOfSentence: "Підемо в парк замість в торговий центр"
   }, {
     id: 445,
     level: 1,
     englishWord: "interest",
     ukrainianTranslation: "інтерес",
-    ukrainianTranslationOfSentence: "Я маю великий інтерес до мистецтва.",
+    ukrainianTranslationOfSentence: "Я маю великий інтерес до мистецтва",
     idTheme: 0,
-    englishSentence: "I have a keen interest in art.",
+    englishSentence: "I have a keen interest in art",
     synonyms: ["curiosity", "fascination", "attraction"],
     englishTranscription: "ˈɪntrəst"
   }, {
     ukrainianTranslation: "переривати",
     id: 446,
-    ukrainianTranslationOfSentence: "Будь ласка, не перебивай мене, коли я говорю.",
+    ukrainianTranslationOfSentence: "Будь ласка, не перебивай мене, коли я говорю",
     synonyms: ["disturb", "disrupt", "cut off"],
     level: 1,
     englishWord: "interrupt",
     idTheme: 0,
-    englishSentence: "Please don't interrupt me while I'm speaking.",
+    englishSentence: "Please don't interrupt me while I'm speaking",
     englishTranscription: "ˌɪntəˈrʌpt"
   }, {
     ukrainianTranslation: "у",
     englishTranscription: "ˈɪntuː",
     level: 1,
-    ukrainianTranslationOfSentence: "Вона стрибнула у басейн.",
-    englishSentence: "She jumped into the pool.",
+    ukrainianTranslationOfSentence: "Вона стрибнула у басейн",
+    englishSentence: "She jumped into the pool",
     idTheme: 0,
     id: 447,
     englishWord: "into",
@@ -4502,15 +4502,15 @@ export const top1000 = [
     englishTranscription: "ɪz",
     id: 448,
     synonyms: ["exists", "is present", "is located"],
-    englishSentence: "The book is on the table.",
+    englishSentence: "The book is on the table",
     ukrainianTranslation: "є",
-    ukrainianTranslationOfSentence: "Книга є на столі."
+    ukrainianTranslationOfSentence: "Книга є на столі"
   },
   {
     englishTranscription: "ɪznt",
-    ukrainianTranslationOfSentence: "Його зараз немає.",
+    ukrainianTranslationOfSentence: "Його зараз немає",
     synonyms: ["is not", "does not exist", "is not present"],
-    englishSentence: "He isn't here right now.",
+    englishSentence: "He isn't here right now",
     id: 449,
     level: 1,
     englishWord: "isn't",
@@ -4522,15 +4522,15 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["that thing", "that situation", "that concept"],
     englishWord: "it",
-    englishSentence: "It's a beautiful day.",
+    englishSentence: "It's a beautiful day",
     level: 1,
-    ukrainianTranslationOfSentence: "Це прекрасний день.",
+    ukrainianTranslationOfSentence: "Це прекрасний день",
     id: 450
   }, {
     idTheme: 0,
     id: 451,
-    ukrainianTranslationOfSentence: "Зовні йде дощ.",
-    englishSentence: "It's raining outside.",
+    ukrainianTranslationOfSentence: "Зовні йде дощ",
+    englishSentence: "It's raining outside",
     level: 1,
     englishWord: "it's",
     synonyms: ["it is"],
@@ -4538,11 +4538,11 @@ export const top1000 = [
     englishTranscription: "ɪts"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Кіт облизав свої лапи.",
+    ukrainianTranslationOfSentence: "Кіт облизав свої лапи",
     englishTranscription: "ɪts",
     ukrainianTranslation: "його",
     id: 452,
-    englishSentence: "The cat licked its paws.",
+    englishSentence: "The cat licked its paws",
     englishWord: "its",
     idTheme: 0,
     synonyms: ["belonging to it", "possessed by it"]
@@ -4551,15 +4551,15 @@ export const top1000 = [
     idTheme: 0,
     ukrainianTranslation: "куртка",
     englishWord: "jacket",
-    ukrainianTranslationOfSentence: "Він накинув куртку перед виходом на вулицю.",
+    ukrainianTranslationOfSentence: "Він накинув куртку перед виходом на вулицю",
     level: 1,
     id: 453,
     englishTranscription: "ˈdʒækɪt",
-    englishSentence: "He put on his jacket before going outside."
+    englishSentence: "He put on his jacket before going outside"
   }, {
-    ukrainianTranslationOfSentence: "Вона завжди носить джинси та футболку.",
+    ukrainianTranslationOfSentence: "Вона завжди носить джинси та футболку",
     level: 1,
-    englishSentence: "She always wears jeans and a T-shirt.",
+    englishSentence: "She always wears jeans and a T-shirt",
     englishTranscription: "dʒinz",
     ukrainianTranslation: "джинси",
     id: 454,
@@ -4573,17 +4573,17 @@ export const top1000 = [
     level: 1,
     englishTranscription: "dʒɜːrk",
     synonyms: ["idiot", "fool", "moron"],
-    englishSentence: "Don't be such a jerk.",
-    ukrainianTranslationOfSentence: "Не будь таким придурком.",
+    englishSentence: "Don't be such a jerk",
+    ukrainianTranslationOfSentence: "Не будь таким придурком",
     idTheme: 0
   }, {
     englishWord: "job",
     synonyms: ["occupation", "employment", "profession"],
     id: 456,
-    ukrainianTranslationOfSentence: "У нього вимоглива робота.",
+    ukrainianTranslationOfSentence: "У нього вимоглива робота",
     level: 1,
     englishTranscription: "dʒɑːb",
-    englishSentence: "He has a demanding job.",
+    englishSentence: "He has a demanding job",
     idTheme: 0,
     ukrainianTranslation: "робота"
   }, {
@@ -4598,19 +4598,19 @@ export const top1000 = [
     idTheme: 0
   }, {
     idTheme: 0,
-    englishSentence: "He told a funny joke.",
+    englishSentence: "He told a funny joke",
     synonyms: ["gag", "wisecrack", "jest"],
     englishTranscription: "dʒoʊk",
-    ukrainianTranslationOfSentence: "Він розповів смішний жарт.",
+    ukrainianTranslationOfSentence: "Він розповів смішний жарт",
     id: 458,
     level: 1,
     ukrainianTranslation: "жарт",
     englishWord: "joke"
   }, {
     idTheme: 0,
-    englishSentence: "The cat can jump very high.",
+    englishSentence: "The cat can jump very high",
     ukrainianTranslation: "стрибати",
-    ukrainianTranslationOfSentence: "Кіт може стрибати дуже високо.",
+    ukrainianTranslationOfSentence: "Кіт може стрибати дуже високо",
     id: 459,
     englishWord: "jump",
     englishTranscription: "dʒʌmp",
@@ -4621,16 +4621,16 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["simply", "only", "merely"],
     id: 460,
-    ukrainianTranslationOfSentence: "Я просто жартую.",
+    ukrainianTranslationOfSentence: "Я просто жартую",
     englishTranscription: "dʒʌst",
-    englishSentence: "I'm just kidding.",
+    englishSentence: "I'm just kidding",
     level: 1,
     ukrainianTranslation: "просто"
   }, {
     synonyms: ["retain", "hold", "maintain"],
     ukrainianTranslation: "тримати",
-    ukrainianTranslationOfSentence: "Будь ласка, тримайте шум на мінімумі.",
-    englishSentence: "Please keep the noise down.",
+    ukrainianTranslationOfSentence: "Будь ласка, тримайте шум на мінімумі",
+    englishSentence: "Please keep the noise down",
     level: 1,
     id: 461,
     idTheme: 0,
@@ -4639,35 +4639,35 @@ export const top1000 = [
   }, {
     synonyms: ["retained", "held", "maintained"],
     englishTranscription: "kɛpt",
-    englishSentence: "He kept his promise.",
+    englishSentence: "He kept his promise",
     ukrainianTranslation: "тримав",
     idTheme: 0,
     englishWord: "kept",
     id: 462,
-    ukrainianTranslationOfSentence: "Він тримав свою обіцянку.",
+    ukrainianTranslationOfSentence: "Він тримав свою обіцянку",
     level: 1
   }, {
     synonyms: ["lock opener", "passkey", "access code"],
     id: 463,
     englishWord: "key",
-    ukrainianTranslationOfSentence: "Вона не могла знайти свій домашній ключ.",
+    ukrainianTranslationOfSentence: "Вона не могла знайти свій домашній ключ",
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "ключ",
-    englishSentence: "She couldn't find her house key.",
+    englishSentence: "She couldn't find her house key",
     englishTranscription: "kiː"
   }, {
     id: 464,
     englishWord: "kick",
-    ukrainianTranslationOfSentence: "Він копнув м'яч у ворота.",
-    englishSentence: "He kicked the ball into the goal.",
+    ukrainianTranslationOfSentence: "Він копнув м'яч у ворота",
+    englishSentence: "He kicked the ball into the goal",
     ukrainianTranslation: "копнути",
     englishTranscription: "kɪk",
     synonyms: ["strike with the foot", "punt", "boot"],
     level: 1,
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "В неї є двоє дітей.",
+    ukrainianTranslationOfSentence: "В неї є двоє дітей",
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "дитина",
@@ -4675,16 +4675,16 @@ export const top1000 = [
     id: 465,
     englishTranscription: "kɪd",
     synonyms: ["child", "offspring", "youngster"],
-    englishSentence: "She has two kids."
+    englishSentence: "She has two kids"
   }, {
     synonyms: ["cause the death of", "murder", "slay"],
     id: 466,
-    ukrainianTranslationOfSentence: "Мисливець вбив оленя.",
+    ukrainianTranslationOfSentence: "Мисливець вбив оленя",
     level: 1,
     ukrainianTranslation: "вбивати",
     idTheme: 0,
     englishWord: "kill",
-    englishSentence: "The hunter killed a deer.",
+    englishSentence: "The hunter killed a deer",
     englishTranscription: "kɪl"
   }, {
     ukrainianTranslationOfSentence: "Який тип музики тобі подобається?",
@@ -4703,18 +4703,18 @@ export const top1000 = [
     idTheme: 0,
     level: 1,
     englishWord: "kiss",
-    englishSentence: "They shared a passionate kiss.",
+    englishSentence: "They shared a passionate kiss",
     id: 468,
-    ukrainianTranslationOfSentence: "Вони поділились палким поцілунком."
+    ukrainianTranslationOfSentence: "Вони поділились палким поцілунком"
   }, {
     level: 1,
     englishTranscription: "ˈkɪtʃən",
     synonyms: ["cooking area", "culinary space", "food preparation area"],
     ukrainianTranslation: "кухня",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я готую вечерю на кухні.",
+    ukrainianTranslationOfSentence: "Я готую вечерю на кухні",
     id: 469,
-    englishSentence: "I'm cooking dinner in the kitchen.",
+    englishSentence: "I'm cooking dinner in the kitchen",
     englishWord: "kitchen"
   }, {
     ukrainianTranslation: "коліно",
@@ -4722,17 +4722,17 @@ export const top1000 = [
     englishWord: "knee",
     level: 1,
     id: 470,
-    englishSentence: "She fell and hurt her knee.",
+    englishSentence: "She fell and hurt her knee",
     englishTranscription: "niː",
     synonyms: ["joint", "patella", "articulation"],
-    ukrainianTranslationOfSentence: "Вона впала і пошкодила коліно."
+    ukrainianTranslationOfSentence: "Вона впала і пошкодила коліно"
   }, {
     englishWord: "knew",
-    ukrainianTranslationOfSentence: "Я знала відповідь на запитання.",
+    ukrainianTranslationOfSentence: "Я знала відповідь на запитання",
     englishTranscription: "njuː",
     id: 471,
     idTheme: 0,
-    englishSentence: "I knew the answer to the question.",
+    englishSentence: "I knew the answer to the question",
     ukrainianTranslation: "знав",
     synonyms: ["was aware of", "had knowledge of"],
     level: 1
@@ -4740,9 +4740,9 @@ export const top1000 = [
     synonyms: ["rap", "tap", "pound"],
     englishTranscription: "nɑːk",
     ukrainianTranslation: "стукати",
-    ukrainianTranslationOfSentence: "Будь ласка, стукніть перед входом.",
+    ukrainianTranslationOfSentence: "Будь ласка, стукніть перед входом",
     level: 1,
-    englishSentence: "Please knock before entering.",
+    englishSentence: "Please knock before entering",
     id: 472,
     idTheme: 0,
     englishWord: "knock"
@@ -4759,8 +4759,8 @@ export const top1000 = [
   },
   {
     englishTranscription: "noʊn",
-    englishSentence: "He is a well-known actor.",
-    ukrainianTranslationOfSentence: "Він відомий актор.",
+    englishSentence: "He is a well-known actor",
+    ukrainianTranslationOfSentence: "Він відомий актор",
     synonyms: ["famous", "recognized", "familiar"],
     ukrainianTranslation: "відомий",
     id: 474,
@@ -4769,11 +4769,11 @@ export const top1000 = [
     englishWord: "known"
   }, {
     id: 475,
-    englishSentence: "She's a very elegant lady.",
+    englishSentence: "She's a very elegant lady",
     idTheme: 0,
     ukrainianTranslation: "леді",
     level: 1,
-    ukrainianTranslationOfSentence: "Вона дуже елегантна леді.",
+    ukrainianTranslationOfSentence: "Вона дуже елегантна леді",
     englishTranscription: "ˈleɪdi",
     synonyms: ["woman of refinement", "noblewoman", "gentlewoman"],
     englishWord: "lady"
@@ -4783,37 +4783,37 @@ export const top1000 = [
     id: 476,
     level: 1,
     englishTranscription: "lænd",
-    ukrainianTranslationOfSentence: "Літак приземлився безпечно в аеропорту.",
+    ukrainianTranslationOfSentence: "Літак приземлився безпечно в аеропорту",
     idTheme: 0,
-    englishSentence: "The plane landed safely at the airport.",
+    englishSentence: "The plane landed safely at the airport",
     ukrainianTranslation: "земля, суша"
   }, {
     englishWord: "large",
-    ukrainianTranslationOfSentence: "Він купив велику піцу на вечірку.",
+    ukrainianTranslationOfSentence: "Він купив велику піцу на вечірку",
     ukrainianTranslation: "великий",
     englishTranscription: "lɑːrdʒ",
     idTheme: 0,
     level: 1,
     synonyms: ["big", "huge", "spacious"],
     id: 477,
-    englishSentence: "He bought a large pizza for the party."
+    englishSentence: "He bought a large pizza for the party"
   }, {
     ukrainianTranslation: "останній",
     id: 478,
     idTheme: 0,
     englishTranscription: "lɑːst",
-    englishSentence: "This is my last chance.",
+    englishSentence: "This is my last chance",
     englishWord: "last",
     level: 1,
-    ukrainianTranslationOfSentence: "Це моя остання нагода.",
+    ukrainianTranslationOfSentence: "Це моя остання нагода",
     synonyms: ["final", "ultimate", "concluding"]
   }, {
     englishTranscription: "leɪt",
     ukrainianTranslation: "пізній",
     id: 479,
     idTheme: 0,
-    englishSentence: "She arrived late to the meeting.",
-    ukrainianTranslationOfSentence: "Вона запізнилась на зустріч.",
+    englishSentence: "She arrived late to the meeting",
+    ukrainianTranslationOfSentence: "Вона запізнилась на зустріч",
     englishWord: "late",
     level: 1,
     synonyms: ["tardy", "delayed", "behind schedule"]
@@ -4824,11 +4824,11 @@ export const top1000 = [
     englishTranscription: "læf",
     level: 1,
     idTheme: 0,
-    englishSentence: "The joke made everyone laugh.",
+    englishSentence: "The joke made everyone laugh",
     englishWord: "laugh",
-    ukrainianTranslationOfSentence: "Жарт розсмішив всіх."
+    ukrainianTranslationOfSentence: "Жарт розсмішив всіх"
   }, {
-    ukrainianTranslationOfSentence: "Будь ласка, покладіть книгу на стіл.",
+    ukrainianTranslationOfSentence: "Будь ласка, покладіть книгу на стіл",
     englishWord: "lay",
     level: 1,
     englishTranscription: "leɪ",
@@ -4836,13 +4836,13 @@ export const top1000 = [
     id: 481,
     idTheme: 0,
     ukrainianTranslation: "покласти",
-    englishSentence: "Please lay the book on the table."
+    englishSentence: "Please lay the book on the table"
   }, {
     idTheme: 0,
-    englishSentence: "She will lead the meeting.",
+    englishSentence: "She will lead the meeting",
     ukrainianTranslation: "проводити, вести",
     englishTranscription: "liːd",
-    ukrainianTranslationOfSentence: "Вона буде проводити зустріч.",
+    ukrainianTranslationOfSentence: "Вона буде проводити зустріч",
     englishWord: "lead",
     id: 482,
     synonyms: ["guide", "direct", "take charge"],
@@ -4850,8 +4850,8 @@ export const top1000 = [
   }, {
     level: 1,
     englishWord: "lean",
-    englishSentence: "He leaned against the wall.",
-    ukrainianTranslationOfSentence: "Він нахилився на стіну.",
+    englishSentence: "He leaned against the wall",
+    ukrainianTranslationOfSentence: "Він нахилився на стіну",
     ukrainianTranslation: "нахилитися",
     idTheme: 0,
     synonyms: ["incline", "slant", "tilt"],
@@ -4859,32 +4859,32 @@ export const top1000 = [
     englishTranscription: "liːn"
   }, {
     englishTranscription: "lɜrn",
-    ukrainianTranslationOfSentence: "Вона хоче навчитися грати на фортепіано.",
+    ukrainianTranslationOfSentence: "Вона хоче навчитися грати на фортепіано",
     synonyms: ["acquire knowledge", "study", "master"],
     englishWord: "learn",
     ukrainianTranslation: "вчитися",
     idTheme: 0,
     id: 484,
     level: 1,
-    englishSentence: "She wants to learn how to play the piano."
+    englishSentence: "She wants to learn how to play the piano"
   }, {
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Вона принаймні могла би вибачитися.",
+    ukrainianTranslationOfSentence: "Вона принаймні могла би вибачитися",
     synonyms: ["at the minimum", "to a lesser extent", "not less than"],
     ukrainianTranslation: "принаймні",
-    englishSentence: "She could at least apologize.",
+    englishSentence: "She could at least apologize",
     id: 485,
     englishTranscription: "list",
     englishWord: "least"
   }, {
     synonyms: ["depart", "go away", "exit"],
     level: 1,
-    ukrainianTranslationOfSentence: "Мені потрібно завтра рано залишити.",
+    ukrainianTranslationOfSentence: "Мені потрібно завтра рано залишити",
     englishTranscription: "liv",
     englishWord: "leave",
     idTheme: 0,
-    englishSentence: "I have to leave early tomorrow.",
+    englishSentence: "I have to leave early tomorrow",
     id: 486,
     ukrainianTranslation: "залишати"
   }, {
@@ -4893,17 +4893,17 @@ export const top1000 = [
     id: 487,
     synonyms: ["guided", "directed", "showed the way"],
     englishWord: "led",
-    ukrainianTranslationOfSentence: "Вона вела команду до перемоги.",
+    ukrainianTranslationOfSentence: "Вона вела команду до перемоги",
     idTheme: 0,
-    englishSentence: "She led the team to victory.",
+    englishSentence: "She led the team to victory",
     englishTranscription: "lɛd"
   }, {
     id: 488,
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він залишив кімнату, не попрощавшись.",
+    ukrainianTranslationOfSentence: "Він залишив кімнату, не попрощавшись",
     englishWord: "left",
-    englishSentence: "He left the room without saying goodbye.",
+    englishSentence: "He left the room without saying goodbye",
     englishTranscription: "lɛft",
     synonyms: ["departed", "went away", "exited"],
     ukrainianTranslation: "залишив"
@@ -4913,15 +4913,15 @@ export const top1000 = [
     englishTranscription: "lɛɡ",
     synonyms: ["limb", "lower limb", "appendage"],
     id: 489,
-    englishSentence: "He broke his leg in the accident.",
+    englishSentence: "He broke his leg in the accident",
     level: 1,
-    ukrainianTranslationOfSentence: "Він зламав ногу в аварії.",
+    ukrainianTranslationOfSentence: "Він зламав ногу в аварії",
     englishWord: "leg"
   }, {
-    englishSentence: "I have less money than you.",
+    englishSentence: "I have less money than you",
     englishWord: "less",
     ukrainianTranslation: "менш",
-    ukrainianTranslationOfSentence: "У мене менше грошей, ніж у тебе.",
+    ukrainianTranslationOfSentence: "У мене менше грошей, ніж у тебе",
     synonyms: ["not as much", "a smaller amount"],
     idTheme: 0,
     englishTranscription: "lɛs",
@@ -4943,30 +4943,30 @@ export const top1000 = [
     englishTranscription: "ˈlɛtər",
     englishWord: "letter",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона отримала лист від свого друга.",
+    ukrainianTranslationOfSentence: "Вона отримала лист від свого друга",
     ukrainianTranslation: "лист",
     id: 492,
-    englishSentence: "She received a letter from her friend."
+    englishSentence: "She received a letter from her friend"
   }, {
     level: 1,
     id: 493,
-    ukrainianTranslationOfSentence: "Я хочу лягти та відпочити.",
+    ukrainianTranslationOfSentence: "Я хочу лягти та відпочити",
     englishWord: "lie",
     ukrainianTranslation: "лежати",
     englishTranscription: "laɪ",
     synonyms: ["recline", "rest", "be in a horizontal position"],
-    englishSentence: "I want to lie down and rest.",
+    englishSentence: "I want to lie down and rest",
     idTheme: 0
   }, {
     englishWord: "life",
     synonyms: ["existence", "being", "lifetime"],
     level: 1,
     englishTranscription: "laɪf",
-    ukrainianTranslationOfSentence: "Він прожив тривале та насичене життя.",
+    ukrainianTranslationOfSentence: "Він прожив тривале та насичене життя",
     idTheme: 0,
     id: 494,
     ukrainianTranslation: "життя",
-    englishSentence: "He has lived a long and fulfilling life."
+    englishSentence: "He has lived a long and fulfilling life"
   }, {
     idTheme: 0,
     ukrainianTranslationOfSentence: "Чи можете ви допомогти мені підняти цю важку коробку?",
@@ -4978,12 +4978,12 @@ export const top1000 = [
     id: 495,
     englishSentence: "Can you help me lift this heavy box?"
   }, {
-    englishSentence: "Turn on the light, please.",
+    englishSentence: "Turn on the light, please",
     level: 1,
     englishTranscription: "laɪt",
     idTheme: 0,
     id: 496,
-    ukrainianTranslationOfSentence: "Увімкніть світло, будь ласка.",
+    ukrainianTranslationOfSentence: "Увімкніть світло, будь ласка",
     englishWord: "light",
     ukrainianTranslation: "світло",
     synonyms: ["illumination", "brightness", "radiance"]
@@ -4992,24 +4992,24 @@ export const top1000 = [
     ukrainianTranslation: "подобатися",
     idTheme: 0,
     englishTranscription: "laɪk",
-    ukrainianTranslationOfSentence: "Мені подобається шоколадне морозиво.",
+    ukrainianTranslationOfSentence: "Мені подобається шоколадне морозиво",
     level: 1,
     synonyms: ["enjoy", "prefer", "have a fondness for"],
-    englishSentence: "I like chocolate ice cream.",
+    englishSentence: "I like chocolate ice cream",
     englishWord: "like"
   }, {
     englishTranscription: "laɪn",
     id: 498,
     level: 1,
     idTheme: 0,
-    englishSentence: "Please wait in line for your turn.",
-    ukrainianTranslationOfSentence: "Будь ласка, почекайте у черзі на свій черговий номер.",
+    englishSentence: "Please wait in line for your turn",
+    ukrainianTranslationOfSentence: "Будь ласка, почекайте у черзі на свій черговий номер",
     synonyms: ["queue", "row", "series"],
     englishWord: "line",
     ukrainianTranslation: "лінія"
   },
   {
-    ukrainianTranslationOfSentence: "Вона нанесла помаду на свої губи.",
+    ukrainianTranslationOfSentence: "Вона нанесла помаду на свої губи",
     idTheme: 0,
     englishTranscription: "lɪp",
     ukrainianTranslation: "губа",
@@ -5017,12 +5017,12 @@ export const top1000 = [
     id: 499,
     synonyms: ["labium", "kiss", "pout"],
     level: 1,
-    englishSentence: "She applied lipstick to her lips."
+    englishSentence: "She applied lipstick to her lips"
   }, {
-    englishSentence: "Please listen to what I have to say.",
+    englishSentence: "Please listen to what I have to say",
     englishWord: "listen",
     level: 1,
-    ukrainianTranslationOfSentence: "Будь ласка, послухайте, що я маю сказати.",
+    ukrainianTranslationOfSentence: "Будь ласка, послухайте, що я маю сказати",
     englishTranscription: "ˈlɪsən",
     id: 500,
     ukrainianTranslation: "слухати",
@@ -5044,10 +5044,10 @@ export const top1000 = [
     id: 502,
     englishWord: "little",
     synonyms: ["small", "tiny"],
-    ukrainianTranslationOfSentence: "У мене є маленька кішка.",
+    ukrainianTranslationOfSentence: "У мене є маленька кішка",
     level: 1,
     idTheme: 0,
-    englishSentence: "I have a little cat."
+    englishSentence: "I have a little cat"
   }, {
     englishWord: "live",
     level: 1,
@@ -5055,25 +5055,25 @@ export const top1000 = [
     englishTranscription: "lɪv",
     ukrainianTranslation: "жити",
     id: 503,
-    englishSentence: "They live in London.",
-    ukrainianTranslationOfSentence: "Вони живуть у Лондоні.",
+    englishSentence: "They live in London",
+    ukrainianTranslationOfSentence: "Вони живуть у Лондоні",
     synonyms: ["reside", "dwell"]
   }, {
     englishTranscription: "lɑk",
     synonyms: ["bolt", "fasten"],
-    englishSentence: "Please lock the door.",
+    englishSentence: "Please lock the door",
     id: 504,
     ukrainianTranslation: "замок",
     idTheme: 0,
     englishWord: "lock",
-    ukrainianTranslationOfSentence: "Будь ласка, зачини двері.",
+    ukrainianTranslationOfSentence: "Будь ласка, зачини двері",
     level: 1
   }, {
     synonyms: ["cabinet", "storage"],
-    ukrainianTranslationOfSentence: "Я залишив свої книги в шафі.",
+    ukrainianTranslationOfSentence: "Я залишив свої книги в шафі",
     englishWord: "locker",
     level: 1,
-    englishSentence: "I left my books in the locker.",
+    englishSentence: "I left my books in the locker",
     idTheme: 0,
     id: 505,
     ukrainianTranslation: "шафа",
@@ -5081,11 +5081,11 @@ export const top1000 = [
   }, {
     idTheme: 0,
     synonyms: ["lengthy", "extended"],
-    englishSentence: "She has long hair.",
+    englishSentence: "She has long hair",
     id: 506,
     level: 1,
     ukrainianTranslation: "довгий",
-    ukrainianTranslationOfSentence: "У неї довге волосся.",
+    ukrainianTranslationOfSentence: "У неї довге волосся",
     englishWord: "long",
     englishTranscription: "lɔŋ"
   }, {
@@ -5094,8 +5094,8 @@ export const top1000 = [
     englishTranscription: "lʊk",
     englishWord: "look",
     id: 507,
-    ukrainianTranslationOfSentence: "Подивись на той чудовий захід сонця.",
-    englishSentence: "Look at that beautiful sunset.",
+    ukrainianTranslationOfSentence: "Подивись на той чудовий захід сонця",
+    englishSentence: "Look at that beautiful sunset",
     idTheme: 0,
     level: 1
   }, {
@@ -5104,8 +5104,8 @@ export const top1000 = [
     englishWord: "lose",
     idTheme: 0,
     englishTranscription: "luz",
-    englishSentence: "Don't lose your keys.",
-    ukrainianTranslationOfSentence: "Не загуби свої ключі.",
+    englishSentence: "Don't lose your keys",
+    ukrainianTranslationOfSentence: "Не загуби свої ключі",
     ukrainianTranslation: "втратити",
     id: 508
   }, {
@@ -5114,15 +5114,15 @@ export const top1000 = [
     ukrainianTranslation: "загублений",
     id: 509,
     englishWord: "lost",
-    ukrainianTranslationOfSentence: "Я загубився в цьому місті.",
+    ukrainianTranslationOfSentence: "Я загубився в цьому місті",
     idTheme: 0,
     synonyms: ["missing", "misplaced"],
-    englishSentence: "I'm lost in this city."
+    englishSentence: "I'm lost in this city"
   }, {
     englishWord: "lot",
     id: 510,
-    ukrainianTranslationOfSentence: "У неї багато друзів.",
-    englishSentence: "She has a lot of friends.",
+    ukrainianTranslationOfSentence: "У неї багато друзів",
+    englishSentence: "She has a lot of friends",
     ukrainianTranslation: "багато",
     synonyms: ["abundance", "plenty"],
     idTheme: 0,
@@ -5133,16 +5133,16 @@ export const top1000 = [
     level: 1,
     englishTranscription: "laʊd",
     id: 511,
-    englishSentence: "Please turn down the loud music.",
+    englishSentence: "Please turn down the loud music",
     synonyms: ["noisy", "boisterous"],
-    ukrainianTranslationOfSentence: "Будь ласка, знизь гучну музику.",
+    ukrainianTranslationOfSentence: "Будь ласка, знизь гучну музику",
     idTheme: 0,
     ukrainianTranslation: "голосний"
   }, {
     level: 1,
-    englishSentence: "I love my family.",
+    englishSentence: "I love my family",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я кохаю свою сім'ю.",
+    ukrainianTranslationOfSentence: "Я кохаю свою сім'ю",
     synonyms: ["adore", "cherish"],
     englishTranscription: "lʌv",
     englishWord: "love",
@@ -5155,23 +5155,23 @@ export const top1000 = [
     level: 1,
     idTheme: 0,
     englishWord: "low",
-    englishSentence: "The temperature is very low.",
+    englishSentence: "The temperature is very low",
     englishTranscription: "loʊ",
-    ukrainianTranslationOfSentence: "Температура дуже низька."
+    ukrainianTranslationOfSentence: "Температура дуже низька"
   }, {
     synonyms: ["midday meal", "luncheon"],
     ukrainianTranslation: "обід",
     id: 514,
     level: 1,
-    englishSentence: "Let's have lunch together.",
+    englishSentence: "Let's have lunch together",
     englishWord: "lunch",
     englishTranscription: "lʌntʃ",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Давайте пообідаємо разом."
+    ukrainianTranslationOfSentence: "Давайте пообідаємо разом"
   }, {
     level: 1,
-    englishSentence: "He got mad at me.",
-    ukrainianTranslationOfSentence: "Він розлючився на мене.",
+    englishSentence: "He got mad at me",
+    ukrainianTranslationOfSentence: "Він розлючився на мене",
     id: 515,
     englishWord: "mad",
     idTheme: 0,
@@ -5184,9 +5184,9 @@ export const top1000 = [
     idTheme: 0,
     id: 516,
     ukrainianTranslation: "зроблений",
-    englishSentence: "This cake is made from scratch.",
+    englishSentence: "This cake is made from scratch",
     synonyms: ["created", "crafted"],
-    ukrainianTranslationOfSentence: "Цей торт зроблений з нуля.",
+    ukrainianTranslationOfSentence: "Цей торт зроблений з нуля",
     level: 1
   }, {
     ukrainianTranslationOfSentence: "Ти можеш приготувати чашку чаю?",
@@ -5206,38 +5206,38 @@ export const top1000 = [
     englishTranscription: "mæn",
     level: 1,
     idTheme: 0,
-    englishSentence: "He is a kind man.",
-    ukrainianTranslationOfSentence: "Він добрий чоловік."
+    englishSentence: "He is a kind man",
+    ukrainianTranslationOfSentence: "Він добрий чоловік"
   }, {
     ukrainianTranslation: "керувати",
     englishTranscription: "ˈmænɪdʒ",
     level: 1,
-    englishSentence: "She can manage her own business.",
+    englishSentence: "She can manage her own business",
     idTheme: 0,
     synonyms: ["control", "handle"],
     englishWord: "manage",
-    ukrainianTranslationOfSentence: "Вона може керувати своїм бізнесом.",
+    ukrainianTranslationOfSentence: "Вона може керувати своїм бізнесом",
     id: 519
   }, {
     ukrainianTranslation: "багато",
-    englishSentence: "There are many books on the shelf.",
+    englishSentence: "There are many books on the shelf",
     idTheme: 0,
     englishTranscription: "ˈmɛni",
     level: 1,
     englishWord: "many",
-    ukrainianTranslationOfSentence: "На полиці є багато книжок.",
+    ukrainianTranslationOfSentence: "На полиці є багато книжок",
     synonyms: ["numerous", "several"],
     id: 520
   }, {
     level: 1,
-    englishSentence: "He received a high mark on the test.",
+    englishSentence: "He received a high mark on the test",
     id: 521,
     englishWord: "mark",
     englishTranscription: "mɑrk",
     ukrainianTranslation: "оцінка",
     idTheme: 0,
     synonyms: ["grade", "score"],
-    ukrainianTranslationOfSentence: "Він отримав високу оцінку на тесті."
+    ukrainianTranslationOfSentence: "Він отримав високу оцінку на тесті"
   }, {
     idTheme: 0,
     id: 522,
@@ -5246,14 +5246,14 @@ export const top1000 = [
     synonyms: ["wed", "tie the knot"],
     level: 1,
     ukrainianTranslation: "одружитися",
-    englishSentence: "They plan to marry next year.",
-    ukrainianTranslationOfSentence: "Вони планують одружитися наступного року."
+    englishSentence: "They plan to marry next year",
+    ukrainianTranslationOfSentence: "Вони планують одружитися наступного року"
   }, {
     englishTranscription: "mætʃ",
     ukrainianTranslation: "матч",
-    ukrainianTranslationOfSentence: "Подивимося сьогодні вечірній футбольний матч.",
+    ukrainianTranslationOfSentence: "Подивимося сьогодні вечірній футбольний матч",
     englishWord: "match",
-    englishSentence: "Let's watch a soccer match tonight.",
+    englishSentence: "Let's watch a soccer match tonight",
     id: 523,
     level: 1,
     synonyms: ["game", "competition"],
@@ -5261,10 +5261,10 @@ export const top1000 = [
   },
   {
     ukrainianTranslation: "мати значення",
-    ukrainianTranslationOfSentence: "Немає значення, що ти носиш.",
+    ukrainianTranslationOfSentence: "Немає значення, що ти носиш",
     idTheme: 0,
     englishWord: "matter",
-    englishSentence: "It doesn't matter what you wear.",
+    englishSentence: "It doesn't matter what you wear",
     englishTranscription: "ˈmætər",
     synonyms: ["concern", "significance"],
     id: 524,
@@ -5280,20 +5280,20 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["might", "could"]
   }, {
-    ukrainianTranslationOfSentence: "Можливо, нам варто піти на прогулянку.",
+    ukrainianTranslationOfSentence: "Можливо, нам варто піти на прогулянку",
     englishWord: "maybe",
     level: 1,
     id: 526,
     ukrainianTranslation: "можливо",
     synonyms: ["perhaps", "possibly"],
-    englishSentence: "Maybe we should go for a walk.",
+    englishSentence: "Maybe we should go for a walk",
     englishTranscription: "ˈmeɪbi",
     idTheme: 0
   }, {
     englishTranscription: "mi",
     id: 527,
-    ukrainianTranslationOfSentence: "Він подарував мені книгу.",
-    englishSentence: "He gave me a book.",
+    ukrainianTranslationOfSentence: "Він подарував мені книгу",
+    englishSentence: "He gave me a book",
     synonyms: ["myself", "myself"],
     englishWord: "me",
     level: 1,
@@ -5317,51 +5317,51 @@ export const top1000 = [
     englishTranscription: "mɛnt",
     id: 529,
     englishWord: "meant",
-    ukrainianTranslationOfSentence: "Я мав на увазі зателефонувати тобі вчора.",
-    englishSentence: "I meant to call you yesterday."
+    ukrainianTranslationOfSentence: "Я мав на увазі зателефонувати тобі вчора",
+    englishSentence: "I meant to call you yesterday"
   }, {
     englishTranscription: "mit",
     englishWord: "meet",
     ukrainianTranslation: "зустрічати",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Зустрінемось у кав'ярні.",
+    ukrainianTranslationOfSentence: "Зустрінемось у кав'ярні",
     synonyms: ["encounter", "greet"],
     id: 530,
-    englishSentence: "Let's meet at the coffee shop."
+    englishSentence: "Let's meet at the coffee shop"
   }, {
-    englishSentence: "I have a good memory.",
+    englishSentence: "I have a good memory",
     level: 1,
     englishWord: "memory",
     synonyms: ["recollection", "remembrance"],
-    ukrainianTranslationOfSentence: "У мене гарна пам'ять.",
+    ukrainianTranslationOfSentence: "У мене гарна пам'ять",
     englishTranscription: "ˈmɛməri",
     idTheme: 0,
     id: 531,
     ukrainianTranslation: "пам'ять"
   }, {
-    ukrainianTranslationOfSentence: "Зовні чекають двоє чоловіків.",
+    ukrainianTranslationOfSentence: "Зовні чекають двоє чоловіків",
     englishTranscription: "mɛn",
     synonyms: ["guys", "males"],
     level: 1,
     englishWord: "men",
     id: 532,
-    englishSentence: "There are two men waiting outside.",
+    englishSentence: "There are two men waiting outside",
     idTheme: 0,
     ukrainianTranslation: "чоловіки"
   }, {
     level: 1,
     englishWord: "mention",
     englishTranscription: "ˈmɛnʃən",
-    englishSentence: "She didn't mention it to me.",
+    englishSentence: "She didn't mention it to me",
     idTheme: 0,
     synonyms: ["bring up", "refer to"],
-    ukrainianTranslationOfSentence: "Вона не згадала мені про це.",
+    ukrainianTranslationOfSentence: "Вона не згадала мені про це",
     id: 533,
     ukrainianTranslation: "згадувати"
   }, {
-    ukrainianTranslationOfSentence: "Я зустрівся з ним на вечірці.",
-    englishSentence: "I met him at the party.",
+    ukrainianTranslationOfSentence: "Я зустрівся з ним на вечірці",
+    englishSentence: "I met him at the party",
     englishWord: "met",
     level: 1,
     synonyms: ["encountered", "bumped into"],
@@ -5376,15 +5376,15 @@ export const top1000 = [
     ukrainianTranslation: "середина",
     englishTranscription: "ˈmɪdəl",
     englishWord: "middle",
-    englishSentence: "She sat in the middle of the row.",
+    englishSentence: "She sat in the middle of the row",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона сиділа посередині ряду."
+    ukrainianTranslationOfSentence: "Вона сиділа посередині ряду"
   }, {
     englishTranscription: "maɪt",
-    ukrainianTranslationOfSentence: "Він може прийти на вечірку.",
+    ukrainianTranslationOfSentence: "Він може прийти на вечірку",
     level: 1,
     id: 536,
-    englishSentence: "He might come to the party.",
+    englishSentence: "He might come to the party",
     englishWord: "might",
     ukrainianTranslation: "міг би",
     idTheme: 0,
@@ -5401,12 +5401,12 @@ export const top1000 = [
     englishSentence: "Do you mind if I open the window?"
   }, {
     level: 1,
-    englishSentence: "This book is mine.",
+    englishSentence: "This book is mine",
     ukrainianTranslation: "мій",
     synonyms: ["my own", "my possession"],
     idTheme: 0,
     englishTranscription: "maɪn",
-    ukrainianTranslationOfSentence: "Ця книга - моя.",
+    ukrainianTranslationOfSentence: "Ця книга - моя",
     englishWord: "mine",
     id: 538
   }, {
@@ -5416,23 +5416,23 @@ export const top1000 = [
     englishWord: "minute",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я буду там через хвилину.",
+    ukrainianTranslationOfSentence: "Я буду там через хвилину",
     synonyms: ["moment", "second"],
-    englishSentence: "I'll be there in a minute."
+    englishSentence: "I'll be there in a minute"
   }, {
     synonyms: ["reflection", "looking glass"],
-    englishSentence: "Look at yourself in the mirror.",
+    englishSentence: "Look at yourself in the mirror",
     idTheme: 0,
     ukrainianTranslation: "дзеркало",
-    ukrainianTranslationOfSentence: "Подивись на себе у дзеркало.",
+    ukrainianTranslationOfSentence: "Подивись на себе у дзеркало",
     englishTranscription: "ˈmɪrər",
     englishWord: "mirror",
     level: 1,
     id: 540
   }, {
-    ukrainianTranslationOfSentence: "Мені сумно за моєю сім'єю, коли я відсутня.",
+    ukrainianTranslationOfSentence: "Мені сумно за моєю сім'єю, коли я відсутня",
     englishWord: "miss",
-    englishSentence: "I miss my family when I'm away.",
+    englishSentence: "I miss my family when I'm away",
     idTheme: 0,
     ukrainianTranslation: "скучати",
     id: 541,
@@ -5441,20 +5441,20 @@ export const top1000 = [
     level: 1
   }, {
     id: 542,
-    ukrainianTranslationOfSentence: "Я дуже сильно люблю свою маму.",
+    ukrainianTranslationOfSentence: "Я дуже сильно люблю свою маму",
     englishTranscription: "mɑm",
     englishWord: "mom",
     ukrainianTranslation: "мама",
     level: 1,
-    englishSentence: "I love my mom very much.",
+    englishSentence: "I love my mom very much",
     synonyms: ["mother", "mama"],
     idTheme: 0
   }, {
     englishTranscription: "ˈmoʊmənt",
     ukrainianTranslation: "момент",
     synonyms: ["instant", "second"],
-    englishSentence: "Wait a moment, please.",
-    ukrainianTranslationOfSentence: "Зачекайте мить, будь ласка.",
+    englishSentence: "Wait a moment, please",
+    ukrainianTranslationOfSentence: "Зачекайте мить, будь ласка",
     englishWord: "moment",
     idTheme: 0,
     level: 1,
@@ -5464,27 +5464,27 @@ export const top1000 = [
     englishTranscription: "ˈmʌni",
     id: 544,
     englishWord: "money",
-    ukrainianTranslationOfSentence: "Мені потрібні гроші, щоб купити продукти.",
+    ukrainianTranslationOfSentence: "Мені потрібні гроші, щоб купити продукти",
     synonyms: ["cash", "currency"],
     level: 1,
-    englishSentence: "I need some money to buy groceries.",
+    englishSentence: "I need some money to buy groceries",
     ukrainianTranslation: "гроші"
   }, {
     englishTranscription: "mʌnθ",
-    ukrainianTranslationOfSentence: "Мій день народження в наступному місяці.",
+    ukrainianTranslationOfSentence: "Мій день народження в наступному місяці",
     ukrainianTranslation: "місяць",
     synonyms: ["lunar month", "calendar month"],
     level: 1,
     idTheme: 0,
-    englishSentence: "My birthday is in the next month.",
+    englishSentence: "My birthday is in the next month",
     englishWord: "month",
     id: 545
   }, {
     idTheme: 0,
     level: 1,
     id: 546,
-    ukrainianTranslationOfSentence: "Сьогодні вона в гарному настрої.",
-    englishSentence: "She's in a good mood today.",
+    ukrainianTranslationOfSentence: "Сьогодні вона в гарному настрої",
+    englishSentence: "She's in a good mood today",
     englishTranscription: "mud",
     synonyms: ["temperament", "spirit"],
     englishWord: "mood",
@@ -5492,32 +5492,32 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "більше",
     englishTranscription: "mɔr",
-    englishSentence: "I want more cake, please.",
+    englishSentence: "I want more cake, please",
     id: 547,
     idTheme: 0,
     synonyms: ["additional", "extra"],
     level: 1,
-    ukrainianTranslationOfSentence: "Я хочу ще торта, будь ласка.",
+    ukrainianTranslationOfSentence: "Я хочу ще торта, будь ласка",
     englishWord: "more"
   }, {
     idTheme: 0,
     synonyms: ["dawn", "sunrise"],
-    englishSentence: "I like to drink coffee in the morning.",
+    englishSentence: "I like to drink coffee in the morning",
     level: 1,
     id: 548,
     englishTranscription: "ˈmɔrnɪŋ",
     ukrainianTranslation: "ранок",
     englishWord: "morning",
-    ukrainianTranslationOfSentence: "Мені подобається пити каву вранці."
+    ukrainianTranslationOfSentence: "Мені подобається пити каву вранці"
   },
   {
     englishTranscription: "moʊst",
     ukrainianTranslation: "найбільше",
-    ukrainianTranslationOfSentence: "Він найбільш талановитий музикант, якого я знаю.",
+    ukrainianTranslationOfSentence: "Він найбільш талановитий музикант, якого я знаю",
     idTheme: 0,
     id: 549,
     synonyms: ["greatest", "top"],
-    englishSentence: "He's the most talented musician I know.",
+    englishSentence: "He's the most talented musician I know",
     englishWord: "most",
     level: 1
   }, {
@@ -5525,8 +5525,8 @@ export const top1000 = [
     englishTranscription: "ˈmʌðər",
     ukrainianTranslation: "мати",
     synonyms: ["mom", "parent"],
-    ukrainianTranslationOfSentence: "Моя мати - вчителька.",
-    englishSentence: "My mother is a teacher.",
+    ukrainianTranslationOfSentence: "Моя мати - вчителька",
+    englishSentence: "My mother is a teacher",
     idTheme: 0,
     level: 1,
     englishWord: "mother"
@@ -5537,46 +5537,46 @@ export const top1000 = [
     ukrainianTranslation: "рот",
     level: 1,
     synonyms: ["oral cavity", "jaws"],
-    englishSentence: "Open your mouth and say ahh.",
+    englishSentence: "Open your mouth and say ahh",
     englishWord: "mouth",
-    ukrainianTranslationOfSentence: "Відкрий рот і скажи аа."
+    ukrainianTranslationOfSentence: "Відкрий рот і скажи аа"
   }, {
     level: 1,
     id: 552,
-    ukrainianTranslationOfSentence: "Вони вирішили переїхати в інше місто.",
+    ukrainianTranslationOfSentence: "Вони вирішили переїхати в інше місто",
     ukrainianTranslation: "рухатися",
-    englishSentence: "They decided to move to another city.",
+    englishSentence: "They decided to move to another city",
     idTheme: 0,
     englishTranscription: "muv",
     synonyms: ["relocate", "change residence"],
     englishWord: "move"
   }, {
     ukrainianTranslation: "фільм",
-    ukrainianTranslationOfSentence: "Давайте підемо подивимося фільм сьогодні ввечері.",
+    ukrainianTranslationOfSentence: "Давайте підемо подивимося фільм сьогодні ввечері",
     id: 553,
     synonyms: ["film", "motion picture"],
     englishWord: "movie",
     level: 1,
     englishTranscription: "ˈmuvi",
-    englishSentence: "Let's go watch a movie tonight.",
+    englishSentence: "Let's go watch a movie tonight",
     idTheme: 0
   }, {
-    englishSentence: "Mr. Smith is our neighbor.",
+    englishSentence: "Mr Smith is our neighbor",
     englishTranscription: "ˈmɪstər",
-    englishWord: "mr.",
+    englishWord: "mr",
     ukrainianTranslation: "пан",
     synonyms: ["sir", "gentleman"],
     idTheme: 0,
     level: 1,
     id: 554,
-    ukrainianTranslationOfSentence: "Пан Сміт - наш сусід."
+    ukrainianTranslationOfSentence: "Пан Сміт - наш сусід"
   }, {
     ukrainianTranslation: "пані",
     level: 1,
-    ukrainianTranslationOfSentence: "Пані Джонсон - моя вчителька.",
-    englishSentence: "Mrs. Johnson is my teacher.",
+    ukrainianTranslationOfSentence: "Пані Джонсон - моя вчителька",
+    englishSentence: "Mrs Johnson is my teacher",
     synonyms: ["ma'am", "lady"],
-    englishWord: "mrs.",
+    englishWord: "mrs",
     idTheme: 0,
     id: 555,
     englishTranscription: "ˈmɪsɪz"
@@ -5584,19 +5584,19 @@ export const top1000 = [
     ukrainianTranslation: "багато",
     id: 556,
     level: 1,
-    englishSentence: "Thank you very much for your help.",
+    englishSentence: "Thank you very much for your help",
     englishTranscription: "mʌtʃ",
     synonyms: ["a lot", "greatly"],
-    ukrainianTranslationOfSentence: "Дуже дякую за вашу допомогу.",
+    ukrainianTranslationOfSentence: "Дуже дякую за вашу допомогу",
     englishWord: "much",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Будь ласка, нікому не розповідай. Мовчанка.",
+    ukrainianTranslationOfSentence: "Будь ласка, нікому не розповідай Мовчанка",
     englishWord: "mum",
     synonyms: ["silent", "quiet"],
     englishTranscription: "mʌm",
     id: 557,
-    englishSentence: "Please, don't tell anyone. Mum's the word.",
+    englishSentence: "Please, don't tell anyone Mum's the word",
     level: 1,
     ukrainianTranslation: "мовчати",
     idTheme: 0
@@ -5607,49 +5607,49 @@ export const top1000 = [
     englishWord: "mumble",
     synonyms: ["mutter", "murmur"],
     id: 558,
-    ukrainianTranslationOfSentence: "Він має звичку бубонити, коли нервується.",
+    ukrainianTranslationOfSentence: "Він має звичку бубонити, коли нервується",
     level: 1,
-    englishSentence: "He tends to mumble when he's nervous."
+    englishSentence: "He tends to mumble when he's nervous"
   }, {
     englishWord: "music",
     id: 559,
     idTheme: 0,
-    englishSentence: "I love listening to classical music.",
+    englishSentence: "I love listening to classical music",
     englishTranscription: "ˈmjuzɪk",
     ukrainianTranslation: "музика",
     level: 1,
-    ukrainianTranslationOfSentence: "Я люблю слухати класичну музику.",
+    ukrainianTranslationOfSentence: "Я люблю слухати класичну музику",
     synonyms: ["melody", "harmony"]
   }, {
     level: 1,
     idTheme: 0,
     englishWord: "must",
-    englishSentence: "You must finish your homework before dinner.",
+    englishSentence: "You must finish your homework before dinner",
     englishTranscription: "mʌst",
     id: 560,
     synonyms: ["have to", "need to"],
     ukrainianTranslation: "повинен",
-    ukrainianTranslationOfSentence: "Ти повинен закінчити своє домашнє завдання перед вечерею."
+    ukrainianTranslationOfSentence: "Ти повинен закінчити своє домашнє завдання перед вечерею"
   }, {
     id: 561,
-    englishSentence: "He muttered something under his breath.",
+    englishSentence: "He muttered something under his breath",
     synonyms: ["mumble", "grumble"],
     ukrainianTranslation: "бубоніти",
     englishWord: "mutter",
-    ukrainianTranslationOfSentence: "Він бубонив щось під носом.",
+    ukrainianTranslationOfSentence: "Він бубонив щось під носом",
     level: 1,
     idTheme: 0,
     englishTranscription: "ˈmʌtər"
   }, {
     englishTranscription: "maɪ",
-    englishSentence: "This is my house.",
+    englishSentence: "This is my house",
     id: 562,
     level: 1,
     synonyms: ["mine", "belonging to me"],
     ukrainianTranslation: "мій",
     idTheme: 0,
     englishWord: "my",
-    ukrainianTranslationOfSentence: "Це мій будинок."
+    ukrainianTranslationOfSentence: "Це мій будинок"
   }, {
     englishWord: "myself",
     level: 1,
@@ -5657,8 +5657,8 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["on my own", "personally"],
     englishTranscription: "maɪˈsɛlf",
-    englishSentence: "I did it myself.",
-    ukrainianTranslationOfSentence: "Я зробив це сам.",
+    englishSentence: "I did it myself",
+    ukrainianTranslationOfSentence: "Я зробив це сам",
     id: 563
   }, {
     level: 1,
@@ -5677,15 +5677,15 @@ export const top1000 = [
     level: 1,
     idTheme: 0,
     id: 565,
-    ukrainianTranslationOfSentence: "Поруч з нашим будинком є магазин.",
-    englishSentence: "There's a store near our house.",
+    ukrainianTranslationOfSentence: "Поруч з нашим будинком є магазин",
+    englishSentence: "There's a store near our house",
     ukrainianTranslation: "близько"
   }, {
     englishWord: "nearly",
-    ukrainianTranslationOfSentence: "Вона майже пропустила автобус.",
+    ukrainianTranslationOfSentence: "Вона майже пропустила автобус",
     ukrainianTranslation: "майже",
     id: 566,
-    englishSentence: "She nearly missed the bus.",
+    englishSentence: "She nearly missed the bus",
     idTheme: 0,
     level: 1,
     synonyms: ["almost", "practically"],
@@ -5696,36 +5696,36 @@ export const top1000 = [
     ukrainianTranslation: "шия",
     synonyms: ["throat", "nape"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він носить шарф на шиї.",
+    ukrainianTranslationOfSentence: "Він носить шарф на шиї",
     id: 567,
-    englishSentence: "He wears a scarf around his neck.",
+    englishSentence: "He wears a scarf around his neck",
     englishWord: "neck"
   }, {
-    ukrainianTranslationOfSentence: "Мені потрібна допомога з цим проектом.",
+    ukrainianTranslationOfSentence: "Мені потрібна допомога з цим проектом",
     ukrainianTranslation: "потребувати",
     level: 1,
     englishTranscription: "nid",
-    englishSentence: "I need some help with this project.",
+    englishSentence: "I need some help with this project",
     id: 568,
     englishWord: "need",
     synonyms: ["require", "want"],
     idTheme: 0
   }, {
     ukrainianTranslation: "нервовий",
-    englishSentence: "She gets nervous before exams.",
+    englishSentence: "She gets nervous before exams",
     id: 569,
     synonyms: ["anxious", "worried"],
     level: 1,
-    ukrainianTranslationOfSentence: "Вона хвилюється перед екзаменами.",
+    ukrainianTranslationOfSentence: "Вона хвилюється перед екзаменами",
     idTheme: 0,
     englishTranscription: "ˈnɜrvəs",
     englishWord: "nervous"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Я ніколи цього не казав.",
+    ukrainianTranslationOfSentence: "Я ніколи цього не казав",
     idTheme: 0,
     ukrainianTranslation: "ніколи",
-    englishSentence: "I never said that.",
+    englishSentence: "I never said that",
     id: 570,
     synonyms: ["not ever", "not at any time"],
     englishTranscription: "ˈnɛvər",
@@ -5734,40 +5734,40 @@ export const top1000 = [
     englishWord: "new",
     level: 1,
     synonyms: ["fresh", "novel"],
-    ukrainianTranslationOfSentence: "Я купив нову машину.",
-    englishSentence: "I bought a new car.",
+    ukrainianTranslationOfSentence: "Я купив нову машину",
+    englishSentence: "I bought a new car",
     englishTranscription: "nu",
     ukrainianTranslation: "новий",
     idTheme: 0,
     id: 571
   }, {
-    ukrainianTranslationOfSentence: "Наша наступна зустріч відбудеться в понеділок.",
+    ukrainianTranslationOfSentence: "Наша наступна зустріч відбудеться в понеділок",
     ukrainianTranslation: "наступний",
     id: 572,
     englishTranscription: "nɛkst",
     level: 1,
-    englishSentence: "Our next meeting is on Monday.",
+    englishSentence: "Our next meeting is on Monday",
     idTheme: 0,
     synonyms: ["upcoming", "following"],
     englishWord: "next"
   }, {
     ukrainianTranslation: "приємний",
-    englishSentence: "She's a nice person.",
+    englishSentence: "She's a nice person",
     englishWord: "nice",
     synonyms: ["pleasant", "friendly"],
     englishTranscription: "naɪs",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона приємна людина.",
+    ukrainianTranslationOfSentence: "Вона приємна людина",
     level: 1,
     id: 573
   },
   {
-    englishSentence: "I like to stargaze at night.",
+    englishSentence: "I like to stargaze at night",
     ukrainianTranslation: "ніч",
     englishTranscription: "naɪt",
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Мені подобається спостерігати за зірками вночі.",
+    ukrainianTranslationOfSentence: "Мені подобається спостерігати за зірками вночі",
     id: 574,
     synonyms: ["evening", "darkness"],
     englishWord: "night"
@@ -5776,16 +5776,16 @@ export const top1000 = [
     ukrainianTranslation: "ні",
     englishTranscription: "noʊ",
     synonyms: ["negative response", "denial"],
-    ukrainianTranslationOfSentence: "Чи можу я позичити твою ручку? Ні.",
-    englishSentence: "Can I borrow your pen? No.",
+    ukrainianTranslationOfSentence: "Чи можу я позичити твою ручку? Ні",
+    englishSentence: "Can I borrow your pen? No",
     level: 1,
     englishWord: "no",
     id: 575
   }, {
-    englishSentence: "She nodded in agreement.",
+    englishSentence: "She nodded in agreement",
     id: 576,
     englishTranscription: "nɑd",
-    ukrainianTranslationOfSentence: "Вона підтвердила, кивнувши головою.",
+    ukrainianTranslationOfSentence: "Вона підтвердила, кивнувши головою",
     level: 1,
     synonyms: ["gesture", "gesture of agreement"],
     idTheme: 0,
@@ -5794,10 +5794,10 @@ export const top1000 = [
   }, {
     level: 1,
     ukrainianTranslation: "шум",
-    englishSentence: "Please turn down the noise.",
+    englishSentence: "Please turn down the noise",
     synonyms: ["sound", "racket"],
     englishTranscription: "nɔɪz",
-    ukrainianTranslationOfSentence: "Будь ласка, зменште шум.",
+    ukrainianTranslationOfSentence: "Будь ласка, зменште шум",
     englishWord: "noise",
     idTheme: 0,
     id: 577
@@ -5806,29 +5806,29 @@ export const top1000 = [
     ukrainianTranslation: "жодний",
     level: 1,
     englishWord: "none",
-    ukrainianTranslationOfSentence: "Жодна з цих книг не моя.",
+    ukrainianTranslationOfSentence: "Жодна з цих книг не моя",
     synonyms: ["not any", "not a single one"],
     id: 578,
     idTheme: 0,
-    englishSentence: "None of the books are mine."
+    englishSentence: "None of the books are mine"
   }, {
-    englishSentence: "It's normal to feel nervous before a performance.",
+    englishSentence: "It's normal to feel nervous before a performance",
     ukrainianTranslation: "нормальний",
     idTheme: 0,
     id: 579,
-    ukrainianTranslationOfSentence: "Нормально почувати себе нервовим перед виступом.",
+    ukrainianTranslationOfSentence: "Нормально почувати себе нервовим перед виступом",
     englishWord: "normal",
     level: 1,
     englishTranscription: "ˈnɔrməl",
     synonyms: ["typical", "regular"]
   }, {
     idTheme: 0,
-    englishSentence: "She has a beautiful nose.",
+    englishSentence: "She has a beautiful nose",
     synonyms: ["snout", "nostril"],
     ukrainianTranslation: "ніс",
     level: 1,
     englishTranscription: "noʊz",
-    ukrainianTranslationOfSentence: "У неї гарний ніс.",
+    ukrainianTranslationOfSentence: "У неї гарний ніс",
     id: 580,
     englishWord: "nose"
   }, {
@@ -5836,23 +5836,23 @@ export const top1000 = [
     englishTranscription: "nɑt",
     ukrainianTranslation: "не",
     synonyms: ["negation", "denial"],
-    englishSentence: "I'm not going to the party.",
-    ukrainianTranslationOfSentence: "Я не йду на вечірку.",
+    englishSentence: "I'm not going to the party",
+    ukrainianTranslationOfSentence: "Я не йду на вечірку",
     level: 1,
     id: 581,
     englishWord: "not"
   }, {
     id: 582,
-    englishSentence: "Take note of the important details.",
+    englishSentence: "Take note of the important details",
     level: 1,
     englishWord: "note",
     englishTranscription: "noʊt",
     synonyms: ["memo", "reminder"],
     ukrainianTranslation: "примітка",
-    ukrainianTranslationOfSentence: "Зверніть увагу на важливі деталі.",
+    ukrainianTranslationOfSentence: "Зверніть увагу на важливі деталі",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Немає чого хвилюватися.",
+    ukrainianTranslationOfSentence: "Немає чого хвилюватися",
     id: 583,
     englishTranscription: "ˈnʌθɪŋ",
     ukrainianTranslation: "нічого",
@@ -5860,7 +5860,7 @@ export const top1000 = [
     englishWord: "nothing",
     level: 1,
     synonyms: ["zero", "nil"],
-    englishSentence: "There's nothing to worry about."
+    englishSentence: "There's nothing to worry about"
   }, {
     level: 1,
     ukrainianTranslation: "помічати, відзначати",
@@ -5873,14 +5873,14 @@ export const top1000 = [
     ukrainianTranslationOfSentence: "Ви помітили щось дивне?"
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Зараз я зайнятий.",
+    ukrainianTranslationOfSentence: "Зараз я зайнятий",
     englishWord: "now",
     id: 585,
     level: 1,
     englishTranscription: "naʊ",
     ukrainianTranslation: "зараз",
     synonyms: ["at this moment", "currently"],
-    englishSentence: "I'm busy right now."
+    englishSentence: "I'm busy right now"
   }, {
     englishTranscription: "ˈnʌmbər",
     synonyms: ["numeral", "digit"],
@@ -5895,14 +5895,14 @@ export const top1000 = [
     idTheme: 0,
     id: 587,
     ukrainianTranslation: "очевидно",
-    ukrainianTranslationOfSentence: "Очевидно, він не зрозумів інструкції.",
+    ukrainianTranslationOfSentence: "Очевидно, він не зрозумів інструкції",
     synonyms: ["clearly", "evidently"],
     level: 1,
     englishWord: "obviously",
-    englishSentence: "Obviously, he didn't understand the instructions.",
+    englishSentence: "Obviously, he didn't understand the instructions",
     englishTranscription: "ˈɑbvɪəsli"
   }, {
-    englishSentence: "A cup of tea, please.",
+    englishSentence: "A cup of tea, please",
     id: 588,
     level: 1,
     synonyms: ["from", "about"],
@@ -5910,45 +5910,45 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "əv",
     englishWord: "of",
-    ukrainianTranslationOfSentence: "Чашка чаю, будь ласка."
+    ukrainianTranslationOfSentence: "Чашка чаю, будь ласка"
   }, {
     ukrainianTranslation: "вимкнено",
     synonyms: ["deactivated", "switched off"],
     englishWord: "off",
-    ukrainianTranslationOfSentence: "Будь ласка, вимкніть світло.",
+    ukrainianTranslationOfSentence: "Будь ласка, вимкніть світло",
     level: 1,
-    englishSentence: "Please turn off the lights.",
+    englishSentence: "Please turn off the lights",
     idTheme: 0,
     id: 589,
     englishTranscription: "ɔf"
   }, {
     englishWord: "offer",
     ukrainianTranslation: "пропозиція",
-    englishSentence: "Thank you for your offer.",
+    englishSentence: "Thank you for your offer",
     level: 1,
     englishTranscription: "ˈɔfər",
     id: 590,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Дякую за вашу пропозицію.",
+    ukrainianTranslationOfSentence: "Дякую за вашу пропозицію",
     synonyms: ["proposal", "proposition"]
   }, {
     englishWord: "office",
     idTheme: 0,
     id: 591,
-    englishSentence: "I work in an office downtown.",
+    englishSentence: "I work in an office downtown",
     synonyms: ["workplace", "bureau"],
     level: 1,
     englishTranscription: "ˈɔfɪs",
     ukrainianTranslation: "офіс",
-    ukrainianTranslationOfSentence: "Я працюю в офісі в центрі міста."
+    ukrainianTranslationOfSentence: "Я працюю в офісі в центрі міста"
   }, {
-    ukrainianTranslationOfSentence: "Він часто гуляє ввечері.",
+    ukrainianTranslationOfSentence: "Він часто гуляє ввечері",
     synonyms: ["frequently", "regularly"],
     ukrainianTranslation: "часто",
     englishTranscription: "ˈɔfən",
     idTheme: 0,
     id: 592,
-    englishSentence: "He often goes for a walk in the evening.",
+    englishSentence: "He often goes for a walk in the evening",
     englishWord: "often",
     level: 1
   }, {
@@ -5973,11 +5973,11 @@ export const top1000 = [
     level: 1
   }, {
     ukrainianTranslation: "старий",
-    englishSentence: "My grandparents have an old house.",
+    englishSentence: "My grandparents have an old house",
     englishTranscription: "oʊld",
     id: 595,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "У моїх дідуся і бабусі є старий будинок.",
+    ukrainianTranslationOfSentence: "У моїх дідуся і бабусі є старий будинок",
     englishWord: "old",
     level: 1,
     synonyms: ["aged", "ancient"]
@@ -5987,27 +5987,27 @@ export const top1000 = [
     englishWord: "on",
     ukrainianTranslation: "на",
     level: 1,
-    ukrainianTranslationOfSentence: "Книга лежить на столі.",
+    ukrainianTranslationOfSentence: "Книга лежить на столі",
     englishTranscription: "ɑn",
     synonyms: ["upon", "atop"],
-    englishSentence: "The book is on the table."
+    englishSentence: "The book is on the table"
   }, {
     id: 597,
-    englishSentence: "I visited Paris once.",
+    englishSentence: "I visited Paris once",
     englishWord: "once",
-    ukrainianTranslationOfSentence: "Я одного разу відвідав Париж.",
+    ukrainianTranslationOfSentence: "Я одного разу відвідав Париж",
     idTheme: 0,
     englishTranscription: "wʌns",
     synonyms: ["one time", "previously"],
     level: 1,
     ukrainianTranslation: "одного разу"
   }, {
-    ukrainianTranslationOfSentence: "У мене є одна сестра.",
+    ukrainianTranslationOfSentence: "У мене є одна сестра",
     ukrainianTranslation: "один",
     idTheme: 0,
     englishTranscription: "wʌn",
     level: 1,
-    englishSentence: "I have one sister.",
+    englishSentence: "I have one sister",
     id: 598,
     synonyms: ["single", "solitary"],
     englishWord: "one"
@@ -6019,19 +6019,19 @@ export const top1000 = [
     synonyms: ["solely", "exclusively"],
     englishWord: "only",
     level: 1,
-    englishSentence: "She's the only person I trust.",
+    englishSentence: "She's the only person I trust",
     id: 599,
-    ukrainianTranslationOfSentence: "Вона єдиний чоловік, якому я довіряю."
+    ukrainianTranslationOfSentence: "Вона єдиний чоловік, якому я довіряю"
   }, {
     idTheme: 0,
     englishTranscription: "ˈɑntu",
-    englishSentence: "The cat jumped onto the bed.",
+    englishSentence: "The cat jumped onto the bed",
     synonyms: ["on top of", "upon"],
     level: 1,
     ukrainianTranslation: "на",
     id: 600,
     englishWord: "onto",
-    ukrainianTranslationOfSentence: "Кіт стрибнув на ліжко."
+    ukrainianTranslationOfSentence: "Кіт стрибнув на ліжко"
   }, {
     idTheme: 0,
     id: 601,
@@ -6053,10 +6053,10 @@ export const top1000 = [
     id: 602,
     englishWord: "or"
   }, {
-    englishSentence: "I'd like to place an order for pizza.",
+    englishSentence: "I'd like to place an order for pizza",
     englishWord: "order",
     level: 1,
-    ukrainianTranslationOfSentence: "Я хотів би замовити піцу.",
+    ukrainianTranslationOfSentence: "Я хотів би замовити піцу",
     ukrainianTranslation: "замовлення",
     synonyms: ["request", "purchase"],
     idTheme: 0,
@@ -6073,11 +6073,11 @@ export const top1000 = [
     synonyms: ["different", "alternative"],
     englishWord: "other"
   }, {
-    ukrainianTranslationOfSentence: "Наш будинок синій.",
+    ukrainianTranslationOfSentence: "Наш будинок синій",
     level: 1,
     englishTranscription: "aʊr",
     englishWord: "our",
-    englishSentence: "Our house is blue.",
+    englishSentence: "Our house is blue",
     ukrainianTranslation: "наш",
     id: 605,
     synonyms: ["belonging to us", "of us"],
@@ -6086,14 +6086,14 @@ export const top1000 = [
     level: 1,
     ukrainianTranslation: "назовні",
     englishWord: "out",
-    englishSentence: "Let's go out for a walk.",
-    ukrainianTranslationOfSentence: "Підемо погуляти назовні.",
+    englishSentence: "Let's go out for a walk",
+    ukrainianTranslationOfSentence: "Підемо погуляти назовні",
     idTheme: 0,
     synonyms: ["outside", "outdoors"],
     englishTranscription: "aʊt",
     id: 606
   }, {
-    englishSentence: "It's cold outside.",
+    englishSentence: "It's cold outside",
     synonyms: ["exterior", "outdoors"],
     id: 607,
     englishWord: "outside",
@@ -6101,40 +6101,40 @@ export const top1000 = [
     level: 1,
     ukrainianTranslation: "зовні",
     englishTranscription: "ˈaʊtˈsaɪd",
-    ukrainianTranslationOfSentence: "Зовні холодно."
+    ukrainianTranslationOfSentence: "Зовні холодно"
   }, {
     level: 1,
     synonyms: ["above", "on top of"],
     englishWord: "over",
-    ukrainianTranslationOfSentence: "Літак пролетів над горами.",
+    ukrainianTranslationOfSentence: "Літак пролетів над горами",
     ukrainianTranslation: "над",
     idTheme: 0,
     englishTranscription: "ˈoʊvər",
-    englishSentence: "The plane flew over the mountains.",
+    englishSentence: "The plane flew over the mountains",
     id: 608
   }, {
     englishWord: "own",
     ukrainianTranslation: "свій",
     englishTranscription: "oʊn",
     level: 1,
-    ukrainianTranslationOfSentence: "Він збудував свій власний будинок.",
+    ukrainianTranslationOfSentence: "Він збудував свій власний будинок",
     id: 609,
     synonyms: ["personal", "individual"],
-    englishSentence: "He built his own house.",
+    englishSentence: "He built his own house",
     idTheme: 0
   }, {
     ukrainianTranslation: "пакет, пачка",
     level: 1,
-    ukrainianTranslationOfSentence: "Мені потрібно купити пачку олівців.",
+    ukrainianTranslationOfSentence: "Мені потрібно купити пачку олівців",
     id: 610,
     idTheme: 0,
     englishTranscription: "pæk",
     englishWord: "pack",
     synonyms: ["package", "bundle"],
-    englishSentence: "I need to buy a pack of pencils."
+    englishSentence: "I need to buy a pack of pencils"
   }, {
-    ukrainianTranslationOfSentence: "У мене болить голова.",
-    englishSentence: "I have a headache.",
+    ukrainianTranslationOfSentence: "У мене болить голова",
+    englishSentence: "I have a headache",
     synonyms: ["ache", "discomfort"],
     level: 1,
     englishTranscription: "peɪn",
@@ -6148,26 +6148,26 @@ export const top1000 = [
     ukrainianTranslation: "фарбувати",
     synonyms: ["color", "decorate"],
     englishWord: "paint",
-    englishSentence: "I want to paint the walls blue.",
+    englishSentence: "I want to paint the walls blue",
     id: 612,
-    ukrainianTranslationOfSentence: "Я хочу пофарбувати стіни у синій колір.",
+    ukrainianTranslationOfSentence: "Я хочу пофарбувати стіни у синій колір",
     idTheme: 0
   }, {
     idTheme: 0,
     synonyms: ["couple", "set"],
-    englishSentence: "I need a new pair of shoes.",
+    englishSentence: "I need a new pair of shoes",
     englishTranscription: "pɛr",
-    ukrainianTranslationOfSentence: "Мені потрібна нова пара взуття.",
+    ukrainianTranslationOfSentence: "Мені потрібна нова пара взуття",
     id: 613,
     englishWord: "pair",
     ukrainianTranslation: "пара",
     level: 1
   }, {
     englishWord: "pants",
-    ukrainianTranslationOfSentence: "Він купив нові штани.",
+    ukrainianTranslationOfSentence: "Він купив нові штани",
     level: 1,
     synonyms: ["trousers", "slacks"],
-    englishSentence: "He bought a new pair of pants.",
+    englishSentence: "He bought a new pair of pants",
     id: 614,
     englishTranscription: "pænts",
     ukrainianTranslation: "штани",
@@ -6180,31 +6180,31 @@ export const top1000 = [
     id: 615,
     synonyms: ["sheet", "document"],
     englishTranscription: "ˈpeɪpər",
-    ukrainianTranslationOfSentence: "Передайте мені аркуш паперу, будь ласка.",
+    ukrainianTranslationOfSentence: "Передайте мені аркуш паперу, будь ласка",
     englishSentence: "Can you pass me a sheet of paper?"
   }, {
     synonyms: ["mother and father", "guardians"],
     id: 616,
     level: 1,
     englishTranscription: "ˈpɛrənts",
-    ukrainianTranslationOfSentence: "Мої батьки приїдуть в гості наступного тижня.",
+    ukrainianTranslationOfSentence: "Мої батьки приїдуть в гості наступного тижня",
     englishWord: "parents",
-    englishSentence: "My parents are coming to visit next week.",
+    englishSentence: "My parents are coming to visit next week",
     ukrainianTranslation: "батьки",
     idTheme: 0
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Підемо погуляти в парк.",
+    ukrainianTranslationOfSentence: "Підемо погуляти в парк",
     englishTranscription: "pɑrk",
     englishWord: "park",
     idTheme: 0,
     id: 617,
     synonyms: ["garden", "playground"],
-    englishSentence: "Let's go for a walk in the park.",
+    englishSentence: "Let's go for a walk in the park",
     ukrainianTranslation: "парк"
   }, {
-    ukrainianTranslationOfSentence: "Я грав невелику роль у виставі.",
-    englishSentence: "I played a small part in the play.",
+    ukrainianTranslationOfSentence: "Я грав невелику роль у виставі",
+    englishSentence: "I played a small part in the play",
     ukrainianTranslation: "частина",
     englishTranscription: "pɑrt",
     id: 618,
@@ -6231,7 +6231,7 @@ export const top1000 = [
     ukrainianTranslation: "передавати",
     englishSentence: "Can you pass me the salt, please?",
     synonyms: ["give", "transfer"],
-    ukrainianTranslationOfSentence: "Передайте мені сіль, будь ласка."
+    ukrainianTranslationOfSentence: "Передайте мені сіль, будь ласка"
   }, {
     ukrainianTranslation: "минулий",
     englishWord: "past",
@@ -6240,17 +6240,17 @@ export const top1000 = [
     englishTranscription: "pæst",
     synonyms: ["previous", "former"],
     level: 1,
-    ukrainianTranslationOfSentence: "Ми пройшли повз музей.",
-    englishSentence: "We walked past the museum."
+    ukrainianTranslationOfSentence: "Ми пройшли повз музей",
+    englishSentence: "We walked past the museum"
   }, {
     englishWord: "pause",
-    ukrainianTranslationOfSentence: "Давай зробимо паузу і подихаємо.",
+    ukrainianTranslationOfSentence: "Давай зробимо паузу і подихаємо",
     synonyms: ["break", "halt"],
     englishTranscription: "pɔz",
     level: 1,
     ukrainianTranslation: "пауза",
     id: 622,
-    englishSentence: "Let's take a pause and catch our breath.",
+    englishSentence: "Let's take a pause and catch our breath",
     idTheme: 0
   }, {
     idTheme: 0,
@@ -6265,44 +6265,44 @@ export const top1000 = [
   },
   {
     englishWord: "people",
-    ukrainianTranslationOfSentence: "На концерті було багато людей.",
+    ukrainianTranslationOfSentence: "На концерті було багато людей",
     englishTranscription: "ˈpipəl",
     idTheme: 0,
     synonyms: ["individuals", "individuals"],
     level: 1,
     id: 624,
-    englishSentence: "There were many people at the concert.",
+    englishSentence: "There were many people at the concert",
     ukrainianTranslation: "люди"
   }, {
     level: 1,
     englishWord: "perfect",
-    ukrainianTranslationOfSentence: "Вона зробила ідеальну роботу над проектом.",
+    ukrainianTranslationOfSentence: "Вона зробила ідеальну роботу над проектом",
     id: 625,
     englishTranscription: "ˈpɜrfɪkt",
     synonyms: ["flawless", "ideal"],
     idTheme: 0,
-    englishSentence: "She did a perfect job on the project.",
+    englishSentence: "She did a perfect job on the project",
     ukrainianTranslation: "ідеальний"
   }, {
     level: 1,
     englishWord: "perhaps",
     idTheme: 0,
     synonyms: ["maybe", "possibly"],
-    englishSentence: "Perhaps we should ask for directions.",
+    englishSentence: "Perhaps we should ask for directions",
     englishTranscription: "pərˈhæps",
     ukrainianTranslation: "можливо",
-    ukrainianTranslationOfSentence: "Можливо, ми повинні запитати про напрямок.",
+    ukrainianTranslationOfSentence: "Можливо, ми повинні запитати про напрямок",
     id: 626
   }, {
     id: 627,
-    ukrainianTranslationOfSentence: "Він дуже люб'язна особа.",
+    ukrainianTranslationOfSentence: "Він дуже люб'язна особа",
     ukrainianTranslation: "особа",
     synonyms: ["individual", "individual"],
     level: 1,
     englishTranscription: "ˈpɜrsən",
     idTheme: 0,
     englishWord: "person",
-    englishSentence: "He's a very kind person."
+    englishSentence: "He's a very kind person"
   }, {
     idTheme: 0,
     ukrainianTranslationOfSentence: "Чи можу я використати ваш телефон, щоб зателефонувати?",
@@ -6317,8 +6317,8 @@ export const top1000 = [
     englishTranscription: "pɪk",
     idTheme: 0,
     synonyms: ["choose", "select"],
-    ukrainianTranslationOfSentence: "Я не можу вирішити. Чи можете ви допомогти мені вибрати?",
-    englishSentence: "I can't decide. Can you help me pick?",
+    ukrainianTranslationOfSentence: "Я не можу вирішити Чи можете ви допомогти мені вибрати?",
+    englishSentence: "I can't decide Can you help me pick?",
     level: 1,
     ukrainianTranslation: "вибирати",
     englishWord: "pick",
@@ -6326,13 +6326,13 @@ export const top1000 = [
   }, {
     englishTranscription: "ˈpɪktʃər",
     idTheme: 0,
-    englishSentence: "I took a picture of the sunset.",
+    englishSentence: "I took a picture of the sunset",
     englishWord: "picture",
     ukrainianTranslation: "зображення",
     id: 630,
     level: 1,
     synonyms: ["image", "photo"],
-    ukrainianTranslationOfSentence: "Я зробив фотографію заходу сонця."
+    ukrainianTranslationOfSentence: "Я зробив фотографію заходу сонця"
   }, {
     level: 1,
     englishSentence: "Can I have a piece of cake?",
@@ -6346,19 +6346,19 @@ export const top1000 = [
   }, {
     synonyms: ["rosy", "blush"],
     englishTranscription: "pɪŋk",
-    englishSentence: "She wore a pink dress to the party.",
+    englishSentence: "She wore a pink dress to the party",
     idTheme: 0,
     ukrainianTranslation: "рожевий",
-    ukrainianTranslationOfSentence: "Вона одягла рожеву сукню на вечірку.",
+    ukrainianTranslationOfSentence: "Вона одягла рожеву сукню на вечірку",
     id: 632,
     englishWord: "pink",
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Мені потрібно ссати.",
+    ukrainianTranslationOfSentence: "Мені потрібно ссати",
     englishWord: "piss",
     synonyms: ["urinate", "pee"],
     id: 633,
-    englishSentence: "I need to piss.",
+    englishSentence: "I need to piss",
     idTheme: 0,
     englishTranscription: "pɪs",
     ukrainianTranslation: "ссати",
@@ -6367,9 +6367,9 @@ export const top1000 = [
     level: 1,
     ukrainianTranslation: "місце",
     id: 634,
-    englishSentence: "Let's find a quiet place to eat.",
+    englishSentence: "Let's find a quiet place to eat",
     englishTranscription: "pleɪs",
-    ukrainianTranslationOfSentence: "Знайдемо тихе місце, щоб поїсти.",
+    ukrainianTranslationOfSentence: "Знайдемо тихе місце, щоб поїсти",
     englishWord: "place",
     synonyms: ["location", "spot"],
     idTheme: 0
@@ -6399,28 +6399,28 @@ export const top1000 = [
     level: 1,
     ukrainianTranslation: "будь ласка",
     englishWord: "please",
-    ukrainianTranslationOfSentence: "Передайте мені сіль, будь ласка.",
+    ukrainianTranslationOfSentence: "Передайте мені сіль, будь ласка",
     englishTranscription: "pliz",
     idTheme: 0,
     id: 637
   }, {
     ukrainianTranslation: "кишеня",
     synonyms: ["pouch", "sack"],
-    englishSentence: "He found some money in his pocket.",
+    englishSentence: "He found some money in his pocket",
     idTheme: 0,
     id: 638,
     englishTranscription: "ˈpɑkɪt",
     englishWord: "pocket",
     level: 1,
-    ukrainianTranslationOfSentence: "Він знайшов трохи грошей у своїй кишені."
+    ukrainianTranslationOfSentence: "Він знайшов трохи грошей у своїй кишені"
   }, {
-    ukrainianTranslationOfSentence: "Вона показала на карту, щоб показати мені дорогу.",
+    ukrainianTranslationOfSentence: "Вона показала на карту, щоб показати мені дорогу",
     id: 639,
     idTheme: 0,
     synonyms: ["indicate", "direct"],
     englishTranscription: "pɔɪnt",
     englishWord: "point",
-    englishSentence: "She pointed at the map to show me the way.",
+    englishSentence: "She pointed at the map to show me the way",
     level: 1,
     ukrainianTranslation: "вказувати"
   }, {
@@ -6428,30 +6428,30 @@ export const top1000 = [
     id: 640,
     ukrainianTranslation: "поліція",
     synonyms: ["law enforcement", "cops"],
-    ukrainianTranslationOfSentence: "Я бачив, як поліцейська машина проїжджала повз.",
-    englishSentence: "I saw a police car driving by.",
+    ukrainianTranslationOfSentence: "Я бачив, як поліцейська машина проїжджала повз",
+    englishSentence: "I saw a police car driving by",
     englishTranscription: "pəˈlis",
     idTheme: 0,
     englishWord: "police"
   }, {
-    englishSentence: "The balloon popped when I touched it.",
+    englishSentence: "The balloon popped when I touched it",
     idTheme: 0,
     level: 1,
     englishWord: "pop",
     englishTranscription: "pɑp",
     synonyms: ["burst", "explode"],
-    ukrainianTranslationOfSentence: "Повітряна куля лопнула, коли я торкнувся її.",
+    ukrainianTranslationOfSentence: "Повітряна куля лопнула, коли я торкнувся її",
     ukrainianTranslation: "зривати",
     id: 641
   }, {
-    ukrainianTranslationOfSentence: "Він взяв нову посаду на роботі.",
+    ukrainianTranslationOfSentence: "Він взяв нову посаду на роботі",
     level: 1,
     id: 642,
     ukrainianTranslation: "положення",
     englishWord: "position",
     idTheme: 0,
     synonyms: ["location", "placement"],
-    englishSentence: "He took up a new position at work.",
+    englishSentence: "He took up a new position at work",
     englishTranscription: "pəˈzɪʃən"
   }, {
     ukrainianTranslation: "можливий",
@@ -6470,32 +6470,32 @@ export const top1000 = [
     idTheme: 0,
     level: 1,
     id: 644,
-    englishSentence: "The city lost power during the storm.",
-    ukrainianTranslationOfSentence: "Місто втратило електроенергію під час бурі.",
+    englishSentence: "The city lost power during the storm",
+    ukrainianTranslationOfSentence: "Місто втратило електроенергію під час бурі",
     englishTranscription: "ˈpaʊər"
   }, {
     synonyms: ["virtually", "essentially"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я практично закінчив проект.",
+    ukrainianTranslationOfSentence: "Я практично закінчив проект",
     id: 645,
     level: 1,
     englishTranscription: "ˈpræktɪkəli",
-    englishSentence: "I've practically finished the project.",
+    englishSentence: "I've practically finished the project",
     ukrainianTranslation: "практично",
     englishWord: "practically"
   }, {
     ukrainianTranslation: "присутній",
-    ukrainianTranslationOfSentence: "Вона не була присутня на зустрічі.",
+    ukrainianTranslationOfSentence: "Вона не була присутня на зустрічі",
     level: 1,
-    englishSentence: "She wasn't present at the meeting.",
+    englishSentence: "She wasn't present at the meeting",
     englishWord: "present",
     englishTranscription: "ˈprɛzənt",
     id: 646,
     synonyms: ["here", "available"],
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Натисніть кнопку, щоб запустити машину.",
-    englishSentence: "Press the button to start the machine.",
+    ukrainianTranslationOfSentence: "Натисніть кнопку, щоб запустити машину",
+    englishSentence: "Press the button to start the machine",
     englishTranscription: "prɛs",
     level: 1,
     id: 647,
@@ -6506,12 +6506,12 @@ export const top1000 = [
   }, {
     idTheme: 0,
     ukrainianTranslation: "притворятися",
-    ukrainianTranslationOfSentence: "Давайте притворимося піратами.",
+    ukrainianTranslationOfSentence: "Давайте притворимося піратами",
     id: 648,
     englishWord: "pretend",
     englishTranscription: "prɪˈtɛnd",
     synonyms: ["feign", "simulate"],
-    englishSentence: "Let's pretend to be pirates.",
+    englishSentence: "Let's pretend to be pirates",
     level: 1
   },
   {
@@ -6520,8 +6520,8 @@ export const top1000 = [
     id: 649,
     synonyms: ["beautiful", "attractive"],
     englishTranscription: "ˈprɪti",
-    ukrainianTranslationOfSentence: "Вона виглядала гарно у своїй новій сукні.",
-    englishSentence: "She looked pretty in her new dress.",
+    ukrainianTranslationOfSentence: "Вона виглядала гарно у своїй новій сукні",
+    englishSentence: "She looked pretty in her new dress",
     idTheme: 0,
     englishWord: "pretty"
   }, {
@@ -6531,29 +6531,29 @@ export const top1000 = [
     englishWord: "probably",
     ukrainianTranslation: "ймовірно",
     id: 650,
-    ukrainianTranslationOfSentence: "Ймовірно, завтра піде дощ.",
+    ukrainianTranslationOfSentence: "Ймовірно, завтра піде дощ",
     level: 1,
-    englishSentence: "It will probably rain tomorrow."
+    englishSentence: "It will probably rain tomorrow"
   }, {
-    ukrainianTranslationOfSentence: "У мене виникла проблема з комп'ютером.",
+    ukrainianTranslationOfSentence: "У мене виникла проблема з комп'ютером",
     englishWord: "problem",
     idTheme: 0,
     ukrainianTranslation: "проблема",
     level: 1,
     id: 651,
     englishTranscription: "ˈprɑbləm",
-    englishSentence: "I'm having a problem with my computer.",
+    englishSentence: "I'm having a problem with my computer",
     synonyms: ["issue", "difficulty"]
   }, {
     englishWord: "promise",
-    englishSentence: "He made a promise to always be there for her.",
+    englishSentence: "He made a promise to always be there for her",
     englishTranscription: "ˈprɑmɪs",
     level: 1,
     id: 652,
     idTheme: 0,
     synonyms: ["pledge", "commitment"],
     ukrainianTranslation: "обіцянка",
-    ukrainianTranslationOfSentence: "Він дав обіцянку завжди бути поруч з нею."
+    ukrainianTranslationOfSentence: "Він дав обіцянку завжди бути поруч з нею"
   }, {
     englishWord: "pull",
     id: 653,
@@ -6567,27 +6567,27 @@ export const top1000 = [
   }, {
     englishWord: "punch",
     id: 654,
-    ukrainianTranslationOfSentence: "Він ударив стіну злістю.",
+    ukrainianTranslationOfSentence: "Він ударив стіну злістю",
     level: 1,
     englishTranscription: "pʌntʃ",
-    englishSentence: "He punched the wall in anger.",
+    englishSentence: "He punched the wall in anger",
     idTheme: 0,
     ukrainianTranslation: "бити",
     synonyms: ["hit", "strike"]
   }, {
     englishWord: "push",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Тисніть на двері, щоб відкрити її.",
+    ukrainianTranslationOfSentence: "Тисніть на двері, щоб відкрити її",
     synonyms: ["press", "shove"],
-    englishSentence: "Push the door to open it.",
+    englishSentence: "Push the door to open it",
     level: 1,
     ukrainianTranslation: "тиснути",
     englishTranscription: "pʊʃ",
     id: 655
   }, {
     synonyms: ["place", "set"],
-    ukrainianTranslationOfSentence: "Покладіть книги на полицю.",
-    englishSentence: "Put the books on the shelf.",
+    ukrainianTranslationOfSentence: "Покладіть книги на полицю",
+    englishSentence: "Put the books on the shelf",
     englishWord: "put",
     idTheme: 0,
     ukrainianTranslation: "класти",
@@ -6601,25 +6601,25 @@ export const top1000 = [
     englishTranscription: "ˈkwɛstʃən",
     ukrainianTranslation: "питання",
     level: 1,
-    ukrainianTranslationOfSentence: "У мене є питання.",
-    englishSentence: "I have a question.",
+    ukrainianTranslationOfSentence: "У мене є питання",
+    englishSentence: "I have a question",
     synonyms: ["inquiry", "query"]
   }, {
     idTheme: 0,
     level: 1,
     englishWord: "quick",
-    englishSentence: "She gave a quick answer.",
+    englishSentence: "She gave a quick answer",
     synonyms: ["fast", "rapid"],
     ukrainianTranslation: "швидкий",
     id: 658,
     englishTranscription: "kwɪk",
-    ukrainianTranslationOfSentence: "Вона дала швидку відповідь."
+    ukrainianTranslationOfSentence: "Вона дала швидку відповідь"
   }, {
     englishTranscription: "ˈkwɪkli",
-    ukrainianTranslationOfSentence: "Будь ласка, зробіть це швидко.",
+    ukrainianTranslationOfSentence: "Будь ласка, зробіть це швидко",
     englishWord: "quickly",
     id: 659,
-    englishSentence: "Please do it quickly.",
+    englishSentence: "Please do it quickly",
     idTheme: 0,
     synonyms: ["rapidly", "swiftly"],
     level: 1,
@@ -6629,17 +6629,17 @@ export const top1000 = [
     ukrainianTranslation: "тихий",
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Будь ласка, будьте тихими.",
+    ukrainianTranslationOfSentence: "Будь ласка, будьте тихими",
     englishWord: "quiet",
     id: 660,
     synonyms: ["silent", "peaceful"],
-    englishSentence: "Be quiet, please."
+    englishSentence: "Be quiet, please"
   }, {
     ukrainianTranslation: "тихо",
     synonyms: ["softly", "silently"],
     id: 661,
-    englishSentence: "She whispered quietly.",
-    ukrainianTranslationOfSentence: "Вона шепотіла тихо.",
+    englishSentence: "She whispered quietly",
+    ukrainianTranslationOfSentence: "Вона шепотіла тихо",
     englishWord: "quietly",
     level: 1,
     englishTranscription: "ˈkwaɪətli",
@@ -6647,16 +6647,16 @@ export const top1000 = [
   }, {
     level: 1,
     synonyms: ["fairly", "rather"],
-    englishSentence: "It's quite hot outside.",
+    englishSentence: "It's quite hot outside",
     ukrainianTranslation: "досить",
     id: 662,
     idTheme: 0,
     englishTranscription: "kwaɪt",
     englishWord: "quite",
-    ukrainianTranslationOfSentence: "Зовні досить спекотно."
+    ukrainianTranslationOfSentence: "Зовні досить спекотно"
   }, {
-    englishSentence: "He won the race.",
-    ukrainianTranslationOfSentence: "Він виграв гонку.",
+    englishSentence: "He won the race",
+    ukrainianTranslationOfSentence: "Він виграв гонку",
     synonyms: ["competition", "contest"],
     ukrainianTranslation: "гонка",
     englishTranscription: "reɪs",
@@ -6669,36 +6669,36 @@ export const top1000 = [
     synonyms: ["precipitation", "shower"],
     id: 664,
     englishWord: "rain",
-    englishSentence: "It's raining outside.",
+    englishSentence: "It's raining outside",
     englishTranscription: "reɪn",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Зовні йде дощ.",
+    ukrainianTranslationOfSentence: "Зовні йде дощ",
     ukrainianTranslation: "дощ"
   }, {
     englishTranscription: "reɪz",
     ukrainianTranslation: "піднімати",
     level: 1,
     id: 665,
-    englishSentence: "He raised his hand to ask a question.",
-    ukrainianTranslationOfSentence: "Він підняв руку, щоб задати питання.",
+    englishSentence: "He raised his hand to ask a question",
+    ukrainianTranslationOfSentence: "Він підняв руку, щоб задати питання",
     synonyms: ["lift", "elevate"],
     englishWord: "raise",
     idTheme: 0
   }, {
     englishTranscription: "ræn",
-    ukrainianTranslationOfSentence: "Вона побігла, щоб схопити автобус.",
+    ukrainianTranslationOfSentence: "Вона побігла, щоб схопити автобус",
     englishWord: "ran",
     level: 1,
     id: 666,
-    englishSentence: "She ran to catch the bus.",
+    englishSentence: "She ran to catch the bus",
     ukrainianTranslation: "бігти",
     synonyms: ["sprinted", "dashed"],
     idTheme: 0
   }, {
     englishTranscription: "ræŋ",
-    englishSentence: "The phone rang, but nobody answered.",
+    englishSentence: "The phone rang, but nobody answered",
     englishWord: "rang",
-    ukrainianTranslationOfSentence: "Телефон дзвонив, але ніхто не відповів.",
+    ukrainianTranslationOfSentence: "Телефон дзвонив, але ніхто не відповів",
     level: 1,
     id: 667,
     idTheme: 0,
@@ -6708,8 +6708,8 @@ export const top1000 = [
     englishTranscription: "ˈræðər",
     ukrainianTranslation: "дещо",
     synonyms: ["instead", "preferably"],
-    englishSentence: "I'd rather stay at home tonight.",
-    ukrainianTranslationOfSentence: "Я більше хотів би залишитися вдома сьогодні вечором.",
+    englishSentence: "I'd rather stay at home tonight",
+    ukrainianTranslationOfSentence: "Я більше хотів би залишитися вдома сьогодні вечором",
     id: 668,
     idTheme: 0,
     level: 1,
@@ -6721,18 +6721,18 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["achieve", "attain"],
     englishWord: "reach",
-    englishSentence: "He reached for the book on the top shelf.",
-    ukrainianTranslationOfSentence: "Він простягнув руку до книги на верхній полиці.",
+    englishSentence: "He reached for the book on the top shelf",
+    ukrainianTranslationOfSentence: "Він простягнув руку до книги на верхній полиці",
     englishTranscription: "ritʃ"
   }, {
     ukrainianTranslation: "читати",
     level: 1,
     idTheme: 0,
     englishTranscription: "rid",
-    englishSentence: "I love to read books.",
+    englishSentence: "I love to read books",
     id: 670,
     synonyms: ["peruse", "scan"],
-    ukrainianTranslationOfSentence: "Я люблю читати книги.",
+    ukrainianTranslationOfSentence: "Я люблю читати книги",
     englishWord: "read"
   }, {
     synonyms: ["prepared", "set"],
@@ -6748,21 +6748,21 @@ export const top1000 = [
     englishTranscription: "riəl",
     id: 672,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Це не справжній діамант.",
+    ukrainianTranslationOfSentence: "Це не справжній діамант",
     level: 1,
     englishWord: "real",
     synonyms: ["genuine", "authentic"],
-    englishSentence: "It's not a real diamond.",
+    englishSentence: "It's not a real diamond",
     ukrainianTranslation: "справжній"
   }, {
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "усвідомлювати",
-    englishSentence: "She didn't realize the impact of her words.",
+    englishSentence: "She didn't realize the impact of her words",
     id: 673,
     englishTranscription: "ˈriəˌlaɪz",
     synonyms: ["comprehend", "grasp"],
-    ukrainianTranslationOfSentence: "Вона не усвідомлювала вплив своїх слів.",
+    ukrainianTranslationOfSentence: "Вона не усвідомлювала вплив своїх слів",
     englishWord: "realize"
   },
   {
@@ -6772,8 +6772,8 @@ export const top1000 = [
     englishTranscription: "ˈriəli",
     ukrainianTranslation: "справді",
     synonyms: ["truly", "genuinely"],
-    ukrainianTranslationOfSentence: "Я дійсно втомлений.",
-    englishSentence: "I'm really tired.",
+    ukrainianTranslationOfSentence: "Я дійсно втомлений",
+    englishSentence: "I'm really tired",
     englishWord: "really"
   }, {
     englishTranscription: "ˈrizən",
@@ -6787,26 +6787,26 @@ export const top1000 = [
     englishWord: "reason"
   }, {
     synonyms: ["identify", "acknowledge"],
-    ukrainianTranslationOfSentence: "Я не міг її впізнати в такому образі.",
+    ukrainianTranslationOfSentence: "Я не міг її впізнати в такому образі",
     englishWord: "recognize",
     idTheme: 0,
     id: 676,
-    englishSentence: "I couldn't recognize her in the disguise.",
+    englishSentence: "I couldn't recognize her in the disguise",
     englishTranscription: "ˈrɛkəgˌnaɪz",
     ukrainianTranslation: "впізнавати",
     level: 1
   }, {
     englishWord: "red",
-    englishSentence: "She wore a red dress to the party.",
+    englishSentence: "She wore a red dress to the party",
     ukrainianTranslation: "червоний",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона одягла червону сукню на вечірку.",
+    ukrainianTranslationOfSentence: "Вона одягла червону сукню на вечірку",
     level: 1,
     id: 677,
     englishTranscription: "rɛd",
     synonyms: ["crimson", "scarlet"]
   }, {
-    englishSentence: "They have a strong relationship.",
+    englishSentence: "They have a strong relationship",
     englishWord: "relationship",
     englishTranscription: "rɪˈleɪʃənˌʃɪp",
     idTheme: 0,
@@ -6814,7 +6814,7 @@ export const top1000 = [
     synonyms: ["connection", "bond"],
     id: 678,
     ukrainianTranslation: "стосунок",
-    ukrainianTranslationOfSentence: "Вони мають міцний стосунок."
+    ukrainianTranslationOfSentence: "Вони мають міцний стосунок"
   }, {
     idTheme: 0,
     ukrainianTranslation: "розслаблятися",
@@ -6823,26 +6823,26 @@ export const top1000 = [
     englishWord: "relax",
     synonyms: ["unwind", "chill"],
     id: 679,
-    ukrainianTranslationOfSentence: "Зробіть глибокий вдих і розслабтесь.",
-    englishSentence: "Take a deep breath and relax."
+    ukrainianTranslationOfSentence: "Зробіть глибокий вдих і розслабтесь",
+    englishSentence: "Take a deep breath and relax"
   }, {
     englishTranscription: "rɪˈmeɪn",
     ukrainianTranslation: "залишатися",
     id: 680,
     englishWord: "remain",
-    ukrainianTranslationOfSentence: "Будь ласка, залишайтесь сидячими, поки літак повністю не зупиниться.",
+    ukrainianTranslationOfSentence: "Будь ласка, залишайтесь сидячими, поки літак повністю не зупиниться",
     level: 1,
-    englishSentence: "Please remain seated until the plane comes to a complete stop.",
+    englishSentence: "Please remain seated until the plane comes to a complete stop",
     idTheme: 0,
     synonyms: ["stay", "stay put"]
   }, {
     ukrainianTranslation: "пам'ятати",
-    ukrainianTranslationOfSentence: "Я не можу запам'ятати її ім'я.",
+    ukrainianTranslationOfSentence: "Я не можу запам'ятати її ім'я",
     englishTranscription: "rɪˈmɛmbər",
     englishWord: "remember",
     id: 681,
     idTheme: 0,
-    englishSentence: "I can't remember her name.",
+    englishSentence: "I can't remember her name",
     synonyms: ["recall", "recollect"],
     level: 1
   }, {
@@ -6857,8 +6857,8 @@ export const top1000 = [
     englishTranscription: "rɪˈmaɪnd"
   }, {
     level: 1,
-    englishSentence: "Please repeat after me.",
-    ukrainianTranslationOfSentence: "Будь ласка, повторіть за мною.",
+    englishSentence: "Please repeat after me",
+    ukrainianTranslationOfSentence: "Будь ласка, повторіть за мною",
     id: 683,
     englishWord: "repeat",
     idTheme: 0,
@@ -6866,9 +6866,9 @@ export const top1000 = [
     synonyms: ["reiterate", "echo", "say again"],
     englishTranscription: "rɪˈpiːt"
   }, {
-    englishSentence: "I'm waiting for her reply.",
+    englishSentence: "I'm waiting for her reply",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я чекаю на її відповідь.",
+    ukrainianTranslationOfSentence: "Я чекаю на її відповідь",
     synonyms: ["respond", "answer", "respond to"],
     ukrainianTranslation: "відповісти",
     englishTranscription: "rɪˈplaɪ",
@@ -6879,18 +6879,18 @@ export const top1000 = [
     level: 1,
     idTheme: 0,
     englishTranscription: "rɪˈspɑnd",
-    englishSentence: "He quickly responded to the question.",
+    englishSentence: "He quickly responded to the question",
     id: 685,
     ukrainianTranslation: "реагувати",
     synonyms: ["answer", "reply", "react"],
     englishWord: "respond",
-    ukrainianTranslationOfSentence: "Він швидко відповів на запитання."
+    ukrainianTranslationOfSentence: "Він швидко відповів на запитання"
   }, {
     englishWord: "rest",
-    englishSentence: "I need some rest after a long day.",
+    englishSentence: "I need some rest after a long day",
     id: 686,
     synonyms: ["relaxation", "break", "repose"],
-    ukrainianTranslationOfSentence: "Мені потрібен трохи відпочинку після довгого дня.",
+    ukrainianTranslationOfSentence: "Мені потрібен трохи відпочинку після довгого дня",
     level: 1,
     englishTranscription: "rɛst",
     ukrainianTranslation: "відпочинок",
@@ -6912,14 +6912,14 @@ export const top1000 = [
     englishTranscription: "raɪd",
     id: 688,
     ukrainianTranslation: "їздити",
-    englishSentence: "She enjoys riding her bike.",
-    ukrainianTranslationOfSentence: "Вона насолоджується їздою на велосипеді.",
+    englishSentence: "She enjoys riding her bike",
+    ukrainianTranslationOfSentence: "Вона насолоджується їздою на велосипеді",
     idTheme: 0
   }, {
-    englishSentence: "You're doing it right.",
+    englishSentence: "You're doing it right",
     level: 1,
     ukrainianTranslation: "правильно",
-    ukrainianTranslationOfSentence: "Ви робите це правильно.",
+    ukrainianTranslationOfSentence: "Ви робите це правильно",
     synonyms: ["correct", "accurate", "proper"],
     id: 689,
     englishWord: "right",
@@ -6928,45 +6928,45 @@ export const top1000 = [
   }, {
     id: 690,
     ukrainianTranslation: "дзвонити",
-    englishSentence: "The phone is ringing.",
+    englishSentence: "The phone is ringing",
     level: 1,
     englishTranscription: "rɪŋ",
     englishWord: "ring",
-    ukrainianTranslationOfSentence: "Телефон дзвонить.",
+    ukrainianTranslationOfSentence: "Телефон дзвонить",
     synonyms: ["chime", "sound", "call"],
     idTheme: 0
   }, {
-    englishSentence: "We drove along a scenic road.",
+    englishSentence: "We drove along a scenic road",
     idTheme: 0,
     englishTranscription: "roʊd",
     level: 1,
     synonyms: ["highway", "route", "path"],
     ukrainianTranslation: "дорога",
     id: 691,
-    ukrainianTranslationOfSentence: "Ми їхали вздовж мальовничої дороги.",
+    ukrainianTranslationOfSentence: "Ми їхали вздовж мальовничої дороги",
     englishWord: "road"
   }, {
-    ukrainianTranslationOfSentence: "Вона сиділа на камені біля річки.",
+    ukrainianTranslationOfSentence: "Вона сиділа на камені біля річки",
     englishWord: "rock",
     id: 692,
     englishTranscription: "rɑk",
-    englishSentence: "She sat on a rock by the river.",
+    englishSentence: "She sat on a rock by the river",
     idTheme: 0,
     synonyms: ["stone", "boulder", "pebble"],
     level: 1,
     ukrainianTranslation: "камінь"
   }, {
-    englishSentence: "She rolled the dice and won.",
+    englishSentence: "She rolled the dice and won",
     level: 1,
     englishTranscription: "roʊl",
     ukrainianTranslation: "котушка",
     synonyms: ["rotate", "turn", "spin"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона кинула кубики і виграла.",
+    ukrainianTranslationOfSentence: "Вона кинула кубики і виграла",
     englishWord: "roll",
     id: 693
   }, {
-    englishSentence: "The hotel room was spacious.",
+    englishSentence: "The hotel room was spacious",
     englishWord: "room",
     level: 1,
     englishTranscription: "rum",
@@ -6974,13 +6974,13 @@ export const top1000 = [
     synonyms: ["chamber", "space", "bedroom"],
     ukrainianTranslation: "кімната",
     id: 694,
-    ukrainianTranslationOfSentence: "Готельний номер був просторий."
+    ukrainianTranslationOfSentence: "Готельний номер був просторий"
   }, {
     englishTranscription: "roʊz",
     synonyms: ["flower", "bloom", "blossom"],
     englishWord: "rose",
-    ukrainianTranslationOfSentence: "Він подарував їй червону троянду.",
-    englishSentence: "He gave her a red rose.",
+    ukrainianTranslationOfSentence: "Він подарував їй червону троянду",
+    englishSentence: "He gave her a red rose",
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "троянда",
@@ -6992,16 +6992,16 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "raʊnd",
     level: 1,
-    ukrainianTranslationOfSentence: "У нього кругле обличчя.",
-    englishSentence: "He has a round face.",
+    ukrainianTranslationOfSentence: "У нього кругле обличчя",
+    englishSentence: "He has a round face",
     synonyms: ["circular", "spherical", "curved"]
   }, {
-    englishSentence: "She rubbed her eyes sleepily.",
+    englishSentence: "She rubbed her eyes sleepily",
     englishWord: "rub",
     idTheme: 0,
     level: 1,
     ukrainianTranslation: "терти",
-    ukrainianTranslationOfSentence: "Вона невпевнено потерла очі.",
+    ukrainianTranslationOfSentence: "Вона невпевнено потерла очі",
     synonyms: ["massage", "stroke", "scrub"],
     id: 697,
     englishTranscription: "rʌb"
@@ -7012,8 +7012,8 @@ export const top1000 = [
     ukrainianTranslation: "бігти",
     idTheme: 0,
     synonyms: ["sprint", "jog", "race"],
-    ukrainianTranslationOfSentence: "Він може дуже швидко бігати.",
-    englishSentence: "He can run very fast.",
+    ukrainianTranslationOfSentence: "Він може дуже швидко бігати",
+    englishSentence: "He can run very fast",
     englishWord: "run"
   },
   {
@@ -7023,36 +7023,36 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["hurry", "dash", "race"],
     englishWord: "rush",
-    ukrainianTranslationOfSentence: "Нам потрібно поспішати, щоб встигнути на поїзд.",
+    ukrainianTranslationOfSentence: "Нам потрібно поспішати, щоб встигнути на поїзд",
     level: 1,
-    englishSentence: "We need to rush to catch the train."
+    englishSentence: "We need to rush to catch the train"
   }, {
     id: 700,
     idTheme: 0,
-    englishSentence: "She felt sad after hearing the news.",
+    englishSentence: "She felt sad after hearing the news",
     synonyms: ["unhappy", "melancholy", "sorrowful"],
     englishTranscription: "sæd",
-    ukrainianTranslationOfSentence: "Вона відчувала сумно після почуття новин.",
+    ukrainianTranslationOfSentence: "Вона відчувала сумно після почуття новин",
     englishWord: "sad",
     level: 1,
     ukrainianTranslation: "сумний"
   }, {
     englishWord: "safe",
     idTheme: 0,
-    englishSentence: "You'll be safe with me.",
+    englishSentence: "You'll be safe with me",
     id: 701,
     englishTranscription: "seɪf",
     ukrainianTranslation: "безпечний",
     synonyms: ["secure", "protected", "out of danger"],
     level: 1,
-    ukrainianTranslationOfSentence: "Ви будете в безпеці зі мною."
+    ukrainianTranslationOfSentence: "Ви будете в безпеці зі мною"
   }, {
     englishWord: "said",
     ukrainianTranslation: "сказав",
-    ukrainianTranslationOfSentence: "Він сказав, що буде тут до 17:00.",
+    ukrainianTranslationOfSentence: "Він сказав, що буде тут до 17:00",
     idTheme: 0,
     englishTranscription: "sɛd",
-    englishSentence: "He said he would be here by 5 PM.",
+    englishSentence: "He said he would be here by 5 PM",
     level: 1,
     synonyms: ["stated", "declared", "mentioned"],
     id: 702
@@ -7060,37 +7060,37 @@ export const top1000 = [
     ukrainianTranslation: "той самий",
     idTheme: 0,
     id: 703,
-    englishSentence: "We have the same birthday.",
+    englishSentence: "We have the same birthday",
     synonyms: ["identical", "equal", "alike"],
     englishWord: "same",
     englishTranscription: "seɪm",
     level: 1,
-    ukrainianTranslationOfSentence: "У нас один і той же день народження."
+    ukrainianTranslationOfSentence: "У нас один і той же день народження"
   }, {
     synonyms: ["seated", "perched", "positioned"],
     ukrainianTranslation: "сидів",
     englishTranscription: "sæt",
-    englishSentence: "She sat on the park bench.",
+    englishSentence: "She sat on the park bench",
     id: 704,
-    ukrainianTranslationOfSentence: "Вона сиділа на парковій лавці.",
+    ukrainianTranslationOfSentence: "Вона сиділа на парковій лавці",
     englishWord: "sat",
     idTheme: 0,
     level: 1
   }, {
     synonyms: ["preserve", "protect", "keep"],
     level: 1,
-    englishSentence: "Save the document before closing it.",
+    englishSentence: "Save the document before closing it",
     englishTranscription: "seɪv",
     ukrainianTranslation: "зберегти",
-    ukrainianTranslationOfSentence: "Збережіть документ перед його закриттям.",
+    ukrainianTranslationOfSentence: "Збережіть документ перед його закриттям",
     idTheme: 0,
     id: 705,
     englishWord: "save"
   }, {
     ukrainianTranslation: "пил",
     synonyms: ["cut", "slice", "divide"],
-    ukrainianTranslationOfSentence: "Він пиляв дерево пополам.",
-    englishSentence: "He sawed the wood in half.",
+    ukrainianTranslationOfSentence: "Він пиляв дерево пополам",
+    englishSentence: "He sawed the wood in half",
     level: 1,
     id: 706,
     englishWord: "saw",
@@ -7112,24 +7112,24 @@ export const top1000 = [
     id: 708,
     englishTranscription: "skɛr",
     level: 1,
-    englishSentence: "Don't scare the children.",
+    englishSentence: "Don't scare the children",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Не лякайте дітей.",
+    ukrainianTranslationOfSentence: "Не лякайте дітей",
     englishWord: "scare"
   }, {
     ukrainianTranslation: "школа",
     id: 709,
-    ukrainianTranslationOfSentence: "Моя сестра ходить до приватної школи.",
+    ukrainianTranslationOfSentence: "Моя сестра ходить до приватної школи",
     englishWord: "school",
     synonyms: ["education", "institute", "academy"],
     idTheme: 0,
     level: 1,
     englishTranscription: "skul",
-    englishSentence: "My sister goes to a private school."
+    englishSentence: "My sister goes to a private school"
   }, {
-    ukrainianTranslationOfSentence: "Вона видавила крик радості.",
+    ukrainianTranslationOfSentence: "Вона видавила крик радості",
     synonyms: ["shout", "yell", "shriek"],
-    englishSentence: "She let out a scream of joy.",
+    englishSentence: "She let out a scream of joy",
     idTheme: 0,
     level: 1,
     ukrainianTranslation: "крик",
@@ -7138,9 +7138,9 @@ export const top1000 = [
     englishWord: "scream"
   }, {
     englishTranscription: "sɜrtʃ",
-    englishSentence: "We need to search for a solution.",
+    englishSentence: "We need to search for a solution",
     id: 711,
-    ukrainianTranslationOfSentence: "Нам потрібно шукати рішення.",
+    ukrainianTranslationOfSentence: "Нам потрібно шукати рішення",
     ukrainianTranslation: "шукати",
     level: 1,
     idTheme: 0,
@@ -7148,17 +7148,17 @@ export const top1000 = [
     englishWord: "search"
   }, {
     level: 1,
-    englishSentence: "Please have a seat.",
+    englishSentence: "Please have a seat",
     synonyms: ["chair", "bench", "stool"],
     englishWord: "seat",
     id: 712,
-    ukrainianTranslationOfSentence: "Будь ласка, сідайте.",
+    ukrainianTranslationOfSentence: "Будь ласка, сідайте",
     ukrainianTranslation: "сидіння",
     idTheme: 0,
     englishTranscription: "sit"
   }, {
-    englishSentence: "He finished in second place.",
-    ukrainianTranslationOfSentence: "Він фінішував на другому місці.",
+    englishSentence: "He finished in second place",
+    ukrainianTranslationOfSentence: "Він фінішував на другому місці",
     id: 713,
     englishTranscription: "sɛkənd",
     idTheme: 0,
@@ -7167,11 +7167,11 @@ export const top1000 = [
     englishWord: "second",
     synonyms: ["runner-up", "next", "alternate"]
   }, {
-    englishSentence: "I want to see the ocean.",
+    englishSentence: "I want to see the ocean",
     englishWord: "see",
     englishTranscription: "si",
     id: 714,
-    ukrainianTranslationOfSentence: "Я хочу побачити океан.",
+    ukrainianTranslationOfSentence: "Я хочу побачити океан",
     idTheme: 0,
     ukrainianTranslation: "бачити",
     level: 1,
@@ -7179,11 +7179,11 @@ export const top1000 = [
   }, {
     englishWord: "seem",
     ukrainianTranslation: "здаватися",
-    englishSentence: "She seemed happy.",
+    englishSentence: "She seemed happy",
     level: 1,
     synonyms: ["appear", "look", "give the impression"],
     id: 715,
-    ukrainianTranslationOfSentence: "Вона здавалася щасливою.",
+    ukrainianTranslationOfSentence: "Вона здавалася щасливою",
     idTheme: 0,
     englishTranscription: "sim"
   }, {
@@ -7200,18 +7200,18 @@ export const top1000 = [
     englishWord: "self",
     level: 1,
     id: 717,
-    ukrainianTranslationOfSentence: "Він дуже самодостатній людина.",
+    ukrainianTranslationOfSentence: "Він дуже самодостатній людина",
     synonyms: ["oneself", "individual", "ego"],
     ukrainianTranslation: "сам",
     englishTranscription: "sɛlf",
     idTheme: 0,
-    englishSentence: "He's a very self-sufficient person."
+    englishSentence: "He's a very self-sufficient person"
   }, {
     id: 718,
-    ukrainianTranslationOfSentence: "Я відправлю вам файл електронною поштою.",
+    ukrainianTranslationOfSentence: "Я відправлю вам файл електронною поштою",
     level: 1,
     englishTranscription: "sɛnd",
-    englishSentence: "I'll send you the file by email.",
+    englishSentence: "I'll send you the file by email",
     synonyms: ["dispatch", "transmit", "forward"],
     ukrainianTranslation: "відправити",
     englishWord: "send",
@@ -7222,30 +7222,30 @@ export const top1000 = [
     idTheme: 0,
     id: 719,
     level: 1,
-    ukrainianTranslationOfSentence: "Він має велике почуття гумору.",
+    ukrainianTranslationOfSentence: "Він має велике почуття гумору",
     ukrainianTranslation: "почуття",
-    englishSentence: "He has a great sense of humor.",
+    englishSentence: "He has a great sense of humor",
     englishWord: "sense"
   }, {
     englishTranscription: "sɛnt",
     synonyms: ["dispatched", "forwarded", "delivered"],
-    ukrainianTranslationOfSentence: "Вона відправила повідомлення своєму другу.",
+    ukrainianTranslationOfSentence: "Вона відправила повідомлення своєму другу",
     id: 720,
     idTheme: 0,
     level: 1,
-    englishSentence: "She sent a message to her friend.",
+    englishSentence: "She sent a message to her friend",
     englishWord: "sent",
     ukrainianTranslation: "відправив"
   }, {
     level: 1,
     englishTranscription: "sɪriəs",
     englishWord: "serious",
-    ukrainianTranslationOfSentence: "Це серйозне питання.",
+    ukrainianTranslationOfSentence: "Це серйозне питання",
     idTheme: 0,
     synonyms: ["grave", "solemn", "important"],
     ukrainianTranslation: "серйозний",
     id: 721,
-    englishSentence: "This is a serious matter."
+    englishSentence: "This is a serious matter"
   }, {
     idTheme: 0,
     englishTranscription: "sɪriəsli",
@@ -7253,17 +7253,17 @@ export const top1000 = [
     level: 1,
     englishWord: "seriously",
     synonyms: ["genuinely", "earnestly", "sincerely"],
-    ukrainianTranslationOfSentence: "Я не можу повірити, що ви мене серйозно взяли.",
-    englishSentence: "I can't believe you took me seriously.",
+    ukrainianTranslationOfSentence: "Я не можу повірити, що ви мене серйозно взяли",
+    englishSentence: "I can't believe you took me seriously",
     ukrainianTranslation: "серйозно"
   }, {
     synonyms: ["arrange", "place", "position"],
     level: 1,
     id: 723,
-    englishSentence: "She set the table for dinner.",
+    englishSentence: "She set the table for dinner",
     englishTranscription: "sɛt",
     ukrainianTranslation: "встановити",
-    ukrainianTranslationOfSentence: "Вона накриває стіл на вечерю.",
+    ukrainianTranslationOfSentence: "Вона накриває стіл на вечерю",
     englishWord: "set",
     idTheme: 0
   },
@@ -7274,8 +7274,8 @@ export const top1000 = [
     englishWord: "settle",
     synonyms: ["resolve", "conclude", "sort out"],
     level: 1,
-    englishSentence: "Let's settle this once and for all.",
-    ukrainianTranslationOfSentence: "Давайте вирішимо це однозначно.",
+    englishSentence: "Let's settle this once and for all",
+    ukrainianTranslationOfSentence: "Давайте вирішимо це однозначно",
     ukrainianTranslation: "вирішити"
   }, {
     englishWord: "seven",
@@ -7283,8 +7283,8 @@ export const top1000 = [
     id: 725,
     englishTranscription: "sɛvən",
     idTheme: 0,
-    englishSentence: "She has seven siblings.",
-    ukrainianTranslationOfSentence: "У неї є сім сестер і братів.",
+    englishSentence: "She has seven siblings",
+    ukrainianTranslationOfSentence: "У неї є сім сестер і братів",
     synonyms: ["7", "VII", "septenary"],
     level: 1
   }, {
@@ -7293,29 +7293,29 @@ export const top1000 = [
     englishWord: "several",
     level: 1,
     id: 726,
-    ukrainianTranslationOfSentence: "Я був у тому місті кілька разів.",
+    ukrainianTranslationOfSentence: "Я був у тому місті кілька разів",
     ukrainianTranslation: "кілька",
     synonyms: ["multiple", "numerous", "various"],
-    englishSentence: "I've been to that city several times."
+    englishSentence: "I've been to that city several times"
   }, {
     englishWord: "shadow",
     level: 1,
     ukrainianTranslation: "тінь",
     idTheme: 0,
-    englishSentence: "The tree cast a shadow on the ground.",
+    englishSentence: "The tree cast a shadow on the ground",
     englishTranscription: "ʃædoʊ",
     synonyms: ["shade", "silhouette", "darkness"],
     id: 727,
-    ukrainianTranslationOfSentence: "Дерево кидало тінь на землю."
+    ukrainianTranslationOfSentence: "Дерево кидало тінь на землю"
   }, {
     englishTranscription: "ʃeɪk",
     idTheme: 0,
     id: 728,
     level: 1,
-    englishSentence: "She shook her head in disbelief.",
+    englishSentence: "She shook her head in disbelief",
     ukrainianTranslation: "трусити",
     synonyms: ["tremble", "vibrate", "quiver"],
-    ukrainianTranslationOfSentence: "Вона покрутила головою в недовірі.",
+    ukrainianTranslationOfSentence: "Вона покрутила головою в недовірі",
     englishWord: "shake"
   }, {
     englishTranscription: "ʃɛr",
@@ -7333,44 +7333,44 @@ export const top1000 = [
     id: 730,
     englishWord: "she",
     englishTranscription: "ʃi",
-    ukrainianTranslationOfSentence: "Вона моя найкраща подруга.",
-    englishSentence: "She is my best friend.",
+    ukrainianTranslationOfSentence: "Вона моя найкраща подруга",
+    englishSentence: "She is my best friend",
     synonyms: ["female", "woman", "lady"],
     ukrainianTranslation: "вона"
   }, {
     idTheme: 0,
     englishTranscription: "ʃiːd",
     synonyms: ["she would", "she had"],
-    ukrainianTranslationOfSentence: "Вона би хотіла піти на концерт.",
+    ukrainianTranslationOfSentence: "Вона би хотіла піти на концерт",
     id: 731,
     level: 1,
     englishWord: "she'd",
-    englishSentence: "She'd love to go to the concert.",
+    englishSentence: "She'd love to go to the concert",
     ukrainianTranslation: "вона би"
   }, {
     englishTranscription: "ʃiːz",
     ukrainianTranslation: "вона є",
     synonyms: ["she is", "she has"],
-    englishSentence: "She's a talented singer.",
+    englishSentence: "She's a talented singer",
     idTheme: 0,
     id: 732,
-    ukrainianTranslationOfSentence: "Вона є талановитою співачкою.",
+    ukrainianTranslationOfSentence: "Вона є талановитою співачкою",
     level: 1,
     englishWord: "she's"
   }, {
     englishWord: "shift",
     synonyms: ["change", "rotation", "transition"],
-    englishSentence: "He works the night shift.",
+    englishSentence: "He works the night shift",
     id: 733,
     level: 1,
     ukrainianTranslation: "зміна",
-    ukrainianTranslationOfSentence: "Він працює на нічну зміну.",
+    ukrainianTranslationOfSentence: "Він працює на нічну зміну",
     idTheme: 0,
     englishTranscription: "ʃɪft"
   }, {
     englishWord: "shirt",
-    englishSentence: "He wore a clean white shirt.",
-    ukrainianTranslationOfSentence: "Він одягнув чисту білу сорочку.",
+    englishSentence: "He wore a clean white shirt",
+    ukrainianTranslationOfSentence: "Він одягнув чисту білу сорочку",
     ukrainianTranslation: "сорочка",
     englishTranscription: "ʃɜrt",
     level: 1,
@@ -7382,19 +7382,19 @@ export const top1000 = [
     englishWord: "shit",
     ukrainianTranslation: "дерьмо",
     level: 1,
-    ukrainianTranslationOfSentence: "О, дерьмо! Я забув свій гаманець.",
+    ukrainianTranslationOfSentence: "О, дерьмо! Я забув свій гаманець",
     englishTranscription: "ʃɪt",
     idTheme: 0,
     synonyms: ["excrement", "feces", "poop"],
-    englishSentence: "Oh shit! I forgot my wallet."
+    englishSentence: "Oh shit! I forgot my wallet"
   }, {
-    ukrainianTranslationOfSentence: "Вона пережила шок.",
+    ukrainianTranslationOfSentence: "Вона пережила шок",
     ukrainianTranslation: "шок",
     synonyms: ["surprise", "jolt", "trauma"],
     idTheme: 0,
     id: 736,
     level: 1,
-    englishSentence: "She experienced a shock.",
+    englishSentence: "She experienced a shock",
     englishTranscription: "ʃɑk",
     englishWord: "shock"
   }, {
@@ -7402,8 +7402,8 @@ export const top1000 = [
     englishWord: "shoe",
     ukrainianTranslation: "взуття",
     level: 1,
-    ukrainianTranslationOfSentence: "Мені потрібно купити нові бігові взуття.",
-    englishSentence: "I need to buy new running shoes.",
+    ukrainianTranslationOfSentence: "Мені потрібно купити нові бігові взуття",
+    englishSentence: "I need to buy new running shoes",
     englishTranscription: "ʃuː",
     idTheme: 0,
     id: 737
@@ -7412,13 +7412,13 @@ export const top1000 = [
     englishTranscription: "ʃʊk",
     synonyms: ["trembled", "vibrated", "quivered"],
     id: 738,
-    ukrainianTranslationOfSentence: "Він потрусив головою в недовірі.",
-    englishSentence: "He shook his head in disbelief.",
+    ukrainianTranslationOfSentence: "Він потрусив головою в недовірі",
+    englishSentence: "He shook his head in disbelief",
     level: 1,
     englishWord: "shook",
     ukrainianTranslation: "потрусив"
   }, {
-    ukrainianTranslationOfSentence: "Я йду до продуктового магазину.",
+    ukrainianTranslationOfSentence: "Я йду до продуктового магазину",
     idTheme: 0,
     id: 739,
     ukrainianTranslation: "магазин",
@@ -7426,64 +7426,64 @@ export const top1000 = [
     synonyms: ["store", "storehouse", "boutique"],
     englishTranscription: "ʃɑp",
     englishWord: "shop",
-    englishSentence: "I'm going to the grocery shop."
+    englishSentence: "I'm going to the grocery shop"
   }, {
     ukrainianTranslation: "короткий",
     id: 740,
     englishWord: "short",
     level: 1,
     englishTranscription: "ʃɔrt",
-    ukrainianTranslationOfSentence: "У неї коротке волосся.",
+    ukrainianTranslationOfSentence: "У неї коротке волосся",
     idTheme: 0,
     synonyms: ["brief", "concise", "limited"],
-    englishSentence: "She has short hair."
+    englishSentence: "She has short hair"
   }, {
     idTheme: 0,
     id: 741,
     englishTranscription: "ʃɑt",
     ukrainianTranslation: "постріл",
-    englishSentence: "He took a shot at the target.",
-    ukrainianTranslationOfSentence: "Він зробив постріл у ціль.",
+    englishSentence: "He took a shot at the target",
+    ukrainianTranslationOfSentence: "Він зробив постріл у ціль",
     synonyms: ["gunfire", "bullet", "discharge"],
     englishWord: "shot",
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Ти мав би їсти більше овочів.",
+    ukrainianTranslationOfSentence: "Ти мав би їсти більше овочів",
     level: 1,
     id: 742,
     englishWord: "should",
-    englishSentence: "You should eat more vegetables.",
+    englishSentence: "You should eat more vegetables",
     englishTranscription: "ʃʊd",
     synonyms: ["ought to", "supposed to", "recommended"],
     idTheme: 0,
     ukrainianTranslation: "мав би"
   }, {
     id: 743,
-    ukrainianTranslationOfSentence: "Я несла сумки на своєму плечі.",
+    ukrainianTranslationOfSentence: "Я несла сумки на своєму плечі",
     level: 1,
     ukrainianTranslation: "плече",
     englishWord: "shoulder",
-    englishSentence: "I carried the bags on my shoulder.",
+    englishSentence: "I carried the bags on my shoulder",
     idTheme: 0,
     englishTranscription: "ˈʃoʊldər",
     synonyms: ["upper arm", "deltoid", "support"]
   }, {
     englishTranscription: "ˈʃʊdnt",
-    ukrainianTranslationOfSentence: "Тобі не слід їсти забагато цукру.",
+    ukrainianTranslationOfSentence: "Тобі не слід їсти забагато цукру",
     englishWord: "shouldn't",
     ukrainianTranslation: "не слід",
     level: 1,
-    englishSentence: "You shouldn't eat too much sugar.",
+    englishSentence: "You shouldn't eat too much sugar",
     idTheme: 0,
     synonyms: ["should not", "ought not", "must not"],
     id: 744
   }, {
-    englishSentence: "She shouted for help.",
+    englishSentence: "She shouted for help",
     level: 1,
     id: 745,
     synonyms: ["yell", "scream", "holler"],
     englishWord: "shout",
-    ukrainianTranslationOfSentence: "Вона крикнула на допомогу.",
+    ukrainianTranslationOfSentence: "Вона крикнула на допомогу",
     ukrainianTranslation: "крикнути",
     englishTranscription: "ʃaʊt",
     idTheme: 0
@@ -7492,9 +7492,9 @@ export const top1000 = [
     id: 746,
     level: 1,
     ukrainianTranslation: "товчіння",
-    ukrainianTranslationOfSentence: "Він вдарив мене в сторону.",
+    ukrainianTranslationOfSentence: "Він вдарив мене в сторону",
     idTheme: 0,
-    englishSentence: "He shoved me out of the way.",
+    englishSentence: "He shoved me out of the way",
     englishTranscription: "ʃʌv",
     englishWord: "shove"
   }, {
@@ -7508,9 +7508,9 @@ export const top1000 = [
     ukrainianTranslation: "показати",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Я піду приймати душ.",
+    ukrainianTranslationOfSentence: "Я піду приймати душ",
     englishWord: "shower",
-    englishSentence: "I'm going to take a shower.",
+    englishSentence: "I'm going to take a shower",
     ukrainianTranslation: "душ",
     idTheme: 0,
     id: 748,
@@ -7519,9 +7519,9 @@ export const top1000 = [
     englishTranscription: "ʃaʊr"
   },
   {
-    englishSentence: "She shrugged her shoulders.",
+    englishSentence: "She shrugged her shoulders",
     synonyms: ["gesture", "hunch", "dismiss"],
-    ukrainianTranslationOfSentence: "Вона пожимала плечима.",
+    ukrainianTranslationOfSentence: "Вона пожимала плечима",
     ukrainianTranslation: "пожимання",
     englishWord: "shrug",
     level: 1,
@@ -7531,28 +7531,28 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "закрити",
     englishTranscription: "ʃʌt",
-    ukrainianTranslationOfSentence: "Будь ласка, закрийте двері за собою.",
+    ukrainianTranslationOfSentence: "Будь ласка, закрийте двері за собою",
     idTheme: 0,
     level: 1,
     id: 750,
     synonyms: ["close", "seal", "block"],
-    englishSentence: "Please shut the door behind you.",
+    englishSentence: "Please shut the door behind you",
     englishWord: "shut"
   }, {
-    ukrainianTranslationOfSentence: "Мені погано.",
+    ukrainianTranslationOfSentence: "Мені погано",
     synonyms: ["ill", "unwell", "nauseous"],
     englishTranscription: "sɪk",
     englishWord: "sick",
     ukrainianTranslation: "хворий",
-    englishSentence: "I'm feeling sick.",
+    englishSentence: "I'm feeling sick",
     idTheme: 0,
     id: 751,
     level: 1
   }, {
     synonyms: ["edge", "flank", "border"],
-    englishSentence: "The house is on the other side.",
+    englishSentence: "The house is on the other side",
     ukrainianTranslation: "бік",
-    ukrainianTranslationOfSentence: "Будинок з іншого боку.",
+    ukrainianTranslationOfSentence: "Будинок з іншого боку",
     id: 752,
     englishWord: "side",
     englishTranscription: "saɪd",
@@ -7561,11 +7561,11 @@ export const top1000 = [
   }, {
     level: 1,
     englishTranscription: "saɪ",
-    englishSentence: "She let out a deep sigh.",
+    englishSentence: "She let out a deep sigh",
     idTheme: 0,
     ukrainianTranslation: "зітхати",
     englishWord: "sigh",
-    ukrainianTranslationOfSentence: "Вона видихнула глибокий зітхання.",
+    ukrainianTranslationOfSentence: "Вона видихнула глибокий зітхання",
     id: 753,
     synonyms: ["breathe out", "exhale", "moan"]
   }, {
@@ -7575,14 +7575,14 @@ export const top1000 = [
     englishTranscription: "saɪt",
     id: 754,
     ukrainianTranslation: "погляд",
-    ukrainianTranslationOfSentence: "Вид був чудовим.",
-    englishSentence: "The view was a beautiful sight.",
+    ukrainianTranslationOfSentence: "Вид був чудовим",
+    englishSentence: "The view was a beautiful sight",
     idTheme: 0
   }, {
     synonyms: ["symbol", "indication", "gesture"],
-    ukrainianTranslationOfSentence: "Він зробив знак рукою.",
+    ukrainianTranslationOfSentence: "Він зробив знак рукою",
     englishTranscription: "saɪn",
-    englishSentence: "He made a sign with his hand.",
+    englishSentence: "He made a sign with his hand",
     id: 755,
     englishWord: "sign",
     ukrainianTranslation: "знак",
@@ -7591,10 +7591,10 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "тиша",
     level: 1,
-    ukrainianTranslationOfSentence: "Тиша у кімнаті була жахливою.",
+    ukrainianTranslationOfSentence: "Тиша у кімнаті була жахливою",
     id: 756,
     synonyms: ["quiet", "stillness", "hush"],
-    englishSentence: "The silence in the room was eerie.",
+    englishSentence: "The silence in the room was eerie",
     idTheme: 0,
     englishTranscription: "ˈsaɪləns",
     englishWord: "silence"
@@ -7604,12 +7604,12 @@ export const top1000 = [
     idTheme: 0,
     englishWord: "silent",
     ukrainianTranslation: "мовчазний",
-    englishSentence: "The audience was silent.",
-    ukrainianTranslationOfSentence: "Глядачі були мовчазними.",
+    englishSentence: "The audience was silent",
+    ukrainianTranslationOfSentence: "Глядачі були мовчазними",
     englishTranscription: "ˈsaɪlənt",
     level: 1
   }, {
-    englishSentence: "It's simply impossible to do.",
+    englishSentence: "It's simply impossible to do",
     level: 1,
     englishTranscription: "ˈsɪmpli",
     idTheme: 0,
@@ -7617,7 +7617,7 @@ export const top1000 = [
     ukrainianTranslation: "просто",
     id: 758,
     synonyms: ["just", "merely", "purely"],
-    ukrainianTranslationOfSentence: "Просто неможливо зробити."
+    ukrainianTranslationOfSentence: "Просто неможливо зробити"
   }, {
     id: 759,
     idTheme: 0,
@@ -7625,19 +7625,19 @@ export const top1000 = [
     synonyms: ["from", "after", "because"],
     level: 1,
     englishTranscription: "sɪns",
-    englishSentence: "I haven't seen him since last week.",
-    ukrainianTranslationOfSentence: "Я не бачив його з минулого тижня.",
+    englishSentence: "I haven't seen him since last week",
+    ukrainianTranslationOfSentence: "Я не бачив його з минулого тижня",
     englishWord: "since"
   }, {
     idTheme: 0,
     synonyms: ["unmarried", "solo", "individual"],
-    ukrainianTranslationOfSentence: "Вона одинока мати.",
+    ukrainianTranslationOfSentence: "Вона одинока мати",
     ukrainianTranslation: "один",
     level: 1,
     englishTranscription: "ˈsɪŋɡəl",
     id: 760,
     englishWord: "single",
-    englishSentence: "She is a single mother."
+    englishSentence: "She is a single mother"
   }, {
     englishWord: "sir",
     id: 761,
@@ -7646,35 +7646,35 @@ export const top1000 = [
     ukrainianTranslation: "сир",
     englishTranscription: "sɜr",
     level: 1,
-    ukrainianTranslationOfSentence: "Так, сир.",
-    englishSentence: "Yes, sir."
+    ukrainianTranslationOfSentence: "Так, сир",
+    englishSentence: "Yes, sir"
   }, {
     englishWord: "sister",
     englishTranscription: "ˈsɪstər",
     idTheme: 0,
     id: 762,
     ukrainianTranslation: "сестра",
-    ukrainianTranslationOfSentence: "Моя сестра старша за мене.",
-    englishSentence: "My sister is older than me.",
+    ukrainianTranslationOfSentence: "Моя сестра старша за мене",
+    englishSentence: "My sister is older than me",
     level: 1,
     synonyms: ["sibling", "female sibling", "siblinghood"]
   }, {
     id: 763,
     idTheme: 0,
     englishWord: "sit",
-    ukrainianTranslationOfSentence: "Будь ласка, сідайте та розслабтесь.",
+    ukrainianTranslationOfSentence: "Будь ласка, сідайте та розслабтесь",
     englishTranscription: "sɪt",
     synonyms: ["perch", "rest", "be seated"],
-    englishSentence: "Please sit down and relax.",
+    englishSentence: "Please sit down and relax",
     level: 1,
     ukrainianTranslation: "сидіти"
   }, {
     id: 764,
     ukrainianTranslation: "ситуація",
     synonyms: ["circumstance", "condition", "position"],
-    englishSentence: "We're in a difficult situation.",
+    englishSentence: "We're in a difficult situation",
     englishWord: "situation",
-    ukrainianTranslationOfSentence: "Ми у складній ситуації.",
+    ukrainianTranslationOfSentence: "Ми у складній ситуації",
     englishTranscription: "ˌsɪtʃuˈeɪʃn",
     idTheme: 0,
     level: 1
@@ -7684,46 +7684,46 @@ export const top1000 = [
     englishTranscription: "sɪks",
     englishWord: "six",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "У черзі шість осіб.",
-    englishSentence: "There are six people in line.",
+    ukrainianTranslationOfSentence: "У черзі шість осіб",
+    englishSentence: "There are six people in line",
     level: 1,
     synonyms: ["6", "VI", "hexa"]
   }, {
     englishTranscription: "skɪn",
     idTheme: 0,
     id: 766,
-    ukrainianTranslationOfSentence: "У неї світла шкіра.",
+    ukrainianTranslationOfSentence: "У неї світла шкіра",
     ukrainianTranslation: "шкіра",
     synonyms: ["epidermis", "dermis", "complexion"],
     englishWord: "skin",
-    englishSentence: "She has fair skin.",
+    englishSentence: "She has fair skin",
     level: 1
   }, {
     level: 1,
-    englishSentence: "The sky is clear today.",
+    englishSentence: "The sky is clear today",
     ukrainianTranslation: "небо",
     englishWord: "sky",
     synonyms: ["heavens", "atmosphere", "firmament"],
     englishTranscription: "skaɪ",
-    ukrainianTranslationOfSentence: "Небо сьогодні ясне.",
+    ukrainianTranslationOfSentence: "Небо сьогодні ясне",
     idTheme: 0,
     id: 767
   }, {
     englishWord: "slam",
-    englishSentence: "He slammed the door shut.",
+    englishSentence: "He slammed the door shut",
     idTheme: 0,
     id: 768,
     level: 1,
     synonyms: ["shut forcefully", "bang", "close loudly"],
     englishTranscription: "slæm",
-    ukrainianTranslationOfSentence: "Він гучно зачинив двері.",
+    ukrainianTranslationOfSentence: "Він гучно зачинив двері",
     ukrainianTranslation: "вдарити"
   }, {
     ukrainianTranslation: "спати",
     englishWord: "sleep",
-    englishSentence: "I need to get some sleep.",
+    englishSentence: "I need to get some sleep",
     id: 769,
-    ukrainianTranslationOfSentence: "Мені потрібно трохи поспати.",
+    ukrainianTranslationOfSentence: "Мені потрібно трохи поспати",
     level: 1,
     idTheme: 0,
     synonyms: ["rest", "slumber", "doze"],
@@ -7734,14 +7734,14 @@ export const top1000 = [
     id: 770,
     englishWord: "slightly",
     englishTranscription: "ˈslaɪtli",
-    englishSentence: "The temperature dropped slightly.",
+    englishSentence: "The temperature dropped slightly",
     level: 1,
-    ukrainianTranslationOfSentence: "Температура незначно впала.",
+    ukrainianTranslationOfSentence: "Температура незначно впала",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Будьте обережні, не послизнутися на льоду.",
+    ukrainianTranslationOfSentence: "Будьте обережні, не послизнутися на льоду",
     englishTranscription: "slɪp",
-    englishSentence: "Be careful not to slip on the ice.",
+    englishSentence: "Be careful not to slip on the ice",
     level: 1,
     ukrainianTranslation: "послизнутися",
     englishWord: "slip",
@@ -7749,8 +7749,8 @@ export const top1000 = [
     synonyms: ["slide", "skid", "lose footing"],
     id: 771
   }, {
-    ukrainianTranslationOfSentence: "Машина їхала повільним темпом.",
-    englishSentence: "The car was moving at a slow pace.",
+    ukrainianTranslationOfSentence: "Машина їхала повільним темпом",
+    englishSentence: "The car was moving at a slow pace",
     synonyms: ["unhurried", "sluggish", "leisurely"],
     englishTranscription: "sloʊ",
     level: 1,
@@ -7765,9 +7765,9 @@ export const top1000 = [
     synonyms: ["gradually", "leisurely", "at a slow pace"],
     ukrainianTranslation: "повільно",
     id: 773,
-    ukrainianTranslationOfSentence: "Вона повільно йшла по стежці.",
+    ukrainianTranslationOfSentence: "Вона повільно йшла по стежці",
     englishWord: "slowly",
-    englishSentence: "She walked slowly along the path."
+    englishSentence: "She walked slowly along the path"
   },
   {
     englishTranscription: "smɔl",
@@ -7775,15 +7775,15 @@ export const top1000 = [
     idTheme: 0,
     englishWord: "small",
     ukrainianTranslation: "малий",
-    englishSentence: "I bought a small cup of coffee.",
+    englishSentence: "I bought a small cup of coffee",
     id: 774,
-    ukrainianTranslationOfSentence: "Я купив маленьку чашку кави.",
+    ukrainianTranslationOfSentence: "Я купив маленьку чашку кави",
     level: 1
   }, {
-    englishSentence: "There's a strange smell in the room.",
+    englishSentence: "There's a strange smell in the room",
     idTheme: 0,
     englishTranscription: "smɛl",
-    ukrainianTranslationOfSentence: "У кімнаті є дивний запах.",
+    ukrainianTranslationOfSentence: "У кімнаті є дивний запах",
     englishWord: "smell",
     id: 775,
     ukrainianTranslation: "запах",
@@ -7796,23 +7796,23 @@ export const top1000 = [
     ukrainianTranslation: "посмішка",
     idTheme: 0,
     level: 1,
-    englishSentence: "She had a beautiful smile.",
-    ukrainianTranslationOfSentence: "В неї була прекрасна посмішка.",
+    englishSentence: "She had a beautiful smile",
+    ukrainianTranslationOfSentence: "В неї була прекрасна посмішка",
     id: 776
   }, {
-    englishSentence: "He smirked at her comment.",
+    englishSentence: "He smirked at her comment",
     level: 1,
     ukrainianTranslation: "посмішка",
     synonyms: ["sneer", "smile smugly", "grin"],
-    ukrainianTranslationOfSentence: "Він посміхнувся на її коментар.",
+    ukrainianTranslationOfSentence: "Він посміхнувся на її коментар",
     englishWord: "smirk",
     englishTranscription: "smɜrk",
     id: 777,
     idTheme: 0
   }, {
-    englishSentence: "He likes to smoke cigars.",
+    englishSentence: "He likes to smoke cigars",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Йому подобається курити сигари.",
+    ukrainianTranslationOfSentence: "Йому подобається курити сигари",
     ukrainianTranslation: "курити",
     id: 778,
     englishWord: "smoke",
@@ -7821,19 +7821,19 @@ export const top1000 = [
     level: 1
   }, {
     ukrainianTranslation: "тупнути",
-    englishSentence: "She snapped her fingers.",
+    englishSentence: "She snapped her fingers",
     englishWord: "snap",
     synonyms: ["click", "crack", "break suddenly"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона тупнула пальцями.",
+    ukrainianTranslationOfSentence: "Вона тупнула пальцями",
     id: 779,
     englishTranscription: "snæp",
     level: 1
   }, {
     englishWord: "so",
     id: 780,
-    ukrainianTranslationOfSentence: "Я втомився, тому я відпочину.",
-    englishSentence: "I'm feeling tired, so I'll rest.",
+    ukrainianTranslationOfSentence: "Я втомився, тому я відпочину",
+    englishSentence: "I'm feeling tired, so I'll rest",
     level: 1,
     synonyms: ["therefore", "consequently", "thus"],
     englishTranscription: "soʊ",
@@ -7841,56 +7841,56 @@ export const top1000 = [
     ukrainianTranslation: "так"
   }, {
     ukrainianTranslation: "м'який",
-    ukrainianTranslationOfSentence: "Ковдра м'яка та затишна.",
+    ukrainianTranslationOfSentence: "Ковдра м'яка та затишна",
     idTheme: 0,
     synonyms: ["gentle", "tender", "cushioned"],
     englishWord: "soft",
-    englishSentence: "The blanket is soft and cozy.",
+    englishSentence: "The blanket is soft and cozy",
     englishTranscription: "sɔft",
     level: 1,
     id: 781
   }, {
-    ukrainianTranslationOfSentence: "Вона говорила тихо до дитини.",
+    ukrainianTranslationOfSentence: "Вона говорила тихо до дитини",
     level: 1,
     id: 782,
     ukrainianTranslation: "тихо",
     englishWord: "softly",
     englishTranscription: "ˈsɔftli",
-    englishSentence: "She spoke softly to the baby.",
+    englishSentence: "She spoke softly to the baby",
     synonyms: ["quietly", "gently", "in a low voice"],
     idTheme: 0
   }, {
     englishTranscription: "sʌm",
     ukrainianTranslation: "деякі",
     idTheme: 0,
-    englishSentence: "I bought some apples at the store.",
+    englishSentence: "I bought some apples at the store",
     id: 783,
     synonyms: ["a few", "several", "a portion of"],
     englishWord: "some",
     level: 1,
-    ukrainianTranslationOfSentence: "Я купив деякі яблука у магазині."
+    ukrainianTranslationOfSentence: "Я купив деякі яблука у магазині"
   }, {
     englishTranscription: "ˈsʌmhaʊ",
     englishWord: "somehow",
     synonyms: ["in some way", "in one way or another"],
     idTheme: 0,
-    englishSentence: "We'll find a way to fix it somehow.",
+    englishSentence: "We'll find a way to fix it somehow",
     ukrainianTranslation: "якось",
     level: 1,
-    ukrainianTranslationOfSentence: "Ми знайдемо якось спосіб виправити це.",
+    ukrainianTranslationOfSentence: "Ми знайдемо якось спосіб виправити це",
     id: 784
   }, {
-    ukrainianTranslationOfSentence: "Хтось стукає у двері.",
+    ukrainianTranslationOfSentence: "Хтось стукає у двері",
     englishTranscription: "ˈsʌmwʌn",
     idTheme: 0,
     id: 785,
     ukrainianTranslation: "хтось",
     level: 1,
-    englishSentence: "Someone is knocking at the door.",
+    englishSentence: "Someone is knocking at the door",
     synonyms: ["somebody", "an individual", "a person"],
     englishWord: "someone"
   }, {
-    englishSentence: "I need to tell you something.",
+    englishSentence: "I need to tell you something",
     synonyms: ["a thing", "an object", "a matter"],
     level: 1,
     englishTranscription: "ˈsʌmθɪŋ",
@@ -7898,7 +7898,7 @@ export const top1000 = [
     englishWord: "something",
     id: 786,
     ukrainianTranslation: "щось",
-    ukrainianTranslationOfSentence: "Мені потрібно розповісти тобі щось."
+    ukrainianTranslationOfSentence: "Мені потрібно розповісти тобі щось"
   }, {
     englishTranscription: "ˈsʌmtaɪmz",
     ukrainianTranslation: "іноді",
@@ -7906,15 +7906,15 @@ export const top1000 = [
     synonyms: ["occasionally", "at times", "now and then"],
     level: 1,
     englishWord: "sometimes",
-    ukrainianTranslationOfSentence: "Іноді я люблю піти на прогулянку.",
+    ukrainianTranslationOfSentence: "Іноді я люблю піти на прогулянку",
     id: 787,
-    englishSentence: "Sometimes I like to go for a walk."
+    englishSentence: "Sometimes I like to go for a walk"
   }, {
     idTheme: 0,
     synonyms: ["a place", "a location", "a destination"],
-    ukrainianTranslationOfSentence: "Давай підемо десь новеньке на цих вихідних.",
+    ukrainianTranslationOfSentence: "Давай підемо десь новеньке на цих вихідних",
     id: 788,
-    englishSentence: "Let's go somewhere new this weekend.",
+    englishSentence: "Let's go somewhere new this weekend",
     englishTranscription: "ˈsʌmˌwɛr",
     englishWord: "somewhere",
     ukrainianTranslation: "десь",
@@ -7923,8 +7923,8 @@ export const top1000 = [
     idTheme: 0,
     level: 1,
     englishTranscription: "sʌn",
-    ukrainianTranslationOfSentence: "Мій син навчається за кордоном.",
-    englishSentence: "My son is studying abroad.",
+    ukrainianTranslationOfSentence: "Мій син навчається за кордоном",
+    englishSentence: "My son is studying abroad",
     englishWord: "son",
     ukrainianTranslation: "син",
     id: 789,
@@ -7933,30 +7933,30 @@ export const top1000 = [
     ukrainianTranslation: "пісня",
     englishTranscription: "sɔŋ",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона заспівала прекрасну пісню.",
+    ukrainianTranslationOfSentence: "Вона заспівала прекрасну пісню",
     id: 790,
-    englishSentence: "She sang a beautiful song.",
+    englishSentence: "She sang a beautiful song",
     englishWord: "song",
     synonyms: ["melody", "tune", "composition"],
     level: 1
   }, {
-    englishSentence: "I'll see you again soon.",
+    englishSentence: "I'll see you again soon",
     synonyms: ["shortly", "in a little while", "before long"],
     englishTranscription: "sun",
     id: 791,
-    ukrainianTranslationOfSentence: "Я побачу вас знову скоро.",
+    ukrainianTranslationOfSentence: "Я побачу вас знову скоро",
     englishWord: "soon",
     ukrainianTranslation: "скоро",
     level: 1,
     idTheme: 0
   }, {
     idTheme: 0,
-    englishSentence: "I'm sorry for the mistake.",
+    englishSentence: "I'm sorry for the mistake",
     level: 1,
     synonyms: ["apologetic", "regretful", "remorseful"],
     ukrainianTranslation: "вибачте",
     englishWord: "sorry",
-    ukrainianTranslationOfSentence: "Вибачте за помилку.",
+    ukrainianTranslationOfSentence: "Вибачте за помилку",
     id: 792,
     englishTranscription: "ˈsɔri"
   }, {
@@ -7970,37 +7970,37 @@ export const top1000 = [
     englishSentence: "Can you help me sort these papers?",
     synonyms: ["classify", "arrange", "organize"]
   }, {
-    ukrainianTranslationOfSentence: "Я почув дивний звук.",
+    ukrainianTranslationOfSentence: "Я почув дивний звук",
     englishTranscription: "saʊnd",
     level: 1,
     ukrainianTranslation: "звук",
     id: 794,
     idTheme: 0,
-    englishSentence: "I heard a strange sound.",
+    englishSentence: "I heard a strange sound",
     englishWord: "sound",
     synonyms: ["noise", "tone", "audio"]
   }, {
     synonyms: ["room", "area", "gap"],
     englishTranscription: "speɪs",
-    ukrainianTranslationOfSentence: "У кімнаті недостатньо місця.",
+    ukrainianTranslationOfSentence: "У кімнаті недостатньо місця",
     level: 1,
     englishWord: "space",
-    englishSentence: "There's not enough space in the room.",
+    englishSentence: "There's not enough space in the room",
     idTheme: 0,
     id: 795,
     ukrainianTranslation: "простір"
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона вміє говорити три мови.",
+    ukrainianTranslationOfSentence: "Вона вміє говорити три мови",
     ukrainianTranslation: "говорити",
     synonyms: ["talk", "communicate", "converse"],
     englishTranscription: "spik",
     englishWord: "speak",
     level: 1,
-    englishSentence: "She can speak three languages.",
+    englishSentence: "She can speak three languages",
     id: 796
   }, {
-    englishSentence: "I like to spend time with my family.",
+    englishSentence: "I like to spend time with my family",
     englishWord: "spend",
     ukrainianTranslation: "проводити",
     idTheme: 0,
@@ -8008,13 +8008,13 @@ export const top1000 = [
     id: 797,
     synonyms: ["use", "utilize", "consume"],
     level: 1,
-    ukrainianTranslationOfSentence: "Мені подобається проводити час з моєю родиною."
+    ukrainianTranslationOfSentence: "Мені подобається проводити час з моєю родиною"
   }, {
-    ukrainianTranslationOfSentence: "Ми провели день на пляжі.",
+    ukrainianTranslationOfSentence: "Ми провели день на пляжі",
     englishTranscription: "spɛnt",
     synonyms: ["used", "utilized", "consumed"],
     id: 798,
-    englishSentence: "We spent the day at the beach.",
+    englishSentence: "We spent the day at the beach",
     ukrainianTranslation: "проведений",
     level: 1,
     idTheme: 0,
@@ -8024,19 +8024,19 @@ export const top1000 = [
     englishTranscription: "spoʊk",
     englishWord: "spoke",
     ukrainianTranslation: "говорив",
-    englishSentence: "He spoke eloquently at the conference.",
-    ukrainianTranslationOfSentence: "Він говорив виразно на конференції.",
+    englishSentence: "He spoke eloquently at the conference",
+    ukrainianTranslationOfSentence: "Він говорив виразно на конференції",
     level: 1,
     synonyms: ["talked", "addressed", "communicated"],
     id: 799,
     idTheme: 0
   }, {
     id: 800,
-    ukrainianTranslationOfSentence: "Я знайшов чудове місце для пікніка.",
+    ukrainianTranslationOfSentence: "Я знайшов чудове місце для пікніка",
     englishWord: "spot",
     level: 1,
     englishTranscription: "spɑt",
-    englishSentence: "I found a great spot for a picnic.",
+    englishSentence: "I found a great spot for a picnic",
     idTheme: 0,
     synonyms: ["location", "place", "site"],
     ukrainianTranslation: "місце"
@@ -8046,82 +8046,82 @@ export const top1000 = [
     synonyms: ["step", "staircase", "flight of stairs"],
     englishTranscription: "stɛr",
     id: 801,
-    ukrainianTranslationOfSentence: "Будь ласка, використовуйте сходи, а не ліфт.",
+    ukrainianTranslationOfSentence: "Будь ласка, використовуйте сходи, а не ліфт",
     idTheme: 0,
     englishWord: "stair",
-    englishSentence: "Please use the stair, not the elevator."
+    englishSentence: "Please use the stair, not the elevator"
   }, {
     englishWord: "stand",
-    ukrainianTranslationOfSentence: "Він стояв перед рядом.",
+    ukrainianTranslationOfSentence: "Він стояв перед рядом",
     englishTranscription: "stænd",
     level: 1,
     synonyms: ["be upright", "be on one's feet", "be still"],
     ukrainianTranslation: "стояти",
     id: 802,
-    englishSentence: "He stood at the front of the line.",
+    englishSentence: "He stood at the front of the line",
     idTheme: 0
   }, {
     id: 803,
     synonyms: ["celestial body", "luminary", "asterisk"],
     englishWord: "star",
-    englishSentence: "Look at the bright star in the sky.",
+    englishSentence: "Look at the bright star in the sky",
     englishTranscription: "stɑr",
     idTheme: 0,
     ukrainianTranslation: "зірка",
-    ukrainianTranslationOfSentence: "Подивись на яскраву зірку на небі.",
+    ukrainianTranslationOfSentence: "Подивись на яскраву зірку на небі",
     level: 1
   }, {
     englishWord: "stare",
     idTheme: 0,
     level: 1,
     synonyms: ["gaze", "gawk", "fix one's eyes"],
-    ukrainianTranslationOfSentence: "Вона пильно на нього дивилася з недовірою.",
+    ukrainianTranslationOfSentence: "Вона пильно на нього дивилася з недовірою",
     ukrainianTranslation: "пильно дивитися",
     englishTranscription: "stɛr",
     id: 804,
-    englishSentence: "She stared at him in disbelief."
+    englishSentence: "She stared at him in disbelief"
   }, {
     idTheme: 0,
     ukrainianTranslation: "почати",
-    englishSentence: "Let's start the meeting.",
+    englishSentence: "Let's start the meeting",
     synonyms: ["begin", "commence", "initiate"],
     id: 805,
     level: 1,
-    ukrainianTranslationOfSentence: "Давайте почнемо зустріч.",
+    ukrainianTranslationOfSentence: "Давайте почнемо зустріч",
     englishTranscription: "stɑrt",
     englishWord: "start"
   }, {
     ukrainianTranslation: "стан",
-    englishSentence: "The state of the economy is improving.",
+    englishSentence: "The state of the economy is improving",
     id: 806,
     synonyms: ["condition", "situation", "status"],
     level: 1,
     idTheme: 0,
     englishWord: "state",
     englishTranscription: "steɪt",
-    ukrainianTranslationOfSentence: "Стан економіки поліпшується."
+    ukrainianTranslationOfSentence: "Стан економіки поліпшується"
   }, {
     englishTranscription: "steɪ",
     synonyms: ["remain", "linger", "abide"],
     id: 807,
     idTheme: 0,
     ukrainianTranslation: "залишатися",
-    englishSentence: "I'll stay at home tonight.",
+    englishSentence: "I'll stay at home tonight",
     level: 1,
     englishWord: "stay",
-    ukrainianTranslationOfSentence: "Я залишусь вдома сьогодні ввечері."
+    ukrainianTranslationOfSentence: "Я залишусь вдома сьогодні ввечері"
   }, {
-    englishSentence: "He took a step forward.",
+    englishSentence: "He took a step forward",
     englishTranscription: "stɛp",
     synonyms: ["stride", "move", "pace"],
     level: 1,
     ukrainianTranslation: "крок",
     englishWord: "step",
-    ukrainianTranslationOfSentence: "Він зробив крок вперед.",
+    ukrainianTranslationOfSentence: "Він зробив крок вперед",
     id: 808,
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Будь ласка, приклейте плакат на стіну.",
+    ukrainianTranslationOfSentence: "Будь ласка, приклейте плакат на стіну",
     idTheme: 0,
     englishWord: "stick",
     id: 809,
@@ -8129,29 +8129,29 @@ export const top1000 = [
     level: 1,
     englishTranscription: "stɪk",
     ukrainianTranslation: "прикріпити",
-    englishSentence: "Please stick the poster on the wall."
+    englishSentence: "Please stick the poster on the wall"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Я все ще чекаю на автобус.",
+    ukrainianTranslationOfSentence: "Я все ще чекаю на автобус",
     idTheme: 0,
     id: 810,
-    englishSentence: "I'm still waiting for the bus.",
+    englishSentence: "I'm still waiting for the bus",
     englishTranscription: "stɪl",
     englishWord: "still",
     ukrainianTranslation: "все ще",
     synonyms: ["yet", "until now", "even now"]
   }, {
-    englishSentence: "My stomach is growling.",
+    englishSentence: "My stomach is growling",
     id: 811,
     idTheme: 0,
     englishWord: "stomach",
     level: 1,
     ukrainianTranslation: "шлунок",
     synonyms: ["belly", "abdomen", "tummy"],
-    ukrainianTranslationOfSentence: "У мене регоче живіт.",
+    ukrainianTranslationOfSentence: "У мене регоче живіт",
     englishTranscription: "ˈstʌmək"
   }, {
-    englishSentence: "He stood in the corner of the room.",
+    englishSentence: "He stood in the corner of the room",
     englishTranscription: "stud",
     synonyms: ["was standing", "was upright", "was still"],
     level: 1,
@@ -8159,24 +8159,24 @@ export const top1000 = [
     englishWord: "stood",
     ukrainianTranslation: "стояв",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Він стояв у кутку кімнати."
+    ukrainianTranslationOfSentence: "Він стояв у кутку кімнати"
   }, {
     idTheme: 0,
     englishWord: "stop",
     englishTranscription: "stɑp",
     synonyms: ["halt", "cease", "come to a halt"],
     level: 1,
-    ukrainianTranslationOfSentence: "Машина раптово зупинилася.",
-    englishSentence: "The car stopped suddenly.",
+    ukrainianTranslationOfSentence: "Машина раптово зупинилася",
+    englishSentence: "The car stopped suddenly",
     id: 813,
     ukrainianTranslation: "зупинитися"
   }, {
     idTheme: 0,
     synonyms: ["shop", "shoppe", "marketplace"],
     englishTranscription: "stɔr",
-    ukrainianTranslationOfSentence: "Мені потрібно сходити до магазину.",
+    ukrainianTranslationOfSentence: "Мені потрібно сходити до магазину",
     level: 1,
-    englishSentence: "I need to go to the store.",
+    englishSentence: "I need to go to the store",
     ukrainianTranslation: "магазин",
     englishWord: "store",
     id: 814
@@ -8186,27 +8186,27 @@ export const top1000 = [
     idTheme: 0,
     englishWord: "story",
     id: 815,
-    englishSentence: "She told a fascinating story.",
+    englishSentence: "She told a fascinating story",
     level: 1,
-    ukrainianTranslationOfSentence: "Вона розповіла захопливу історію.",
+    ukrainianTranslationOfSentence: "Вона розповіла захопливу історію",
     englishTranscription: "ˈstɔri"
   }, {
     idTheme: 0,
     level: 1,
     ukrainianTranslation: "прямо",
     englishWord: "straight",
-    englishSentence: "Go straight ahead and turn right.",
+    englishSentence: "Go straight ahead and turn right",
     synonyms: ["directly", "without deviation", "in a line"],
     id: 816,
     englishTranscription: "streɪt",
-    ukrainianTranslationOfSentence: "Йдіть прямо і поверніть праворуч."
+    ukrainianTranslationOfSentence: "Йдіть прямо і поверніть праворуч"
   }, {
     ukrainianTranslation: "дивний",
     englishTranscription: "streɪndʒ",
-    englishSentence: "There was a strange noise in the room.",
+    englishSentence: "There was a strange noise in the room",
     id: 817,
     englishWord: "strange",
-    ukrainianTranslationOfSentence: "У кімнаті був дивний шум.",
+    ukrainianTranslationOfSentence: "У кімнаті був дивний шум",
     level: 1,
     idTheme: 0,
     synonyms: ["unusual", "peculiar", "odd"]
@@ -8215,58 +8215,58 @@ export const top1000 = [
     synonyms: ["road", "avenue", "thoroughfare"],
     id: 818,
     ukrainianTranslation: "вулиця",
-    englishSentence: "The house is located on Main Street.",
+    englishSentence: "The house is located on Main Street",
     idTheme: 0,
     englishTranscription: "strit",
     englishWord: "street",
-    ukrainianTranslationOfSentence: "Будинок розташований на головній вулиці."
+    ukrainianTranslationOfSentence: "Будинок розташований на головній вулиці"
   }, {
     englishWord: "strong",
     synonyms: ["powerful", "robust", "sturdy"],
     englishTranscription: "strɔŋ",
     idTheme: 0,
-    englishSentence: "She has a strong personality.",
+    englishSentence: "She has a strong personality",
     level: 1,
     ukrainianTranslation: "сильний",
-    ukrainianTranslationOfSentence: "У неї сильна особистість.",
+    ukrainianTranslationOfSentence: "У неї сильна особистість",
     id: 819
   }, {
     englishTranscription: "ˈstrʌgəl",
     id: 820,
     ukrainianTranslation: "боротьба",
-    ukrainianTranslationOfSentence: "Вони виснажливо боролися.",
+    ukrainianTranslationOfSentence: "Вони виснажливо боролися",
     englishWord: "struggle",
     synonyms: ["fight", "strive", "contend"],
     idTheme: 0,
     level: 1,
-    englishSentence: "They fought hard in the struggle."
+    englishSentence: "They fought hard in the struggle"
   }, {
     idTheme: 0,
     synonyms: ["jammed", "trapped", "lodged"],
     englishWord: "stuck",
-    englishSentence: "The key is stuck in the lock.",
+    englishSentence: "The key is stuck in the lock",
     englishTranscription: "stʌk",
     ukrainianTranslation: "застряг",
     level: 1,
     id: 821,
-    ukrainianTranslationOfSentence: "Ключ застряг у замку."
+    ukrainianTranslationOfSentence: "Ключ застряг у замку"
   }, {
     synonyms: ["learner", "pupil", "scholar"],
     id: 822,
     ukrainianTranslation: "студент",
-    englishSentence: "She is a university student.",
+    englishSentence: "She is a university student",
     level: 1,
     englishTranscription: "ˈstudnt",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона студентка університету.",
+    ukrainianTranslationOfSentence: "Вона студентка університету",
     englishWord: "student"
   }, {
     idTheme: 0,
     englishWord: "study",
     ukrainianTranslation: "вивчати",
     synonyms: ["learn", "research", "examine"],
-    ukrainianTranslationOfSentence: "Мені потрібно вчитися на екзамен.",
-    englishSentence: "I need to study for my exam.",
+    ukrainianTranslationOfSentence: "Мені потрібно вчитися на екзамен",
+    englishSentence: "I need to study for my exam",
     englishTranscription: "ˈstʌdi",
     level: 1,
     id: 823
@@ -8283,8 +8283,8 @@ export const top1000 = [
     level: 1
   }, {
     englishTranscription: "ˈstupɪd",
-    ukrainianTranslationOfSentence: "Це була дурна помилка.",
-    englishSentence: "That was a stupid mistake.",
+    ukrainianTranslationOfSentence: "Це була дурна помилка",
+    englishSentence: "That was a stupid mistake",
     ukrainianTranslation: "дурний",
     englishWord: "stupid",
     level: 1,
@@ -8298,85 +8298,85 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["like that", "of that kind", "so"],
     ukrainianTranslation: "такий",
-    ukrainianTranslationOfSentence: "Він такий талановитий музикант.",
+    ukrainianTranslationOfSentence: "Він такий талановитий музикант",
     englishTranscription: "sʌtʃ",
-    englishSentence: "He is such a talented musician."
+    englishSentence: "He is such a talented musician"
   }, {
     englishWord: "suck",
     englishTranscription: "sʌk",
     level: 1,
-    englishSentence: "The baby likes to suck on his pacifier.",
+    englishSentence: "The baby likes to suck on his pacifier",
     id: 827,
-    ukrainianTranslationOfSentence: "Дитина любить смоктати свою пустушку.",
+    ukrainianTranslationOfSentence: "Дитина любить смоктати свою пустушку",
     idTheme: 0,
     ukrainianTranslation: "смоктати",
     synonyms: ["draw", "slurp", "sip"]
   }, {
-    englishSentence: "There was a sudden change in the weather.",
+    englishSentence: "There was a sudden change in the weather",
     englishTranscription: "ˈsʌdn",
     idTheme: 0,
     level: 1,
     englishWord: "sudden",
     ukrainianTranslation: "раптовий",
-    ukrainianTranslationOfSentence: "Була раптова зміна погоди.",
+    ukrainianTranslationOfSentence: "Була раптова зміна погоди",
     id: 828,
     synonyms: ["unexpected", "abrupt", "unforeseen"]
   }, {
     englishTranscription: "ˈsʌdnli",
     ukrainianTranslation: "раптово",
     level: 1,
-    ukrainianTranslationOfSentence: "Він раптово пішов, не попрощавшись.",
+    ukrainianTranslationOfSentence: "Він раптово пішов, не попрощавшись",
     idTheme: 0,
     id: 829,
-    englishSentence: "He left suddenly without saying goodbye.",
+    englishSentence: "He left suddenly without saying goodbye",
     englishWord: "suddenly",
     synonyms: ["unexpectedly", "all of a sudden", "swiftly"]
   }, {
     ukrainianTranslation: "запропонувати",
     synonyms: ["propose", "recommend", "advise"],
-    ukrainianTranslationOfSentence: "Я пропоную піти в парк.",
+    ukrainianTranslationOfSentence: "Я пропоную піти в парк",
     englishWord: "suggest",
     englishTranscription: "səˈdʒɛst",
     id: 830,
     idTheme: 0,
-    englishSentence: "I suggest we go to the park.",
+    englishSentence: "I suggest we go to the park",
     level: 1
   }, {
     synonyms: ["season", "warmest season", "vacation time"],
     englishWord: "summer",
     idTheme: 0,
     englishTranscription: "ˈsʌmər",
-    englishSentence: "I love going to the beach in summer.",
+    englishSentence: "I love going to the beach in summer",
     level: 1,
-    ukrainianTranslationOfSentence: "Я люблю ходити на пляж влітку.",
+    ukrainianTranslationOfSentence: "Я люблю ходити на пляж влітку",
     id: 831,
     ukrainianTranslation: "літо"
   }, {
     idTheme: 0,
     ukrainianTranslation: "сонце",
-    englishSentence: "The sun is shining brightly.",
+    englishSentence: "The sun is shining brightly",
     level: 1,
     englishTranscription: "sʌn",
     englishWord: "sun",
     id: 832,
     synonyms: ["star", "celestial body", "source of light"],
-    ukrainianTranslationOfSentence: "Сонце яскраво світить."
+    ukrainianTranslationOfSentence: "Сонце яскраво світить"
   }, {
     ukrainianTranslation: "припустимо",
     id: 833,
     idTheme: 0,
     englishTranscription: "səˈpoʊz",
-    englishSentence: "Let's suppose that's true for now.",
+    englishSentence: "Let's suppose that's true for now",
     synonyms: ["assume", "presume", "postulate"],
     level: 1,
     englishWord: "suppose",
-    ukrainianTranslationOfSentence: "Припустимо, що це правда наразі."
+    ukrainianTranslationOfSentence: "Припустимо, що це правда наразі"
   }, {
     synonyms: ["certain", "confident", "convinced"],
     englishTranscription: "ʃʊr",
     ukrainianTranslation: "впевнений",
-    englishSentence: "I'm sure he'll do a great job.",
-    ukrainianTranslationOfSentence: "Я впевнений, що він зробить велику справу.",
+    englishSentence: "I'm sure he'll do a great job",
+    ukrainianTranslationOfSentence: "Я впевнений, що він зробить велику справу",
     idTheme: 0,
     level: 1,
     id: 834,
@@ -8386,10 +8386,10 @@ export const top1000 = [
     synonyms: ["astonishment", "unexpected event", "shock"],
     idTheme: 0,
     englishWord: "surprise",
-    englishSentence: "They planned a surprise party.",
+    englishSentence: "They planned a surprise party",
     level: 1,
     englishTranscription: "sərˈpraɪz",
-    ukrainianTranslationOfSentence: "Вони запланували сюрпризову вечірку.",
+    ukrainianTranslationOfSentence: "Вони запланували сюрпризову вечірку",
     ukrainianTranslation: "сюрприз"
   }, {
     synonyms: ["enclose", "encompass", "encircle"],
@@ -8397,27 +8397,27 @@ export const top1000 = [
     level: 1,
     ukrainianTranslation: "оточувати",
     englishTranscription: "səˈraʊnd",
-    ukrainianTranslationOfSentence: "Сад оточений парканом.",
+    ukrainianTranslationOfSentence: "Сад оточений парканом",
     idTheme: 0,
     id: 836,
-    englishSentence: "The garden is surrounded by a fence."
+    englishSentence: "The garden is surrounded by a fence"
   }, {
     ukrainianTranslation: "солодкий",
     level: 1,
     englishWord: "sweet",
     synonyms: ["sugary", "pleasant", "delightful"],
     id: 837,
-    englishSentence: "I have a sweet tooth.",
+    englishSentence: "I have a sweet tooth",
     englishTranscription: "swit",
-    ukrainianTranslationOfSentence: "У мене солодкий зуб.",
+    ukrainianTranslationOfSentence: "У мене солодкий зуб",
     idTheme: 0
   }, {
     ukrainianTranslation: "стіл",
-    englishSentence: "Please set the dishes on the table.",
+    englishSentence: "Please set the dishes on the table",
     englishWord: "table",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Будь ласка, покладіть посуд на стіл.",
+    ukrainianTranslationOfSentence: "Будь ласка, покладіть посуд на стіл",
     id: 838,
     synonyms: ["desk", "board", "surface"],
     englishTranscription: "ˈteɪbəl"
@@ -8434,59 +8434,59 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "взятий",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Усі місця були зайняті.",
+    ukrainianTranslationOfSentence: "Усі місця були зайняті",
     englishTranscription: "ˈteɪkən",
     synonyms: ["acquired", "seized", "grabbed"],
-    englishSentence: "All the seats were taken.",
+    englishSentence: "All the seats were taken",
     id: 840,
     englishWord: "taken",
     level: 1
   }, {
     id: 841,
     idTheme: 0,
-    englishSentence: "We need to talk about this issue.",
+    englishSentence: "We need to talk about this issue",
     englishWord: "talk",
     synonyms: ["speak", "converse", "communicate"],
     englishTranscription: "tɔk",
     level: 1,
     ukrainianTranslation: "розмовляти",
-    ukrainianTranslationOfSentence: "Нам потрібно поговорити про це питання."
+    ukrainianTranslationOfSentence: "Нам потрібно поговорити про це питання"
   }, {
     ukrainianTranslation: "високий",
     id: 842,
     englishTranscription: "tɔl",
     englishWord: "tall",
-    englishSentence: "He is very tall for his age.",
+    englishSentence: "He is very tall for his age",
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Він дуже високий для свого віку.",
+    ukrainianTranslationOfSentence: "Він дуже високий для свого віку",
     synonyms: ["high", "lofty", "towering"]
   }, {
     synonyms: ["instructor", "educator", "tutor"],
     englishTranscription: "ˈtitʃər",
     ukrainianTranslation: "вчитель",
     idTheme: 0,
-    englishSentence: "My mom is a teacher at the school.",
+    englishSentence: "My mom is a teacher at the school",
     englishWord: "teacher",
     level: 1,
-    ukrainianTranslationOfSentence: "Моя мама - вчителька в школі.",
+    ukrainianTranslationOfSentence: "Моя мама - вчителька в школі",
     id: 843
   }, {
-    englishSentence: "She accidentally tore her dress.",
+    englishSentence: "She accidentally tore her dress",
     level: 1,
     ukrainianTranslation: "розірвати",
     synonyms: ["rip", "split", "rend"],
-    ukrainianTranslationOfSentence: "Вона випадково розірвала свою сукню.",
+    ukrainianTranslationOfSentence: "Вона випадково розірвала свою сукню",
     englishWord: "tear",
     englishTranscription: "tɪr",
     idTheme: 0,
     id: 844
   }, {
-    ukrainianTranslationOfSentence: "Почисти зуби перед сном.",
+    ukrainianTranslationOfSentence: "Почисти зуби перед сном",
     idTheme: 0,
     synonyms: ["dental", "molars", "fangs"],
     englishWord: "teeth",
-    englishSentence: "Brush your teeth before bed.",
+    englishSentence: "Brush your teeth before bed",
     ukrainianTranslation: "зуби",
     id: 845,
     level: 1,
@@ -8502,44 +8502,44 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "tɛl"
   }, {
-    ukrainianTranslationOfSentence: "У мене десять пальців на руках і десять на ногах.",
+    ukrainianTranslationOfSentence: "У мене десять пальців на руках і десять на ногах",
     synonyms: ["10", "numeral", "digit"],
     id: 847,
     englishTranscription: "tɛn",
     englishWord: "ten",
     ukrainianTranslation: "десять",
     idTheme: 0,
-    englishSentence: "I have ten fingers and ten toes.",
+    englishSentence: "I have ten fingers and ten toes",
     level: 1
   }, {
-    englishSentence: "She is taller than her sister.",
+    englishSentence: "She is taller than her sister",
     idTheme: 0,
     ukrainianTranslation: "ніж",
     id: 848,
     level: 1,
     englishWord: "than",
     synonyms: ["compared to", "in relation to", "rather than"],
-    ukrainianTranslationOfSentence: "Вона вища, ніж її сестра.",
+    ukrainianTranslationOfSentence: "Вона вища, ніж її сестра",
     englishTranscription: "ðæn"
   },
   {
     ukrainianTranslation: "дякувати",
     synonyms: ["express gratitude", "show appreciation"],
-    ukrainianTranslationOfSentence: "Дякую за вашу допомогу.",
+    ukrainianTranslationOfSentence: "Дякую за вашу допомогу",
     id: 849,
     englishWord: "thank",
     level: 1,
     englishTranscription: "θæŋk",
-    englishSentence: "Thank you for your help.",
+    englishSentence: "Thank you for your help",
     idTheme: 0
   }, {
     ukrainianTranslation: "той, та, те",
     englishTranscription: "ðæt",
     synonyms: ["this", "those", "the"],
-    ukrainianTranslationOfSentence: "Те - прекрасний квітка.",
+    ukrainianTranslationOfSentence: "Те - прекрасний квітка",
     level: 1,
     idTheme: 0,
-    englishSentence: "That is a beautiful flower.",
+    englishSentence: "That is a beautiful flower",
     id: 850,
     englishWord: "that"
   }, {
@@ -8547,45 +8547,45 @@ export const top1000 = [
     id: 851,
     level: 1,
     idTheme: 0,
-    englishSentence: "That's an interesting idea.",
+    englishSentence: "That's an interesting idea",
     englishWord: "that's",
     synonyms: ["that is", "that has", "that exists"],
     englishTranscription: "ðæts",
-    ukrainianTranslationOfSentence: "Це цікава ідея."
+    ukrainianTranslationOfSentence: "Це цікава ідея"
   }, {
     synonyms: ["definite article", "specific item", "mentioned thing"],
     level: 1,
-    ukrainianTranslationOfSentence: "Кіт на даху.",
+    ukrainianTranslationOfSentence: "Кіт на даху",
     ukrainianTranslation: "артикль",
     id: 852,
-    englishSentence: "The cat is on the roof.",
+    englishSentence: "The cat is on the roof",
     idTheme: 0,
     englishWord: "the",
     englishTranscription: "ðə"
   }, {
-    ukrainianTranslationOfSentence: "Їхній будинок фарбований синім.",
+    ukrainianTranslationOfSentence: "Їхній будинок фарбований синім",
     idTheme: 0,
     ukrainianTranslation: "їхні",
     synonyms: ["belonging to them", "possessed by them"],
     englishWord: "their",
     englishTranscription: "ðɛr",
-    englishSentence: "Their house is painted blue.",
+    englishSentence: "Their house is painted blue",
     level: 1,
     id: 853
   }, {
     level: 1,
     englishTranscription: "ðɛm",
     ukrainianTranslation: "їх",
-    englishSentence: "I gave them the book.",
+    englishSentence: "I gave them the book",
     synonyms: ["those people", "those individuals"],
     id: 854,
     englishWord: "them",
-    ukrainianTranslationOfSentence: "Я дав їм книжку.",
+    ukrainianTranslationOfSentence: "Я дав їм книжку",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Вони самі приготували їжу.",
+    ukrainianTranslationOfSentence: "Вони самі приготували їжу",
     englishTranscription: "ðəmˈsɛlvz",
-    englishSentence: "They cooked the meal themselves.",
+    englishSentence: "They cooked the meal themselves",
     idTheme: 0,
     id: 855,
     englishWord: "themselves",
@@ -8594,9 +8594,9 @@ export const top1000 = [
     synonyms: ["on their own", "personally", "without help"]
   }, {
     idTheme: 0,
-    englishSentence: "We can go to the park, and then get ice cream.",
+    englishSentence: "We can go to the park, and then get ice cream",
     englishWord: "then",
-    ukrainianTranslationOfSentence: "Ми можемо піти в парк, а потім купити морозиво.",
+    ukrainianTranslationOfSentence: "Ми можемо піти в парк, а потім купити морозиво",
     ukrainianTranslation: "потім",
     id: 856,
     englishTranscription: "ðɛn",
@@ -8605,18 +8605,18 @@ export const top1000 = [
   }, {
     id: 857,
     ukrainianTranslation: "там",
-    ukrainianTranslationOfSentence: "Покладіть книгу туди.",
+    ukrainianTranslationOfSentence: "Покладіть книгу туди",
     englishWord: "there",
     englishTranscription: "ðɛr",
-    englishSentence: "Put the book over there.",
+    englishSentence: "Put the book over there",
     level: 1,
     idTheme: 0,
     synonyms: ["in that place", "at that location"]
   }, {
     idTheme: 0,
     id: 858,
-    englishSentence: "There's a cat in the garden.",
-    ukrainianTranslationOfSentence: "У саду є кіт.",
+    englishSentence: "There's a cat in the garden",
+    ukrainianTranslationOfSentence: "У саду є кіт",
     ukrainianTranslation: "є",
     englishWord: "there's",
     level: 1,
@@ -8625,11 +8625,11 @@ export const top1000 = [
   }, {
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Ці печиво смачні.",
+    ukrainianTranslationOfSentence: "Ці печиво смачні",
     synonyms: ["these ones", "these items", "these things"],
     id: 859,
     englishWord: "these",
-    englishSentence: "These cookies are delicious.",
+    englishSentence: "These cookies are delicious",
     englishTranscription: "ðiz",
     ukrainianTranslation: "ці"
   }, {
@@ -8637,38 +8637,38 @@ export const top1000 = [
     synonyms: ["those people", "those individuals"],
     englishWord: "they",
     englishTranscription: "ðeɪ",
-    englishSentence: "They are going to the movies.",
+    englishSentence: "They are going to the movies",
     id: 860,
     ukrainianTranslation: "вони",
-    ukrainianTranslationOfSentence: "Вони йдуть в кіно.",
+    ukrainianTranslationOfSentence: "Вони йдуть в кіно",
     level: 1
   }, {
     idTheme: 0,
     synonyms: ["they would", "they had", "they should"],
     level: 1,
     id: 861,
-    englishSentence: "They'd like to come to the party.",
-    ukrainianTranslationOfSentence: "Вони б хотіли прийти на вечірку.",
+    englishSentence: "They'd like to come to the party",
+    ukrainianTranslationOfSentence: "Вони б хотіли прийти на вечірку",
     ukrainianTranslation: "вони би",
     englishWord: "they'd",
     englishTranscription: "ðeɪd"
   }, {
-    englishSentence: "They're my best friends.",
+    englishSentence: "They're my best friends",
     level: 1,
     synonyms: ["they are", "they exist", "they are present"],
     ukrainianTranslation: "вони є",
-    ukrainianTranslationOfSentence: "Вони мої найкращі друзі.",
+    ukrainianTranslationOfSentence: "Вони мої найкращі друзі",
     id: 862,
     englishWord: "they're",
     englishTranscription: "ðeɪr",
     idTheme: 0
   }, {
     englishWord: "thick",
-    ukrainianTranslationOfSentence: "Туман був настільки густим, що не було видно.",
+    ukrainianTranslationOfSentence: "Туман був настільки густим, що не було видно",
     synonyms: ["dense", "heavy", "substantial"],
     englishTranscription: "θɪk",
     level: 1,
-    englishSentence: "The fog was so thick you couldn't see.",
+    englishSentence: "The fog was so thick you couldn't see",
     id: 863,
     idTheme: 0,
     ukrainianTranslation: "товстий"
@@ -8688,36 +8688,36 @@ export const top1000 = [
     idTheme: 0,
     ukrainianTranslation: "думати",
     englishTranscription: "θɪŋk",
-    ukrainianTranslationOfSentence: "Я думаю, що це гарна ідея.",
+    ukrainianTranslationOfSentence: "Я думаю, що це гарна ідея",
     level: 1,
     synonyms: ["believe", "consider", "ponder"],
-    englishSentence: "I think it's a good idea."
+    englishSentence: "I think it's a good idea"
   }, {
     englishTranscription: "θɜrd",
     ukrainianTranslation: "третій",
     id: 866,
     level: 1,
     englishWord: "third",
-    englishSentence: "He finished in third place.",
-    ukrainianTranslationOfSentence: "Він фінішував на третьому місці.",
+    englishSentence: "He finished in third place",
+    ukrainianTranslationOfSentence: "Він фінішував на третьому місці",
     idTheme: 0,
     synonyms: ["next after second", "ranking position"]
   }, {
-    ukrainianTranslationOfSentence: "Це моя улюблена книга.",
+    ukrainianTranslationOfSentence: "Це моя улюблена книга",
     englishTranscription: "ðɪs",
     id: 867,
     synonyms: ["this one", "this particular", "this thing"],
     idTheme: 0,
-    englishSentence: "This is my favorite book.",
+    englishSentence: "This is my favorite book",
     ukrainianTranslation: "це, цей",
     englishWord: "this",
     level: 1
   }, {
-    englishSentence: "Those flowers are beautiful.",
+    englishSentence: "Those flowers are beautiful",
     englishTranscription: "ðoʊz",
     id: 868,
     englishWord: "those",
-    ukrainianTranslationOfSentence: "Ті квіти дуже гарні.",
+    ukrainianTranslationOfSentence: "Ті квіти дуже гарні",
     ukrainianTranslation: "ті",
     level: 1,
     idTheme: 0,
@@ -8727,16 +8727,16 @@ export const top1000 = [
     ukrainianTranslation: "хоча",
     idTheme: 0,
     englishWord: "though",
-    englishSentence: "I'm tired, though I can keep going.",
-    ukrainianTranslationOfSentence: "Я втомився, хоча можу продовжувати.",
+    englishSentence: "I'm tired, though I can keep going",
+    ukrainianTranslationOfSentence: "Я втомився, хоча можу продовжувати",
     level: 1,
     synonyms: ["although", "despite", "nevertheless"],
     englishTranscription: "ðoʊ"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "У мене була думка під час водіння.",
+    ukrainianTranslationOfSentence: "У мене була думка під час водіння",
     ukrainianTranslation: "думка",
-    englishSentence: "I had a thought while driving.",
+    englishSentence: "I had a thought while driving",
     englishWord: "thought",
     synonyms: ["idea", "notion", "concept"],
     id: 870,
@@ -8744,19 +8744,19 @@ export const top1000 = [
     englishTranscription: "θɔt"
   }, {
     englishTranscription: "θri",
-    englishSentence: "I have three siblings.",
+    englishSentence: "I have three siblings",
     synonyms: ["3", "numeral", "trio"],
     idTheme: 0,
     ukrainianTranslation: "три",
     englishWord: "three",
     level: 1,
-    ukrainianTranslationOfSentence: "У мене є троє братів або сестер.",
+    ukrainianTranslationOfSentence: "У мене є троє братів або сестер",
     id: 871
   }, {
-    englishSentence: "She threw the ball to me.",
+    englishSentence: "She threw the ball to me",
     id: 872,
     ukrainianTranslation: "кинути",
-    ukrainianTranslationOfSentence: "Вона кинула мені м'яч.",
+    ukrainianTranslationOfSentence: "Вона кинула мені м'яч",
     idTheme: 0,
     level: 1,
     englishTranscription: "θru",
@@ -8767,9 +8767,9 @@ export const top1000 = [
     synonyms: ["neck", "passage", "airway"],
     idTheme: 0,
     englishTranscription: "θroʊt",
-    englishSentence: "His throat was sore from coughing.",
+    englishSentence: "His throat was sore from coughing",
     ukrainianTranslation: "горло",
-    ukrainianTranslationOfSentence: "У нього боліло горло від кашлю.",
+    ukrainianTranslationOfSentence: "У нього боліло горло від кашлю",
     englishWord: "throat",
     level: 1
   },
@@ -8777,11 +8777,11 @@ export const top1000 = [
     level: 1,
     englishWord: "through",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Ми пройшли через парк.",
+    ukrainianTranslationOfSentence: "Ми пройшли через парк",
     ukrainianTranslation: "через",
     englishTranscription: "θru",
     synonyms: ["across", "via", "by means of"],
-    englishSentence: "We walked through the park.",
+    englishSentence: "We walked through the park",
     id: 874
   }, {
     id: 875,
@@ -8798,20 +8798,20 @@ export const top1000 = [
     idTheme: 0,
     synonyms: ["fasten", "secure", "knot"],
     id: 876,
-    ukrainianTranslationOfSentence: "Йому потрібно зав'язати шнурки на взутті.",
+    ukrainianTranslationOfSentence: "Йому потрібно зав'язати шнурки на взутті",
     level: 1,
     englishTranscription: "taɪ",
     ukrainianTranslation: "зав'язати",
-    englishSentence: "He needs to tie his shoelaces."
+    englishSentence: "He needs to tie his shoelaces"
   }, {
     id: 877,
     level: 1,
     englishWord: "tight",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Кришка закрита туго.",
+    ukrainianTranslationOfSentence: "Кришка закрита туго",
     synonyms: ["secure", "firm", "snug"],
     englishTranscription: "taɪt",
-    englishSentence: "The lid is on tight.",
+    englishSentence: "The lid is on tight",
     ukrainianTranslation: "тугий"
   }, {
     englishTranscription: "taɪm",
@@ -8841,24 +8841,24 @@ export const top1000 = [
     synonyms: ["tyre", "wheel", "rubber"],
     level: 1,
     ukrainianTranslation: "шинa",
-    englishSentence: "I need to replace my car tires.",
-    ukrainianTranslationOfSentence: "Мені потрібно замінити шини на автомобілі."
+    englishSentence: "I need to replace my car tires",
+    ukrainianTranslationOfSentence: "Мені потрібно замінити шини на автомобілі"
   }, {
     level: 1,
     idTheme: 0,
     id: 881,
-    ukrainianTranslationOfSentence: "Підемо до парку.",
+    ukrainianTranslationOfSentence: "Підемо до парку",
     englishTranscription: "tu",
     synonyms: ["toward", "in the direction of", "until"],
-    englishSentence: "Let's go to the park.",
+    englishSentence: "Let's go to the park",
     ukrainianTranslation: "до",
     englishWord: "to"
   }, {
     englishTranscription: "təˈdeɪ",
     ukrainianTranslation: "сьогодні",
-    englishSentence: "I have a meeting today.",
+    englishSentence: "I have a meeting today",
     id: 882,
-    ukrainianTranslationOfSentence: "У мене сьогодні зустріч.",
+    ukrainianTranslationOfSentence: "У мене сьогодні зустріч",
     level: 1,
     idTheme: 0,
     englishWord: "today",
@@ -8866,8 +8866,8 @@ export const top1000 = [
   }, {
     idTheme: 0,
     id: 883,
-    ukrainianTranslationOfSentence: "Працюймо разом над цим проектом.",
-    englishSentence: "Let's work together on this project.",
+    ukrainianTranslationOfSentence: "Працюймо разом над цим проектом",
+    englishSentence: "Let's work together on this project",
     synonyms: ["jointly", "cooperatively", "in unison"],
     englishWord: "together",
     ukrainianTranslation: "разом",
@@ -8881,15 +8881,15 @@ export const top1000 = [
     level: 1,
     idTheme: 0,
     englishWord: "told",
-    ukrainianTranslationOfSentence: "Вона сказала мені свою таємницю.",
-    englishSentence: "She told me her secret."
+    ukrainianTranslationOfSentence: "Вона сказала мені свою таємницю",
+    englishSentence: "She told me her secret"
   }, {
-    englishSentence: "I have a doctor's appointment tomorrow.",
+    englishSentence: "I have a doctor's appointment tomorrow",
     synonyms: ["the next day", "the following day", "the future day"],
     englishTranscription: "təˈmɑroʊ",
     id: 885,
     englishWord: "tomorrow",
-    ukrainianTranslationOfSentence: "У мене завтра запис до лікаря.",
+    ukrainianTranslationOfSentence: "У мене завтра запис до лікаря",
     ukrainianTranslation: "завтра",
     idTheme: 0,
     level: 1
@@ -8898,9 +8898,9 @@ export const top1000 = [
     ukrainianTranslation: "тон",
     englishTranscription: "toʊn",
     englishWord: "tone",
-    englishSentence: "I don't like his tone of voice.",
+    englishSentence: "I don't like his tone of voice",
     synonyms: ["pitch", "inflection", "manner of speaking"],
-    ukrainianTranslationOfSentence: "Мені не подобається його тон голосу.",
+    ukrainianTranslationOfSentence: "Мені не подобається його тон голосу",
     id: 886,
     level: 1
   }, {
@@ -8908,15 +8908,15 @@ export const top1000 = [
     englishTranscription: "tʌŋ",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Витягни свій язик.",
+    ukrainianTranslationOfSentence: "Витягни свій язик",
     synonyms: ["organ", "muscle", "speech organ"],
-    englishSentence: "Stick out your tongue.",
+    englishSentence: "Stick out your tongue",
     ukrainianTranslation: "язик",
     id: 887
   }, {
     level: 1,
-    englishSentence: "Let's go out for dinner tonight.",
-    ukrainianTranslationOfSentence: "Підемо на вечерю сьогодні ввечері.",
+    englishSentence: "Let's go out for dinner tonight",
+    ukrainianTranslationOfSentence: "Підемо на вечерю сьогодні ввечері",
     idTheme: 0,
     ukrainianTranslation: "сьогодні ввечері",
     englishTranscription: "təˈnaɪt",
@@ -8927,11 +8927,11 @@ export const top1000 = [
     synonyms: ["also", "as well", "in addition"],
     ukrainianTranslation: "теж",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я також хочу прийти.",
+    ukrainianTranslationOfSentence: "Я також хочу прийти",
     englishTranscription: "tu",
     level: 1,
     id: 889,
-    englishSentence: "I want to come too.",
+    englishSentence: "I want to come too",
     englishWord: "too"
   }, {
     id: 890,
@@ -8941,17 +8941,17 @@ export const top1000 = [
     level: 1,
     ukrainianTranslation: "взяти",
     idTheme: 0,
-    englishSentence: "He took the book from the shelf.",
-    ukrainianTranslationOfSentence: "Він взяв книгу з полиці."
+    englishSentence: "He took the book from the shelf",
+    ukrainianTranslationOfSentence: "Він взяв книгу з полиці"
   }, {
     level: 1,
     englishWord: "top",
     synonyms: ["summit", "highest point", "apex"],
     idTheme: 0,
     englishTranscription: "tɑp",
-    ukrainianTranslationOfSentence: "Вершина гори знаходиться у верхній частині.",
+    ukrainianTranslationOfSentence: "Вершина гори знаходиться у верхній частині",
     ukrainianTranslation: "вершина",
-    englishSentence: "The mountain peak is at the top.",
+    englishSentence: "The mountain peak is at the top",
     id: 891
   }, {
     level: 1,
@@ -8959,50 +8959,50 @@ export const top1000 = [
     ukrainianTranslation: "повністю",
     idTheme: 0,
     id: 892,
-    englishSentence: "I totally forgot about our meeting.",
+    englishSentence: "I totally forgot about our meeting",
     synonyms: ["completely", "entirely", "utterly"],
     englishWord: "totally",
-    ukrainianTranslationOfSentence: "Я повністю забув про нашу зустріч."
+    ukrainianTranslationOfSentence: "Я повністю забув про нашу зустріч"
   }, {
     level: 1,
     englishWord: "touch",
     id: 893,
     synonyms: ["feel", "caress", "contact"],
-    ukrainianTranslationOfSentence: "Будь ласка, не доторкайся до твору мистецтва.",
+    ukrainianTranslationOfSentence: "Будь ласка, не доторкайся до твору мистецтва",
     englishTranscription: "tʌtʃ",
     ukrainianTranslation: "доторкнутися",
     idTheme: 0,
-    englishSentence: "Please don't touch the artwork."
+    englishSentence: "Please don't touch the artwork"
   }, {
     id: 894,
     englishWord: "toward",
-    ukrainianTranslationOfSentence: "Вона йшла до виходу.",
+    ukrainianTranslationOfSentence: "Вона йшла до виходу",
     synonyms: ["in the direction of", "to", "for"],
     idTheme: 0,
     englishTranscription: "təˈwɔrd",
     level: 1,
     ukrainianTranslation: "до",
-    englishSentence: "She walked toward the exit."
+    englishSentence: "She walked toward the exit"
   }, {
     englishTranscription: "taʊn",
     id: 895,
     level: 1,
     englishWord: "town",
-    englishSentence: "I live in a small town.",
-    ukrainianTranslationOfSentence: "Я живу в невеликому містечку.",
+    englishSentence: "I live in a small town",
+    ukrainianTranslationOfSentence: "Я живу в невеликому містечку",
     synonyms: ["city", "urban area", "municipality"],
     ukrainianTranslation: "місто",
     idTheme: 0
   }, {
     englishTranscription: "træk",
-    ukrainianTranslationOfSentence: "Бігуни знаходяться на треку.",
+    ukrainianTranslationOfSentence: "Бігуни знаходяться на треку",
     level: 1,
     ukrainianTranslation: "трек",
     englishWord: "track",
     id: 896,
     idTheme: 0,
     synonyms: ["course", "path", "trail"],
-    englishSentence: "The runners are on the track."
+    englishSentence: "The runners are on the track"
   }, {
     synonyms: ["path", "route", "footpath"],
     englishWord: "trail",
@@ -9010,15 +9010,15 @@ export const top1000 = [
     ukrainianTranslation: "стежка",
     idTheme: 0,
     englishTranscription: "treɪl",
-    ukrainianTranslationOfSentence: "Підемо в похід по стежці.",
+    ukrainianTranslationOfSentence: "Підемо в похід по стежці",
     id: 897,
-    englishSentence: "Let's go hiking on the trail."
+    englishSentence: "Let's go hiking on the trail"
   }, {
-    englishSentence: "I take the train to work every day.",
+    englishSentence: "I take the train to work every day",
     idTheme: 0,
     synonyms: ["locomotive", "railway", "rail transport"],
     level: 1,
-    ukrainianTranslationOfSentence: "Я їзджу на роботу потягом кожного дня.",
+    ukrainianTranslationOfSentence: "Я їзджу на роботу потягом кожного дня",
     ukrainianTranslation: "поїзд",
     englishTranscription: "treɪn",
     id: 898,
@@ -9029,9 +9029,9 @@ export const top1000 = [
     id: 899,
     ukrainianTranslation: "дерево",
     idTheme: 0,
-    englishSentence: "The birds are sitting in the tree.",
+    englishSentence: "The birds are sitting in the tree",
     synonyms: ["plant", "woody plant", "perennial"],
-    ukrainianTranslationOfSentence: "Птахи сидять на дереві.",
+    ukrainianTranslationOfSentence: "Птахи сидять на дереві",
     englishWord: "tree",
     englishTranscription: "tri"
   }, {
@@ -9039,47 +9039,47 @@ export const top1000 = [
     synonyms: ["journey", "excursion", "voyage"],
     ukrainianTranslation: "поїздка",
     englishTranscription: "trɪp",
-    englishSentence: "We're planning a trip to Europe.",
+    englishSentence: "We're planning a trip to Europe",
     id: 900,
-    ukrainianTranslationOfSentence: "Ми плануємо поїздку в Європу.",
+    ukrainianTranslationOfSentence: "Ми плануємо поїздку в Європу",
     level: 1,
     idTheme: 0
   }, {
     level: 1,
     englishTranscription: "ˈtrʌbəl",
-    ukrainianTranslationOfSentence: "У мене проблеми з комп'ютером.",
+    ukrainianTranslationOfSentence: "У мене проблеми з комп'ютером",
     ukrainianTranslation: "проблема",
     idTheme: 0,
     englishWord: "trouble",
-    englishSentence: "I'm having trouble with my computer.",
+    englishSentence: "I'm having trouble with my computer",
     synonyms: ["problem", "difficulty", "issue"],
     id: 901
   }, {
     idTheme: 0,
     synonyms: ["confidence", "reliance", "faith"],
     level: 1,
-    ukrainianTranslationOfSentence: "Довіра важлива в стосунках.",
+    ukrainianTranslationOfSentence: "Довіра важлива в стосунках",
     englishWord: "trust",
     id: 902,
     englishTranscription: "trʌst",
-    englishSentence: "Trust is important in a relationship.",
+    englishSentence: "Trust is important in a relationship",
     ukrainianTranslation: "довіра"
   }, {
     id: 903,
     englishTranscription: "truθ",
-    ukrainianTranslationOfSentence: "Він завжди говорить правду.",
+    ukrainianTranslationOfSentence: "Він завжди говорить правду",
     level: 1,
     ukrainianTranslation: "правда",
     idTheme: 0,
     englishWord: "truth",
-    englishSentence: "He always tells the truth.",
+    englishSentence: "He always tells the truth",
     synonyms: ["fact", "reality", "honesty"]
   }, {
     englishWord: "try",
     id: 904,
     ukrainianTranslation: "спробувати",
-    ukrainianTranslationOfSentence: "Я спробую зробити все можливе, щоб допомогти тобі.",
-    englishSentence: "I'll try my best to help you.",
+    ukrainianTranslationOfSentence: "Я спробую зробити все можливе, щоб допомогти тобі",
+    englishSentence: "I'll try my best to help you",
     englishTranscription: "traɪ",
     synonyms: ["attempt", "endeavor", "strive"],
     idTheme: 0,
@@ -9091,15 +9091,15 @@ export const top1000 = [
     level: 1,
     englishWord: "turn",
     ukrainianTranslation: "поворот",
-    ukrainianTranslationOfSentence: "Зробіть наступний поворот праворуч.",
+    ukrainianTranslationOfSentence: "Зробіть наступний поворот праворуч",
     id: 905,
-    englishSentence: "Take the next turn on the right."
+    englishSentence: "Take the next turn on the right"
   }, {
     englishWord: "tv",
     englishTranscription: "ˌtiːˈviː",
     level: 1,
-    ukrainianTranslationOfSentence: "Подивимося фільм по телевізору.",
-    englishSentence: "Let's watch a movie on TV.",
+    ukrainianTranslationOfSentence: "Подивимося фільм по телевізору",
+    englishSentence: "Let's watch a movie on TV",
     id: 906,
     idTheme: 0,
     synonyms: ["television", "television set", "television receiver"],
@@ -9108,20 +9108,20 @@ export const top1000 = [
     englishTranscription: "ˈtwɛnti",
     id: 907,
     englishWord: "twenty",
-    englishSentence: "She is twenty years old.",
+    englishSentence: "She is twenty years old",
     ukrainianTranslation: "двадцять",
     level: 1,
     idTheme: 0,
     synonyms: ["20", "numeral", "two tens"],
-    ukrainianTranslationOfSentence: "Їй двадцять років."
+    ukrainianTranslationOfSentence: "Їй двадцять років"
   }, {
     idTheme: 0,
     level: 1,
     englishWord: "two",
     synonyms: ["2", "numeral", "pair"],
     ukrainianTranslation: "два",
-    englishSentence: "I have two cats.",
-    ukrainianTranslationOfSentence: "У мене дві кішки.",
+    englishSentence: "I have two cats",
+    ukrainianTranslationOfSentence: "У мене дві кішки",
     englishTranscription: "tu",
     id: 908
   },
@@ -9142,26 +9142,26 @@ export const top1000 = [
     synonyms: ["brother of one's parent", "relative"],
     englishTranscription: "ˈʌŋkəl",
     englishWord: "uncle",
-    englishSentence: "My uncle is coming to visit.",
+    englishSentence: "My uncle is coming to visit",
     ukrainianTranslation: "дядько",
-    ukrainianTranslationOfSentence: "Мій дядько приїде в гості."
+    ukrainianTranslationOfSentence: "Мій дядько приїде в гості"
   }, {
     idTheme: 0,
     id: 911,
     englishTranscription: "ˈʌndər",
-    englishSentence: "The cat is hiding under the table.",
+    englishSentence: "The cat is hiding under the table",
     level: 1,
     synonyms: ["beneath", "below", "underneath"],
     ukrainianTranslation: "під",
-    ukrainianTranslationOfSentence: "Кіт ховається під столом.",
+    ukrainianTranslationOfSentence: "Кіт ховається під столом",
     englishWord: "under"
   }, {
     ukrainianTranslation: "розуміти",
     idTheme: 0,
     level: 1,
     englishWord: "understand",
-    englishSentence: "I don't understand the instructions.",
-    ukrainianTranslationOfSentence: "Я не розумію інструкції.",
+    englishSentence: "I don't understand the instructions",
+    ukrainianTranslationOfSentence: "Я не розумію інструкції",
     id: 912,
     synonyms: ["comprehend", "grasp", "perceive"],
     englishTranscription: "ˌʌndərˈstænd"
@@ -9169,32 +9169,32 @@ export const top1000 = [
     id: 913,
     englishWord: "until",
     englishTranscription: "ənˈtɪl",
-    ukrainianTranslationOfSentence: "Ми повинні зачекати до приїзду автобуса.",
+    ukrainianTranslationOfSentence: "Ми повинні зачекати до приїзду автобуса",
     idTheme: 0,
     ukrainianTranslation: "до",
     synonyms: ["till", "up to", "before"],
-    englishSentence: "We have to wait until the bus arrives.",
+    englishSentence: "We have to wait until the bus arrives",
     level: 1
   }, {
     level: 1,
     ukrainianTranslation: "вгору",
     englishTranscription: "ʌp",
     idTheme: 0,
-    englishSentence: "The sun is up in the sky.",
+    englishSentence: "The sun is up in the sky",
     englishWord: "up",
     id: 914,
-    ukrainianTranslationOfSentence: "Сонце знаходиться вгорі на небі.",
+    ukrainianTranslationOfSentence: "Сонце знаходиться вгорі на небі",
     synonyms: ["upward", "upward", "to a higher position"]
   }, {
     ukrainianTranslation: "на",
     englishTranscription: "əˈpɑn",
     id: 915,
     level: 1,
-    englishSentence: "The book fell upon the floor.",
+    englishSentence: "The book fell upon the floor",
     synonyms: ["on", "onto", "on top of"],
     englishWord: "upon",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Книга впала на підлогу."
+    ukrainianTranslationOfSentence: "Книга впала на підлогу"
   }, {
     synonyms: ["we", "me and others", "our company"],
     ukrainianTranslation: "нас",
@@ -9208,9 +9208,9 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "використання",
     id: 917,
-    ukrainianTranslationOfSentence: "Будь ласка, використовуйте задній вхід.",
+    ukrainianTranslationOfSentence: "Будь ласка, використовуйте задній вхід",
     level: 1,
-    englishSentence: "Please use the back entrance.",
+    englishSentence: "Please use the back entrance",
     englishWord: "use",
     englishTranscription: "jus",
     synonyms: ["utilize", "employ", "make use of"],
@@ -9220,47 +9220,47 @@ export const top1000 = [
     id: 918,
     englishTranscription: "ˈjuʒʊəl",
     englishWord: "usual",
-    englishSentence: "She followed her usual routine.",
+    englishSentence: "She followed her usual routine",
     ukrainianTranslation: "звичайний",
-    ukrainianTranslationOfSentence: "Вона дотримувалася своєї звичайної рутини.",
+    ukrainianTranslationOfSentence: "Вона дотримувалася своєї звичайної рутини",
     idTheme: 0,
     level: 1
   }, {
     ukrainianTranslation: "зазвичай",
     englishWord: "usually",
     id: 919,
-    ukrainianTranslationOfSentence: "Зазвичай я йду на прогулянку ввечері.",
+    ukrainianTranslationOfSentence: "Зазвичай я йду на прогулянку ввечері",
     synonyms: ["typically", "ordinarily", "generally"],
     englishTranscription: "ˈjuʒʊəli",
     idTheme: 0,
     level: 1,
-    englishSentence: "I usually go for a walk in the evening."
+    englishSentence: "I usually go for a walk in the evening"
   }, {
     englishWord: "very",
     level: 1,
     idTheme: 0,
     ukrainianTranslation: "дуже",
-    englishSentence: "I'm very happy to see you.",
+    englishSentence: "I'm very happy to see you",
     id: 920,
     englishTranscription: "ˈvɛri",
-    ukrainianTranslationOfSentence: "Я дуже радий тебе бачити.",
+    ukrainianTranslationOfSentence: "Я дуже радий тебе бачити",
     synonyms: ["extremely", "exceedingly", "highly"]
   }, {
-    ukrainianTranslationOfSentence: "Я хочу відвідати своїх бабусю і дідуся.",
+    ukrainianTranslationOfSentence: "Я хочу відвідати своїх бабусю і дідуся",
     englishWord: "visit",
     idTheme: 0,
     synonyms: ["go to", "see", "call on"],
     level: 1,
     englishTranscription: "ˈvɪzɪt",
-    englishSentence: "I want to visit my grandparents.",
+    englishSentence: "I want to visit my grandparents",
     ukrainianTranslation: "відвідувати",
     id: 921
   }, {
     ukrainianTranslation: "голос",
     idTheme: 0,
-    englishSentence: "She has a beautiful singing voice.",
+    englishSentence: "She has a beautiful singing voice",
     englishTranscription: "vɔɪs",
-    ukrainianTranslationOfSentence: "У неї прекрасний співочий голос.",
+    ukrainianTranslationOfSentence: "У неї прекрасний співочий голос",
     englishWord: "voice",
     id: 922,
     level: 1,
@@ -9268,68 +9268,68 @@ export const top1000 = [
   }, {
     synonyms: ["stay", "remain", "pause"],
     englishWord: "wait",
-    ukrainianTranslationOfSentence: "Будь ласка, зачекайте мене тут.",
+    ukrainianTranslationOfSentence: "Будь ласка, зачекайте мене тут",
     englishTranscription: "weɪt",
     idTheme: 0,
     ukrainianTranslation: "чекати",
     level: 1,
-    englishSentence: "Please wait for me here.",
+    englishSentence: "Please wait for me here",
     id: 923
   }, {
     ukrainianTranslation: "прокидатися",
     englishTranscription: "weɪk",
     idTheme: 0,
     level: 1,
-    englishSentence: "I usually wake up at 7 AM.",
+    englishSentence: "I usually wake up at 7 AM",
     synonyms: ["arise", "rouse", "awaken"],
-    ukrainianTranslationOfSentence: "Зазвичай я прокидаюсь о 7 ранку.",
+    ukrainianTranslationOfSentence: "Зазвичай я прокидаюсь о 7 ранку",
     id: 924,
     englishWord: "wake"
   }, {
     level: 1,
     synonyms: ["stroll", "hike", "promenade"],
-    englishSentence: "Let's go for a walk in the park.",
+    englishSentence: "Let's go for a walk in the park",
     ukrainianTranslation: "ходити",
     id: 925,
     englishTranscription: "wɔk",
     idTheme: 0,
     englishWord: "walk",
-    ukrainianTranslationOfSentence: "Підемо на прогулянку в парку."
+    ukrainianTranslationOfSentence: "Підемо на прогулянку в парку"
   }, {
     englishWord: "wall",
-    englishSentence: "Hang the picture on the wall.",
+    englishSentence: "Hang the picture on the wall",
     synonyms: ["barrier", "partition", "enclosure"],
     englishTranscription: "wɔl",
     level: 1,
     idTheme: 0,
     id: 926,
     ukrainianTranslation: "стіна",
-    ukrainianTranslationOfSentence: "Підвісьте картину на стіну."
+    ukrainianTranslationOfSentence: "Підвісьте картину на стіну"
   }, {
     idTheme: 0,
     id: 927,
     ukrainianTranslation: "хотіти",
     englishTranscription: "wɑnt",
     englishWord: "want",
-    ukrainianTranslationOfSentence: "Я хочу шматок торта.",
+    ukrainianTranslationOfSentence: "Я хочу шматок торта",
     synonyms: ["desire", "wish", "crave"],
     level: 1,
-    englishSentence: "I want a piece of cake."
+    englishSentence: "I want a piece of cake"
   }, {
     englishTranscription: "wɔrm",
     englishWord: "warm",
     ukrainianTranslation: "теплий",
-    englishSentence: "The room is warm and cozy.",
+    englishSentence: "The room is warm and cozy",
     level: 1,
     id: 928,
     synonyms: ["hot", "heated", "mild"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Кімната тепла і затишна."
+    ukrainianTranslationOfSentence: "Кімната тепла і затишна"
   }, {
     idTheme: 0,
     ukrainianTranslation: "попереджати",
-    englishSentence: "I warned him about the danger.",
-    ukrainianTranslationOfSentence: "Я попередив його про небезпеку.",
+    englishSentence: "I warned him about the danger",
+    ukrainianTranslationOfSentence: "Я попередив його про небезпеку",
     level: 1,
     englishWord: "warn",
     englishTranscription: "wɔrn",
@@ -9338,18 +9338,18 @@ export const top1000 = [
   }, {
     ukrainianTranslation: "був",
     englishWord: "was",
-    englishSentence: "She was at the party last night.",
+    englishSentence: "She was at the party last night",
     synonyms: ["past tense of be"],
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона була на вечірці учора ввечері.",
+    ukrainianTranslationOfSentence: "Вона була на вечірці учора ввечері",
     level: 1,
     id: 930,
     englishTranscription: "wʌz"
   }, {
     level: 1,
     englishTranscription: "ˈwʌzənt",
-    englishSentence: "He wasn't home when I called.",
-    ukrainianTranslationOfSentence: "Він не був вдома, коли я дзвонив.",
+    englishSentence: "He wasn't home when I called",
+    ukrainianTranslationOfSentence: "Він не був вдома, коли я дзвонив",
     synonyms: ["was not", "was not present"],
     ukrainianTranslation: "не було",
     id: 931,
@@ -9369,9 +9369,9 @@ export const top1000 = [
     level: 1,
     englishWord: "water",
     id: 933,
-    ukrainianTranslationOfSentence: "Мені потрібен склянка води.",
+    ukrainianTranslationOfSentence: "Мені потрібен склянка води",
     englishTranscription: "ˈwɔtər",
-    englishSentence: "I need a glass of water.",
+    englishSentence: "I need a glass of water",
     ukrainianTranslation: "вода",
     idTheme: 0,
     synonyms: ["H2O", "liquid", "hydration"]
@@ -9381,17 +9381,17 @@ export const top1000 = [
     englishTranscription: "weɪv",
     id: 934,
     ukrainianTranslation: "махати",
-    ukrainianTranslationOfSentence: "Вона помахала на прощання з вікна.",
+    ukrainianTranslationOfSentence: "Вона помахала на прощання з вікна",
     synonyms: ["gesture", "signal", "motion"],
-    englishSentence: "She waved goodbye from the window.",
+    englishSentence: "She waved goodbye from the window",
     idTheme: 0,
     level: 1
   }, {
-    ukrainianTranslationOfSentence: "Є більше, ніж один спосіб зробити це.",
+    ukrainianTranslationOfSentence: "Є більше, ніж один спосіб зробити це",
     idTheme: 0,
     level: 1,
     englishWord: "way",
-    englishSentence: "There's more than one way to do it.",
+    englishSentence: "There's more than one way to do it",
     synonyms: ["method", "manner", "approach"],
     englishTranscription: "weɪ",
     id: 935,
@@ -9399,8 +9399,8 @@ export const top1000 = [
   }, {
     englishTranscription: "wi",
     ukrainianTranslation: "ми",
-    englishSentence: "We went to the park yesterday.",
-    ukrainianTranslationOfSentence: "Ми пішли до парку вчора.",
+    englishSentence: "We went to the park yesterday",
+    ukrainianTranslationOfSentence: "Ми пішли до парку вчора",
     idTheme: 0,
     synonyms: ["pronoun", "first-person plural"],
     id: 936,
@@ -9408,12 +9408,12 @@ export const top1000 = [
     englishWord: "we"
   }, {
     idTheme: 0,
-    englishSentence: "We'll meet you at the restaurant.",
+    englishSentence: "We'll meet you at the restaurant",
     level: 1,
     id: 937,
     englishWord: "we'll",
     synonyms: ["we will", "we shall"],
-    ukrainianTranslationOfSentence: "Ми зустрінемося з вами в ресторані.",
+    ukrainianTranslationOfSentence: "Ми зустрінемося з вами в ресторані",
     englishTranscription: "wiːl",
     ukrainianTranslation: "ми"
   }, {
@@ -9421,25 +9421,25 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "wɪər",
     id: 938,
-    ukrainianTranslationOfSentence: "Ми поїдемо у похід на наступному тижні.",
+    ukrainianTranslationOfSentence: "Ми поїдемо у похід на наступному тижні",
     ukrainianTranslation: "ми",
     level: 1,
     synonyms: ["we are"],
-    englishSentence: "We're going on a trip next week."
+    englishSentence: "We're going on a trip next week"
   }, {
-    englishSentence: "We've finished the project.",
+    englishSentence: "We've finished the project",
     ukrainianTranslation: "ми",
     synonyms: ["we have"],
     englishWord: "we've",
-    ukrainianTranslationOfSentence: "Ми закінчили проект.",
+    ukrainianTranslationOfSentence: "Ми закінчили проект",
     englishTranscription: "wiːv",
     level: 1,
     id: 939,
     idTheme: 0
   }, {
     englishWord: "wear",
-    englishSentence: "I like to wear comfortable clothes.",
-    ukrainianTranslationOfSentence: "Мені подобається носити зручний одяг.",
+    englishSentence: "I like to wear comfortable clothes",
+    ukrainianTranslationOfSentence: "Мені подобається носити зручний одяг",
     id: 940,
     englishTranscription: "wɛr",
     synonyms: ["dress in", "put on", "have on"],
@@ -9448,28 +9448,28 @@ export const top1000 = [
     idTheme: 0
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "У мене наступний тиждень буде дуже насиченим.",
+    ukrainianTranslationOfSentence: "У мене наступний тиждень буде дуже насиченим",
     synonyms: ["seven days", "seven-day period"],
     englishTranscription: "wik",
     id: 941,
     englishWord: "week",
     idTheme: 0,
     ukrainianTranslation: "тиждень",
-    englishSentence: "I have a busy week ahead."
+    englishSentence: "I have a busy week ahead"
   }, {
     id: 942,
     englishWord: "weird",
     idTheme: 0,
     englishTranscription: "wɪrd",
     level: 1,
-    englishSentence: "That's a weird-looking creature.",
-    ukrainianTranslationOfSentence: "Це дивна істота.",
+    englishSentence: "That's a weird-looking creature",
+    ukrainianTranslationOfSentence: "Це дивна істота",
     ukrainianTranslation: "дивний",
     synonyms: ["strange", "peculiar", "odd"]
   }, {
     idTheme: 0,
-    englishSentence: "I feel well today.",
-    ukrainianTranslationOfSentence: "Сьогодні я почуваюся добре.",
+    englishSentence: "I feel well today",
+    ukrainianTranslationOfSentence: "Сьогодні я почуваюся добре",
     synonyms: ["fine", "healthy", "in good health"],
     level: 1,
     id: 943,
@@ -9480,8 +9480,8 @@ export const top1000 = [
     level: 1,
     synonyms: ["past tense of go"],
     id: 944,
-    englishSentence: "They went to the beach for vacation.",
-    ukrainianTranslationOfSentence: "Вони поїхали на відпочинок на пляж.",
+    englishSentence: "They went to the beach for vacation",
+    ukrainianTranslationOfSentence: "Вони поїхали на відпочинок на пляж",
     ukrainianTranslation: "поїхав",
     englishWord: "went",
     idTheme: 0,
@@ -9492,8 +9492,8 @@ export const top1000 = [
     level: 1,
     englishWord: "were",
     englishTranscription: "wɜr",
-    englishSentence: "They were happy to see us.",
-    ukrainianTranslationOfSentence: "Вони були раді нас бачити.",
+    englishSentence: "They were happy to see us",
+    ukrainianTranslationOfSentence: "Вони були раді нас бачити",
     synonyms: ["past tense of be"],
     id: 945
   }, {
@@ -9501,19 +9501,19 @@ export const top1000 = [
     id: 946,
     ukrainianTranslation: "не були",
     idTheme: 0,
-    englishSentence: "They weren't able to attend the meeting.",
+    englishSentence: "They weren't able to attend the meeting",
     englishTranscription: "ˈwɜrənt",
     englishWord: "weren't",
     synonyms: ["were not", "were not present"],
-    ukrainianTranslationOfSentence: "Вони не змогли взяти участь у зустрічі."
+    ukrainianTranslationOfSentence: "Вони не змогли взяти участь у зустрічі"
   }, {
     ukrainianTranslation: "мокрий",
     synonyms: ["damp", "moist", "soaked"],
     englishWord: "wet",
     level: 1,
-    englishSentence: "Be careful, the floor is wet.",
+    englishSentence: "Be careful, the floor is wet",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Будь обережним, підлога мокра.",
+    ukrainianTranslationOfSentence: "Будь обережним, підлога мокра",
     englishTranscription: "wɛt",
     id: 947
   }, {
@@ -9537,8 +9537,8 @@ export const top1000 = [
     level: 1,
     ukrainianTranslationOfSentence: "Який у тебе улюблений колір?"
   }, {
-    ukrainianTranslationOfSentence: "Я зроблю все, що потрібно, щоб успіти.",
-    englishSentence: "I'll do whatever it takes to succeed.",
+    ukrainianTranslationOfSentence: "Я зроблю все, що потрібно, щоб успіти",
+    englishSentence: "I'll do whatever it takes to succeed",
     level: 1,
     idTheme: 0,
     englishWord: "whatever",
@@ -9570,11 +9570,11 @@ export const top1000 = [
     level: 1,
     idTheme: 0,
     englishTranscription: "ˈwɛðər",
-    ukrainianTranslationOfSentence: "Я не впевнений, чи повинен я йти чи ні.",
+    ukrainianTranslationOfSentence: "Я не впевнений, чи повинен я йти чи ні",
     englishWord: "whether",
     synonyms: ["if", "whether or not"],
     id: 953,
-    englishSentence: "I'm not sure whether I should go or not.",
+    englishSentence: "I'm not sure whether I should go or not",
     ukrainianTranslation: "чи"
   }, {
     englishTranscription: "wɪtʃ",
@@ -9587,33 +9587,33 @@ export const top1000 = [
     englishSentence: "Which color do you prefer?",
     englishWord: "which"
   }, {
-    ukrainianTranslationOfSentence: "Я зачекаю тут, поки ти закінчиш.",
+    ukrainianTranslationOfSentence: "Я зачекаю тут, поки ти закінчиш",
     id: 955,
     englishTranscription: "waɪl",
-    englishSentence: "I'll wait here while you finish.",
+    englishSentence: "I'll wait here while you finish",
     ukrainianTranslation: "поки",
     level: 1,
     synonyms: ["during the time that", "as long as"],
     idTheme: 0,
     englishWord: "while"
   }, {
-    ukrainianTranslationOfSentence: "Вона нахилилася, щоб прошептати йому на вухо.",
+    ukrainianTranslationOfSentence: "Вона нахилилася, щоб прошептати йому на вухо",
     englishTranscription: "ˈwɪspər",
     level: 1,
     id: 956,
-    englishSentence: "She leaned over to whisper in his ear.",
+    englishSentence: "She leaned over to whisper in his ear",
     idTheme: 0,
     synonyms: ["speak softly", "murmur", "breathe"],
     ukrainianTranslation: "шепіт",
     englishWord: "whisper"
   }, {
-    ukrainianTranslationOfSentence: "Вона вдягла гарне біле плаття.",
+    ukrainianTranslationOfSentence: "Вона вдягла гарне біле плаття",
     englishTranscription: "waɪt",
     englishWord: "white",
     idTheme: 0,
     level: 1,
     id: 957,
-    englishSentence: "She wore a beautiful white dress.",
+    englishSentence: "She wore a beautiful white dress",
     synonyms: ["color", "hue", "absence of color"],
     ukrainianTranslation: "білий"
   }, {
@@ -9631,11 +9631,11 @@ export const top1000 = [
     id: 959,
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Я з'їв всю піцу сам.",
+    ukrainianTranslationOfSentence: "Я з'їв всю піцу сам",
     englishWord: "whole",
     ukrainianTranslation: "весь",
     synonyms: ["entire", "complete", "intact"],
-    englishSentence: "I ate the whole pizza by myself.",
+    englishSentence: "I ate the whole pizza by myself",
     englishTranscription: "hoʊl"
   }, {
     englishWord: "why",
@@ -9648,8 +9648,8 @@ export const top1000 = [
     ukrainianTranslationOfSentence: "Чому ти плачеш?",
     ukrainianTranslation: "чому"
   }, {
-    ukrainianTranslationOfSentence: "Дорога достатньо широка для двох машин.",
-    englishSentence: "The road is wide enough for two cars.",
+    ukrainianTranslationOfSentence: "Дорога достатньо широка для двох машин",
+    englishSentence: "The road is wide enough for two cars",
     englishWord: "wide",
     englishTranscription: "waɪd",
     level: 1,
@@ -9658,71 +9658,71 @@ export const top1000 = [
     ukrainianTranslation: "широкий",
     synonyms: ["broad", "spacious", "extensive"]
   }, {
-    englishSentence: "He introduced his wife to us.",
+    englishSentence: "He introduced his wife to us",
     id: 962,
     englishWord: "wife",
     englishTranscription: "waɪf",
     idTheme: 0,
     level: 1,
-    ukrainianTranslationOfSentence: "Він представив нам свою дружину.",
+    ukrainianTranslationOfSentence: "Він представив нам свою дружину",
     ukrainianTranslation: "дружина",
     synonyms: ["spouse", "partner", "married woman"]
   }, {
     synonyms: ["determination", "resolve", "intention"],
     idTheme: 0,
     englishTranscription: "wɪl",
-    ukrainianTranslationOfSentence: "У неї є воля до успіху.",
+    ukrainianTranslationOfSentence: "У неї є воля до успіху",
     id: 963,
     englishWord: "will",
     ukrainianTranslation: "воля",
     level: 1,
-    englishSentence: "She has the will to succeed."
+    englishSentence: "She has the will to succeed"
   }, {
     synonyms: ["air in motion", "breeze", "gust"],
-    ukrainianTranslationOfSentence: "Вітер зірвав листя з дерева.",
+    ukrainianTranslationOfSentence: "Вітер зірвав листя з дерева",
     level: 1,
     englishTranscription: "wɪnd",
     idTheme: 0,
     ukrainianTranslation: "вітер",
-    englishSentence: "The wind blew the leaves off the tree.",
+    englishSentence: "The wind blew the leaves off the tree",
     id: 964,
     englishWord: "wind"
   }, {
     synonyms: ["opening in a wall", "pane of glass"],
     level: 1,
-    ukrainianTranslationOfSentence: "Закрий вікно, надворі холодно.",
+    ukrainianTranslationOfSentence: "Закрий вікно, надворі холодно",
     englishTranscription: "ˈwɪndoʊ",
     id: 965,
     ukrainianTranslation: "вікно",
-    englishSentence: "Close the window, it's cold outside.",
+    englishSentence: "Close the window, it's cold outside",
     idTheme: 0,
     englishWord: "window"
   }, {
     id: 966,
     idTheme: 0,
     englishTranscription: "waɪp",
-    ukrainianTranslationOfSentence: "Використовуй серветку, щоб витерти руки.",
+    ukrainianTranslationOfSentence: "Використовуй серветку, щоб витерти руки",
     level: 1,
     englishWord: "wipe",
     ukrainianTranslation: "витирати",
     synonyms: ["clean", "dry", "remove by rubbing"],
-    englishSentence: "Use a tissue to wipe your hands."
+    englishSentence: "Use a tissue to wipe your hands"
   }, {
     ukrainianTranslation: "бажати",
     level: 1,
     synonyms: ["desire", "want", "hope"],
-    ukrainianTranslationOfSentence: "Я бажаю тобі удачі.",
-    englishSentence: "I wish you good luck.",
+    ukrainianTranslationOfSentence: "Я бажаю тобі удачі",
+    englishSentence: "I wish you good luck",
     englishWord: "wish",
     id: 967,
     idTheme: 0,
     englishTranscription: "wɪʃ"
   }, {
     englishTranscription: "wɪθ",
-    ukrainianTranslationOfSentence: "Я пішов до магазину зі своїм другом.",
+    ukrainianTranslationOfSentence: "Я пішов до магазину зі своїм другом",
     englishWord: "with",
     synonyms: ["in the company of", "accompanied by"],
-    englishSentence: "I went to the store with my friend.",
+    englishSentence: "I went to the store with my friend",
     id: 968,
     level: 1,
     idTheme: 0,
@@ -9733,9 +9733,9 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "wɪˈðɪn",
     level: 1,
-    ukrainianTranslationOfSentence: "Відповідь знаходиться всередині тебе.",
+    ukrainianTranslationOfSentence: "Відповідь знаходиться всередині тебе",
     englishWord: "within",
-    englishSentence: "The answer lies within yourself.",
+    englishSentence: "The answer lies within yourself",
     ukrainianTranslation: "всередині"
   }, {
     level: 1,
@@ -9748,12 +9748,12 @@ export const top1000 = [
     englishTranscription: "wɪˈðaʊt",
     englishWord: "without"
   }, {
-    ukrainianTranslationOfSentence: "Я прокинувся рано сьогодні зранку.",
+    ukrainianTranslationOfSentence: "Я прокинувся рано сьогодні зранку",
     idTheme: 0,
     id: 971,
     synonyms: ["past tense of wake"],
     englishTranscription: "woʊk",
-    englishSentence: "I woke up early this morning.",
+    englishSentence: "I woke up early this morning",
     ukrainianTranslation: "прокинувся",
     level: 1,
     englishWord: "woke"
@@ -9764,16 +9764,16 @@ export const top1000 = [
     idTheme: 0,
     englishTranscription: "ˈwʊmən",
     ukrainianTranslation: "жінка",
-    englishSentence: "She is a strong and independent woman.",
+    englishSentence: "She is a strong and independent woman",
     synonyms: ["adult female", "lady", "female person"],
-    ukrainianTranslationOfSentence: "Вона сильна і незалежна жінка."
+    ukrainianTranslationOfSentence: "Вона сильна і незалежна жінка"
   }, {
     id: 973,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "На конференції було багато жінок.",
+    ukrainianTranslationOfSentence: "На конференції було багато жінок",
     level: 1,
     ukrainianTranslation: "жінки",
-    englishSentence: "There were many women at the conference.",
+    englishSentence: "There were many women at the conference",
     synonyms: ["plural of woman"],
     englishWord: "women",
     englishTranscription: "ˈwɪmɪn"
@@ -9785,27 +9785,27 @@ export const top1000 = [
     englishTranscription: "woʊnt",
     idTheme: 0,
     englishWord: "won't",
-    ukrainianTranslationOfSentence: "Я не зможу взяти участь у зустрічі.",
-    englishSentence: "I won't be able to attend the meeting."
+    ukrainianTranslationOfSentence: "Я не зможу взяти участь у зустрічі",
+    englishSentence: "I won't be able to attend the meeting"
   }, {
     id: 975,
     synonyms: ["be curious", "be amazed", "question"],
-    ukrainianTranslationOfSentence: "Я дивуюся, що станеться далі.",
+    ukrainianTranslationOfSentence: "Я дивуюся, що станеться далі",
     idTheme: 0,
     englishTranscription: "ˈwʌndər",
     ukrainianTranslation: "дивуватися",
     englishWord: "wonder",
     level: 1,
-    englishSentence: "I wonder what will happen next."
+    englishSentence: "I wonder what will happen next"
   }, {
     id: 976,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Стіл зроблений з дерева.",
+    ukrainianTranslationOfSentence: "Стіл зроблений з дерева",
     ukrainianTranslation: "дерево",
     englishTranscription: "wʊd",
     synonyms: ["material", "timber", "lumber"],
     englishWord: "wood",
-    englishSentence: "The table is made of wood.",
+    englishSentence: "The table is made of wood",
     level: 1
   }, {
     synonyms: ["unit of language", "term", "expression"],
@@ -9819,17 +9819,17 @@ export const top1000 = [
     englishSentence: "Can you spell this word for me?"
   }, {
     synonyms: ["past tense of wear"],
-    englishSentence: "She wore a beautiful dress to the party.",
+    englishSentence: "She wore a beautiful dress to the party",
     id: 978,
     englishTranscription: "wɔr",
-    ukrainianTranslationOfSentence: "Вона вдягла гарне плаття на вечірку.",
+    ukrainianTranslationOfSentence: "Вона вдягла гарне плаття на вечірку",
     ukrainianTranslation: "носив",
     idTheme: 0,
     level: 1,
     englishWord: "wore"
   }, {
-    englishSentence: "I have a lot of work to do today.",
-    ukrainianTranslationOfSentence: "У мене сьогодні багато роботи.",
+    englishSentence: "I have a lot of work to do today",
+    ukrainianTranslationOfSentence: "У мене сьогодні багато роботи",
     idTheme: 0,
     ukrainianTranslation: "робота",
     level: 1,
@@ -9842,26 +9842,26 @@ export const top1000 = [
     ukrainianTranslation: "світ",
     id: 980,
     synonyms: ["earth", "globe", "universe"],
-    englishSentence: "She dreams of traveling the world.",
+    englishSentence: "She dreams of traveling the world",
     level: 1,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона мріє про подорожування світом.",
+    ukrainianTranslationOfSentence: "Вона мріє про подорожування світом",
     englishWord: "world"
   }, {
     englishTranscription: "ˈwɜri",
-    ukrainianTranslationOfSentence: "Не хвилюйся, все буде добре.",
+    ukrainianTranslationOfSentence: "Не хвилюйся, все буде добре",
     synonyms: ["be concerned", "be anxious", "fret"],
     id: 981,
     ukrainianTranslation: "турбуватися",
     idTheme: 0,
-    englishSentence: "Don't worry, everything will be fine.",
+    englishSentence: "Don't worry, everything will be fine",
     level: 1,
     englishWord: "worry"
   }, {
     level: 1,
     id: 982,
-    englishSentence: "The situation is getting worse.",
-    ukrainianTranslationOfSentence: "Ситуація погіршується.",
+    englishSentence: "The situation is getting worse",
+    ukrainianTranslationOfSentence: "Ситуація погіршується",
     synonyms: ["comparative of bad"],
     ukrainianTranslation: "гірший",
     idTheme: 0,
@@ -9873,17 +9873,17 @@ export const top1000 = [
     level: 1,
     englishWord: "would",
     idTheme: 0,
-    englishSentence: "I would like a cup of tea, please.",
+    englishSentence: "I would like a cup of tea, please",
     synonyms: ["used to express a polite request"],
     englishTranscription: "wʊd",
-    ukrainianTranslationOfSentence: "Я б хотів чашку чаю, будь ласка."
+    ukrainianTranslationOfSentence: "Я б хотів чашку чаю, будь ласка"
   },
   {
     idTheme: 0,
     englishWord: "wouldn't",
-    englishSentence: "I wouldn't recommend that restaurant.",
+    englishSentence: "I wouldn't recommend that restaurant",
     level: 1,
-    ukrainianTranslationOfSentence: "Я не рекомендував би цей ресторан.",
+    ukrainianTranslationOfSentence: "Я не рекомендував би цей ресторан",
     id: 984,
     englishTranscription: "ˈwʊdnt",
     ukrainianTranslation: "не би",
@@ -9902,38 +9902,38 @@ export const top1000 = [
     level: 1,
     id: 986,
     englishWord: "wrap",
-    ukrainianTranslationOfSentence: "Будь ласка, обгорніть подарунок в папір для обгортання.",
+    ukrainianTranslationOfSentence: "Будь ласка, обгорніть подарунок в папір для обгортання",
     synonyms: ["cover", "enclose", "package"],
     englishTranscription: "ræp",
-    englishSentence: "Please wrap the gift in wrapping paper.",
+    englishSentence: "Please wrap the gift in wrapping paper",
     idTheme: 0,
     ukrainianTranslation: "обгортати"
   }, {
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Мені подобається писати історії.",
+    ukrainianTranslationOfSentence: "Мені подобається писати історії",
     synonyms: ["compose", "pen", "put down in writing"],
     level: 1,
     englishWord: "write",
     ukrainianTranslation: "писати",
-    englishSentence: "I like to write stories.",
+    englishSentence: "I like to write stories",
     id: 987,
     englishTranscription: "raɪt"
   }, {
     englishWord: "wrong",
     idTheme: 0,
-    englishSentence: "That's the wrong answer.",
+    englishSentence: "That's the wrong answer",
     level: 1,
     englishTranscription: "rɔŋ",
     id: 988,
     synonyms: ["incorrect", "mistaken", "not right"],
     ukrainianTranslation: "неправильний",
-    ukrainianTranslationOfSentence: "Це неправильна відповідь."
+    ukrainianTranslationOfSentence: "Це неправильна відповідь"
   }, {
     idTheme: 0,
     ukrainianTranslation: "так",
-    englishSentence: "Yeah, I agree with you.",
+    englishSentence: "Yeah, I agree with you",
     englishTranscription: "jɛ",
-    ukrainianTranslationOfSentence: "Так, я згоден з вами.",
+    ukrainianTranslationOfSentence: "Так, я згоден з вами",
     synonyms: ["yes", "affirmative", "yep"],
     id: 989,
     level: 1,
@@ -9943,10 +9943,10 @@ export const top1000 = [
     englishWord: "year",
     level: 1,
     synonyms: ["12 months", "365 days"],
-    englishSentence: "She was born in the year 1990.",
+    englishSentence: "She was born in the year 1990",
     ukrainianTranslation: "рік",
     idTheme: 0,
-    ukrainianTranslationOfSentence: "Вона народилася в 1990 році.",
+    ukrainianTranslationOfSentence: "Вона народилася в 1990 році",
     id: 990
   }, {
     englishTranscription: "jɛl",
@@ -9954,8 +9954,8 @@ export const top1000 = [
     idTheme: 0,
     ukrainianTranslation: "кричати",
     synonyms: ["shout", "scream", "raise one's voice"],
-    ukrainianTranslationOfSentence: "Будь ласка, не кричи на мене.",
-    englishSentence: "Please don't yell at me.",
+    ukrainianTranslationOfSentence: "Будь ласка, не кричи на мене",
+    englishSentence: "Please don't yell at me",
     id: 991,
     englishWord: "yell"
   }, {
@@ -9966,30 +9966,30 @@ export const top1000 = [
     level: 1,
     englishTranscription: "jɛs",
     synonyms: ["affirmative response", "agreement"],
-    englishSentence: "Yes, I would like some coffee.",
-    ukrainianTranslationOfSentence: "Так, я б хотів кави."
+    englishSentence: "Yes, I would like some coffee",
+    ukrainianTranslationOfSentence: "Так, я б хотів кави"
   }, {
     level: 1,
-    ukrainianTranslationOfSentence: "Я ще не закінчив.",
+    ukrainianTranslationOfSentence: "Я ще не закінчив",
     id: 993,
     idTheme: 0,
     englishTranscription: "jɛt",
     englishWord: "yet",
-    englishSentence: "I haven't finished yet.",
+    englishSentence: "I haven't finished yet",
     ukrainianTranslation: "ще",
     synonyms: ["up to now", "until now", "still"]
   }, {
     synonyms: ["second person pronoun"],
     id: 994,
     idTheme: 0,
-    englishSentence: "You are my best friend.",
+    englishSentence: "You are my best friend",
     englishWord: "you",
     englishTranscription: "ju",
     level: 1,
-    ukrainianTranslationOfSentence: "Ти мій найкращий друг.",
+    ukrainianTranslationOfSentence: "Ти мій найкращий друг",
     ukrainianTranslation: "ти, ви"
   }, {
-    ukrainianTranslationOfSentence: "Якщо ти хочеш, ми можемо піти разом.",
+    ukrainianTranslationOfSentence: "Якщо ти хочеш, ми можемо піти разом",
     synonyms: ["you would"],
     englishWord: "you'd",
     idTheme: 0,
@@ -9997,27 +9997,27 @@ export const top1000 = [
     ukrainianTranslation: "ти би",
     level: 1,
     englishTranscription: "jud",
-    englishSentence: "If you'd like, we can go together."
+    englishSentence: "If you'd like, we can go together"
   }, {
     id: 996,
-    englishSentence: "You'll do great in your presentation.",
+    englishSentence: "You'll do great in your presentation",
     englishTranscription: "jʊl",
     ukrainianTranslation: "ти будеш",
     idTheme: 0,
     level: 1,
     synonyms: ["you will"],
-    ukrainianTranslationOfSentence: "Ти відмінно впораєшся з презентацією.",
+    ukrainianTranslationOfSentence: "Ти відмінно впораєшся з презентацією",
     englishWord: "you'll"
   }, {
     id: 997,
     ukrainianTranslation: "ти",
     idTheme: 0,
     englishTranscription: "jʊr",
-    englishSentence: "You're a talented musician.",
+    englishSentence: "You're a talented musician",
     level: 1,
     synonyms: ["you are"],
     englishWord: "you're",
-    ukrainianTranslationOfSentence: "Ти талановитий музикант."
+    ukrainianTranslationOfSentence: "Ти талановитий музикант"
   }, {
     englishWord: "you've",
     level: 1,
@@ -10025,18 +10025,18 @@ export const top1000 = [
     synonyms: ["you have"],
     id: 998,
     idTheme: 0,
-    ukrainianTranslationOfSentence: "У вас є нове повідомлення.",
-    englishSentence: "You've got a new message.",
+    ukrainianTranslationOfSentence: "У вас є нове повідомлення",
+    englishSentence: "You've got a new message",
     ukrainianTranslation: "ти маєш"
   }, {
     id: 999,
     englishWord: "young",
-    englishSentence: "She is a young and energetic person.",
+    englishSentence: "She is a young and energetic person",
     ukrainianTranslation: "молодий",
     level: 1,
     idTheme: 0,
     englishTranscription: "jʌŋ",
-    ukrainianTranslationOfSentence: "Вона молода і енергійна людина.",
+    ukrainianTranslationOfSentence: "Вона молода і енергійна людина",
     synonyms: ["youthful", "junior", "not old"]
   }, {
     synonyms: ["belonging to you", "of you"],
@@ -10049,13 +10049,13 @@ export const top1000 = [
     englishWord: "your",
     idTheme: 0
   }, {
-    ukrainianTranslationOfSentence: "Піклуйся про себе.",
+    ukrainianTranslationOfSentence: "Піклуйся про себе",
     englishWord: "yourself",
     synonyms: ["reflexive pronoun", "own self"],
     level: 1,
     id: 1001,
     idTheme: 0,
-    englishSentence: "Take care of yourself.",
+    englishSentence: "Take care of yourself",
     ukrainianTranslation: "себе",
     englishTranscription: "jɔrˈsɛlf"
   },
