@@ -36,6 +36,7 @@ export class PhrasesTrainerComponent implements OnDestroy,OnInit {
   constructor(private route: ActivatedRoute,
               private store: Store,
               private speaker: SpeakerService) {
+
     this.route.params
       .pipe(
         map(params => params['id']),
