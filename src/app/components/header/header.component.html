@@ -19,17 +19,17 @@
   <div class="pages">
     <div class="page">
       <div routerLink="theme/0" class="page1">Words</div>
-      <div routerLink="phrases/1" [queryParams]="{query:'sentence'}" class="page1">Sentences</div>
-      <div routerLink="phrases/1" [queryParams]="{query:'phrase'}"  class="page1">Phrases</div>
+      <div routerLink="phrases/0" [queryParams]="{query:'sentence'}" class="page1">Sentences</div>
+      <div routerLink="phrases/0" [queryParams]="{query:'phrase'}"  class="page1">Phrases</div>
     </div>
     <div class="pageMenu">
       <button mat-icon-button [matMenuTriggerFor]="menu2">
         <mat-icon>menu</mat-icon>
       </button>
       <mat-menu #menu2="matMenu" >
-        <button  mat-menu-item>Words</button>
-        <button mat-menu-item>Sentences</button>
-        <button mat-menu-item>Phrases</button>
+        <button routerLink="theme/0" mat-menu-item>Words</button>
+        <button routerLink="phrases/0" mat-menu-item>Sentences</button>
+        <button routerLink="phrases/0" mat-menu-item>Phrases</button>
       </mat-menu>
     </div>
 
@@ -46,7 +46,7 @@
     <button mat-icon-button class="user-icon">
       <mat-icon>radio_button_checked</mat-icon>
     </button>
-    <button mat-icon-button class="user-icon">
+    <button routerLink="/admin" mat-icon-button class="user-icon">
       <img src="./assets/img/men.jpg" alt="User image">
     </button>
 

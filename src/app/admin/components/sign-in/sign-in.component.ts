@@ -38,7 +38,7 @@ export class SignInComponent implements OnInit{
     let {email,password}=this.form.value
 
        this.authService.login(email,password).subscribe(()=> {
-         this.router.navigate(['/'])
+         this.router.navigate(['admin/dashboard'])
          console.log('true')})
     //this.firestore.addProgress(x).pipe(tap(el=>console.log(el))).subscribe()
 //this.firestore.addProgress(x)

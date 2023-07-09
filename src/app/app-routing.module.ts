@@ -32,6 +32,7 @@ const routes: Routes = [
   {path:'theme/:id/collect/:id',component:LessonCollectComponent},
   {path:'theme/:id/lessons/result',component:Lesson2Component },
   {path:'theme/:id/:lessons/result/goal',component:Lesson3Component },
+
   {path:'admin',
   loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)
   }

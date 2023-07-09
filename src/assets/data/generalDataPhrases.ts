@@ -11,6 +11,7 @@ import {shop} from "./phrases/shop";
 import {park} from "./phrases/park";
 import {office} from "./phrases/office";
 import {interview} from "./phrases/interview";
+import {party} from "./phrases/party";
 
 
 export const objPhrases: TopicPhrases[] = [
@@ -84,6 +85,12 @@ export const objPhrases: TopicPhrases[] = [
     id: 11,
     topic: 'Interview',
     data: interview,
+    type:'phrase'
+  },
+  {
+    id: 12,
+    topic: 'Party',
+    data: party,
     type:'phrase'
   },
 
