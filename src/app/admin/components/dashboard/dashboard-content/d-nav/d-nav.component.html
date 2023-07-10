@@ -1,0 +1,30 @@
+<nav class="nav">
+  <div class="content">
+    <input type="text" placeholder="Search...">
+
+    <mat-form-field class="form-control-theme">
+      <mat-label>Choose Theme</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let el of list"
+                    [value]="el"
+                    [routerLink]="['/admin',el.type,el.id]">
+          {{el.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-button-toggle-group (change)="onSort($event.value)" name="btn" class="sort">
+      <mat-button-toggle
+        value="1"
+        matTooltip="A-Z">
+        <mat-icon>arrow_upward</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle
+        value="2"
+        matTooltip="Z-A">
+        <mat-icon>arrow_downward</mat-icon>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+
+  </div>
+</nav>

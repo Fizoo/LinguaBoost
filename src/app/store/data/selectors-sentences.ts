@@ -11,7 +11,7 @@ export namespace DataSelectorsSentences{
     getDataState,
     (state)=> (state.data.map(el=>({
       id:el.id,
-      topic:el.name,
+      name:el.name,
       data:el.data.map(a=>({
         id:a.id,
         phrase:a.englishSentence,

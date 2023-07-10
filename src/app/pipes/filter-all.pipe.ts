@@ -11,7 +11,7 @@ export class FilterAllPipe implements PipeTransform {
       switch (filterType) {
         case 'phrases':
           return value.filter((el) =>
-            (el as TopicPhrases).topic && (el as TopicPhrases).topic.toLowerCase().includes(search.toLowerCase())
+            (el as TopicPhrases).name && (el as TopicPhrases).name.toLowerCase().includes(search.toLowerCase())
           );
         case 'theme':
           return value.filter((el) =>

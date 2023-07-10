@@ -21,7 +21,7 @@ export namespace DataSelectorsPhrases {
     getAllDataOfSentence,
     (state)=> (state.map(el=>({
       id:el.id,
-      topic:el.name,
+      name:el.name,
       type:'sentence',
       data:el.data.map(a=>({
         id:a.id,

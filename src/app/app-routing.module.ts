@@ -20,7 +20,7 @@ const routes: Routes = [
       {path: '', pathMatch: 'full', redirectTo: 'home'},
       {path: 'home', component: HomePageComponent},
       {path: 'theme/:id', component: ContentComponent},
-      {path:'phrases/:id',component:PhrasesComponent},
+      {path: 'phrases/:id',component:PhrasesComponent},
      /* { path: '**', redirectTo: 'home' }*/
     ]},
   {path:'phrases/:id/trainer/:id',component:PhrasesTrainerComponent},

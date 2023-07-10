@@ -1,0 +1,6 @@
+<main class="main">
+  <div class="box">
+      <app-d-nav [list]="listThemes"></app-d-nav>
+      <app-d-c-list *ngFor="let el of list ; trackBy : trackByFn " [item]="el"></app-d-c-list>
+  </div>
+</main>

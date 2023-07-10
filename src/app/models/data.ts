@@ -36,7 +36,7 @@ export interface Words{
 
 export interface TopicPhrases{
   id:number
-  topic:string
+  name:string
   data:Phrase[]
   type?:string
 
@@ -50,5 +50,18 @@ export interface Phrase {
   sentenceWithPhrase?:string
   translateSentenceToUA?:string
   idPhrase: number,
+}
+
+export interface CollectTopic {
+  id:string
+  name:string
+  data:CollectTopicItem[]
+  type?:string
+}
+export interface CollectTopicItem {
+  id:number
+  text:string
+  translateToUA:string
+  idTopic:number
 }
 

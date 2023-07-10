@@ -1,0 +1,17 @@
+<div
+  [routerLink]="['/admin',topic.type,topic.id]"
+  routerLinkActive="active"
+  class="list">
+  <div class="item">
+    <span class="text">{{topic.name}}</span>
+  </div>
+  <div class="btn-group">
+    <button class="btn-delete" mat-icon-button color="warn">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button class="btn-delete" mat-icon-button color="warn">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+
+</div>

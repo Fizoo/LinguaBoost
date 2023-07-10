@@ -1,6 +1,6 @@
 import {createFeatureSelector, createSelector} from "@ngrx/store";
 import {IData} from "./data-reducer";
-import {Theme, Words} from "../../models/data";
+import {CollectTopic, Theme, Words} from "../../models/data";
 
 export namespace DataSelectorsWords {
   export const getDataState = createFeatureSelector<IData>('data');
@@ -21,6 +21,46 @@ export namespace DataSelectorsWords {
     state=>{
       return state
     }
+  )
+
+  export const getAllDataForDashboard=(id:string,type:string)=>createSelector(
+    getDataState,
+    (state)=>{
+      let newArr:CollectTopic[]=[]
+      const { data, phrases } = state
+      if(type==='word'){
+        newArr=data.map(el=>({...el,
+          type:'word',
+          data:el.data.map(a=>({
+            id:a.id,
+            text:a.englishWord,
+            translateToUA:a.ukrainianTranslation,
+            idTopic:a.idTheme
+          }))
+        }))
+      }
+      if(type==='phrase'){
+        newArr=phrases.map(el=>({...el,
+          id:el.id.toString(),
+          data:el.data.map(a=>({
+            id:a.id,
+            text:a.phrase,
+            translateToUA:a.translateToUA,
+            idTopic:a.idPhrase
+          }))
+        }))
+      }
+      return newArr
+    }
+  )
+
+  export const getListForDashboard=(id:string,type:string)=>createSelector(
+    getAllDataForDashboard(id,type),
+    (state)=> {
+      console.log(state)
+     return  state.filter(el => el.id === id)[0]
+    }
+
   )
 
   export const getRandomListWith20ById = (id: string) => createSelector(

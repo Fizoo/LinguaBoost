@@ -1,0 +1,22 @@
+@use './../../../../scss/mixins' as m;
+
+.dashboard{
+  margin-top: 60px;
+  width: 100%;
+
+  .content{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    app-dashboard-content{
+      flex: 2;
+      //max-width: 1100px;
+    }
+  }
+  @include m.mobile{
+    .content{
+      gap: 0;
+      padding: 0;
+    }
+  }
+}

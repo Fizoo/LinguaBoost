@@ -1,2 +1,6 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<div class="dashboard">
+    <div class="content">
+        <app-dashboard-sidebar [listArr]="list$ | async"></app-dashboard-sidebar>
+        <app-dashboard-content [listThemes]="list$ |async" ></app-dashboard-content>
+    </div>
+</div>

@@ -17,79 +17,79 @@ import {party} from "./phrases/party";
 export const objPhrases: TopicPhrases[] = [
   {
     id: 0,
-    topic: 'Popular',
+    name: 'Popular',
     data: popular,
     type:'phrase'
   },
   {
     id: 1,
-    topic: 'Greeting',
+    name: 'Greeting',
     data: greeting,
     type:'phrase'
   },
   {
     id: 2,
-    topic: 'Restaurant',
+    name: 'Restaurant',
     data: restaurant,
     type:'phrase'
   },
   {
     id: 3,
-    topic: 'Resort',
+    name: 'Resort',
     data: resort,
     type:'phrase'
   },
   {
     id: 4,
-    topic: 'Hotel',
+    name: 'Hotel',
     data: hotel,
     type:'phrase'
   },
   {
     id: 5,
-    topic: 'Hotel',
+    name: 'Hotel',
     data: shop,
     type:'phrase'
   },
   {
     id: 6,
-    topic: 'Walk',
+    name: 'Walk',
     data: park,
     type:'phrase'
   },
   {
     id: 7,
-    topic: 'Office',
+    name: 'Office',
     data: office,
     type:'phrase'
   },
   {
     id: 8,
-    topic: 'Get',
+    name: 'Get',
     data: getPhrases,
     type:'phrase'
   },
   {
     id: 9,
-    topic: 'Short global',
+    name: 'Short global',
     data: shortGlobalPhrases,
     type:'phrase'
   },
   {
     id: 10,
-    topic: 'Top Upper-Intermediate',
+    name: 'Top Upper-Intermediate',
     data: top_Upper_Intermediate_Phrases,
     type:'phrase'
   },
   {
     id: 11,
-    topic: 'Interview',
+    name: 'Interview',
     data: interview,
     type:'phrase'
   },
   {
     id: 12,
-    topic: 'Party',
+    name: 'Party',
     data: party,
     type:'phrase'
   },
