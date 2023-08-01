@@ -10,6 +10,7 @@ import {CollectTopic} from "../../../../models/data";
 })
 export class DashboardSidebarComponent {
   @Input() listArr:CollectTopic[]|null
+
   inputValue: string=''
 
   trackByFn(index: number, item: CollectTopic) {

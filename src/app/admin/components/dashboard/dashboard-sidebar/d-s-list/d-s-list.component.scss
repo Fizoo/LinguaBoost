@@ -15,10 +15,11 @@
   }
   &:hover{
     background: #e8fdff;
-
     //margin-left: .5rem;
-    .btn-group{
-      opacity:  0.7;
+  }
+  &:hover:not(.active){
+    .btn-group {
+      opacity: 0.7;
     }
   }
 

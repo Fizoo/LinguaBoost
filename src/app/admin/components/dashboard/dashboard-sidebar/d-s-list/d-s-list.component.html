@@ -6,10 +6,10 @@
     <span class="text">{{topic.name}}</span>
   </div>
   <div class="btn-group">
-    <button class="btn-delete" mat-icon-button color="warn">
+    <button class="btn-delete" mat-icon-button color="warn" (click)="deleteTopic(topic)">
       <mat-icon>delete</mat-icon>
     </button>
-    <button class="btn-delete" mat-icon-button color="warn">
+    <button class="btn-delete" mat-icon-button color="warn" >
       <mat-icon>add</mat-icon>
     </button>
   </div>

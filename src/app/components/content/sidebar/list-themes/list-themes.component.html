@@ -3,7 +3,6 @@
         [appProgress]="item.id"
         [routerLink]="['/theme',item.id]"
         routerLinkActive="active"
-
 >
   <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -11,5 +10,11 @@
       fill="currentColor"></path>
   </svg>
   <span class="name">{{item.name}}</span>
+
+  <button (click)="add(item)"  mat-icon-button color="warn">
+    <mat-icon >add </mat-icon>
+  </button>
+
+
 
 </button>

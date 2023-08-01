@@ -1,6 +1,6 @@
 <nav class="nav">
   <div class="content">
-    <input type="text" placeholder="Search...">
+    <input type="text" placeholder="Search..." [(ngModel)]="search" (keyup)="onSearch()">
 
     <mat-form-field class="form-control-theme">
       <mat-label>Choose Theme</mat-label>
@@ -20,7 +20,7 @@
         <mat-icon>arrow_upward</mat-icon>
       </mat-button-toggle>
       <mat-button-toggle
-        value="2"
+        value="-1"
         matTooltip="Z-A">
         <mat-icon>arrow_downward</mat-icon>
       </mat-button-toggle>

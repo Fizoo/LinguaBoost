@@ -35,18 +35,21 @@ export namespace DataSelectorsWords {
             id:a.id,
             text:a.englishWord,
             translateToUA:a.ukrainianTranslation,
-            idTopic:a.idTheme
+            idTopic:a.idTheme,
+            type:'word'
           }))
         }))
       }
       if(type==='phrase'){
         newArr=phrases.map(el=>({...el,
           id:el.id.toString(),
+          type:'phrase',
           data:el.data.map(a=>({
             id:a.id,
             text:a.phrase,
             translateToUA:a.translateToUA,
-            idTopic:a.idPhrase
+            idTopic:a.idPhrase,
+            type:'phrase'
           }))
         }))
       }
@@ -57,7 +60,7 @@ export namespace DataSelectorsWords {
   export const getListForDashboard=(id:string,type:string)=>createSelector(
     getAllDataForDashboard(id,type),
     (state)=> {
-      console.log(state)
+      //console.log(state)
      return  state.filter(el => el.id === id)[0]
     }
 

@@ -1,6 +1,14 @@
 <main class="main">
   <div class="box">
-      <app-d-nav [list]="listThemes"></app-d-nav>
-      <app-d-c-list *ngFor="let el of list ; trackBy : trackByFn " [item]="el"></app-d-c-list>
+      <app-d-nav
+        [list]="listThemes"
+      (searchWord)="onSearch($event)"
+        (sortList)="onSort($event)"
+
+      ></app-d-nav>
+      <app-d-c-list *ngFor="let el of list | dashCList: searchText; trackBy : trackByFn "
+                    [item]="el"
+                    (deleteItem)="deleteItem($event)"
+      ></app-d-c-list>
   </div>
 </main>

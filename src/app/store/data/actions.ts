@@ -1,5 +1,5 @@
 import {createAction, props} from "@ngrx/store";
-import {Theme, Words} from "../../models/data";
+import {CollectTopic, CollectTopicItem, Theme, Words} from "../../models/data";
 
 
 export enum DataNames{
@@ -7,7 +7,8 @@ export enum DataNames{
   GetAllData='[Data] getAllData',
   GetDataByTheme='[Data] getDataByTheme',
   AddNewTheme='[Data] addNewTheme',
-  DeleteDataByTheme='[Data] deleteDataByTheme',
+  DeleteTopicById='[Data] deleteItemById',
+  DeleteItemWithTopicById='[Data] deleteItemWithTopicById',
   UpdateDataByTheme='[Data] updateDataByTheme',
   AddNewDataTheme='[Data] addNewDataTheme',
   UpdateWord='[Data] updateWord'
@@ -20,7 +21,9 @@ export namespace DataActions{
 
   export const addNewTheme=createAction(DataNames.AddNewTheme,props<{topic:Theme}>())
 
-  export const deleteDataByTheme=createAction(DataNames.DeleteDataByTheme,props<{id:string}>())
+  export const deleteItemWithTopicById=createAction(DataNames.DeleteItemWithTopicById,props<{item:CollectTopicItem}>())
+
+  export const deleteTopicById=createAction(DataNames.DeleteTopicById,props<{topic:CollectTopic}>())
 
   export const updateDataByTheme=createAction(DataNames.UpdateDataByTheme,props<{word:Words}>())
 

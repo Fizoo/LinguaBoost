@@ -1,13 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import { Router } from '@angular/router';
-import { AuthService } from '../../../services/auth.service';
+import {Router} from '@angular/router';
+import {AuthService} from '../../../services/auth.service';
 
 import {FirestoreService} from "../../../services/firestore.service";
-
-
-
-
 
 
 @Component({
@@ -37,8 +33,9 @@ export class SignInComponent implements OnInit{
   onSubmit($event: any) {
     let {email,password}=this.form.value
 
-       this.authService.login(email,password).subscribe(()=> {
-         this.router.navigate(['admin/dashboard'])
+       this.authService.login(email,password).subscribe((el)=> {
+         console.log(el.user?.email)
+         this.router.navigate(['admin'])
          console.log('true')})
     //this.firestore.addProgress(x).pipe(tap(el=>console.log(el))).subscribe()
 //this.firestore.addProgress(x)

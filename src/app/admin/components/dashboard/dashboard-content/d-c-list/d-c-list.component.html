@@ -6,14 +6,10 @@
     <div class="item">
       <span class="text text2">{{item.translateToUA}}</span>
     </div>
-    <div class="actions">
-      <button class="btn" mat-icon-button color="warn">
+    <div class="actions" >
+      <button class="btn" mat-icon-button color="warn" (click)="delete(item)">
         <mat-icon>delete</mat-icon>
       </button>
-      <button class="btn" mat-icon-button color="warn">
-        <mat-icon>add</mat-icon>
-      </button>
-
     </div>
   </div>
 </div>

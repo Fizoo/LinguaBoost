@@ -65,11 +65,21 @@
     }
 
     .example {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
-      gap: 0.5rem;
-      .mat-body-2 {
-        color: v.$color-second;
+      .box1{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .mat-body-2 {
+          color: v.$color-second;
+        }
+      }
+      .box2{
+        margin-left: 2rem;
+        opacity: 0.8;
+        font-size: 1.2rem;
       }
     }
 

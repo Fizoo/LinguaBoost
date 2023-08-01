@@ -56,12 +56,14 @@ export interface CollectTopic {
   id:string
   name:string
   data:CollectTopicItem[]
-  type?:string
+  type:string
 }
+
 export interface CollectTopicItem {
   id:number
   text:string
   translateToUA:string
   idTopic:number
+  type:string
 }
 

@@ -47,19 +47,18 @@
         </svg>
       </ng-template>
 
-
-
     </div>
-
 
   </div>
 
   <div *ngIf="isExample" class="sentence">
     <div class="example">
-      <div class="mat-body-2">Example</div>
-      <button mat-icon-button (click)="speak(item.englishSentence)">
-        <mat-icon color="primary">play_circle</mat-icon>
-      </button>
+      <div class="box1"> <div class="mat-body-2">Example</div>
+        <button mat-icon-button (click)="speak(item.englishSentence)">
+          <mat-icon color="primary">play_circle</mat-icon>
+        </button></div>
+      <div class="box2">{{item.englishTranscription}}</div>
+
     </div>
     <div class="text">
       <p class="englishSentence">{{item.englishSentence}}</p>
@@ -81,6 +80,7 @@
           <button mat-raised-button *ngFor="let syn of item.synonyms; index as i ">
             <span (click)="speak(item.synonyms[i])">{{syn }}</span>
           </button>
+
         </div>
 
       <!-- <span class="synonyms__item" *ngFor="let syn of item.synonyms ">{{syn }}</span>-->

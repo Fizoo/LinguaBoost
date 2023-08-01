@@ -5,8 +5,8 @@ import {
   DocumentChangeAction,
   DocumentReference
 } from "@angular/fire/compat/firestore";
-import {first, from, map, Observable} from "rxjs";
-import {Theme, Words} from "../models/data";
+import {first, from, map, Observable, tap} from "rxjs";
+import {Theme, TopicPhrases, Words} from "../models/data";
 import {User} from "../admin/model/auth";
 import {UserUidService} from "./user-uid.service";
 //import * as firebase from 'firebase/compat';
@@ -22,10 +22,14 @@ export class FirestoreService {
   userUid: string = '1'
   private progressCollection: AngularFirestoreCollection<Progress>;
   readonly progress: Observable<Progress[]>;
+
   private themeCollection: AngularFirestoreCollection<Theme>;
+  private phraseCollection: AngularFirestoreCollection<TopicPhrases>;
+  private sentenceCollection:AngularFirestoreCollection<TopicPhrases>;
   private userCollection: AngularFirestoreCollection<User>;
   private wordsCollection: AngularFirestoreCollection<Words>;
   private dataCollection: AngularFirestoreCollection<Theme[]>;
+
 
   constructor(private firestore: AngularFirestore,
               private userId$: UserUidService
@@ -35,6 +39,8 @@ export class FirestoreService {
     this.userCollection = this.firestore.collection<User>('users');
     this.dataCollection = this.firestore.collection<Theme[]>('data');
     this.themeCollection = this.firestore.collection<Theme>('theme');
+    this.phraseCollection=this.firestore.collection<TopicPhrases>('phrases')
+    this.sentenceCollection=this.firestore.collection<TopicPhrases>('sentences')
 
     this.progress = this.progressCollection.snapshotChanges().pipe(
       map(actions => actions.map((a: DocumentChangeAction<Progress>) => {
@@ -47,7 +53,7 @@ export class FirestoreService {
     this.userId$.getUserUid().pipe(first()).subscribe(id => this.userUid = id)
   }
 
-  //////////////////------------------PROGRESS---------------------///////////////////////////
+  //////////////////------------------PROGRESS---------------------//////////////////////////////////////////////////////
 // Додавання документу в колекцію "progress" з конкретним id
   addNewProgress(progress: Progress): Observable<void> {
     return from(this.progressCollection.doc(progress.id).set(progress))
@@ -110,7 +116,7 @@ export class FirestoreService {
     );*/
   }
 
-  //////////////////------------------USER---------------------////////////////////////////////
+  //////////////////------------------USER---------------------//////////////////////////////////////////////////////////
 // Додавання документу в колекцію "user"
   addNewUser(user: User): Observable<void> {
     return from(this.userCollection.doc(user.uid).set(user))
@@ -137,7 +143,7 @@ export class FirestoreService {
     return from(this.userCollection.doc(this.userUid).delete())
   }
 
-//--------------------------DATA---------------------------------------
+//--------------------------DATA-----------------------------------------------------------------------------------
   // Додавання документу в колекцію "data"
   addDataItem(item: any): Promise<DocumentReference<any>> {
     return this.dataCollection.add(item);
@@ -182,7 +188,7 @@ export class FirestoreService {
     return this.progressCollection.doc<Progress>(this.userUid).valueChanges();
   }
 
-  ////--------------theme-------------
+  ////--------------theme---------------------------------------------------------------------
   public addTheme(theme: Theme): Observable<void> {
     const idName = `${theme.name}:${theme.id}`;
     return from(this.themeCollection.doc(idName).set(theme))
@@ -203,6 +209,66 @@ export class FirestoreService {
     return from(this.themeCollection.doc('General:1').update({
       [`data.${wordId}.level`]: updatedWord
     }));
+  }
+
+  /////---------------------------------------Phrase-----------------------------------------------------
+
+  public addPhrase(phrase:TopicPhrases):any{
+    return from(this.phraseCollection.add(phrase))
+  }
+
+  public addPhraseWithId(phrase:TopicPhrases):Observable<void>{
+    const nameDoc=`${phrase.name.toUpperCase()}:${phrase.id}`
+    return from(this.phraseCollection.doc(nameDoc).set(phrase) )
+  }
+
+  public getAllPhraseAsync(){
+    return from(this.phraseCollection.valueChanges())
+  }
+
+ public getAllPhrase():Observable<TopicPhrases[]>{
+    return this.phraseCollection.get().pipe(
+      map((querySnapshot) => {
+        const data: TopicPhrases[] = [];
+        querySnapshot.forEach((doc) => {
+          const item = doc.data() as TopicPhrases;
+         // item.id = doc.id
+          data.push(item);
+        })
+        return data;
+      })
+    )
+  }
+
+  public deletePhraseById(phrase:TopicPhrases):Observable<void>{
+    const nameDoc=`${phrase.name.toUpperCase()}:${phrase.id}`
+    return from(this.phraseCollection.doc(nameDoc).delete() )
+  }
+
+  /////---------------------------------------------Sentence------------------------------------------------
+
+  public addSentenceWithId(sentence:TopicPhrases):Observable<void>{
+    const nameDoc=`${sentence.name.toUpperCase()}:${sentence.id}`
+      return from(this.sentenceCollection.doc(nameDoc).set(sentence) )
+  }
+
+  public getAllSentence():Observable<TopicPhrases[]>{
+    return this.sentenceCollection.get().pipe(
+      map((querySnapshot) => {
+        const data: TopicPhrases[] = [];
+        querySnapshot.forEach((doc) => {
+          const item = doc.data() as TopicPhrases;
+          // item.id = doc.id
+          data.push(item);
+        })
+        return data;
+      })
+    )
+  }
+
+  public deleteSentenceById(sentence:TopicPhrases):Observable<void>{
+    const nameDoc=`${sentence.name.toUpperCase()}:${sentence.id}`
+    return from(this.sentenceCollection.doc(nameDoc).delete() )
   }
 
 }

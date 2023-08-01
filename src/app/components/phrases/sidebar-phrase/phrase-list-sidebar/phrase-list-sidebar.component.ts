@@ -9,4 +9,5 @@ import {TopicPhrases} from "../../../../models/data";
 })
 export class PhraseListSidebarComponent {
    @Input() list:TopicPhrases
+
 }
