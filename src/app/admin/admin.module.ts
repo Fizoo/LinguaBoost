@@ -23,6 +23,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import { DashAsideListPipe } from './pipe/dash-aside-list.pipe';
 import {MatSelectModule} from "@angular/material/select";
 import { DashCListPipe } from './pipe/dash-c-list.pipe';
+import { HomeAdminComponent } from './components/home-admin/home-admin.component';
 
 
 /*const routes:Routes = [
@@ -38,11 +39,10 @@ const routes: Routes = [
   {path: '', redirectTo: 'admin', pathMatch: 'full'},
   {
     path: '', component: AdminLayoutComponent, children: [
-      {path: '', redirectTo: 'dashboard/word/0', pathMatch: 'full'},
-      {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
-      {path: 'word/:id', component: DashboardComponent},
-      {path: 'phrase/:id', component: DashboardComponent},
-
+      {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {path: 'home', component: HomeAdminComponent},
+      {path: 'word/:id', component: DashboardComponent, canActivate: [AuthGuard]},
+      {path: 'phrase/:id', component: DashboardComponent, canActivate: [AuthGuard]},
       {path: 'signIn', component: SignInComponent},
       {path: 'signUp', component: SignUpComponent},
     ]
@@ -63,7 +63,8 @@ const routes: Routes = [
     DNavComponent,
     DCListComponent,
     DashAsideListPipe,
-    DashCListPipe
+    DashCListPipe,
+    HomeAdminComponent
   ],
   imports: [
     CommonModule,
