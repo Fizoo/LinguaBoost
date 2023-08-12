@@ -5,7 +5,7 @@ import {
   DocumentChangeAction,
   DocumentReference
 } from "@angular/fire/compat/firestore";
-import {first, from, map, Observable, tap} from "rxjs";
+import {first, from, map, Observable, switchMap} from "rxjs";
 import {Theme, TopicPhrases, Words} from "../models/data";
 import {User} from "../admin/model/auth";
 import {UserUidService} from "./user-uid.service";
@@ -37,8 +37,8 @@ export class FirestoreService {
     // this.authService.user$.subscribe(id=>this.userUid=id)
     this.progressCollection = this.firestore.collection<Progress>('progress');
     this.userCollection = this.firestore.collection<User>('users');
-    this.dataCollection = this.firestore.collection<Theme[]>('data');
-    this.themeCollection = this.firestore.collection<Theme>('theme');
+    this.dataCollection = this.firestore.collection<Theme[]>('words');
+    this.themeCollection = this.firestore.collection<Theme>('words');
     this.phraseCollection=this.firestore.collection<TopicPhrases>('phrases')
     this.sentenceCollection=this.firestore.collection<TopicPhrases>('sentences')
 
@@ -138,6 +138,10 @@ export class FirestoreService {
     )
   }
 
+  getCurrentUser(){
+    return from(this.userCollection.doc(this.userUid).valueChanges())
+  }
+
   // Видалення документу поточного юзера з колекції "user"
   deleteUser(): Observable<void> {
     return from(this.userCollection.doc(this.userUid).delete())
@@ -191,11 +195,14 @@ export class FirestoreService {
   ////--------------theme---------------------------------------------------------------------
   public addTheme(theme: Theme): Observable<void> {
     const idName = `${theme.name}:${theme.id}`;
-    return from(this.themeCollection.doc(idName).set(theme))
+
+    return from(this.themeCollection.doc(idName).collection('d').doc().set(theme))
   }
   public addThemeAddCol(theme: Theme): Observable<void> {
     const idName = `${theme.name}:${theme.id}`;
-    return from(this.themeCollection.doc('General:1').collection('user1').doc('user1Id') .set(theme))
+    return this.getCurrentUser().pipe(
+      switchMap((user)=>from(this.themeCollection.doc(idName).collection(user?.email || 'newUser').doc(this.userUid) .set(theme)))
+    )
   }
 
   public updateTheme(theme: Partial<Theme>): Observable<void> {

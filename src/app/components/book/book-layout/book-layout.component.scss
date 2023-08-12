@@ -1,0 +1,62 @@
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+
+
+  .content{
+    position: relative;
+    margin: 1rem  auto 7rem;
+    max-width: 1100px;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+
+    .charters{
+      padding-top: 1rem;
+      border-bottom: 1px solid #dad9d9;
+      position: relative;
+
+      h2,h1{
+        text-align: center;
+        font-weight: 700;
+      }
+      .charter{
+        padding: 1rem;
+      }
+
+      .player{
+        position: fixed;
+        bottom: 5%;
+        right: 30%;
+        z-index: 999;
+
+      }
+    }
+
+    .adder{
+      position: absolute;
+       top: 1rem;
+       right: 5%;
+    }
+  }
+
+  .actions{
+    position: absolute;
+    right: 10%;
+    top:2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 5px;
+    .btn-group{
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      padding: 5px;
+    }
+
+  }
+}
+
+
+

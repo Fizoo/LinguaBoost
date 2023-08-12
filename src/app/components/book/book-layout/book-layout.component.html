@@ -1,0 +1,48 @@
+<div class="main">
+  <div></div>
+  <div class="content">
+    <div *ngFor="let item of copyBook.chapters; let ind=index" class="charters">
+      <h1>{{item.chapter_number}}</h1>
+      <h2>{{item.chapter_title}}</h2>
+
+        <div class="player" *ngIf="item.id===currentChapter">
+        <app-audio  [selectedAudioUrl]="listAudio[item.id-1]"></app-audio>
+        </div>
+
+
+      <div class="charter">
+        <app-book-sentence *ngFor="let el of item.sentences; let  ind=index"
+                           [text]="el"
+                           [index]="ind"
+                           (speaker)="speaker($event)"
+        ></app-book-sentence>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="adder" *ngIf="!isAdder">
+      <button mat-icon-button (click)="adder()">
+          <mat-icon >filter_list</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="isAdder" class="actions">
+    <div class="btn-group">
+      <mat-form-field>
+        <mat-label>All Book</mat-label>
+        <mat-select [formControl]="bookControl">
+          <mat-option value="-1">All Book</mat-option>
+          <mat-option *ngFor="let item of book.chapters" [value]="item">{{item.chapter_number}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-icon-button (click)="adder()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+
+
+</div>
+

@@ -1,0 +1,50 @@
+.box{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  .actions{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    .btn-vision{
+      font-size: .5rem;
+      color: gray;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  .str{
+    cursor: pointer;
+    margin:  0;
+    .strItem{
+      position: relative;
+      .item{
+        position: relative;
+        font-size: 1rem;
+        &:hover{
+          background: yellow;
+        }
+      }
+    }
+    .translate{
+      color: green;
+    }
+
+  }
+
+}
+
+
+.pop-up-span {
+  position: absolute;
+  top: -30px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Вищий індекс для відображення попапу над іншими елементами */
+  /* Інші стилі, які вам потрібні */
+}

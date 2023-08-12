@@ -14,18 +14,6 @@ export class ListThemesComponent {
   }
 
   add(item: Theme) {
-    console.log(item)
-    let x= {
-      id: '1',
-      name: '11',
-      timeOfDay: [{
-        date: new Date().toLocaleDateString(),
-        counter: 0
-      }],
-      countDays: 0,
-      tasksCompleted: 0,
-      score: 0
-    }
-      // this.firestore.addProgressItem(x).subscribe()
+     this.firestore.addThemeAddCol(item).subscribe()
   }
 }

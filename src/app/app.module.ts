@@ -59,6 +59,13 @@ import {FilterPhrasesPipe} from './pipes/filter-phrases.pipe';
 import { FilterAllPipe } from './pipes/filter-all.pipe';
 import { PhrasesTrainerComponent } from './components/phrases/phrases-trainer/phrases-trainer.component';
 import { CombineTextComponent } from './components/phrases/phrases-trainer/combine-text/combine-text.component';
+import { BookLayoutComponent } from './components/book/book-layout/book-layout.component';
+import { BookSentenceComponent } from './components/book/book-layout/book-sentence/book-sentence.component';
+import { TranslaterDirective } from './directives/translater.directive';
+import { InfoComponent } from './components/info/info.component';
+import {MatSelectModule} from "@angular/material/select";
+import {MatExpansionModule} from "@angular/material/expansion";
+import { AudioComponent } from './components/book/book-layout/audio/audio.component';
 
 
 @NgModule({
@@ -95,6 +102,11 @@ import { CombineTextComponent } from './components/phrases/phrases-trainer/combi
     FilterAllPipe,
     PhrasesTrainerComponent,
     CombineTextComponent,
+    BookLayoutComponent,
+    BookSentenceComponent,
+    TranslaterDirective,
+    InfoComponent,
+    AudioComponent,
   ],
     imports: [
         BrowserModule,
@@ -122,6 +134,8 @@ import { CombineTextComponent } from './components/phrases/phrases-trainer/combi
         MatProgressBarModule,
         ReactiveFormsModule,
         MatButtonToggleModule,
+        MatSelectModule,
+        MatExpansionModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,7 @@
+<ng-container *ngIf="selectedAudioUrl">
+  <audio controls class="custom-audio">
+    <source [src]="selectedAudioUrl" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</ng-container>

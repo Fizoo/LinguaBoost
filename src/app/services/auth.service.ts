@@ -19,6 +19,7 @@ export class AuthService {
   private token$: ReplaySubject<string> = new ReplaySubject<string>(1);
   private isAuth$: ReplaySubject<boolean> = new ReplaySubject<boolean>(1);
   public user$ = new BehaviorSubject<string>('');
+  public userEmail$ = new BehaviorSubject<string>('');
 
   constructor(private afAuth: AngularFireAuth,
               private afs: AngularFirestore,
@@ -43,7 +44,10 @@ export class AuthService {
 
   login(email: string, password: string): Observable<firebase.auth.UserCredential> {
     return from(this.afAuth.signInWithEmailAndPassword(email, password)).pipe(
-      tap(()=>this.isAuth$.next(true))
+      tap(()=> {
+        this.isAuth$.next(true)
+        this.userEmail$.next(email)
+      })
     )
   }
 

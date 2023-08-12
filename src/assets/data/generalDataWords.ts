@@ -15,6 +15,8 @@ import {city} from "./words/city";
 import {game} from "./words/game";
 import {IT} from "./words/IT";
 import {sport} from "./words/sport";
+import {adjective} from "./words/adjective";
+import {top3000} from "./words/Top3000";
 
 
 export const mainData:Main={
@@ -23,6 +25,11 @@ export const mainData:Main={
       id:'0',
       name: 'Top1000',
       data:top1000
+    },
+    {
+      id:'20',
+      name: 'Top3000',
+      data:top3000
     },
     {
       id:'1',
@@ -99,6 +106,11 @@ export const mainData:Main={
       name:'Sport',
       data:sport
     },
+    {
+      id:'16',
+      name:'Adjective',
+      data:adjective
+    }
   ]
 
 }
