@@ -6,7 +6,7 @@
       <h2>{{item.chapter_title}}</h2>
 
         <div class="player" *ngIf="item.id===currentChapter">
-        <app-audio  [selectedAudioUrl]="listAudio[item.id-1]"></app-audio>
+        <app-audio  [selectedAudioUrl]="item?.audioUrl"></app-audio>
         </div>
 
 

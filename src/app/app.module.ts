@@ -66,6 +66,7 @@ import { InfoComponent } from './components/info/info.component';
 import {MatSelectModule} from "@angular/material/select";
 import {MatExpansionModule} from "@angular/material/expansion";
 import { AudioComponent } from './components/book/book-layout/audio/audio.component';
+import { BookMainComponent } from './components/book/book-main/book-main.component';
 
 
 @NgModule({
@@ -107,6 +108,7 @@ import { AudioComponent } from './components/book/book-layout/audio/audio.compon
     TranslaterDirective,
     InfoComponent,
     AudioComponent,
+    BookMainComponent,
   ],
     imports: [
         BrowserModule,

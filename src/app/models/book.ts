@@ -1,5 +1,3 @@
-
-
 export interface Book{
   id:number
   book_title:string
@@ -8,6 +6,7 @@ export interface Book{
   genre:string
   audioAllBookUrl?:string
   chapters:Chapters[]
+  poster?:string
 }
 export  interface Chapters{
   chapter_number:string

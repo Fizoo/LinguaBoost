@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {AngularFireStorage} from "@angular/fire/compat/storage";
-import {finalize, forkJoin, from, map, Observable, switchMap} from "rxjs";
+import {concatMap, finalize, forkJoin, from, map, Observable} from "rxjs";
 
-import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
+import {DomSanitizer} from "@angular/platform-browser";
 
 @Injectable({
   providedIn: 'root'
@@ -28,12 +28,33 @@ export class AudioStorageService {
     );
   }
 
-  getAudioUrlsByBookId(bookId: string): Observable<SafeResourceUrl[]> {
-    const storageRef = this.storage.ref(`books/${bookId}`);
+  getPosterById(id:string):Observable<string[]>{
+    const filePath = `posters/${id}`
+
+    return from(this.storage.ref(filePath).listAll()).pipe(
+      concatMap(result=>{
+        const observables:Observable<string>[] =[]
+        result.items.forEach(item=>{
+          observables.push(
+            from(item.getDownloadURL()).pipe(
+              map(url => this.sanitizer.bypassSecurityTrustResourceUrl(url)),
+              map((el:any)=>el.changingThisBreaksApplicationSecurity.toString()),
+            //  tap(el=>console.log(el))
+            )
+          )
+        })
+        return forkJoin(observables);
+      })
+
+    )
+  }
+
+  getAudioUrlsByBookId(bookName: string): Observable<string[]> {
+    const storageRef = this.storage.ref(`books/${bookName}`);
 
     return storageRef.listAll().pipe(
-      switchMap(result => {
-        const observables: Observable<SafeResourceUrl>[] = [];
+      concatMap(result => {
+        const observables: Observable<string>[] = [];
         result.items.forEach(item => {
           observables.push(
             from(item.getDownloadURL()).pipe(

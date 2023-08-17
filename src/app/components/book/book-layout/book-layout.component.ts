@@ -2,11 +2,11 @@ import {ChangeDetectionStrategy, Component, OnDestroy, OnInit} from '@angular/co
 import {Book} from "../../../models/book";
 import {SpeakerService} from "../../../services/speaker.service";
 import {FormControl} from "@angular/forms";
-import {first, Subject, takeUntil} from "rxjs";
+import {map, Subject, switchMap, takeUntil} from "rxjs";
 import {AudioStorageService} from "../../../services/audio-storage.service";
-import {SafeResourceUrl} from "@angular/platform-browser";
 import {Store} from "@ngrx/store";
 import {BookSelectors} from "../../../store/book/selector";
+import {ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -22,7 +22,6 @@ export class BookLayoutComponent implements OnInit,OnDestroy {
   bookControl = new FormControl()
   voiceControl = new FormControl()
 
-  listAudio: string[] = []
   currentChapter: number = -1
   isAdder:boolean=false
 
@@ -30,23 +29,23 @@ export class BookLayoutComponent implements OnInit,OnDestroy {
 
   constructor(private speak: SpeakerService,
               private audioStorageService: AudioStorageService,
-              private store:Store
+              private store:Store,
+              private route:ActivatedRoute
   ) {
   }
 
   ngOnInit(): void {
     this.copyBook = this.book
 
-    this.store.select(BookSelectors.getBookById(1)).subscribe(data=>{
-      this.book=data
-      this.copyBook = data
+    this.route.params
+      .pipe(
+        map(params => params['id']),
+        takeUntil(this.unsubscribe$),
+        switchMap(({id})=>this.store.select(BookSelectors.getBookById(1)))
+      ).subscribe(response=>{
+        this.book=response
+        this.copyBook=response
     })
-
-
-    this.audioStorageService.getAudioUrlsByBookId('The Adventures of Tom Sawyer').pipe(first())
-      .subscribe((url:SafeResourceUrl[]) => {
-        this.listAudio=[...url ] as string[]
-      });
 
     this.bookControl.valueChanges.pipe(
       takeUntil(this.unsubscribe$)

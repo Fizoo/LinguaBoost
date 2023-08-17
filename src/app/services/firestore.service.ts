@@ -5,7 +5,7 @@ import {
   DocumentChangeAction,
   DocumentReference
 } from "@angular/fire/compat/firestore";
-import {first, from, map, Observable, switchMap} from "rxjs";
+import {first, from, map, Observable, switchMap, take} from "rxjs";
 import {Theme, TopicPhrases, Words} from "../models/data";
 import {User} from "../admin/model/auth";
 import {UserUidService} from "./user-uid.service";
@@ -13,6 +13,7 @@ import {UserUidService} from "./user-uid.service";
 //import firebase from "firebase/compat";
 import firebase from 'firebase/compat/app';
 import {Progress} from "../models/progress";
+import {Book} from "../models/book";
 
 
 @Injectable({
@@ -29,6 +30,7 @@ export class FirestoreService {
   private userCollection: AngularFirestoreCollection<User>;
   private wordsCollection: AngularFirestoreCollection<Words>;
   private dataCollection: AngularFirestoreCollection<Theme[]>;
+  private bookCollection:AngularFirestoreCollection<Book>;
 
 
   constructor(private firestore: AngularFirestore,
@@ -41,6 +43,7 @@ export class FirestoreService {
     this.themeCollection = this.firestore.collection<Theme>('words');
     this.phraseCollection=this.firestore.collection<TopicPhrases>('phrases')
     this.sentenceCollection=this.firestore.collection<TopicPhrases>('sentences')
+    this.bookCollection=this.firestore.collection<Book>('books')
 
     this.progress = this.progressCollection.snapshotChanges().pipe(
       map(actions => actions.map((a: DocumentChangeAction<Progress>) => {
@@ -276,6 +279,18 @@ export class FirestoreService {
   public deleteSentenceById(sentence:TopicPhrases):Observable<void>{
     const nameDoc=`${sentence.name.toUpperCase()}:${sentence.id}`
     return from(this.sentenceCollection.doc(nameDoc).delete() )
+  }
+  ////------------------------------BOOK--------------------------------
+
+  public addBookById(book:Book):Observable<void>{
+    const path=`${book.book_title}:${book.id}`
+    return from(this.bookCollection.doc(path).set(book))
+  }
+
+  public getAllBooks():Observable<Book[]>{
+    return from(this.bookCollection.valueChanges().pipe(
+      take(1)
+    ))
   }
 
 }

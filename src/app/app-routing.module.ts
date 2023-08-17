@@ -14,6 +14,7 @@ import {TrainerComponent} from "./page/trainer/trainer.component";
 import {PhrasesComponent} from "./components/phrases/phrases.component";
 import {PhrasesTrainerComponent} from "./components/phrases/phrases-trainer/phrases-trainer.component";
 import {BookLayoutComponent} from "./components/book/book-layout/book-layout.component";
+import {BookMainComponent} from "./components/book/book-main/book-main.component";
 
 const routes: Routes = [
   {path: '',component:MainComponent,canActivate:[AuthGuard],
@@ -22,11 +23,12 @@ const routes: Routes = [
       {path: 'home', component: HomePageComponent},
       {path: 'theme/:id', component: ContentComponent},
       {path: 'phrases/:id',component:PhrasesComponent},
-      {path: 'book', component: BookLayoutComponent},
+      {path: 'book', component: BookMainComponent},
      /* { path: '**', redirectTo: 'home' }*/
     ]},
-  {path:'phrases/:id/trainer/:id',component:PhrasesTrainerComponent},
+  {path: 'book/:id', component: BookLayoutComponent},
 
+  {path:'phrases/:id/trainer/:id',component:PhrasesTrainerComponent},
   {path:'theme/:id/trainer/:id',component:TrainerComponent},
   {path:'theme/:id/lesson/:id',component:LessonWriteByEngComponent},
   {path:'theme/:id/translateEng/:id',component:LessonTranslateToEngComponent},
