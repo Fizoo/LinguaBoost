@@ -31,6 +31,21 @@ export  namespace BookSelectors{
       return false
     }
 
-      //books.data.some(book=>book.chapters.some(chapter=>chapter.audioUrl))
+  )
+
+  export const getListGenres=createSelector(
+    getAllBooks,
+    books=>books.map(book=>({
+      genre:book.genre.toUpperCase()
+    })
+    )
+  )
+
+  export const getListLevels=createSelector(
+    getAllBooks,
+    books=>books.map(book=>({
+        level:book.level
+      })
+    )
   )
 }

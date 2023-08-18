@@ -67,6 +67,9 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatExpansionModule} from "@angular/material/expansion";
 import { AudioComponent } from './components/book/book-layout/audio/audio.component';
 import { BookMainComponent } from './components/book/book-main/book-main.component';
+import { SearchBookPipe } from './pipes/search-book.pipe';
+import { HighlightBookDirective } from './directives/highlight-book.directive';
+import { FilterBookPipe } from './pipes/filter-book.pipe';
 
 
 @NgModule({
@@ -109,6 +112,9 @@ import { BookMainComponent } from './components/book/book-main/book-main.compone
     InfoComponent,
     AudioComponent,
     BookMainComponent,
+    SearchBookPipe,
+    HighlightBookDirective,
+    FilterBookPipe,
   ],
     imports: [
         BrowserModule,

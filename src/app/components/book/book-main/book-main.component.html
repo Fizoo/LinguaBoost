@@ -1,0 +1,50 @@
+<main class="main">
+  <div class="container">
+    <div class="menu">
+      <button mat-icon-button (click)="isMenu=!isMenu">
+        <mat-icon >menu</mat-icon>
+      </button>
+    </div>
+
+    <div *ngIf="isMenu" class="filter">
+      <div class="search">
+        <mat-form-field class="example-form-field">
+          <mat-label>Clearable input</mat-label>
+          <input matInput type="text" [(ngModel)]="searchValue">
+          <button *ngIf="searchValue" matSuffix mat-icon-button aria-label="Clear" (click)="searchValue=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="select-groups">
+        <mat-form-field>
+          <mat-label>Choose an level</mat-label>
+          <mat-select [(ngModel)]="selectedLevel">
+            <mat-option [value]="null">All</mat-option>
+            <mat-option *ngFor="let level of listLevels$ | async" [value]="level.level">{{level.level}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+
+          <mat-label>Choose an genre</mat-label>
+          <mat-select  [(ngModel)]="selectedGenre">
+            <mat-option [value]="null">All</mat-option>
+            <mat-option *ngFor="let genre of listGenres$ | async" [value]="genre.genre">{{genre.genre}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div *ngFor="let book of listBook$ | async | searchBook:searchValue | filterBook:selectedGenre:selectedLevel " class="items">
+        <div (click)="selectBook(book)"  *ngIf="book.poster" class="item">
+            <img  class="poster" [src]="book?.poster" alt="">
+        </div>
+        <h3 [appHighlightBook]="book.book_title" [searchTerm]="searchValue">{{book.book_title}}</h3>
+        <h5 [appHighlightBook]="book.author" [searchTerm]="searchValue">{{book.author}}</h5>
+      </div>
+    </div>
+  </div>
+</main>

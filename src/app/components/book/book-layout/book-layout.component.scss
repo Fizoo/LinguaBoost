@@ -1,4 +1,7 @@
+@use './../../../../scss/mixins' as m;
+
 .main{
+
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -31,7 +34,12 @@
         position: fixed;
         bottom: 5%;
         right: 30%;
+        //left: 10%;
+       // left: 15%;
         z-index: 999;
+        @include m.mobile{
+          left: 15%;
+        }
 
       }
     }

@@ -1,6 +1,12 @@
-// Ваш стилізований клас аудіо
+@use './../../../../../scss/mixins' as m;
+
 .custom-audio {
-  width: 500px;
+ width: 500px;
+
+  @include m.mobile{
+    width: 300px;
+    //margin-left: 4rem;
+  }
 
 }
 
