@@ -1,24 +1,54 @@
 import {createReducer, on} from "@ngrx/store";
 import {Theme, TopicPhrases} from "../../models/data";
 import {DataActions} from "./actions";
-import {mainData} from "../../../assets/data/generalDataWords";
-import {objPhrases} from "../../../assets/data/generalDataPhrases";
 
 export interface IData {
   data: Theme[]
-  phrases: TopicPhrases[]
+  phrases: TopicPhrases[],
+  error:any,
+  isLoading:boolean
 }
 
 const initialState: IData = {
-  data: mainData.data,
-  phrases: objPhrases
+  data: [],
+  phrases: [],
+  error:null,
+  isLoading:false
 }
 
 export const dataReducer = createReducer(
   initialState,
   on(DataActions.initial,
-    state => state
+    state => ({
+      ...state,
+      isLoading:true
+    })
   ),
+
+  on(DataActions.loadData,
+    (state,{data})=>({
+      ...state,
+      data,
+      isLoading:false
+    })
+  ),
+
+  on(DataActions.loadDataPhrases,
+    (state,{phrases})=>({
+      ...state,
+      phrases,
+      isLoading:false
+    })
+  ),
+
+  on(DataActions.loadDataError,
+    (state,{error})=>({
+      ...state,
+      error:error,
+      isLoading:false
+    })
+    ),
+
   on(DataActions.addNewTheme,
     (state, {topic}) => ({
       ...state,

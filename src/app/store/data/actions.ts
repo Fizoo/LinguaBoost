@@ -1,9 +1,12 @@
 import {createAction, props} from "@ngrx/store";
-import {CollectTopic, CollectTopicItem, Theme, Words} from "../../models/data";
+import {CollectTopic, CollectTopicItem, Theme, TopicPhrases, Words} from "../../models/data";
 
 
 export enum DataNames{
   InitialState='[Data] InitialState',
+  LoadData='[Data] LoadData',
+  LoadDataPhrases='[Data] LoadDataPhrases',
+  LoadDataError='[Data] LoadDataError',
   GetAllData='[Data] getAllData',
   GetDataByTheme='[Data] getDataByTheme',
   AddNewTheme='[Data] addNewTheme',
@@ -16,6 +19,12 @@ export enum DataNames{
 
 export namespace DataActions{
   export const initial=createAction(DataNames.InitialState)
+
+  export const loadData=createAction(DataNames.LoadData,props<{data:Theme[]}>())
+
+  export const loadDataPhrases=createAction(DataNames.LoadDataPhrases,props<{phrases:TopicPhrases[]}>())
+
+  export const loadDataError=createAction(DataNames.LoadDataError,props<{error:any}>())
 
   export const getAllData=createAction(DataNames.GetAllData)
 

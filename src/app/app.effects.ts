@@ -1,11 +1,25 @@
 import {Injectable} from '@angular/core';
 import {Actions, createEffect, ofType} from '@ngrx/effects';
 import {BookActions} from "./store/book/actions";
-import {catchError, filter, forkJoin, map, mergeMap, of, startWith, switchMap, take, tap, withLatestFrom} from "rxjs";
+import {
+  catchError,
+  combineLatest,
+  filter,
+  forkJoin,
+  map,
+  mergeMap,
+  of,
+  startWith,
+  switchMap,
+  take,
+  tap,
+  withLatestFrom
+} from "rxjs";
 import {AudioStorageService} from "./services/audio-storage.service";
 import {FirestoreService} from "./services/firestore.service";
 import {Store} from "@ngrx/store";
 import {BookSelectors} from "./store/book/selector";
+import {DataActions} from "./store/data/actions";
 
 @Injectable()
 export class AppEffects {
@@ -16,6 +30,32 @@ export class AppEffects {
   ) {
   }
 
+  //---------------------load Words---------------------------------//
+  loadAllWords$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(DataActions.initial),
+      switchMap(() =>
+        combineLatest([
+          this.firebase.getAllWord(),
+          this.firebase.getAllPhrase()
+        ]).pipe(
+          switchMap(([words, phrases]) => {
+            const actions = [
+              DataActions.loadData({data: words}),
+              DataActions.loadDataPhrases({phrases})
+            ]
+            return of(...actions)
+          }),catchError(error=>{
+            console.log('Error loading data:', error)
+            return of(DataActions.loadDataError({error}))
+          })
+        )
+      ),
+    )
+  );
+
+
+  //------------------------load Book--------------------------//
   loadAllBooks$ = createEffect(() =>
     this.actions$.pipe(
       ofType(BookActions.initial), // Обробляємо тільки дії типу "initial"
@@ -42,7 +82,7 @@ export class AppEffects {
                 // Відправляємо дію з помилкою завантаження в разі виникнення помилки
                 return of(BookActions.loadBooksFailure({error}));
               }),
-               tap(() => this.store.dispatch(BookActions.loadBooksSuccess())) // Відправляємо дію успішного завантаження
+              tap(() => this.store.dispatch(BookActions.loadBooksSuccess())) // Відправляємо дію успішного завантаження
             )
           }),
           startWith(BookActions.loadBooksInProgress()), // Відправляємо дію процесу завантаження на початку ефекту
@@ -60,10 +100,10 @@ export class AppEffects {
           filter(hasAudio => !hasAudio),
           switchMap(() =>
             this.storage.getAudioUrlsByBookId(bookName).pipe(
-              map((urlArr) => BookActions.loadAudioForBookById({ urlArr: urlArr, name: bookName })),
+              map((urlArr) => BookActions.loadAudioForBookById({urlArr: urlArr, name: bookName})),
               catchError(error => {
                 console.error('Error loading audio for book:', error);
-                return of(BookActions.loadBooksFailure({ error }));
+                return of(BookActions.loadBooksFailure({error}));
               })
             )
           )
@@ -88,27 +128,27 @@ export class AppEffects {
       )
     )*/
 
-/*  private processBooks(books: Book[]): Observable<Book[]> {
-    const processedBooks$: Observable<Book>[] = books.map(book =>
-      zip(
-        this.storage.getPosterById(book.id.toString()),
-        this.storage.getAudioUrlsByBookId(book.book_title)
-      ).pipe(
-        map(([poster, audioUrls]) => {
-          const modifiedChapters = book.chapters.map((chapter, i) => ({
-            ...chapter,
-            audioUrl: audioUrls[i]
-          }));
+  /*  private processBooks(books: Book[]): Observable<Book[]> {
+      const processedBooks$: Observable<Book>[] = books.map(book =>
+        zip(
+          this.storage.getPosterById(book.id.toString()),
+          this.storage.getAudioUrlsByBookId(book.book_title)
+        ).pipe(
+          map(([poster, audioUrls]) => {
+            const modifiedChapters = book.chapters.map((chapter, i) => ({
+              ...chapter,
+              audioUrl: audioUrls[i]
+            }));
 
-          return {
-            ...book,
-            poster: poster[0],
-            chapters: modifiedChapters
-          };
-        })
-      )
-    );
+            return {
+              ...book,
+              poster: poster[0],
+              chapters: modifiedChapters
+            };
+          })
+        )
+      );
 
-    return forkJoin(processedBooks$);
-  }*/
+      return forkJoin(processedBooks$);
+    }*/
 }

@@ -5,7 +5,7 @@ import {
   DocumentChangeAction,
   DocumentReference
 } from "@angular/fire/compat/firestore";
-import {first, from, map, Observable, switchMap, take} from "rxjs";
+import {first, from, map, Observable, switchMap, take, tap} from "rxjs";
 import {Theme, TopicPhrases, Words} from "../models/data";
 import {User} from "../admin/model/auth";
 import {UserUidService} from "./user-uid.service";
@@ -20,16 +20,18 @@ import {Book} from "../models/book";
   providedIn: 'root'
 })
 export class FirestoreService {
-  userUid: string = '1'
+  userUid: string = 'VSRYBAsobegeRYhaQUlJRQJkVtT2'
   private progressCollection: AngularFirestoreCollection<Progress>;
   readonly progress: Observable<Progress[]>;
 
   private themeCollection: AngularFirestoreCollection<Theme>;
+
+  private wordCollection: AngularFirestoreCollection<Theme>;
+  private dataCollection: AngularFirestoreCollection<Theme>;
+
   private phraseCollection: AngularFirestoreCollection<TopicPhrases>;
   private sentenceCollection:AngularFirestoreCollection<TopicPhrases>;
   private userCollection: AngularFirestoreCollection<User>;
-  private wordsCollection: AngularFirestoreCollection<Words>;
-  private dataCollection: AngularFirestoreCollection<Theme[]>;
   private bookCollection:AngularFirestoreCollection<Book>;
 
 
@@ -39,8 +41,9 @@ export class FirestoreService {
     // this.authService.user$.subscribe(id=>this.userUid=id)
     this.progressCollection = this.firestore.collection<Progress>('progress');
     this.userCollection = this.firestore.collection<User>('users');
-    this.dataCollection = this.firestore.collection<Theme[]>('words');
+    this.dataCollection = this.firestore.collection<Theme>('data');
     this.themeCollection = this.firestore.collection<Theme>('words');
+    this.wordCollection = this.firestore.collection<Theme>('userWords');
     this.phraseCollection=this.firestore.collection<TopicPhrases>('phrases')
     this.sentenceCollection=this.firestore.collection<TopicPhrases>('sentences')
     this.bookCollection=this.firestore.collection<Book>('books')
@@ -53,7 +56,11 @@ export class FirestoreService {
       }))
     );
     //отримання id  поточного user on firebase(auth)
-    this.userId$.getUserUid().pipe(first()).subscribe(id => this.userUid = id)
+    this.userId$.getUserUid().pipe(first()).subscribe(id => {
+      console.log(id)
+      this.userUid = id
+      //this.wordCollection = this.firestore.collection<Theme>('userWords').doc('users').collection(id)
+    })
   }
 
   //////////////////------------------PROGRESS---------------------//////////////////////////////////////////////////////
@@ -150,45 +157,73 @@ export class FirestoreService {
     return from(this.userCollection.doc(this.userUid).delete())
   }
 
+  //--------------------------------------------Words-----------------------------------------------//
+  addWords(data:Theme):Observable<void>{
+    const docName=`${data.name}:${data.id}`
+    return from(this.wordCollection.doc(data.id).set(data))
+  }
+ /* getAsyncWord():Observable<DocumentData[]>{
+    return this.wordCollection
+      .doc('users')
+      .collection(this.userUid).valueChanges()
+  }*/
+
+  getAllWord():Observable<Theme[]>{
+    return this.wordCollection
+      .doc('users')
+      .collection(this.userUid)
+      .get().pipe(
+      map((querySnapshot)=>{
+        const data:Theme[]=[]
+        querySnapshot.forEach((doc)=>{
+          const item=doc.data() as Theme
+            //console.log(item)
+          data.push(item)
+        })
+        return data
+      }),
+
+    )
+  }
+
+  /*updateWordsById(data:Partial<Theme>):Observable<void>{
+    return from(this.wordCollection
+      .doc(data.id)
+      .update(data)
+    )
+  }*/
+
 //--------------------------DATA-----------------------------------------------------------------------------------
   // Додавання документу в колекцію "data"
-  addDataItem(item: any): Promise<DocumentReference<any>> {
-    return this.dataCollection.add(item);
+
+  getData():Observable<Theme[]>{
+    return from(this.dataCollection.valueChanges()).pipe(take(1))
   }
 
-  // Оновлення документу в колекції "data"
-  updateDataItem(itemId: string, item: any): Observable<void> {
-    return from(this.dataCollection.doc(itemId).update(item))
+  addData(data:Theme):Observable<void>{
+    const docName=`${data.name}:${data.id}`
+    return from(this.dataCollection.doc<Theme>(docName).set(data))
   }
 
-  updateDataInArray(itemId: string, item: Theme[]): Observable<void> {
-
-    return from(this.dataCollection.doc(itemId).update(item))
-  }
-
-  // Видалення документу з колекції "data"
-  deleteDataItem(itemId: string): Promise<void> {
-    return this.dataCollection.doc(itemId).delete();
-  }
-
-  // Отримання всіх документів з колекції "data"
-  getAllDataItems(): Observable<any[]> {
-    return this.dataCollection.snapshotChanges().pipe(
-      map((items) => {
-        return items.map((item) => {
-          const data = item.payload.doc.data();
-          const id = item.payload.doc.id;
-          return {id, ...data};
+  getAllWords(): Observable<Theme[]> {
+    return this.themeCollection.snapshotChanges().pipe(
+      map(actions => {
+        return actions.map(action => {
+          const data = action.payload.doc.data() as Theme;
+          const id = action.payload.doc.id;
+          return {  ...data };
         });
-      })
+      }),
+      tap(el=>console.log(el))
     );
   }
 
-
-  // отримати всі дані з Firestore
-  public getAllData(): Observable<Progress[]> {
-    return this.progressCollection.valueChanges();
+  getAllUserData(): Observable<Theme[]> {
+    // Отримуємо всі документи в колекції words
+    return this.themeCollection.valueChanges()
   }
+
+
 
   // отримати конкретні дані з Firestore який автоматично оновлюється при зміні даних в документі.
   public getDataById(): Observable<any> {
@@ -261,6 +296,7 @@ export class FirestoreService {
     const nameDoc=`${sentence.name.toUpperCase()}:${sentence.id}`
       return from(this.sentenceCollection.doc(nameDoc).set(sentence) )
   }
+
 
   public getAllSentence():Observable<TopicPhrases[]>{
     return this.sentenceCollection.get().pipe(
