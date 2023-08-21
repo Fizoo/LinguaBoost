@@ -1,12 +1,23 @@
-<div class="content">
+
+<app-loading-spinner *ngIf="isLoading$ | async"></app-loading-spinner>
+<app-error-message *ngIf="isError$ | async as error" [error]="error"></app-error-message>
+
+<div class="content"  *ngIf="!(isLoading$ | async)">
   <app-sidebar></app-sidebar>
   <div class="box">
     <app-filter-page
       (valueChanged)="onSorting($event)"
       (searchChange)="onSearch($event)">
     </app-filter-page>
+    <app-list *ngFor="let item of copyList  | filter : searchText trackBy: trackByFn " [item]="item" ></app-list>
 
-    <app-list *ngFor="let item of list  | filter : searchText trackBy: trackByFn " [item]="item"  ></app-list>
+    <mat-paginator
+                    (page)="onPageChange($event)"
+                    [length]="list.length"
+                   [pageSize]="25"
+                   [pageSizeOptions]="[ 25,50,75 ,100]"
+                   aria-label="Select page">
+    </mat-paginator>
   </div>
 
 </div>

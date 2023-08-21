@@ -1,24 +1,27 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FormControl} from "@angular/forms";
-import {map, Subject, switchMap, takeUntil, tap} from "rxjs";
+import {map, Observable, Subject, switchMap, takeUntil, tap} from "rxjs";
 import {Phrase, TopicPhrases} from "../../../models/data";
 import {Store} from "@ngrx/store";
 import {ActivatedRoute, Router} from '@angular/router';
 import {SpeakerService} from "../../../services/speaker.service";
 import {DataSelectorsPhrases} from "../../../store/data/selectors-phrases";
+import {PageEvent} from "@angular/material/paginator";
 
 @Component({
   selector: 'app-verbs',
   templateUrl: './verbs.component.html',
-  styleUrls: ['./verbs.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./verbs.component.scss']
 
 })
 export class VerbsComponent implements OnInit, OnDestroy {
-  @Input() listPhrase: TopicPhrases[] | null
+  listPhrases$:Observable<TopicPhrases[]>
+
   search: string = ''
   formSort = new FormControl<string>('')
-  phraseObj: TopicPhrases
+
+  listPhrases: Phrase[] = []
+  copyListPhrase: Phrase[] = []
 
   currentId: number
 
@@ -26,7 +29,6 @@ export class VerbsComponent implements OnInit, OnDestroy {
 
   constructor(private store: Store,
               private route: ActivatedRoute,
-              private cdr: ChangeDetectorRef,
               private speaker: SpeakerService,
               private router: Router
   ) {
@@ -43,29 +45,33 @@ export class VerbsComponent implements OnInit, OnDestroy {
           query: queryParams['query']
         }))
       )),
-      switchMap(({id, query}) => this.store.select(DataSelectorsPhrases.getPhrasesById(+id, query)).pipe(
-          tap(data => {
-            this.phraseObj = data || []
-            this.cdr.detectChanges()
-          }),
-        )),
+      switchMap(({id, query}) => this.store.select(DataSelectorsPhrases.getPhrasesById(+id, query))),
       takeUntil(this.unSubscribe$)
-    ).subscribe();
+    ).subscribe(({data}) => {
+
+      this.listPhrases = data
+      this.copyListPhrase = data
+
+      this.onPageChange({
+        pageIndex: 0,
+        pageSize: 25,
+        length: data.length
+      });
+    });
 
     this.formSort.valueChanges.pipe(
       takeUntil(this.unSubscribe$),
     ).subscribe((value) => {
       if (value) {
-        this.phraseObj = {
-          ...this.phraseObj,
-          data: this.sortFn(value)
-        }
+        this.copyListPhrase = this.sortFn(value)
       }
     })
+
+    this.listPhrases$=this.store.select(DataSelectorsPhrases.getAllDataOfPhrases)
   }
 
   sortFn(value: string): Phrase[] {
-    let tempList = [...this.phraseObj.data]
+    let tempList = [...this.copyListPhrase]
     let filteredData = tempList.filter((el) => el.isFavorite);
 
     switch (value) {
@@ -88,14 +94,17 @@ export class VerbsComponent implements OnInit, OnDestroy {
     return tempList
   }
 
+  onPageChange(event: PageEvent) {
+    const startIndex = event.pageIndex * event.pageSize;
+    const endIndex = startIndex + event.pageSize;
+
+    this.copyListPhrase = this.listPhrases.slice(startIndex, endIndex);
+  }
+
   trackByFn(index: number, item: Phrase) {
     return item.id
   }
 
-  ngOnDestroy(): void {
-    this.unSubscribe$.next()
-    this.unSubscribe$.complete()
-  }
 
   speak(value: string) {
     this.speaker.speak(value)
@@ -106,4 +115,11 @@ export class VerbsComponent implements OnInit, OnDestroy {
       queryParams: {visible: value}
     })
   }
+
+  ngOnDestroy(): void {
+    this.unSubscribe$.next()
+    this.unSubscribe$.complete()
+  }
+
+
 }

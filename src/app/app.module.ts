@@ -70,6 +70,11 @@ import { BookMainComponent } from './components/book/book-main/book-main.compone
 import { SearchBookPipe } from './pipes/search-book.pipe';
 import { HighlightBookDirective } from './directives/highlight-book.directive';
 import { FilterBookPipe } from './pipes/filter-book.pipe';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import { LoadingSpinnerComponent } from './page/loading-spinner/loading-spinner.component';
+import { ErrorMessageComponent } from './page/error-message/error-message.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import { DynamicRouterLinkActiveDirective } from './directives/dynamic-router-link-active.directive';
 
 
 @NgModule({
@@ -115,36 +120,41 @@ import { FilterBookPipe } from './pipes/filter-book.pipe';
     SearchBookPipe,
     HighlightBookDirective,
     FilterBookPipe,
+    LoadingSpinnerComponent,
+    ErrorMessageComponent,
+    DynamicRouterLinkActiveDirective,
   ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatIconModule,
-        MatButtonModule,
-        MatTooltipModule,
-        MatToolbarModule,
-        MatInputModule,
-        FormsModule,
-        MatListModule,
-        MatMenuModule,
-        provideFirebaseApp(() => initializeApp(environment.firebase)),
-        provideAuth(() => getAuth()),
-        provideDatabase(() => getDatabase()),
-        AngularFireModule.initializeApp(environment.firebase),
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatToolbarModule,
+    MatInputModule,
+    FormsModule,
+    MatListModule,
+    MatMenuModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
 
-        StoreModule.forRoot(reducers, {
-            metaReducers
-        }),
-        EffectsModule.forRoot([AppEffects]),
-        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
-        MatProgressBarModule,
-        ReactiveFormsModule,
-        MatButtonToggleModule,
-        MatSelectModule,
-        MatExpansionModule,
-    ],
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    }),
+    EffectsModule.forRoot([AppEffects]),
+    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
+    MatProgressBarModule,
+    ReactiveFormsModule,
+    MatButtonToggleModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatProgressSpinnerModule,
+    MatPaginatorModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

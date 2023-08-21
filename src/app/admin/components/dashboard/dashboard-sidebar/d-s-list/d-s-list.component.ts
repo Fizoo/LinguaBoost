@@ -24,19 +24,5 @@ export class DSListComponent {
 
   addTopic(topic: CollectTopic) {
 
-/*    this.store.select(DataSelectorsWords.getThemeById(topic.id)).pipe(
-      tap(el=>console.log(el)),
-      map(el=>({
-        ...el,
-        type:'word',
-        data:el.data.map(a=>({
-          ...a,
-          level:0
-        }))
-      })),
-      switchMap(data=>this.firestore.addWords(data))
-    ).subscribe(el=>console.log('success'))*/
-    //this.firestore.getAsyncWord().subscribe(el=>console.log(el))
-
   }
 }

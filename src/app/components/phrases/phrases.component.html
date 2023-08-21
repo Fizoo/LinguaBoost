@@ -1,6 +1,10 @@
-<div class="phrase-container">
+<app-loading-spinner *ngIf="isLoading$ | async"></app-loading-spinner>
+<app-error-message *ngIf="isError$ | async as error" [error]="error"></app-error-message>
+
+
+<div  *ngIf="!(isLoading$ | async)" class="phrase-container">
   <div class="box">
-    <app-sidebar-phrase [listPhrase]="arrPhrases | async"></app-sidebar-phrase>
-    <app-verbs [listPhrase]="arrPhrases | async"></app-verbs>
+    <app-sidebar-phrase [listPhrase]="arrPhrases$ | async"></app-sidebar-phrase>
+    <app-verbs></app-verbs>
   </div>
 </div>

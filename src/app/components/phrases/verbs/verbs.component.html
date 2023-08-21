@@ -13,7 +13,7 @@
 
         <mat-menu #menu="matMenu">
           <button
-            *ngFor="let el of listPhrase "
+            *ngFor="let el of listPhrases$ | async "
             [routerLink]="['/phrases',el.id]"
             mat-menu-item>
             {{el.name}}
@@ -45,10 +45,18 @@
       </div>
       <div class="content">
         <app-verb-list
-          *ngFor="let item of phraseObj.data | filterPhrases :search ; trackBy: trackByFn "
+          *ngFor="let item of copyListPhrase | filterPhrases :search ; trackBy: trackByFn "
           [list]="item"
           (speakFn)="speak($event)"
         ></app-verb-list>
+
+        <mat-paginator
+          (page)="onPageChange($event)"
+          [length]="listPhrases.length"
+          [pageSize]="25"
+          [pageSizeOptions]="[ 25,50,75 ,100]"
+          aria-label="Select page">
+        </mat-paginator>
       </div>
 
     </div>

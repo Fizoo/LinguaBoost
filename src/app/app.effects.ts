@@ -37,15 +37,16 @@ export class AppEffects {
       switchMap(() =>
         combineLatest([
           this.firebase.getAllWord(),
-          this.firebase.getAllPhrase()
+          this.firebase.getAllPhrase(),
         ]).pipe(
           switchMap(([words, phrases]) => {
             const actions = [
               DataActions.loadData({data: words}),
-              DataActions.loadDataPhrases({phrases})
+              DataActions.loadDataPhrases({phrases}),
             ]
             return of(...actions)
-          }),catchError(error=>{
+          }),
+          catchError(error=>{
             console.log('Error loading data:', error)
             return of(DataActions.loadDataError({error}))
           })

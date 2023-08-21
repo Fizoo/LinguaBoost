@@ -1,0 +1,13 @@
+.error-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffcccc; /* Червоний фон */
+  padding: 15px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  text-align: center;
+  color: #ff0000;
+  font-size: 18px;
+}

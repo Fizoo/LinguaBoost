@@ -56,11 +56,7 @@ export class FirestoreService {
       }))
     );
     //отримання id  поточного user on firebase(auth)
-    this.userId$.getUserUid().pipe(first()).subscribe(id => {
-      console.log(id)
-      this.userUid = id
-      //this.wordCollection = this.firestore.collection<Theme>('userWords').doc('users').collection(id)
-    })
+    this.userId$.getUserUid().pipe(first()).subscribe(id => this.userUid = id)
   }
 
   //////////////////------------------PROGRESS---------------------//////////////////////////////////////////////////////
@@ -89,7 +85,6 @@ export class FirestoreService {
     return this.progressCollection.doc(this.userUid).valueChanges()
   }
 
-
   // Додавання документу в колекцію "progress" з random id
   addProgressItem(item: any): Observable<DocumentReference<Progress>> {
     return from(this.progressCollection.add(item))
@@ -99,7 +94,6 @@ export class FirestoreService {
   updateProgressItem(data: Partial<Progress>): Observable<void> {
     return from(this.progressCollection.doc(this.userUid).update(data))
   }
-
 
   setProgress(data: Partial<Progress>): Observable<void> {
     const progress: Progress = {...data} as Progress;
@@ -160,16 +154,22 @@ export class FirestoreService {
   //--------------------------------------------Words-----------------------------------------------//
   addWords(data:Theme):Observable<void>{
     const docName=`${data.name}:${data.id}`
-    return from(this.wordCollection.doc(data.id).set(data))
-  }
- /* getAsyncWord():Observable<DocumentData[]>{
-    return this.wordCollection
+    return from(this.wordCollection
       .doc('users')
-      .collection(this.userUid).valueChanges()
+      .collection(this.userUid)
+      .doc(data.id)
+      .set(data))
+  }
+/*  getAsyncWord():Observable<DocumentData[]>{
+    return this.userId$.getUserUid().pipe(
+      switchMap(userUid=>this.wordCollection
+        .doc('users')
+        .collection(userUid).valueChanges())
+    )
   }*/
 
   getAllWord():Observable<Theme[]>{
-    return this.wordCollection
+    return  this.wordCollection
       .doc('users')
       .collection(this.userUid)
       .get().pipe(
@@ -182,7 +182,6 @@ export class FirestoreService {
         })
         return data
       }),
-
     )
   }
 
@@ -206,7 +205,7 @@ export class FirestoreService {
   }
 
   getAllWords(): Observable<Theme[]> {
-    return this.themeCollection.snapshotChanges().pipe(
+    return this.dataCollection.snapshotChanges().pipe(
       map(actions => {
         return actions.map(action => {
           const data = action.payload.doc.data() as Theme;
@@ -220,40 +219,7 @@ export class FirestoreService {
 
   getAllUserData(): Observable<Theme[]> {
     // Отримуємо всі документи в колекції words
-    return this.themeCollection.valueChanges()
-  }
-
-
-
-  // отримати конкретні дані з Firestore який автоматично оновлюється при зміні даних в документі.
-  public getDataById(): Observable<any> {
-    return this.progressCollection.doc<Progress>(this.userUid).valueChanges();
-  }
-
-  ////--------------theme---------------------------------------------------------------------
-  public addTheme(theme: Theme): Observable<void> {
-    const idName = `${theme.name}:${theme.id}`;
-
-    return from(this.themeCollection.doc(idName).collection('d').doc().set(theme))
-  }
-  public addThemeAddCol(theme: Theme): Observable<void> {
-    const idName = `${theme.name}:${theme.id}`;
-    return this.getCurrentUser().pipe(
-      switchMap((user)=>from(this.themeCollection.doc(idName).collection(user?.email || 'newUser').doc(this.userUid) .set(theme)))
-    )
-  }
-
-  public updateTheme(theme: Partial<Theme>): Observable<void> {
-    const docRef: DocumentReference = this.firestore.firestore.collection('theme').doc('General:1');
-    return from(docRef.update({
-      data: firebase.firestore.FieldValue.arrayUnion(theme)
-    }));
-  }
-
-  public updateWord1( wordId: number, updatedWord: Partial<Words>): Observable<void> {
-    return from(this.themeCollection.doc('General:1').update({
-      [`data.${wordId}.level`]: updatedWord
-    }));
+    return from(this.dataCollection.valueChanges())
   }
 
   /////---------------------------------------Phrase-----------------------------------------------------
@@ -328,6 +294,35 @@ export class FirestoreService {
       take(1)
     ))
   }
+
+
+
+  ////--------------theme---------------------------------------------------------------------
+  public addTheme(theme: Theme): Observable<void> {
+    const idName = `${theme.name}:${theme.id}`;
+
+    return from(this.themeCollection.doc(idName).collection('d').doc().set(theme))
+  }
+  public addThemeAddCol(theme: Theme): Observable<void> {
+    const idName = `${theme.name}:${theme.id}`;
+    return this.getCurrentUser().pipe(
+      switchMap((user)=>from(this.themeCollection.doc(idName).collection(user?.email || 'newUser').doc(this.userUid) .set(theme)))
+    )
+  }
+
+  public updateTheme(theme: Partial<Theme>): Observable<void> {
+    const docRef: DocumentReference = this.firestore.firestore.collection('theme').doc('General:1');
+    return from(docRef.update({
+      data: firebase.firestore.FieldValue.arrayUnion(theme)
+    }));
+  }
+
+  public updateWord1( wordId: number, updatedWord: Partial<Words>): Observable<void> {
+    return from(this.themeCollection.doc('General:1').update({
+      [`data.${wordId}.level`]: updatedWord
+    }));
+  }
+
 
 }
 

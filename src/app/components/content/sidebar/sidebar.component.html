@@ -1,6 +1,6 @@
 <div class="sidebar">
   <div class="cont">
-    <h3>ALL THEMES IS {{themes.length}}</h3>
+    <h3>ALL THEMES IS {{themeListLength}} </h3>
     <mat-form-field class="search">
       <mat-label>Choose theme...</mat-label>
       <input matInput type="text" [(ngModel)]="inputValue">
@@ -10,9 +10,10 @@
     </mat-form-field>
 
     <app-list-themes
-      *ngFor="let item of themes | filterTheme : inputValue ; trackBy: trackByFn "
+      *ngFor="let item of themeList$ | async | filterTheme : inputValue ; trackBy: trackByFn "
       [item]="item"
     ></app-list-themes>
+
   </div>
 
 </div>

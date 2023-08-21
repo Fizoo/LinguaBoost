@@ -6,10 +6,8 @@ import {Theme} from "../models/data";
 })
 export class FilterThemePipe implements PipeTransform {
 
-  transform(value: Theme[], search:string=''): Theme[] {
-   if(!search) return value
-
-    return value.filter(el=>el.name.toLowerCase().includes(search.toLowerCase()))
+  transform(value: Theme[] | null, search:string=''): Theme[] {
+    return value?value.filter(el=>el.name.toLowerCase().includes(search.toLowerCase())):[]
   }
 
 }

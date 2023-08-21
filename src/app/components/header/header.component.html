@@ -18,9 +18,9 @@
 
   <div class="pages">
     <div class="page">
-      <div routerLink="theme/0" routerLinkActive="active" class="page1">Words</div>
-      <div routerLink="phrases/0" routerLinkActive="active" [queryParams]="{query:'sentence'}" class="page1">Sentences</div>
-      <div routerLink="phrases/0" routerLinkActive="active" [queryParams]="{query:'phrase'}"  class="page1">Phrases</div>
+      <div appDynamicRouterLinkActive="theme" [routerLink]="['theme',-1]"  class="page1">Words</div>
+      <div routerLink="phrases/0" appDynamicRouterLinkActive="phrases" [queryParams]="{query:'sentence'}" class="page1">Sentences</div>
+      <div routerLink="phrases/0" appDynamicRouterLinkActive="sentence"  [queryParams]="{query:'phrase'}"  class="page1">Phrases</div>
       <div routerLink="book" routerLinkActive="active"  class="page1">Books</div>
     </div>
     <div class="pageMenu">
@@ -28,7 +28,7 @@
         <mat-icon>menu</mat-icon>
       </button>
       <mat-menu #menu2="matMenu" >
-        <button routerLink="theme/0" mat-menu-item>Words</button>
+        <button routerLink="theme/-1" mat-menu-item>Words</button>
         <button routerLink="phrases/0" mat-menu-item>Sentences</button>
         <button routerLink="phrases/0" mat-menu-item>Phrases</button>
         <button routerLink="book" mat-menu-item>Books</button>
