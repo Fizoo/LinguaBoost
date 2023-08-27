@@ -12,7 +12,7 @@ export namespace DataSelectorsWords {
   export const getThemeById = (id: string) => createSelector(
     getWordsData,
     (state) => {
-      return state.filter(el => el.id === id)[0]
+      return state.filter(el => el.id === id)[0] || []
     }
   )
 
@@ -73,9 +73,9 @@ export namespace DataSelectorsWords {
       const selectedList: Words[] = []
       const {data: list} = state
 
-      const highRankList = list.filter(({level}) => level === 3)
-      const midRankList = list.filter(({level}) => level === 2)
-      const lowRankList = list.filter(({level}) => level === 1)
+      const highRankList = list.filter(({level}) => level === 2)
+      const midRankList = list.filter(({level}) => level === 1)
+      const lowRankList = list.filter(({level}) => level === 0)
 
       while (selectedList.length < 20 || selectedList.length === list.length) {
         let obj: Words | undefined

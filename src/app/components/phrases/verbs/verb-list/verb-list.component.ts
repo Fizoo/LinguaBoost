@@ -9,11 +9,13 @@ import {Phrase} from "../../../../models/data";
 })
 export class VerbListComponent {
   @Input() list:Phrase
+  @Input() searchWord:string
   @Output() speakFn=new EventEmitter<string>()
   isVisible1=false
   isVisible2=false
 
   speak(value: string) {
+
     this.speakFn.emit(value)
   }
 

@@ -56,27 +56,37 @@
     <button (click)="writeEng('trainer')"
             mat-raised-button
             matTooltip="Training"
-            matTooltipPosition="above">Training
+            matTooltipPosition="above"
+            [disabled]="id==='-1'"
+    >Training
     </button>
     <button (click)="writeEng('lesson')"
             mat-raised-button
             matTooltip="Audio and write English"
-            matTooltipPosition="above">Write
+            matTooltipPosition="above"
+
+    >Write
     </button>
     <button (click)="writeEng('translateEng')"
             matTooltip="Translate word into Ukrainian"
             matTooltipPosition="above"
-            mat-raised-button>ToEng
+            mat-raised-button
+            [disabled]="id=='-1'"
+    >ToEng
     </button>
     <button (click)="writeEng('translateUa')"
             matTooltip="Translate word into Ukrainian"
             matTooltipPosition="above"
-            mat-raised-button>ToUa
+            mat-raised-button
+            [disabled]="id==='-1'"
+    >ToUa
     </button>
     <button (click)="writeEng('collect')"
             matTooltip="Collect sentence with your words"
             matTooltipPosition="above"
-            mat-raised-button>Collect
+            mat-raised-button
+            [disabled]="id==='-1'"
+    >Collect
     </button>
   </div>
 </div>

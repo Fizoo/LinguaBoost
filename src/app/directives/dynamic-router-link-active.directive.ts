@@ -34,8 +34,6 @@ export class DynamicRouterLinkActiveDirective implements OnInit{
           if(this.appDynamicRouterLinkActive==='theme'  ){
             this.r2.addClass(this.el.nativeElement,'active')
           }
-
-
       } else {
       this.r2.removeClass(this.el.nativeElement, 'active');
     }

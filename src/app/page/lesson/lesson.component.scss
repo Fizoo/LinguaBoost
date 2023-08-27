@@ -1,11 +1,12 @@
 @use '../../../scss/variables' as v;
 @use '../../../scss/mixins' as m;
 
-.mainDiv {
+.mainEng {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  // height: 100vh;
   position: relative;
 
   .nav {
@@ -77,7 +78,6 @@
             justify-content: center;
             flex-direction: column;
             flex-grow: 1;
-
             .wrapper {
               border-end-end-radius: 1rem;
               border-end-start-radius: 1rem;
@@ -97,17 +97,38 @@
                     width: 100%;
                     height: 100%;
                   }
-
-                  .asset-audio {
+                  .wrapper-text{
                     position: absolute;
                     width: 100%;
                     left: 0;
                     right: 0;
                     bottom: 0;
-
+                    .wr{
+                      padding: 1rem;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: stretch;
+                      background-color: #e8edf3;
+                      p{
+                        margin-top: 0;
+                        padding-top: 0;
+                        margin-bottom: 0;
+                        font-weight: 400;
+                        text-transform: none;
+                        font-size: 1.125rem;
+                        line-height: 1.5em;
+                        color: rgb(30, 45, 64);
+                        text-align: center;
+                      }
+                    }
+                    .replace{
+                    color: white;
+                    }
                     &.hide {
                       display: none;
                     }
+                  }
 
                     .player {
                       display: block;
@@ -138,115 +159,25 @@
                         }
                       }
                     }
-                  }
 
                 }
 
-                .wrapper-text{
-                  padding: 1rem;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: stretch;
-                  gap: 0.5rem;
-                  background-color: #e8edf3;
-
-                  p{
-                    margin-top: 0;
-                    padding-top: 0;
-                    margin-bottom: 0;
-                    font-weight: 400;
-                    text-transform: none;
-                    font-size: 1.125rem;
-                    line-height: 1.5em;
-                    color: rgb(30, 45, 64);
-                    text-align: center;
-                  }
-                  &.hide {
-                    display: none;
-                  }
-                }
               }
             }
             .inputBox {
-              //width: 100%;
+              width: 100%;
               margin-bottom: 2.5rem;
 
               mat-form-field {
                 width: 100%;
               }
             }
-            .skipBtn {
+            .skipBtn1 {
               margin-bottom: 2.5rem;
-            }
-            &.hide {
-              display: none;
-            }
-          }
-          .builder {
-            text-align: center;
-            .builder-window {
-              position: relative;
-              padding: 1rem;
-              min-height: 6.25rem;
               width: 100%;
-              border-radius: 0.5rem;
-              border: 0.125rem solid #d6dee6;
-              background-color: #fff;
-              margin-bottom: 2.5rem;
-              display: flex;
-              flex: 1 1 auto;
-              flex-flow: row wrap;
-
-              .word-box {
-                margin-right: 1rem;
-                margin-bottom: 1rem;
-                color: #1e2d40;
-                border: 0.125rem solid #dae1ea;
-                background-color: #fff;
-                position: relative;
-                display: inline-block;
-                padding: 0.75rem 1rem;
-                min-height: 3rem;
-                min-width: 3rem;
-                text-align: center;
-                vertical-align: middle;
-                border-radius: 0.5rem;
-                font-size: 1rem;
-                line-height: 1.7;
-                transition: all .2s ease;
-              }
-
-            }
-            .options {
-              position: relative;
-              display: inline-block;
-              margin-right: 1rem;
-              margin-bottom: 1rem;
-
-              .op {
-
-                color: #1e2d40;
-                border: 0.125rem solid #dae1ea;
-                background-color: #fff;
-                position: relative;
-                display: inline-block;
-                margin: 0;
-                padding: 0.75rem 1rem;
-                min-height: 3rem;
-                min-width: 3rem;
-                text-align: center;
-                vertical-align: middle;
-                border-radius: 0.5rem;
-                font-size: 1rem;
-                line-height: 1.7;
-                transition: all .2s ease;
-                cursor: pointer;
+              button{
 
               }
-            }
-            &.hide {
-              display: none;
             }
           }
         }
@@ -268,7 +199,7 @@
     }
     .drawer{
       width: 100%;
-     // transform: translateZ(0);
+      // transform: translateZ(0);
       opacity: 1;
 
       .drawer-context{
@@ -375,7 +306,7 @@
           }
         }
       }
-  }
+    }
   }
 }
 

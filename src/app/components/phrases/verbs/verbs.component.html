@@ -47,6 +47,7 @@
         <app-verb-list
           *ngFor="let item of copyListPhrase | filterPhrases :search ; trackBy: trackByFn "
           [list]="item"
+          [searchWord]="search"
           (speakFn)="speak($event)"
         ></app-verb-list>
 

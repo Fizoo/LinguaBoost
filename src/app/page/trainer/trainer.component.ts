@@ -30,10 +30,8 @@ export class TrainerComponent {
     this.route.params.pipe(
       take(1),
       map(params => params['id']),
-      switchMap(id => store.select(DataSelectorsWords.getThemeById(id)).pipe(
-        map(data => data.data)
-      ))
-    ).subscribe(data => {
+      switchMap(id => store.select(DataSelectorsWords.getThemeById(id)))
+    ).subscribe(({data}) => {
       this.list = data
       this.item = data[this.getRandomIndex()]
     })

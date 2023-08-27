@@ -12,6 +12,16 @@ import {park} from "./phrases/park";
 import {office} from "./phrases/office";
 import {interview} from "./phrases/interview";
 import {party} from "./phrases/party";
+import {up} from "./phrases/up";
+import {out} from "./phrases/out";
+import {On} from "./phrases/on";
+import {away} from "./phrases/away";
+import {back} from "./phrases/back";
+import {down} from "./phrases/down";
+import {forward} from "./phrases/forward";
+import {In} from "./phrases/in";
+import {Off} from "./phrases/off";
+import {over} from "./phrases/over";
 
 
 export const objPhrases: TopicPhrases[] = [
@@ -47,7 +57,7 @@ export const objPhrases: TopicPhrases[] = [
   },
   {
     id: 5,
-    name: 'Hotel',
+    name: 'Shop',
     data: shop,
     type:'phrase'
   },
@@ -93,6 +103,69 @@ export const objPhrases: TopicPhrases[] = [
     data: party,
     type:'phrase'
   },
+  {
+    id: 13,
+    name: 'UP',
+    data: up,
+    type:'phrase'
+  },
+  {
+    id: 14,
+    name: 'DOWN',
+    data: down,
+    type:'phrase'
+  },
+  {
+    id: 15,
+    name: 'AWAY',
+    data: away,
+    type:'phrase'
+  },
+  {
+    id: 16,
+    name: 'IN',
+    data: In,
+    type:'phrase'
+  },
+  {
+    id: 17,
+    name: 'ON',
+    data: On,
+    type:'phrase'
+  },
+  {
+    id: 18,
+    name: 'OFF',
+    data: Off,
+    type:'phrase'
+  },
+  {
+    id: 19,
+    name: 'OUT',
+    data: out,
+    type:'phrase'
+  },
+  {
+    id: 20,
+    name: 'OVER',
+    data: over,
+    type:'phrase'
+  },
+  {
+    id: 21,
+    name: 'BACK',
+    data: back,
+    type:'phrase'
+  },
+  {
+    id: 22,
+    name: 'FORWARD',
+    data: forward,
+    type:'phrase'
+  },
+
+
+
 
 
 

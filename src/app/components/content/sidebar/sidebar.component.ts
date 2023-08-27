@@ -3,7 +3,7 @@ import {Theme} from "../../../models/data";
 import {Router} from "@angular/router";
 import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../../store/data/selectors";
-import {Observable, tap} from "rxjs";
+import {Observable, of, switchMap, tap} from "rxjs";
 
 @Component({
   selector: 'app-sidebar',
@@ -18,12 +18,15 @@ export class SidebarComponent implements OnInit{
 
   constructor(private router: Router,
               private store:Store,
-              ) {
-  }
+              ) {}
 
   ngOnInit(): void {
    this.themeList$= this.store.select(DataSelectorsWords.getWordsData).pipe(
-     tap(el=>this.themeListLength=el.length)
+     tap(el=>this.themeListLength=el.length),
+    switchMap(themes=>{
+      const sortedThemes=[...themes].sort((a,b)=>+a.id-(+b.id))
+      return of(sortedThemes)
+    }),
    )
   }
 

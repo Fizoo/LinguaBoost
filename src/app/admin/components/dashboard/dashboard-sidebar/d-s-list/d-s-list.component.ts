@@ -23,6 +23,19 @@ export class DSListComponent {
 
 
   addTopic(topic: CollectTopic) {
+/*    this.firestore.addPhraseWithId({
+      id:Number(topic.id),
+      data:topic.data.map(el=>({
+        ...el,
+        phrase:el.text,
+        translateToUA:el.translateToUA,
 
+
+      })),
+      name:topic.name,
+      type:topic.type
+
+    }).pipe(tap(el=>console.log(el)))
+      .subscribe()*/
   }
 }

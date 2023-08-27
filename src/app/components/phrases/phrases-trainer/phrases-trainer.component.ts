@@ -1,5 +1,5 @@
 import {Component, HostListener, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {debounceTime, map, Subject, switchMap, takeUntil, tap} from "rxjs";
 import {Phrase} from "../../../models/data";
 import {Store} from "@ngrx/store";
@@ -34,6 +34,7 @@ export class PhrasesTrainerComponent implements OnDestroy,OnInit {
   }
 
   constructor(private route: ActivatedRoute,
+              private router:Router,
               private store: Store,
               private speaker: SpeakerService) {
 
@@ -91,6 +92,10 @@ export class PhrasesTrainerComponent implements OnDestroy,OnInit {
     this.speaker.speak(value)
   }
 
+  closeLesson() {
+    this.router.navigate(['phrases',0],)
+  }
+
   private getRandomIndex(): number {
     if (this.randomArr.length === 0) {
       this.randomArr = Array.from(Array(this.list.length).keys());
@@ -108,4 +113,6 @@ export class PhrasesTrainerComponent implements OnDestroy,OnInit {
     this.unsubscribe$.next()
     this.unsubscribe$.complete()
   }
+
+
 }

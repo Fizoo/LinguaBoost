@@ -1,11 +1,14 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormControl} from "@angular/forms";
 import {ActivatedRoute, Router} from '@angular/router';
-import {BehaviorSubject, debounceTime, map, switchMap, tap} from "rxjs";
-import {DataService} from 'src/app/services/data.service';
+import {map, Subject, switchMap, take, takeUntil, tap} from "rxjs";
 import {myValidator} from "../../helper/my.validators";
 import {Words} from "../../models/data";
 import {SpeakerService} from "../../services/speaker.service";
+import {Store} from "@ngrx/store";
+import {DataSelectorsWords} from "../../store/data/selectors";
+import {DataActions} from "../../store/data/actions";
+import {ProgressAction} from "../../store/progress/actions";
 
 export interface tempList {
   id: number
@@ -26,163 +29,210 @@ export interface tempList {
   styleUrls: ['./lesson.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class LessonComponent implements OnInit {
-  currentWord$ = new BehaviorSubject<string>('')
-  data: Words[]
+export class LessonComponent implements OnInit, OnDestroy {
   tempList: Words[] = []
-  //index=0
-  inputValue: string = ''
-  formControlValue: FormControl = new FormControl('', myValidator(''))
+  updateList: Words[] = []
 
-  instructionForLesson = 1
-  isBuilderWords = false
-  isAudioChallenge = true
+  formControlText: FormControl = new FormControl('', myValidator(''))
+
+  score = 0
   isProgressBar = false
   isFooterHide = true
-  resultSwitch = 3
-  isCheckingBtnDisabled = false
   isWinChallenge = false
-
+  isCheckingBtnDisabled = false
+  isBeforeCheckBtn = true
+  resultSwitch = 1
   isHideSpanInAnswer = true
+  inputValue: string = ''
+  whatLesson: number
+  id: string
 
-  constructor(private route: ActivatedRoute,
-              private dataService: DataService,
-              private speaker: SpeakerService,
+  private ngUnsubscribe$ = new Subject<void>();
+
+  @HostListener('document:keydown.enter')
+  onEnter() {
+    this.isWinChallenge ? this.nextTo() : this.checking();
+  }
+
+  constructor(private speaker: SpeakerService,
+              private store: Store,
+              private route: ActivatedRoute,
               private router: Router
   ) {
   }
 
   ngOnInit(): void {
-
     this.route.params.pipe(
-      map(el => el['id']),
-      switchMap(id => this.dataService.data$
-        .pipe(map(el => el.data.filter(s => s.id === id)[0].data),
-        )),
-    ).subscribe((data) => {
-      this.data = data
-      this.tempList = this.randomList()
-      this.formControlValue.setValidators(myValidator(this.tempList[0].englishWord))
-      this.setVariables(1)
+      map(data => data['id']),
+      tap(id => this.id = id),
+      switchMap(id => this.store.select(DataSelectorsWords.getRandomListWith20ById(id)).pipe(
+        tap(data => {
+          this.tempList = data
+          this.setValidators()
+          this.extracted()
+        })
+      )),
+      take(1)
+    ).subscribe()
 
-    })
-
-    this.formControlValue.valueChanges.pipe(
-      debounceTime(300),
-      tap(el => {
-        this.inputValue = el ?? ''
-        this.isCheckingBtnDisabled = !!el
-      })).subscribe()
+    this.formControlText.valueChanges.pipe(
+      map(el => el?.trim()),
+      tap(value => {
+        this.inputValue = value
+        this.isCheckingBtnDisabled = !!value
+      }),
+      takeUntil(this.ngUnsubscribe$)
+    ).subscribe()
   }
+
 
   checking() {
     this.isFooterHide = false
     this.isWinChallenge = true
+    this.isBeforeCheckBtn = false
+    let word = ''
 
-    let x = this.tempList[0].englishWord
-    if (x === this.inputValue) {
-      this.resultSwitch = 3
-      this.tempList.shift()
-    } else {
-      let y = this.tempList.shift()
-      if (y) {
-        this.tempList.push(y)
-      }
-      this.resultSwitch = 1
+    switch (this.whatLesson) {
+      case 1:
+        word = this.tempList[0].englishWord
+        break
+      case 2:
+        word = this.tempList[0].englishWord
+        break
+
+      case 3 :
+        word = this.tempList[0].ukrainianTranslation
+        break
+      default:
     }
 
+    this.resultSwitch = word === this.inputValue.trim() ? 3 : 1;
   }
 
   nextTo() {
-    let x = this.tempList.shift()
-    this.win()
+    this.isFooterHide = true
+    this.isWinChallenge = false
+    this.isBeforeCheckBtn = true
+    this.audit(this.resultSwitch)
+    this.deleteValue()
+
     if (this.tempList.length > 0) {
-      this.isFooterHide = true
-      this.isWinChallenge = false
-      this.deleteValue()
-      this.formControlValue.setValidators(myValidator(this.tempList[0].englishWord))
+      this.speaker.speak(this.tempList[0].englishWord)
     }
+  }
+
+  isWin(): void {
+
+    if (this.updateList.length === 20) {
+
+      const newDay = {
+        date: new Date().toLocaleDateString(),
+        counter: this.score
+      }
+      this.store.dispatch(DataActions.updateWord({wordArr: this.updateList}))
+      this.store.dispatch(ProgressAction.addOrUpdateProgress({newDay}))
+      this.router.navigate(['theme/1/lessons/result'])
+    }
+
   }
 
   lossChallenge() {
     this.resultSwitch = 2
     this.isFooterHide = false
+    this.isBeforeCheckBtn = false
     this.isWinChallenge = true
   }
 
-  speak(value: string): void {
-    this.isProgressBar = !this.isProgressBar
-    setTimeout(() => this.isProgressBar = !this.isProgressBar, 1500)
-    this.speaker.speak(value)
+  countWordsByLevel(wordsArray: Words[]) {
+    const countByLevel: any = {};
+    for (const word of wordsArray) {
+      const level = word.level;
+      countByLevel[level] = (countByLevel[level] || 0) + 1;
+    }
+    return countByLevel
   }
 
-  deleteValue() {
-    this.formControlValue.setValue('')
+  private audit(value: number): void {
+    let word = this.tempList.shift()
+
+    if (word) {
+      let tempListLen = this.tempList.length;
+      let randomInd = Math.floor(Math.random() * (tempListLen + 1))
+
+      switch (value) {
+        case 1:
+        case 2:
+          word = {
+            ...word,
+            level: word.level > 0 ? word.level - 1 : 0
+          }
+          this.score -= 1;
+
+          this.tempList.splice(randomInd, 0, word)
+          this.setValidators()
+          break
+
+        case 3:
+          word = {
+            ...word,
+            level: word.level < 3 ? word.level + 1 : 3
+          }
+
+          this.updateList.push(word)
+          this.score += 2
+          this.isWin()
+
+          if (this.tempList.length > 0) {
+            this.setValidators()
+          }
+          break
+      }
+    }
   }
 
-  public getNavbarValue(): number {
-    let x = this.tempList.length - 1
+  getNavbarValue() {
+    const x = this.tempList.length - 1
     return x ? 100 - (x * 5) : 100
   }
 
-  public win(): void {
-    if (this.tempList.length === 0) {
-      this.router.navigate(['theme/1/lesson/1/result/goal'])
-    }
+  speak(value: string) {
+    this.speaker.speak(value)
   }
 
-  private randomInd(): number[] {
-    const list: number[] = [];
-    const dataLength = this.data.length;
-    while (list.length < 20) {
-      const x = Math.floor(Math.random() * dataLength);
-      if (!list.includes(x)) {
-        list.push(x);
-      }
-    }
-    return list;
-  }
+  private extracted() {
+    const lesson = this.router.url.split('/')[3]
 
-  randomList(): Words[] {
-    let arr: Words[] = []
-    this.randomInd().forEach(ind => arr.push(this.data[ind]))
-    return arr
-  }
-
-  private setVariables(value: number) {
-    switch (value) {
-      case 1:
-        this.instructionForLesson = 1
-        this.isAudioChallenge = true
-        this.isBuilderWords = false
+    switch (lesson) {
+      case 'lesson':
+        this.whatLesson = 1
         break
 
-      case 2:
-        this.instructionForLesson = 2
-        this.isAudioChallenge = false
-        this.isBuilderWords = false
+      case 'translateEng':
+        this.whatLesson = 2
         break
 
-      case 3:
-        this.instructionForLesson = 3
-        this.isAudioChallenge = false
-        this.isBuilderWords = false
-        break
-      case 4:
-        this.instructionForLesson = 4
-        this.isAudioChallenge = false
-        this.isBuilderWords = true
+      case 'translateUa':
+        this.whatLesson = 3
         break
 
       default:
-        this.instructionForLesson = 0
-        this.isAudioChallenge = true
-        this.isBuilderWords = false
+        this.whatLesson = 1
     }
   }
 
-  private setValidators():void{
-    this.formControlValue.setValidators(myValidator(this.tempList[0].ukrainianTranslation))
+  deleteValue() {
+    this.formControlText.reset()
+    // this.formControlText.setValue('')
+  }
+
+
+  private setValidators(): void {
+    this.formControlText.setValidators(myValidator(this.tempList[0].englishWord))
+  }
+
+  ngOnDestroy(): void {
+    this.ngUnsubscribe$.next()
+    this.ngUnsubscribe$.complete()
   }
 
 }

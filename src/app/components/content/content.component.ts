@@ -18,8 +18,8 @@ export class ContentComponent implements OnInit {
   list: Words[] = []
   copyList: Words[] = []
   searchText: string = ''
-  isLoading$:Observable<boolean>
-  isError$:Observable<any>
+  isLoading$: Observable<boolean>
+  isError$: Observable<any>
 
 
   constructor(private dataService: DataService,
@@ -31,27 +31,25 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.pipe(
       map(el => el['id']),
-      switchMap(id => +id!==-1
-        ?this.store.select(DataSelectorsWords.getThemeById(id))
+      switchMap(id => +id !== -1
+        ? this.store.select(DataSelectorsWords.getThemeById(id))
         : this.store.select(DataSelectorsWords.combineAllWords)
-       ),
-    ).subscribe((list) => {
-      this.list = list.data
-      this.copyList = list.data
+      ),
+    ).subscribe(({data}) => {
+      if (data) {
+        this.list = data
+        this.copyList = data
 
-
-      this.onPageChange({
-        pageIndex: 0,
-        pageSize: 25,
-        length:list.data.length
-      });
-
+        this.onPageChange({
+          pageIndex: 0,
+          pageSize: 25,
+          length: data.length
+        })
+      }
     })
 
-    this.isLoading$=this.store.select(DataSelectorsWords.isLoadingData)
-    this.isError$=this.store.select(DataSelectorsWords.isErrorLoadData)
-
-
+    this.isLoading$ = this.store.select(DataSelectorsWords.isLoadingData)
+    this.isError$ = this.store.select(DataSelectorsWords.isErrorLoadData)
   }
 
 
@@ -66,27 +64,27 @@ export class ContentComponent implements OnInit {
   onSorting(value: string) {
     switch (value) {
       case '1':
-        this.copyList = [...this.list].sort((a, b) => a.englishWord.localeCompare(b.englishWord))
+        this.copyList = [...this.copyList].sort((a, b) => a.englishWord.localeCompare(b.englishWord))
         break
       case '2':
-        this.copyList = [...this.list].sort((a, b) => b.englishWord.localeCompare(a.englishWord))
+        this.copyList = [...this.copyList].sort((a, b) => b.englishWord.localeCompare(a.englishWord))
         break
       case '3':
-        this.copyList = [...this.list].sort((a, b) => {
-        let res=a.level - b.level
-          if(res!==0) return res
-          return  a.englishWord.localeCompare(b.englishWord)
+        this.copyList = [...this.copyList].sort((a, b) => {
+          let res = a.level - b.level
+          if (res !== 0) return res
+          return a.englishWord.localeCompare(b.englishWord)
         })
         break
       case '4':
-        this.copyList = [...this.list].sort((a, b) => {
-          let res=b.level - a.level
-          if(res!==0) return res
-          return  a.englishWord.localeCompare(b.englishWord)
+        this.copyList = [...this.copyList].sort((a, b) => {
+          let res = b.level - a.level
+          if (res !== 0) return res
+          return a.englishWord.localeCompare(b.englishWord)
         })
         break
       case '5':
-        this.copyList = [...this.list].sort(() => Math.random() - 0.5)
+        this.copyList = [...this.copyList].sort(() => Math.random() - 0.5)
         break
       default:
         break;

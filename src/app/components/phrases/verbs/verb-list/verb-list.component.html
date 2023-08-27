@@ -8,7 +8,7 @@
 
       <div class="box-text">
         <div >
-          <span class="text">{{list.phrase}}</span>
+          <span [appHighlightBook]="list.phrase"  [searchTerm]="searchWord" class="text">{{list.phrase}}</span>
         </div>
         <div (click)="isVisible1=!isVisible1">
           <span *ngIf="isVisible1; else visible1" class="text">{{list.translateToUA}}</span>
