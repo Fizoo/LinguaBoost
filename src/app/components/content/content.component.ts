@@ -84,7 +84,7 @@ export class ContentComponent implements OnInit {
         })
         break
       case '5':
-        this.copyList = [...this.copyList].sort(() => Math.random() - 0.5)
+        this.copyList = [...this.list].sort(() => Math.random() - 0.5).slice(0,25)
         break
       default:
         break;
@@ -96,6 +96,5 @@ export class ContentComponent implements OnInit {
     const endIndex = startIndex + event.pageSize;
 
     this.copyList = this.list.slice(startIndex, endIndex);
-
   }
 }

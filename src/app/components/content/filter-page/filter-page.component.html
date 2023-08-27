@@ -64,7 +64,7 @@
             mat-raised-button
             matTooltip="Audio and write English"
             matTooltipPosition="above"
-
+            [disabled]="id=='-1'"
     >Write
     </button>
     <button (click)="writeEng('translateEng')"
@@ -80,13 +80,6 @@
             mat-raised-button
             [disabled]="id==='-1'"
     >ToUa
-    </button>
-    <button (click)="writeEng('collect')"
-            matTooltip="Collect sentence with your words"
-            matTooltipPosition="above"
-            mat-raised-button
-            [disabled]="id==='-1'"
-    >Collect
     </button>
   </div>
 </div>

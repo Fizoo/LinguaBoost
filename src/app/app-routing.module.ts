@@ -6,8 +6,6 @@ import {ContentComponent} from "./components/content/content.component";
 import {AuthGuard} from "./admin/auth.guard";
 import {Lesson2Component} from "./page/lesson2/lesson2.component";
 import {Lesson3Component} from "./page/lesson3/lesson3.component";
-
-import {LessonCollectComponent} from "./page/lesson-collect/lesson-collect.component";
 import {TrainerComponent} from "./page/trainer/trainer.component";
 import {PhrasesComponent} from "./components/phrases/phrases.component";
 import {PhrasesTrainerComponent} from "./components/phrases/phrases-trainer/phrases-trainer.component";
@@ -32,7 +30,6 @@ const routes: Routes = [
   {path:'theme/:id/lesson/:id',component:LessonComponent},
   {path:'theme/:id/translateEng/:id',component:LessonComponent},
   {path:'theme/:id/translateUa/:id',component:LessonComponent},
-  {path:'theme/:id/collect/:id',component:LessonCollectComponent},
   {path:'theme/:id/lessons/result',component:Lesson2Component },
   {path:'theme/:id/:lessons/result/goal',component:Lesson3Component },
 
