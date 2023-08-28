@@ -22,6 +22,7 @@ import {forward} from "./phrases/forward";
 import {In} from "./phrases/in";
 import {Off} from "./phrases/off";
 import {over} from "./phrases/over";
+import {top500} from "./phrases/500";
 
 
 export const objPhrases: TopicPhrases[] = [
@@ -161,6 +162,12 @@ export const objPhrases: TopicPhrases[] = [
     id: 22,
     name: 'FORWARD',
     data: forward,
+    type:'phrase'
+  },
+  {
+    id: 23,
+    name: '500',
+    data: top500,
     type:'phrase'
   },
 

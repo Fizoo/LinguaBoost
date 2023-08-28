@@ -77,7 +77,7 @@ export namespace DataSelectorsWords {
       const midRankList = list.filter(({level}) => level === 1)
       const lowRankList = list.filter(({level}) => level === 0)
 
-      while (selectedList.length < 20 || selectedList.length === list.length) {
+      while (selectedList.length < 2 || selectedList.length === list.length) {
         let obj: Words | undefined
         let random = Math.random()
 

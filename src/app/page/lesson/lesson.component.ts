@@ -123,8 +123,8 @@ export class LessonComponent implements OnInit, OnDestroy {
 
   isWin(): void {
 
-    if (this.updateList.length === 20) {
-
+    if (this.updateList.length === 2) {
+//debugger
       const newDay = {
         date: new Date().toLocaleDateString(),
         counter: this.score

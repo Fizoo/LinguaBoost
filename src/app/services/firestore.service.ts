@@ -185,12 +185,25 @@ export class FirestoreService {
     )
   }
 
-  /*updateWordsById(data:Partial<Theme>):Observable<void>{
+  updateWordsById(data:Partial<Theme>):Observable<void>{
+    const idDoc=data.id
     return from(this.wordCollection
-      .doc(data.id)
+      .doc('users')
+      .collection(this.userUid)
+      .doc(idDoc)
       .update(data)
     )
-  }*/
+  }
+
+  updateWordsByIdTheme(data:Partial<Theme>):Observable<void>{
+    const idDoc=data.id
+    return from(this.wordCollection
+      .doc('users')
+      .collection(this.userUid)
+      .doc(idDoc)
+      .update(data)
+    )
+  }
 
 //--------------------------DATA-----------------------------------------------------------------------------------
   // Додавання документу в колекцію "data"

@@ -41,6 +41,13 @@ export const dataReducer = createReducer(
     })
   ),
 
+ on(DataActions.loadDataSuccess,
+    (state)=>({
+      ...state,
+      isLoading:false
+    })
+  ),
+
   on(DataActions.loadDataError,
     (state,{error})=>({
       ...state,

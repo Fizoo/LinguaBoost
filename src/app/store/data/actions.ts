@@ -7,6 +7,7 @@ export enum DataNames{
   LoadData='[Data] LoadData',
   LoadDataPhrases='[Data] LoadDataPhrases',
   LoadDataError='[Data] LoadDataError',
+  LoadDataSuccess='[Data] LoadDataSuccess',
   GetAllData='[Data] getAllData',
   GetDataByTheme='[Data] getDataByTheme',
   AddNewTheme='[Data] addNewTheme',
@@ -25,6 +26,8 @@ export namespace DataActions{
   export const loadDataPhrases=createAction(DataNames.LoadDataPhrases,props<{phrases:TopicPhrases[]}>())
 
   export const loadDataError=createAction(DataNames.LoadDataError,props<{error:any}>())
+
+  export const loadDataSuccess=createAction(DataNames.LoadDataSuccess)
 
   export const getAllData=createAction(DataNames.GetAllData)
 

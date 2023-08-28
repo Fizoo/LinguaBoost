@@ -20,6 +20,7 @@ import {FirestoreService} from "./services/firestore.service";
 import {Store} from "@ngrx/store";
 import {BookSelectors} from "./store/book/selector";
 import {DataActions} from "./store/data/actions";
+import {DataSelectorsWords} from "./store/data/selectors";
 
 @Injectable()
 export class AppEffects {
@@ -29,6 +30,26 @@ export class AppEffects {
               private store: Store
   ) {
   }
+
+  //update words
+
+  updateWords$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(DataActions.updateWord),
+      switchMap(({wordArr}) => {
+          const idTheme = wordArr[0].idTheme.toString()
+          return this.store.select(DataSelectorsWords.getThemeById(idTheme)).pipe(
+            take(1),
+            switchMap((data) =>
+              this.firebase.updateWordsByIdTheme(data).pipe(
+                map(() => DataActions.loadDataSuccess())
+              )),
+            catchError((error)=>of(DataActions.loadDataError({error})))
+          )
+        }
+      )
+    )
+  )
 
   //---------------------load Words---------------------------------//
   loadAllWords$ = createEffect(() =>
@@ -46,7 +67,7 @@ export class AppEffects {
             ]
             return of(...actions)
           }),
-          catchError(error=>{
+          catchError(error => {
             console.log('Error loading data:', error)
             return of(DataActions.loadDataError({error}))
           })
