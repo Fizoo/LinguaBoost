@@ -3,6 +3,8 @@ import {Progress, TimeDay} from "../../models/progress";
 
 export enum ProgressNames{
   Initial='[Progress] Initial',
+  LoadProgress='[Progress] LoadProgress',
+  LoadProgressSuccess='[Progress] LoadProgressSuccess',
   GetProgress='[Progress] GetProgress',
   AddProgress='[Progress] AddProgress',
   UpdateProgress='[Progress] UpdateProgress',
@@ -15,11 +17,15 @@ export enum ProgressNames{
 export namespace ProgressAction{
   export const initial=createAction(ProgressNames.Initial)
 
+  export const loadProgress=createAction(ProgressNames.LoadProgress,props<{progress:Progress}>())
+
+  export const loadProgressSuccess=createAction(ProgressNames.LoadProgressSuccess)
+
   export const getProgress=createAction(ProgressNames.GetProgress)
 
   export const addProgress=createAction(ProgressNames.AddProgress,props<{progress:Progress}>())
 
-  export const updateProgress=createAction(ProgressNames.UpdateProgress,props<{progress:Partial<Progress>}>())
+  export const updateProgress=createAction(ProgressNames.UpdateProgress,props<{progressOfDay:TimeDay}>())
 
   export const AddCountDays=createAction(ProgressNames.AddCountDays)
 

@@ -1,1 +1,66 @@
-<p>sign-up works!</p>
+<div class="main">
+  <div class="myForm">
+    <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+      <h3>Sign Up</h3>
+      <div class="inputBox"  >
+        <span>Nickname</span>
+        <div class="box">
+          <div class="icon">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <input [ngClass]="{invalid:nickname.touched && nickname.invalid}" type="text" formControlName="nickname">
+        </div>
+        <div
+          *ngIf="nickname.touched && nickname.invalid"
+          class="validations">
+          <small *ngIf="nickname?.errors?.['required']">enter your Nickname </small>
+
+        </div>
+      </div>
+
+      <div class="inputBox"  >
+        <span>Email</span>
+        <div class="box">
+          <div class="icon">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <input [ngClass]="{invalid:email.touched && email.invalid}" type="text" formControlName="email">
+        </div>
+        <div
+          *ngIf="email.touched && email.invalid"
+          class="validations">
+          <small *ngIf="email?.errors?.['required']">enter your email address </small>
+          <small *ngIf="email?.errors?.['email']">Please enter a valid email address</small>
+        </div>
+      </div>
+
+      <div class="inputBox"  >
+        <span>Password</span>
+        <div class="box">
+          <div class="icon">
+            <i class="bi bi-lock-fill"></i>
+          </div>
+          <input [ngClass]="{invalid:form.get('password')?.touched && form.get('password')?.invalid}" type="password" formControlName="password">
+
+        </div>
+        <div
+          *ngIf="password.touched && password.invalid"
+          class="validations">
+          <small *ngIf="password.errors?.['required']">
+            Password required
+          </small>
+          <small *ngIf="password.errors?.['minlength']">
+            Min length password is {{password.errors?.['minlength']['requiredLength']}}symbols.
+            Now {{password.errors?.['minlength']['actualLength']}}
+          </small>
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <div class="box">
+          <input type="submit" value="SIGN UP"  [disabled]="form.invalid">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

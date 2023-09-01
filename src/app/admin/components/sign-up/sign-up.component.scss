@@ -1,0 +1,125 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  background: #f2f7fd;
+
+  .myForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    min-height: 500px;
+    background: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    padding: 50px;
+
+    form {
+      position: relative;
+      width: 100%;
+
+      h3 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .inputBox {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+
+        span {
+          display: inline-block;
+          color: #fff;
+          margin-bottom: 10px;
+          letter-spacing: 1px;
+          font-size: 0.75em;
+          border-left: 4px solid #fff;
+          padding-left: 4px;
+          line-height: 1em;
+          text-transform: uppercase;
+        }
+
+        .box {
+          display: flex;
+
+          .icon {
+            position: relative;
+            width: 50px;
+            height: 40px;
+            background: #ff2c74;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            color: #fff;
+            font-size: 1.15em;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+            inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+            inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+          }
+
+          input {
+            position: relative;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+            inset 2px 2px 5px rgba(0, 0, 0, 0.35),
+            inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+            &.invalid{
+              border: 1px solid red;
+            }
+          }
+
+          input[type='submit'] {
+            background: #1f83f2;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+            inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+            inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-top: 10px;
+
+            &:hover {
+              filter: brightness(1.1);
+            }
+          }
+        }
+        .validations{
+          color: #cc5b5b;
+          text-align: center;
+          padding-top: 5px;
+        }
+      }
+
+      .form-check{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+

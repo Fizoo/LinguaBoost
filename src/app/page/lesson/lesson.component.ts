@@ -8,6 +8,8 @@ import {SpeakerService} from "../../services/speaker.service";
 import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../store/data/selectors";
 import {DataActions} from "../../store/data/actions";
+import {TimeDay} from "../../models/progress";
+import {DatePipe} from "@angular/common";
 import {ProgressAction} from "../../store/progress/actions";
 
 export interface tempList {
@@ -36,6 +38,10 @@ export class LessonComponent implements OnInit, OnDestroy {
   formControlText: FormControl = new FormControl('', myValidator(''))
 
   score = 0
+  countUpWordsInThisDay = 0
+  countMin = 0
+  startTime: number
+
   isProgressBar = false
   isFooterHide = true
   isWinChallenge = false
@@ -83,6 +89,9 @@ export class LessonComponent implements OnInit, OnDestroy {
       }),
       takeUntil(this.ngUnsubscribe$)
     ).subscribe()
+
+    this.startTime = performance.now()
+    console.log(this.startTime)
   }
 
 
@@ -122,15 +131,9 @@ export class LessonComponent implements OnInit, OnDestroy {
   }
 
   isWin(): void {
-
     if (this.updateList.length === 2) {
-//debugger
-      const newDay = {
-        date: new Date().toLocaleDateString(),
-        counter: this.score
-      }
       this.store.dispatch(DataActions.updateWord({wordArr: this.updateList}))
-      this.store.dispatch(ProgressAction.addOrUpdateProgress({newDay}))
+      this.store.dispatch(ProgressAction.updateProgress({progressOfDay: this.getProgressOfDay()}))
       this.router.navigate(['theme/1/lessons/result'])
     }
 
@@ -179,7 +182,9 @@ export class LessonComponent implements OnInit, OnDestroy {
           }
 
           this.updateList.push(word)
+          this.countUpWordsInThisDay+=1
           this.score += 2
+
           this.isWin()
 
           if (this.tempList.length > 0) {
@@ -225,6 +230,25 @@ export class LessonComponent implements OnInit, OnDestroy {
     // this.formControlText.setValue('')
   }
 
+  private getProgressOfDay(): TimeDay {
+    const endTime = performance.now()
+    const elapsedTimeInMillis = endTime - this.startTime
+    const elapsedTimeInMinutes = Math.round(elapsedTimeInMillis / (1000 * 60)) // Конвертуємо мілісекунди в хвилини
+
+    console.log(elapsedTimeInMillis/36000)
+    return {
+      date: LessonComponent.getCurrentDate(),
+      countMin: elapsedTimeInMinutes,
+      countUpWordsInThisDay: this.countUpWordsInThisDay,
+      counterScore: this.score
+    }
+  }
+
+  private static getCurrentDate(): string {
+    const datePipe = new DatePipe('en-US');
+    const currentDateFormatted = datePipe.transform(new Date(), 'yyyy-MM-dd');
+    return currentDateFormatted ?? Date.now().toString()
+  }
 
   private setValidators(): void {
     this.formControlText.setValidators(myValidator(this.tempList[0].englishWord))

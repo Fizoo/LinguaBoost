@@ -3,8 +3,8 @@ import {CollectTopic} from "../../../../../models/data";
 import {Store} from "@ngrx/store";
 import {DataActions} from "../../../../../store/data/actions";
 import {FirestoreService} from "../../../../../services/firestore.service";
-import {switchMap, tap} from "rxjs";
-import {DataSelectorsPhrases} from "../../../../../store/data/selectors-phrases";
+import {map, switchMap} from "rxjs";
+import {DataSelectorsWords} from "../../../../../store/data/selectors";
 
 @Component({
   selector: 'app-d-s-list',
@@ -25,11 +25,18 @@ export class DSListComponent {
 
 
   addTopic(topic: CollectTopic) {
-   this.store.select(DataSelectorsPhrases.getPhrasesById(+topic.id,topic.type)).pipe(
+    this.store.select(DataSelectorsWords.getThemeById(topic.id)).pipe(
+      map(el=>({
+        ...el,
+        data:el.data.map(a=>({...a,level:0}))
+      })),
+      switchMap(data=>this.firestore.addWords(data))
+    )
+ /*  this.store.select(DataSelectorsPhrases.getPhrasesById(+topic.id,topic.type)).pipe(
      tap(el=>console.log(el)),
      switchMap((data)=>this.firestore.addPhraseWithId(data))
    )
-     .subscribe()
+     .subscribe()*/
 /*    this.firestore.addPhraseWithId({
       id:Number(topic.id),
       data:topic.data.map(el=>({

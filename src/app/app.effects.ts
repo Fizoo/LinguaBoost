@@ -4,6 +4,7 @@ import {BookActions} from "./store/book/actions";
 import {
   catchError,
   combineLatest,
+  concatMap,
   filter,
   forkJoin,
   map,
@@ -21,6 +22,8 @@ import {Store} from "@ngrx/store";
 import {BookSelectors} from "./store/book/selector";
 import {DataActions} from "./store/data/actions";
 import {DataSelectorsWords} from "./store/data/selectors";
+import {ProgressAction} from "./store/progress/actions";
+import {ProgressSelectors} from "./store/progress/selectors";
 
 @Injectable()
 export class AppEffects {
@@ -31,12 +34,28 @@ export class AppEffects {
   ) {
   }
 
-  //update words
 
+  //update Progress
+  updateProgress$=createEffect(()=>
+  this.actions$.pipe(
+    ofType(ProgressAction.updateProgress),
+    concatMap (()=>{
+      return this.store.select(ProgressSelectors.getAllProgress).pipe(
+        take(1),
+        switchMap(data=>this.firebase.updateProgressItem(data).pipe(
+          map(()=>ProgressAction.loadProgressSuccess())
+        )),
+      catchError((error)=>of(DataActions.loadDataError({error})))
+      )
+    })
+  ))
+
+
+  //update words
   updateWords$ = createEffect(() =>
     this.actions$.pipe(
       ofType(DataActions.updateWord),
-      switchMap(({wordArr}) => {
+      concatMap(({wordArr}) => {
           const idTheme = wordArr[0].idTheme.toString()
           return this.store.select(DataSelectorsWords.getThemeById(idTheme)).pipe(
             take(1),
@@ -59,11 +78,13 @@ export class AppEffects {
         combineLatest([
           this.firebase.getAllWord(),
           this.firebase.getAllPhrase(),
+          this.firebase.getProgressByIdAsync(),
         ]).pipe(
-          switchMap(([words, phrases]) => {
+          switchMap(([words, phrases,progress]) => {
             const actions = [
               DataActions.loadData({data: words}),
               DataActions.loadDataPhrases({phrases}),
+              ProgressAction.loadProgress({progress})
             ]
             return of(...actions)
           }),

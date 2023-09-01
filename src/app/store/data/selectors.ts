@@ -112,8 +112,7 @@ export namespace DataSelectorsWords {
     getWordsData,
     state => {
       const newState = state.reduce((acc: Words[], curr: Theme) => [...acc, ...curr.data], [])
-        .sort((a, b) => a.englishWord.localeCompare(b.englishWord))
-
+        //.sort((a, b) => a.englishWord.localeCompare(b.englishWord))
       const uniqueWords: { [key: string]: boolean } = {}
 
       const filterState: Words[] = newState.filter((word) => {
@@ -125,7 +124,7 @@ export namespace DataSelectorsWords {
       }).map((word, i) => ({
         ...word,
         id: i
-      }))
+      })).sort((a, b) => a.englishWord.localeCompare(b.englishWord))
 
       return {
         id:-1,

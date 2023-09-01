@@ -22,6 +22,10 @@ export class VerbsComponent implements OnInit, OnDestroy {
 
   listPhrases: Phrase[] = []
   copyListPhrase: Phrase[] = []
+  tempListPhrase: Phrase[] = []
+
+  currentPageSize: number = 25;
+  currentPageIndex: number = 0;
 
   currentId: number
 
@@ -30,9 +34,7 @@ export class VerbsComponent implements OnInit, OnDestroy {
   constructor(private store: Store,
               private route: ActivatedRoute,
               private speaker: SpeakerService,
-              private router: Router
-  ) {
-  }
+              private router: Router) {}
 
   ngOnInit(): void {
 
@@ -51,12 +53,14 @@ export class VerbsComponent implements OnInit, OnDestroy {
 
       this.listPhrases = data
       this.copyListPhrase = data
+      this.tempListPhrase = data
 
       this.onPageChange({
         pageIndex: 0,
         pageSize: 25,
         length: data.length
-      });
+      })
+
     });
 
     this.formSort.valueChanges.pipe(
@@ -64,6 +68,13 @@ export class VerbsComponent implements OnInit, OnDestroy {
     ).subscribe((value) => {
       if (value) {
         this.copyListPhrase = this.sortFn(value)
+        this.tempListPhrase = this.sortFn(value)
+
+       this.onPageChange({
+          pageIndex: this.currentPageIndex,
+          pageSize: this.currentPageSize,
+          length: this.tempListPhrase.length // Оновлюємо довжину списку
+        });
       }
     })
 
@@ -95,10 +106,14 @@ export class VerbsComponent implements OnInit, OnDestroy {
   }
 
   onPageChange(event: PageEvent) {
+    this.currentPageIndex = event.pageIndex;
+    this.currentPageSize = event.pageSize;
+
     const startIndex = event.pageIndex * event.pageSize;
     const endIndex = startIndex + event.pageSize;
 
-    this.copyListPhrase = this.listPhrases.slice(startIndex, endIndex);
+    this.copyListPhrase = this.tempListPhrase.slice(startIndex, endIndex);
+    console.log(this.copyListPhrase)
   }
 
   trackByFn(index: number, item: Phrase) {

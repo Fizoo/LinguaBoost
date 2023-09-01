@@ -47,7 +47,22 @@ export class AuthService {
       tap(()=> {
         this.isAuth$.next(true)
         this.userEmail$.next(email)
-      })
+      }),
+  /*    tap(()=> {
+        let newProgress: Progress = {
+          id: 'VSRYBAsobegeRYhaQUlJRQJkVtT2',
+          name:"Oleg",
+          timeOfDay: [{
+            date: this.getCurrentDate(),
+            counterScore: 0,
+            countUpWordsInThisDay:0,
+            countMin:0,
+          }],
+          countWord: 0,
+          score:0
+        }
+        this.fires.addNewProgress(newProgress)
+      })*/
     )
   }
 
@@ -55,22 +70,24 @@ export class AuthService {
     return from(this.afAuth.createUserWithEmailAndPassword(email, password)).pipe(
       map(user => user.user?.uid ?? "none"),
       switchMap(id => {
+        console.log(id)
         let newProgress: Progress = {
           id,
           name,
           timeOfDay: [{
             date: this.getCurrentDate(),
-            counter: 0
+            counterScore: 0,
+            countUpWordsInThisDay:0,
+            countMin:0,
           }],
-          countDays: 0,
-          tasksCompleted: 0,
+          countWord: 0,
           score:0
         }
         let newUser: User = {
           uid: id,
-          email: email,
-          name: name,
-          password: password
+          email,
+          name,
+          password
         }
 
         return this.fires.addNewUser(newUser)

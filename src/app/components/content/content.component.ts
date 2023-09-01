@@ -16,10 +16,15 @@ import {PageEvent} from "@angular/material/paginator";
 })
 export class ContentComponent implements OnInit {
   list: Words[] = []
-  copyList: Words[] = []
+  navigateList: Words[] = []
+  tempList: Words[] = []
+
   searchText: string = ''
   isLoading$: Observable<boolean>
   isError$: Observable<any>
+
+  currentPageSize: number = 25;
+  currentPageIndex: number = 0;
 
 
   constructor(private dataService: DataService,
@@ -36,9 +41,11 @@ export class ContentComponent implements OnInit {
         : this.store.select(DataSelectorsWords.combineAllWords)
       ),
     ).subscribe(({data}) => {
+
       if (data) {
         this.list = data
-        this.copyList = data
+        this.navigateList = data
+        this.tempList = data
 
         this.onPageChange({
           pageIndex: 0,
@@ -62,39 +69,65 @@ export class ContentComponent implements OnInit {
   }
 
   onSorting(value: string) {
+
     switch (value) {
       case '1':
-        this.copyList = [...this.copyList].sort((a, b) => a.englishWord.localeCompare(b.englishWord))
-        break
       case '2':
-        this.copyList = [...this.copyList].sort((a, b) => b.englishWord.localeCompare(a.englishWord))
+        this.tempList=this.sortByNameAndPaginate([...this.list],value)
+
+        this.onPageChange({
+          pageIndex: this.currentPageIndex,
+          pageSize: this.currentPageSize,
+          length: this.list.length // Оновлюємо довжину списку
+        });
         break
       case '3':
-        this.copyList = [...this.copyList].sort((a, b) => {
-          let res = a.level - b.level
-          if (res !== 0) return res
-          return a.englishWord.localeCompare(b.englishWord)
-        })
-        break
       case '4':
-        this.copyList = [...this.copyList].sort((a, b) => {
-          let res = b.level - a.level
-          if (res !== 0) return res
-          return a.englishWord.localeCompare(b.englishWord)
-        })
+        this.tempList=this.sortByLevelAndPaginate([...this.list],value)
+        this.onPageChange({
+          pageIndex: this.currentPageIndex,
+          pageSize: this.currentPageSize,
+          length: this.list.length // Оновлюємо довжину списку
+        });
         break
       case '5':
-        this.copyList = [...this.list].sort(() => Math.random() - 0.5).slice(0,25)
+        this.tempList = [...this.list].sort(() => Math.random() - 0.5)
+
+        this.onPageChange({
+          pageIndex: this.currentPageIndex,
+          pageSize: this.currentPageSize,
+          length: this.list.length // Оновлюємо довжину списку
+        });
         break
       default:
         break;
     }
+
+  }
+
+  sortByNameAndPaginate(arr: Words[], value: string):Words[]{
+    //this.navigateList=sortedList
+    return arr.sort((a, b) => {
+      return value === '1' ? a.englishWord.localeCompare(b.englishWord) : b.englishWord.localeCompare(a.englishWord)
+    })
+  }
+
+  private sortByLevelAndPaginate(arr: Words[], value: string): Words[] {
+    return arr.sort((a, b) => {
+      const res = value === '3' ? a.level - b.level : b.level - a.level;
+      if (res !== 0) return res;
+      return a.englishWord.localeCompare(b.englishWord);
+    })
   }
 
   onPageChange(event: PageEvent) {
+    this.currentPageIndex = event.pageIndex;
+    this.currentPageSize = event.pageSize;
+
     const startIndex = event.pageIndex * event.pageSize;
     const endIndex = startIndex + event.pageSize;
 
-    this.copyList = this.list.slice(startIndex, endIndex);
+    this.navigateList = this.tempList.slice(startIndex, endIndex);
+
   }
 }

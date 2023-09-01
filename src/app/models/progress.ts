@@ -2,14 +2,15 @@ export interface Progress {
   id: string
   name: string
   timeOfDay: TimeDay[]
-  countDays: number
-  tasksCompleted: number
   score: number
+  countWord:number
 }
 
 export interface TimeDay {
   date: string
-  counter: number
+  counterScore: number
+  countUpWordsInThisDay:number
+  countMin:number
 }
 
 export interface AllTime {

@@ -7,7 +7,6 @@ import {SpeakerService} from "../../services/speaker.service";
 import {Store} from "@ngrx/store";
 import {ActivatedRoute, Router} from "@angular/router";
 import {DataSelectorsWords} from "../../store/data/selectors";
-import {ProgressAction} from "../../store/progress/actions";
 
 @Component({
   selector: 'app-lesson-write-sentence',
@@ -152,7 +151,7 @@ export class LessonWriteSentenceComponent implements OnInit, OnDestroy{
         counter:this.score
       }
      // this.store.dispatch(DataActions.updateWord({wordArr: this.updateList}))
-      this.store.dispatch(ProgressAction.addOrUpdateProgress({newDay}))
+    //  this.store.dispatch(ProgressAction.addOrUpdateProgress({newDay}))
       this.router.navigate(['theme/1/lesson/1/result/goal'])
     }
   }

@@ -21,14 +21,11 @@ import {Book} from "../models/book";
 })
 export class FirestoreService {
   userUid: string = 'VSRYBAsobegeRYhaQUlJRQJkVtT2'
+
   private progressCollection: AngularFirestoreCollection<Progress>;
-  readonly progress: Observable<Progress[]>;
-
   private themeCollection: AngularFirestoreCollection<Theme>;
-
   private wordCollection: AngularFirestoreCollection<Theme>;
   private dataCollection: AngularFirestoreCollection<Theme>;
-
   private phraseCollection: AngularFirestoreCollection<TopicPhrases>;
   private sentenceCollection:AngularFirestoreCollection<TopicPhrases>;
   private userCollection: AngularFirestoreCollection<User>;
@@ -48,13 +45,7 @@ export class FirestoreService {
     this.sentenceCollection=this.firestore.collection<TopicPhrases>('sentences')
     this.bookCollection=this.firestore.collection<Book>('books')
 
-    this.progress = this.progressCollection.snapshotChanges().pipe(
-      map(actions => actions.map((a: DocumentChangeAction<Progress>) => {
-        const data = a.payload.doc.data() as Progress;
-        const documentId = a.payload.doc.id;
-        return {documentId, ...data};
-      }))
-    );
+
     //отримання id  поточного user on firebase(auth)
     this.userId$.getUserUid().pipe(first()).subscribe(id => this.userUid = id)
   }
@@ -68,7 +59,7 @@ export class FirestoreService {
   // Отримання конкретного  документу за id з колекцію "progress"
   getProgressById(): Observable<Progress | null> {
     const progressDocRef = this.progressCollection.doc(this.userUid);
-    console.log(progressDocRef)
+
     return progressDocRef.get().pipe(
       map(doc => {
         if (doc.exists) {
@@ -81,9 +72,10 @@ export class FirestoreService {
     )
   }
 
-  getProgressByIdAsync(): Observable<Progress | undefined> {
-    return this.progressCollection.doc(this.userUid).valueChanges()
+  getProgressByIdAsync(): Observable<any > {
+    return from(this.progressCollection.doc(this.userUid).valueChanges())
   }
+
 
   // Додавання документу в колекцію "progress" з random id
   addProgressItem(item: any): Observable<DocumentReference<Progress>> {
@@ -107,17 +99,13 @@ export class FirestoreService {
 
   // Отримання всіх документів з колекції "progress"
   getAllProgressItems(): Observable<Progress[]> {
-    return this.progress
-    /*return this.progressCollection.snapshotChanges().pipe(
-      tap(el=>console.log(el,this.userUid)),
-      map((items) => {
-        return items.map((item:any) => {
-          const data = item.payload.doc.data();
-          const id = item.payload.doc.id;
-          return { id, ...data };
-        });
-      })
-    );*/
+    return  this.progressCollection.snapshotChanges().pipe(
+      map(actions => actions.map((a: DocumentChangeAction<Progress>) => {
+        const data = a.payload.doc.data() as Progress;
+        const documentId = a.payload.doc.id;
+        return {documentId, ...data};
+      }))
+    );
   }
 
   //////////////////------------------USER---------------------//////////////////////////////////////////////////////////
@@ -177,11 +165,13 @@ export class FirestoreService {
         const data:Theme[]=[]
         querySnapshot.forEach((doc)=>{
           const item=doc.data() as Theme
-            //console.log(item)
           data.push(item)
         })
+        //console.log(data)
         return data
       }),
+
+       // tap(el=>console.log(el))
     )
   }
 
