@@ -26,6 +26,7 @@ const routes: Routes = [
   {path: 'book/:id', component: BookLayoutComponent},
 
   {path:'phrases/:id/trainer/:id',component:PhrasesTrainerComponent},
+
   {path:'theme/:id/trainer/:id',component:TrainerComponent},
   {path:'theme/:id/lesson/:id',component:LessonComponent},
   {path:'theme/:id/translateEng/:id',component:LessonComponent},

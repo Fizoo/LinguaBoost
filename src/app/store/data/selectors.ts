@@ -102,7 +102,7 @@ export namespace DataSelectorsWords {
     (state) => {
       const arrLength = state.data.length
       const maxScore = arrLength * 3
-      const curProgress = state.data.reduce((count, item) => count + item.level, 0) - arrLength + 1
+      const curProgress = state.data.reduce((count, item) => count + item.level, 0)
 
       return (curProgress / maxScore) * 100
     }

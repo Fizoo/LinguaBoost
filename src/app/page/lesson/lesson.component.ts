@@ -9,8 +9,8 @@ import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../store/data/selectors";
 import {DataActions} from "../../store/data/actions";
 import {TimeDay} from "../../models/progress";
-import {DatePipe} from "@angular/common";
 import {ProgressAction} from "../../store/progress/actions";
+import {getCurrentDate} from 'src/app/helper/fn';
 
 export interface tempList {
   id: number
@@ -73,7 +73,7 @@ export class LessonComponent implements OnInit, OnDestroy {
       tap(id => this.id = id),
       switchMap(id => this.store.select(DataSelectorsWords.getRandomListWith20ById(id)).pipe(
         tap(data => {
-          this.tempList = data
+          this.tempList = data.map(el => ({...el, tempLevel: 3}))
           this.setValidators()
           this.extracted()
         })
@@ -91,7 +91,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     ).subscribe()
 
     this.startTime = performance.now()
-    console.log(this.startTime)
+
   }
 
 
@@ -122,21 +122,31 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isFooterHide = true
     this.isWinChallenge = false
     this.isBeforeCheckBtn = true
+    this.whatLesson = 1
     this.audit(this.resultSwitch)
     this.deleteValue()
 
+
     if (this.tempList.length > 0) {
+
       this.speaker.speak(this.tempList[0].englishWord)
     }
   }
 
   isWin(): void {
     if (this.updateList.length === 2) {
+
+      const {countMin, counterScore} = this.getProgressOfDay()
+
       this.store.dispatch(DataActions.updateWord({wordArr: this.updateList}))
       this.store.dispatch(ProgressAction.updateProgress({progressOfDay: this.getProgressOfDay()}))
-      this.router.navigate(['theme/1/lessons/result'])
+      this.router.navigate(['theme', this.updateList[0].idTheme.toString(), 'lessons', 'result'],
+        {
+          queryParams: {
+            countMin, counterScore
+          }
+        }).then()
     }
-
   }
 
   lossChallenge() {
@@ -144,6 +154,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isFooterHide = false
     this.isBeforeCheckBtn = false
     this.isWinChallenge = true
+
   }
 
   countWordsByLevel(wordsArray: Words[]) {
@@ -167,6 +178,7 @@ export class LessonComponent implements OnInit, OnDestroy {
         case 2:
           word = {
             ...word,
+            tempLevel: word?.tempLevel ? word.tempLevel - 1 : 0,
             level: word.level > 0 ? word.level - 1 : 0
           }
           this.score -= 1;
@@ -176,14 +188,17 @@ export class LessonComponent implements OnInit, OnDestroy {
           break
 
         case 3:
+          const tempScore = word?.tempLevel === 3 ? 2 : word?.tempLevel === 2 ? 1 : 0
+
           word = {
             ...word,
-            level: word.level < 3 ? word.level + 1 : 3
+            level: word.level < 3 ? word.level + 1 : 3,
+            tempLevel:3
           }
 
           this.updateList.push(word)
-          this.countUpWordsInThisDay+=1
-          this.score += 2
+          this.countUpWordsInThisDay += 1
+          this.score += tempScore
 
           this.isWin()
 
@@ -235,20 +250,14 @@ export class LessonComponent implements OnInit, OnDestroy {
     const elapsedTimeInMillis = endTime - this.startTime
     const elapsedTimeInMinutes = Math.round(elapsedTimeInMillis / (1000 * 60)) // Конвертуємо мілісекунди в хвилини
 
-    console.log(elapsedTimeInMillis/36000)
     return {
-      date: LessonComponent.getCurrentDate(),
+      date: getCurrentDate(),
       countMin: elapsedTimeInMinutes,
       countUpWordsInThisDay: this.countUpWordsInThisDay,
       counterScore: this.score
     }
   }
 
-  private static getCurrentDate(): string {
-    const datePipe = new DatePipe('en-US');
-    const currentDateFormatted = datePipe.transform(new Date(), 'yyyy-MM-dd');
-    return currentDateFormatted ?? Date.now().toString()
-  }
 
   private setValidators(): void {
     this.formControlText.setValidators(myValidator(this.tempList[0].englishWord))

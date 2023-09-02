@@ -113,7 +113,7 @@ export class VerbsComponent implements OnInit, OnDestroy {
     const endIndex = startIndex + event.pageSize;
 
     this.copyListPhrase = this.tempListPhrase.slice(startIndex, endIndex);
-    console.log(this.copyListPhrase)
+
   }
 
   trackByFn(index: number, item: Phrase) {

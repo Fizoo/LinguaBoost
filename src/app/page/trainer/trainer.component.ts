@@ -1,7 +1,7 @@
 import {Component, HostListener} from '@angular/core';
 import {SpeakerService} from "../../services/speaker.service";
 import {Words} from "../../models/data";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {map, switchMap, take} from "rxjs";
 import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../store/data/selectors";
@@ -25,15 +25,21 @@ export class TrainerComponent {
 
   constructor(private speaker: SpeakerService,
               private route: ActivatedRoute,
-              private store: Store
+              private store: Store,
+              private router:Router
   ) {
     this.route.params.pipe(
       take(1),
       map(params => params['id']),
       switchMap(id => store.select(DataSelectorsWords.getThemeById(id)))
     ).subscribe(({data}) => {
-      this.list = data
-      this.item = data[this.getRandomIndex()]
+      if(data) {
+        this.list = data
+        this.item = data[this.getRandomIndex()]
+      }
+      else {
+       this.router.navigate(['/'])
+      }
     })
   }
 

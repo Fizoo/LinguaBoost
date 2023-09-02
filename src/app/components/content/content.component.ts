@@ -123,11 +123,8 @@ export class ContentComponent implements OnInit {
   onPageChange(event: PageEvent) {
     this.currentPageIndex = event.pageIndex;
     this.currentPageSize = event.pageSize;
-
     const startIndex = event.pageIndex * event.pageSize;
     const endIndex = startIndex + event.pageSize;
-
     this.navigateList = this.tempList.slice(startIndex, endIndex);
-
   }
 }

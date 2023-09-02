@@ -193,14 +193,14 @@
           <div class="box__progress__item">
             <div class="box__progress__item__text">Stars</div>
             <div class="box__progress__item__value">
-              <div >+10</div>
+              <div >+{{counterScore}}</div>
               <mat-icon >star</mat-icon>
             </div>
           </div>
           <div class="box__progress__item">
             <div >Time</div>
             <div class="box__progress__item__value">
-              <div>+100</div>
+              <div>+{{countMin}}</div>
               <mat-icon>timer</mat-icon>
             </div>
           </div>
@@ -211,7 +211,7 @@
     </div>
     <div class="box-footer">
       <div class="content">
-        <button  mat-raised-button>Repeat</button>
+        <button  mat-raised-button routerLink="/theme/-1" >Repeat</button>
         <button color="primary" mat-raised-button routerLink="goal">Continue</button>
       </div>
 

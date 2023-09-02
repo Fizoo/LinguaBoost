@@ -35,7 +35,6 @@ import {FilterPageComponent} from './components/content/filter-page/filter-page.
 import {LessonComponent} from './page/lesson/lesson.component';
 import {Lesson2Component} from './page/lesson2/lesson2.component';
 import {Lesson3Component} from './page/lesson3/lesson3.component';
-import {LessonWriteSentenceComponent} from './page/lesson-write-sentence/lesson-write-sentence.component';
 import {MenuComponent} from './components/header/menu/menu.component';
 import {VerbsComponent} from './components/phrases/verbs/verbs.component';
 import {VerbListComponent} from './components/phrases/verbs/verb-list/verb-list.component';
@@ -101,7 +100,6 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
     LessonComponent,
     Lesson2Component,
     Lesson3Component,
-    LessonWriteSentenceComponent,
     ProgressDirective,
     MenuComponent,
     VerbsComponent,

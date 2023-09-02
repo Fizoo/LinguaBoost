@@ -1,6 +1,7 @@
 import {createReducer, on} from "@ngrx/store";
 import {ProgressAction} from "./actions";
 import {Progress} from "../../models/progress";
+import {getCurrentDate} from "../../helper/fn";
 
 
 
@@ -8,7 +9,7 @@ const initialState: Progress = {
   id: '',
   name: '',
   timeOfDay: [{
-    date: new Date().toLocaleDateString(),
+    date: getCurrentDate(),
     counterScore: 0,
     countUpWordsInThisDay: 0,
     countMin: 0

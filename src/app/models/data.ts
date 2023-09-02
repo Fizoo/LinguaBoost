@@ -32,6 +32,7 @@ export interface Words{
   level:number
   idTheme:number
   isFavorite?:boolean
+  tempLevel?:number
 }
 
 export interface TopicPhrases{

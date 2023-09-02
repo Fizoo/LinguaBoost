@@ -6,9 +6,9 @@ import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 import {FirestoreService} from "./firestore.service";
 import {User} from "../admin/model/auth";
-import {DatePipe} from "@angular/common";
 import {UserUidService} from "./user-uid.service";
 import {Progress} from "../models/progress";
+import {getCurrentDate} from '../helper/fn';
 
 
 @Injectable({
@@ -75,7 +75,7 @@ export class AuthService {
           id,
           name,
           timeOfDay: [{
-            date: this.getCurrentDate(),
+            date: getCurrentDate(),
             counterScore: 0,
             countUpWordsInThisDay:0,
             countMin:0,
@@ -133,9 +133,9 @@ export class AuthService {
     this.isAuth$.next(isAuth);
   }
 
-  getCurrentDate(): string {
+/*  getCurrentDate(): string {
     const datePipe = new DatePipe('en-US');
     const currentDateFormatted = datePipe.transform(new Date(), 'yyyy-MM-dd');
     return currentDateFormatted ?? Date.now().toString()
-  }
+  }*/
 }

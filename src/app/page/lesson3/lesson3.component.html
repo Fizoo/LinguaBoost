@@ -10,13 +10,13 @@
           <img src="../../../assets/img/star.svg" alt="">
         </div>
         <div class="goals__progress">
-          <div class="goals__progress__text">Get 60 stars</div>
+          <div class="goals__progress__text">Get 120 stars</div>
           <div class="goals__progress__values">
 
             <div class="bar">
               <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
             </div>
-            <div>30/60</div>
+            <div>{{countScore}}/120</div>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
             <div class="bar">
               <mat-progress-bar mode="determinate" value="33"></mat-progress-bar>
             </div>
-            <div>1/3</div>
+            <div>{{countLessons}}/3</div>
           </div>
         </div>
       </div>
@@ -42,13 +42,13 @@
           <img src="../../../assets/img/progress-full.svg" alt="">
         </div>
         <div class="goals__progress">
-          <div class="goals__progress__text">Набери более 80% за 2 урока</div>
+          <div class="goals__progress__text">Набери більше 80% за уроки</div>
           <div class="goals__progress__values">
 
             <div class="bar">
               <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
             </div>
-            <div>0/2</div>
+            <div>{{percentage}}%</div>
           </div>
         </div>
       </div>
