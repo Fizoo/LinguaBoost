@@ -12,6 +12,7 @@ import {PhrasesTrainerComponent} from "./components/phrases/phrases-trainer/phra
 import {BookLayoutComponent} from "./components/book/book-layout/book-layout.component";
 import {BookMainComponent} from "./components/book/book-main/book-main.component";
 import {LessonComponent} from "./page/lesson/lesson.component";
+import {StatistComponent} from "./components/statist/statist.component";
 
 const routes: Routes = [
   {path: '',component:MainComponent,canActivate:[AuthGuard],
@@ -21,6 +22,7 @@ const routes: Routes = [
       {path: 'theme/:id', component: ContentComponent},
       {path: 'phrases/:id',component:PhrasesComponent},
       {path: 'book', component: BookMainComponent},
+      {path: 'stat', component: StatistComponent},
      /* { path: '**', redirectTo: 'home' }*/
     ]},
   {path: 'book/:id', component: BookLayoutComponent},

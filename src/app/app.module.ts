@@ -81,6 +81,7 @@ import {metaReducers, reducers} from './store';
 import {EffectsModule} from '@ngrx/effects';
 import {AppEffects} from './app.effects';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+import {DxPieChartModule} from "devextreme-angular";
 
 
 @NgModule({
@@ -155,6 +156,7 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
     MatExpansionModule,
     MatProgressSpinnerModule,
     MatPaginatorModule,
+    DxPieChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

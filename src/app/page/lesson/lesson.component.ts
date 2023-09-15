@@ -192,7 +192,7 @@ export class LessonComponent implements OnInit, OnDestroy {
 
           word = {
             ...word,
-            level: word.level < 3 ? word.level + 1 : 3,
+            level: word.level < 2 ? word.level + 1 : 2,
             tempLevel:3
           }
 

@@ -29,8 +29,8 @@
       </button>
       <mat-menu #menu2="matMenu" >
         <button routerLink="theme/-1" mat-menu-item>Words</button>
-        <button routerLink="phrases/0" mat-menu-item>Sentences</button>
-        <button routerLink="phrases/0" mat-menu-item>Phrases</button>
+        <button routerLink="phrases/0" [queryParams]="{query:'sentence'}" mat-menu-item>Sentences</button>
+        <button routerLink="phrases/0" [queryParams]="{query:'phrase'}" mat-menu-item>Phrases</button>
         <button routerLink="book" mat-menu-item>Books</button>
       </mat-menu>
     </div>

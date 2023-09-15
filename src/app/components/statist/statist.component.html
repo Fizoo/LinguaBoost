@@ -1,20 +1,138 @@
-<div class="statist">
-  <div class="content">
-    <div class="h">
-      <h1>All Words</h1>
+<main class="main">
+  <div class="statist">
+    <div class="header">
+      <div class="userName">
+        <div class="img">
+          <img src="./assets/img/user.jpg" alt="">
+        </div>
+        <div class="name">
+
+          <span class="icon">
+          <svg width="50" height="50" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M104.097 47.7752L85.1714 65.8571L60.5 39.0146L35.8285 65.8571L17.1859 47.6362L26.8571 86.0429H94.1428L104.097 47.7752Z"
+      stroke="#F88800" stroke-width="4.48571" stroke-linecap="round" stroke-linejoin="round"></path>
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M60.5 38.9429C65.4548 38.9429 69.4714 34.9262 69.4714 29.9714C69.4714 25.0166 65.4548 21 60.5 21C55.5452 21 51.5286 25.0166 51.5286 29.9714C51.5286 34.9262 55.5452 38.9429 60.5 38.9429Z"
+      fill="#F88800" fill-opacity="0.1" stroke="#F88800" stroke-width="4.48571" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M15.6429 47.9143C19.359 47.9143 22.3714 44.9018 22.3714 41.1857C22.3714 37.4696 19.359 34.4571 15.6429 34.4571C11.9268 34.4571 8.91431 37.4696 8.91431 41.1857C8.91431 44.9018 11.9268 47.9143 15.6429 47.9143Z"
+      fill="#F88800" fill-opacity="0.1" stroke="#F88800" stroke-width="4.48571" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M105.357 47.9143C109.073 47.9143 112.086 44.9018 112.086 41.1857C112.086 37.4696 109.073 34.4571 105.357 34.4571C101.641 34.4571 98.6285 37.4696 98.6285 41.1857C98.6285 44.9018 101.641 47.9143 105.357 47.9143Z"
+      fill="#F88800" fill-opacity="0.1" stroke="#F88800" stroke-width="4.48571" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M96.3857 99.5H24.6143C15.6429 99.5 15.6429 86.0428 24.6143 86.0428H96.3857C105.285 86.0428 105.294 99.5 96.3857 99.5Z"
+      fill="#F88800" fill-opacity="0.1" stroke="#F88800" stroke-width="4.48571" stroke-linecap="round"
+      stroke-linejoin="round"></path>
+</svg>
+        </span>
+          <h1>Oleg</h1>
+        </div>
+
+      </div>
     </div>
-    <div class="text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis?</p>
+    <div class="content">
+      <div class="stat1">
+        <div class=" stat stat-progress1">
+          <div class="all-progress">
+            <!--  <div class="circle">55 </div>-->
+            <dx-pie-chart
+              id="pie"
+              palette="bright"
+              [dataSource]="areas"
+            >
+              <dxi-series argumentField="country" valueField="area">
+                <dxo-label [visible]="true">
+                  <dxo-connector [visible]="true" [width]="1"></dxo-connector>
+                </dxo-label>
+              </dxi-series>
+              <dxo-size [height]="400" [width]="500"></dxo-size>
+              <dxo-adaptive-layout [height]="200" [width]="200"></dxo-adaptive-layout>
+              <dxo-legend
+                verticalAlignment="bottom"
+                horizontalAlignment="center"
+                itemTextPosition="right"
+                [rowCount]="1"
+              >
+              </dxo-legend>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eligendi ipsam iure perspiciatis voluptates? Accusantium aliquam amet animi asperiores deserunt earum excepturi fugiat hic illo maiores, natus, nemo, neque obcaecati quisquam saepe tempora temporibus. Beatae debitis dolorem eius fugiat harum ipsam officia quod quos sit suscipit. Accusamus, alias aperiam consequatur consequuntur cum cupiditate delectus dolore dolores doloribus dolorum enim eos esse ex expedita labore magni minima molestias nam nobis nulla omnis perferendis praesentium quae qui quisquam quod repellat saepe sint totam, ullam ut veritatis vero voluptates! Accusamus adipisci consequatur culpa deserunt distinctio dolorem excepturi fugiat id impedit ratione sapiente, tempore? </p>
+            </dx-pie-chart>
+
+
+          </div>
+
+          <div class="details">
+            <div class="all">
+              <div class="head-box1">
+                <mat-icon class="icon-days2">blur_on</mat-icon>
+                <span>All words</span>
+              </div>
+              <div>
+                <span class="number">772</span>
+              </div>
+            </div>
+            <div class="learned bg-box">
+              <div class="head-box1">
+                <mat-icon class="icon-days2">auto_graph</mat-icon>
+                <span>Precent</span>
+              </div>
+              <span class="number">100</span>
+            </div>
+          </div>
+
+        </div>
+        <div class=" stat-progress2">
+          <div class="box bg-box">
+            <div class="head-box1">
+              <mat-icon class="icon-days">hotel_class</mat-icon>
+              <span>Top level</span>
+            </div>
+            <span class="number">10</span>
+
+          </div>
+          <div class="box bg-box">
+            <div class="head-box1">
+              <mat-icon class="icon-days">star_rate</mat-icon>
+              <span>Middle level</span>
+            </div>
+            <span class="number">30</span>
+          </div>
+          <div class="box bg-box">
+            <div class="head-box1">
+              <mat-icon class="icon-days">star_outline</mat-icon>
+              <span>Low level</span>
+            </div>
+            <span class="number">100</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat2 stat ">
+
+        <div class="days">
+          <div *ngFor="let item of [1,2,3,4,5,6,7]" class="day">
+            <div>10/30</div>
+            <mat-icon class="icon">verified</mat-icon>
+            <div class="it">
+              <span>mon</span>
+            </div>
+          </div>
+        </div>
+        <div class="all-day bg-box">
+
+          <div class="head-box">
+            <mat-icon class="icon-days2">timer</mat-icon>
+            <span>Active days</span>
+          </div>
+          <span class="number">100</span>
+
+        </div>
+      </div>
     </div>
-
-
   </div>
+</main>
 
-</div>

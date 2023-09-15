@@ -1,28 +1,290 @@
 @use '../../../scss/variables' as v;
 @use '../../../scss/mixins' as m;
 
-.statist {
 
-  max-width: 100%;
-  height: 100%;
+.main {
+  width: 100%;
+  background: v.$bg-main;
+  margin-top: -1.2rem;
+
+  .statist {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
+
+    .header {
+      width: 100%;
+      background: white;
+      padding: 1rem;
+
+      .userName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .img {
+          width: 100px;
+          height: 100px;
+
+          img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+      }
+
+      .name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .icon {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+    .content {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 1rem;
+
+
+      .stat1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+
+
+        .stat-progress1 {
+          display: grid;
+          grid-template-rows:5fr 1fr ;
+          grid-template-columns:1fr;
+          padding: 0;
+          box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+          // width: 100%;
+          .all-progress{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            border-bottom: 1px solid #dad7d7;
+          }
+          .details{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 0 1rem;
+
+           .all{
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding: .5rem;
+             //padding: 1rem;
+             //border-right: 1px solid gray;
+           }
+            .learned{
+              display: grid;
+              place-items: center;
+              padding: .5rem;
+              height: 100%;
+              border-left: 1px solid #dad7d7;
+            }
+          }
+        }
+
+        .stat-progress2 {
+          display: grid;
+         // flex-direction: column;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+
+          background: v.$bg-main;
+          gap: 1rem;
+
+          .box {
+            display: grid;
+            justify-content: center;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 1rem;
+           // height: 150px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+
+            .text{
+              //padding: 1rem;
+            }
+
+            /* Інші стилі для вашого елемента */
+            //gap: 1rem;
+          }
+
+        }
+
+      }
+
+      .stat2 {
+        // width: 100%;
+        display: grid;
+        grid-template-columns:1fr auto;
+        padding: 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+        .days{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem 2rem;
+          gap: 1rem;
+          border-right: 1px solid #dad7d7;
+
+
+          .day{
+            display: grid;
+            place-items: center;
+            padding: 1rem;
+
+            .icon{
+              text-align: center;
+              width: 100%;
+              height: 100%;
+              font-size: 2rem;
+              color: #116eee;
+            }
+            .it{
+              padding: .5rem;
+            }
+          }
+        }
+        .all-day{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .icon-days{
+            color: red;
+          }
+
+        }
+      }
+
+      @include m.tablet {
+        width: 600px;
+
+        .stat1 {
+          grid-template-columns:1fr;
+        }
+        .stat2 {
+          grid-template-columns:1fr;
+          .days {
+            padding: 0;
+            gap: 0;
+            border-right: none;
+            border-bottom: 1px solid #dad7d7;
+            .day {
+              .icon {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+      @include m.mobile{
+       width: 350px;
+
+        margin: 0;
+        .stat1{
+          grid-template-columns:1fr;
+        }
+        .stat2 {
+          width: 100%;
+          grid-template-columns:1fr;
+          .days {
+            padding: 0;
+            gap: 0;
+            border-right: none;
+            border-bottom: 1px solid #dad7d7;
+            .day {
+              padding: 0;
+              .icon {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+.stat {
+  width: 100%;
   background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 16rem;
-  margin-right: 2rem;
   border-radius: 1rem;
-  .content{
-    //width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+  padding: 1rem;
+}
 
-  @include m.tablet{
-    margin-left: 12rem;
-  }
-  @include m.mobile{
-    margin: 0 auto;
-    width: 90%;
-  }
+.bg-box {
+  background-image: url('https://cdn.busuu.com/webapp/27.13.0/images/banners/pasd-small-banner.svg');
+  background-position:top  ;
 
+}
+
+.number{
+  //font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Nista,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.3;;
+  font-weight: 400;
+  flex: 1;
+  text-align: center;
+}
+
+.head-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.head-box1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  //padding: 1rem;
+}
+.icon-days{
+  color: red;
+}
+.icon-days2{
+  color: green;
 }

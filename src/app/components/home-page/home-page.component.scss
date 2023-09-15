@@ -1,16 +1,44 @@
 
-:host{
+/*:host{
   display: flex;
   justify-content:flex-start;
   height: 100%;
   gap: 1rem;
-}
-/*:host{
-
-  grid-template-columns: minmax(3rem,18rem) 1fr;
-  grid-template-rows: 100%;
-  height: 100%;
-  justify-content: center;
-
 }*/
+
+
+.container{
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+
+  .card {
+
+    width: 300px;
+    min-height: 300px;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform .5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 10px 3px;
+
+    &:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    .content{
+      h2{
+        text-align: center;
+      }
+    }
+
+  }
+
+}
 

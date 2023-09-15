@@ -31,7 +31,7 @@ export class DSListComponent {
         data:el.data.map(a=>({...a,level:0}))
       })),
       switchMap(data=>this.firestore.addWords(data))
-    )
+    ).subscribe()
  /*  this.store.select(DataSelectorsPhrases.getPhrasesById(+topic.id,topic.type)).pipe(
      tap(el=>console.log(el)),
      switchMap((data)=>this.firestore.addPhraseWithId(data))
