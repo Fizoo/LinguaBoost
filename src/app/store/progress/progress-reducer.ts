@@ -12,7 +12,12 @@ const initialState: Progress = {
     date: getCurrentDate(),
     counterScore: 0,
     countUpWordsInThisDay: 0,
-    countMin: 0
+    countMin: 0,
+    detailForWordsProgress: {
+      countHigh: 0,
+      countMiddle: 0,
+      countLow: 0
+    }
   }],
   countWord: 0,
   score: 0
@@ -41,7 +46,12 @@ export const progressReducer = createReducer(
             ...el,
             counterScore: el.counterScore + progressOfDay.counterScore,
             countUpWordsInThisDay: el.countUpWordsInThisDay + progressOfDay.countUpWordsInThisDay,
-            countMin: el.countMin + progressOfDay.countMin
+            countMin: el.countMin + progressOfDay.countMin,
+            detailForWordsProgress:{
+              countHigh: el.detailForWordsProgress.countHigh+progressOfDay.detailForWordsProgress.countHigh,
+              countMiddle: el.detailForWordsProgress.countMiddle+progressOfDay.detailForWordsProgress.countMiddle,
+              countLow: el.detailForWordsProgress.countLow+progressOfDay.detailForWordsProgress.countLow
+            }
           }
           : el)
 

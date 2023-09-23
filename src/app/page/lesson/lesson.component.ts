@@ -8,7 +8,7 @@ import {SpeakerService} from "../../services/speaker.service";
 import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../store/data/selectors";
 import {DataActions} from "../../store/data/actions";
-import {TimeDay} from "../../models/progress";
+import {DetailProgress, TimeDay} from "../../models/progress";
 import {ProgressAction} from "../../store/progress/actions";
 import {getCurrentDate} from 'src/app/helper/fn';
 
@@ -193,7 +193,6 @@ export class LessonComponent implements OnInit, OnDestroy {
           word = {
             ...word,
             level: word.level < 2 ? word.level + 1 : 2,
-            tempLevel:3
           }
 
           this.updateList.push(word)
@@ -252,10 +251,34 @@ export class LessonComponent implements OnInit, OnDestroy {
 
     return {
       date: getCurrentDate(),
+      //date:'2023-07-18',
       countMin: elapsedTimeInMinutes,
       countUpWordsInThisDay: this.countUpWordsInThisDay,
-      counterScore: this.score
+      counterScore: this.score,
+      detailForWordsProgress:this.getDetailProgress()
     }
+  }
+
+  private getDetailProgress(): DetailProgress {
+    return this.updateList.reduce((item: DetailProgress, curr) => {
+      switch (curr.tempLevel) {
+        case 0:
+        case 1:
+          item['countLow'] += 1
+          break
+        case 2:
+          item['countMiddle'] += 1
+          break
+        case 3:
+          item['countHigh'] += 1
+          break
+      }
+      return item
+    }, {
+      countHigh: 0,
+      countMiddle: 0,
+      countLow: 0
+    })
   }
 
 

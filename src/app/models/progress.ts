@@ -11,9 +11,17 @@ export interface TimeDay {
   counterScore: number
   countUpWordsInThisDay:number
   countMin:number
+  detailForWordsProgress:DetailProgress
+  dayName?:string
+}
+export interface DetailProgress{
+  countHigh:number
+  countMiddle:number
+  countLow:number
 }
 
 export interface AllTime {
   firstDay: number
   lastDay: number
 }
+

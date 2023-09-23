@@ -38,14 +38,14 @@
     <div class="content">
       <div class="stat1">
         <div class=" stat stat-progress1">
-          <div class="all-progress">
+          <div *ngIf="diagramDoughnut$ | async as diagram" class="all-progress">
             <!--  <div class="circle">55 </div>-->
             <dx-pie-chart
               id="pie"
               palette="bright"
-              [dataSource]="areas"
+              [dataSource]="diagram"
             >
-              <dxi-series argumentField="country" valueField="area">
+              <dxi-series argumentField="level" valueField="count">
                 <dxo-label [visible]="true">
                   <dxo-connector [visible]="true" [width]="1"></dxo-connector>
                 </dxo-label>
@@ -72,15 +72,15 @@
                 <span>All words</span>
               </div>
               <div>
-                <span class="number">772</span>
+                <span *ngIf="allWords$ | async as allWords" class="number">{{allWords }}</span>
               </div>
             </div>
             <div class="learned bg-box">
               <div class="head-box1">
                 <mat-icon class="icon-days2">auto_graph</mat-icon>
-                <span>Precent</span>
+                <span>Percentage</span>
               </div>
-              <span class="number">100</span>
+              <span class="number">{{(percentage$ | async) | number:'1.2-2' }}</span>
             </div>
           </div>
 
@@ -91,7 +91,7 @@
               <mat-icon class="icon-days">hotel_class</mat-icon>
               <span>Top level</span>
             </div>
-            <span class="number">10</span>
+            <span  class="number">{{countHigh$ | async }}</span>
 
           </div>
           <div class="box bg-box">
@@ -99,26 +99,29 @@
               <mat-icon class="icon-days">star_rate</mat-icon>
               <span>Middle level</span>
             </div>
-            <span class="number">30</span>
+            <span  class="number">{{countMiddle$ | async}}</span>
           </div>
           <div class="box bg-box">
             <div class="head-box1">
               <mat-icon class="icon-days">star_outline</mat-icon>
               <span>Low level</span>
             </div>
-            <span class="number">100</span>
+            <span  class="number">{{countLow$ | async}}</span>
           </div>
         </div>
       </div>
 
       <div class="stat2 stat ">
 
-        <div class="days">
-          <div *ngFor="let item of [1,2,3,4,5,6,7]" class="day">
-            <div>10/30</div>
-            <mat-icon class="icon">verified</mat-icon>
+        <div *ngIf="activeWeek$ | async as activeWeek" class="days">
+          <div *ngFor="let day of activeWeek" class="day">
+            <div>
+              <span>{{day.countMin}}</span>
+              <span>/30</span>
+            </div>
+            <mat-icon [style.opacity]="day.countMin>=30?1:0.4" class="icon">verified</mat-icon>
             <div class="it">
-              <span>mon</span>
+              <span>{{day.dayName}}</span>
             </div>
           </div>
         </div>
@@ -128,10 +131,75 @@
             <mat-icon class="icon-days2">timer</mat-icon>
             <span>Active days</span>
           </div>
-          <span class="number">100</span>
+          <span class="number">{{countAllDays$ | async}}</span>
 
         </div>
       </div>
+
+      <div class="stat">
+
+       <div class="btn-group">
+         <mat-button-toggle-group (change)="changeDiagram($event)" name="progress">
+           <mat-button-toggle value="week">Week</mat-button-toggle>
+           <mat-button-toggle value="month">Month</mat-button-toggle>
+           <mat-button-toggle value="weeks">Weeks</mat-button-toggle>
+           <mat-button-toggle value="months">Months</mat-button-toggle>
+         </mat-button-toggle-group>
+       </div>
+
+        <div *ngIf="currentlyDiagram$ | async as activeDiagram" class="diagram">
+          <dx-chart id="chart" [title]="title" [dataSource]="activeDiagram ">
+            <dxi-series valueField="countLow"  name="Low"></dxi-series>
+            <dxi-series valueField="countMiddle"  name="Middle"></dxi-series>
+            <dxi-series valueField="countHigh"  name="High"></dxi-series>
+            <dxi-value-axis position="right">
+              <dxo-title text="Words"></dxo-title>
+            </dxi-value-axis>
+            <dxo-common-series-settings argumentField="id" type="stackedBar">
+            </dxo-common-series-settings>
+            <dxo-legend
+              verticalAlignment="bottom"
+              horizontalAlignment="center"
+              itemTextPosition="top"
+            >
+            </dxo-legend>
+
+            <dxo-tooltip
+              [enabled]="true"
+              location="edge"
+
+            >
+            </dxo-tooltip>
+          </dx-chart>
+        </div>
+      </div>
+
+      <div class="stat">
+
+       <div class="btn-group">
+         <mat-button-toggle-group (change)="changeDiagram($event)" name="progress">
+           <mat-button-toggle value="week">Week</mat-button-toggle>
+           <mat-button-toggle value="month">Month</mat-button-toggle>
+           <mat-button-toggle value="weeks">Weeks</mat-button-toggle>
+           <mat-button-toggle value="months">Months</mat-button-toggle>
+         </mat-button-toggle-group>
+       </div>
+
+        <div *ngIf="currentlyDiagram$ | async as dataSource" class="diagram">
+          <dx-chart  [dataSource]="dataSource">
+            <dxi-series
+              argumentField="id"
+              valueField="counterScore"
+              name="Score"
+              type="bar"
+              color="#56C5F7FF"
+            >
+            </dxi-series>
+          </dx-chart>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </main>

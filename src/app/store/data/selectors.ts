@@ -135,6 +135,68 @@ export namespace DataSelectorsWords {
     }
   )
 
+  export const getLengthAllWords=createSelector(
+    combineAllWords,
+    data=>data.data.length
+  )
+
+  export const  selectWords=createSelector(
+    combineAllWords,
+    state=>state.data
+  )
+  export const getCountOfWordsByLevel=createSelector(
+    selectWords,
+    (_:any,level:any)=>level,
+    (words,level)=>words.filter(word =>word.level===level).length
+
+  )
+
+  export const getCountHighOfWords=createSelector(
+    combineAllWords,
+    data=>data.data.filter(el=>el.level===2).length
+  )
+  export const getCountMiddleOfWords=createSelector(
+    combineAllWords,
+    data=>data.data.filter(el=>el.level===1).length
+  )
+  export const getCountLowOfWords=createSelector(
+    combineAllWords,
+    data=>data.data.filter(el=>el.level===0).length
+  )
+  export const getPercentage=createSelector(
+    getCountHighOfWords,
+    getCountMiddleOfWords,
+    getCountLowOfWords,
+    getLengthAllWords,
+    (highLevelCount,mediumLevelCount,lowLevelCount,totalWordCount)=>{
+      const totalLearnedWords=(highLevelCount*100)+(mediumLevelCount*50)
+      if(totalLearnedWords==0 || totalWordCount===0){
+        return  0
+      }
+      return (totalLearnedWords / (totalWordCount * 100)) * 100
+    }
+  )
+
+  export  const getObjectDiagram=createSelector(
+    getCountHighOfWords,
+    getCountMiddleOfWords,
+    getCountLowOfWords,
+    (h1,h2,h3)=>[
+      {
+      level: 'Top',
+      count: h1,
+    }, {
+      level: 'Middle',
+      count: h2,
+    }, {
+      level: 'Low',
+      count: h3,
+    }
+    ]
+  )
+
+
+
   export const isLoadingData=createSelector(
     getDataState,
     state=>state.isLoading

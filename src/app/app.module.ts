@@ -81,7 +81,7 @@ import {metaReducers, reducers} from './store';
 import {EffectsModule} from '@ngrx/effects';
 import {AppEffects} from './app.effects';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
-import {DxPieChartModule} from "devextreme-angular";
+import {DxChartModule, DxPieChartModule} from "devextreme-angular";
 
 
 @NgModule({
@@ -126,38 +126,39 @@ import {DxPieChartModule} from "devextreme-angular";
     ErrorMessageComponent,
     DynamicRouterLinkActiveDirective,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTooltipModule,
-    MatToolbarModule,
-    MatInputModule,
-    FormsModule,
-    MatListModule,
-    MatMenuModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase()),
-    AngularFireModule.initializeApp(environment.firebase),
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatButtonModule,
+        MatTooltipModule,
+        MatToolbarModule,
+        MatInputModule,
+        FormsModule,
+        MatListModule,
+        MatMenuModule,
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideAuth(() => getAuth()),
+        provideDatabase(() => getDatabase()),
+        AngularFireModule.initializeApp(environment.firebase),
 
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
-    EffectsModule.forRoot([AppEffects]),
-    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
-    MatProgressBarModule,
-    ReactiveFormsModule,
-    MatButtonToggleModule,
-    MatSelectModule,
-    MatExpansionModule,
-    MatProgressSpinnerModule,
-    MatPaginatorModule,
-    DxPieChartModule,
-  ],
+        StoreModule.forRoot(reducers, {
+            metaReducers
+        }),
+        EffectsModule.forRoot([AppEffects]),
+        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
+        MatProgressBarModule,
+        ReactiveFormsModule,
+        MatButtonToggleModule,
+        MatSelectModule,
+        MatExpansionModule,
+        MatProgressSpinnerModule,
+        MatPaginatorModule,
+        DxPieChartModule,
+        DxChartModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

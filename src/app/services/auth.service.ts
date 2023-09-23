@@ -79,6 +79,11 @@ export class AuthService {
             counterScore: 0,
             countUpWordsInThisDay:0,
             countMin:0,
+            detailForWordsProgress: {
+              countHigh: 0,
+              countMiddle: 0,
+              countLow: 0
+            }
           }],
           countWord: 0,
           score:0
