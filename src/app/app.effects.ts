@@ -69,7 +69,22 @@ export class AppEffects {
       )
     )
   )
-
+    //delete word
+  deleteItemWithId$=createEffect(()=>
+  this.actions$.pipe(
+    ofType(DataActions.deleteItemWithTopicById),
+    concatMap(({item})=>{
+       return this.store.select(DataSelectorsWords.getThemeById(item.idTopic.toString())).pipe(
+         take(1),
+         switchMap(data=>
+         this.firebase.updateWordsByIdTheme(data).pipe(
+           map(()=>DataActions.loadDataSuccess())
+         )),
+         catchError((error)=>of(DataActions.loadDataError({error})))
+       )
+   })
+  )
+  )
   //---------------------load Words---------------------------------//
   loadAllWords$ = createEffect(() =>
     this.actions$.pipe(

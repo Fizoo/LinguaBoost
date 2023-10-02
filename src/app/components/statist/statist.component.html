@@ -6,7 +6,6 @@
           <img src="./assets/img/user.jpg" alt="">
         </div>
         <div class="name">
-
           <span class="icon">
           <svg width="50" height="50" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -31,6 +30,14 @@
 </svg>
         </span>
           <h1>Oleg</h1>
+        </div>
+
+        <div class="name">
+            <span>Progress Towards a Deadline</span>
+          <h2 *ngIf="timeToLearnedAllWords$ | async as time">
+            {{ time | date}}
+          </h2>
+
         </div>
 
       </div>
@@ -148,7 +155,7 @@
        </div>
 
         <div *ngIf="currentlyDiagram$ | async as activeDiagram" class="diagram">
-          <dx-chart id="chart" [title]="title" [dataSource]="activeDiagram ">
+          <dx-chart id="chart" [dataSource]="activeDiagram ">
             <dxi-series valueField="countLow"  name="Low"></dxi-series>
             <dxi-series valueField="countMiddle"  name="Middle"></dxi-series>
             <dxi-series valueField="countHigh"  name="High"></dxi-series>
@@ -167,7 +174,6 @@
             <dxo-tooltip
               [enabled]="true"
               location="edge"
-
             >
             </dxo-tooltip>
           </dx-chart>
@@ -183,23 +189,29 @@
            <mat-button-toggle value="weeks">Weeks</mat-button-toggle>
            <mat-button-toggle value="months">Months</mat-button-toggle>
          </mat-button-toggle-group>
+
+         <mat-button-toggle-group [(ngModel)]="valueField" name="progress">
+           <mat-button-toggle value="counterScore">Score</mat-button-toggle>
+           <mat-button-toggle value="countMin">Time</mat-button-toggle>
+           <mat-button-toggle value="countUpWordsInThisDay">Count</mat-button-toggle>
+
+         </mat-button-toggle-group>
        </div>
 
         <div *ngIf="currentlyDiagram$ | async as dataSource" class="diagram">
           <dx-chart  [dataSource]="dataSource">
             <dxi-series
               argumentField="id"
-              valueField="counterScore"
+              [valueField]="valueField"
               name="Score"
               type="bar"
               color="#56C5F7FF"
             >
             </dxi-series>
+
           </dx-chart>
         </div>
       </div>
-
-
     </div>
   </div>
 </main>

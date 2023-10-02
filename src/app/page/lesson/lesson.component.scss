@@ -256,6 +256,7 @@
                 overflow: hidden;
                 margin: 0 auto;
                 outline: none;
+
               }
               h2{
                 width: 100%;
@@ -294,12 +295,23 @@
                   flex-direction: column;
                   padding-right:  2rem;
                   cursor: pointer;
-                  //font-style: italic;
+
+                  .span-text-opacity{
+                    opacity: 0.5;
+                    font-style: italic;
+                  }
                   span:first-child {
                     font-weight: 700 ;
                     font-size: 1.2rem;
                     //font-style: italic;
                   }
+                }
+                .transc{
+                  flex: 1;
+                  font-size: 1rem;
+                  font-weight: 700 ;
+                  text-align: center;
+                  font-style: italic;
                 }
               }
             }

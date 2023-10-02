@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Store} from "@ngrx/store";
-import {Observable} from "rxjs";
+import {debounceTime, Observable, tap} from "rxjs";
 import {DataSelectorsWords} from "../../store/data/selectors";
 import {ProgressSelectors} from "../../store/progress/selectors";
 import {MatButtonToggleChange} from "@angular/material/button-toggle";
@@ -24,10 +24,11 @@ export class StatistComponent implements OnInit {
   countAllDays$: Observable<number>
   activeWeek$: Observable<StatisticData[]>
   currentlyDiagram$: Observable<StatisticData[]>
+  timeToLearnedAllWords$:Observable<Date>
 
   isWeek: boolean = false
   title: string = 'Progress'
-
+  valueField: string='counterScore'
 
   constructor(private store: Store) {
   }
@@ -38,10 +39,14 @@ export class StatistComponent implements OnInit {
     this.countMiddle$ = this.store.select(DataSelectorsWords.getCountMiddleOfWords)
     this.countLow$ = this.store.select(DataSelectorsWords.getCountLowOfWords)
     this.percentage$ = this.store.select(DataSelectorsWords.getPercentage)
-    this.diagramDoughnut$ = this.store.select(DataSelectorsWords.getObjectDiagram)
+    this.diagramDoughnut$ = this.store.select(DataSelectorsWords.getObjectDiagram).pipe(
+
+      tap(el=>console.log(el))
+    )
     this.countAllDays$ = this.store.select(ProgressSelectors.getCountAllDayOfProgress)
     this.activeWeek$ = this.store.select(ProgressSelectors.getActiveWeekProgress)
     this.currentlyDiagram$ = this.store.select(ProgressSelectors.getActiveWeekProgress)
+    this.timeToLearnedAllWords$=this.store.select(DataSelectorsWords.getTimeToLearnRemainingWord).pipe(debounceTime(1000))
 
   }
 
@@ -65,6 +70,24 @@ export class StatistComponent implements OnInit {
         this.currentlyDiagram$ = this.store.select(ProgressSelectors.getActiveWeekProgress)
     }
 
-
+    console.log(this.addHoursToDate(100))
   }
+
+ calculateTimeToLearnRemainingWords(percentageLearned: number, timeSpent: number): string {
+    // Визначаємо час вивчення для 0.01% слів
+    const timeForOneHundredthPercent = timeSpent / (percentageLearned / 0.01);
+
+    // Розрахунок часу для 98% слів
+    const timeForNinetyEightPercent = timeForOneHundredthPercent * 98;
+
+    //return timeForNinetyEightPercent;
+    return `Для вивчення інших 98% слів потрібно приблизно ${Math.floor(timeForNinetyEightPercent / 60)} годин і ${timeForNinetyEightPercent % 60} хвилин.`
+  }
+
+  addHoursToDate(hours: number): Date {
+    const result = new Date()
+    result.setHours(result.getHours() + hours);
+    return result;
+  }
+
 }

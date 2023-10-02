@@ -9,7 +9,7 @@
 
   .list {
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns:auto 1fr 1fr auto;
     align-items: center;
     gap: 1rem;
     //justify-content: space-between;

@@ -83,7 +83,7 @@ export const dataReducer = createReducer(
     (state, {item}) => {
       const {type, id,idTopic} = item;
 
-      console.log(type)
+     // console.log(type)
       //debugger
       if (type === 'word') {
         return ({

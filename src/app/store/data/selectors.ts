@@ -1,6 +1,9 @@
 import {createFeatureSelector, createSelector} from "@ngrx/store";
 import {IData} from "./data-reducer";
 import {CollectTopic, Theme, Words} from "../../models/data";
+import {ProgressSelectors} from "../progress/selectors";
+
+const { getMedianWordsLearnedByDay } = ProgressSelectors;
 
 export namespace DataSelectorsWords {
   export const getDataState = createFeatureSelector<IData>('data');
@@ -77,7 +80,7 @@ export namespace DataSelectorsWords {
       const midRankList = list.filter(({level}) => level === 1)
       const lowRankList = list.filter(({level}) => level === 0)
 
-      while (selectedList.length < 2 || selectedList.length === list.length) {
+      while (selectedList.length < 20 || selectedList.length === list.length) {
         let obj: Words | undefined
         let random = Math.random()
 
@@ -101,7 +104,7 @@ export namespace DataSelectorsWords {
     getThemeById(id),
     (state) => {
       const arrLength = state.data.length
-      const maxScore = arrLength * 3
+      const maxScore = arrLength * 2
       const curProgress = state.data.reduce((count, item) => count + item.level, 0)
 
       return (curProgress / maxScore) * 100
@@ -170,10 +173,28 @@ export namespace DataSelectorsWords {
     getLengthAllWords,
     (highLevelCount,mediumLevelCount,lowLevelCount,totalWordCount)=>{
       const totalLearnedWords=(highLevelCount*100)+(mediumLevelCount*50)
-      if(totalLearnedWords==0 || totalWordCount===0){
+      if(totalLearnedWords===0 || totalWordCount===0){
         return  0
       }
       return (totalLearnedWords / (totalWordCount * 100)) * 100
+    }
+  )
+
+  export const getTimeToLearnRemainingWord=createSelector(
+    getLengthAllWords,
+    getPercentage,
+    getMedianWordsLearnedByDay,
+    (wordsLen,percentage,countWords)=>{
+      const learnedWords=Math.ceil ((wordsLen*percentage)/100)
+      const countDays=Math.ceil((wordsLen-learnedWords)/(countWords))
+
+      const day=new Date()
+      day.setDate(countDays)
+      console.log(day)
+      //const x=day.toISOString()
+      //console.log(x)
+      console.log(day)
+      return day
     }
   )
 
@@ -205,6 +226,9 @@ export namespace DataSelectorsWords {
     getDataState,
     state=>state.error
   )
+
+
+
 
 }
 

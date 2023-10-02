@@ -23,6 +23,15 @@ export namespace ProgressSelectors {
     getProgressState,
     progress=>progress.timeOfDay.length || 0
   )
+
+  export const getMedianWordsLearnedByDay=createSelector(
+    getProgressState,
+    progress=> {
+     const result= progress.timeOfDay.reduce((item, curr) => item + curr.countUpWordsInThisDay, 0) / progress.timeOfDay.length
+    return Math.ceil(result)
+    }
+
+  )
 //прогрес за поточний тиждень
   export const getActiveWeekProgress=createSelector(
     getProgressState,
@@ -168,6 +177,7 @@ export namespace ProgressSelectors {
     }
   );
 
+
 }
 
 function getWeekNumber(date: Date): string {
@@ -176,13 +186,12 @@ function getWeekNumber(date: Date): string {
   return Math.ceil(((date.getTime() - oneJan.getTime()) / millisecondsInDay + oneJan.getDay() + 1) / 7).toString();
 }
 
-
 function getMonthNumber(date: Date): string {
   return (date.getMonth() + 1).toString();
 }
 
 function getMonthNameByIndex(index: number): string {
-  const months = [
+   const months = [
     'January', 'February', 'March', 'April',
     'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
