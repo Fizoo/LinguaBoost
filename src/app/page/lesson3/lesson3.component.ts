@@ -24,7 +24,7 @@ export class Lesson3Component implements OnInit{
     ).subscribe(progress=>{
       this.countScore=progress.counterScore
       this.countLessons=Math.ceil (progress.countUpWordsInThisDay/20)
-      this.percentage=Math.round((progress.countUpWordsInThisDay/progress.counterScore)*100)
+      this.percentage=Math.round((progress.countUpWordsInThisDay/(progress.counterScore/3))*100)
     })
   }
 

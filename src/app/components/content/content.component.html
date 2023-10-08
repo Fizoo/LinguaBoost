@@ -9,7 +9,10 @@
       (valueChanged)="onSorting($event)"
       (searchChange)="onSearch($event)">
     </app-filter-page>
-    <app-list *ngFor="let item of navigateList  | filter : searchText trackBy: trackByFn " [item]="item" ></app-list>
+    <app-list *ngFor="let item of navigateList  | filter : searchText trackBy: trackByFn "
+              [item]="item"
+
+    ></app-list>
 
     <mat-paginator
                     (page)="onPageChange($event)"

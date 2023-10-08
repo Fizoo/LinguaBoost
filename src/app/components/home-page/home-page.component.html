@@ -1,59 +1,17 @@
 <div class="container">
 
-  <div class="card" routerLink="/theme/-1">
-    <div class="lines"></div>
-    <div class="imgBx">
-      <img src="" alt="">
-    </div>
+  <div *ngFor="let item of homePages"
+       [style.background-image]="'url(' + item.img + ')'"
+       class="card"
+       [routerLink]="item.routing"
+       [queryParams]="{query:item?.query}"
+  >
+    <div></div>
     <div class="content">
-      <h2>Words</h2>
-      <p>Go to words page and Learning English</p>
+      <h1>{{item.name}}</h1>
     </div>
   </div>
 
-  <div class="card" routerLink="/phrases/0" [queryParams]="{query:'phrase'}">
-    <div class="lines"></div>
-    <div class="imgBx">
-      <img src="" alt="">
-    </div>
-    <div class="content">
-      <h2>Phrases</h2>
-      <p>Go to phrases page and Learning English</p>
-    </div>
-  </div>
-
-
-  <div class="card" routerLink="/phrases/0" [queryParams]="{query:'sentence'}">
-    <div class="lines"></div>
-    <div class="imgBx">
-      <img src="" alt="">
-    </div>
-    <div class="content">
-      <h2>Sentence</h2>
-      <p>Go to sentence page and Learning English</p>
-    </div>
-  </div>
-
-  <div class="card" routerLink="/book">
-    <div class="lines"></div>
-    <div class="imgBx">
-      <img src="" alt="">
-    </div>
-    <div class="content">
-      <h2>Books</h2>
-      <p>Go to books page </p>
-    </div>
-  </div>
-  <div class="card" routerLink="/stat">
-    <div class="lines"></div>
-    <div class="imgBx">
-      <img src="" alt="">
-    </div>
-    <div class="content">
-      <h2>Statistic</h2>
-      <p>Go to books page </p>
-    </div>
-  </div>
 </div>
 
 

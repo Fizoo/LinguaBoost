@@ -1,7 +1,18 @@
 import {Component, HostListener, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormControl} from "@angular/forms";
 import {ActivatedRoute, Router} from '@angular/router';
-import {map, Subject, switchMap, take, takeUntil, tap} from "rxjs";
+import {
+  catchError,
+  distinctUntilChanged,
+  map,
+  shareReplay,
+  Subject,
+  switchMap,
+  take,
+  takeUntil,
+  tap,
+  throwError
+} from "rxjs";
 import {myValidator} from "../../helper/my.validators";
 import {Words} from "../../models/data";
 import {SpeakerService} from "../../services/speaker.service";
@@ -48,12 +59,15 @@ export class LessonComponent implements OnInit, OnDestroy {
   isCheckingBtnDisabled = false
   isBeforeCheckBtn = true
   resultSwitch = 1
+  resultSwitchBorder =2
   isHideSpanInAnswer = true
   inputValue: string = ''
   whatLesson: number
   id: string
+  voices:Array<SpeechSynthesisVoice> =[]
 
   private ngUnsubscribe$ = new Subject<void>();
+  isAnswer=1
 
   @HostListener('document:keydown.enter')
   onEnter() {
@@ -63,9 +77,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   constructor(private speaker: SpeakerService,
               private store: Store,
               private route: ActivatedRoute,
-              private router: Router
-  ) {
-  }
+              private router: Router) {}
 
   ngOnInit(): void {
     this.route.params.pipe(
@@ -76,9 +88,15 @@ export class LessonComponent implements OnInit, OnDestroy {
           this.tempList = data.map(el => ({...el, tempLevel: 3}))
           this.setValidators()
           this.extracted()
+        }),
+        distinctUntilChanged(),
+        shareReplay(1),
+        catchError((error)=> {
+          this.router.navigate(['theme',this.id])
+          return throwError(() => new Error('Unable to retrieve data.'));
         })
       )),
-      take(1)
+      take(1),
     ).subscribe()
 
     this.formControlText.valueChanges.pipe(
@@ -87,11 +105,9 @@ export class LessonComponent implements OnInit, OnDestroy {
         this.inputValue = value
         this.isCheckingBtnDisabled = !!value
       }),
-      takeUntil(this.ngUnsubscribe$)
-    ).subscribe()
+      takeUntil(this.ngUnsubscribe$)).subscribe()
 
     this.startTime = performance.now()
-
   }
 
 
@@ -99,6 +115,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isFooterHide = false
     this.isWinChallenge = true
     this.isBeforeCheckBtn = false
+    this.isAnswer=0
     let word = ''
 
     switch (this.whatLesson) {
@@ -116,13 +133,16 @@ export class LessonComponent implements OnInit, OnDestroy {
     }
 
     this.resultSwitch = word === this.inputValue.trim() ? 3 : 1;
+    this.resultSwitchBorder=this.resultSwitch===3?1:0
   }
 
   nextTo() {
     this.isFooterHide = true
     this.isWinChallenge = false
     this.isBeforeCheckBtn = true
-    this.whatLesson = 1
+    this.isAnswer=1
+    this.resultSwitchBorder=2
+    //this.whatLesson = 1
     this.audit(this.resultSwitch)
     this.deleteValue()
 
@@ -154,6 +174,8 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isFooterHide = false
     this.isBeforeCheckBtn = false
     this.isWinChallenge = true
+    this.isAnswer=0
+    this.resultSwitchBorder=0
 
   }
 
@@ -216,6 +238,20 @@ export class LessonComponent implements OnInit, OnDestroy {
 
   speak(value: string) {
     this.speaker.speak(value)
+
+  }
+
+  getAllVoices() {
+    this.voices= this.speaker.getVoice()
+  }
+
+  setVoices(voice: number) {
+    this.speaker.setVoice(voice)
+  }
+
+  deleteValue() {
+    this.formControlText.reset()
+    // this.formControlText.setValue('')
   }
 
   private extracted() {
@@ -237,11 +273,6 @@ export class LessonComponent implements OnInit, OnDestroy {
       default:
         this.whatLesson = 1
     }
-  }
-
-  deleteValue() {
-    this.formControlText.reset()
-    // this.formControlText.setValue('')
   }
 
   private getProgressOfDay(): TimeDay {
@@ -281,7 +312,6 @@ export class LessonComponent implements OnInit, OnDestroy {
     })
   }
 
-
   private setValidators(): void {
     this.formControlText.setValidators(myValidator(this.tempList[0].englishWord))
   }
@@ -290,5 +320,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.ngUnsubscribe$.next()
     this.ngUnsubscribe$.complete()
   }
+
+
 
 }

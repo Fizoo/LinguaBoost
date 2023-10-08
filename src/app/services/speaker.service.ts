@@ -22,10 +22,20 @@ export class SpeakerService {
       //this.utterance.voice=voices[1]
       // Встановлюємо текст для озвучування
       this.utterance.text = text;
-
       // Запускаємо озвучування
       window.speechSynthesis.speak(this.utterance);
     }
+  }
+
+  public setVoice(value:number){
+    if (this.utterance){
+      const voices = window.speechSynthesis.getVoices()
+      this.utterance.voice=voices[value]
+    }
+  }
+
+  public getVoice(){
+    return this.utterance?window.speechSynthesis.getVoices() :[]
   }
 
 // Призупиняємо озвучування, якщо воно триває

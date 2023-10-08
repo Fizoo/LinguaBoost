@@ -99,6 +99,8 @@ export class ContentComponent implements OnInit {
           length: this.list.length // Оновлюємо довжину списку
         });
         break
+
+
       default:
         break;
     }

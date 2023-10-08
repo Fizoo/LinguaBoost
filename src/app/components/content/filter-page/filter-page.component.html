@@ -5,7 +5,7 @@
       <mat-icon>menu</mat-icon>
     </button>
 
-    <mat-menu  #menu="matMenu">
+    <mat-menu #menu="matMenu">
       <button
         *ngFor="let el of list$ | async as list "
         [routerLink]="['/theme',el.id]"
@@ -47,6 +47,7 @@
         matTooltip="Random">
         <mat-icon>shuffle</mat-icon>
       </mat-button-toggle>
+
 
     </mat-button-toggle-group>
 

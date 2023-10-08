@@ -38,7 +38,7 @@ export class BookMainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.store.dispatch(BookActions.initial())
+    //this.store.dispatch(BookActions.initial())
     this.listBook$ = this.store.select(BookSelectors.getAllBooks)
     this.listGenres$=this.store.select(BookSelectors.getListGenres)
     this.listLevels$=this.store.select(BookSelectors.getListLevels)

@@ -1,19 +1,7 @@
 <header class="header">
   <div class="logo" routerLink="/">
-    <!-- Вставка першого логотипу -->
-
     <img class="logo__img" src="./assets/img/hand-drawn-english-school-logo-template_23-2149495874.avif" alt="">
     <span class="logo__text">LinguaBoost</span>
-    <!--<div class="menu">
-      <button mat-icon-button [matMenuTriggerFor]="menu1">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <mat-menu #menu1="matMenu" xPosition="before">
-        <app-menu *ngFor="let item of $menu | async  as menu" [el]="item"></app-menu>
-      </mat-menu>
-    </div>-->
-
-
   </div>
 
   <div class="pages">
@@ -22,6 +10,7 @@
       <div routerLink="phrases/0" appDynamicRouterLinkActive="sentence" [queryParams]="{query:'sentence'}" class="page1">Sentences</div>
       <div routerLink="phrases/0" appDynamicRouterLinkActive="phrases"  [queryParams]="{query:'phrase'}"  class="page1">Phrases</div>
       <div routerLink="book" routerLinkActive="active"  class="page1">Books</div>
+      <div routerLink="stat" routerLinkActive="active"  class="page1">Statistic</div>
     </div>
     <div class="pageMenu">
       <button mat-icon-button [matMenuTriggerFor]="menu2">
@@ -32,6 +21,7 @@
         <button routerLink="phrases/0" [queryParams]="{query:'sentence'}" mat-menu-item>Sentences</button>
         <button routerLink="phrases/0" [queryParams]="{query:'phrase'}" mat-menu-item>Phrases</button>
         <button routerLink="book" mat-menu-item>Books</button>
+        <button routerLink="stat" mat-menu-item>Statistic</button>
       </mat-menu>
     </div>
 

@@ -99,7 +99,8 @@ export class AppEffects {
             const actions = [
               DataActions.loadData({data: words}),
               DataActions.loadDataPhrases({phrases}),
-              ProgressAction.loadProgress({progress})
+              ProgressAction.loadProgress({progress}),
+              BookActions.initial()
             ]
             return of(...actions)
           }),
