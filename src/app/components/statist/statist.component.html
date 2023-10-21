@@ -1,4 +1,6 @@
-<main class="main">
+<app-loading-spinner *ngIf="isLoading$ | async"></app-loading-spinner>
+
+<main *ngIf="!(isLoading$ | async)" class="main">
   <div class="statist">
     <div class="header">
       <div class="userName">

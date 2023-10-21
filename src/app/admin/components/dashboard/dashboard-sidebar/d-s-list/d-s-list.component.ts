@@ -14,6 +14,7 @@ import {DataSelectorsWords} from "../../../../../store/data/selectors";
 export class DSListComponent {
   @Input() topic:CollectTopic
 
+
   constructor(private store:Store,
               private firestore:FirestoreService
               ) {
@@ -32,6 +33,16 @@ export class DSListComponent {
       })),
       switchMap(data=>this.firestore.addWords(data))
     ).subscribe()
+/*    this.firestore.addWords({
+      id:'17',
+      name:'Jysk',
+      type:'word',
+      data:jysk.map(el=>({
+        ...el,
+        level:0
+      }))
+    }).subscribe()*/
+
  /*  this.store.select(DataSelectorsPhrases.getPhrasesById(+topic.id,topic.type)).pipe(
      tap(el=>console.log(el)),
      switchMap((data)=>this.firestore.addPhraseWithId(data))

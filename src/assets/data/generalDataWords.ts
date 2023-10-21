@@ -17,6 +17,7 @@ import {IT} from "./words/IT";
 import {sport} from "./words/sport";
 import {adjective} from "./words/adjective";
 import {top3000} from "./words/Top3000";
+import {jysk} from "./words/jysk";
 
 
 export const mainData:Main={
@@ -110,6 +111,11 @@ export const mainData:Main={
       id:'16',
       name:'Adjective',
       data:adjective
+    } ,
+    {
+      id:'17',
+      name:'Jysk',
+      data:jysk
     }
   ]
 

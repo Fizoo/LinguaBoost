@@ -11,6 +11,7 @@ export class BookSentenceComponent {
   @Input() text: Sentence
   @Input() index: number
   @Output() speaker = new EventEmitter<string>()
+  @Output() speakerStop = new EventEmitter()
 
   isVisibility = true
 
@@ -18,4 +19,7 @@ export class BookSentenceComponent {
     this.speaker.emit(this.text.sentence)
   }
 
+  stop() {
+    this.speakerStop.emit()
+  }
 }

@@ -1,14 +1,18 @@
 <div class="box">
   <div class="actions">
+
     <button mat-icon-button class="btn-vision" (click)="isVisibility =!isVisibility">
       <mat-icon *ngIf="isVisibility;else vision">visibility</mat-icon>
       <ng-template #vision>
         <mat-icon>visibility_off</mat-icon>
       </ng-template>
-
     </button>
+
     <button mat-icon-button color="primary" (click)="speak()">
       <mat-icon>play_arrow</mat-icon>
+    </button>
+    <button mat-icon-button color="primary" (click)="stop()">
+      <mat-icon>stop</mat-icon>
     </button>
   </div>
   <p class="str">

@@ -114,6 +114,34 @@ export namespace DataSelectorsWords {
   export const combineAllWords = createSelector(
     getWordsData,
     state => {
+      const uniqueWords: { [key: string]: Words } = {};
+
+      state.forEach((theme: Theme) => {
+        theme.data.forEach((word: Words) => {
+          const existingWord = uniqueWords[word.englishWord];
+
+          if (!existingWord || word.level > existingWord.level) {
+            uniqueWords[word.englishWord] = word;
+          }
+        });
+      });
+
+      const filterState = Object.values(uniqueWords).sort((a, b) =>
+        a.englishWord.localeCompare(b.englishWord)
+      );
+
+      return {
+        id: -1,
+        name: 'All',
+        type: 'word',
+        data: filterState
+      };
+    }
+  );
+
+  export const combineAllWords2 = createSelector(
+    getWordsData,
+    state => {
       const newState = state.reduce((acc: Words[], curr: Theme) => [...acc, ...curr.data], [])
         //.sort((a, b) => a.englishWord.localeCompare(b.englishWord))
       const uniqueWords: { [key: string]: boolean } = {}
@@ -190,10 +218,8 @@ export namespace DataSelectorsWords {
 
       const day=new Date()
       day.setDate(countDays)
-      console.log(day)
       //const x=day.toISOString()
       //console.log(x)
-      console.log(day)
       return day
     }
   )

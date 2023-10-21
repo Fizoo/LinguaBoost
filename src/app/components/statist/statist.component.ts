@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Store} from "@ngrx/store";
-import {debounceTime, Observable, tap} from "rxjs";
+import {debounceTime, Observable} from "rxjs";
 import {DataSelectorsWords} from "../../store/data/selectors";
 import {ProgressSelectors} from "../../store/progress/selectors";
 import {MatButtonToggleChange} from "@angular/material/button-toggle";
@@ -10,7 +10,8 @@ import {Diagram, StatisticData, TimeDayDiagram} from "../../models/statictic";
 @Component({
   selector: 'app-statist',
   templateUrl: './statist.component.html',
-  styleUrls: ['./statist.component.scss']
+  styleUrls: ['./statist.component.scss'],
+
 })
 export class StatistComponent implements OnInit {
   allWords$: Observable<number>
@@ -30,24 +31,29 @@ export class StatistComponent implements OnInit {
   title: string = 'Progress'
   valueField: string='counterScore'
 
+  isLoading$:Observable<boolean>
+
   constructor(private store: Store) {
   }
 
   ngOnInit(): void {
+
+
+    this.loadAllData()
+  }
+
+  private loadAllData():void {
+    this.isLoading$ = this.store.select(DataSelectorsWords.isLoadingData)
     this.allWords$ = this.store.select(DataSelectorsWords.getLengthAllWords)
     this.countHigh$ = this.store.select(DataSelectorsWords.getCountHighOfWords)
     this.countMiddle$ = this.store.select(DataSelectorsWords.getCountMiddleOfWords)
     this.countLow$ = this.store.select(DataSelectorsWords.getCountLowOfWords)
     this.percentage$ = this.store.select(DataSelectorsWords.getPercentage)
-    this.diagramDoughnut$ = this.store.select(DataSelectorsWords.getObjectDiagram).pipe(
-
-      tap(el=>console.log(el))
-    )
+    this.diagramDoughnut$ = this.store.select(DataSelectorsWords.getObjectDiagram)
     this.countAllDays$ = this.store.select(ProgressSelectors.getCountAllDayOfProgress)
     this.activeWeek$ = this.store.select(ProgressSelectors.getActiveWeekProgress)
     this.currentlyDiagram$ = this.store.select(ProgressSelectors.getActiveWeekProgress)
-    this.timeToLearnedAllWords$=this.store.select(DataSelectorsWords.getTimeToLearnRemainingWord).pipe(debounceTime(1000))
-
+    this.timeToLearnedAllWords$ = this.store.select(DataSelectorsWords.getTimeToLearnRemainingWord).pipe(debounceTime(1000))
   }
 
   changeDiagram(event: MatButtonToggleChange) {

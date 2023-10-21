@@ -60,7 +60,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   isBeforeCheckBtn = true
   resultSwitch = 1
   resultSwitchBorder =2
-  isHideSpanInAnswer = true
+  isHideSpanInAnswer = false
   inputValue: string = ''
   whatLesson: number
   id: string
@@ -91,7 +91,7 @@ export class LessonComponent implements OnInit, OnDestroy {
         }),
         distinctUntilChanged(),
         shareReplay(1),
-        catchError((error)=> {
+        catchError(()=> {
           this.router.navigate(['theme',this.id])
           return throwError(() => new Error('Unable to retrieve data.'));
         })
@@ -147,7 +147,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.deleteValue()
 
 
-    if (this.tempList.length > 0) {
+    if (this.updateList.length < 20) {
 
       this.speaker.speak(this.tempList[0].englishWord)
     }

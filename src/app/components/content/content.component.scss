@@ -18,5 +18,9 @@
   }
   @include m.mobile{
     grid-template-columns: 1fr;
+    margin: 0;
+    .box{
+      margin: 0;
+    }
   }
 }

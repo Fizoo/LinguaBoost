@@ -13,7 +13,10 @@
   </div>
 
   <div class="contentMain">
-    <div [ngClass]="{'win':resultSwitchBorder===1,'loss':resultSwitchBorder===0}" class="contentLayout" [ngSwitch]="isAnswer">
+
+    <div [ngClass]="{'win':resultSwitchBorder===1,'loss':resultSwitchBorder===0}"
+         class="contentLayout"
+         [ngSwitch]="isAnswer">
       <ng-template ngSwitchCase="1">
         <div class="instructionMain">
           <div [ngSwitch]="whatLesson" class="instruction">
@@ -30,8 +33,8 @@
           </div>
         </div>
 
-        <div *ngIf="whatLesson===1 || whatLesson===2 " class="helper">
-          <button mat-icon-button  (click)="speak(tempList[0].englishSentence)">
+        <div *ngIf="whatLesson===1 || whatLesson===2 " class="helper" (click)="speak(tempList[0].englishSentence)">
+          <button mat-icon-button  >
             <mat-icon color="primary">play_circle</mat-icon>
           </button>
           <div>
@@ -114,7 +117,6 @@
           </div>
         </div>
       </ng-template>
-
     </div>
 
     <div class="inputBox">
@@ -124,7 +126,7 @@
         <button *ngIf="inputValue" matSuffix mat-icon-button aria-label="Clear" (click)="deleteValue()">
           <mat-icon>close</mat-icon>
         </button>
-        <mat-error *ngIf="formControlText.errors?.['required']">Text is required</mat-error>
+        <mat-error *ngIf="formControlText.errors?.['required'] ">Text is required</mat-error>
         <mat-error *ngIf=" formControlText?.errors?.['matchSentence']">The entered value does not match the
           sentence
         </mat-error>

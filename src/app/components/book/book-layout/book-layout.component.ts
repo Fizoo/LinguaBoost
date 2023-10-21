@@ -18,6 +18,7 @@ import {ActivatedRoute} from "@angular/router";
 export class BookLayoutComponent implements OnInit,OnDestroy {
   book: Book
   copyBook: Book
+  voices:Array<SpeechSynthesisVoice> =[]
 
   bookControl = new FormControl()
   voiceControl = new FormControl()
@@ -68,9 +69,22 @@ export class BookLayoutComponent implements OnInit,OnDestroy {
     this.isAdder = !this.isAdder
   }
 
+
+
+  stopSpeaker() {
+    this.speak.stop()
+  }
+
+  setVoices(voice: number) {
+    this.speak.setVoice(voice)
+  }
+
+  getAllVoices() {
+    this.voices= this.speak.getVoice()
+  }
+
   ngOnDestroy() {
     this.unsubscribe$.next()
     this.unsubscribe$.complete()
   }
-
 }

@@ -38,7 +38,8 @@
 
     <div class="content">
 
-      <div *ngFor="let book of listBook$ | async | searchBook:searchValue | filterBook:selectedGenre:selectedLevel " class="items">
+      <div *ngFor="let book of listBook$ | async | searchBook:searchValue | filterBook:selectedGenre:selectedLevel "
+           class="items">
         <div (click)="selectBook(book)"  *ngIf="book.poster" class="item">
             <img  class="poster" [src]="book?.poster" alt="">
         </div>
