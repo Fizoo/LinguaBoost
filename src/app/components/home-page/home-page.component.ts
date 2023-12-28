@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 
-interface HomePages {
+export interface HomePages {
   id:number
   name:string
   //title:string
@@ -22,7 +22,7 @@ export class HomePageComponent {
       id:0,
       name:'Words',
      // title:'Go to words page and Learning English',
-      img:'../assets/img/word.jpg',
+      img:'/assets/img/word.jpg',
       routing:'/theme/-1',
       query:'phrase'
     },
@@ -30,7 +30,7 @@ export class HomePageComponent {
       id:1,
       name:'Phrases',
       //title:'Go to words page and Learning English',
-      img:'../assets/img/phrase.jpg',
+      img:'/assets/img/phrase.jpg',
       routing:'/phrases/0',
       query:'phrase'
     },
@@ -38,7 +38,7 @@ export class HomePageComponent {
       id:2,
       name:'Sentence',
       //title:'Go to words page and Learning English',
-      img:'../assets/img/sente.jpg',
+      img:'/assets/img/sente.jpg',
       routing:'/phrases/0',
       query:'sentence'
     },
@@ -46,14 +46,14 @@ export class HomePageComponent {
       id:3,
       name:'Books',
     //  title:'Go to words page and Learning English',
-      img:'../assets/img/book.jpg',
+      img:'/assets/img/book.jpg',
       routing:'/book'
     },
     {
       id:4,
       name:'Statistic',
       //title:'Go to words page and Learning English',
-      img:'../assets/img/statistic.jpg',
+      img:'/assets/img/statistic.jpg',
       routing:'/stat'
     },
 

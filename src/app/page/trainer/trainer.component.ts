@@ -1,5 +1,5 @@
 import {Component, HostListener} from '@angular/core';
-import {SpeakerService} from "../../services/speaker.service";
+import {Speaker2Service} from "../../services/speaker3.service";
 import {Words} from "../../models/data";
 import {ActivatedRoute, Router} from "@angular/router";
 import {map, switchMap, take} from "rxjs";
@@ -23,7 +23,7 @@ export class TrainerComponent {
     this.nextTo()
   }
 
-  constructor(private speaker: SpeakerService,
+  constructor(private speaker: Speaker2Service,
               private route: ActivatedRoute,
               private store: Store,
               private router:Router

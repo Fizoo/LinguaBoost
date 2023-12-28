@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {SpeakerService} from 'src/app/services/speaker.service';
+import {Speaker2Service} from 'src/app/services/speaker3.service';
 import {Words} from "../../../models/data";
 
 
@@ -17,7 +17,7 @@ export class ListComponent implements OnInit{
   isUkrainianTranslationOfSentence = false
   isTranscript = true
 
-  constructor(private speakerService: SpeakerService) {
+  constructor(private speakerService: Speaker2Service) {
   }
 
   setExample() {

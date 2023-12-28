@@ -1,12 +1,12 @@
 import {ChangeDetectionStrategy, Component, OnDestroy, OnInit} from '@angular/core';
 import {Book} from "../../../models/book";
-import {SpeakerService} from "../../../services/speaker.service";
 import {FormControl} from "@angular/forms";
 import {map, Subject, switchMap, takeUntil} from "rxjs";
 import {AudioStorageService} from "../../../services/audio-storage.service";
 import {Store} from "@ngrx/store";
 import {BookSelectors} from "../../../store/book/selector";
 import {ActivatedRoute} from "@angular/router";
+import {SpeakerService} from "../../../services/speaker.service";
 
 
 @Component({
@@ -62,25 +62,15 @@ export class BookLayoutComponent implements OnInit,OnDestroy {
 
 
   speaker(value: string) {
-    this.speak.speak(value)
+    this.speak.play(value)
   }
 
   adder() {
     this.isAdder = !this.isAdder
   }
 
-
-
   stopSpeaker() {
     this.speak.stop()
-  }
-
-  setVoices(voice: number) {
-    this.speak.setVoice(voice)
-  }
-
-  getAllVoices() {
-    this.voices= this.speak.getVoice()
   }
 
   ngOnDestroy() {

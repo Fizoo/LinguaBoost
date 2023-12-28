@@ -15,7 +15,7 @@ import {
 } from "rxjs";
 import {myValidator} from "../../helper/my.validators";
 import {Words} from "../../models/data";
-import {SpeakerService} from "../../services/speaker.service";
+import {Speaker2Service} from "../../services/speaker3.service";
 import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../store/data/selectors";
 import {DataActions} from "../../store/data/actions";
@@ -74,7 +74,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isWinChallenge ? this.nextTo() : this.checking();
   }
 
-  constructor(private speaker: SpeakerService,
+  constructor(private speaker: Speaker2Service,
               private store: Store,
               private route: ActivatedRoute,
               private router: Router) {}
@@ -116,24 +116,24 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isWinChallenge = true
     this.isBeforeCheckBtn = false
     this.isAnswer=0
-    let word = ''
+    this.equalsWords()
+/*    let word = ''
 
     switch (this.whatLesson) {
       case 1:
-        word = this.tempList[0].englishWord
+        word = this.tempList[0].englishWord.toLowerCase()
         break
       case 2:
-        word = this.tempList[0].englishWord
+        word = this.tempList[0].ukrainianTranslation.toLowerCase()
         break
-
       case 3 :
-        word = this.tempList[0].ukrainianTranslation
+        word = this.tempList[0].englishWord.toLowerCase()
         break
       default:
     }
 
-    this.resultSwitch = word === this.inputValue.trim() ? 3 : 1;
-    this.resultSwitchBorder=this.resultSwitch===3?1:0
+    this.resultSwitch = word === this.inputValue.trim().toLowerCase() ? 3 : 1;
+    this.resultSwitchBorder=this.resultSwitch===3?1:0*/
   }
 
   nextTo() {
@@ -147,7 +147,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.deleteValue()
 
 
-    if (this.updateList.length < 20) {
+    if (this.updateList.length < 20 && this.whatLesson!==3) {
 
       this.speaker.speak(this.tempList[0].englishWord)
     }
@@ -228,6 +228,28 @@ export class LessonComponent implements OnInit, OnDestroy {
           }
           break
       }
+    }
+  }
+
+  private equalsWords(){
+    let word = ''
+
+    switch (this.whatLesson) {
+      case 1:
+      case 3:
+        word = this.tempList[0].englishWord.toLowerCase()
+        break
+      case 2:
+        word = this.tempList[0].ukrainianTranslation.toLowerCase()
+        break
+      default:
+    }
+    if(word.split(',').length>1){
+      this.resultSwitch = word.split(',').some(el=>  el.trim() === this.inputValue.trim().toLowerCase()) ? 3 : 1
+    }
+    else {
+      this.resultSwitch = word === this.inputValue.trim().toLowerCase() ? 3 : 1
+      this.resultSwitchBorder = this.resultSwitch === 3 ? 1 : 0
     }
   }
 

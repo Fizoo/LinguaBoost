@@ -5,16 +5,7 @@
   <div class="content">
     <div *ngFor="let item of copyBook.chapters; let ind=index" class="charters">
       <div>
-        <button  (click)="getAllVoices()" mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon >record_voice_over</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button *ngFor="let voice of voices; index as i"
-                  (click)="setVoices(i)"
-                  mat-menu-item>
-            {{voice.name }}
-          </button>
-        </mat-menu>
+
 
         <h1>{{item.chapter_number}}</h1>
       </div>

@@ -3,7 +3,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {debounceTime, map, Subject, switchMap, takeUntil, tap} from "rxjs";
 import {Phrase} from "../../../models/data";
 import {Store} from "@ngrx/store";
-import {SpeakerService} from "../../../services/speaker.service";
+import {Speaker2Service} from "../../../services/speaker3.service";
 import {DataSelectorsPhrases} from "../../../store/data/selectors-phrases";
 import {FormControl} from "@angular/forms";
 
@@ -36,7 +36,7 @@ export class PhrasesTrainerComponent implements OnDestroy,OnInit {
   constructor(private route: ActivatedRoute,
               private router:Router,
               private store: Store,
-              private speaker: SpeakerService) {
+              private speaker: Speaker2Service) {
 
     this.route.params
       .pipe(
