@@ -53,17 +53,6 @@
                                   [mode]="isProgressBar?'indeterminate':'determinate'">
                 </mat-progress-bar>
 
-                  <button  (click)="getAllVoices()" mat-icon-button [matMenuTriggerFor]="menu">
-                    <mat-icon >record_voice_over</mat-icon>
-                  </button>
-                  <mat-menu #menu="matMenu">
-                    <button *ngFor="let voice of voices; index as i"
-                            (click)="setVoices(i)"
-                            mat-menu-item>
-                      {{voice.name }}
-                    </button>
-                  </mat-menu>
-
               </div>
             </div>
           </ng-template>

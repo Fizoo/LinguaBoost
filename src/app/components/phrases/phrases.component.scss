@@ -14,5 +14,12 @@
     @include m.mobile{
       grid-template-columns: 1fr;
     }
+
+  }
+  @include m.mini{
+    //max-height:300px;
+    .box{
+      grid-template-columns: 1fr;
+    }
   }
 }

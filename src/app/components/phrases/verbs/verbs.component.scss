@@ -1,7 +1,7 @@
 @use '../../../../scss/mixins' as m;
 
 .verbs{
- // width: 100%;
+  //width: 100%;
   margin: 1rem;
 
   .main{
@@ -37,15 +37,34 @@
           }
         }
 
-
       }
       .content{
         padding: 1rem;
-
-
       }
-
     }
+  }
+  @include m.mobile {
+    margin: 0;
+    .main{
+      padding: 0;
+      .box{
 
+        .filter{
+          flex-direction: column;
+          .menuLayout{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            .menu{
+              justify-items: flex-start;
+            }
+          }
+        }
+
+        .content{
+          padding: 0;
+        }
+      }
+    }
   }
 }

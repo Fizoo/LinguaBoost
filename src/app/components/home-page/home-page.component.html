@@ -1,6 +1,6 @@
-<div class="container">
+<div *ngIf="homePage$ | async as home" class="container" >
 
-  <div *ngFor="let item of homePages"
+  <div *ngFor="let item of home"
        [style.background-image]="'url(' + item.img + ')'"
        class="card"
        [routerLink]="item.routing"
@@ -10,7 +10,9 @@
     <div class="content">
       <h1>{{item.name}}</h1>
     </div>
+
   </div>
+
 
 </div>
 

@@ -139,6 +139,13 @@ export namespace DataSelectorsWords {
     }
   );
 
+  export const getWord=(word:string)=>createSelector(
+    combineAllWords,
+    state=>{
+      return state.data.find(el=>el.englishWord.toLowerCase()===word.toLowerCase().trim()) || ''
+    }
+  )
+
   export const combineAllWords2 = createSelector(
     getWordsData,
     state => {

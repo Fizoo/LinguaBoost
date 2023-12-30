@@ -77,4 +77,18 @@
     right: 5%;
     top: 5%;
   }
+  @include m.mobile{
+    .container{
+      gap: 1rem;
+      .content{
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-rows:auto auto auto;
+        height: 100%;
+        margin: 0;
+        gap: 1rem;
+      }
+
+    }
+  }
+
 }

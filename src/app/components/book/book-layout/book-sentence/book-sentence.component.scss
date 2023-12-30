@@ -1,3 +1,5 @@
+@use './../../../../../scss/mixins' as m;
+
 .box{
   display: flex;
   align-items: center;
@@ -35,6 +37,20 @@
 
   }
 
+  @include m.mini{
+    padding: .5rem;
+    .actions{
+      display: none;
+    }
+    &:hover{
+      .actions{
+        display: flex;
+        align-items: center;
+        opacity: 0.2
+      }
+    }
+
+  }
 }
 
 

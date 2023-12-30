@@ -275,6 +275,28 @@
   }
 }
 
+
+  @include m.mini{
+
+    .nav{
+      padding: 0 1rem;
+      margin-bottom: 0;
+      .close{
+        margin: 0;
+      }
+    }
+    .contentMain{
+      padding: 0 1rem;
+
+      .contentLayout{
+        padding: 1rem 0;
+      }
+    }
+    .footer{
+      padding: 0;
+    }
+  }
+
 }
 
 

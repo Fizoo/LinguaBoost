@@ -147,7 +147,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.deleteValue()
 
 
-    if (this.updateList.length < 20 && this.whatLesson!==3) {
+    if (this.updateList.length < 20 && this.whatLesson===1) {
 
       this.speaker.speak(this.tempList[0].englishWord)
     }

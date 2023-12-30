@@ -1,0 +1,64 @@
+<!--<h1 mat-dialog-title></h1>-->
+<div  class="dialog" mat-dialog-content>
+  <div *ngIf="word$ | async as word ; else noWord" class="main">
+
+    <div class="word box">
+      <button (click)="speak(word.englishWord)" mat-icon-button >
+        <mat-icon color="primary">play_circle</mat-icon>
+      </button>
+      <div class="text">{{word.englishWord | titlecase }}</div>
+    </div>
+
+    <div *ngIf="word.englishWord" class="translate box">
+      <button  mat-icon-button >
+        <mat-icon color="primary">play_circle</mat-icon>
+      </button>
+      <div class="text2">{{word.ukrainianTranslation | titlecase}}</div>
+      <div class="third-text">{{word.englishTranscription}}</div>
+    </div>
+
+
+
+<!--
+    <div *ngIf="word.englishWord" class="translate box">
+      <div></div>
+      <div class="text">{{word.ukrainianTranslation}}</div>
+      <div class="text">{{word.englishTranscription}}</div>
+    </div>
+-->
+
+    <div *ngIf="word.englishWord" class="sentence">
+      <div class="box">
+        <button (click)="speak(word.englishSentence)" mat-icon-button >
+          <mat-icon color="primary">play_circle</mat-icon>
+        </button>
+        <div class="second-text">{{word.englishSentence }}</div>
+      </div>
+      <div class="one">
+        <div ></div>
+        <div class="third-text">{{word.ukrainianTranslationOfSentence}}</div>
+      </div>
+
+    </div>
+  </div>
+  <ng-template #noWord>
+    <div class="box">
+      <button (click)="speak(data.word)" mat-icon-button >
+        <mat-icon color="primary">play_circle</mat-icon>
+      </button>
+      <div class="text">{{data.word | titlecase  }}</div>
+
+    </div>
+
+  </ng-template>
+
+
+</div>
+<div class="actions" mat-dialog-actions>
+  <div class="two"></div>
+  <button mat-icon-button (click)="onNoClick()">
+    <mat-icon >close</mat-icon>
+  </button>
+
+
+</div>

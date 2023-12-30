@@ -70,6 +70,12 @@
     top: 5rem;
     right: 1rem;
   }
+
+  @include m.mini{
+    .content{
+      padding: 0.5rem;
+    }
+  }
 }
 
 

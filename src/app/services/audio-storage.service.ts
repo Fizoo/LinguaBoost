@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {AngularFireStorage} from "@angular/fire/compat/storage";
-import {concatMap, finalize, forkJoin, from, map, Observable} from "rxjs";
+import {concatMap, finalize, forkJoin, from, map, Observable, switchMap} from "rxjs";
 
 import {DomSanitizer} from "@angular/platform-browser";
 
@@ -46,6 +46,24 @@ export class AudioStorageService {
         return forkJoin(observables);
       })
 
+    )
+  }
+  getImgForMain():Observable<any>{
+    const storageRef = this.storage.ref(`menu`)
+
+    return storageRef.listAll().pipe(
+      switchMap(data=>{
+        const observables: Observable<any>[] = [];
+        data.items.forEach(item=>{
+          observables.push(
+            from(item.getDownloadURL()).pipe(
+              map(url => this.sanitizer.bypassSecurityTrustResourceUrl(url)),
+              map((el:any)=>el.changingThisBreaksApplicationSecurity.toString()),
+            )
+          )
+        })
+        return forkJoin(observables);
+      })
     )
   }
 

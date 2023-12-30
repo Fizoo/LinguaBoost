@@ -14,11 +14,8 @@
     grid-template-rows: 150px 1fr;
     grid-template-columns: 1fr;
     gap: 1rem;
-
     align-items: center;
     justify-content: center;
-
-
     .header {
       width: 100%;
       background: white;
@@ -222,8 +219,52 @@
       }
 
       @include m.mobile{
-       width: 350px;
+       width: 550px;
 
+        margin: 0;
+        .stat1{
+          grid-template-columns:1fr;
+        }
+        .stat2 {
+          width: 100%;
+          grid-template-columns:1fr;
+          .days {
+            padding: 0;
+            gap: 0;
+            border-right: none;
+            border-bottom: 1px solid #dad7d7;
+            .day {
+              padding: 0;
+              .icon {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+
+
+    }
+  }
+
+  @include m.mini{
+
+    .statist{
+      gap: 0;
+      .header{
+        width: 100%;
+        .userName{
+          gap: .5rem;
+          .img{
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+
+      .content{
+        width: 350px;
         margin: 0;
         .stat1{
           grid-template-columns:1fr;

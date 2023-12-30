@@ -58,6 +58,8 @@ export class BookLayoutComponent implements OnInit,OnDestroy {
         chapters: this.book.chapters.filter(a => a.id === el.id)
       }:this.book
     })
+
+
   }
 
 

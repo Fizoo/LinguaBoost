@@ -87,6 +87,8 @@ import {EffectsModule} from '@ngrx/effects';
 import {AppEffects} from './app.effects';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {DxChartModule, DxPieChartModule} from "devextreme-angular";
+import { SearchDialogComponent } from './components/header/search-dialog/search-dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 
 @NgModule({
@@ -130,40 +132,42 @@ import {DxChartModule, DxPieChartModule} from "devextreme-angular";
     LoadingSpinnerComponent,
     ErrorMessageComponent,
     DynamicRouterLinkActiveDirective,
+    SearchDialogComponent,
   ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatIconModule,
-        MatButtonModule,
-        MatTooltipModule,
-        MatToolbarModule,
-        MatInputModule,
-        FormsModule,
-        MatListModule,
-        MatMenuModule,
-        provideFirebaseApp(() => initializeApp(environment.firebase)),
-        provideAuth(() => getAuth()),
-        provideDatabase(() => getDatabase()),
-        AngularFireModule.initializeApp(environment.firebase),
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatToolbarModule,
+    MatInputModule,
+    FormsModule,
+    MatListModule,
+    MatMenuModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
 
-        StoreModule.forRoot(reducers, {
-            metaReducers
-        }),
-        EffectsModule.forRoot([AppEffects]),
-        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
-        MatProgressBarModule,
-        ReactiveFormsModule,
-        MatButtonToggleModule,
-        MatSelectModule,
-        MatExpansionModule,
-        MatProgressSpinnerModule,
-        MatPaginatorModule,
-        DxPieChartModule,
-        DxChartModule,
-    ],
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    }),
+    EffectsModule.forRoot([AppEffects]),
+    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
+    MatProgressBarModule,
+    ReactiveFormsModule,
+    MatButtonToggleModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatProgressSpinnerModule,
+    MatPaginatorModule,
+    DxPieChartModule,
+    DxChartModule,
+    MatDialogModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]

@@ -27,18 +27,27 @@
 
   </div>
   <div class="users">
-
-
-    <button mat-icon-button class="user-icon">
-
+    <!--<button mat-icon-button class="user-icon">
       <mat-icon>home</mat-icon>
-    </button>
-    <button mat-icon-button class="user-icon">
+    </button>-->
+
+    <div class="input-field">
+      <input placeholder="Search..." matInput type="text" [(ngModel)]="word">
+      <button *ngIf="word" (click)="openDialog()" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+
+
+
+
+
+<!--    <button mat-icon-button class="user-icon">
       <mat-icon>star</mat-icon>
-    </button>
-    <button mat-icon-button class="user-icon">
+    </button>-->
+<!--    <button mat-icon-button class="user-icon">
       <mat-icon>radio_button_checked</mat-icon>
-    </button>
+    </button>-->
     <button routerLink="/admin" mat-icon-button class="user-icon">
       <img src="./assets/img/men.jpg" alt="User image">
     </button>
