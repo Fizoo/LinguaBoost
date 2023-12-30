@@ -15,13 +15,14 @@ import {
 } from "rxjs";
 import {myValidator} from "../../helper/my.validators";
 import {Words} from "../../models/data";
-import {Speaker2Service} from "../../services/speaker3.service";
+
 import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../store/data/selectors";
 import {DataActions} from "../../store/data/actions";
 import {DetailProgress, TimeDay} from "../../models/progress";
 import {ProgressAction} from "../../store/progress/actions";
 import {getCurrentDate} from 'src/app/helper/fn';
+import {SpeakerService} from "../../services/speaker.service";
 
 export interface tempList {
   id: number
@@ -74,7 +75,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isWinChallenge ? this.nextTo() : this.checking();
   }
 
-  constructor(private speaker: Speaker2Service,
+  constructor(private speaker: SpeakerService,
               private store: Store,
               private route: ActivatedRoute,
               private router: Router) {}
@@ -263,13 +264,6 @@ export class LessonComponent implements OnInit, OnDestroy {
 
   }
 
-  getAllVoices() {
-    this.voices= this.speaker.getVoice()
-  }
-
-  setVoices(voice: number) {
-    this.speaker.setVoice(voice)
-  }
 
   deleteValue() {
     this.formControlText.reset()

@@ -3,9 +3,9 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {debounceTime, map, Subject, switchMap, takeUntil, tap} from "rxjs";
 import {Phrase} from "../../../models/data";
 import {Store} from "@ngrx/store";
-import {Speaker2Service} from "../../../services/speaker3.service";
 import {DataSelectorsPhrases} from "../../../store/data/selectors-phrases";
 import {FormControl} from "@angular/forms";
+import {SpeakerService} from "../../../services/speaker.service";
 
 @Component({
   selector: 'app-phrases-trainer',
@@ -36,7 +36,7 @@ export class PhrasesTrainerComponent implements OnDestroy,OnInit {
   constructor(private route: ActivatedRoute,
               private router:Router,
               private store: Store,
-              private speaker: Speaker2Service) {
+              private speaker: SpeakerService) {
 
     this.route.params
       .pipe(

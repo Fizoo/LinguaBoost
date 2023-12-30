@@ -4,9 +4,9 @@ import {map, Observable, Subject, switchMap, takeUntil, tap} from "rxjs";
 import {Phrase, TopicPhrases} from "../../../models/data";
 import {Store} from "@ngrx/store";
 import {ActivatedRoute, Router} from '@angular/router';
-import {Speaker2Service} from "../../../services/speaker3.service";
 import {DataSelectorsPhrases} from "../../../store/data/selectors-phrases";
 import {PageEvent} from "@angular/material/paginator";
+import {SpeakerService} from "../../../services/speaker.service";
 
 @Component({
   selector: 'app-verbs',
@@ -33,7 +33,7 @@ export class VerbsComponent implements OnInit, OnDestroy {
 
   constructor(private store: Store,
               private route: ActivatedRoute,
-              private speaker: Speaker2Service,
+              private speaker: SpeakerService,
               private router: Router) {}
 
   ngOnInit(): void {

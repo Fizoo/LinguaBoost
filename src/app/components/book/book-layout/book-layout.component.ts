@@ -64,7 +64,7 @@ export class BookLayoutComponent implements OnInit,OnDestroy {
 
 
   speaker(value: string) {
-    this.speak.play(value)
+    this.speak.speak(value)
   }
 
   adder() {

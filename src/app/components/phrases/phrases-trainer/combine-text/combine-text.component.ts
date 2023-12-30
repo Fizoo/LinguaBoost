@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {Speaker2Service} from "../../../../services/speaker3.service";
+import {SpeakerService} from "../../../../services/speaker.service";
 
 @Component({
   selector: 'app-combine-text',
@@ -11,7 +11,7 @@ export class CombineTextComponent {
   @Input() text:string
   isVisible=false
 
-  constructor(private speaker:Speaker2Service) {
+  constructor(private speaker:SpeakerService) {
   }
 
   actions(text: string) {

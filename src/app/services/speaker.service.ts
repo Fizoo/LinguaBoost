@@ -24,7 +24,7 @@ export class SpeakerService {
     });
   }
 
-  public play(text: string): void {
+  public speak(text: string): void {
     this.speaker.cancel();
 
     this.speaker.speak({text})

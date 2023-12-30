@@ -30,7 +30,7 @@ export class SearchDialogComponent implements OnInit{
     this.word$=this.store.select(DataSelectorsWords.getWord(this.data.word))
   }
   speak(value:string){
-    this.speaker.play(value)
+    this.speaker.speak(value)
   }
 
   onNoClick() {

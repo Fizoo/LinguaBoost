@@ -12,7 +12,7 @@ export class Speaker2Service {
     // Ініціалізуємо об'єкт SpeechSynthesisUtterance
     this.utterance = new SpeechSynthesisUtterance();
     this.utterance.rate = 1;
-     // this.availableVoices = window.speechSynthesis.getVoices();
+    // this.availableVoices = window.speechSynthesis.getVoices();
   }
 
 

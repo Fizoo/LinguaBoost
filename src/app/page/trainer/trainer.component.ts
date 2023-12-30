@@ -1,10 +1,10 @@
 import {Component, HostListener} from '@angular/core';
-import {Speaker2Service} from "../../services/speaker3.service";
 import {Words} from "../../models/data";
 import {ActivatedRoute, Router} from "@angular/router";
 import {map, switchMap, take} from "rxjs";
 import {Store} from "@ngrx/store";
 import {DataSelectorsWords} from "../../store/data/selectors";
+import {SpeakerService} from "../../services/speaker.service";
 
 @Component({
   selector: 'app-trainer',
@@ -23,7 +23,7 @@ export class TrainerComponent {
     this.nextTo()
   }
 
-  constructor(private speaker: Speaker2Service,
+  constructor(private speaker: SpeakerService,
               private route: ActivatedRoute,
               private store: Store,
               private router:Router
