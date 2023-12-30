@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {AudioStorageService} from "../../../services/audio-storage.service";
+import {FirebaseStorageService} from "../../../services/firebase-storage.service";
 import {Store} from "@ngrx/store";
 import {Book} from "../../../models/book";
 import {BookSelectors} from "../../../store/book/selector";
@@ -30,7 +30,7 @@ export class BookMainComponent implements OnInit {
   selectedLevel:string=''
   isMenu=true
 
-  constructor(private storage: AudioStorageService,
+  constructor(private storage: FirebaseStorageService,
               private changeDetectorRef: ChangeDetectorRef,
               private store: Store,
               private router:Router

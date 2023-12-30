@@ -7,7 +7,7 @@ import {DomSanitizer} from "@angular/platform-browser";
 @Injectable({
   providedIn: 'root'
 })
-export class AudioStorageService {
+export class FirebaseStorageService {
 
   constructor(private storage:AngularFireStorage,
               private sanitizer: DomSanitizer) { }

@@ -38,4 +38,17 @@ export class SearchDialogComponent implements OnInit{
   }
 
 
+  add() {
+    const storedJsonString = localStorage.getItem('list')
+    if(storedJsonString){
+      const storedDataArray = JSON.parse(storedJsonString);
+      storedDataArray.push(this.data.word)
+      localStorage.setItem('list', JSON.stringify(storedDataArray));
+    }
+    else {
+      // Якщо даних ще немає, просто зберігаємо поточні дані
+      localStorage.setItem('list', JSON.stringify(this.data.word));
+    }
+    this.dialogRef.close();
+  }
 }

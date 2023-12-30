@@ -16,7 +16,7 @@ import {
   tap,
   withLatestFrom
 } from "rxjs";
-import {AudioStorageService} from "./services/audio-storage.service";
+import {FirebaseStorageService} from "./services/firebase-storage.service";
 import {FirestoreService} from "./services/firestore.service";
 import {Store} from "@ngrx/store";
 import {BookSelectors} from "./store/book/selector";
@@ -28,7 +28,7 @@ import {ProgressSelectors} from "./store/progress/selectors";
 @Injectable()
 export class AppEffects {
   constructor(private actions$: Actions,
-              private storage: AudioStorageService,
+              private storage: FirebaseStorageService,
               private firebase: FirestoreService,
               private store: Store
   ) {

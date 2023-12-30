@@ -2,7 +2,7 @@ import {ChangeDetectionStrategy, Component, OnDestroy, OnInit} from '@angular/co
 import {Book} from "../../../models/book";
 import {FormControl} from "@angular/forms";
 import {map, Subject, switchMap, takeUntil} from "rxjs";
-import {AudioStorageService} from "../../../services/audio-storage.service";
+import {FirebaseStorageService} from "../../../services/firebase-storage.service";
 import {Store} from "@ngrx/store";
 import {BookSelectors} from "../../../store/book/selector";
 import {ActivatedRoute} from "@angular/router";
@@ -29,7 +29,7 @@ export class BookLayoutComponent implements OnInit,OnDestroy {
    private unsubscribe$=new Subject<void>();
 
   constructor(private speak: SpeakerService,
-              private audioStorageService: AudioStorageService,
+              private audioStorageService: FirebaseStorageService,
               private store:Store,
               private route:ActivatedRoute
   ) {

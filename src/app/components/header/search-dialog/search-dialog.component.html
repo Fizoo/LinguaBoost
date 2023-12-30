@@ -17,16 +17,6 @@
       <div class="third-text">{{word.englishTranscription}}</div>
     </div>
 
-
-
-<!--
-    <div *ngIf="word.englishWord" class="translate box">
-      <div></div>
-      <div class="text">{{word.ukrainianTranslation}}</div>
-      <div class="text">{{word.englishTranscription}}</div>
-    </div>
--->
-
     <div *ngIf="word.englishWord" class="sentence">
       <div class="box">
         <button (click)="speak(word.englishSentence)" mat-icon-button >
@@ -51,14 +41,17 @@
     </div>
 
   </ng-template>
-
-
 </div>
+
 <div class="actions" mat-dialog-actions>
-  <div class="two"></div>
+  <div *ngIf="word$ | async as words;else isWords" class="two"></div>
+  <ng-template #isWords>
+    <button color="warn" mat-icon-button (click)="add()">
+      <mat-icon >add</mat-icon>
+    </button>
+  </ng-template>
+
   <button mat-icon-button (click)="onNoClick()">
     <mat-icon >close</mat-icon>
   </button>
-
-
 </div>
