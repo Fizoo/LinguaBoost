@@ -2,5 +2,6 @@
 
 https://fizoo.github.io/LinguaBoost/
 
-login oleg@gmail.com
-pass 123456
+Login: oleg@gmail.com
+
+Password: 123456
