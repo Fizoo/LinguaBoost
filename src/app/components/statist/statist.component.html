@@ -35,7 +35,7 @@
         </div>
 
         <div class="name">
-            <span>Progress Towards a Deadline</span>
+          <span>Progress Towards a Deadline</span>
           <h2 *ngIf="timeToLearnedAllWords$ | async as time">
             {{ time | date}}
           </h2>
@@ -100,7 +100,15 @@
               <mat-icon class="icon-days">hotel_class</mat-icon>
               <span>Top level</span>
             </div>
-            <span  class="number">{{countHigh$ | async }}</span>
+            <div *ngIf="countHigh$ | async as countHigh" class="head-box2">
+              <span class="number">{{countHigh}}</span>
+              <span
+                *ngIf="allWords$ | async as allWords"
+                [appColorProgress]="countHigh" [allValue]="allWords"
+                class="number2">
+                {{countHigh/allWords | percent:'1.1-2'}}</span>
+            </div>
+
 
           </div>
           <div class="box bg-box">
@@ -108,14 +116,30 @@
               <mat-icon class="icon-days">star_rate</mat-icon>
               <span>Middle level</span>
             </div>
-            <span  class="number">{{countMiddle$ | async}}</span>
+            <div *ngIf="countMiddle$ | async as countMiddle" class="head-box2">
+              <span class="number">{{countMiddle}}</span>
+              <span
+                *ngIf="allWords$ | async as allWords"
+                [appColorProgress]="countMiddle" [allValue]="allWords"
+                class="number2">
+                {{countMiddle/allWords | percent:'1.1-2'}}</span>
+            </div>
+
           </div>
           <div class="box bg-box">
             <div class="head-box1">
               <mat-icon class="icon-days">star_outline</mat-icon>
               <span>Low level</span>
             </div>
-            <span  class="number">{{countLow$ | async}}</span>
+            <div *ngIf="countLow$ | async as countLow" class="head-box2">
+              <span class="number">{{countLow}}</span>
+              <span
+                *ngIf="allWords$ | async as allWords"
+                [appColorProgress]="countLow" [allValue]="allWords"
+                class="number2">
+                {{countLow/allWords | percent:'1.1-2'}}</span>
+            </div>
+
           </div>
         </div>
       </div>
@@ -126,9 +150,9 @@
           <div *ngFor="let day of activeWeek" class="day">
             <div>
               <span>{{day.countMin}}</span>
-              <span>/30</span>
+              <span>/20</span>
             </div>
-            <mat-icon [style.opacity]="day.countMin>=30?1:0.4" class="icon">verified</mat-icon>
+            <mat-icon [style.opacity]="day.countMin>=20?1:0.4" class="icon">verified</mat-icon>
             <div class="it">
               <span>{{day.dayName}}</span>
             </div>
@@ -147,20 +171,20 @@
 
       <div class="stat">
 
-       <div class="btn-group">
-         <mat-button-toggle-group (change)="changeDiagram($event)" name="progress">
-           <mat-button-toggle value="week">Week</mat-button-toggle>
-           <mat-button-toggle value="month">Month</mat-button-toggle>
-           <mat-button-toggle value="weeks">Weeks</mat-button-toggle>
-           <mat-button-toggle value="months">Months</mat-button-toggle>
-         </mat-button-toggle-group>
-       </div>
+        <div class="btn-group">
+          <mat-button-toggle-group (change)="changeDiagram($event)" name="progress">
+            <mat-button-toggle value="week">Week</mat-button-toggle>
+            <mat-button-toggle value="month">Month</mat-button-toggle>
+            <mat-button-toggle value="weeks">Weeks</mat-button-toggle>
+            <mat-button-toggle value="months">Months</mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
 
         <div *ngIf="currentlyDiagram$ | async as activeDiagram" class="diagram">
           <dx-chart id="chart" [dataSource]="activeDiagram ">
-            <dxi-series valueField="countLow"  name="Low"></dxi-series>
-            <dxi-series valueField="countMiddle"  name="Middle"></dxi-series>
-            <dxi-series valueField="countHigh"  name="High"></dxi-series>
+            <dxi-series valueField="countLow" name="Low"></dxi-series>
+            <dxi-series valueField="countMiddle" name="Middle"></dxi-series>
+            <dxi-series valueField="countHigh" name="High"></dxi-series>
             <dxi-value-axis position="right">
               <dxo-title text="Words"></dxo-title>
             </dxi-value-axis>
@@ -184,24 +208,24 @@
 
       <div class="stat">
 
-       <div class="btn-group">
-         <mat-button-toggle-group (change)="changeDiagram($event)" name="progress">
-           <mat-button-toggle value="week">Week</mat-button-toggle>
-           <mat-button-toggle value="month">Month</mat-button-toggle>
-           <mat-button-toggle value="weeks">Weeks</mat-button-toggle>
-           <mat-button-toggle value="months">Months</mat-button-toggle>
-         </mat-button-toggle-group>
+        <div class="btn-group">
+          <mat-button-toggle-group (change)="changeDiagram($event)" name="progress">
+            <mat-button-toggle value="week">Week</mat-button-toggle>
+            <mat-button-toggle value="month">Month</mat-button-toggle>
+            <mat-button-toggle value="weeks">Weeks</mat-button-toggle>
+            <mat-button-toggle value="months">Months</mat-button-toggle>
+          </mat-button-toggle-group>
 
-         <mat-button-toggle-group [(ngModel)]="valueField" name="progress">
-           <mat-button-toggle value="counterScore">Score</mat-button-toggle>
-           <mat-button-toggle value="countMin">Time</mat-button-toggle>
-           <mat-button-toggle value="countUpWordsInThisDay">Count</mat-button-toggle>
+          <mat-button-toggle-group [(ngModel)]="valueField" name="progress">
+            <mat-button-toggle value="counterScore">Score</mat-button-toggle>
+            <mat-button-toggle value="countMin">Time</mat-button-toggle>
+            <mat-button-toggle value="countUpWordsInThisDay">Count</mat-button-toggle>
 
-         </mat-button-toggle-group>
-       </div>
+          </mat-button-toggle-group>
+        </div>
 
         <div *ngIf="currentlyDiagram$ | async as dataSource" class="diagram">
-          <dx-chart  [dataSource]="dataSource">
+          <dx-chart [dataSource]="dataSource">
             <dxi-series
               argumentField="id"
               [valueField]="valueField"
@@ -218,4 +242,4 @@
   </div>
 </main>
 
-//ng build --prod --base-href "https://fizoo.github.io/LinguaBoost/"
+

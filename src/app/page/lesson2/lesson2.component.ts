@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ChangeDetectionStrategy, Component, HostListener, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 import {first} from "rxjs";
 
 @Component({
@@ -12,7 +12,13 @@ export class Lesson2Component implements OnInit{
   counterScore:number=0
   countMin:number=0
 
-  constructor(private route:ActivatedRoute) {
+  @HostListener('document:keydown.enter')
+  onEnter() {
+    this.router.navigate(['theme/:id/:lessons/result/goal'])
+  }
+  constructor(private route:ActivatedRoute,
+              private router:Router
+              ) {
   }
 
   ngOnInit(): void {

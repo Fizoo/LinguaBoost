@@ -1,7 +1,8 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, HostListener, OnInit} from '@angular/core';
 import {Store} from "@ngrx/store";
 import {ProgressSelectors} from "../../store/progress/selectors";
 import {filter, first} from "rxjs";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-lesson3',
@@ -14,7 +15,14 @@ export class Lesson3Component implements OnInit{
   countLessons:number=0
   percentage:number=0
 
-  constructor(private store:Store) {
+  @HostListener('document:keydown.enter')
+  onEnter() {
+    this.router.navigate(['theme/-1'])
+  }
+
+  constructor(private store:Store,
+              private router:Router
+              ) {
   }
 
   ngOnInit(): void {

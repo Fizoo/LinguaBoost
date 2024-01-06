@@ -14,7 +14,11 @@ import {UserUidService} from "./user-uid.service";
 import firebase from 'firebase/compat/app';
 import {Progress} from "../models/progress";
 import {Book} from "../models/book";
+import {HomePages} from "../../assets/data/mainLayout/main";
 
+interface HomePag{
+  data:HomePages[]
+}
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +34,7 @@ export class FirestoreService {
   private sentenceCollection:AngularFirestoreCollection<TopicPhrases>;
   private userCollection: AngularFirestoreCollection<User>;
   private bookCollection:AngularFirestoreCollection<Book>;
+  private imgCollection:AngularFirestoreCollection<HomePag>;
 
 
   constructor(private firestore: AngularFirestore,
@@ -44,10 +49,39 @@ export class FirestoreService {
     this.phraseCollection=this.firestore.collection<TopicPhrases>('phrases')
     this.sentenceCollection=this.firestore.collection<TopicPhrases>('sentences')
     this.bookCollection=this.firestore.collection<Book>('books')
+    this.imgCollection=this.firestore.collection<HomePag>('img')
 
 
     //отримання id  поточного user on firebase(auth)
     this.userId$.getUserUid().pipe(first()).subscribe(id => this.userUid = id)
+  }
+///////////////////////----------IMG-------////////////////////
+  addImg(value:HomePag):Observable<void>{
+    return from(
+      this.imgCollection.doc('imgMainPage').set(value)
+    )
+  }
+  getImg():Observable<any[]>{
+    return from(this.imgCollection.valueChanges()).pipe(
+      take(1),
+      map(el=>el.map(a=>a.data)),
+      tap(el=>console.log(el))
+    )
+  }
+  getImg2():Observable<HomePages[]>{
+    return this.imgCollection.get().pipe(
+      map((querySnapshot) => {
+        const data: HomePages[] = [];
+        querySnapshot.forEach((doc) => {
+          const item = doc.data() as any;
+          console.log(item)
+          // item.id = doc.id
+          data.push(item.data);
+          console.log(data)
+        })
+        return data;
+      })
+    )
   }
 
   //////////////////------------------PROGRESS---------------------//////////////////////////////////////////////////////

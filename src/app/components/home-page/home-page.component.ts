@@ -1,5 +1,6 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {HomePages} from "../../../assets/data/mainLayout/main";
+import {CachedImgService} from "../../services/cached-img.service";
 
 
 @Component({
@@ -8,15 +9,18 @@ import {HomePages} from "../../../assets/data/mainLayout/main";
   styleUrls: ['./home-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit{
 
   homePages: HomePages[]
 
-  constructor() {
-    const storedData = localStorage.getItem('homePages');
-    if (storedData) {
-      this.homePages = JSON.parse(storedData);
+  constructor(private cache:CachedImgService) {
+  }
 
-    }
+  ngOnInit(): void {
+     const storedData = localStorage.getItem('homePages');
+  if (storedData) {
+    this.homePages = JSON.parse(storedData);
+
+  }
   }
 }
