@@ -1,5 +1,5 @@
 import {createFeatureSelector, createSelector} from "@ngrx/store";
-import {DetailProgress, Progress} from "../../models/progress";
+import {DetailProgress, Progress, TimeDay} from "../../models/progress";
 import {getCurrentDate} from "../../helper/fn";
 import {StatisticData} from "../../models/statictic";
 
@@ -177,6 +177,69 @@ export namespace ProgressSelectors {
     }
   );
 
+  export const getRecordScore=createSelector(
+    getAllProgress,
+    state=>state.recordScore || 0
+  )
+
+  export const getMiddleScore=createSelector(
+    getAllProgress,
+    state=>{
+      return state.timeOfDay.reduce((value,item,i,arr)=>{
+        value+=item.counterScore
+        return Math.round(value/arr.length)
+      },0)
+    }
+  )
+
+  export const getRecordTime=createSelector(
+    getAllProgress,
+    state=>state.recordTime || 0
+  )
+
+  export const getMiddleTime=createSelector(
+    getAllProgress,
+    state=>{
+      return state.timeOfDay.reduce((value,item,i,arr)=>{
+        value+=item.countMin
+        return Math.round(value/arr.length)
+      },0)/60
+    }
+  )
+
+  export const getMiddleTML=createSelector(
+    getAllProgress,
+    state=> {
+      const averages: DetailProgress = {
+        countHigh: calculateAverage(state.timeOfDay.map((timeDay: TimeDay) => timeDay.detailForWordsProgress.countHigh)),
+        countMiddle: calculateAverage(state.timeOfDay.map((timeDay: TimeDay) => timeDay.detailForWordsProgress.countMiddle)),
+        countLow: calculateAverage(state.timeOfDay.map((timeDay: TimeDay) => timeDay.detailForWordsProgress.countLow)),
+      };
+
+      return calculateRoundedValues(averages)
+    }
+  )
+
+  export const getBestDetailForWordsProgress = createSelector(
+    getProgressState,
+    (progress: Progress) => {
+      const best = progress.timeOfDay.reduce((value, item) => {
+        if (item.detailForWordsProgress.countHigh > value.detailForWordsProgress.countHigh) {
+          return item
+        } else if (item.detailForWordsProgress.countHigh === value.detailForWordsProgress.countHigh) {
+          if (item.detailForWordsProgress.countMiddle > value.detailForWordsProgress.countMiddle) {
+            return item
+          }
+        }
+        return value
+      })
+
+      return calculateRoundedValues(best.detailForWordsProgress)
+    }
+  );
+
+
+
 
 }
 
@@ -197,4 +260,19 @@ function getMonthNameByIndex(index: number): string {
     'September', 'October', 'November', 'December'
   ];
   return months[index];
+}
+function calculateAverage(array: number[]): number {
+  const sum = array.reduce((acc, value) => acc + value, 0);
+  return  array.length > 0 ?Math.round( sum / array.length ): 0
+}
+function calculateRoundedValues(detailProgress: DetailProgress): DetailProgress {
+  console.log(detailProgress)
+  const sum = detailProgress.countHigh + detailProgress.countMiddle + detailProgress.countLow;
+  const divisor = Math.trunc(sum / 20);
+
+  return {
+    countHigh: Math.round(detailProgress.countHigh / divisor),
+    countMiddle: Math.round(detailProgress.countMiddle / divisor),
+    countLow: Math.round(detailProgress.countLow / divisor),
+  };
 }

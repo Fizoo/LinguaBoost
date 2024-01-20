@@ -123,6 +123,8 @@ export class VerbsComponent implements OnInit, OnDestroy {
 
   speak(value: string) {
     this.speaker.speak(value)
+      //this.speaker.speakSlowly(value)
+
   }
 
   leanFn(value: string): void {

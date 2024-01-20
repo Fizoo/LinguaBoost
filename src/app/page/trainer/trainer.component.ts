@@ -55,6 +55,10 @@ export class TrainerComponent {
     this.speaker.speak(value)
   }
 
+  speakSlowly(value: string) {
+    this.speaker.speakSlowly(value)
+  }
+
   private getRandomIndex(): number {
     if (this.indexArr.length === 0) {
       this.indexArr = Array.from(Array(this.list.length).keys());

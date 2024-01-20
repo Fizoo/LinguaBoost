@@ -59,6 +59,19 @@
         }
       }
 
+      .players{
+        display:  flex;
+        &:hover{
+          .btn2{
+            display: block;
+          }
+        }
+
+        .btn2{
+          display: none;
+        }
+      }
+
     }
 
     .next{

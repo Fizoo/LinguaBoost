@@ -33,13 +33,19 @@
           </div>
         </div>
 
-        <div *ngIf="whatLesson===1 || whatLesson===2 " class="helper" (click)="speak(tempList[0].englishSentence)">
-          <button mat-icon-button  >
-            <mat-icon color="primary">play_circle</mat-icon>
-          </button>
-          <div>
-            <span>Listen sentence with this word</span>
+        <div *ngIf="whatLesson===1 || whatLesson===2 " class="helper" >
+          <div class="helper"   >
+            <button (click)="speak(tempList[0].englishSentence)" mat-icon-button  >
+              <mat-icon color="primary">play_circle</mat-icon>
+            </button>
+            <button mat-icon-button  (click)="speakSlowly(tempList[0].englishSentence)">
+              <mat-icon color="primary" >slow_motion_video</mat-icon>
+            </button>
+            <div>
+              <span>Listen sentence with this word</span>
+            </div>
           </div>
+
         </div>
 
         <div class="wrapper-text" [ngSwitch]="whatLesson">

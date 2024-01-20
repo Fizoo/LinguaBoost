@@ -1,11 +1,11 @@
-<div class="main-box">
+<div class="main">
   <div class="container">
-    <div class="container-box">
-      <div class="box">
-        <div class="box__img">
+    <div class="container__box">
+      <div class="container__box__layout">
+
+        <div class="container__box__layout__img">
           <div class="img">
             <svg xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
                  viewBox="0 0 500 500" width="500" height="500"
                  preserveAspectRatio="xMidYMid meet"
                  style="width: 100%; height: 100%;
@@ -186,36 +186,119 @@
             </svg>
           </div>
         </div>
-        <div class="box__text">
-          <h2>Ты хорошо прокачиваешь словарный запас</h2>
+
+        <div class="container__box__layout__text">
+          <h2>Your stats by lesson</h2>
         </div>
-        <div class="box__progress">
-          <div class="box__progress__item">
-            <div class="box__progress__item__text">Stars</div>
-            <div class="box__progress__item__value">
-              <div >+{{counterScore}}</div>
-              <mat-icon >star</mat-icon>
+
+        <div class="container__box__layout__progress">
+          <div class="group">
+            <div class="group__item itemStyle">
+              <div class="group__item__text">
+                Stars
+              </div>
+              <div class="group__item__value">
+                <div>{{counterScore}}</div>
+                <mat-icon class="mat-style">star</mat-icon>
+              </div>
+            </div>
+
+            <div class="group__item1">
+              <div class="group__item1__medium">
+                {{middleScore$ | async}}
+              </div>
+            </div>
+
+            <div class="group__item1 itemStyle">
+              <div class="group__item1__record s">
+                {{recordScore$ | async}}
+              </div>
             </div>
           </div>
-          <div class="box__progress__item">
-            <div >Time</div>
-            <div class="box__progress__item__value">
-              <div>+{{countMin}}</div>
-              <mat-icon>timer</mat-icon>
+
+          <div class="group">
+            <div class="group__item itemStyle">
+              <div class="group__item__text">
+                Time
+              </div>
+              <div class="group__item__value">
+                <div>{{minutes}}:{{seconds}}</div>
+                <mat-icon class="mat-style">timer</mat-icon>
+              </div>
+            </div>
+
+            <div class="group__item1">
+              <div  class="group__item1__medium">
+                {{middleTime$ | async |number:'1.2-2'}}
+              </div>
+            </div>
+
+            <div class="group__item1 itemStyle">
+              <div *ngIf="recordTime$ | async as recordTime" class="group__item1__record s">
+                <span *ngIf="recordTime>60 else record">
+                  {{recordTime/60 | number:'1.0-1'}}:{{recordTime%60}}
+                </span>
+                <ng-template #record>
+                  <span >
+                  0:{{recordTime |number:'2.0-0'}}
+                </span>
+                </ng-template>
+
+              </div>
             </div>
           </div>
+
+          <div class="group">
+            <div class="group__item itemStyle">
+              <div class="group__item__text">
+                Words:TML
+              </div>
+              <div class="group__item__value">
+                <div>
+                  <span [ngClass]="arrWords.countHigh >= middleTML.countHigh ? 'up' : 'down'">{{arrWords.countHigh}}</span>
+                  <span>:</span>
+                  <span [ngClass]="arrWords.countMiddle >= middleTML.countMiddle ? 'up' : 'down'">{{arrWords.countMiddle}}</span>
+                  <span>:</span>
+                  <span [ngClass]="arrWords.countLow <= middleTML.countLow ? 'up' : 'down'">{{arrWords.countLow}}</span>
+                </div>
+                <mat-icon class="mat-style">title</mat-icon>
+              </div>
+            </div>
+
+            <div class="group__item1">
+              <div class="group__item1__medium">
+                <span>{{middleTML.countHigh}}</span>
+                <span>:</span>
+                <span>{{middleTML.countMiddle}}</span>
+                <span>:</span>
+                <span>{{middleTML.countLow}}</span>
+              </div>
+            </div>
+
+            <div class="group__item1 itemStyle">
+              <div class="group__item1__record">
+                <span>{{topTML.countHigh}}</span>
+                <span>:</span>
+                <span>{{topTML.countMiddle}}</span>
+                <span>:</span>
+                <span>{{topTML.countLow}}</span>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
-
     </div>
-    <div class="box-footer">
+
+    <div class="container__footer">
       <div class="content">
-        <button  mat-raised-button routerLink="/theme/-1" >Repeat</button>
+        <button mat-raised-button routerLink="/theme/-1">Repeat</button>
         <button color="primary" mat-raised-button routerLink="goal">Continue</button>
       </div>
 
     </div>
-  </div>
 
+  </div>
 </div>

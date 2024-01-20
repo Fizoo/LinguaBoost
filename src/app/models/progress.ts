@@ -4,6 +4,8 @@ export interface Progress {
   timeOfDay: TimeDay[]
   score: number
   countWord:number
+  recordScore:number
+  recordTime:number
 }
 
 export interface TimeDay {
@@ -13,6 +15,7 @@ export interface TimeDay {
   countMin:number
   detailForWordsProgress:DetailProgress
   dayName?:string
+
 }
 export interface DetailProgress{
   countHigh:number

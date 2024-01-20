@@ -7,8 +7,8 @@ import Speak from 'speak-tts';
   providedIn: 'root'
 })
 export class SpeakerService {
-  private speaker: any;
-  private availableVoices: SpeechSynthesisVoice[] = [];
+  private speaker: any
+  private availableVoices: SpeechSynthesisVoice[] = []
 
   constructor() {
     this.speaker = new Speak();
@@ -24,10 +24,20 @@ export class SpeakerService {
     });
   }
 
-  public speak(text: string): void {
-    this.speaker.cancel();
 
-    this.speaker.speak({text})
+  public speak(text: string, rate: number = 1): void {
+    this.speaker.cancel();
+    this.speaker.speak({
+      text,
+      rate  // Додаємо rate у конфігурацію для налаштування швидкості
+    });
+  }
+
+  public speakSlowly(text: string, rate: number = 0.5): void {
+    this.speaker.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.rate = rate;
+    window.speechSynthesis.speak(utterance);
   }
 
   public stop(): void {

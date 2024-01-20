@@ -18,10 +18,18 @@
 
       </div>
 
+      <div class="players">
+        <button class="btn1" mat-icon-button (click)="speak(item.englishSentence)">
+          <mat-icon color="primary">play_circle</mat-icon>
+        </button>
 
-      <button mat-icon-button (click)="speak(item.englishSentence)">
-        <mat-icon color="primary">play_circle</mat-icon>
-      </button>
+        <button class="btn2" mat-icon-button (click)="speakSlowly(item.englishSentence)">
+          <mat-icon color="primary">
+                        slow_motion_video
+          </mat-icon>
+        </button>
+      </div>
+
 
       <div class="box">
           <span class="text">

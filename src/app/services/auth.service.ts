@@ -86,7 +86,9 @@ export class AuthService {
             }
           }],
           countWord: 0,
-          score:0
+          score:0,
+          recordTime:0,
+          recordScore:0
         }
         let newUser: User = {
           uid: id,

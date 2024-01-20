@@ -23,6 +23,7 @@ import {DetailProgress, TimeDay} from "../../models/progress";
 import {ProgressAction} from "../../store/progress/actions";
 import {getCurrentDate} from 'src/app/helper/fn';
 import {SpeakerService} from "../../services/speaker.service";
+import {FirestoreService} from "../../services/firestore.service";
 
 export interface tempList {
   id: number
@@ -76,6 +77,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   }
 
   constructor(private speaker: SpeakerService,
+              private firestore:FirestoreService,
               private store: Store,
               private route: ActivatedRoute,
               private router: Router) {}
@@ -157,14 +159,15 @@ export class LessonComponent implements OnInit, OnDestroy {
   isWin(): void {
     if (this.updateList.length === 20) {
 
-      const {countMin, counterScore} = this.getProgressOfDay()
+      const {countMin, counterScore,detailForWordsProgress} = this.getProgressOfDay()
 
       this.store.dispatch(DataActions.updateWord({wordArr: this.updateList}))
       this.store.dispatch(ProgressAction.updateProgress({progressOfDay: this.getProgressOfDay()}))
       this.router.navigate(['theme', this.updateList[0].idTheme.toString(), 'lessons', 'result'],
         {
           queryParams: {
-            countMin, counterScore
+            countMin, counterScore,
+            detailForWordsProgress: JSON.stringify(detailForWordsProgress)
           }
         }).then()
     }
@@ -263,7 +266,9 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.speaker.speak(value)
 
   }
-
+  speakSlowly(value: string) {
+    this.speaker.speakSlowly(value,0.5)
+  }
 
   deleteValue() {
     this.formControlText.reset()
@@ -292,9 +297,11 @@ export class LessonComponent implements OnInit, OnDestroy {
   }
 
   private getProgressOfDay(): TimeDay {
+
     const endTime = performance.now()
     const elapsedTimeInMillis = endTime - this.startTime
-    const elapsedTimeInMinutes = Math.round(elapsedTimeInMillis / (1000 * 60)) // Конвертуємо мілісекунди в хвилини
+    const elapsedTimeInMinutes = Math.round(elapsedTimeInMillis / (1000 )) // Конвертуємо мілісекунди в sec
+
 
     return {
       date: getCurrentDate(),
