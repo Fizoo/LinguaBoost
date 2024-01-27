@@ -82,8 +82,8 @@ export const progressReducer = createReducer(
       return {
         ...state,
         timeOfDay: [...state.timeOfDay, progressOfDay],
-        recordScore:state.score>progressOfDay.counterScore?state.score:progressOfDay.counterScore || 0,
-        recordTime:(state?.recordTime || 100)<progressOfDay.countMin?state.recordTime:progressOfDay.countMin
+        recordScore:state.recordScore>progressOfDay.counterScore?state.recordScore:progressOfDay.counterScore,
+        recordTime:(state.recordTime || 100)<progressOfDay.countMin?state.recordTime:progressOfDay.countMin
       }
     })
 )

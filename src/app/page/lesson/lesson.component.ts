@@ -120,23 +120,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isBeforeCheckBtn = false
     this.isAnswer=0
     this.equalsWords()
-/*    let word = ''
 
-    switch (this.whatLesson) {
-      case 1:
-        word = this.tempList[0].englishWord.toLowerCase()
-        break
-      case 2:
-        word = this.tempList[0].ukrainianTranslation.toLowerCase()
-        break
-      case 3 :
-        word = this.tempList[0].englishWord.toLowerCase()
-        break
-      default:
-    }
-
-    this.resultSwitch = word === this.inputValue.trim().toLowerCase() ? 3 : 1;
-    this.resultSwitchBorder=this.resultSwitch===3?1:0*/
   }
 
   nextTo() {

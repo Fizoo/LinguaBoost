@@ -204,8 +204,8 @@
             </div>
 
             <div class="group__item1">
-              <div class="group__item1__medium">
-                {{middleScore$ | async}}
+              <div *ngIf="middleScore$ | async as middleScore" class="group__item1__medium">
+                {{middleScore}}
               </div>
             </div>
 
@@ -222,28 +222,22 @@
                 Time
               </div>
               <div class="group__item__value">
-                <div>{{minutes}}:{{seconds}}</div>
+                <div [appSecondsToTime]="timeSec"></div>
                 <mat-icon class="mat-style">timer</mat-icon>
               </div>
             </div>
 
             <div class="group__item1">
-              <div  class="group__item1__medium">
-                {{middleTime$ | async |number:'1.2-2'}}
+              <div *ngIf="middleTime$ | async as middleTime"
+                   [appSecondsToTime]="middleTime"
+                   class="group__item1__medium">
               </div>
             </div>
 
             <div class="group__item1 itemStyle">
-              <div *ngIf="recordTime$ | async as recordTime" class="group__item1__record s">
-                <span *ngIf="recordTime>60 else record">
-                  {{recordTime/60 | number:'1.0-1'}}:{{recordTime%60}}
-                </span>
-                <ng-template #record>
-                  <span >
-                  0:{{recordTime |number:'2.0-0'}}
-                </span>
-                </ng-template>
-
+              <div *ngIf="recordTime$ | async as recordTime"
+                   [appSecondsToTime]="recordTime"
+                   class="group__item1__record s">
               </div>
             </div>
           </div>
@@ -282,13 +276,11 @@
                 <span>{{topTML.countMiddle}}</span>
                 <span>:</span>
                 <span>{{topTML.countLow}}</span>
-
               </div>
             </div>
+
           </div>
-
         </div>
-
       </div>
     </div>
 

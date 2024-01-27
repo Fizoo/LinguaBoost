@@ -1,39 +1,38 @@
 import {createFeatureSelector, createSelector} from "@ngrx/store";
-import {DetailProgress, Progress, TimeDay} from "../../models/progress";
+import {DetailProgress, Progress} from "../../models/progress";
 import {getCurrentDate} from "../../helper/fn";
 import {StatisticData} from "../../models/statictic";
 
 export namespace ProgressSelectors {
-  export const getProgressState=createFeatureSelector<Progress>('progress')
+  export const getProgressState = createFeatureSelector<Progress>('progress')
 
-  export const getAllProgress=createSelector(
+  export const getAllProgress = createSelector(
     getProgressState,
-    state=>state
+    state => state
   )
 
-  export const getProgressByThisDay=createSelector(
+  export const getProgressByThisDay = createSelector(
     getAllProgress,
-    progress=>{
-      const day=progress.timeOfDay.find(el=>el.date===getCurrentDate())
+    progress => {
+      const day = progress.timeOfDay.find(el => el.date === getCurrentDate())
       return day || null
     }
   )
 
-  export const getCountAllDayOfProgress=createSelector(
+  export const getCountAllDayOfProgress = createSelector(
     getProgressState,
-    progress=>progress.timeOfDay.length || 0
+    progress => progress.timeOfDay.length || 0
   )
 
-  export const getMedianWordsLearnedByDay=createSelector(
+  export const getMedianWordsLearnedByDay = createSelector(
     getProgressState,
-    progress=> {
-     const result= progress.timeOfDay.reduce((item, curr) => item + curr.countUpWordsInThisDay, 0) / progress.timeOfDay.length
-    return Math.ceil(result)
+    progress => {
+      const result = progress.timeOfDay.reduce((item, curr) => item + curr.countUpWordsInThisDay, 0) / progress.timeOfDay.length
+      return Math.ceil(result)
     }
-
   )
 //прогрес за поточний тиждень
-  export const getActiveWeekProgress=createSelector(
+  export const getActiveWeekProgress = createSelector(
     getProgressState,
     progress => {
       const currentDate = getCurrentDate();
@@ -42,7 +41,7 @@ export namespace ProgressSelectors {
 
       const weekTimeDays: StatisticData[] = [];
       const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']; // Скорочені назви днів тижня
-      const detailProgress: DetailProgress = { countLow: 0, countMiddle: 0, countHigh: 0 };
+      const detailProgress: DetailProgress = {countLow: 0, countMiddle: 0, countHigh: 0};
 
       for (let i = 0; i < 7; i++) {
         const day = new Date(firstDayOfWeek)
@@ -83,7 +82,7 @@ export namespace ProgressSelectors {
       const daysInMonth = new Date(firstDayOfMonth.getFullYear(), firstDayOfMonth.getMonth() + 1, 0).getDate();
 
       const monthTimeDays: StatisticData[] = [];
-      const detailProgress:DetailProgress={countLow:0,countMiddle:0,countHigh:0}
+      const detailProgress: DetailProgress = {countLow: 0, countMiddle: 0, countHigh: 0}
 
       for (let i = 1; i <= daysInMonth; i++) {
         const day = new Date(firstDayOfMonth);
@@ -111,7 +110,7 @@ export namespace ProgressSelectors {
       return monthTimeDays;
     }
   )
-    //весь прогрес розбитиий по тиждням
+  //весь прогрес розбитиий по тиждням
   export const selectTotalProgressByWeek = createSelector(
     getProgressState,
     state => {
@@ -173,52 +172,65 @@ export namespace ProgressSelectors {
         monthlyData[monthNumber].countLow += day.detailForWordsProgress.countLow;
       });
 
-      return Object.values(monthlyData).map(month=>({...month,id:getMonthNameByIndex(+month.id-1)}))
+      return Object.values(monthlyData).map(month => ({...month, id: getMonthNameByIndex(+month.id - 1)}))
     }
   );
 
-  export const getRecordScore=createSelector(
+  export const getRecordScore = createSelector(
     getAllProgress,
-    state=>state.recordScore || 0
+    state => state.recordScore
   )
 
-  export const getMiddleScore=createSelector(
+  export const getMiddleScore = createSelector(
     getAllProgress,
-    state=>{
-      return state.timeOfDay.reduce((value,item,i,arr)=>{
-        value+=item.counterScore
-        return Math.round(value/arr.length)
-      },0)
+    state => {
+      return calculateMiddleForType(state, 'counterScore');
     }
   )
 
-  export const getRecordTime=createSelector(
+  export const getRecordTime = createSelector(
     getAllProgress,
-    state=>state.recordTime || 0
+    state => state.recordTime
   )
 
-  export const getMiddleTime=createSelector(
+  export const getMiddleTime = createSelector(
     getAllProgress,
-    state=>{
-      return state.timeOfDay.reduce((value,item,i,arr)=>{
-        value+=item.countMin
-        return Math.round(value/arr.length)
-      },0)/60
+    state => {
+      return calculateMiddleForType(state, 'countMin');
     }
   )
 
-  export const getMiddleTML=createSelector(
+  export const getMiddleTML = createSelector(
     getAllProgress,
-    state=> {
-      const averages: DetailProgress = {
-        countHigh: calculateAverage(state.timeOfDay.map((timeDay: TimeDay) => timeDay.detailForWordsProgress.countHigh)),
-        countMiddle: calculateAverage(state.timeOfDay.map((timeDay: TimeDay) => timeDay.detailForWordsProgress.countMiddle)),
-        countLow: calculateAverage(state.timeOfDay.map((timeDay: TimeDay) => timeDay.detailForWordsProgress.countLow)),
+    (state) => {
+      const calculateAverageForType = (type: keyof DetailProgress) => {
+        return calculateAverage(
+          state.timeOfDay.reduce((value: Array<number>, item) => {
+            const len = Math.trunc(item.countUpWordsInThisDay / 20);
+            const typeCount = item.detailForWordsProgress[type];
+
+            if (len === 1) {
+              value.push(typeCount);
+            } else {
+              for (let i = 0; i < len; i++) {
+                value.push(typeCount / len);
+              }
+            }
+
+            return value;
+          }, [])
+        );
       };
 
-      return calculateRoundedValues(averages)
+      const averages: DetailProgress = {
+        countHigh: calculateAverageForType('countHigh'),
+        countMiddle: calculateAverageForType('countMiddle'),
+        countLow: calculateAverageForType('countLow'),
+      };
+
+      return averages;
     }
-  )
+  );
 
   export const getBestDetailForWordsProgress = createSelector(
     getProgressState,
@@ -233,14 +245,9 @@ export namespace ProgressSelectors {
         }
         return value
       })
-
       return calculateRoundedValues(best.detailForWordsProgress)
     }
   );
-
-
-
-
 }
 
 function getWeekNumber(date: Date): string {
@@ -254,25 +261,40 @@ function getMonthNumber(date: Date): string {
 }
 
 function getMonthNameByIndex(index: number): string {
-   const months = [
+  const months = [
     'January', 'February', 'March', 'April',
     'May', 'June', 'July', 'August',
     'September', 'October', 'November', 'December'
   ];
   return months[index];
 }
+
 function calculateAverage(array: number[]): number {
   const sum = array.reduce((acc, value) => acc + value, 0);
-  return  array.length > 0 ?Math.round( sum / array.length ): 0
+  return array.length > 0 ? Math.round(sum / array.length) : 0
 }
+
 function calculateRoundedValues(detailProgress: DetailProgress): DetailProgress {
-  console.log(detailProgress)
   const sum = detailProgress.countHigh + detailProgress.countMiddle + detailProgress.countLow;
   const divisor = Math.trunc(sum / 20);
-
   return {
     countHigh: Math.round(detailProgress.countHigh / divisor),
     countMiddle: Math.round(detailProgress.countMiddle / divisor),
     countLow: Math.round(detailProgress.countLow / divisor),
-  };
+  }
+}
+
+function calculateMiddleForType(state: Progress, property: 'counterScore' | 'countMin'): number {
+  const middle = state.timeOfDay.reduce((value: number[], item) => {
+    let len = Math.trunc(item.countUpWordsInThisDay / 20);
+    if (len === 1) {
+      value.push(item[property]);
+    } else {
+      for (let i = 0; i < len; i++) {
+        value.push(item[property] / len);
+      }
+    }
+    return value;
+  }, []);
+  return calculateAverage(middle);
 }

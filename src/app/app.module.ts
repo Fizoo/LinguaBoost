@@ -90,6 +90,7 @@ import {DxChartModule, DxPieChartModule} from "devextreme-angular";
 import { SearchDialogComponent } from './components/header/search-dialog/search-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { ColorProgressDirective } from './directives/color-progress.directive';
+import { SecondsToTimeDirective } from './directives/seconds-to-time.directive';
 
 
 @NgModule({
@@ -135,6 +136,7 @@ import { ColorProgressDirective } from './directives/color-progress.directive';
     DynamicRouterLinkActiveDirective,
     SearchDialogComponent,
     ColorProgressDirective,
+    SecondsToTimeDirective,
   ],
   imports: [
     BrowserModule,
