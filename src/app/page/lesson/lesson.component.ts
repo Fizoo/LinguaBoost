@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, OnDestroy, OnInit, Renderer2, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormControl} from "@angular/forms";
 import {ActivatedRoute, Router} from '@angular/router';
 import {
@@ -81,8 +81,7 @@ export class LessonComponent implements OnInit, OnDestroy {
               private store: Store,
               private route: ActivatedRoute,
               private router: Router,
-              private el: ElementRef,
-              private renderer: Renderer2) {}
+              ) {}
 
   ngOnInit(): void {
     this.route.params.pipe(
@@ -123,15 +122,11 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isAnswer=0
     this.equalsWords()
 
-    if (window.innerWidth < 600) {
-      this.closeKeyboard();
-    }
-
   }
 
   closeKeyboard() {
     // Закрити клавіатуру
-    this.renderer.selectRootElement(this.el.nativeElement).blur();
+ //   this.renderer.selectRootElement(this.el.nativeElement).blur();
   }
 
   nextTo() {
