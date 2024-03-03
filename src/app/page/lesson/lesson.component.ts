@@ -121,7 +121,6 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.isBeforeCheckBtn = false
     this.isAnswer=0
     this.equalsWords()
-
   }
 
   closeKeyboard() {
@@ -146,7 +145,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   }
 
   isWin(): void {
-    if (this.updateList.length === 20) {
+    if (this.updateList.length === 2) {
 
       const {countMin, counterScore,detailForWordsProgress} = this.getProgressOfDay()
 
@@ -255,6 +254,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.speaker.speak(value)
 
   }
+
   speakSlowly(value: string) {
     this.speaker.speakSlowly(value,0.5)
   }

@@ -198,7 +198,9 @@
                 Stars
               </div>
               <div class="group__item__value">
-                <div>{{counterScore}}</div>
+                <div  *ngIf="middleScore$ | async as middle" >
+                 <span [ngClass]="counterScore>=middle ? 'up' : 'down'"> {{counterScore}}</span>
+                </div>
                 <mat-icon class="mat-style">star</mat-icon>
               </div>
             </div>
@@ -221,8 +223,8 @@
               <div class="group__item__text">
                 Time
               </div>
-              <div class="group__item__value">
-                <div [appSecondsToTime]="timeSec"></div>
+              <div class="group__item__value" *ngIf="middleTime$ | async as midTime">
+                <div [ngClass]="timeSec>=midTime ? 'up' : 'down'" [appSecondsToTime]="timeSec"></div>
                 <mat-icon class="mat-style">timer</mat-icon>
               </div>
             </div>

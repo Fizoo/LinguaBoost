@@ -3,7 +3,7 @@
 
 
 .main {
-  width: 100%;
+ // width: 100%;
   background: v.$bg-main;
   margin-top: -1.2rem;
   margin-bottom: 1rem;
@@ -221,7 +221,7 @@
       @include m.mobile{
        width: 550px;
 
-        margin: 0;
+        //margin: 0;
         .stat1{
           grid-template-columns:1fr;
         }
@@ -242,9 +242,6 @@
           }
         }
       }
-
-
-
     }
   }
 
@@ -265,12 +262,23 @@
 
       .content{
         width: 350px;
-        margin: 0;
+       // margin: 0 ;
         .stat1{
           grid-template-columns:1fr;
+
+          .stat-progress1{
+            width: 350px;
+          }
+          .stat-progress2{
+            //place-items: center;
+            .box{
+              width: 350px;
+            }
+
+          }
         }
         .stat2 {
-          width: 100%;
+          //width: 100%;
           grid-template-columns:1fr;
           .days {
             padding: 0;

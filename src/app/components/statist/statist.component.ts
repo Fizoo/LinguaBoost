@@ -37,8 +37,6 @@ export class StatistComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-
     this.loadAllData()
   }
 
