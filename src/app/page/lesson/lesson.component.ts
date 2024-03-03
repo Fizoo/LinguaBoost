@@ -145,7 +145,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   }
 
   isWin(): void {
-    if (this.updateList.length === 2) {
+    if (this.updateList.length === 20) {
 
       const {countMin, counterScore,detailForWordsProgress} = this.getProgressOfDay()
 
